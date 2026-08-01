@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/safari_zone_west_rest_house.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Tossing ROCKs at #MON may make them flee, but they'll be easier to trap after."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Using BAIT will make #MON easier to trap."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I hiked so far, yet saw no #MON worth the trouble."])
+
+[node name="Safari_zone_west_rest_houseNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(64.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Scientist_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 64)
+sprite_name = "scientist"
+text_id = "TEXT_SAFARIZONEWESTRESTHOUSE_SCIENTIST"
+npc_id = "safari_zone_west_rest_house#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Cooltrainer_m_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(0, 32)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_SAFARIZONEWESTRESTHOUSE_COOLTRAINER_M"
+npc_id = "safari_zone_west_rest_house#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Silph_worker_f_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 32)
+sprite_name = "silph_worker_f"
+text_id = "TEXT_SAFARIZONEWESTRESTHOUSE_SILPH_WORKER_F"
+npc_id = "safari_zone_west_rest_house#2"
+dialog_data = SubResource("Dialog_2")

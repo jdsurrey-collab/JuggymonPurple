@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/pokemon_tower1_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["#MON TOWER stands in memory of #MON that did not survive."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Come to pay your respects? Bless you, child."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I came to pray for my CLEFAIRY.", "I cannot stop weeping..."])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My GROWLITHE... Why did you go?"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I am a CHANNELER. Spirits stir here, unwell."])
+
+[node name="Pokemon_tower1_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Link_receptionist_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(240, 208)
+sprite_name = "link_receptionist"
+text_id = "TEXT_POKEMONTOWER1F_RECEPTIONIST"
+npc_id = "pokemon_tower1_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Middle_aged_woman_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 128)
+sprite_name = "middle_aged_woman"
+text_id = "TEXT_POKEMONTOWER1F_MIDDLE_AGED_WOMAN"
+npc_id = "pokemon_tower1_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Balding_guy_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 192)
+sprite_name = "balding_guy"
+text_id = "TEXT_POKEMONTOWER1F_BALDING_GUY"
+npc_id = "pokemon_tower1_f#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Girl_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 112)
+sprite_name = "girl"
+text_id = "TEXT_POKEMONTOWER1F_GIRL"
+npc_id = "pokemon_tower1_f#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Channeler_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 112)
+sprite_name = "channeler"
+text_id = "TEXT_POKEMONTOWER1F_CHANNELER"
+npc_id = "pokemon_tower1_f#4"
+dialog_data = SubResource("Dialog_4")

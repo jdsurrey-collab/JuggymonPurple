@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/seafoam_islands_b4_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Gyaoo!@"])
+
+[node name="Seafoam_islands_b4_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(240.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Boulder_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 240)
+sprite_name = "boulder"
+text_id = "TEXT_SEAFOAMISLANDSB4F_BOULDER1"
+npc_id = "seafoam_islands_b4_f#0"
+
+[node name="Boulder_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 240)
+sprite_name = "boulder"
+text_id = "TEXT_SEAFOAMISLANDSB4F_BOULDER2"
+npc_id = "seafoam_islands_b4_f#1"
+
+[node name="Bird_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 16)
+sprite_name = "bird"
+text_id = "TEXT_SEAFOAMISLANDSB4F_ARTICUNO"
+npc_id = "seafoam_islands_b4_f#2"
+dialog_data = SubResource("Dialog_2")

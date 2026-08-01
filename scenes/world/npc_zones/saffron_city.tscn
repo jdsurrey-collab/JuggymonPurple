@@ -1,0 +1,179 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/saffron_city.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["What do you want? Be gone!"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["The BOSS swore he'd claim this town!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Out of my path!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["SAFFRON belongs to TEAM ROCKET now!"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Wickedness makes me feel so alive!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Ow! Mind where you tread!"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["With SILPH ours, we may plunder #MON across the whole world!"])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You felled TEAM ROCKET, all alone? Astounding!"])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["At last! TEAM ROCKET has fled! It's safe to walk these streets again!"])
+
+[sub_resource type="Resource" id="Dialog_9"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Folk ought to return to SAFFRON, now."])
+
+[sub_resource type="Resource" id="Dialog_10"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I flew here on my PIDGEOT, having read of SILPH.", "Already over? I missed all the commotion."])
+
+[sub_resource type="Resource" id="Dialog_11"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["PIDGEOT: Bi bibii!@"])
+
+[sub_resource type="Resource" id="Dialog_12"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I saw the ROCKET BOSS fleeing SILPH's tower."])
+
+[sub_resource type="Resource" id="Dialog_13"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I stand as a guard.", "Suspicious sorts I turn away!"])
+
+[sub_resource type="Resource" id="Dialog_14"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["... Snore...", "Ha! He's dozing at his post!"])
+
+[node name="Saffron_cityNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(320.0, 288.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Rocket_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(112, 96)
+sprite_name = "rocket"
+text_id = "TEXT_SAFFRONCITY_ROCKET1"
+npc_id = "saffron_city#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Rocket_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(320, 128)
+sprite_name = "rocket"
+text_id = "TEXT_SAFFRONCITY_ROCKET2"
+npc_id = "saffron_city#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Rocket_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(544, 64)
+sprite_name = "rocket"
+text_id = "TEXT_SAFFRONCITY_ROCKET3"
+npc_id = "saffron_city#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Rocket_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 192)
+sprite_name = "rocket"
+text_id = "TEXT_SAFFRONCITY_ROCKET4"
+npc_id = "saffron_city#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Rocket_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 400)
+sprite_name = "rocket"
+text_id = "TEXT_SAFFRONCITY_ROCKET5"
+npc_id = "saffron_city#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Rocket_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(512, 208)
+sprite_name = "rocket"
+text_id = "TEXT_SAFFRONCITY_ROCKET6"
+npc_id = "saffron_city#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Rocket_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(288, 480)
+sprite_name = "rocket"
+text_id = "TEXT_SAFFRONCITY_ROCKET7"
+npc_id = "saffron_city#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Scientist_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 224)
+sprite_name = "scientist"
+text_id = "TEXT_SAFFRONCITY_SCIENTIST"
+npc_id = "saffron_city#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Silph_worker_m_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(368, 368)
+sprite_name = "silph_worker_m"
+text_id = "TEXT_SAFFRONCITY_SILPH_WORKER_M"
+npc_id = "saffron_city#8"
+dialog_data = SubResource("Dialog_8")
+
+[node name="Silph_worker_f_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 480)
+sprite_name = "silph_worker_f"
+text_id = "TEXT_SAFFRONCITY_SILPH_WORKER_F"
+npc_id = "saffron_city#9"
+dialog_data = SubResource("Dialog_9")
+
+[node name="Gentleman_10" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(480, 192)
+sprite_name = "gentleman"
+text_id = "TEXT_SAFFRONCITY_GENTLEMAN"
+npc_id = "saffron_city#10"
+dialog_data = SubResource("Dialog_10")
+
+[node name="Bird_11" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(496, 192)
+sprite_name = "bird"
+text_id = "TEXT_SAFFRONCITY_PIDGEOT"
+npc_id = "saffron_city#11"
+dialog_data = SubResource("Dialog_11")
+
+[node name="Rocker_12" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(288, 128)
+sprite_name = "rocker"
+text_id = "TEXT_SAFFRONCITY_ROCKER"
+npc_id = "saffron_city#12"
+dialog_data = SubResource("Dialog_12")
+
+[node name="Rocket_13" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(288, 352)
+sprite_name = "rocket"
+text_id = "TEXT_SAFFRONCITY_ROCKET8"
+npc_id = "saffron_city#13"
+dialog_data = SubResource("Dialog_13")
+
+[node name="Rocket_14" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(304, 352)
+sprite_name = "rocket"
+text_id = "TEXT_SAFFRONCITY_ROCKET9"
+npc_id = "saffron_city#14"
+dialog_data = SubResource("Dialog_14")

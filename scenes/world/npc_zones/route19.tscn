@@ -1,0 +1,124 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route19.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I must brace myself before the swim!"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Wait! Your heart may give out!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I love the deep! And you?"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["What lies beyond the horizon?"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I dove for #MON, but found nothing."])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I stare at the sea to forget!"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Oh, I do covet your steed! May I claim it, won?"])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Swimming's grand! Sunburns aren't!"])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["These waters run treacherous!"])
+
+[sub_resource type="Resource" id="Dialog_9"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I swam so far, but I am spent."])
+
+[node name="Route19NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 432.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Cooltrainer_m_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 112)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE19_COOLTRAINER_M1"
+npc_id = "route19#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Cooltrainer_m_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 112)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE19_COOLTRAINER_M2"
+npc_id = "route19#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Swimmer_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 400)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE19_SWIMMER1"
+npc_id = "route19#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Swimmer_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 432)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE19_SWIMMER2"
+npc_id = "route19#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Swimmer_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(256, 496)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE19_SWIMMER3"
+npc_id = "route19#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Swimmer_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 176)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE19_SWIMMER4"
+npc_id = "route19#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Swimmer_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 688)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE19_SWIMMER5"
+npc_id = "route19#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Swimmer_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 688)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE19_SWIMMER6"
+npc_id = "route19#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Swimmer_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 672)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE19_SWIMMER7"
+npc_id = "route19#8"
+dialog_data = SubResource("Dialog_8")
+
+[node name="Swimmer_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 704)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE19_SWIMMER8"
+npc_id = "route19#9"
+dialog_data = SubResource("Dialog_9")

@@ -1,0 +1,124 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route17.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["No coin comes from beating children!"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["What do you want, little one?"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Bound for FUCHSIA, are you?"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["We are BIKERs! Stars of the highway of ruin!"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Let VOLTORB shock you numb!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My #MON won't evolve! Why not?"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I could use some grim exercise!"])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Be a rebel, then!"])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Fine BIKE! How does it handle?"])
+
+[sub_resource type="Resource" id="Dialog_9"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Away, child! I am spent!"])
+
+[node name="Route17NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 1152.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Biker_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 304)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE17_BIKER1"
+npc_id = "route17#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Biker_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 256)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE17_BIKER2"
+npc_id = "route17#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Biker_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 288)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE17_BIKER3"
+npc_id = "route17#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Biker_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(112, 512)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE17_BIKER4"
+npc_id = "route17#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Biker_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(224, 544)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE17_BIKER5"
+npc_id = "route17#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Biker_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 928)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE17_BIKER6"
+npc_id = "route17#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Biker_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 1088)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE17_BIKER7"
+npc_id = "route17#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Biker_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(224, 1568)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE17_BIKER8"
+npc_id = "route17#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Biker_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 1568)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE17_BIKER9"
+npc_id = "route17#8"
+dialog_data = SubResource("Dialog_8")
+
+[node name="Biker_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 1888)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE17_BIKER10"
+npc_id = "route17#9"
+dialog_data = SubResource("Dialog_9")

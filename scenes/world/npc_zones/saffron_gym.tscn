@@ -1,0 +1,108 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/saffron_gym.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I foresaw your arrival. Every detail.", "I've heard others' thoughts since childhood. It never stops.", "Never quiet. Not for a moment.", "I take no joy in battle. But if you insist I'll show you true madness."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["SABRINA is younger than I, but I respect her!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Does our unseen power scare you?"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["#MON take on the appearance of their trainers.", "Your #MON must be tough, then!"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You know that power alone isn't enough!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You and I, our #MON shall fight!"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["SABRINA is young, but she's also our LEADER!", "You won't reach her easily!"])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["SAFFRON #MON GYM is famous for its psychics!", "You want to see SABRINA! I can tell!"])
+
+[node name="Saffron_gymNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Girl_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 128)
+sprite_name = "girl"
+text_id = "TEXT_SAFFRONGYM_SABRINA"
+npc_id = "saffron_gym#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Channeler_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 16)
+sprite_name = "channeler"
+text_id = "TEXT_SAFFRONGYM_CHANNELER1"
+npc_id = "saffron_gym#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Youngster_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 16)
+sprite_name = "youngster"
+text_id = "TEXT_SAFFRONGYM_YOUNGSTER1"
+npc_id = "saffron_gym#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Channeler_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 112)
+sprite_name = "channeler"
+text_id = "TEXT_SAFFRONGYM_CHANNELER2"
+npc_id = "saffron_gym#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Youngster_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 112)
+sprite_name = "youngster"
+text_id = "TEXT_SAFFRONGYM_YOUNGSTER2"
+npc_id = "saffron_gym#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Channeler_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 208)
+sprite_name = "channeler"
+text_id = "TEXT_SAFFRONGYM_CHANNELER3"
+npc_id = "saffron_gym#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Youngster_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 208)
+sprite_name = "youngster"
+text_id = "TEXT_SAFFRONGYM_YOUNGSTER3"
+npc_id = "saffron_gym#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Youngster_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 16)
+sprite_name = "youngster"
+text_id = "TEXT_SAFFRONGYM_YOUNGSTER4"
+npc_id = "saffron_gym#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Gym_guide_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 240)
+sprite_name = "gym_guide"
+text_id = "TEXT_SAFFRONGYM_GYM_GUIDE"
+npc_id = "saffron_gym#8"

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/seafoam_islands_b1_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[node name="Seafoam_islands_b1_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(240.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Boulder_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 96)
+sprite_name = "boulder"
+text_id = "TEXT_SEAFOAMISLANDSB1F_BOULDER1"
+npc_id = "seafoam_islands_b1_f#0"
+
+[node name="Boulder_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(352, 96)
+sprite_name = "boulder"
+text_id = "TEXT_SEAFOAMISLANDSB1F_BOULDER2"
+npc_id = "seafoam_islands_b1_f#1"

@@ -1,0 +1,91 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route16.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["What do you want?"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Fine BIKE! Hand it to me now!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Come play, my little mouse!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hey, you just struck me!"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I'm feeling hungry and cruel!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Fine, I'll go!"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["SNORLAX awoke!", "It struck out in a bitter rage!"])
+
+[node name="Route16NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(320.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Biker_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 192)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE16_BIKER1"
+npc_id = "route16#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Biker_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(224, 208)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE16_BIKER2"
+npc_id = "route16#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Biker_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 192)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE16_BIKER3"
+npc_id = "route16#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Biker_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 176)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE16_BIKER4"
+npc_id = "route16#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Biker_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 160)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE16_BIKER5"
+npc_id = "route16#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Biker_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 192)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE16_BIKER6"
+npc_id = "route16#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Snorlax_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(416, 160)
+sprite_name = "snorlax"
+text_id = "TEXT_ROUTE16_SNORLAX"
+npc_id = "route16#6"
+dialog_data = SubResource("Dialog_6")

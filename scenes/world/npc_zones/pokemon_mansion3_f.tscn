@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/pokemon_mansion3_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["This ruin is simply vast!"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My mentor once dwelt in this very ruin."])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Diary: Feb. 6 MEW gave birth.", "We named the newborn, cursed child, MEWTWO."])
+
+[node name="Pokemon_mansion3_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(240.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Super_nerd_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 176)
+sprite_name = "super_nerd"
+text_id = "TEXT_POKEMONMANSION3F_SUPER_NERD"
+npc_id = "pokemon_mansion3_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Scientist_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(320, 176)
+sprite_name = "scientist"
+text_id = "TEXT_POKEMONMANSION3F_SCIENTIST"
+npc_id = "pokemon_mansion3_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Poke_ball_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 256)
+sprite_name = "poke_ball"
+text_id = "TEXT_POKEMONMANSION3F_MAX_POTION"
+npc_id = "pokemon_mansion3_f#2"
+
+[node name="Poke_ball_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(400, 80)
+sprite_name = "poke_ball"
+text_id = "TEXT_POKEMONMANSION3F_IRON"
+npc_id = "pokemon_mansion3_f#3"
+
+[node name="Pokedex_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 192)
+sprite_name = "pokedex"
+text_id = "TEXT_POKEMONMANSION3F_DIARY"
+npc_id = "pokemon_mansion3_f#4"
+dialog_data = SubResource("Dialog_4")

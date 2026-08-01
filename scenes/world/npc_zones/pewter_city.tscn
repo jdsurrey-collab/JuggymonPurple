@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/pewter_city.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["They say CLEFAIRY fell from the moon itself.", "They came when a MOON STONE struck MT.MOON."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Few serious #MON trainers linger here.", "Mostly BUG CATCHERs. Only BROCK, of the GYM, still cares."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Have you seen the MUSEUM yet?"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Psst. Do you know my purpose here?"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["A trainer, are you? BROCK hungers for new challengers. Follow, then."])
+
+[node name="Pewter_cityNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(320.0, 288.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Cooltrainer_f_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 240)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_PEWTERCITY_COOLTRAINER_F"
+npc_id = "pewter_city#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Cooltrainer_m_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 400)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_PEWTERCITY_COOLTRAINER_M"
+npc_id = "pewter_city#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Super_nerd_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(432, 272)
+sprite_name = "super_nerd"
+text_id = "TEXT_PEWTERCITY_SUPER_NERD1"
+npc_id = "pewter_city#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Super_nerd_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(416, 400)
+sprite_name = "super_nerd"
+text_id = "TEXT_PEWTERCITY_SUPER_NERD2"
+npc_id = "pewter_city#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Youngster_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(560, 256)
+sprite_name = "youngster"
+text_id = "TEXT_PEWTERCITY_YOUNGSTER"
+npc_id = "pewter_city#4"
+dialog_data = SubResource("Dialog_4")

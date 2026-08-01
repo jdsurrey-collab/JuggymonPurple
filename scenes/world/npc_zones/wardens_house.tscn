@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/wardens_house.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["WARDEN: Hif fuff hefifoo!", "Ha lof ha feef ee hafahi ho. Heff hee fwee!"])
+
+[node name="Wardens_houseNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(80.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Warden_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 48)
+sprite_name = "warden"
+text_id = "TEXT_WARDENSHOUSE_WARDEN"
+npc_id = "wardens_house#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Poke_ball_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 48)
+sprite_name = "poke_ball"
+text_id = "TEXT_WARDENSHOUSE_RARE_CANDY"
+npc_id = "wardens_house#1"
+
+[node name="Boulder_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 64)
+sprite_name = "boulder"
+text_id = "TEXT_WARDENSHOUSE_BOULDER"
+npc_id = "wardens_house#2"

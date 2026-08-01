@@ -1,0 +1,91 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/s_s_anne_kitchen.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You, mon petit! We're busy. Out from underfoot!"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I saw a strange ball, in the trash."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["So much work, I grow dizzy!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hum-de-hum-de- ho...", "I peel spuds every day, and every day. Hum..."])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Did you hear of SNORLAX?", "It only eats, and sleeps."])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Snivel...Sniff...", "Only onions for me... always onions. Snivel..."])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Er-hem! I am indeed le CHEF.", "Tonight's main course is- Salmon du Salad!", "Les guests will grumble- fish, again. Eels au Barbecue!", "Les guests may mutiny, I fear. Prime Beef Steak!", "Have I enough fillets du beef?"])
+
+[node name="S_s_anne_kitchenNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(112.0, 128.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Cook_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 128)
+sprite_name = "cook"
+text_id = "TEXT_SSANNEKITCHEN_COOK1"
+npc_id = "s_s_anne_kitchen#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Cook_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 128)
+sprite_name = "cook"
+text_id = "TEXT_SSANNEKITCHEN_COOK2"
+npc_id = "s_s_anne_kitchen#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Cook_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 112)
+sprite_name = "cook"
+text_id = "TEXT_SSANNEKITCHEN_COOK3"
+npc_id = "s_s_anne_kitchen#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Cook_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 96)
+sprite_name = "cook"
+text_id = "TEXT_SSANNEKITCHEN_COOK4"
+npc_id = "s_s_anne_kitchen#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Cook_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 128)
+sprite_name = "cook"
+text_id = "TEXT_SSANNEKITCHEN_COOK5"
+npc_id = "s_s_anne_kitchen#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Cook_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 160)
+sprite_name = "cook"
+text_id = "TEXT_SSANNEKITCHEN_COOK6"
+npc_id = "s_s_anne_kitchen#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Cook_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 208)
+sprite_name = "cook"
+text_id = "TEXT_SSANNEKITCHEN_COOK7"
+npc_id = "s_s_anne_kitchen#6"
+dialog_data = SubResource("Dialog_6")

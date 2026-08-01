@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/vermilion_pidgey_house.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My PIDGEY will carry a letter north, to SAFFRON."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["PIDGEY: Kurukkoo!@"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Dear PIPPI, I long to see you.", "SAFFRON, they say, is plagued by TEAM ROCKET.", "VERMILION seems safer, for now."])
+
+[node name="Vermilion_pidgey_houseNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(64.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Youngster_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 48)
+sprite_name = "youngster"
+text_id = "TEXT_VERMILIONPIDGEYHOUSE_YOUNGSTER"
+npc_id = "vermilion_pidgey_house#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Bird_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 80)
+sprite_name = "bird"
+text_id = "TEXT_VERMILIONPIDGEYHOUSE_PIDGEY"
+npc_id = "vermilion_pidgey_house#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Paper_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 48)
+sprite_name = "paper"
+text_id = "TEXT_VERMILIONPIDGEYHOUSE_LETTER"
+npc_id = "vermilion_pidgey_house#2"
+dialog_data = SubResource("Dialog_2")

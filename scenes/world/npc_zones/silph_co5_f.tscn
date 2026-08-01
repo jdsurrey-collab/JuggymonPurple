@@ -1,0 +1,100 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/silph_co5_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["TEAM ROCKET rages over some intruder about. That's you, then?"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I heard some child wandered in here."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["We study # BALL craft on this very floor!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Whaaat? No child ought to be here at all!"])
+
+[node name="Silph_co5_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(240.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Silph_worker_m_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 144)
+sprite_name = "silph_worker_m"
+text_id = "TEXT_SILPHCO5F_SILPH_WORKER_M"
+npc_id = "silph_co5_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Rocket_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 256)
+sprite_name = "rocket"
+text_id = "TEXT_SILPHCO5F_ROCKET1"
+npc_id = "silph_co5_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Scientist_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 48)
+sprite_name = "scientist"
+text_id = "TEXT_SILPHCO5F_SCIENTIST"
+npc_id = "silph_co5_f#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Rocker_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(288, 160)
+sprite_name = "rocker"
+text_id = "TEXT_SILPHCO5F_ROCKER"
+npc_id = "silph_co5_f#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Rocket_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(448, 64)
+sprite_name = "rocket"
+text_id = "TEXT_SILPHCO5F_ROCKET2"
+npc_id = "silph_co5_f#4"
+
+[node name="Poke_ball_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 208)
+sprite_name = "poke_ball"
+text_id = "TEXT_SILPHCO5F_TM_TAKE_DOWN"
+npc_id = "silph_co5_f#5"
+
+[node name="Poke_ball_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 96)
+sprite_name = "poke_ball"
+text_id = "TEXT_SILPHCO5F_PROTEIN"
+npc_id = "silph_co5_f#6"
+
+[node name="Poke_ball_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(336, 256)
+sprite_name = "poke_ball"
+text_id = "TEXT_SILPHCO5F_CARD_KEY"
+npc_id = "silph_co5_f#7"
+
+[node name="Clipboard_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(352, 192)
+sprite_name = "clipboard"
+text_id = "TEXT_SILPHCO5F_POKEMON_REPORT1"
+npc_id = "silph_co5_f#8"
+
+[node name="Clipboard_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(400, 160)
+sprite_name = "clipboard"
+text_id = "TEXT_SILPHCO5F_POKEMON_REPORT2"
+npc_id = "silph_co5_f#9"
+
+[node name="Clipboard_10" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(384, 96)
+sprite_name = "clipboard"
+text_id = "TEXT_SILPHCO5F_POKEMON_REPORT3"
+npc_id = "silph_co5_f#10"

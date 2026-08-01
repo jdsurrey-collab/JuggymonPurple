@@ -1,0 +1,113 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route8.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Fine with #MON, are you? How's your chemistry?"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Very well. Let the dice fall."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["One needs strategy, here!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I favor NIDORAN. I hoard them!"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["School has its joys. #MON, too."])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["MEOWTH, so sweet. Meow."])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["We must seem foolish, stood here like this."])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I'm a rambling, gambling wretch!"])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["What's soft, and round, and dear as a #MON?"])
+
+[node name="Route8NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(480.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Super_nerd_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 80)
+sprite_name = "super_nerd"
+text_id = "TEXT_ROUTE8_SUPER_NERD1"
+npc_id = "route8#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Gambler_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 144)
+sprite_name = "gambler"
+text_id = "TEXT_ROUTE8_GAMBLER1"
+npc_id = "route8#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Super_nerd_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(672, 96)
+sprite_name = "super_nerd"
+text_id = "TEXT_ROUTE8_SUPER_NERD2"
+npc_id = "route8#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Cooltrainer_f_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(416, 48)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE8_COOLTRAINER_F1"
+npc_id = "route8#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Super_nerd_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(416, 64)
+sprite_name = "super_nerd"
+text_id = "TEXT_ROUTE8_SUPER_NERD3"
+npc_id = "route8#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Cooltrainer_f_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(416, 80)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE8_COOLTRAINER_F2"
+npc_id = "route8#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Cooltrainer_f_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(416, 96)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE8_COOLTRAINER_F3"
+npc_id = "route8#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Gambler_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(736, 208)
+sprite_name = "gambler"
+text_id = "TEXT_ROUTE8_GAMBLER2"
+npc_id = "route8#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Cooltrainer_f_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(816, 192)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE8_COOLTRAINER_F4"
+npc_id = "route8#8"
+dialog_data = SubResource("Dialog_8")

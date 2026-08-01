@@ -11,8 +11,21 @@ extends Node2D
 enum Page { MESSAGE, MAIN_MENU, MOVE_SELECT }
 
 const MAIN_OPTIONS := ["FIGHT", "PKMN", "ITEM", "RUN"]
+const HP_BAR_WIDTH := 80.0
+
+## Fraction of the FULL bar drained per second -- a real Pokémon game's HP
+## bar ticks down at a roughly constant rate regardless of how much damage
+## was dealt (so a bigger hit takes proportionally longer to finish
+## draining, which is what actually reads as "over time" rather than an
+## instant snap). FAST is exactly double, for the one instance Battle marks
+## as a critical hit or a super-effective (>=2x) hit landing -- every other
+## HP change (drain-heal, recoil, residual poison/burn, HEAL_EFFECT) uses
+## the normal rate.
+const HP_DRAIN_RATE := 0.6
+const HP_DRAIN_RATE_FAST := 1.2
 
 var page: Page = Page.MESSAGE
+var _hp_tweens: Dictionary = {}  ## "player"/"enemy" -> Tween, so a new hit can cancel/replace an in-flight drain
 var _message_queue: Array[String] = []
 var _main_selected: int = 0
 var _move_selected: int = 0
@@ -46,24 +59,55 @@ func setup(player_mon: PartyMon, enemy_mon: PartyMon, is_trainer: bool = false) 
 	_advance_message_queue()
 
 
+## Full instant refresh -- used once, at battle start (setup()), where a
+## bar animating up from empty would look wrong. Every HP change DURING the
+## battle goes through _on_mon_changed()'s animated path instead.
 func _refresh_all() -> void:
 	_enemy_label.text = "%s Lv%d" % [_enemy_mon.display_name(), _enemy_mon.level]
 	_player_label.text = "%s Lv%d" % [_player_mon.display_name(), _player_mon.level]
-	_update_hp_bar(_enemy_hp_fg, _enemy_mon)
-	_update_hp_bar(_player_hp_fg, _player_mon)
+	_set_hp_bar_instant(_enemy_hp_fg, _enemy_mon)
+	_set_hp_bar_instant(_player_hp_fg, _player_mon)
 	_player_hp_number.text = ("RIP" if _player_mon.is_dead else "%d/%d" % [_player_mon.current_hp, _player_mon.max_hp()])
 
 
-func _update_hp_bar(fg: ColorRect, mon: PartyMon) -> void:
-	fg.size.x = 80.0 * clampf(mon.hp_fraction(), 0.0, 1.0)
+func _set_hp_bar_instant(fg: ColorRect, mon: PartyMon) -> void:
+	fg.size.x = HP_BAR_WIDTH * clampf(mon.hp_fraction(), 0.0, 1.0)
 
 
 func _on_message(text: String) -> void:
 	_message_queue.append(text)
 
 
-func _on_mon_changed(_side: String) -> void:
-	_refresh_all()
+func _on_mon_changed(side: String, fast: bool = false) -> void:
+	# Names/level never change mid-battle -- only the bar and the HP number
+	# need to react here, not a full _refresh_all() (which would also snap
+	# the bar instantly, defeating the point of animating it).
+	_player_hp_number.text = ("RIP" if _player_mon.is_dead else "%d/%d" % [_player_mon.current_hp, _player_mon.max_hp()])
+	if side == "enemy":
+		_animate_hp_bar("enemy", _enemy_hp_fg, _enemy_mon, fast)
+	else:
+		_animate_hp_bar("player", _player_hp_fg, _player_mon, fast)
+
+
+## Tweens the bar's width toward the mon's real current HP fraction rather
+## than snapping to it. Duration is derived from how far the bar has to
+## travel, at HP_DRAIN_RATE (or double, for `fast`) fraction-of-bar per
+## second -- NOT a fixed duration -- so a big hit visibly takes longer to
+## drain than a small one, same as a real Pokémon game's feel.
+func _animate_hp_bar(side: String, fg: ColorRect, mon: PartyMon, fast: bool) -> void:
+	var target_width: float = HP_BAR_WIDTH * clampf(mon.hp_fraction(), 0.0, 1.0)
+	var distance: float = absf(target_width - fg.size.x)
+	var rate: float = HP_DRAIN_RATE_FAST if fast else HP_DRAIN_RATE
+	var duration: float = maxf((distance / HP_BAR_WIDTH) / rate, 0.05)
+
+	if _hp_tweens.has(side):
+		var old_tween: Tween = _hp_tweens[side]
+		if old_tween and old_tween.is_valid():
+			old_tween.kill()  # a new hit landing mid-drain should redirect, not queue up
+
+	var tw := create_tween()
+	tw.tween_property(fg, "size:x", target_width, duration)
+	_hp_tweens[side] = tw
 
 
 func _on_battle_ended(_result: String) -> void:

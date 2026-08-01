@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/safari_zone_east.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[node name="Safari_zone_eastNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(240.0, 208.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Poke_ball_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(336, 160)
+sprite_name = "poke_ball"
+text_id = "TEXT_SAFARIZONEEAST_FULL_RESTORE"
+npc_id = "safari_zone_east#0"
+
+[node name="Poke_ball_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 112)
+sprite_name = "poke_ball"
+text_id = "TEXT_SAFARIZONEEAST_MAX_RESTORE"
+npc_id = "safari_zone_east#1"
+
+[node name="Poke_ball_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(320, 208)
+sprite_name = "poke_ball"
+text_id = "TEXT_SAFARIZONEEAST_CARBOS"
+npc_id = "safari_zone_east#2"
+
+[node name="Poke_ball_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(240, 192)
+sprite_name = "poke_ball"
+text_id = "TEXT_SAFARIZONEEAST_TM_EGG_BOMB"
+npc_id = "safari_zone_east#3"

@@ -1,0 +1,54 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route23.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[node name="Route23NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 1152.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Guard_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 560)
+sprite_name = "guard"
+text_id = "TEXT_ROUTE23_GUARD1"
+npc_id = "route23#0"
+
+[node name="Guard_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 896)
+sprite_name = "guard"
+text_id = "TEXT_ROUTE23_GUARD2"
+npc_id = "route23#1"
+
+[node name="Swimmer_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 1360)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE23_SWIMMER1"
+npc_id = "route23#2"
+
+[node name="Swimmer_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 1536)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE23_SWIMMER2"
+npc_id = "route23#3"
+
+[node name="Guard_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 1680)
+sprite_name = "guard"
+text_id = "TEXT_ROUTE23_GUARD3"
+npc_id = "route23#4"
+
+[node name="Guard_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 1904)
+sprite_name = "guard"
+text_id = "TEXT_ROUTE23_GUARD4"
+npc_id = "route23#5"
+
+[node name="Guard_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 2176)
+sprite_name = "guard"
+text_id = "TEXT_ROUTE23_GUARD5"
+npc_id = "route23#6"

@@ -21,14 +21,19 @@ GameState="*res://scripts/autoloads/game_state.gd"
 Dialogue="*res://scripts/autoloads/dialogue.gd"
 GameData="*res://scripts/autoloads/game_data.gd"
 SceneFlow="*res://scripts/autoloads/scene_flow.gd"
+MapScripts="*res://scripts/autoloads/map_scripts.gd"
+DevVerifyWorld="*res://scripts/dev/verify_world.gd"
+DevVerifyWarps="*res://scripts/dev/verify_warps.gd"
+DevVerifyIntro="*res://scripts/dev/verify_intro.gd"
 SaveSystem="*res://scripts/autoloads/save_system.gd"
 PartyMenu="*res://scripts/autoloads/party_menu.gd"
-ChoiceMenu="*res://scripts/autoloads/choice_menu.gd"
-MapScripts="*res://scripts/autoloads/map_scripts.gd"
 Battle="*res://scripts/battle/battle.gd"
+ChoiceMenu="*res://scripts/autoloads/choice_menu.gd"
+DevVerifyOaksLab="*res://scripts/dev/verify_oaks_lab.gd"
+DevVerifyTextEngine="*res://scripts/dev/verify_text_engine.gd"
 NPCRegistry="*res://scripts/autoloads/npc_registry.gd"
 BattleLauncher="*res://scripts/autoloads/battle_launcher.gd"
-EncounterRegistry="*res://scripts/autoloads/encounter_registry.gd"
+VerifyPlayerFacing="*res://scripts/dev/verify_player_facing.gd"
 
 [display]
 
@@ -37,7 +42,17 @@ window/size/viewport_height=144
 window/size/window_width_override=640
 window/size/window_height_override=576
 window/stretch/mode="canvas_items"
-window/stretch/aspect="keep"
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "green",
+"res://data/": "pink",
+"res://resources/": "orange",
+"res://scenes/": "purple",
+"res://scripts/": "red",
+"res://tools/": "yellow"
+}
 
 [input]
 

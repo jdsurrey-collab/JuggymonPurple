@@ -2,8 +2,8 @@ class_name EncounterZoneData
 extends Resource
 ## Cookie-cutter wild-encounter data for one zone. Grass, water (surfing),
 ## and cave floors all use this exact same data shape and trigger mechanism
-## -- only WHICH cells count as a zone differs per placement (see
-## EncounterRegistry), never the roll logic itself.
+## -- only WHERE a zone is placed differs (see EncounterZone, a real Godot
+## scene the zone's rectangle is drawn/resized on), never the roll logic.
 ##
 ## Mirrors the ROM's real 10-slot wild table (data/wild/maps/*.asm): slot
 ## RARITY is fixed and shared (SLOT_CHANCES below, matches
@@ -28,10 +28,9 @@ const TIER_CHANCES := [90, 51, 36, 26, 18, 13, 9, 6, 4, 3]
 
 ## Up to SLOT_CHANCES.size() (10) entries, ordered slot 0 (commonest) through
 ## slot 9 (rarest) -- same commonest-first convention as the real tables.
-## Each: {"species": "PIDGEY", "level": 3} for a fixed level, or
-## {"species": "PIDGEY", "level_min": 3, "level_max": 4} for a range (a
-## handful of real ROM slots use a range, e.g. Route 1's own Pidgey is 3-4).
-@export var slots: Array[Dictionary] = []
+## Each element is its own typed EncounterSlotData -- expand one in the
+## Inspector to edit its species/level directly, no dictionary syntax.
+@export var slots: Array[EncounterSlotData] = []
 
 
 ## Rolls whether an encounter happens this step (encounter_rate/255 odds).
@@ -55,18 +54,13 @@ func roll_encounter() -> Dictionary:
 			break
 	if slot_index >= slots.size():
 		return {}
-	var slot: Dictionary = slots[slot_index]
-	var species: String = str(slot.get("species", ""))
-	if species == "":
+	var slot: EncounterSlotData = slots[slot_index]
+	if slot == null or slot.species == "":
 		return {}
-	var level: int
-	if slot.has("level_min"):
-		var lo: int = int(slot.get("level_min", 1))
-		var hi: int = int(slot.get("level_max", lo))
-		level = lo if hi <= lo else lo + (randi() % (hi - lo + 1))
-	else:
-		level = int(slot.get("level", 5))
-	return {"species": species, "level": level}
+	var lo: int = slot.level_min
+	var hi: int = maxi(slot.level_max, lo)
+	var level: int = lo if hi <= lo else lo + (randi() % (hi - lo + 1))
+	return {"species": slot.species, "level": level}
 
 
 static func roll_wild_tier() -> int:

@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/silph_co8_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I wonder if SILPH is done for, now..."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["That's as far as you shall go!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You're causing us such grief!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I am one of the 4 ROCKET BROTHERS!"])
+
+[node name="Silph_co8_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(208.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Silph_worker_m_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 32)
+sprite_name = "silph_worker_m"
+text_id = "TEXT_SILPHCO8F_SILPH_WORKER_M"
+npc_id = "silph_co8_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Rocket_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(304, 32)
+sprite_name = "rocket"
+text_id = "TEXT_SILPHCO8F_ROCKET1"
+npc_id = "silph_co8_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Scientist_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 32)
+sprite_name = "scientist"
+text_id = "TEXT_SILPHCO8F_SCIENTIST"
+npc_id = "silph_co8_f#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Rocket_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 240)
+sprite_name = "rocket"
+text_id = "TEXT_SILPHCO8F_ROCKET2"
+npc_id = "silph_co8_f#3"
+dialog_data = SubResource("Dialog_3")

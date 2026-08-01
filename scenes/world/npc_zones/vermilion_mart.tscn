@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/vermilion_mart.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Some souls will twist #MON to cruel, criminal ends.", "TEAM ROCKET traffics in rare #MON.", "They discard the ones they deem worthless, or unlovely, or slow."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["A #MON is good or evil as its trainer makes it so."])
+
+[node name="Vermilion_martNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(64.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Clerk_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(0, 80)
+sprite_name = "clerk"
+text_id = "TEXT_VERMILIONMART_CLERK"
+npc_id = "vermilion_mart#0"
+
+[node name="Cooltrainer_m_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 96)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_VERMILIONMART_COOLTRAINER_M"
+npc_id = "vermilion_mart#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Cooltrainer_f_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 48)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_VERMILIONMART_COOLTRAINER_F"
+npc_id = "vermilion_mart#2"
+dialog_data = SubResource("Dialog_2")

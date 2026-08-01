@@ -51,6 +51,8 @@ var _focus_slug: String = ""
 
 const NPC_SCENE := preload("res://scenes/characters/npc.tscn")
 const PLAYER_SCENE := preload("res://scenes/characters/player.tscn")
+const ENCOUNTER_ZONE_DIR := "res://scenes/world/encounter_zones/"
+const NPC_ZONE_DIR := "res://scenes/world/npc_zones/"
 
 
 func _ready() -> void:
@@ -120,6 +122,7 @@ func _stitch(slug: String, origin: Vector2i) -> bool:
 	_ensure_tileset(data["tileset"])
 	_paint_tiles(slug)
 	_spawn_npcs(slug)
+	_spawn_encounter_zones(slug)
 	return true
 
 
@@ -226,7 +229,46 @@ func _paint_tiles(slug: String) -> void:
 				Vector2i(id % TILESET_COLUMNS, id / TILESET_COLUMNS))
 
 
+## Dispatches to whichever NPC source this map actually has: a generated,
+## hand-tunable npc_zones/<slug>.tscn if one exists (current default, see
+## npc.gd's own header comment), or the original JSON-procedural path as a
+## fallback for any map not yet covered -- so a map is never silently left
+## with no NPCs just because its zone scene hasn't been generated/reviewed
+## yet.
 func _spawn_npcs(slug: String) -> void:
+	var path := NPC_ZONE_DIR + slug + ".tscn"
+	if ResourceLoader.exists(path):
+		_spawn_npc_zone(slug, path)
+	else:
+		_spawn_npcs_legacy(slug)
+
+
+## Instances slug's npc_zones scene, reparents each placed Npc straight into
+## _entities (a flat list is what npc_at()/_npc_occupies() already expect --
+## simplest to just move them out rather than teach those lookups to recurse
+## into containers), converts each from that map's local placement to a real
+## world cell via place(), then discards the now-empty container. Unlike
+## _spawn_encounter_zones' container (which stays in the tree and is queried
+## live via global_position), there's no reason for this one to persist --
+## NPCs are looked up by iterating _entities directly, not by zone.
+func _spawn_npc_zone(slug: String, path: String) -> void:
+	var e: Dictionary = _entry(slug)
+	var container: Node = load(path).instantiate()
+	for child in container.get_children():
+		if child.has_method("place"):
+			container.remove_child(child)
+			# Reparenting alone leaves `owner` pointing at the now-discarded
+			# container (a separate property from the parent, used for scene
+			# serialization) -- Godot warns loudly about this every time
+			# unless it's cleared before the child lands in its real tree.
+			child.owner = null
+			_entities.add_child(child)
+			child.place(self, e.origin)
+			child.set_meta("home_map", slug)
+	container.free()
+
+
+func _spawn_npcs_legacy(slug: String) -> void:
 	var e: Dictionary = _entry(slug)
 	var list: Array = e.data.get("npcs", [])
 	for i in list.size():
@@ -243,6 +285,24 @@ func _spawn_npcs(slug: String) -> void:
 		world_n["npc_id"] = "%s#%d" % [slug, i]
 		npc.setup(self, world_n)
 		npc.set_meta("home_map", slug)
+
+
+## Instances `slug`'s encounter-zone placement scene (scenes/world/
+## encounter_zones/<slug>.tscn), if one exists, positioned at that map's
+## real stitched-world origin -- its EncounterZone children then compare
+## directly against WORLD cells via their own global_position, no per-map
+## origin math needed here. A map with no wild encounters simply has no
+## matching scene file; nothing spawns, encounter_zone_at() finds nothing.
+func _spawn_encounter_zones(slug: String) -> void:
+	var path := ENCOUNTER_ZONE_DIR + slug + ".tscn"
+	if not ResourceLoader.exists(path):
+		return
+	var e: Dictionary = _entry(slug)
+	var container: Node2D = load(path).instantiate()
+	_entities.add_child(container)
+	container.position = Vector2(e.origin) * CELL_PX
+	container.set_meta("home_map", slug)
+	container.set_meta("is_encounter_zone_container", true)
 
 
 func _spawn_player() -> void:
@@ -341,6 +401,20 @@ func on_player_moved(world_cell: Vector2i) -> void:
 		for slug in _loaded.keys():
 			if _in_map(slug, world_cell):
 				_focus_slug = slug
+				# map_slug (the exported/public field) must track focus shifts
+				# too, not just _focus_slug -- SaveSystem and BattleLauncher
+				# both read map.map_slug expecting it to mean "the map the
+				# player is standing on right now." Left out originally, this
+				# went unnoticed because load_map() itself already sets
+				# map_slug correctly for any HARD load (a warp) -- it only
+				# went stale for the seamless walk-across-a-stitched-border
+				# case, e.g. walking from Pallet Town into Route 1's grass
+				# with no warp involved. A wild encounter triggered after
+				# that walk would capture the STALE slug (still "pallet_town")
+				# as where to return to after the battle -- reported as
+				# "doesn't stay in the same spot, teleports back home", which
+				# is exactly what reloading the wrong map looks like.
+				map_slug = slug
 				if GameData.is_outdoor_tileset(_entry(slug).data.get("tileset", "")):
 					_extend_neighbours(slug)
 				_update_camera_limits()
@@ -353,6 +427,18 @@ func on_player_moved(world_cell: Vector2i) -> void:
 	# that map's own local cell for any script that only cares about its own
 	# focus map -- no origin subtraction needed.
 	MapScripts.check_step(self, _focus_slug, world_cell)
+
+
+## Converts a WORLD-space cell to `slug`'s own LOCAL cell (subtracting that
+## map's current stitched origin). Needed by anything that captures a cell
+## now and wants to reapply it after `slug` gets hard-reset back to origin
+## zero later (BattleLauncher returning from a battle) -- a non-focus map's
+## stitched origin is whatever _extend_neighbours computed when it was
+## walked into, which is almost never zero. Same conversion warp_to()'s own
+## LAST_MAP bookkeeping already does inline (`player.cell - cur.origin`,
+## just above); this makes it reusable for callers outside this script.
+func local_cell(slug: String, world_cell: Vector2i) -> Vector2i:
+	return world_cell - _entry(slug).origin
 
 
 func _in_map(slug: String, world_cell: Vector2i) -> bool:
@@ -455,19 +541,20 @@ func warp_at(cell: Vector2i) -> Dictionary:
 	return {}
 
 
-## Wild-encounter zone at `cell` (world-space), if any -- grass/water/cave
-## placement per EncounterRegistry, gated on the cell actually being
-## walkable (a zone entry never overrides real map collision).
+## Wild-encounter zone at `cell` (world-space), if any -- checks every
+## EncounterZone instanced by _spawn_encounter_zones() (real, hand-placed
+## rectangles, see scenes/world/encounter_zones/<slug>.tscn), gated on the
+## cell actually being walkable (a zone rectangle never overrides real map
+## collision, even if drawn slightly past a wall for convenience).
 func encounter_zone_at(cell: Vector2i) -> EncounterZoneData:
-	for slug in _loaded.keys():
-		if not _in_map(slug, cell):
+	if not is_walkable(cell):
+		return null
+	for child in _entities.get_children():
+		if not child.get_meta("is_encounter_zone_container", false):
 			continue
-		var e: Dictionary = _entry(slug)
-		var local: Vector2i = cell - e.origin
-		if not is_walkable(cell):
-			continue
-		if EncounterRegistry.is_zone_cell(slug, local):
-			return EncounterRegistry.zone_data_for(slug)
+		for zone in child.zones():
+			if zone.contains_cell(cell):
+				return zone.data
 	return null
 
 

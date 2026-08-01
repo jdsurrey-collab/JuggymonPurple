@@ -1,0 +1,124 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/fuchsia_city.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Have you tried the SAFARI GAME? Some #MON hide there alone."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["SAFARI ZONE keeps a menagerie before its gate.", "Beyond lies the SAFARI GAME, for trapping #MON."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["ERIK: Where is SARA? I swore I'd meet her here."])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["That item ball yonder is truly a #MON."])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Name: CHANSEY", "Catching one is left to fate."])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Name: VOLTORB", "The very image of a # BALL."])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Name: KANGASKHAN", "A mournful #MON that shelters its young in a pouch on its belly."])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Name: SLOWPOKE", "Gentle and ever so slow moving."])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Name: LAPRAS", "A.K.A. the king of dark waters."])
+
+[sub_resource type="Resource" id="Dialog_9"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Name: OMANYTE", "A #MON dragged back from death, by fossil rite."])
+
+[node name="Fuchsia_cityNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(320.0, 288.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Youngster_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 192)
+sprite_name = "youngster"
+text_id = "TEXT_FUCHSIACITY_YOUNGSTER1"
+npc_id = "fuchsia_city#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Gambler_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(448, 272)
+sprite_name = "gambler"
+text_id = "TEXT_FUCHSIACITY_GAMBLER"
+npc_id = "fuchsia_city#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Fisher_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(480, 224)
+sprite_name = "fisher"
+text_id = "TEXT_FUCHSIACITY_ERIK"
+npc_id = "fuchsia_city#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Youngster_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(384, 128)
+sprite_name = "youngster"
+text_id = "TEXT_FUCHSIACITY_YOUNGSTER2"
+npc_id = "fuchsia_city#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Fairy_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(496, 80)
+sprite_name = "fairy"
+text_id = "TEXT_FUCHSIACITY_CHANSEY"
+npc_id = "fuchsia_city#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Poke_ball_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(400, 96)
+sprite_name = "poke_ball"
+text_id = "TEXT_FUCHSIACITY_VOLTORB"
+npc_id = "fuchsia_city#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Monster_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 96)
+sprite_name = "monster"
+text_id = "TEXT_FUCHSIACITY_KANGASKHAN"
+npc_id = "fuchsia_city#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Monster_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(480, 192)
+sprite_name = "monster"
+text_id = "TEXT_FUCHSIACITY_SLOWPOKE"
+npc_id = "fuchsia_city#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Seel_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 272)
+sprite_name = "seel"
+text_id = "TEXT_FUCHSIACITY_LAPRAS"
+npc_id = "fuchsia_city#8"
+dialog_data = SubResource("Dialog_8")
+
+[node name="Fossil_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 80)
+sprite_name = "fossil"
+text_id = "TEXT_FUCHSIACITY_FOSSIL"
+npc_id = "fuchsia_city#9"
+dialog_data = SubResource("Dialog_9")

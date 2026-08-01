@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/cerulean_cave2_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[node name="Cerulean_cave2_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(240.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Poke_ball_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(464, 144)
+sprite_name = "poke_ball"
+text_id = "TEXT_CERULEANCAVE2F_PP_UP"
+npc_id = "cerulean_cave2_f#0"
+
+[node name="Poke_ball_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 240)
+sprite_name = "poke_ball"
+text_id = "TEXT_CERULEANCAVE2F_ULTRA_BALL"
+npc_id = "cerulean_cave2_f#1"
+
+[node name="Poke_ball_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 96)
+sprite_name = "poke_ball"
+text_id = "TEXT_CERULEANCAVE2F_FULL_RESTORE"
+npc_id = "cerulean_cave2_f#2"

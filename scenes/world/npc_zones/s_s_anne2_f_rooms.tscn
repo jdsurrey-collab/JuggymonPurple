@@ -1,0 +1,147 @@
+[gd_scene load_steps=16 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/s_s_anne2_f_rooms.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Fighting the young keeps this old man youthful."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["See what I've fished up!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Which do you prize- a strong #MON, or a rare?"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I never saw you at the party."])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["In all my years, I've seen no #MON sleep as this one does.", "It went something like this-"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Ah, yes. I've seen #MON ferry the living across the water!"])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["#MON can CUT small bushes down."])
+
+[sub_resource type="Resource" id="Dialog_9"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Have you seen the SAFARI ZONE, in FUCHSIA CITY?", "So many rare #MON, caged."])
+
+[sub_resource type="Resource" id="Dialog_10"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Father and I think the SAFARI ZONE is grand."])
+
+[sub_resource type="Resource" id="Dialog_11"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["The CAPTAIN looks so ill, so pale, these days."])
+
+[sub_resource type="Resource" id="Dialog_12"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Many aboard fall seasick."])
+
+[node name="S_s_anne2_f_roomsNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(192.0, 128.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Gentleman_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 32)
+sprite_name = "gentleman"
+text_id = "TEXT_SSANNE2FROOMS_GENTLEMAN1"
+npc_id = "s_s_anne2_f_rooms#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Fisher_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 64)
+sprite_name = "fisher"
+text_id = "TEXT_SSANNE2FROOMS_FISHER"
+npc_id = "s_s_anne2_f_rooms#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Gentleman_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(0, 224)
+sprite_name = "gentleman"
+text_id = "TEXT_SSANNE2FROOMS_GENTLEMAN2"
+npc_id = "s_s_anne2_f_rooms#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Cooltrainer_f_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 176)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_SSANNE2FROOMS_COOLTRAINER_F"
+npc_id = "s_s_anne2_f_rooms#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Gentleman_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 32)
+sprite_name = "gentleman"
+text_id = "TEXT_SSANNE2FROOMS_GENTLEMAN3"
+npc_id = "s_s_anne2_f_rooms#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Poke_ball_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 16)
+sprite_name = "poke_ball"
+text_id = "TEXT_SSANNE2FROOMS_MAX_ETHER"
+npc_id = "s_s_anne2_f_rooms#5"
+
+[node name="Gentleman_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(336, 32)
+sprite_name = "gentleman"
+text_id = "TEXT_SSANNE2FROOMS_GENTLEMAN4"
+npc_id = "s_s_anne2_f_rooms#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Gramps_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(352, 16)
+sprite_name = "gramps"
+text_id = "TEXT_SSANNE2FROOMS_GRAMPS"
+npc_id = "s_s_anne2_f_rooms#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Poke_ball_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(0, 192)
+sprite_name = "poke_ball"
+text_id = "TEXT_SSANNE2FROOMS_RARE_CANDY"
+npc_id = "s_s_anne2_f_rooms#8"
+
+[node name="Gentleman_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 192)
+sprite_name = "gentleman"
+text_id = "TEXT_SSANNE2FROOMS_GENTLEMAN5"
+npc_id = "s_s_anne2_f_rooms#9"
+dialog_data = SubResource("Dialog_9")
+
+[node name="Little_boy_10" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 224)
+sprite_name = "little_boy"
+text_id = "TEXT_SSANNE2FROOMS_LITTLE_BOY"
+npc_id = "s_s_anne2_f_rooms#10"
+dialog_data = SubResource("Dialog_10")
+
+[node name="Brunette_girl_11" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(352, 192)
+sprite_name = "brunette_girl"
+text_id = "TEXT_SSANNE2FROOMS_BRUNETTE_GIRL"
+npc_id = "s_s_anne2_f_rooms#11"
+dialog_data = SubResource("Dialog_11")
+
+[node name="Beauty_12" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(320, 192)
+sprite_name = "beauty"
+text_id = "TEXT_SSANNE2FROOMS_BEAUTY"
+npc_id = "s_s_anne2_f_rooms#12"
+dialog_data = SubResource("Dialog_12")

@@ -1,0 +1,90 @@
+[gd_scene load_steps=15 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/encounter_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route21.png" id="2_backdrop"]
+[ext_resource type="Script" path="res://scripts/world/encounter_zone.gd" id="3_zone_script"]
+[ext_resource type="Script" path="res://scripts/resources/encounter_zone_data.gd" id="4_zone_data_script"]
+[ext_resource type="Script" path="res://scripts/resources/encounter_slot_data.gd" id="5_slot_script"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_route21"]
+size = Vector2(320, 1440)
+
+[sub_resource type="Resource" id="Slot_0"]
+script = ExtResource("5_slot_script")
+species = "TENTACOOL"
+level_min = 26
+level_max = 26
+
+[sub_resource type="Resource" id="Slot_1"]
+script = ExtResource("5_slot_script")
+species = "PIDGEY"
+level_min = 26
+level_max = 26
+
+[sub_resource type="Resource" id="Slot_2"]
+script = ExtResource("5_slot_script")
+species = "RATTATA"
+level_min = 27
+level_max = 27
+
+[sub_resource type="Resource" id="Slot_3"]
+script = ExtResource("5_slot_script")
+species = "PIDGEOTTO"
+level_min = 27
+level_max = 27
+
+[sub_resource type="Resource" id="Slot_4"]
+script = ExtResource("5_slot_script")
+species = "TANGELA"
+level_min = 28
+level_max = 28
+
+[sub_resource type="Resource" id="Slot_5"]
+script = ExtResource("5_slot_script")
+species = "MARILL"
+level_min = 28
+level_max = 28
+
+[sub_resource type="Resource" id="Slot_6"]
+script = ExtResource("5_slot_script")
+species = "REMORAID"
+level_min = 29
+level_max = 29
+
+[sub_resource type="Resource" id="Slot_7"]
+script = ExtResource("5_slot_script")
+species = "QWILFISH"
+level_min = 29
+level_max = 29
+
+[sub_resource type="Resource" id="Slot_8"]
+script = ExtResource("5_slot_script")
+species = "CORSOLA"
+level_min = 30
+level_max = 30
+
+[sub_resource type="Resource" id="Slot_9"]
+script = ExtResource("5_slot_script")
+species = "MANTINE"
+level_min = 30
+level_max = 30
+
+[sub_resource type="Resource" id="ZoneData_route21"]
+script = ExtResource("4_zone_data_script")
+encounter_rate = 25
+slots = Array[ExtResource("5_slot_script")]([SubResource("Slot_0"), SubResource("Slot_1"), SubResource("Slot_2"), SubResource("Slot_3"), SubResource("Slot_4"), SubResource("Slot_5"), SubResource("Slot_6"), SubResource("Slot_7"), SubResource("Slot_8"), SubResource("Slot_9")])
+
+[node name="Route21EncounterZones" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 720.0)
+texture = ExtResource("2_backdrop")
+
+[node name="GrassZone" type="Area2D" parent="."]
+script = ExtResource("3_zone_script")
+data = SubResource("ZoneData_route21")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(160.0, 720.0)
+shape = SubResource("RectangleShape2D_route21")

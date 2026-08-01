@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/saffron_pidgey_house.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My thanks for writing. I do hope to see you soon!", "Hey! Don't peer at my letter!"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["PIDGEY: Kurukkoo!@"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["The COPYCAT is dear! I'll get her a # DOLL!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I was given a PP UP as a gift.", "It swells the PP of your techniques!"])
+
+[node name="Saffron_pidgey_houseNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(64.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Brunette_girl_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 48)
+sprite_name = "brunette_girl"
+text_id = "TEXT_SAFFRONPIDGEYHOUSE_BRUNETTE_GIRL"
+npc_id = "saffron_pidgey_house#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Bird_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(0, 64)
+sprite_name = "bird"
+text_id = "TEXT_SAFFRONPIDGEYHOUSE_PIDGEY"
+npc_id = "saffron_pidgey_house#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Youngster_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 16)
+sprite_name = "youngster"
+text_id = "TEXT_SAFFRONPIDGEYHOUSE_YOUNGSTER"
+npc_id = "saffron_pidgey_house#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Paper_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 48)
+sprite_name = "paper"
+text_id = "TEXT_SAFFRONPIDGEYHOUSE_PAPER"
+npc_id = "saffron_pidgey_house#3"
+dialog_data = SubResource("Dialog_3")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route2.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[node name="Route2NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 576.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Poke_ball_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 864)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROUTE2_MOON_STONE"
+npc_id = "route2#0"
+
+[node name="Poke_ball_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 720)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROUTE2_HP_UP"
+npc_id = "route2#1"

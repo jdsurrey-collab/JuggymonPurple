@@ -1,0 +1,75 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/mr_fujis_house.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Odd. MR.FUJI isn't home. Where's he gone?"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["This is truly MR.FUJI's house.", "He's kind, in a hard world.", "He shelters abandoned and orphaned #MON."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["PSYDUCK: Gwappa!@"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["NIDORINO: Gaoo!@"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["MR.FUJI: <PLAYER>.", "Your quest will fail, without love for your #MON.", "This may help you, some."])
+
+[node name="Mr_fujis_houseNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(64.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Super_nerd_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 80)
+sprite_name = "super_nerd"
+text_id = "TEXT_MRFUJISHOUSE_SUPER_NERD"
+npc_id = "mr_fujis_house#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Little_girl_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 48)
+sprite_name = "little_girl"
+text_id = "TEXT_MRFUJISHOUSE_LITTLE_GIRL"
+npc_id = "mr_fujis_house#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Monster_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 64)
+sprite_name = "monster"
+text_id = "TEXT_MRFUJISHOUSE_PSYDUCK"
+npc_id = "mr_fujis_house#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Monster_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 48)
+sprite_name = "monster"
+text_id = "TEXT_MRFUJISHOUSE_NIDORINO"
+npc_id = "mr_fujis_house#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Mr_fuji_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 16)
+sprite_name = "mr_fuji"
+text_id = "TEXT_MRFUJISHOUSE_MR_FUJI"
+npc_id = "mr_fujis_house#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Pokedex_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 48)
+sprite_name = "pokedex"
+text_id = "TEXT_MRFUJISHOUSE_POKEDEX"
+npc_id = "mr_fujis_house#5"

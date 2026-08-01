@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route7_gate.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[node name="Route7_gateNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(48.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Guard_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 16)
+sprite_name = "guard"
+text_id = "TEXT_ROUTE7GATE_GUARD"
+npc_id = "route7_gate#0"

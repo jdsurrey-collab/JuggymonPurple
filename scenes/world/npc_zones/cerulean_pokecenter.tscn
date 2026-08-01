@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/cerulean_pokecenter.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["That BILL.", "I hear he'd do near anything to own a rare #MON, whatever the cost."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Have you heard of BILL?", "They call him a #MANIAC.", "Envy, if you ask me. Nothing more.", "Who wouldn't want to boast of their own #MON?"])
+
+[node name="Cerulean_pokecenterNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(112.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Nurse_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 16)
+sprite_name = "nurse"
+text_id = "TEXT_CERULEANPOKECENTER_NURSE"
+npc_id = "cerulean_pokecenter#0"
+
+[node name="Super_nerd_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 80)
+sprite_name = "super_nerd"
+text_id = "TEXT_CERULEANPOKECENTER_SUPER_NERD"
+npc_id = "cerulean_pokecenter#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Gentleman_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 48)
+sprite_name = "gentleman"
+text_id = "TEXT_CERULEANPOKECENTER_GENTLEMAN"
+npc_id = "cerulean_pokecenter#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Link_receptionist_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 32)
+sprite_name = "link_receptionist"
+text_id = "TEXT_CERULEANPOKECENTER_LINK_RECEPTIONIST"
+npc_id = "cerulean_pokecenter#3"

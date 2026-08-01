@@ -1,0 +1,103 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/mt_moon_b2_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Halt!", "These bones are mine. Both of them. I found them."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["TEAM ROCKET will claim these bones, wake the dead, and sell them."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["We, TEAM ROCKET, prey on #MON and men alike."])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["We work grim business here. Get lost, child."])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Children ought to leave grim affairs alone!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You want the DOME FOSSIL?"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You want the HELIX FOSSIL?"])
+
+[node name="Mt_moon_b2_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(320.0, 288.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Super_nerd_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 128)
+sprite_name = "super_nerd"
+text_id = "TEXT_MTMOONB2F_SUPER_NERD"
+npc_id = "mt_moon_b2_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Rocket_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 256)
+sprite_name = "rocket"
+text_id = "TEXT_MTMOONB2F_ROCKET1"
+npc_id = "mt_moon_b2_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Rocket_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(240, 352)
+sprite_name = "rocket"
+text_id = "TEXT_MTMOONB2F_ROCKET2"
+npc_id = "mt_moon_b2_f#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Rocket_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(464, 176)
+sprite_name = "rocket"
+text_id = "TEXT_MTMOONB2F_ROCKET3"
+npc_id = "mt_moon_b2_f#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Rocket_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(464, 272)
+sprite_name = "rocket"
+text_id = "TEXT_MTMOONB2F_ROCKET4"
+npc_id = "mt_moon_b2_f#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Fossil_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 96)
+sprite_name = "fossil"
+text_id = "TEXT_MTMOONB2F_DOME_FOSSIL"
+npc_id = "mt_moon_b2_f#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Fossil_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 96)
+sprite_name = "fossil"
+text_id = "TEXT_MTMOONB2F_HELIX_FOSSIL"
+npc_id = "mt_moon_b2_f#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Poke_ball_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(400, 336)
+sprite_name = "poke_ball"
+text_id = "TEXT_MTMOONB2F_HP_UP"
+npc_id = "mt_moon_b2_f#7"
+
+[node name="Poke_ball_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(464, 80)
+sprite_name = "poke_ball"
+text_id = "TEXT_MTMOONB2F_TM_MEGA_PUNCH"
+npc_id = "mt_moon_b2_f#8"

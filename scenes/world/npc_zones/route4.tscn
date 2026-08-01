@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route4.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I stumbled on a rocky #MON- GEODUDE, cursed."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I came for my mushroom #MON!"])
+
+[node name="Route4NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(720.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Cooltrainer_f_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 128)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE4_COOLTRAINER_F1"
+npc_id = "route4#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Cooltrainer_f_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(1008, 48)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE4_COOLTRAINER_F2"
+npc_id = "route4#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Poke_ball_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(912, 48)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROUTE4_TM_WHIRLWIND"
+npc_id = "route4#2"

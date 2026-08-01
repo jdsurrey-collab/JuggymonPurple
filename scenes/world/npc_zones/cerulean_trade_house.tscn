@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/cerulean_trade_house.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My husband's fond of trading #MON.", "If you collect them too, would you trade with an old man?"])
+
+[node name="Cerulean_trade_houseNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(64.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Granny_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 64)
+sprite_name = "granny"
+text_id = "TEXT_CERULEANTRADEHOUSE_GRANNY"
+npc_id = "cerulean_trade_house#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Gambler_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 32)
+sprite_name = "gambler"
+text_id = "TEXT_CERULEANTRADEHOUSE_GAMBLER"
+npc_id = "cerulean_trade_house#1"

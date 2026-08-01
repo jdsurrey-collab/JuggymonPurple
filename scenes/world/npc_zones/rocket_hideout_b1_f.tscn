@@ -1,0 +1,81 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/rocket_hideout_b1_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Who are you? How did you find this grim place?"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You broke into our den, child?"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Intruder alert!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Why have you come here?"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Why...?@"])
+
+[node name="Rocket_hideout_b1_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(240.0, 224.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Rocket_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(416, 128)
+sprite_name = "rocket"
+text_id = "TEXT_ROCKETHIDEOUTB1F_ROCKET1"
+npc_id = "rocket_hideout_b1_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Rocket_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 96)
+sprite_name = "rocket"
+text_id = "TEXT_ROCKETHIDEOUTB1F_ROCKET2"
+npc_id = "rocket_hideout_b1_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Rocket_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(288, 272)
+sprite_name = "rocket"
+text_id = "TEXT_ROCKETHIDEOUTB1F_ROCKET3"
+npc_id = "rocket_hideout_b1_f#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Rocket_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(240, 400)
+sprite_name = "rocket"
+text_id = "TEXT_ROCKETHIDEOUTB1F_ROCKET4"
+npc_id = "rocket_hideout_b1_f#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Rocket_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(448, 288)
+sprite_name = "rocket"
+text_id = "TEXT_ROCKETHIDEOUTB1F_ROCKET5"
+npc_id = "rocket_hideout_b1_f#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Poke_ball_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 224)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROCKETHIDEOUTB1F_ESCAPE_ROPE"
+npc_id = "rocket_hideout_b1_f#5"
+
+[node name="Poke_ball_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 272)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROCKETHIDEOUTB1F_HYPER_POTION"
+npc_id = "rocket_hideout_b1_f#6"

@@ -1,14 +1,26 @@
 extends Node2D
-## An overworld NPC, built from one entry of the exported map JSON.
+## An overworld NPC. Two ways to end up configured:
 ##
-## Every NPC gets the same four cookie-cutter data slots -- dialog, battle,
-## movement, reward -- resolved via NPCRegistry from a stable npc_id
-## ("<map_slug>#<index>", assigned in overworld_map.gd's _spawn_npcs()).
-## Adjusting a specific NPC's behavior later means adding one entry to
-## NPCRegistry.OVERRIDES, not writing new code -- every NPC already has the
-## exact same 4 resources, just blank ones until an override fills them in.
-## Left blank, an NPC behaves exactly as before this system existed: silent
-## unless it has real exported ROM dialogue, never battles, stands still.
+## 1. EDITOR-PLACED (current default for any map with a generated
+##    scenes/world/npc_zones/<slug>.tscn) -- a real npc.tscn instance living
+##    as a child of that per-map container, positioned by dragging it in the
+##    2D viewport (against the container's Backdrop reference image, same
+##    convention EncounterZone uses) and configured entirely through this
+##    node's own Inspector fields. dialog_data/battle_data/movement_data/
+##    reward_data are real typed Resources, expandable and editable right
+##    there -- no Dictionary, no NPCRegistry entry, no code change needed to
+##    give an NPC a new line, a battle, a patrol, or a reward.
+##    overworld_map.gd's _spawn_npc_zone() reparents each of these out of its
+##    container into _entities and calls place(), which derives both the
+##    world cell and the world position from this node's own `position` (its
+##    LOCAL position within that map, exactly as placed in the editor) -- so
+##    dragging an NPC in the editor is the only "move" operation needed; there
+##    is no separate cell field to keep in sync with it.
+## 2. LEGACY (procedural): for any map that doesn't have a generated
+##    npc_zones/<slug>.tscn yet, overworld_map.gd's _spawn_npcs_legacy() still
+##    instantiates NPCs straight from that map's exported JSON "npcs" array
+##    and pulls behavior overrides from NPCRegistry, exactly as before this
+##    system existed. Nothing regresses on an as-yet-ungenerated map.
 
 const CELL_PX := 16
 const STEP_TIME := 0.16
@@ -20,16 +32,17 @@ const FRAME_DOWN_IDLE := 0
 const FRAME_UP_IDLE := 1
 const FRAME_SIDE_IDLE := 5
 
-var cell: Vector2i = Vector2i.ZERO
-var text_id: String = ""
-var sprite_name: String = ""
-var facing: String = "down"
-var npc_id: String = ""
+@export var sprite_name: String = ""
+@export var facing: String = "down"
+@export var text_id: String = ""
+@export var npc_id: String = ""
 
-var dialog_data: NPCDialogData
-var battle_data: NPCBattleData
-var movement_data: NPCMovementData
-var reward_data: NPCRewardData
+@export var dialog_data: NPCDialogData = NPCDialogData.new()
+@export var battle_data: NPCBattleData = NPCBattleData.new()
+@export var movement_data: NPCMovementData = NPCMovementData.new()
+@export var reward_data: NPCRewardData = NPCRewardData.new()
+
+var cell: Vector2i = Vector2i.ZERO
 
 var _map: Node = null
 var _moving: bool = false
@@ -40,12 +53,34 @@ var _patrol_timer: float = 0.0
 
 
 func setup(map: Node, info: Dictionary) -> void:
-	_map = map
 	cell = Vector2i(int(info["x"]), int(info["y"]))
 	text_id = str(info.get("text", ""))
 	sprite_name = str(info.get("sprite_file", ""))
 	npc_id = str(info.get("npc_id", ""))
+	dialog_data = NPCRegistry.dialog_for(npc_id)
+	battle_data = NPCRegistry.battle_for(npc_id)
+	movement_data = NPCRegistry.movement_for(npc_id)
+	reward_data = NPCRegistry.reward_for(npc_id)
 	position = Vector2(cell) * CELL_PX
+	_finish_setup(map)
+
+
+## `origin` is the home map's own stitched-world cell origin (same value
+## overworld_map.gd's other per-map spawners use) -- this node's `position`,
+## as authored/dragged in the editor, is in that map's LOCAL pixel space
+## (matching its Backdrop preview image 1:1), so it's converted to a world
+## cell here exactly once, the same way EncounterZone converts its rectangle.
+func place(map: Node, origin: Vector2i) -> void:
+	var local_cell := Vector2i(roundi(position.x / CELL_PX), roundi(position.y / CELL_PX))
+	cell = local_cell + origin
+	if npc_id == "":
+		npc_id = "%s#%d,%d" % [str(map.get("map_slug")), local_cell.x, local_cell.y]
+	position = Vector2(cell) * CELL_PX
+	_finish_setup(map)
+
+
+func _finish_setup(map: Node) -> void:
+	_map = map
 	if sprite_name != "":
 		var path := "res://assets/sprites/characters/%s.png" % sprite_name
 		if ResourceLoader.exists(path):
@@ -58,11 +93,6 @@ func setup(map: Node, info: Dictionary) -> void:
 	if _sprite.texture:
 		_sprite.vframes = maxi(1, roundi(_sprite.texture.get_height() / float(CELL_PX)))
 	_apply_frame()
-
-	dialog_data = NPCRegistry.dialog_for(npc_id)
-	battle_data = NPCRegistry.battle_for(npc_id)
-	movement_data = NPCRegistry.movement_for(npc_id)
-	reward_data = NPCRegistry.reward_for(npc_id)
 
 
 func _process(delta: float) -> void:
@@ -200,8 +230,15 @@ func _speak_dialogue() -> void:
 		GameState.set_flag(_shown_once_flag())
 
 
+## Each entry becomes its own hard page break ("para" -- see dialogue.gd's
+## build_pages()), not just one merged, auto-wrapped block -- matching
+## NPCDialogData.lines' own documented "one page per entry" contract. Was
+## tagged "text" here (no break at all) until this fix; harmless while
+## NPCRegistry.OVERRIDES was empty and nothing exercised a multi-entry
+## `lines` array, but load-bearing now that generated npc_zones scenes bake
+## real multi-page ROM dialogue into exactly this field.
 func _as_entries(lines: Array) -> Array:
 	var out: Array = []
 	for l in lines:
-		out.append({"kind": "text", "line": str(l)})
+		out.append({"kind": "para", "line": str(l)})
 	return out

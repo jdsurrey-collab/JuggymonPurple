@@ -1,0 +1,120 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/s_s_anne_b1_f_rooms.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You know what they say of sailors, and blood."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My sailor's pride's at stake!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["We sailors keep #MON too!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I favor feisty children like you!@"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Matey, walk the plank, should you lose!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hello, stranger. Stay a while.", "All my #MON hail from the sea."])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My MACHOKE, so very strong.", "Strong enough to move boulders, with ease."])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["MACHOKE: Gwoh! Goggoh!@"])
+
+[node name="S_s_anne_b1_f_roomsNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(192.0, 128.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Sailor_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(0, 208)
+sprite_name = "sailor"
+text_id = "TEXT_SSANNEB1FROOMS_SAILOR1"
+npc_id = "s_s_anne_b1_f_rooms#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Sailor_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 176)
+sprite_name = "sailor"
+text_id = "TEXT_SSANNEB1FROOMS_SAILOR2"
+npc_id = "s_s_anne_b1_f_rooms#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Sailor_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 48)
+sprite_name = "sailor"
+text_id = "TEXT_SSANNEB1FROOMS_SAILOR3"
+npc_id = "s_s_anne_b1_f_rooms#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Sailor_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(352, 32)
+sprite_name = "sailor"
+text_id = "TEXT_SSANNEB1FROOMS_SAILOR4"
+npc_id = "s_s_anne_b1_f_rooms#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Sailor_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(0, 32)
+sprite_name = "sailor"
+text_id = "TEXT_SSANNEB1FROOMS_SAILOR5"
+npc_id = "s_s_anne_b1_f_rooms#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Fisher_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(0, 64)
+sprite_name = "fisher"
+text_id = "TEXT_SSANNEB1FROOMS_FISHER"
+npc_id = "s_s_anne_b1_f_rooms#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Super_nerd_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 208)
+sprite_name = "super_nerd"
+text_id = "TEXT_SSANNEB1FROOMS_SUPER_NERD"
+npc_id = "s_s_anne_b1_f_rooms#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Monster_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 192)
+sprite_name = "monster"
+text_id = "TEXT_SSANNEB1FROOMS_MACHOKE"
+npc_id = "s_s_anne_b1_f_rooms#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Poke_ball_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(320, 32)
+sprite_name = "poke_ball"
+text_id = "TEXT_SSANNEB1FROOMS_ETHER"
+npc_id = "s_s_anne_b1_f_rooms#8"
+
+[node name="Poke_ball_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 32)
+sprite_name = "poke_ball"
+text_id = "TEXT_SSANNEB1FROOMS_TM_REST"
+npc_id = "s_s_anne_b1_f_rooms#9"
+
+[node name="Poke_ball_10" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 176)
+sprite_name = "poke_ball"
+text_id = "TEXT_SSANNEB1FROOMS_MAX_POTION"
+npc_id = "s_s_anne_b1_f_rooms#10"

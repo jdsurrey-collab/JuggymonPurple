@@ -124,7 +124,8 @@ func _step_to(target: Vector2i) -> void:
 
 
 ## Rolls a wild encounter for the cell just stepped onto, if it's inside an
-## EncounterZone (see EncounterRegistry). Returns true if a battle was
+## EncounterZone (a real, hand-placed rectangle -- see
+## scenes/world/encounter_zones/<slug>.tscn). Returns true if a battle was
 ## triggered, so the caller can skip this step's warp check.
 func _check_encounter() -> bool:
 	var zone: EncounterZoneData = _map.encounter_zone_at(cell)

@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/pewter_gym.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I am BROCK, PEWTER's GYM LEADER.", "I believe only in defenses that outlast the flesh.", "Stone endures. My #MON are all of stone.", "Still you'd challenge me? Then show me what breaks first."])
+
+[node name="Pewter_gymNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(80.0, 112.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Super_nerd_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 16)
+sprite_name = "super_nerd"
+text_id = "TEXT_PEWTERGYM_BROCK"
+npc_id = "pewter_gym#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Cooltrainer_m_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 96)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_PEWTERGYM_COOLTRAINER_M"
+npc_id = "pewter_gym#1"
+
+[node name="Gym_guide_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(112, 160)
+sprite_name = "gym_guide"
+text_id = "TEXT_PEWTERGYM_GYM_GUIDE"
+npc_id = "pewter_gym#2"

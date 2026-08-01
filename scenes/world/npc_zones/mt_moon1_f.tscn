@@ -1,0 +1,127 @@
+[gd_scene load_steps=16 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/mt_moon1_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You startled me! Oh. Just a child, is all."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Came to explore, too?"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["It's far vaster in here than I ever imagined."])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Don't creep up on me!"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I wait here for friends who may never come."])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Grim men lurk in this cave. And you?"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["This cave leads on, to CERULEAN CITY, eventually."])
+
+[node name="Mt_moon1_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(320.0, 288.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Hiker_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 96)
+sprite_name = "hiker"
+text_id = "TEXT_MTMOON1F_HIKER"
+npc_id = "mt_moon1_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Youngster_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 256)
+sprite_name = "youngster"
+text_id = "TEXT_MTMOON1F_YOUNGSTER1"
+npc_id = "mt_moon1_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Cooltrainer_f_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(480, 64)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_MTMOON1F_COOLTRAINER_F1"
+npc_id = "mt_moon1_f#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Super_nerd_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(384, 496)
+sprite_name = "super_nerd"
+text_id = "TEXT_MTMOON1F_SUPER_NERD"
+npc_id = "mt_moon1_f#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Cooltrainer_f_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(256, 368)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_MTMOON1F_COOLTRAINER_F2"
+npc_id = "mt_moon1_f#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Youngster_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(112, 352)
+sprite_name = "youngster"
+text_id = "TEXT_MTMOON1F_YOUNGSTER2"
+npc_id = "mt_moon1_f#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Youngster_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(480, 432)
+sprite_name = "youngster"
+text_id = "TEXT_MTMOON1F_YOUNGSTER3"
+npc_id = "mt_moon1_f#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Poke_ball_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 320)
+sprite_name = "poke_ball"
+text_id = "TEXT_MTMOON1F_POTION1"
+npc_id = "mt_moon1_f#7"
+
+[node name="Poke_ball_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 32)
+sprite_name = "poke_ball"
+text_id = "TEXT_MTMOON1F_MOON_STONE"
+npc_id = "mt_moon1_f#8"
+
+[node name="Poke_ball_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(560, 496)
+sprite_name = "poke_ball"
+text_id = "TEXT_MTMOON1F_RARE_CANDY"
+npc_id = "mt_moon1_f#9"
+
+[node name="Poke_ball_10" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(576, 368)
+sprite_name = "poke_ball"
+text_id = "TEXT_MTMOON1F_ESCAPE_ROPE"
+npc_id = "mt_moon1_f#10"
+
+[node name="Poke_ball_11" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(320, 528)
+sprite_name = "poke_ball"
+text_id = "TEXT_MTMOON1F_POTION2"
+npc_id = "mt_moon1_f#11"
+
+[node name="Poke_ball_12" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 512)
+sprite_name = "poke_ball"
+text_id = "TEXT_MTMOON1F_TM_WATER_GUN"
+npc_id = "mt_moon1_f#12"

@@ -1,0 +1,119 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route9.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You carry #MON! Then you're mine to take."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Who walks with such fine looking #MON?"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I'll brave ROCK TUNNEL, bound for LAVENDER..."])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Don't you dare pity me!"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hah! Good. I was dying of boredom, eh!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hah! Aren't you a tough little thing!"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I woke at dawn, daily, to raise my #MON from their cocoons!"])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hah! Come now, friend!"])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Go, my prized bug #MON!"])
+
+[node name="Route9NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(480.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Cooltrainer_f_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 160)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE9_COOLTRAINER_F1"
+npc_id = "route9#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Cooltrainer_m_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(384, 112)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE9_COOLTRAINER_M1"
+npc_id = "route9#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Cooltrainer_m_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(496, 112)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE9_COOLTRAINER_M2"
+npc_id = "route9#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Cooltrainer_f_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(768, 128)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE9_COOLTRAINER_F2"
+npc_id = "route9#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Hiker_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(256, 240)
+sprite_name = "hiker"
+text_id = "TEXT_ROUTE9_HIKER1"
+npc_id = "route9#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Hiker_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(688, 48)
+sprite_name = "hiker"
+text_id = "TEXT_ROUTE9_HIKER2"
+npc_id = "route9#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Youngster_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(352, 32)
+sprite_name = "youngster"
+text_id = "TEXT_ROUTE9_YOUNGSTER1"
+npc_id = "route9#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Hiker_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(720, 240)
+sprite_name = "hiker"
+text_id = "TEXT_ROUTE9_HIKER3"
+npc_id = "route9#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Youngster_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(640, 128)
+sprite_name = "youngster"
+text_id = "TEXT_ROUTE9_YOUNGSTER2"
+npc_id = "route9#8"
+dialog_data = SubResource("Dialog_8")
+
+[node name="Poke_ball_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 240)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROUTE9_TM_TELEPORT"
+npc_id = "route9#9"

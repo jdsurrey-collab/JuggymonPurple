@@ -1,0 +1,97 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/rock_tunnel_b1_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hikers leave twigs as markers."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hah! Can you best my power?"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You've a #DEX? I want one, desperately!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Do you know of costume players?"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My #MON's technique will leave you in tears!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I seldom come here, but I'll fight you still."])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Strike me with your best shot!"])
+
+[node name="Rock_tunnel_b1_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(320.0, 288.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Cooltrainer_f_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 208)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROCKTUNNELB1F_COOLTRAINER_F1"
+npc_id = "rock_tunnel_b1_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Hiker_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 160)
+sprite_name = "hiker"
+text_id = "TEXT_ROCKTUNNELB1F_HIKER1"
+npc_id = "rock_tunnel_b1_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Super_nerd_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 80)
+sprite_name = "super_nerd"
+text_id = "TEXT_ROCKTUNNELB1F_SUPER_NERD1"
+npc_id = "rock_tunnel_b1_f#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Super_nerd_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(320, 336)
+sprite_name = "super_nerd"
+text_id = "TEXT_ROCKTUNNELB1F_SUPER_NERD2"
+npc_id = "rock_tunnel_b1_f#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Hiker_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(480, 160)
+sprite_name = "hiker"
+text_id = "TEXT_ROCKTUNNELB1F_HIKER2"
+npc_id = "rock_tunnel_b1_f#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Cooltrainer_f_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(224, 448)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROCKTUNNELB1F_COOLTRAINER_F2"
+npc_id = "rock_tunnel_b1_f#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Hiker_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(528, 80)
+sprite_name = "hiker"
+text_id = "TEXT_ROCKTUNNELB1F_HIKER3"
+npc_id = "rock_tunnel_b1_f#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Super_nerd_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(416, 480)
+sprite_name = "super_nerd"
+text_id = "TEXT_ROCKTUNNELB1F_SUPER_NERD3"
+npc_id = "rock_tunnel_b1_f#7"

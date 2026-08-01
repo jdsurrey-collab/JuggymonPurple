@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/fuchsia_gym.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["KOGA: Heh heh.", "A mere child dares challenge me?", "Very well. I shall teach you the plague-arts of the ninja.", "You'll learn what despair tastes like, as poison fills your veins."])
+
+[node name="Fuchsia_gymNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(80.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Koga_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 160)
+sprite_name = "koga"
+text_id = "TEXT_FUCHSIAGYM_KOGA"
+npc_id = "fuchsia_gym#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Rocker_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 208)
+sprite_name = "rocker"
+text_id = "TEXT_FUCHSIAGYM_ROCKER1"
+npc_id = "fuchsia_gym#1"
+
+[node name="Rocker_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(112, 128)
+sprite_name = "rocker"
+text_id = "TEXT_FUCHSIAGYM_ROCKER2"
+npc_id = "fuchsia_gym#2"
+
+[node name="Rocker_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 192)
+sprite_name = "rocker"
+text_id = "TEXT_FUCHSIAGYM_ROCKER3"
+npc_id = "fuchsia_gym#3"
+
+[node name="Rocker_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 80)
+sprite_name = "rocker"
+text_id = "TEXT_FUCHSIAGYM_ROCKER4"
+npc_id = "fuchsia_gym#4"
+
+[node name="Rocker_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 32)
+sprite_name = "rocker"
+text_id = "TEXT_FUCHSIAGYM_ROCKER5"
+npc_id = "fuchsia_gym#5"
+
+[node name="Rocker_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 112)
+sprite_name = "rocker"
+text_id = "TEXT_FUCHSIAGYM_ROCKER6"
+npc_id = "fuchsia_gym#6"
+
+[node name="Gym_guide_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(112, 240)
+sprite_name = "gym_guide"
+text_id = "TEXT_FUCHSIAGYM_GYM_GUIDE"
+npc_id = "fuchsia_gym#7"

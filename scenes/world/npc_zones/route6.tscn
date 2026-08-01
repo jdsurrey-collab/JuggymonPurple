@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route6.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Who goes there? Stop listening in on us!"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Pardon me. This is a private conversation!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Few bugs linger out here."])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You wish to speak with me?"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Me? Very well. I'll play!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I've not seen you before. Are you any good?"])
+
+[node name="Route6NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 288.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Cooltrainer_m_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 336)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE6_COOLTRAINER_M1"
+npc_id = "route6#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Cooltrainer_f_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 336)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE6_COOLTRAINER_F1"
+npc_id = "route6#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Youngster_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(0, 240)
+sprite_name = "youngster"
+text_id = "TEXT_ROUTE6_YOUNGSTER1"
+npc_id = "route6#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Cooltrainer_m_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 496)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE6_COOLTRAINER_M2"
+npc_id = "route6#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Cooltrainer_f_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 480)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE6_COOLTRAINER_F2"
+npc_id = "route6#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Youngster_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(304, 416)
+sprite_name = "youngster"
+text_id = "TEXT_ROUTE6_YOUNGSTER2"
+npc_id = "route6#5"
+dialog_data = SubResource("Dialog_5")

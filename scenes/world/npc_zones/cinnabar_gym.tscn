@@ -1,0 +1,113 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/cinnabar_gym.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hah!", "I am BLAINE, LEADER of these burnt-out ruins.", "My #MON turn flesh to ash. So it has always", "been. Bring your BURN HEALs. You'll need them."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Do you know how hot #MON fire breath can get?"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I was a thief, but I became straight as a trainer!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You can't win! I have studied #MON totally!"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I just like using fire #MON!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I know why BLAINE became a trainer!"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I've been to many GYMs, but this is my favorite!"])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Fire is weak against H2O!"])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Yo! Champ in making!", "The hot-headed BLAINE is a fire #MON pro!", "Douse his spirits with water!", "You better take some BURN HEALs!"])
+
+[node name="Cinnabar_gymNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Middle_aged_man_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 48)
+sprite_name = "middle_aged_man"
+text_id = "TEXT_CINNABARGYM_BLAINE"
+npc_id = "cinnabar_gym#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Super_nerd_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 32)
+sprite_name = "super_nerd"
+text_id = "TEXT_CINNABARGYM_SUPER_NERD1"
+npc_id = "cinnabar_gym#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Super_nerd_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 128)
+sprite_name = "super_nerd"
+text_id = "TEXT_CINNABARGYM_SUPER_NERD2"
+npc_id = "cinnabar_gym#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Super_nerd_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 64)
+sprite_name = "super_nerd"
+text_id = "TEXT_CINNABARGYM_SUPER_NERD3"
+npc_id = "cinnabar_gym#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Super_nerd_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 128)
+sprite_name = "super_nerd"
+text_id = "TEXT_CINNABARGYM_SUPER_NERD4"
+npc_id = "cinnabar_gym#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Super_nerd_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 224)
+sprite_name = "super_nerd"
+text_id = "TEXT_CINNABARGYM_SUPER_NERD5"
+npc_id = "cinnabar_gym#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Super_nerd_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 224)
+sprite_name = "super_nerd"
+text_id = "TEXT_CINNABARGYM_SUPER_NERD6"
+npc_id = "cinnabar_gym#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Super_nerd_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 128)
+sprite_name = "super_nerd"
+text_id = "TEXT_CINNABARGYM_SUPER_NERD7"
+npc_id = "cinnabar_gym#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Gym_guide_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(256, 208)
+sprite_name = "gym_guide"
+text_id = "TEXT_CINNABARGYM_GYM_GUIDE"
+npc_id = "cinnabar_gym#8"
+dialog_data = SubResource("Dialog_8")

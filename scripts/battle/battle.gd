@@ -20,7 +20,19 @@ extends Node
 
 signal message(text: String)
 signal turn_started(player_move: String, enemy_move: String)
-signal mon_changed(side: String)  ## "player" or "enemy" -- HP/status/stage changed
+## "player" or "enemy" -- HP/status/stage changed. `fast` is true only for
+## the specific damage instance that just landed being a critical hit or
+## super-effective (>=2x) -- the battle scene uses it to drain the HP bar
+## roughly twice as fast for those hits, matching a real Pokémon game's feel
+## (a weak/resisted hit ticks the bar down slowly, a big one snaps down
+## fast). Every OTHER kind of HP change (drain-heal, recoil, residual
+## poison/burn, HEAL_EFFECT) passes false explicitly -- those aren't a
+## "hit landing" in the crit/effectiveness sense this was asked for.
+## (GDScript signal declarations can't carry a default value themselves --
+## every emit() site below passes both arguments explicitly; the receiving
+## _on_mon_changed(side, fast=false) is where the default actually lives,
+## for the handful of old dev-only call sites still emitting with 1 arg.)
+signal mon_changed(side: String, fast: bool)
 signal battle_ended(result: String)  ## "win", "loss", "run"
 
 enum { PLAYER, ENEMY }
@@ -30,6 +42,14 @@ const STAGE_NAMES := ["attack", "defense", "speed", "special", "accuracy", "evas
 var is_active: bool = false
 var is_trainer: bool = false
 var _sides: Array = []  # [player_side, enemy_side], each a Dictionary
+
+## Set by _deal_damage() for the damage instance it just computed, read
+## immediately afterward by _execute_move() when emitting mon_changed --
+## a plain return value would work too, but _deal_damage()'s return is
+## already the damage total itself (int), and threading a second value out
+## through a dedicated field is simpler than turning that into a Dictionary
+## everywhere it's used.
+var _last_hit_was_fast: bool = false
 
 
 func _new_side(mon: PartyMon) -> Dictionary:
@@ -128,27 +148,29 @@ func _execute_move(attacker: int, defender: int, move_name: String) -> void:
 		return
 
 	var dealt: int = 0
+	var fast_hit: bool = false
 	if mv.effect == "SPECIAL_DAMAGE_EFFECT":
 		dealt = _special_damage(attacker_mon, defender_mon, move_name)
 	elif mv.power > 0:
 		dealt = _deal_damage(attacker, defender, mv)
+		fast_hit = _last_hit_was_fast
 
 	if dealt > 0:
 		defender_mon.current_hp = maxi(defender_mon.current_hp - dealt, 0)
-		mon_changed.emit("player" if defender == PLAYER else "enemy")
+		mon_changed.emit("player" if defender == PLAYER else "enemy", fast_hit)
 		if mv.effect == "DRAIN_HP_EFFECT":
 			var healed: int = maxi(dealt / 2, 1)
 			attacker_mon.current_hp = mini(attacker_mon.current_hp + healed, attacker_mon.max_hp())
-			mon_changed.emit("player" if attacker == PLAYER else "enemy")
+			mon_changed.emit("player" if attacker == PLAYER else "enemy", false)
 		if mv.effect == "RECOIL_EFFECT":
 			var recoil: int = maxi(dealt / 4, 1)
 			attacker_mon.current_hp = maxi(attacker_mon.current_hp - recoil, 0)
-			mon_changed.emit("player" if attacker == PLAYER else "enemy")
+			mon_changed.emit("player" if attacker == PLAYER else "enemy", false)
 			_check_faint(attacker)
 
 	if mv.effect == "EXPLODE_EFFECT":
 		attacker_mon.current_hp = 0
-		mon_changed.emit("player" if attacker == PLAYER else "enemy")
+		mon_changed.emit("player" if attacker == PLAYER else "enemy", false)
 
 	_apply_move_effect(attacker, defender, mv)
 
@@ -205,12 +227,14 @@ func _deal_damage(attacker: int, defender: int, mv: MoveData) -> int:
 	var eff: Dictionary = BattleMath.apply_type_effectiveness(dmg, mv.move_type, d_mon.species().type1, d_mon.species().type2)
 	if eff.immune:
 		message.emit("It doesn't affect %s!" % d_mon.display_name())
+		_last_hit_was_fast = false
 		return 0
 	dmg = eff.damage
 	dmg = BattleMath.apply_random_variance(dmg)
 	if crit:
 		message.emit("A critical hit!")
 	_announce_effectiveness(eff.damage, dmg)
+	_last_hit_was_fast = crit or eff.multiplier >= 2.0
 	return maxi(dmg, 1)
 
 
@@ -284,7 +308,7 @@ func _apply_move_effect(attacker: int, defender: int, mv: MoveData) -> void:
 		"HEAL_EFFECT":
 			var mon: PartyMon = a_side.mon
 			mon.current_hp = mini(mon.current_hp + mon.max_hp() / 2, mon.max_hp())
-			mon_changed.emit("player" if attacker == PLAYER else "enemy")
+			mon_changed.emit("player" if attacker == PLAYER else "enemy", false)
 
 
 ## Stat-immune-to-status check mirrors FreezeBurnParalyzeEffect: a status
@@ -302,7 +326,7 @@ func _inflict_status(side: Dictionary, status: String, chance: float, move_type:
 	if randf() >= chance:
 		return
 	mon.status = status
-	mon_changed.emit("player" if side == _side(PLAYER) else "enemy")
+	mon_changed.emit("player" if side == _side(PLAYER) else "enemy", false)
 	message.emit("%s %s!" % [mon.display_name(), _status_verb(status)])
 
 
@@ -340,13 +364,13 @@ func _apply_residual_damage(who: int) -> void:
 	if mon.status == "PSN":
 		var dmg: int = maxi(mon.max_hp() / 16, 1)
 		mon.current_hp = maxi(mon.current_hp - dmg, 0)
-		mon_changed.emit("player" if who == PLAYER else "enemy")
+		mon_changed.emit("player" if who == PLAYER else "enemy", false)
 		message.emit("%s is hurt by poison!" % mon.display_name())
 		_check_faint(who)
 	elif mon.status == "BRN":
 		var dmg: int = maxi(mon.max_hp() / 16, 1)
 		mon.current_hp = maxi(mon.current_hp - dmg, 0)
-		mon_changed.emit("player" if who == PLAYER else "enemy")
+		mon_changed.emit("player" if who == PLAYER else "enemy", false)
 		message.emit("%s is hurt by its burn!" % mon.display_name())
 		_check_faint(who)
 
@@ -364,7 +388,7 @@ func _check_faint(who: int) -> bool:
 		return false
 	mon.is_dead = true
 	message.emit("%s fainted!" % mon.display_name())
-	mon_changed.emit("player" if who == PLAYER else "enemy")
+	mon_changed.emit("player" if who == PLAYER else "enemy", false)
 
 	if who == ENEMY:
 		_end_battle("win")

@@ -1,0 +1,88 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/rocket_hideout_b4_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["So. I confess, I'm impressed you came this far."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I know you! You ruined our plans at MT.MOON!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["How can you not see the beauty of our evil?"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["The elevator doesn't work? Who has the LIFT KEY?"])
+
+[node name="Rocket_hideout_b4_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(240.0, 192.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Giovanni_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(400, 48)
+sprite_name = "giovanni"
+text_id = "TEXT_ROCKETHIDEOUTB4F_GIOVANNI"
+npc_id = "rocket_hideout_b4_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Rocket_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(368, 192)
+sprite_name = "rocket"
+text_id = "TEXT_ROCKETHIDEOUTB4F_ROCKET1"
+npc_id = "rocket_hideout_b4_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Rocket_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(416, 192)
+sprite_name = "rocket"
+text_id = "TEXT_ROCKETHIDEOUTB4F_ROCKET2"
+npc_id = "rocket_hideout_b4_f#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Rocket_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 32)
+sprite_name = "rocket"
+text_id = "TEXT_ROCKETHIDEOUTB4F_ROCKET3"
+npc_id = "rocket_hideout_b4_f#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Poke_ball_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 192)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROCKETHIDEOUTB4F_HP_UP"
+npc_id = "rocket_hideout_b4_f#4"
+
+[node name="Poke_ball_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 64)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROCKETHIDEOUTB4F_TM_RAZOR_WIND"
+npc_id = "rocket_hideout_b4_f#5"
+
+[node name="Poke_ball_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 320)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROCKETHIDEOUTB4F_IRON"
+npc_id = "rocket_hideout_b4_f#6"
+
+[node name="Poke_ball_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(400, 32)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROCKETHIDEOUTB4F_SILPH_SCOPE"
+npc_id = "rocket_hideout_b4_f#7"
+
+[node name="Poke_ball_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 32)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROCKETHIDEOUTB4F_LIFT_KEY"
+npc_id = "rocket_hideout_b4_f#8"

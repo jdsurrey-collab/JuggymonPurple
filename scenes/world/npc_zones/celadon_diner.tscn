@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/celadon_diner.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Evening.", "We're taking our rest now."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My #MON are frail, so I must haunt the DRUG STORE often."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Psst! A cellar lies beneath the GAME CORNER."])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Munch...", "That man at the table lost it all to the slots."])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Go on! Laugh at me!", "I'm ruined, utterly!", "No more slots for me! I walk a straighter path.", "Here! I've no further need of this!"])
+
+[node name="Celadon_dinerNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(80.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Cook_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 80)
+sprite_name = "cook"
+text_id = "TEXT_CELADONDINER_COOK"
+npc_id = "celadon_diner#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Middle_aged_woman_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(112, 32)
+sprite_name = "middle_aged_woman"
+text_id = "TEXT_CELADONDINER_MIDDLE_AGED_WOMAN"
+npc_id = "celadon_diner#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Middle_aged_man_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 64)
+sprite_name = "middle_aged_man"
+text_id = "TEXT_CELADONDINER_MIDDLE_AGED_MAN"
+npc_id = "celadon_diner#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Fisher_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 48)
+sprite_name = "fisher"
+text_id = "TEXT_CELADONDINER_FISHER"
+npc_id = "celadon_diner#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Gym_guide_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(0, 16)
+sprite_name = "gym_guide"
+text_id = "TEXT_CELADONDINER_GYM_GUIDE"
+npc_id = "celadon_diner#4"
+dialog_data = SubResource("Dialog_4")

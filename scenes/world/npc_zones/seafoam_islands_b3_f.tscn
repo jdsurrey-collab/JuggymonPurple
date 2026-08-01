@@ -1,0 +1,48 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/seafoam_islands_b3_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[node name="Seafoam_islands_b3_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(240.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Boulder_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 224)
+sprite_name = "boulder"
+text_id = "TEXT_SEAFOAMISLANDSB3F_BOULDER1"
+npc_id = "seafoam_islands_b3_f#0"
+
+[node name="Boulder_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 240)
+sprite_name = "boulder"
+text_id = "TEXT_SEAFOAMISLANDSB3F_BOULDER2"
+npc_id = "seafoam_islands_b3_f#1"
+
+[node name="Boulder_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 224)
+sprite_name = "boulder"
+text_id = "TEXT_SEAFOAMISLANDSB3F_BOULDER3"
+npc_id = "seafoam_islands_b3_f#2"
+
+[node name="Boulder_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 224)
+sprite_name = "boulder"
+text_id = "TEXT_SEAFOAMISLANDSB3F_BOULDER4"
+npc_id = "seafoam_islands_b3_f#3"
+
+[node name="Boulder_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(288, 96)
+sprite_name = "boulder"
+text_id = "TEXT_SEAFOAMISLANDSB3F_BOULDER5"
+npc_id = "seafoam_islands_b3_f#4"
+
+[node name="Boulder_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(304, 96)
+sprite_name = "boulder"
+text_id = "TEXT_SEAFOAMISLANDSB3F_BOULDER6"
+npc_id = "seafoam_islands_b3_f#5"

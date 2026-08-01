@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/lavender_pokecenter.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["TEAM ROCKET will do anything, for the sake of gold."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I saw CUBONE's mother die, trying to flee TEAM ROCKET."])
+
+[node name="Lavender_pokecenterNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(112.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Nurse_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 16)
+sprite_name = "nurse"
+text_id = "TEXT_LAVENDERPOKECENTER_NURSE"
+npc_id = "lavender_pokecenter#0"
+
+[node name="Gentleman_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 48)
+sprite_name = "gentleman"
+text_id = "TEXT_LAVENDERPOKECENTER_GENTLEMAN"
+npc_id = "lavender_pokecenter#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Little_girl_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 96)
+sprite_name = "little_girl"
+text_id = "TEXT_LAVENDERPOKECENTER_LITTLE_GIRL"
+npc_id = "lavender_pokecenter#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Link_receptionist_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 32)
+sprite_name = "link_receptionist"
+text_id = "TEXT_LAVENDERPOKECENTER_LINK_RECEPTIONIST"
+npc_id = "lavender_pokecenter#3"

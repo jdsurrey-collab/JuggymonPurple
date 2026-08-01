@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/celadon_gym.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hello. Such lovely weather, isn't it? So still. So quiet.", "...Forgive me. I was dreaming of funerals.", "I am ERIKA, LEADER of this garden, and GYM.", "I arrange flowers for the dead. My #MON share that quiet rot.", "You wish to challenge me?", "How lovely. I shan't lose."])
+
+[node name="Celadon_gymNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(80.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Silph_worker_f_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 48)
+sprite_name = "silph_worker_f"
+text_id = "TEXT_CELADONGYM_ERIKA"
+npc_id = "celadon_gym#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Cooltrainer_f_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 176)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_CELADONGYM_COOLTRAINER_F1"
+npc_id = "celadon_gym#1"
+
+[node name="Beauty_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(112, 160)
+sprite_name = "beauty"
+text_id = "TEXT_CELADONGYM_BEAUTY1"
+npc_id = "celadon_gym#2"
+
+[node name="Cooltrainer_f_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 80)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_CELADONGYM_COOLTRAINER_F2"
+npc_id = "celadon_gym#3"
+
+[node name="Beauty_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 80)
+sprite_name = "beauty"
+text_id = "TEXT_CELADONGYM_BEAUTY2"
+npc_id = "celadon_gym#4"
+
+[node name="Cooltrainer_f_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 48)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_CELADONGYM_COOLTRAINER_F3"
+npc_id = "celadon_gym#5"
+
+[node name="Beauty_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 48)
+sprite_name = "beauty"
+text_id = "TEXT_CELADONGYM_BEAUTY3"
+npc_id = "celadon_gym#6"
+
+[node name="Cooltrainer_f_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 48)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_CELADONGYM_COOLTRAINER_F4"
+npc_id = "celadon_gym#7"

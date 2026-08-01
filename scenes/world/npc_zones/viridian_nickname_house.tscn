@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/viridian_nickname_house.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Naming the living is sweet. Naming the dead, harder.", "Simple names are easiest to carve on stone."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My father loved #MON too."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["SPEARY: Tetweet!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["SPEAROW Name: SPEARY"])
+
+[node name="Viridian_nickname_houseNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(64.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Balding_guy_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 48)
+sprite_name = "balding_guy"
+text_id = "TEXT_VIRIDIANNICKNAMEHOUSE_BALDING_GUY"
+npc_id = "viridian_nickname_house#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Little_girl_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 64)
+sprite_name = "little_girl"
+text_id = "TEXT_VIRIDIANNICKNAMEHOUSE_LITTLE_GIRL"
+npc_id = "viridian_nickname_house#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Bird_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 80)
+sprite_name = "bird"
+text_id = "TEXT_VIRIDIANNICKNAMEHOUSE_SPEAROW"
+npc_id = "viridian_nickname_house#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Clipboard_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 0)
+sprite_name = "clipboard"
+text_id = "TEXT_VIRIDIANNICKNAMEHOUSE_SPEARY_SIGN"
+npc_id = "viridian_nickname_house#3"
+dialog_data = SubResource("Dialog_3")

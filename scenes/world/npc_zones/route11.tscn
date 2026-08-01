@@ -1,0 +1,119 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route11.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Win, lose, ruin."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Competition! I crave it always!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Let's go. Don't you dare cheat!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Careful! I lay cables here, dangerous ones."])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["New to this, but I mean to win, regardless."])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hah! I have never lost!"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I've never once won, before..."])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I'm the best in my class!"])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Mind the live wires!"])
+
+[node name="Route11NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(480.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Gambler_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 224)
+sprite_name = "gambler"
+text_id = "TEXT_ROUTE11_GAMBLER1"
+npc_id = "route11#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Gambler_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(416, 144)
+sprite_name = "gambler"
+text_id = "TEXT_ROUTE11_GAMBLER2"
+npc_id = "route11#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Youngster_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 80)
+sprite_name = "youngster"
+text_id = "TEXT_ROUTE11_YOUNGSTER1"
+npc_id = "route11#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Super_nerd_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(576, 176)
+sprite_name = "super_nerd"
+text_id = "TEXT_ROUTE11_SUPER_NERD1"
+npc_id = "route11#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Youngster_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(352, 64)
+sprite_name = "youngster"
+text_id = "TEXT_ROUTE11_YOUNGSTER2"
+npc_id = "route11#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Gambler_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(720, 112)
+sprite_name = "gambler"
+text_id = "TEXT_ROUTE11_GAMBLER3"
+npc_id = "route11#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Gambler_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(528, 48)
+sprite_name = "gambler"
+text_id = "TEXT_ROUTE11_GAMBLER4"
+npc_id = "route11#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Youngster_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(688, 80)
+sprite_name = "youngster"
+text_id = "TEXT_ROUTE11_YOUNGSTER3"
+npc_id = "route11#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Super_nerd_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(720, 256)
+sprite_name = "super_nerd"
+text_id = "TEXT_ROUTE11_SUPER_NERD2"
+npc_id = "route11#8"
+dialog_data = SubResource("Dialog_8")
+
+[node name="Youngster_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(352, 192)
+sprite_name = "youngster"
+text_id = "TEXT_ROUTE11_YOUNGSTER4"
+npc_id = "route11#9"

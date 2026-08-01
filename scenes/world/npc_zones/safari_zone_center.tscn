@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/safari_zone_center.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[node name="Safari_zone_centerNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(240.0, 208.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Poke_ball_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(224, 160)
+sprite_name = "poke_ball"
+text_id = "TEXT_SAFARIZONECENTER_NUGGET"
+npc_id = "safari_zone_center#0"

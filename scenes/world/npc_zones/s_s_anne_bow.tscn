@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/s_s_anne_bow.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["The party's ended. We sail again, soon."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Scrubbing decks- grim, endless work."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Urf. I feel ill.", "I stepped out for air."])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hey, matey.", "Care for a little jig?"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Ahoy. Are you seasick, too?"])
+
+[node name="S_s_anne_bowNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 112.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Super_nerd_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 32)
+sprite_name = "super_nerd"
+text_id = "TEXT_SSANNEBOW_SUPER_NERD"
+npc_id = "s_s_anne_bow#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Sailor_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 144)
+sprite_name = "sailor"
+text_id = "TEXT_SSANNEBOW_SAILOR1"
+npc_id = "s_s_anne_bow#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Cooltrainer_m_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(112, 176)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_SSANNEBOW_COOLTRAINER_M"
+npc_id = "s_s_anne_bow#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Sailor_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 64)
+sprite_name = "sailor"
+text_id = "TEXT_SSANNEBOW_SAILOR2"
+npc_id = "s_s_anne_bow#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Sailor_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 128)
+sprite_name = "sailor"
+text_id = "TEXT_SSANNEBOW_SAILOR3"
+npc_id = "s_s_anne_bow#4"
+dialog_data = SubResource("Dialog_4")

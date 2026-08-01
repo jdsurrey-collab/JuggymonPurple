@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/vermilion_trade_house.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[node name="Vermilion_trade_houseNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(64.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Little_girl_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 80)
+sprite_name = "little_girl"
+text_id = "TEXT_VERMILIONTRADEHOUSE_LITTLE_GIRL"
+npc_id = "vermilion_trade_house#0"

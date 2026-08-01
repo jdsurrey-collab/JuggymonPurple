@@ -96,16 +96,22 @@ static func apply_stab(damage: int, move_type: String, atk_type1: String, atk_ty
 
 
 ## Dual-type effectiveness as up to two separately-floored integer steps.
-## Returns {"damage": int, "immune": bool} -- "immune" covers both a true 0x
-## match AND the 0.25x-floors-a-low-hit-to-0 quirk, since the ROM treats both
-## the same way (move simply misses).
+## Returns {"damage": int, "immune": bool, "multiplier": float} -- "immune"
+## covers both a true 0x match AND the 0.25x-floors-a-low-hit-to-0 quirk,
+## since the ROM treats both the same way (move simply misses). "multiplier"
+## is the raw COMBINED effectiveness (2.0 = super effective, 0.5 = not very
+## effective, etc.) -- exists alongside "damage" (the real, separately-
+## floored result) purely for callers that need to know effectiveness
+## itself, not just the damage it produced (e.g. an animation speed hook).
 static func apply_type_effectiveness(damage: int, move_type: String, def_type1: String, def_type2: String) -> Dictionary:
 	var d: int = damage
 	var types: Array = [def_type1] if def_type2 == def_type1 else [def_type1, def_type2]
+	var combined_mult: float = 1.0
 	for def_type in types:
 		var mult: int = GameData.raw_type_multiplier(move_type, def_type)
 		d = (d * mult) / 10
-	return {"damage": d, "immune": d == 0 and damage > 0}
+		combined_mult *= mult / 10.0
+	return {"damage": d, "immune": d == 0 and damage > 0, "multiplier": combined_mult}
 
 
 ## floor(damage * random[217,255] / 255) -- skipped (returned unchanged) for

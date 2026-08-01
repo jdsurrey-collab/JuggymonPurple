@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/lances_room.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Ah. I've heard much of you,", "<PLAYER>. I lead the ELITE FOUR. LANCE. Master of dragons.", "Dragons, child, are myth made flesh.", "Cruel to raise, crueler to face, their strength unmatched.", "Near as death itself,", "indestructible.", "Are you prepared to lose, then?", "Your journey ends here, with me, <PLAYER>."])
+
+[node name="Lances_roomNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(208.0, 208.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Lance_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 16)
+sprite_name = "lance"
+text_id = "TEXT_LANCESROOM_LANCE"
+npc_id = "lances_room#0"
+dialog_data = SubResource("Dialog_0")

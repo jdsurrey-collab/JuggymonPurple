@@ -1,0 +1,91 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/viridian_city.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Those # BALLs at your belt- you carry #MON in your pocket.", "How strange, to hold a soul in your palm, use it anywhere, anytime."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["This GYM stands shuttered, always.", "Who leads it, I wonder still."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Care to hear of the two wretched crawling #MON underfoot? As you wish. CATERPIE carries no venom, but WEEDLE does.", "Mind its STING- it festers."])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Grandfather, hush! He's not had his coffee. Forgive him his temper."])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You shall not pass this way.", "'Tis private ground. Mine alone. Yawn. I dozed off in the sun.", "I dreamt a DROWZEE fed on my dream itself. What's this now? Where did this TM come from?", "How unsettling. Here, take it, before it returns."])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["<PLAYER> received TM42!@"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You shall not pass this way.", "'Tis private ground. Mine alone. Yawn. I dozed off in the sun.", "I dreamt a DROWZEE fed on my dream itself. What's this now? Where did this TM come from?", "How unsettling. Here, take it, before it returns."])
+
+[node name="Viridian_cityNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(320.0, 288.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Youngster_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 320)
+sprite_name = "youngster"
+text_id = "TEXT_VIRIDIANCITY_YOUNGSTER1"
+npc_id = "viridian_city#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Gambler_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(480, 128)
+sprite_name = "gambler"
+text_id = "TEXT_VIRIDIANCITY_GAMBLER1"
+npc_id = "viridian_city#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Youngster_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(480, 400)
+sprite_name = "youngster"
+text_id = "TEXT_VIRIDIANCITY_YOUNGSTER2"
+npc_id = "viridian_city#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Girl_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 144)
+sprite_name = "girl"
+text_id = "TEXT_VIRIDIANCITY_GIRL"
+npc_id = "viridian_city#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Gambler_asleep_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(288, 144)
+sprite_name = "gambler_asleep"
+text_id = "TEXT_VIRIDIANCITY_OLD_MAN_SLEEPY"
+npc_id = "viridian_city#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Fisher_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 368)
+sprite_name = "fisher"
+text_id = "TEXT_VIRIDIANCITY_FISHER"
+npc_id = "viridian_city#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Gambler_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 80)
+sprite_name = "gambler"
+text_id = "TEXT_VIRIDIANCITY_OLD_MAN"
+npc_id = "viridian_city#6"
+dialog_data = SubResource("Dialog_6")

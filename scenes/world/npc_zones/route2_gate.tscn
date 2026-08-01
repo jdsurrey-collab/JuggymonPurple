@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route2_gate.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["FLASH lights even the darkest of tombs we enter."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Once your #MON learns FLASH, the TUNNEL won't swallow you."])
+
+[node name="Route2_gateNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(80.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Scientist_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 64)
+sprite_name = "scientist"
+text_id = "TEXT_ROUTE2GATE_OAKS_AIDE"
+npc_id = "route2_gate#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Youngster_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 64)
+sprite_name = "youngster"
+text_id = "TEXT_ROUTE2GATE_YOUNGSTER"
+npc_id = "route2_gate#1"
+dialog_data = SubResource("Dialog_1")

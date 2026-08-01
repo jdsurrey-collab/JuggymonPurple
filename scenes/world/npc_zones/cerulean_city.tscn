@@ -1,0 +1,125 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/cerulean_city.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["<RIVAL>: Well. <PLAYER>.", "Still floundering back here, I see?", "I fare wonderfully. I've caught a host of strong and clever #MON.", "Come, let me see your poor attempt, <PLAYER>."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hey! Stay out! It's not your yard! Huh? Me?", "I'm an innocent bystander! Don't you believe me?"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You're a trainer too? Collecting, fighting, it's a tough life."])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["That bush in front of the shop is in the way.", "There might be a way around."])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You're making an encyclopedia on #MON? That sounds amusing."])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["OK! SLOWBRO! Use SONICBOOM! Come on, SLOWBRO pay attention!"])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["SLOWBRO took a snooze..."])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I want a bright red BICYCLE!", "I'll keep it at home, so it won't get dirty!"])
+
+[sub_resource type="Resource" id="Dialog_9"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["This is CERULEAN CAVE! Horribly strong #MON live in there!", "The #MON LEAGUE champion is the only person who is allowed in!"])
+
+[node name="Cerulean_cityNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(320.0, 288.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Blue_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(320, 32)
+sprite_name = "blue"
+text_id = "TEXT_CERULEANCITY_RIVAL"
+npc_id = "cerulean_city#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Rocket_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(480, 128)
+sprite_name = "rocket"
+text_id = "TEXT_CERULEANCITY_ROCKET"
+npc_id = "cerulean_city#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Cooltrainer_m_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(496, 320)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_CERULEANCITY_COOLTRAINER_M"
+npc_id = "cerulean_city#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Super_nerd_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(240, 288)
+sprite_name = "super_nerd"
+text_id = "TEXT_CERULEANCITY_SUPER_NERD1"
+npc_id = "cerulean_city#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Super_nerd_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 336)
+sprite_name = "super_nerd"
+text_id = "TEXT_CERULEANCITY_SUPER_NERD2"
+npc_id = "cerulean_city#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Guard_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(448, 192)
+sprite_name = "guard"
+text_id = "TEXT_CERULEANCITY_GUARD1"
+npc_id = "cerulean_city#5"
+
+[node name="Cooltrainer_f_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(464, 416)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_CERULEANCITY_COOLTRAINER_F1"
+npc_id = "cerulean_city#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Monster_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(448, 416)
+sprite_name = "monster"
+text_id = "TEXT_CERULEANCITY_SLOWBRO"
+npc_id = "cerulean_city#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Cooltrainer_f_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 432)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_CERULEANCITY_COOLTRAINER_F2"
+npc_id = "cerulean_city#8"
+dialog_data = SubResource("Dialog_8")
+
+[node name="Super_nerd_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 192)
+sprite_name = "super_nerd"
+text_id = "TEXT_CERULEANCITY_SUPER_NERD3"
+npc_id = "cerulean_city#9"
+dialog_data = SubResource("Dialog_9")
+
+[node name="Guard_10" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(432, 192)
+sprite_name = "guard"
+text_id = "TEXT_CERULEANCITY_GUARD2"
+npc_id = "cerulean_city#10"

@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route1.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I clerk at the #MON MART.", "A convenient shop, if you can call it that, in VIRIDIAN CITY.", "Go on, then- take a sample. It won't save you."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["See those ledges along the road?", "Leap if you dare- the fall won't kill you. Probably.", "Quicker back to PALLET TOWN, that way."])
+
+[node name="Route1NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 288.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Youngster_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 384)
+sprite_name = "youngster"
+text_id = "TEXT_ROUTE1_YOUNGSTER1"
+npc_id = "route1#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Youngster_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(240, 208)
+sprite_name = "youngster"
+text_id = "TEXT_ROUTE1_YOUNGSTER2"
+npc_id = "route1#1"
+dialog_data = SubResource("Dialog_1")

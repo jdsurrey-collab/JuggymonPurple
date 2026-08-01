@@ -1,0 +1,124 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route14.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You must anoint #MON with TMs to hone their art!"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My carrion birds stand ready for grim battle."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["TMs are sold in CELADON's halls! Yet few possess the rarer HMs!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Have you taught your carrion birds to take wing?"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Have you heard of the fabled dying #MON?"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I care little, but very well! Begin!"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["C'mon, c'mon. Let's ride, let's ride to the grave!"])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Good! I need to burn dead time!"])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["We ride out here, for there's more room to fall!"])
+
+[sub_resource type="Resource" id="Dialog_9"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["#MON fight? Good! Let's rumble!"])
+
+[node name="Route14NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 432.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Cooltrainer_m_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 64)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE14_COOLTRAINER_M1"
+npc_id = "route14#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Cooltrainer_m_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(240, 96)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE14_COOLTRAINER_M2"
+npc_id = "route14#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Cooltrainer_m_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 176)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE14_COOLTRAINER_M3"
+npc_id = "route14#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Cooltrainer_m_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(224, 240)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE14_COOLTRAINER_M4"
+npc_id = "route14#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Cooltrainer_m_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(240, 496)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE14_COOLTRAINER_M5"
+npc_id = "route14#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Cooltrainer_m_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 784)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE14_COOLTRAINER_M6"
+npc_id = "route14#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Biker_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 624)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE14_BIKER1"
+npc_id = "route14#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Biker_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 480)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE14_BIKER2"
+npc_id = "route14#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Biker_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(240, 480)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE14_BIKER3"
+npc_id = "route14#8"
+dialog_data = SubResource("Dialog_8")
+
+[node name="Biker_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 496)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE14_BIKER4"
+npc_id = "route14#9"
+dialog_data = SubResource("Dialog_9")

@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/pokemon_fan_club.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Won't you admire my PIKACHU's darling tail?"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I do so love my SEEL!", "It cries so sweetly when held!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["PIKACHU: Chu! Pikachu!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["SEEL: Kyuoo!"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I chair this #MON Fan Club!", "I have gathered over 100 #MON!", "I am terribly particular about #MON!", "So...", "Have you come to hear me speak of my #MON?"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Our Chairman speaks endlessly of #MON."])
+
+[node name="Pokemon_fan_clubNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(64.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Fisher_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 48)
+sprite_name = "fisher"
+text_id = "TEXT_POKEMONFANCLUB_PIKACHU_FAN"
+npc_id = "pokemon_fan_club#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Girl_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 48)
+sprite_name = "girl"
+text_id = "TEXT_POKEMONFANCLUB_SEEL_FAN"
+npc_id = "pokemon_fan_club#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Fairy_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 64)
+sprite_name = "fairy"
+text_id = "TEXT_POKEMONFANCLUB_PIKACHU"
+npc_id = "pokemon_fan_club#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Seel_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 64)
+sprite_name = "seel"
+text_id = "TEXT_POKEMONFANCLUB_SEEL"
+npc_id = "pokemon_fan_club#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Gentleman_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 16)
+sprite_name = "gentleman"
+text_id = "TEXT_POKEMONFANCLUB_CHAIRMAN"
+npc_id = "pokemon_fan_club#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Link_receptionist_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 16)
+sprite_name = "link_receptionist"
+text_id = "TEXT_POKEMONFANCLUB_RECEPTIONIST"
+npc_id = "pokemon_fan_club#5"
+dialog_data = SubResource("Dialog_5")

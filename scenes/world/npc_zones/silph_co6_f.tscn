@@ -1,0 +1,109 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/silph_co6_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["The ROCKETs came and seized this whole building!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Look at him! Such a coward, truly!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["TEAM ROCKET means to conquer the world, through #MON!"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["They must have marked SILPH for our #MON creations."])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I am one of the 4 ROCKET BROTHERS!"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["That rotten PRESIDENT!", "He should not have banished me to the TIKSI BRANCH!"])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You dare betray TEAM ROCKET?"])
+
+[node name="Silph_co6_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(208.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Silph_worker_m_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 96)
+sprite_name = "silph_worker_m"
+text_id = "TEXT_SILPHCO6F_SILPH_WORKER_M1"
+npc_id = "silph_co6_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Silph_worker_m_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(320, 96)
+sprite_name = "silph_worker_m"
+text_id = "TEXT_SILPHCO6F_SILPH_WORKER_M2"
+npc_id = "silph_co6_f#1"
+
+[node name="Silph_worker_f_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(336, 96)
+sprite_name = "silph_worker_f"
+text_id = "TEXT_SILPHCO6F_SILPH_WORKER_F1"
+npc_id = "silph_co6_f#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Silph_worker_f_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 160)
+sprite_name = "silph_worker_f"
+text_id = "TEXT_SILPHCO6F_SILPH_WORKER_F2"
+npc_id = "silph_co6_f#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Silph_worker_m_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(288, 208)
+sprite_name = "silph_worker_m"
+text_id = "TEXT_SILPHCO6F_SILPH_WORKER_M3"
+npc_id = "silph_co6_f#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Rocket_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 48)
+sprite_name = "rocket"
+text_id = "TEXT_SILPHCO6F_ROCKET1"
+npc_id = "silph_co6_f#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Scientist_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(112, 128)
+sprite_name = "scientist"
+text_id = "TEXT_SILPHCO6F_SCIENTIST"
+npc_id = "silph_co6_f#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Rocket_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(224, 240)
+sprite_name = "rocket"
+text_id = "TEXT_SILPHCO6F_ROCKET2"
+npc_id = "silph_co6_f#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Poke_ball_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 192)
+sprite_name = "poke_ball"
+text_id = "TEXT_SILPHCO6F_HP_UP"
+npc_id = "silph_co6_f#8"
+
+[node name="Poke_ball_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 240)
+sprite_name = "poke_ball"
+text_id = "TEXT_SILPHCO6F_X_ACCURACY"
+npc_id = "silph_co6_f#9"

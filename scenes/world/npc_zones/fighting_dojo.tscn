@@ -1,0 +1,91 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/fighting_dojo.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hnf.", "I am the KARATE MASTER. I lead this house of pain.", "You wish to challenge us? Expect no mercy.", "Hah!"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hoargh! Shoes off, before me!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I hear you're good. Prove it."])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Nothing tough unsettles me.", "I shatter stone, to train."])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hoohah!", "You trespass in our FIGHTING DOJO!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You want the hard kicking HITMONLEE?"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You want the piston punching HITMONCHAN?"])
+
+[node name="Fighting_dojoNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(80.0, 96.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Hiker_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 48)
+sprite_name = "hiker"
+text_id = "TEXT_FIGHTINGDOJO_KARATE_MASTER"
+npc_id = "fighting_dojo#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Hiker_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 64)
+sprite_name = "hiker"
+text_id = "TEXT_FIGHTINGDOJO_BLACKBELT1"
+npc_id = "fighting_dojo#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Hiker_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 96)
+sprite_name = "hiker"
+text_id = "TEXT_FIGHTINGDOJO_BLACKBELT2"
+npc_id = "fighting_dojo#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Hiker_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 80)
+sprite_name = "hiker"
+text_id = "TEXT_FIGHTINGDOJO_BLACKBELT3"
+npc_id = "fighting_dojo#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Hiker_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 112)
+sprite_name = "hiker"
+text_id = "TEXT_FIGHTINGDOJO_BLACKBELT4"
+npc_id = "fighting_dojo#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Poke_ball_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 16)
+sprite_name = "poke_ball"
+text_id = "TEXT_FIGHTINGDOJO_HITMONLEE_POKE_BALL"
+npc_id = "fighting_dojo#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Poke_ball_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 16)
+sprite_name = "poke_ball"
+text_id = "TEXT_FIGHTINGDOJO_HITMONCHAN_POKE_BALL"
+npc_id = "fighting_dojo#6"
+dialog_data = SubResource("Dialog_6")

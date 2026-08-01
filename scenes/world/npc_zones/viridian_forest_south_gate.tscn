@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/viridian_forest_south_gate.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Bound for the FOREST? Mind yourself- it's a maze that eats."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["RATTATA's small, but its bite festers. Have you caught one yet?"])
+
+[node name="Viridian_forest_south_gateNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(80.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Girl_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 64)
+sprite_name = "girl"
+text_id = "TEXT_VIRIDIANFORESTSOUTHGATE_GIRL"
+npc_id = "viridian_forest_south_gate#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Little_girl_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 64)
+sprite_name = "little_girl"
+text_id = "TEXT_VIRIDIANFORESTSOUTHGATE_LITTLE_GIRL"
+npc_id = "viridian_forest_south_gate#1"
+dialog_data = SubResource("Dialog_1")

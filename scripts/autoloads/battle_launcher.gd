@@ -20,12 +20,23 @@ const OVERWORLD_SCENE := "res://scenes/overworld/overworld.tscn"
 ## MUST switch to using the returned map for anything further.
 func fight(map: Node, player_mon: PartyMon, enemy_mon: PartyMon, is_trainer: bool = true) -> Dictionary:
 	var player_node: Node = map.get_meta("player", null) if map.has_meta("player") else null
+	# map_slug tracks focus shifts now (overworld_map.gd's on_player_moved),
+	# so this is always the map the player is actually standing on, even if
+	# they walked there across a stitched border rather than warping in.
 	var origin_slug: String = map.map_slug
-	# Oak's Lab (and every other indoor map) always loads at world-cell
-	# origin ZERO, so the player's world cell doubles as this map's own
-	# local cell -- see overworld_map.gd's load_map()/warp_to() comments for
-	# why that invariant holds.
-	var origin_cell: Vector2i = player_node.cell if player_node else Vector2i.ZERO
+	# The player's cell is WORLD-space. origin_slug's own stitched origin is
+	# only zero if it's a map reached via a direct load_map()/warp (any
+	# indoor map, or an outdoor map just warped into) -- a map reached by
+	# walking in from a neighbour (the normal way to reach any route's
+	# grass) keeps whatever origin _extend_neighbours computed when it was
+	# stitched in, almost never zero. Converting to LOCAL before this map
+	# gets hard-reset back to origin zero below is the same correction
+	# warp_to()'s own LAST_MAP bookkeeping already makes -- missing it here
+	# was a real bug (reported as "doesn't return to the same spot, teleports
+	# back home"): every wild-encounter dev-verify driver happened to
+	# load_map() the route directly rather than walking in from a neighbour,
+	# so world and local cells coincided in testing and this never showed up.
+	var origin_cell: Vector2i = map.local_cell(origin_slug, player_node.cell) if player_node else Vector2i.ZERO
 	var origin_facing: String = player_node.facing if player_node else "down"
 
 	var tree: SceneTree = map.get_tree()
@@ -44,11 +55,26 @@ func fight(map: Node, player_mon: PartyMon, enemy_mon: PartyMon, is_trainer: boo
 	while scene._bottom_label.text != "...":
 		await tree.process_frame
 
-	GameState.pending_spawn = origin_cell
-	GameState.pending_facing = origin_facing
 	tree.change_scene_to_file(OVERWORLD_SCENE)
 	await tree.process_frame
 	await tree.process_frame
+	# Set pending_spawn/facing HERE, only now, NOT before the scene swap
+	# above: Overworld._ready() unconditionally auto-loads its design-time
+	# default map_slug ("pallet_town") the instant the scene is instantiated
+	# (a proven, separate hazard -- see overworld_map.gd's own "stale tile
+	# bleed-through" comment on load_map()), and that auto-load's own
+	# _spawn_player() call reads-and-resets pending_spawn as a side effect,
+	# REGARDLESS of what it was set to beforehand. Setting pending_spawn
+	# before the swap (the original, buggy order) meant the real return
+	# position got silently eaten by that unrelated auto-load before this
+	# function's own explicit load_map() call below ever ran -- the player
+	# then fell back to origin_slug's default/center spawn point instead of
+	# the exact tile the battle started on (reported as "doesn't stay in the
+	# same spot, teleports back home"). Setting it only now, immediately
+	# before the real load_map() call, means the auto-load's consumption
+	# lands on harmless leftover state instead of the real value.
+	GameState.pending_spawn = origin_cell
+	GameState.pending_facing = origin_facing
 	var fresh_map: Node = tree.current_scene
 	fresh_map.load_map(origin_slug)
 

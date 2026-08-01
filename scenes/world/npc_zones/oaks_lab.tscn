@@ -1,0 +1,100 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/oaks_lab.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["<RIVAL>: Well. <PLAYER>. The old man's not here."])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["OAK: Now, <PLAYER>, which #MON will you have?"])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["?"])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["PROF.OAK is the foremost mind on #MON living.", "Many trainers still hold him in high regard!"])
+
+[node name="Oaks_labNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(80.0, 96.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Blue_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 48)
+sprite_name = "blue"
+text_id = "TEXT_OAKSLAB_RIVAL"
+npc_id = "oaks_lab#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Poke_ball_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 48)
+sprite_name = "poke_ball"
+text_id = "TEXT_OAKSLAB_CHARMANDER_POKE_BALL"
+npc_id = "oaks_lab#1"
+
+[node name="Poke_ball_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(112, 48)
+sprite_name = "poke_ball"
+text_id = "TEXT_OAKSLAB_SQUIRTLE_POKE_BALL"
+npc_id = "oaks_lab#2"
+
+[node name="Poke_ball_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 48)
+sprite_name = "poke_ball"
+text_id = "TEXT_OAKSLAB_BULBASAUR_POKE_BALL"
+npc_id = "oaks_lab#3"
+
+[node name="Oak_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 32)
+sprite_name = "oak"
+text_id = "TEXT_OAKSLAB_OAK1"
+npc_id = "oaks_lab#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Pokedex_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 16)
+sprite_name = "pokedex"
+text_id = "TEXT_OAKSLAB_POKEDEX1"
+npc_id = "oaks_lab#5"
+
+[node name="Pokedex_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 16)
+sprite_name = "pokedex"
+text_id = "TEXT_OAKSLAB_POKEDEX2"
+npc_id = "oaks_lab#6"
+
+[node name="Oak_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 160)
+sprite_name = "oak"
+text_id = "TEXT_OAKSLAB_OAK2"
+npc_id = "oaks_lab#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Girl_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 144)
+sprite_name = "girl"
+text_id = "TEXT_OAKSLAB_GIRL"
+npc_id = "oaks_lab#8"
+dialog_data = SubResource("Dialog_8")
+
+[node name="Scientist_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 160)
+sprite_name = "scientist"
+text_id = "TEXT_OAKSLAB_SCIENTIST1"
+npc_id = "oaks_lab#9"
+
+[node name="Scientist_10" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 160)
+sprite_name = "scientist"
+text_id = "TEXT_OAKSLAB_SCIENTIST2"
+npc_id = "oaks_lab#10"

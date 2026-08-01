@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/silph_co9_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Your #MON seem devoted to you!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Your #MON bear weak points! I can strike them!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I am one of the 4 ROCKET BROTHERS!"])
+
+[node name="Silph_co9_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(208.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Nurse_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(48, 224)
+sprite_name = "nurse"
+text_id = "TEXT_SILPHCO9F_NURSE"
+npc_id = "silph_co9_f#0"
+
+[node name="Rocket_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 64)
+sprite_name = "rocket"
+text_id = "TEXT_SILPHCO9F_ROCKET1"
+npc_id = "silph_co9_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Scientist_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(336, 208)
+sprite_name = "scientist"
+text_id = "TEXT_SILPHCO9F_SCIENTIST"
+npc_id = "silph_co9_f#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Rocket_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(208, 256)
+sprite_name = "rocket"
+text_id = "TEXT_SILPHCO9F_ROCKET2"
+npc_id = "silph_co9_f#3"
+dialog_data = SubResource("Dialog_3")

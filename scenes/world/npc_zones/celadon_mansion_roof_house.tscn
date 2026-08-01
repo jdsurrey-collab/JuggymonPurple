@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/celadon_mansion_roof_house.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I know all there is of the world of #MON within your GAME BOY!", "Gather your kin and trade your #MON away!"])
+
+[node name="Celadon_mansion_roof_houseNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(64.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Hiker_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(32, 32)
+sprite_name = "hiker"
+text_id = "TEXT_CELADONMANSION_ROOF_HOUSE_HIKER"
+npc_id = "celadon_mansion_roof_house#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Poke_ball_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 48)
+sprite_name = "poke_ball"
+text_id = "TEXT_CELADONMANSION_ROOF_HOUSE_EEVEE_POKEBALL"
+npc_id = "celadon_mansion_roof_house#1"

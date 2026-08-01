@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/silph_co2_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["<PLAYER> got @ !@"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Help! I'm only a SILPH worker."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Forbidden here! Go home, child!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["No children are allowed in here!"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hey kid! What are you doing here?"])
+
+[node name="Silph_co2_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(240.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Silph_worker_f_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 16)
+sprite_name = "silph_worker_f"
+text_id = "TEXT_SILPHCO2F_SILPH_WORKER_F"
+npc_id = "silph_co2_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Scientist_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 192)
+sprite_name = "scientist"
+text_id = "TEXT_SILPHCO2F_SCIENTIST1"
+npc_id = "silph_co2_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Scientist_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(384, 208)
+sprite_name = "scientist"
+text_id = "TEXT_SILPHCO2F_SCIENTIST2"
+npc_id = "silph_co2_f#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Rocket_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(256, 176)
+sprite_name = "rocket"
+text_id = "TEXT_SILPHCO2F_ROCKET1"
+npc_id = "silph_co2_f#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Rocket_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(384, 112)
+sprite_name = "rocket"
+text_id = "TEXT_SILPHCO2F_ROCKET2"
+npc_id = "silph_co2_f#4"
+dialog_data = SubResource("Dialog_4")

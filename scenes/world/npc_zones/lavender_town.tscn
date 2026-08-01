@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/lavender_town.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Do you believe in GHOSTs?"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["This town is known as the grave of #MON.", "We hold our mourning rites in #MON TOWER."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["GHOSTs walk in #MON TOWER.", "Spirits, I think, of #MON the ROCKETs murdered. So many."])
+
+[node name="Lavender_townNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Little_girl_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(240, 144)
+sprite_name = "little_girl"
+text_id = "TEXT_LAVENDERTOWN_LITTLE_GIRL"
+npc_id = "lavender_town#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Cooltrainer_m_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 160)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_LAVENDERTOWN_COOLTRAINER_M"
+npc_id = "lavender_town#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Super_nerd_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(128, 112)
+sprite_name = "super_nerd"
+text_id = "TEXT_LAVENDERTOWN_SUPER_NERD"
+npc_id = "lavender_town#2"
+dialog_data = SubResource("Dialog_2")

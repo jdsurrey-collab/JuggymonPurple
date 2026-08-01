@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/hall_of_fame.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["OAK: Ahem. Well done, <PLAYER>.", "This chamber is the HALL OF FAME.", "Here #MON LEAGUE champions are remembered, long after they're gone.", "Their #MON rest here too, in memory eternal.", "<PLAYER>. You gave so very much to become the new LEAGUE champion.", "Whatever it cost you: you and your #MON are HALL OF FAMERS now.", "Always."])
+
+[node name="Hall_of_fameNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(80.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Oak_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 32)
+sprite_name = "oak"
+text_id = "TEXT_HALLOFFAME_OAK"
+npc_id = "hall_of_fame#0"
+dialog_data = SubResource("Dialog_0")

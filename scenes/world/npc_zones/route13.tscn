@@ -1,0 +1,124 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route13.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My ravens hunger for the fight!"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["They deem me gifted, for a child of my age."])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Your badges gleam too brightly!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["My gentle #MON wish to make your grim acquaintance."])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I found CARBOS in a tomb, once."])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["The wind favors me this hour!"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Very well, I shall indulge you."])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Will you #MON with a lonely soul like me?"])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["What're you gawking at?"])
+
+[sub_resource type="Resource" id="Dialog_9"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I favor carrion birds always!"])
+
+[node name="Route13NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(480.0, 144.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Cooltrainer_m_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(784, 160)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE13_COOLTRAINER_M1"
+npc_id = "route13#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Cooltrainer_f_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(768, 160)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE13_COOLTRAINER_F1"
+npc_id = "route13#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Cooltrainer_f_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(432, 144)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE13_COOLTRAINER_F2"
+npc_id = "route13#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Cooltrainer_f_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(368, 160)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE13_COOLTRAINER_F3"
+npc_id = "route13#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Cooltrainer_f_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(800, 80)
+sprite_name = "cooltrainer_f"
+text_id = "TEXT_ROUTE13_COOLTRAINER_F4"
+npc_id = "route13#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Cooltrainer_m_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 64)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE13_COOLTRAINER_M2"
+npc_id = "route13#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Beauty_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(528, 96)
+sprite_name = "beauty"
+text_id = "TEXT_ROUTE13_BEAUTY1"
+npc_id = "route13#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Beauty_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(512, 96)
+sprite_name = "beauty"
+text_id = "TEXT_ROUTE13_BEAUTY2"
+npc_id = "route13#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Biker_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 112)
+sprite_name = "biker"
+text_id = "TEXT_ROUTE13_BIKER"
+npc_id = "route13#8"
+dialog_data = SubResource("Dialog_8")
+
+[node name="Cooltrainer_m_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(112, 208)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE13_COOLTRAINER_M3"
+npc_id = "route13#9"
+dialog_data = SubResource("Dialog_9")

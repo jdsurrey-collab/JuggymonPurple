@@ -1,0 +1,113 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route21.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You wish to know if the fish still bite, out here?"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I've a fine haul! Care to try me?"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["The sea cleanses body and soul!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["What's wrong with my swimming here?"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I caught all my #MON at sea!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I'm mid-race in a grim triathlon!"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Ahh! Feel the sun and the cruel wind!"])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Hey, don't scare off the fish!"])
+
+[sub_resource type="Resource" id="Dialog_8"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Keep me company 'til I get a bite!"])
+
+[node name="Route21NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 720.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Fisher_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 384)
+sprite_name = "fisher"
+text_id = "TEXT_ROUTE21_FISHER1"
+npc_id = "route21#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Fisher_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 400)
+sprite_name = "fisher"
+text_id = "TEXT_ROUTE21_FISHER2"
+npc_id = "route21#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Swimmer_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 496)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE21_SWIMMER1"
+npc_id = "route21#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Swimmer_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 480)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE21_SWIMMER2"
+npc_id = "route21#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Swimmer_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(256, 1008)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE21_SWIMMER3"
+npc_id = "route21#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Swimmer_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 1136)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE21_SWIMMER4"
+npc_id = "route21#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Swimmer_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(240, 1136)
+sprite_name = "swimmer"
+text_id = "TEXT_ROUTE21_SWIMMER5"
+npc_id = "route21#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Fisher_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(224, 896)
+sprite_name = "fisher"
+text_id = "TEXT_ROUTE21_FISHER3"
+npc_id = "route21#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Fisher_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 912)
+sprite_name = "fisher"
+text_id = "TEXT_ROUTE21_FISHER4"
+npc_id = "route21#8"
+dialog_data = SubResource("Dialog_8")

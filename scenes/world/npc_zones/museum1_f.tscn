@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/museum1_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Come again!"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["That is one magnificent, dead fossil!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Ssh! I believe this AMBER holds #MON DNA!", "How grand it would be, to raise #MON from the dead!", "But my colleagues scorn me for it!", "So I beg a favor of you!", "Carry this to a #MON LAB, and have it examined!"])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["We take pride in 2 fossils of very rare, ancient #MON!"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["The AMBER is clear and gold!"])
+
+[node name="Museum1_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Scientist_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 64)
+sprite_name = "scientist"
+text_id = "TEXT_MUSEUM1F_SCIENTIST1"
+npc_id = "museum1_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Gambler_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 64)
+sprite_name = "gambler"
+text_id = "TEXT_MUSEUM1F_GAMBLER"
+npc_id = "museum1_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Scientist_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(240, 32)
+sprite_name = "scientist"
+text_id = "TEXT_MUSEUM1F_SCIENTIST2"
+npc_id = "museum1_f#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Scientist_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(272, 64)
+sprite_name = "scientist"
+text_id = "TEXT_MUSEUM1F_SCIENTIST3"
+npc_id = "museum1_f#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Old_amber_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(256, 32)
+sprite_name = "old_amber"
+text_id = "TEXT_MUSEUM1F_OLD_AMBER"
+npc_id = "museum1_f#4"
+dialog_data = SubResource("Dialog_4")

@@ -1,0 +1,77 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/pokemon_mansion_b1_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Uh-oh. Where in these ashes am I?"])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["This ruin serves as fine a lab as any."])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Diary; Sept. 1 MEWTWO grows far too powerful.", "We have failed to tame its vicious, murderous will..."])
+
+[node name="Pokemon_mansion_b1_fNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(240.0, 224.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Super_nerd_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(256, 368)
+sprite_name = "super_nerd"
+text_id = "TEXT_POKEMONMANSIONB1F_BURGLAR"
+npc_id = "pokemon_mansion_b1_f#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Scientist_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(432, 176)
+sprite_name = "scientist"
+text_id = "TEXT_POKEMONMANSIONB1F_SCIENTIST"
+npc_id = "pokemon_mansion_b1_f#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Poke_ball_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 32)
+sprite_name = "poke_ball"
+text_id = "TEXT_POKEMONMANSIONB1F_RARE_CANDY"
+npc_id = "pokemon_mansion_b1_f#2"
+
+[node name="Poke_ball_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(16, 352)
+sprite_name = "poke_ball"
+text_id = "TEXT_POKEMONMANSIONB1F_FULL_RESTORE"
+npc_id = "pokemon_mansion_b1_f#3"
+
+[node name="Poke_ball_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(304, 400)
+sprite_name = "poke_ball"
+text_id = "TEXT_POKEMONMANSIONB1F_TM_BLIZZARD"
+npc_id = "pokemon_mansion_b1_f#4"
+
+[node name="Poke_ball_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 64)
+sprite_name = "poke_ball"
+text_id = "TEXT_POKEMONMANSIONB1F_TM_SOLARBEAM"
+npc_id = "pokemon_mansion_b1_f#5"
+
+[node name="Pokedex_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(256, 320)
+sprite_name = "pokedex"
+text_id = "TEXT_POKEMONMANSIONB1F_DIARY"
+npc_id = "pokemon_mansion_b1_f#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Poke_ball_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 208)
+sprite_name = "poke_ball"
+text_id = "TEXT_POKEMONMANSIONB1F_SECRET_KEY"
+npc_id = "pokemon_mansion_b1_f#7"

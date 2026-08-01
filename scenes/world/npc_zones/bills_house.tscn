@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/bills_house.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["BILL: Go on, then. See my rare #MON, on the PC."])
+
+[node name="Bills_houseNpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(64.0, 64.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Monster_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 80)
+sprite_name = "monster"
+text_id = "TEXT_BILLSHOUSE_BILL_POKEMON"
+npc_id = "bills_house#0"
+
+[node name="Super_nerd_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(64, 64)
+sprite_name = "super_nerd"
+text_id = "TEXT_BILLSHOUSE_BILL_SS_TICKET"
+npc_id = "bills_house#1"
+
+[node name="Super_nerd_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 80)
+sprite_name = "super_nerd"
+text_id = "TEXT_BILLSHOUSE_BILL_CHECK_OUT_MY_RARE_POKEMON"
+npc_id = "bills_house#2"
+dialog_data = SubResource("Dialog_2")

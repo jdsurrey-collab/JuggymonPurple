@@ -1,0 +1,114 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" path="res://assets/map_previews/route12.png" id="2_backdrop"]
+[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+
+[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+
+[sub_resource type="Resource" id="Dialog_0"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["A sleeping #MON bars the way."])
+
+[sub_resource type="Resource" id="Dialog_1"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Yeah! Something bites!"])
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Patience. Fishing is a game of waiting, and loss."])
+
+[sub_resource type="Resource" id="Dialog_3"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Have you found a MOON STONE?"])
+
+[sub_resource type="Resource" id="Dialog_4"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Electricity, my specialty!"])
+
+[sub_resource type="Resource" id="Dialog_5"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["The FISHING FOOL, versus you!"])
+
+[sub_resource type="Resource" id="Dialog_6"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I'd rather be at work."])
+
+[sub_resource type="Resource" id="Dialog_7"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["You never know what the water gives up."])
+
+[node name="Route12NpcZone" type="Node2D"]
+script = ExtResource("1_container")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(160.0, 864.0)
+texture = ExtResource("2_backdrop")
+
+[node name="Snorlax_0" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(160, 992)
+sprite_name = "snorlax"
+text_id = "TEXT_ROUTE12_SNORLAX"
+npc_id = "route12#0"
+dialog_data = SubResource("Dialog_0")
+
+[node name="Fisher_1" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(224, 496)
+sprite_name = "fisher"
+text_id = "TEXT_ROUTE12_FISHER1"
+npc_id = "route12#1"
+dialog_data = SubResource("Dialog_1")
+
+[node name="Fisher_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 624)
+sprite_name = "fisher"
+text_id = "TEXT_ROUTE12_FISHER2"
+npc_id = "route12#2"
+dialog_data = SubResource("Dialog_2")
+
+[node name="Cooltrainer_m_3" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(176, 1472)
+sprite_name = "cooltrainer_m"
+text_id = "TEXT_ROUTE12_COOLTRAINER_M"
+npc_id = "route12#3"
+dialog_data = SubResource("Dialog_3")
+
+[node name="Super_nerd_4" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(224, 1216)
+sprite_name = "super_nerd"
+text_id = "TEXT_ROUTE12_SUPER_NERD"
+npc_id = "route12#4"
+dialog_data = SubResource("Dialog_4")
+
+[node name="Fisher_5" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(192, 640)
+sprite_name = "fisher"
+text_id = "TEXT_ROUTE12_FISHER3"
+npc_id = "route12#5"
+dialog_data = SubResource("Dialog_5")
+
+[node name="Fisher_6" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(144, 832)
+sprite_name = "fisher"
+text_id = "TEXT_ROUTE12_FISHER4"
+npc_id = "route12#6"
+dialog_data = SubResource("Dialog_6")
+
+[node name="Fisher_7" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(96, 1392)
+sprite_name = "fisher"
+text_id = "TEXT_ROUTE12_FISHER5"
+npc_id = "route12#7"
+dialog_data = SubResource("Dialog_7")
+
+[node name="Poke_ball_8" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(224, 560)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROUTE12_TM_PAY_DAY"
+npc_id = "route12#8"
+
+[node name="Poke_ball_9" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(80, 1424)
+sprite_name = "poke_ball"
+text_id = "TEXT_ROUTE12_IRON"
+npc_id = "route12#9"
