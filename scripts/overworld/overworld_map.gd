@@ -330,15 +330,22 @@ func _update_camera_limits() -> void:
 ## neighbours are stitched in -- extending the walkable world in whichever
 ## direction the player is headed, without resetting anything already loaded.
 func on_player_moved(world_cell: Vector2i) -> void:
-	if _in_map(_focus_slug, world_cell):
-		return
-	for slug in _loaded.keys():
-		if _in_map(slug, world_cell):
-			_focus_slug = slug
-			if GameData.is_outdoor_tileset(_entry(slug).data.get("tileset", "")):
-				_extend_neighbours(slug)
-			_update_camera_limits()
-			return
+	if not _in_map(_focus_slug, world_cell):
+		for slug in _loaded.keys():
+			if _in_map(slug, world_cell):
+				_focus_slug = slug
+				if GameData.is_outdoor_tileset(_entry(slug).data.get("tileset", "")):
+					_extend_neighbours(slug)
+				_update_camera_limits()
+				break
+	# Per-step MapScript hook (distinct from run_on_enter, which only fires once
+	# on a hard map load) -- Pallet Town's "Oak stops you before the grass" is a
+	# position trigger mid-map, not an on-enter one, so it needs this. Uses the
+	# FOCUS slug specifically: an indoor map (or the map the player just warped
+	# into) always loads at world-cell origin ZERO, so world_cell doubles as
+	# that map's own local cell for any script that only cares about its own
+	# focus map -- no origin subtraction needed.
+	MapScripts.check_step(self, _focus_slug, world_cell)
 
 
 func _in_map(slug: String, world_cell: Vector2i) -> bool:
@@ -448,6 +455,16 @@ func sign_at(cell: Vector2i) -> Dictionary:
 			if Vector2i(int(s["x"]), int(s["y"])) + e.origin == cell:
 				return s
 	return {}
+
+
+## Exact lookup by the text label as it appears in data/text/<slug>.json
+## (e.g. "OaksLabOakChooseMonText") -- for MapScripts sequencing several
+## specific dialogue beats in a fixed order, where entries_for_text_id's fuzzy
+## NPC-text matching would ambiguously match any of several same-prefixed
+## labels (OaksLab alone has 9 different "OaksLabOak1...Text" entries).
+func text_by_label(slug: String, label: String) -> Array:
+	var texts: Dictionary = _entry(slug).get("texts", {})
+	return texts.get(label, [])
 
 
 ## Look up dialogue by the TEXT_ constant recorded in the map objects. Checks

@@ -38,7 +38,7 @@ func _process(_delta: float) -> void:
 	# to stay out of the way and not also act on movement/interact input.
 	# Same idea for the Start menu (party list/status screen): it owns its own
 	# input while open, GameState.menu_active just tells the player to freeze.
-	if Dialogue.is_active or GameState.menu_active:
+	if Dialogue.is_active or GameState.menu_active or GameState.script_active:
 		return
 
 	if Input.is_action_just_pressed("start"):
@@ -144,5 +144,11 @@ func _update_frame(walking: bool) -> void:
 		"down": base = FRAME_DOWN
 		_: base = FRAME_SIDE
 	_sprite.frame = base + (1 if walking else 0)
-	# The sheet only has a right-facing pose; left is that mirrored.
-	_sprite.flip_h = facing == "left"
+	# The sheet's side pose (frames 4-5) is drawn facing LEFT, not right --
+	# confirmed by walking the player right vs. left and comparing the actual
+	# rendered frames: the two were exact mirrors of each other (flip_h itself
+	# works correctly), but the unflipped "right" pose showed the character's
+	# directional details (hat brim) pointing left. So it's "right" that needs
+	# the flip, not "left" -- the previous code had this backwards, which is
+	# why the sprite never appeared to face the way it was actually walking.
+	_sprite.flip_h = facing == "right"

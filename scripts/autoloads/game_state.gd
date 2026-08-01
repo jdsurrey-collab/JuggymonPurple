@@ -41,6 +41,13 @@ var last_outdoor_facing: String = "down"
 ## happens to be open.
 var menu_active: bool = false
 
+## Set by a running MapScript (cultist dream, Oak's Lab, etc.) for the
+## stretches where it has full control but neither Dialogue nor PartyMenu is
+## itself active (e.g. between two DisplayTextID-equivalent calls, or while a
+## ChoiceMenu prompt is up) -- same gate role, one more source of "don't let
+## the player move right now."
+var script_active: bool = false
+
 signal map_changed(map_name: String)
 signal flag_set(flag: String)
 
@@ -53,8 +60,20 @@ func reset_for_new_game() -> void:
 	pending_facing = "down"
 	cultist_stone = ""
 	current_map_slug = ""
-	last_outdoor_map_slug = ""
-	last_outdoor_cell = Vector2i.ZERO
+	# The ROM's real equivalent, wLastMap, is never explicitly initialized
+	# either -- it works out to PALLET_TOWN by accident, because that map's
+	# own constant is $00 and fresh WRAM/save data zero-inits to that value
+	# (home/overworld.asm's "go back outside" warp path just restores wCurMap
+	# from wLastMap verbatim). A Godot String has no equivalent zero-value
+	# coincidence with "pallet_town", so without setting this explicitly here,
+	# a brand new save's very first LAST_MAP warp (Red's House's own front
+	# door, scripts/RedsHouse1F.asm's warp_event with LAST_MAP as its target)
+	# would silently no-op -- softlocking the player before they ever leave
+	# their own house. (5, 6) matches the tile just outside that door, the
+	# same "door + (0,1)" convention overworld_map.gd's own _default_spawn()
+	# already uses elsewhere in this file for indirect map entry.
+	last_outdoor_map_slug = "pallet_town"
+	last_outdoor_cell = Vector2i(5, 6)
 	last_outdoor_facing = "down"
 	party = []
 

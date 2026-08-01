@@ -43,4 +43,7 @@ func _apply_frame() -> void:
 		"down": base = FRAME_DOWN
 		_: base = FRAME_SIDE
 	_sprite.frame = base
-	_sprite.flip_h = facing == "left"
+	# The sheet's side pose is drawn facing left, not right -- see player.gd's
+	# _update_frame for how this was confirmed (walked the player both ways
+	# and compared the actual rendered frames).
+	_sprite.flip_h = facing == "right"
