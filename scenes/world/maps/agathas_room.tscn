@@ -1,10 +1,10 @@
-[gd_scene load_steps=6 format=4]
+[gd_scene load_steps=6 format=4 uid="uid://6reporeg0i6b"]
 
-[ext_resource type="Script" path="res://scripts/world/map_scene.gd" id="1_grud4"]
-[ext_resource type="TileSet" path="res://resources/tilesets/cemetery.tres" id="2_nn66s"]
-[ext_resource type="TileSet" path="res://resources/tilesets/_collision.tres" id="3_lalbx"]
-[ext_resource type="Script" path="res://scripts/world/map_warp.gd" id="4_iqyjy"]
-[ext_resource type="Texture2D" path="res://assets/editor/warp_icon.png" id="5_hn05c"]
+[ext_resource type="Script" uid="uid://chajumtnpid3s" path="res://scripts/world/map_scene.gd" id="1_grud4"]
+[ext_resource type="TileSet" uid="uid://ctea2k0ynsq8n" path="res://resources/tilesets/cemetery.tres" id="2_nn66s"]
+[ext_resource type="TileSet" uid="uid://crpwla4xb16qt" path="res://resources/tilesets/_collision.tres" id="3_lalbx"]
+[ext_resource type="Script" uid="uid://comfj0vjcfef0" path="res://scripts/world/map_warp.gd" id="4_iqyjy"]
+[ext_resource type="Texture2D" uid="uid://clor0ifvygu7y" path="res://assets/editor/warp_icon.png" id="5_hn05c"]
 
 [node name="Map" type="Node2D"]
 script = ExtResource("1_grud4")

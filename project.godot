@@ -28,7 +28,7 @@ Battle="*res://scripts/battle/battle.gd"
 ChoiceMenu="*res://scripts/autoloads/choice_menu.gd"
 NPCRegistry="*res://scripts/autoloads/npc_registry.gd"
 BattleLauncher="*res://scripts/autoloads/battle_launcher.gd"
-DevVerifyMapScenes="*res://scripts/dev/verify_all_map_scenes.gd"
+DevVerifyFullChain="*res://scripts/dev/verify_full_chain.gd"
 
 [display]
 

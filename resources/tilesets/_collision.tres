@@ -1,6 +1,6 @@
-[gd_resource type="TileSet" load_steps=3 format=3]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://crpwla4xb16qt"]
 
-[ext_resource type="Texture2D" path="res://assets/editor/blocked_cell.png" id="1_061qd"]
+[ext_resource type="Texture2D" uid="uid://cbhileps7a12g" path="res://assets/editor/blocked_cell.png" id="1_061qd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mt5sq"]
 resource_name = "collision"

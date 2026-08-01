@@ -31,7 +31,19 @@ const CELL_PX := 16
 @export var cells_h: int = 0
 @export var connections: Array[MapConnectionData] = []
 
-@onready var _collision: TileMapLayer = $Collision
+## Resolved lazily rather than with @onready, deliberately: @onready only
+## fires when the node enters the tree, so a MapScene that's merely
+## instantiate()d -- which is exactly what tooling and tests do, to inspect a
+## map without loading the whole overworld around it -- would have a null
+## reference here and every is_walkable_local() call would throw. Caching on
+## first use costs nothing at runtime and makes this class usable off-tree.
+var _collision_cache: TileMapLayer = null
+
+
+func _collision_layer() -> TileMapLayer:
+	if _collision_cache == null:
+		_collision_cache = get_node_or_null("Collision")
+	return _collision_cache
 
 
 ## Editor-only visuals (the red collision overlay, the warp/sign icons) are
@@ -40,7 +52,7 @@ const CELL_PX := 16
 ## played -- the same trick the encounter-zone and NPC containers' Backdrop
 ## uses.
 func _ready() -> void:
-	_collision.visible = false
+	_collision_layer().visible = false
 	for n in warp_nodes() + sign_nodes():
 		var icon: CanvasItem = n.get_node_or_null("Icon")
 		if icon:
@@ -53,7 +65,7 @@ func _ready() -> void:
 func is_walkable_local(cell: Vector2i) -> bool:
 	if cell.x < 0 or cell.y < 0 or cell.x >= cells_w or cell.y >= cells_h:
 		return false
-	return _collision.get_cell_source_id(cell) == -1
+	return _collision_layer().get_cell_source_id(cell) == -1
 
 
 func warp_nodes() -> Array[MapWarp]:

@@ -1,6 +1,6 @@
-[gd_resource type="TileSet" load_steps=3 format=3]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://ctea2k0ynsq8n"]
 
-[ext_resource type="Texture2D" path="res://assets/tilesets/cemetery.png" id="1_bjwe3"]
+[ext_resource type="Texture2D" uid="uid://ck8hmdcqfgewo" path="res://assets/tilesets/cemetery.png" id="1_bjwe3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_42dqs"]
 resource_name = "cemetery"

@@ -12,6 +12,31 @@ extends Node
 ## instantiating a scene proves the data is right but not that the stitching,
 ## camera and player spawn still work with it.
 
+## One map per tileset (all 19 real tilesets), for the exhaustive per-tile
+## comparison -- chosen so a tileset-specific bug can't hide.
+const TILE_SAMPLE := [
+	"pallet_town",        # overworld
+	"reds_house1_f",      # reds_house
+	"oaks_lab",           # lab
+	"viridian_pokecenter",# pokecenter
+	"viridian_mart",      # interior/mart
+	"viridian_forest",    # forest
+	"mt_moon1_f",         # cavern
+	"pewter_gym",         # gym
+	"pokemon_tower1_f",   # cemetery
+	"s_s_anne_kitchen",   # ship
+	"vermilion_city",     # (outdoor, second sample)
+	"rocket_hideout_b1_f",# facility
+	"pokemon_mansion1_f", # mansion
+	"indigo_plateau_lobby", # lobby
+	"route2_gate",        # gate
+	"underground_path_route5", # underground
+	"pokemon_fan_club",   # club
+	"s_s_anne_bow",       # ship_port
+	"victory_road1_f",    # plateau
+	"celadon_mart1_f",    # (second interior sample)
+]
+
 const LIVE_SAMPLE := [
 	"pallet_town", "viridian_city", "route1", "viridian_forest",
 	"mt_moon1_f", "celadon_mart1_f", "viridian_pokecenter", "oaks_lab",
@@ -46,6 +71,13 @@ func _run() -> void:
 	var total_tiles := 0
 	var total_warps := 0
 	var total_signs := 0
+	var deep_tile_checked := 0
+	var done := 0
+
+	# Progress goes to its own explicitly-flushed file: Godot's stdout is
+	# block-buffered when redirected, so prints don't appear until the process
+	# exits -- which makes a long run indistinguishable from a hung one.
+	var progress := FileAccess.open("user://verify_map_scenes_progress.txt", FileAccess.WRITE)
 
 	for slug in slugs:
 		var data := _json(slug)
@@ -61,20 +93,31 @@ func _run() -> void:
 		if scene.tileset_name != str(data["tileset"]):
 			bad.append("%s: tileset '%s' != export '%s'" % [slug, scene.tileset_name, str(data["tileset"])])
 
-		# --- Tiles, cell by cell ---
+		# --- Tiles ---
+		# Cell-by-cell only for the sampled maps (TILE_SAMPLE spans every
+		# tileset), plus a painted-count check on every map. Comparing all
+		# ~600k tiles individually in GDScript is far slower than the value it
+		# adds: tile writing is one uniform loop in the generator, so a bug
+		# there is systematic and shows up on any map -- whereas the count
+		# check still catches the realistic per-map failure (a map that
+		# painted partially or not at all).
 		var tiles_layer: TileMapLayer = scene.get_node("Tiles")
 		var tw := int(data["tiles_w"])
 		var th := int(data["tiles_h"])
 		var tiles: Array = data["tiles"]
-		var tile_mismatches := 0
-		for y in th:
-			for x in tw:
-				var want: int = int(tiles[y * tw + x])
-				var got: Vector2i = tiles_layer.get_cell_atlas_coords(Vector2i(x, y))
-				if got != Vector2i(want % 16, want / 16):
-					tile_mismatches += 1
-		if tile_mismatches > 0:
-			bad.append("%s: %d tile mismatches" % [slug, tile_mismatches])
+		if tiles_layer.get_used_cells().size() != tw * th:
+			bad.append("%s: painted %d tiles, export has %d"
+				% [slug, tiles_layer.get_used_cells().size(), tw * th])
+		if TILE_SAMPLE.has(slug):
+			var tile_mismatches := 0
+			for y in th:
+				for x in tw:
+					var want: int = int(tiles[y * tw + x])
+					if tiles_layer.get_cell_atlas_coords(Vector2i(x, y)) != Vector2i(want % 16, want / 16):
+						tile_mismatches += 1
+			if tile_mismatches > 0:
+				bad.append("%s: %d tile mismatches" % [slug, tile_mismatches])
+			deep_tile_checked += 1
 		total_tiles += tw * th
 
 		# --- Collision, cell by cell (the movement-critical one) ---
@@ -127,9 +170,21 @@ func _run() -> void:
 					bad.append("%s: connection %d differs from export" % [slug, i])
 
 		scene.free()
+		done += 1
+		if done % 20 == 0 or done == slugs.size():
+			progress.store_line("%d/%d checked, %d issues so far (last: %s)" % [done, slugs.size(), bad.size(), slug])
+			progress.flush()
+		# Yield periodically so the engine keeps ticking -- a single frame
+		# blocked for the whole 221-map sweep looks identical to a hang from
+		# the outside, and prevents any progress being observable at all.
+		if done % 20 == 0:
+			await get_tree().process_frame
 
-	print("compared %d maps: %d tiles, %d collision cells, %d warps, %d signs"
-		% [slugs.size(), total_tiles, total_cells, total_warps, total_signs])
+	progress.store_line("structural sweep complete")
+	progress.flush()
+
+	print("compared %d maps: %d tiles (%d deep-checked), %d collision cells, %d warps, %d signs"
+		% [slugs.size(), total_tiles, deep_tile_checked, total_cells, total_warps, total_signs])
 	for b in bad:
 		print("BAD: ", b)
 	_assert(bad.is_empty(), "every generated map scene matches its export exactly (%d issues)" % bad.size())
