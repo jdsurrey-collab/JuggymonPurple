@@ -63,6 +63,20 @@ func load_map(slug: String) -> void:
 		child.queue_free()
 	_loaded.clear()
 	_focus_slug = ""
+	# _tiles.clear() is the load-bearing part of this reset: _loaded.clear()
+	# only forgets which maps this script THINKS are painted, it doesn't erase
+	# a single actual cell from the TileMapLayer. Without this, a previously
+	# painted map's tiles stay visually in place underneath/around whatever
+	# gets painted next -- exactly what happened on every fresh New Game:
+	# Overworld._ready() unconditionally loads its @export default
+	# ("pallet_town") the instant the scene is instantiated, and only THEN
+	# does SceneFlow's own load_map(START_MAP) call fire on top of it. Without
+	# clearing first, Red's House 2F's small 8x8-cell room got painted over
+	# Pallet Town's already-there, much larger tile data instead of replacing
+	# it, which read as "the room is a solid gray blob with Pallet Town's
+	# grass/tree tiles bleeding in around the edges" -- not a corrupted
+	# tileset, just old tiles never erased.
+	_tiles.clear()
 
 	if not _stitch(slug, Vector2i.ZERO):
 		push_error("could not load map %s" % slug)
@@ -182,8 +196,19 @@ func _ensure_tileset(tileset: String) -> void:
 ## Deterministic source id per tileset name, so re-adding the same tileset
 ## (e.g. re-entering an already-loaded region after a warp reset) reuses the
 ## same atlas source id instead of accumulating duplicates.
+##
+## Capped well under 2^16: TileSet.add_source()/has_source() happily accept
+## and store a full-range int (confirmed directly -- add_source() returned
+## exactly the requested id and has_source() reported it present), but a
+## CELL's own reference to that source, set via TileMapLayer.set_cell(),
+## silently wraps through a 16-bit field -- a source id like 91030 got stored
+## as 91030 - 65536 = 25494 on the very same set_cell() call that requested
+## it, pointing every painted cell at a source that didn't exist and
+## rendering as flat gray with no error. Caught by comparing the requested
+## vs. round-tripped id and noticing the difference was exactly 65536, not by
+## reading Godot's docs (this behavior isn't documented).
 func _source_id_for(tileset: String) -> int:
-	return abs(tileset.hash()) % 100000
+	return abs(tileset.hash()) % 30000
 
 
 func _paint_tiles(slug: String) -> void:
