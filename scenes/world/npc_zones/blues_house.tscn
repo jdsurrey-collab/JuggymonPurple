@@ -1,24 +1,27 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=7 format=3 uid="uid://h0x1egd8wsw2"]
 
 [ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
-[ext_resource type="Texture2D" path="res://assets/map_previews/blues_house.png" id="2_backdrop"]
-[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
-
-[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+[ext_resource type="Texture2D" uid="uid://bvvvhkjc4v3w5" path="res://assets/map_previews/blues_house.png" id="2_backdrop"]
+[ext_resource type="PackedScene" uid="uid://bppnpc0001" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+[ext_resource type="Script" uid="uid://6dw5ea50mk5u" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
 
 [sub_resource type="Resource" id="Dialog_1"]
 script = ExtResource("4_dialog_script")
 lines = Array[String](["#MON are living things, not tools. Let them rest, or lose them."])
+one_time = false
+repeat_lines = Array[String]([])
 
 [sub_resource type="Resource" id="Dialog_2"]
 script = ExtResource("4_dialog_script")
 lines = Array[String](["A fine map. It may save your life."])
+one_time = false
+repeat_lines = Array[String]([])
 
 [node name="Blues_houseNpcZone" type="Node2D"]
 script = ExtResource("1_container")
 
 [node name="Backdrop" type="Sprite2D" parent="."]
-position = Vector2(64.0, 64.0)
+position = Vector2(64, 64)
 texture = ExtResource("2_backdrop")
 
 [node name="Daisy_0" parent="." instance=ExtResource("3_npc_scene")]

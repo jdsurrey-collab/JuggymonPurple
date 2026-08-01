@@ -1,39 +1,54 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=10 format=3 uid="uid://c4rxk8ff0tp78"]
 
 [ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
-[ext_resource type="Texture2D" path="res://assets/map_previews/pallet_town.png" id="2_backdrop"]
-[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
-
-[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+[ext_resource type="Texture2D" uid="uid://b0d2fv5hexv3x" path="res://assets/map_previews/pallet_town.png" id="2_backdrop"]
+[ext_resource type="PackedScene" uid="uid://bppnpc0001" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+[ext_resource type="Script" uid="uid://6dw5ea50mk5u" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+[ext_resource type="Script" uid="uid://bpql6rr43d6it" path="res://scripts/resources/npc_movement_data.gd" id="5_wg6ed"]
 
 [sub_resource type="Resource" id="Dialog_0"]
 script = ExtResource("4_dialog_script")
 lines = Array[String](["OAK: Stop! Don't- -don't go out!@"])
+one_time = false
+repeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_2g7de"]
+script = ExtResource("5_wg6ed")
+patrol_steps = Array[String]([])
+loop = true
+step_interval_sec = 1.0
+dialogue_trigger_step = -1
+metadata/_custom_type_script = "uid://bpql6rr43d6it"
 
 [sub_resource type="Resource" id="Dialog_1"]
 script = ExtResource("4_dialog_script")
-lines = Array[String](["I keep #MON so I'm not alone", "when mourning comes calling. Everyone leaves in the end."])
+lines = Array[String](["I felt the ground shake last night. I am worried papa wont come back home..."])
+one_time = false
+repeat_lines = Array[String]([])
 
 [sub_resource type="Resource" id="Dialog_2"]
 script = ExtResource("4_dialog_script")
 lines = Array[String](["The PC's a crypt, in its own way.", "Box after box of #MON that never came home again."])
+one_time = false
+repeat_lines = Array[String]([])
 
 [node name="Pallet_townNpcZone" type="Node2D"]
 script = ExtResource("1_container")
 
 [node name="Backdrop" type="Sprite2D" parent="."]
-position = Vector2(160.0, 144.0)
+position = Vector2(160, 144)
 texture = ExtResource("2_backdrop")
 
 [node name="Oak_0" parent="." instance=ExtResource("3_npc_scene")]
-position = Vector2(128, 80)
+position = Vector2(132, 106)
 sprite_name = "oak"
 text_id = "TEXT_PALLETTOWN_OAK"
 npc_id = "pallet_town#0"
 dialog_data = SubResource("Dialog_0")
+movement_data = SubResource("Resource_2g7de")
 
 [node name="Girl_1" parent="." instance=ExtResource("3_npc_scene")]
-position = Vector2(48, 128)
+position = Vector2(64, 122)
 sprite_name = "girl"
 text_id = "TEXT_PALLETTOWN_GIRL"
 npc_id = "pallet_town#1"

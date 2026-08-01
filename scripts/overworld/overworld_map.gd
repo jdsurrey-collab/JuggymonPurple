@@ -3,11 +3,18 @@ extends Node2D
 ## the "walk off Pallet Town and just keep walking into Route 1" model real
 ## Gen 1 uses, not a load screen per map.
 ##
-## Data-driven on purpose: there is ONE overworld scene, not one per map, so
-## covering the other ~200 maps is a matter of running tools/godot_export.py
-## in the pokered repo -- no new scenes, no new scripts (map SCRIPTS, the
-## hand-ported state machines, are the one deliberate exception -- see
-## MapScripts and Port Plan.md).
+## There is ONE overworld scene (this one) that hosts and stitches the world;
+## each individual MAP is its own editable scene (scenes/world/maps/<slug>.tscn,
+## see MapScene) instanced into $Maps at its stitched world origin. Those map
+## scenes are GENERATED from the ROM export by tools/build_map_scenes.gd, not
+## hand-built -- and then freely hand-editable afterward, which is the whole
+## point: tiles, collision, warps and signs are all real nodes you can drag
+## and repaint in Godot's own editor.
+##
+## Any map with no generated scene falls back to painting straight from its
+## exported JSON into the shared $Tiles layer, exactly as this script did
+## before map scenes existed -- so an un-generated map still works, it just
+## isn't editable.
 ##
 ## COORDINATE SYSTEMS (the easiest thing to get wrong here):
 ##   tiles  8x8 px  -- what the TileMapLayer draws
@@ -48,11 +55,21 @@ var _focus_slug: String = ""
 
 @onready var _tiles: TileMapLayer = $Tiles
 @onready var _entities: Node2D = $Entities
+@onready var _maps: Node2D = $Maps
 
 const NPC_SCENE := preload("res://scenes/characters/npc.tscn")
 const PLAYER_SCENE := preload("res://scenes/characters/player.tscn")
 const ENCOUNTER_ZONE_DIR := "res://scenes/world/encounter_zones/"
 const NPC_ZONE_DIR := "res://scenes/world/npc_zones/"
+const MAP_SCENE_DIR := "res://scenes/world/maps/"
+
+## Set by warp_to() and consumed by _spawn_player(), instead of resolving the
+## destination warp's cell up front. A scene-based map's warps live in the
+## scene (draggable), not in the JSON, so resolving before load would read a
+## stale JSON position for any warp the user has since moved -- and loading
+## the target scene early just to read it would mean loading it twice. See
+## warp_to().
+var _pending_warp_number: int = -1
 
 
 func _ready() -> void:
@@ -79,9 +96,21 @@ func load_map(slug: String) -> void:
 	# grass/tree tiles bleeding in around the edges" -- not a corrupted
 	# tileset, just old tiles never erased.
 	_tiles.clear()
+	# Scene-based maps draw their own tiles from their own TileMapLayer rather
+	# than into the shared _tiles layer, so the reset above doesn't touch them
+	# -- they have to be freed separately or the previous map stays on screen.
+	for child in _maps.get_children():
+		# Hidden as well as freed: queue_free() only takes effect at the end of
+		# the frame, and unlike an entity a stale map's tiles would visibly
+		# draw underneath the newly-loaded one for that frame.
+		child.visible = false
+		child.queue_free()
 
 	if not _stitch(slug, Vector2i.ZERO):
 		push_error("could not load map %s" % slug)
+		# Cleared on the failure path too, so an unresolved warp number can't
+		# leak into whatever map loads next and misplace the player there.
+		_pending_warp_number = -1
 		return
 	_focus_slug = slug
 
@@ -118,12 +147,31 @@ func _stitch(slug: String, origin: Vector2i) -> bool:
 
 	var size := Vector2i(int(data["cells_w"]), int(data["cells_h"]))
 	_loaded[slug] = {"origin": origin, "size": size, "data": data,
-		"texts": Dialogue.load_text_file(slug)}
-	_ensure_tileset(data["tileset"])
-	_paint_tiles(slug)
+		"texts": Dialogue.load_text_file(slug), "scene": null}
+
+	# A generated map scene (scenes/world/maps/<slug>.tscn) supersedes the JSON
+	# for everything it owns -- tiles, collision, warps, signs, connections --
+	# because it's the copy the user can actually edit. The JSON entry is still
+	# kept above: it's the source for NPCs' legacy path and for cells_w/h, and
+	# it's the fallback for any map that has no generated scene yet.
+	var scene_path := MAP_SCENE_DIR + slug + ".tscn"
+	if ResourceLoader.exists(scene_path):
+		var scene: Node2D = load(scene_path).instantiate()
+		_maps.add_child(scene)
+		scene.position = Vector2(origin) * CELL_PX
+		_loaded[slug]["scene"] = scene
+	else:
+		_ensure_tileset(data["tileset"])
+		_paint_tiles(slug)
+
 	_spawn_npcs(slug)
 	_spawn_encounter_zones(slug)
 	return true
+
+
+## The MapScene for `slug`, or null if this map is still on the JSON path.
+func _map_scene(slug: String) -> MapScene:
+	return _entry(slug).get("scene", null)
 
 
 ## Loads (but does not focus) every map directly connected to `slug`, using the
@@ -135,7 +183,7 @@ func _extend_neighbours(slug: String) -> void:
 		return
 	var origin: Vector2i = e.origin
 	var size: Vector2i = e.size
-	for c in e.data.get("connections", []):
+	for c in _connections_of(slug):
 		var target_const: String = str(c["map"])
 		var target_slug := GameData.map_slug_for(target_const)
 		if target_slug == "" or _loaded.has(target_slug):
@@ -152,6 +200,33 @@ func _extend_neighbours(slug: String) -> void:
 			"east": t_origin = Vector2i(origin.x + size.x, origin.y + offset_cells)
 			_: continue
 		_stitch(target_slug, t_origin)
+
+
+# ------------------------------------------------- per-map data accessors --
+# Every consumer of a map's warps/signs/connections goes through these, so
+# neither the caller nor the query functions below need to know whether this
+# particular map is scene-based or still on the JSON path. Both sources return
+# the exact same Dictionary shapes (see MapScene.warp_dicts/sign_dicts).
+
+func _warps_of(slug: String) -> Array:
+	var scene := _map_scene(slug)
+	if scene:
+		return scene.warp_dicts()
+	return _entry(slug).get("data", {}).get("warps", [])
+
+
+func _signs_of(slug: String) -> Array:
+	var scene := _map_scene(slug)
+	if scene:
+		return scene.sign_dicts()
+	return _entry(slug).get("data", {}).get("signs", [])
+
+
+func _connections_of(slug: String) -> Array:
+	var scene := _map_scene(slug)
+	if scene:
+		return scene.connection_dicts()
+	return _entry(slug).get("data", {}).get("connections", [])
 
 
 ## Cheap peek at just the cell dimensions of a not-yet-loaded map, so its
@@ -307,6 +382,19 @@ func _spawn_encounter_zones(slug: String) -> void:
 
 func _spawn_player() -> void:
 	var spawn: Vector2i = GameState.pending_spawn
+	# A pending warp number (set by warp_to before this load) wins: it's
+	# resolved here, against the now-loaded target map's real warp list, rather
+	# than from the possibly-stale JSON before loading. See warp_to().
+	if _pending_warp_number >= 1:
+		var warps: Array = _warps_of(_focus_slug)
+		if _pending_warp_number <= warps.size():
+			var w: Dictionary = warps[_pending_warp_number - 1]
+			spawn = Vector2i(int(w["x"]), int(w["y"]))
+		else:
+			push_warning("warp target %s has no warp #%d" % [_focus_slug, _pending_warp_number])
+			spawn = Vector2i(-1, -1)
+		_pending_warp_number = -1
+
 	if spawn.x < 0:
 		spawn = _default_spawn(_focus_slug)
 	else:
@@ -329,7 +417,7 @@ func _default_spawn(slug: String) -> Vector2i:
 	var e: Dictionary = _entry(slug)
 	var origin: Vector2i = e.origin
 	var size: Vector2i = e.size
-	var warps: Array = e.data.get("warps", [])
+	var warps: Array = _warps_of(slug)
 	if not warps.is_empty():
 		var door := Vector2i(int(warps[0]["x"]), int(warps[0]["y"])) + origin
 		var outside := door + Vector2i(0, 1)
@@ -483,13 +571,14 @@ func warp_to(target_const: String, target_warp_number: int) -> void:
 	if slug == "":
 		push_warning("no exported map for warp target %s" % target_const)
 		return
-	var target_data := _read_json("res://data/maps/%s.json" % slug)
-	var warps: Array = target_data.get("warps", [])
-	if target_warp_number < 1 or target_warp_number > warps.size():
-		push_warning("warp target %s has no warp #%d" % [target_const, target_warp_number])
-		return
-	var w: Dictionary = warps[target_warp_number - 1]
-	GameState.pending_spawn = Vector2i(int(w["x"]), int(w["y"]))
+	# Deliberately does NOT resolve the destination warp's cell here. On a
+	# scene-based map the warps live in the scene (and are draggable), so the
+	# JSON's copy of that position can be stale -- and the only authoritative
+	# copy isn't readable until the target is loaded. So the warp NUMBER is
+	# carried across the load and resolved in _spawn_player(), against
+	# whatever the target map actually has once it's really loaded.
+	_pending_warp_number = target_warp_number
+	GameState.pending_spawn = Vector2i(-1, -1)
 	GameState.pending_facing = "down"
 	load_map(slug)
 
@@ -504,9 +593,11 @@ func is_walkable(cell: Vector2i) -> bool:
 		var e: Dictionary = _entry(slug)
 		if not _in_map(slug, cell):
 			continue
-		var origin: Vector2i = e.origin
+		var local: Vector2i = cell - e.origin
+		var scene := _map_scene(slug)
+		if scene:
+			return scene.is_walkable_local(local)
 		var size: Vector2i = e.size
-		var local: Vector2i = cell - origin
 		var w: Array = e.data["walkable"]
 		return bool(w[local.y * size.x + local.x])
 	return false
@@ -533,7 +624,7 @@ func npc_at(cell: Vector2i) -> Node:
 func warp_at(cell: Vector2i) -> Dictionary:
 	for slug in _loaded.keys():
 		var e: Dictionary = _entry(slug)
-		for w in e.data.get("warps", []):
+		for w in _warps_of(slug):
 			if Vector2i(int(w["x"]), int(w["y"])) + e.origin == cell:
 				var out: Dictionary = w.duplicate()
 				out["_source_map"] = slug
@@ -561,7 +652,7 @@ func encounter_zone_at(cell: Vector2i) -> EncounterZoneData:
 func sign_at(cell: Vector2i) -> Dictionary:
 	for slug in _loaded.keys():
 		var e: Dictionary = _entry(slug)
-		for s in e.data.get("signs", []):
+		for s in _signs_of(slug):
 			if Vector2i(int(s["x"]), int(s["y"])) + e.origin == cell:
 				return s
 	return {}

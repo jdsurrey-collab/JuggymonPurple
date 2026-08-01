@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=4]
+
+[ext_resource type="Script" path="res://scripts/world/map_scene.gd" id="1_f61pl"]
+[ext_resource type="TileSet" path="res://resources/tilesets/lobby.tres" id="2_o4cni"]
+[ext_resource type="TileSet" path="res://resources/tilesets/_collision.tres" id="3_eyu5o"]
+[ext_resource type="Script" path="res://scripts/world/map_warp.gd" id="4_crs87"]
+[ext_resource type="Texture2D" path="res://assets/editor/warp_icon.png" id="5_d5bb7"]
+[ext_resource type="Script" path="res://scripts/world/map_sign.gd" id="6_h0g0f"]
+[ext_resource type="Texture2D" path="res://assets/editor/sign_icon.png" id="7_gc6mq"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_f61pl")
+slug = "silph_co_elevator"
+tileset_name = "lobby"
+cells_w = 4
+cells_h = 4
+
+[node name="Tiles" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAAAAAAAABAAAAAAABAAAAAAABAAAAAAACAAAAAAABAAAAAAADAAAAAAABAAAAAAAEAAAAAAABAAAAAAAFAAAAAAABAAAAAAAGAAAAAAAOAAMAAAAHAAAAAAABAAAAAAAAAAEAAAABAAIAAAABAAEAAAABAAIAAAACAAEAAAABAAIAAAADAAEAAAABAAIAAAAEAAEAAAABAAIAAAAFAAEAAAABAAIAAAAGAAEAAAAPAAMAAAAHAAEAAAABAAIAAAAAAAIAAAAHAAMAAAABAAIAAAAFAAQAAAACAAIAAAAHAAMAAAADAAIAAAAFAAQAAAAEAAIAAAAHAAMAAAAFAAIAAAAFAAQAAAAGAAIAAAAHAAMAAAAHAAIAAAAFAAQAAAAAAAMAAAAFAAQAAAABAAMAAAAHAAMAAAACAAMAAAAFAAQAAAADAAMAAAAHAAMAAAAEAAMAAAAFAAQAAAAFAAMAAAAHAAMAAAAGAAMAAAAFAAQAAAAHAAMAAAAHAAMAAAAAAAQAAAAHAAMAAAABAAQAAAAFAAQAAAACAAQAAAAHAAMAAAADAAQAAAAFAAQAAAAEAAQAAAAHAAMAAAAFAAQAAAAFAAQAAAAGAAQAAAAHAAMAAAAHAAQAAAAFAAQAAAAAAAUAAAAFAAQAAAABAAUAAAAHAAMAAAACAAUAAAAFAAQAAAADAAUAAAAHAAMAAAAEAAUAAAAFAAQAAAAFAAUAAAAHAAMAAAAGAAUAAAAFAAQAAAAHAAUAAAAHAAMAAAAAAAYAAAAHAAMAAAABAAYAAAAFAAQAAAACAAYAAAAEAAAAAAADAAYAAAAEAAAAAAAEAAYAAAAEAAAAAAAFAAYAAAAEAAAAAAAGAAYAAAAHAAMAAAAHAAYAAAAFAAQAAAAAAAcAAAAFAAQAAAABAAcAAAAHAAMAAAACAAcAAAAEAAEAAAADAAcAAAAEAAEAAAAEAAcAAAAEAAEAAAAFAAcAAAAEAAEAAAAGAAcAAAAFAAQAAAAHAAcAAAAHAAMAAAA=")
+tile_set = ExtResource("2_o4cni")
+
+[node name="Collision" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAA=")
+tile_set = ExtResource("3_eyu5o")
+
+[node name="Warps" type="Node2D" parent="."]
+
+[node name="Warp1_UNUSED_MAP_ED" type="Node2D" parent="Warps"]
+position = Vector2(16, 48)
+script = ExtResource("4_crs87")
+target_map = "UNUSED_MAP_ED"
+
+[node name="Icon" type="Sprite2D" parent="Warps/Warp1_UNUSED_MAP_ED"]
+texture = ExtResource("5_d5bb7")
+centered = false
+
+[node name="Warp2_UNUSED_MAP_ED" type="Node2D" parent="Warps"]
+position = Vector2(32, 48)
+script = ExtResource("4_crs87")
+target_map = "UNUSED_MAP_ED"
+
+[node name="Icon" type="Sprite2D" parent="Warps/Warp2_UNUSED_MAP_ED"]
+texture = ExtResource("5_d5bb7")
+centered = false
+
+[node name="Signs" type="Node2D" parent="."]
+
+[node name="Sign1" type="Node2D" parent="Signs"]
+position = Vector2(48, 0)
+script = ExtResource("6_h0g0f")
+text_id = "TEXT_SILPHCOELEVATOR_ELEVATOR"
+
+[node name="Icon" type="Sprite2D" parent="Signs/Sign1"]
+texture = ExtResource("7_gc6mq")
+centered = false

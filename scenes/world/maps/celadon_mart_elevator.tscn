@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=4]
+
+[ext_resource type="Script" path="res://scripts/world/map_scene.gd" id="1_jlhnx"]
+[ext_resource type="TileSet" path="res://resources/tilesets/lobby.tres" id="2_0avc1"]
+[ext_resource type="TileSet" path="res://resources/tilesets/_collision.tres" id="3_2b6l5"]
+[ext_resource type="Script" path="res://scripts/world/map_warp.gd" id="4_tsiw7"]
+[ext_resource type="Texture2D" path="res://assets/editor/warp_icon.png" id="5_7wwl2"]
+[ext_resource type="Script" path="res://scripts/world/map_sign.gd" id="6_pw14e"]
+[ext_resource type="Texture2D" path="res://assets/editor/sign_icon.png" id="7_6cpxt"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_jlhnx")
+slug = "celadon_mart_elevator"
+tileset_name = "lobby"
+cells_w = 4
+cells_h = 4
+
+[node name="Tiles" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAAAAAAAABAAAAAAABAAAAAAABAAAAAAACAAAAAAABAAAAAAADAAAAAAABAAAAAAAEAAAAAAABAAAAAAAFAAAAAAABAAAAAAAGAAAAAAAOAAMAAAAHAAAAAAABAAAAAAAAAAEAAAABAAIAAAABAAEAAAABAAIAAAACAAEAAAABAAIAAAADAAEAAAABAAIAAAAEAAEAAAABAAIAAAAFAAEAAAABAAIAAAAGAAEAAAAPAAMAAAAHAAEAAAABAAIAAAAAAAIAAAAHAAMAAAABAAIAAAAFAAQAAAACAAIAAAAHAAMAAAADAAIAAAAFAAQAAAAEAAIAAAAHAAMAAAAFAAIAAAAFAAQAAAAGAAIAAAAHAAMAAAAHAAIAAAAFAAQAAAAAAAMAAAAFAAQAAAABAAMAAAAHAAMAAAACAAMAAAAFAAQAAAADAAMAAAAHAAMAAAAEAAMAAAAFAAQAAAAFAAMAAAAHAAMAAAAGAAMAAAAFAAQAAAAHAAMAAAAHAAMAAAAAAAQAAAAHAAMAAAABAAQAAAAFAAQAAAACAAQAAAAHAAMAAAADAAQAAAAFAAQAAAAEAAQAAAAHAAMAAAAFAAQAAAAFAAQAAAAGAAQAAAAHAAMAAAAHAAQAAAAFAAQAAAAAAAUAAAAFAAQAAAABAAUAAAAHAAMAAAACAAUAAAAFAAQAAAADAAUAAAAHAAMAAAAEAAUAAAAFAAQAAAAFAAUAAAAHAAMAAAAGAAUAAAAFAAQAAAAHAAUAAAAHAAMAAAAAAAYAAAAHAAMAAAABAAYAAAAFAAQAAAACAAYAAAAEAAAAAAADAAYAAAAEAAAAAAAEAAYAAAAEAAAAAAAFAAYAAAAEAAAAAAAGAAYAAAAHAAMAAAAHAAYAAAAFAAQAAAAAAAcAAAAFAAQAAAABAAcAAAAHAAMAAAACAAcAAAAEAAEAAAADAAcAAAAEAAEAAAAEAAcAAAAEAAEAAAAFAAcAAAAEAAEAAAAGAAcAAAAFAAQAAAAHAAcAAAAHAAMAAAA=")
+tile_set = ExtResource("2_0avc1")
+
+[node name="Collision" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAA=")
+tile_set = ExtResource("3_2b6l5")
+
+[node name="Warps" type="Node2D" parent="."]
+
+[node name="Warp1_CELADON_MART_1F" type="Node2D" parent="Warps"]
+position = Vector2(16, 48)
+script = ExtResource("4_tsiw7")
+target_map = "CELADON_MART_1F"
+target_warp = 6
+
+[node name="Icon" type="Sprite2D" parent="Warps/Warp1_CELADON_MART_1F"]
+texture = ExtResource("5_7wwl2")
+centered = false
+
+[node name="Warp2_CELADON_MART_1F" type="Node2D" parent="Warps"]
+position = Vector2(32, 48)
+script = ExtResource("4_tsiw7")
+target_map = "CELADON_MART_1F"
+target_warp = 6
+
+[node name="Icon" type="Sprite2D" parent="Warps/Warp2_CELADON_MART_1F"]
+texture = ExtResource("5_7wwl2")
+centered = false
+
+[node name="Signs" type="Node2D" parent="."]
+
+[node name="Sign1" type="Node2D" parent="Signs"]
+position = Vector2(48, 0)
+script = ExtResource("6_pw14e")
+text_id = "TEXT_CELADONMARTELEVATOR"
+
+[node name="Icon" type="Sprite2D" parent="Signs/Sign1"]
+texture = ExtResource("7_6cpxt")
+centered = false

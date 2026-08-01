@@ -1,20 +1,21 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=6 format=3 uid="uid://l2dqjmmc6cuh"]
 
 [ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
-[ext_resource type="Texture2D" path="res://assets/map_previews/brunos_room.png" id="2_backdrop"]
-[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
-
-[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+[ext_resource type="Texture2D" uid="uid://nfr60m1v37ft" path="res://assets/map_previews/brunos_room.png" id="2_backdrop"]
+[ext_resource type="PackedScene" uid="uid://bppnpc0001" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+[ext_resource type="Script" uid="uid://6dw5ea50mk5u" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
 
 [sub_resource type="Resource" id="Dialog_0"]
 script = ExtResource("4_dialog_script")
 lines = Array[String](["A voice, hard as stone: Don't flee."])
+one_time = false
+repeat_lines = Array[String]([])
 
 [node name="Brunos_roomNpcZone" type="Node2D"]
 script = ExtResource("1_container")
 
 [node name="Backdrop" type="Sprite2D" parent="."]
-position = Vector2(80.0, 96.0)
+position = Vector2(80, 96)
 texture = ExtResource("2_backdrop")
 
 [node name="Bruno_0" parent="." instance=ExtResource("3_npc_scene")]

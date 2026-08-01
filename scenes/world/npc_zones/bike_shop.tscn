@@ -1,28 +1,33 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=8 format=3 uid="uid://biq26uvsn8okq"]
 
 [ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
-[ext_resource type="Texture2D" path="res://assets/map_previews/bike_shop.png" id="2_backdrop"]
-[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
-
-[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+[ext_resource type="Texture2D" uid="uid://r5x7cafbobbh" path="res://assets/map_previews/bike_shop.png" id="2_backdrop"]
+[ext_resource type="PackedScene" uid="uid://bppnpc0001" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+[ext_resource type="Script" uid="uid://6dw5ea50mk5u" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
 
 [sub_resource type="Resource" id="Dialog_0"]
 script = ExtResource("4_dialog_script")
 lines = Array[String](["Ho! Welcome to our BIKE SHOP.", "We've just the BIKE for you!"])
+one_time = false
+repeat_lines = Array[String]([])
 
 [sub_resource type="Resource" id="Dialog_1"]
 script = ExtResource("4_dialog_script")
 lines = Array[String](["A plain city BIKE suits me well enough!", "You can't fit a shopping basket on an MTB!"])
+one_time = false
+repeat_lines = Array[String]([])
 
 [sub_resource type="Resource" id="Dialog_2"]
 script = ExtResource("4_dialog_script")
 lines = Array[String](["These BIKEs look grand, but cost a small fortune!"])
+one_time = false
+repeat_lines = Array[String]([])
 
 [node name="Bike_shopNpcZone" type="Node2D"]
 script = ExtResource("1_container")
 
 [node name="Backdrop" type="Sprite2D" parent="."]
-position = Vector2(64.0, 64.0)
+position = Vector2(64, 64)
 texture = ExtResource("2_backdrop")
 
 [node name="Bike_shop_clerk_0" parent="." instance=ExtResource("3_npc_scene")]

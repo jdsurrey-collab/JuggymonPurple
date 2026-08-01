@@ -1,13 +1,10 @@
-[gd_scene load_steps=15 format=3]
+[gd_scene load_steps=18 format=3 uid="uid://h2y2vflc6qxa"]
 
-[ext_resource type="Script" path="res://scripts/world/encounter_zone_container.gd" id="1_container"]
-[ext_resource type="Texture2D" path="res://assets/map_previews/route1.png" id="2_backdrop"]
-[ext_resource type="Script" path="res://scripts/world/encounter_zone.gd" id="3_zone_script"]
-[ext_resource type="Script" path="res://scripts/resources/encounter_zone_data.gd" id="4_zone_data_script"]
-[ext_resource type="Script" path="res://scripts/resources/encounter_slot_data.gd" id="5_slot_script"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_route1"]
-size = Vector2(320, 576)
+[ext_resource type="Script" uid="uid://d3d14di2b1ppk" path="res://scripts/world/encounter_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" uid="uid://cj4goqwbtb40n" path="res://assets/map_previews/route1.png" id="2_backdrop"]
+[ext_resource type="Script" uid="uid://cai68ix0wuqc1" path="res://scripts/world/encounter_zone.gd" id="3_zone_script"]
+[ext_resource type="Script" uid="uid://c4gvlfmn5uihi" path="res://scripts/resources/encounter_zone_data.gd" id="4_zone_data_script"]
+[ext_resource type="Script" uid="uid://dgioh32w5kgnf" path="res://scripts/resources/encounter_slot_data.gd" id="5_slot_script"]
 
 [sub_resource type="Resource" id="Slot_0"]
 script = ExtResource("5_slot_script")
@@ -73,6 +70,9 @@ level_max = 5
 script = ExtResource("4_zone_data_script")
 encounter_rate = 25
 slots = Array[ExtResource("5_slot_script")]([SubResource("Slot_0"), SubResource("Slot_1"), SubResource("Slot_2"), SubResource("Slot_3"), SubResource("Slot_4"), SubResource("Slot_5"), SubResource("Slot_6"), SubResource("Slot_7"), SubResource("Slot_8"), SubResource("Slot_9")])
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_route1"]
+size = Vector2(320, 576)
 
 [node name="Route1EncounterZones" type="Node2D"]
 script = ExtResource("1_container")
