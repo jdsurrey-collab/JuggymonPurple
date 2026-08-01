@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/pinsir.png" id="1_2egts"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_vi5pg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/pinsir.png" id="3_nf5js"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_1phxv"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="5_dmmen"]
+[ext_resource type="Resource" path="res://resources/moves/guillotine.tres" id="6_j6abq"]
+[ext_resource type="Resource" path="res://resources/moves/focus_energy.tres" id="7_8773m"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="8_aicid"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="9_4vxoi"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="10_dlnrl"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_yx3f1"]
+[ext_resource type="Resource" path="res://resources/moves/vicegrip.tres" id="12_4qaei"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_r0ojm"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_i3ixl"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_l8mci"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_xonqh"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_527dn"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="18_ddhth"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="19_gci63"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="20_i25a6"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="21_e3kiv"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="22_ogh0x"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="23_hwo07"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="24_1s24r"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="25_yknrm"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="26_rbdui"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="27_mk2bl"]
+
+[sub_resource type="Resource" id="Resource_n5vgj"]
+script = ExtResource("4_1phxv")
+level = 25
+move = ExtResource("5_dmmen")
+
+[sub_resource type="Resource" id="Resource_685hk"]
+script = ExtResource("4_1phxv")
+level = 30
+move = ExtResource("6_j6abq")
+
+[sub_resource type="Resource" id="Resource_turl6"]
+script = ExtResource("4_1phxv")
+level = 36
+move = ExtResource("7_8773m")
+
+[sub_resource type="Resource" id="Resource_s04hh"]
+script = ExtResource("4_1phxv")
+level = 43
+move = ExtResource("8_aicid")
+
+[sub_resource type="Resource" id="Resource_8ia3g"]
+script = ExtResource("4_1phxv")
+level = 49
+move = ExtResource("9_4vxoi")
+
+[sub_resource type="Resource" id="Resource_7mqqp"]
+script = ExtResource("4_1phxv")
+level = 54
+move = ExtResource("10_dlnrl")
+
+[resource]
+script = ExtResource("13_r0ojm")
+species_name = "PINSIR"
+dex = 127
+index = 29
+slug = "pinsir"
+label = "Pinsir"
+category = "STAGBEETLE"
+height_ft = 4
+height_in = 11
+weight_tenths_lb = 1210
+hp = 65
+attack = 125
+defense = 100
+speed = 85
+special = 55
+type1 = "BUG"
+type2 = "BUG"
+catch_rate = 45
+base_exp = 200
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("11_yx3f1")]([ExtResource("12_4qaei")])
+learnset = Array[ExtResource("4_1phxv")]([SubResource("Resource_n5vgj"), SubResource("Resource_685hk"), SubResource("Resource_turl6"), SubResource("Resource_s04hh"), SubResource("Resource_8ia3g"), SubResource("Resource_7mqqp")])
+tmhm = Array[ExtResource("11_yx3f1")]([ExtResource("10_dlnrl"), ExtResource("14_i3ixl"), ExtResource("15_l8mci"), ExtResource("16_xonqh"), ExtResource("17_527dn"), ExtResource("18_ddhth"), ExtResource("19_gci63"), ExtResource("5_dmmen"), ExtResource("20_i25a6"), ExtResource("21_e3kiv"), ExtResource("22_ogh0x"), ExtResource("23_hwo07"), ExtResource("24_1s24r"), ExtResource("25_yknrm"), ExtResource("26_rbdui"), ExtResource("27_mk2bl")])
+evolutions = Array[ExtResource("2_vi5pg")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["If it fails to", "crush the victim", "in its pincers,", "it will swing it", "around and toss", "it hard"])
+front_sprite = ExtResource("3_nf5js")
+back_sprite = ExtResource("1_2egts")

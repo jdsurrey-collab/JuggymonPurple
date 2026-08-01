@@ -1,0 +1,238 @@
+{
+ "RockTunnelB1FCooltrainerF1BattleText": [
+  {
+   "kind": "text",
+   "line": "Hikers leave"
+  },
+  {
+   "kind": "line",
+   "line": "twigs as markers."
+  }
+ ],
+ "RockTunnelB1FCooltrainerF1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ohhh! I gave"
+  },
+  {
+   "kind": "line",
+   "line": "my all!"
+  }
+ ],
+ "RockTunnelB1FCooltrainerF1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I want to go"
+  },
+  {
+   "kind": "line",
+   "line": "home!"
+  }
+ ],
+ "RockTunnelB1FHiker1BattleText": [
+  {
+   "kind": "text",
+   "line": "Hah! Can you"
+  },
+  {
+   "kind": "line",
+   "line": "best my power?"
+  }
+ ],
+ "RockTunnelB1FHiker1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oops!"
+  },
+  {
+   "kind": "line",
+   "line": "Outmuscled!"
+  }
+ ],
+ "RockTunnelB1FHiker1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I favor power-"
+  },
+  {
+   "kind": "line",
+   "line": "thinking is such"
+  },
+  {
+   "kind": "cont",
+   "line": "a chore!"
+  }
+ ],
+ "RockTunnelB1FSuperNerd1BattleText": [
+  {
+   "kind": "text",
+   "line": "You've a #DEX?"
+  },
+  {
+   "kind": "line",
+   "line": "I want one,"
+  },
+  {
+   "kind": "cont",
+   "line": "desperately!"
+  }
+ ],
+ "RockTunnelB1FSuperNerd1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Blast. I envy"
+  },
+  {
+   "kind": "line",
+   "line": "you so!"
+  }
+ ],
+ "RockTunnelB1FSuperNerd1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "When your #DEX"
+  },
+  {
+   "kind": "line",
+   "line": "is complete, may"
+  },
+  {
+   "kind": "cont",
+   "line": "I have it?"
+  }
+ ],
+ "RockTunnelB1FSuperNerd2BattleText": [
+  {
+   "kind": "text",
+   "line": "Do you know of"
+  },
+  {
+   "kind": "line",
+   "line": "costume players?"
+  }
+ ],
+ "RockTunnelB1FSuperNerd2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Well,"
+  },
+  {
+   "kind": "line",
+   "line": "that's that."
+  }
+ ],
+ "RockTunnelB1FSuperNerd2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Costume players"
+  },
+  {
+   "kind": "line",
+   "line": "dress as #MON,"
+  },
+  {
+   "kind": "cont",
+   "line": "for a little joy."
+  }
+ ],
+ "RockTunnelB1FHiker2BattleText": [
+  {
+   "kind": "text",
+   "line": "My #MON's"
+  },
+  {
+   "kind": "line",
+   "line": "technique will"
+  },
+  {
+   "kind": "cont",
+   "line": "leave you in tears!"
+  }
+ ],
+ "RockTunnelB1FHiker2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I yield! You're"
+  },
+  {
+   "kind": "line",
+   "line": "the finer"
+  },
+  {
+   "kind": "cont",
+   "line": "technician!"
+  }
+ ],
+ "RockTunnelB1FHiker2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "In mountains"
+  },
+  {
+   "kind": "line",
+   "line": "such as these,"
+  },
+  {
+   "kind": "cont",
+   "line": "rock #MON dwell."
+  }
+ ],
+ "RockTunnelB1FCooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "I seldom come"
+  },
+  {
+   "kind": "line",
+   "line": "here, but I'll"
+  },
+  {
+   "kind": "cont",
+   "line": "fight you still."
+  }
+ ],
+ "RockTunnelB1FCooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh!"
+  },
+  {
+   "kind": "line",
+   "line": "I've lost!"
+  }
+ ],
+ "RockTunnelB1FCooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I favor small"
+  },
+  {
+   "kind": "line",
+   "line": "#MON. The large"
+  },
+  {
+   "kind": "cont",
+   "line": "ones terrify me."
+  }
+ ],
+ "RockTunnelB1FHiker3BattleText": [
+  {
+   "kind": "text",
+   "line": "Strike me with"
+  },
+  {
+   "kind": "line",
+   "line": "your best shot!"
+  }
+ ],
+ "RockTunnelB1FHiker3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Fired"
+  },
+  {
+   "kind": "line",
+   "line": "away!"
+  }
+ ]
+}

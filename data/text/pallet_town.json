@@ -1,0 +1,138 @@
+{
+ "PalletTownOakHeyWaitDontGoOutText": [
+  {
+   "kind": "text",
+   "line": "OAK: Stop! Don't-"
+  },
+  {
+   "kind": "line",
+   "line": "-don't go out!@"
+  }
+ ],
+ "PalletTownOakItsUnsafeText": [
+  {
+   "kind": "text",
+   "line": "OAK: 'Tis not safe."
+  },
+  {
+   "kind": "line",
+   "line": "Wretched things"
+  },
+  {
+   "kind": "cont",
+   "line": "wait to kill you."
+  },
+  {
+   "kind": "para",
+   "line": "You need a #MON"
+  },
+  {
+   "kind": "line",
+   "line": "just to survive"
+  },
+  {
+   "kind": "cont",
+   "line": "out there."
+  },
+  {
+   "kind": "cont",
+   "line": "Heaven help us."
+  },
+  {
+   "kind": "para",
+   "line": "Come, child."
+  },
+  {
+   "kind": "line",
+   "line": "There's no time."
+  }
+ ],
+ "PalletTownGirlText": [
+  {
+   "kind": "text",
+   "line": "I keep #MON so"
+  },
+  {
+   "kind": "line",
+   "line": "I'm not alone"
+  },
+  {
+   "kind": "para",
+   "line": "when mourning"
+  },
+  {
+   "kind": "line",
+   "line": "comes calling."
+  },
+  {
+   "kind": "cont",
+   "line": "Everyone leaves"
+  },
+  {
+   "kind": "cont",
+   "line": "in the end."
+  }
+ ],
+ "PalletTownFisherText": [
+  {
+   "kind": "text",
+   "line": "The PC's a crypt,"
+  },
+  {
+   "kind": "line",
+   "line": "in its own way."
+  },
+  {
+   "kind": "para",
+   "line": "Box after box of"
+  },
+  {
+   "kind": "line",
+   "line": "#MON that never"
+  },
+  {
+   "kind": "cont",
+   "line": "came home"
+  },
+  {
+   "kind": "cont",
+   "line": "again."
+  }
+ ],
+ "PalletTownOaksLabSignText": [
+  {
+   "kind": "text",
+   "line": "OAK #MON"
+  },
+  {
+   "kind": "line",
+   "line": "RESEARCH LAB"
+  }
+ ],
+ "PalletTownSignText": [
+  {
+   "kind": "text",
+   "line": "PALLET TOWN"
+  },
+  {
+   "kind": "line",
+   "line": "Ashes to ashes,"
+  },
+  {
+   "kind": "cont",
+   "line": "as they say."
+  }
+ ],
+ "PalletTownPlayersHouseSignText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER>'s house "
+  }
+ ],
+ "PalletTownRivalsHouseSignText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>'s house "
+  }
+ ]
+}

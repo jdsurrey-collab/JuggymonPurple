@@ -1,0 +1,97 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=39 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/shellder.png" id="1_dabo7"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_1sq58"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/shellder.png" id="3_sy7ts"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_o4x3t"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="5_reyw1"]
+[ext_resource type="Resource" path="res://resources/moves/clamp.tres" id="6_qa3hv"]
+[ext_resource type="Resource" path="res://resources/moves/aurora_beam.tres" id="7_r2gtp"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="8_kpruy"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="9_eufhe"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_g4682"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_f2yac"]
+[ext_resource type="Resource" path="res://resources/moves/withdraw.tres" id="12_pctnd"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_3gt7h"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_polus"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_0e8pe"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_g3fgu"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="17_ea1wn"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="18_l55rc"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="19_x1hgw"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="20_k38uj"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="21_jqnli"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="22_nrjvv"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="23_cs4g7"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="24_d10df"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="25_5x5gh"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="26_bft27"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="27_cn21m"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="28_rucwr"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="29_1r83x"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="30_y84f1"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="31_tau3k"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="32_1188r"]
+
+[sub_resource type="Resource" id="Resource_rkqd5"]
+script = ExtResource("2_1sq58")
+method = "ITEM"
+target = "CLOYSTER"
+level = 0
+item = "WATER_STONE"
+
+[sub_resource type="Resource" id="Resource_5j2xe"]
+script = ExtResource("4_o4x3t")
+level = 18
+move = ExtResource("5_reyw1")
+
+[sub_resource type="Resource" id="Resource_l81lg"]
+script = ExtResource("4_o4x3t")
+level = 23
+move = ExtResource("6_qa3hv")
+
+[sub_resource type="Resource" id="Resource_ob4kq"]
+script = ExtResource("4_o4x3t")
+level = 30
+move = ExtResource("7_r2gtp")
+
+[sub_resource type="Resource" id="Resource_jisjs"]
+script = ExtResource("4_o4x3t")
+level = 39
+move = ExtResource("8_kpruy")
+
+[sub_resource type="Resource" id="Resource_k0i4c"]
+script = ExtResource("4_o4x3t")
+level = 50
+move = ExtResource("9_eufhe")
+
+[resource]
+script = ExtResource("13_3gt7h")
+species_name = "SHELLDER"
+dex = 90
+index = 23
+slug = "shellder"
+label = "Shellder"
+category = "BIVALVE"
+height_ft = 1
+height_in = 0
+weight_tenths_lb = 90
+hp = 30
+attack = 65
+defense = 100
+speed = 40
+special = 45
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 190
+base_exp = 97
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("10_g4682")]([ExtResource("11_f2yac"), ExtResource("12_pctnd")])
+learnset = Array[ExtResource("4_o4x3t")]([SubResource("Resource_5j2xe"), SubResource("Resource_l81lg"), SubResource("Resource_ob4kq"), SubResource("Resource_jisjs"), SubResource("Resource_k0i4c")])
+tmhm = Array[ExtResource("10_g4682")]([ExtResource("14_polus"), ExtResource("15_0e8pe"), ExtResource("16_g3fgu"), ExtResource("17_ea1wn"), ExtResource("18_l55rc"), ExtResource("9_eufhe"), ExtResource("19_x1hgw"), ExtResource("20_k38uj"), ExtResource("21_jqnli"), ExtResource("22_nrjvv"), ExtResource("23_cs4g7"), ExtResource("24_d10df"), ExtResource("25_5x5gh"), ExtResource("26_bft27"), ExtResource("27_cn21m"), ExtResource("28_rucwr"), ExtResource("29_1r83x"), ExtResource("30_y84f1"), ExtResource("31_tau3k"), ExtResource("32_1188r")])
+evolutions = Array[ExtResource("2_1sq58")]([SubResource("Resource_rkqd5")])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_HELIX"
+dex_text = Array[String](["Its hard shell", "repels any kind", "of attack.", "It is vulnerable", "only when its", "shell is open"])
+front_sprite = ExtResource("3_sy7ts")
+back_sprite = ExtResource("1_dabo7")

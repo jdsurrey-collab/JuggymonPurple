@@ -1,0 +1,62 @@
+{
+ "CinnabarPokecenterCooltrainerFText": [
+  {
+   "kind": "text",
+   "line": "You may halt"
+  },
+  {
+   "kind": "line",
+   "line": "evolution."
+  },
+  {
+   "kind": "para",
+   "line": "When a #MON"
+  },
+  {
+   "kind": "line",
+   "line": "transforms, you"
+  },
+  {
+   "kind": "cont",
+   "line": "may stop it, and"
+  },
+  {
+   "kind": "cont",
+   "line": "leave it as it"
+  },
+  {
+   "kind": "cont",
+   "line": "was."
+  }
+ ],
+ "CinnabarPokecenterGentlemanText": [
+  {
+   "kind": "text",
+   "line": "Have you any"
+  },
+  {
+   "kind": "line",
+   "line": "friends left?"
+  },
+  {
+   "kind": "para",
+   "line": "#MON gained by"
+  },
+  {
+   "kind": "line",
+   "line": "trade grow so"
+  },
+  {
+   "kind": "cont",
+   "line": "very quickly."
+  },
+  {
+   "kind": "para",
+   "line": "Worth the trying,"
+  },
+  {
+   "kind": "line",
+   "line": "I should think!"
+  }
+ ]
+}

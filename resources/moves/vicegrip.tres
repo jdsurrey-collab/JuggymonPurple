@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_7w8g6"]
+
+[resource]
+script = ExtResource("1_7w8g6")
+move_name = "VICEGRIP"
+move_id = 11
+display_name = "VICEGRIP"
+move_type = "NORMAL"
+power = 55
+accuracy = 100
+pp = 30
+effect = "NO_ADDITIONAL_EFFECT"

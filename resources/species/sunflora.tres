@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=27 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/sunflora.png" id="1_fr6hd"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_fslgy"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/sunflora.png" id="3_i8mvd"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_6jf77"]
+[ext_resource type="Resource" path="res://resources/moves/growth.tres" id="5_2tm1j"]
+[ext_resource type="Resource" path="res://resources/moves/razor_leaf.tres" id="6_tjxdx"]
+[ext_resource type="Resource" path="res://resources/moves/petal_dance.tres" id="7_urpm2"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="8_3w3bq"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_e8jio"]
+[ext_resource type="Resource" path="res://resources/moves/absorb.tres" id="10_cpu75"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="11_ug7uf"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_rx4ng"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_3rb5g"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_gs8yt"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_hcpgs"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_2dagj"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_0cywk"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_8vqnp"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_jcj47"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_6ge26"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="21_q5gmq"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="22_4a5aq"]
+
+[sub_resource type="Resource" id="Resource_kfua3"]
+script = ExtResource("4_6jf77")
+level = 4
+move = ExtResource("5_2tm1j")
+
+[sub_resource type="Resource" id="Resource_glflm"]
+script = ExtResource("4_6jf77")
+level = 10
+move = ExtResource("6_tjxdx")
+
+[sub_resource type="Resource" id="Resource_oi0nq"]
+script = ExtResource("4_6jf77")
+level = 31
+move = ExtResource("7_urpm2")
+
+[sub_resource type="Resource" id="Resource_le8mu"]
+script = ExtResource("4_6jf77")
+level = 46
+move = ExtResource("8_3w3bq")
+
+[resource]
+script = ExtResource("12_rx4ng")
+species_name = "SUNFLORA"
+dex = 192
+index = 195
+slug = "sunflora"
+label = "Sunflora"
+category = "SUN"
+height_ft = 2
+height_in = 7
+weight_tenths_lb = 190
+hp = 75
+attack = 75
+defense = 55
+speed = 30
+special = 95
+type1 = "GRASS"
+type2 = "GRASS"
+catch_rate = 120
+base_exp = 146
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("9_e8jio")]([ExtResource("10_cpu75"), ExtResource("11_ug7uf")])
+learnset = Array[ExtResource("4_6jf77")]([SubResource("Resource_kfua3"), SubResource("Resource_glflm"), SubResource("Resource_oi0nq"), SubResource("Resource_le8mu")])
+tmhm = Array[ExtResource("9_e8jio")]([ExtResource("13_3rb5g"), ExtResource("14_gs8yt"), ExtResource("15_hcpgs"), ExtResource("16_2dagj"), ExtResource("17_0cywk"), ExtResource("18_8vqnp"), ExtResource("19_jcj47"), ExtResource("20_6ge26"), ExtResource("8_3w3bq"), ExtResource("21_q5gmq"), ExtResource("22_4a5aq")])
+evolutions = Array[ExtResource("2_fslgy")]([])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["It turns always", "to the light and", "will not look", "upon a shadow,", "not even its own."])
+front_sprite = ExtResource("3_i8mvd")
+back_sprite = ExtResource("1_fr6hd")

@@ -1,0 +1,384 @@
+{
+ "Route15CooltrainerF1BattleText": [
+  {
+   "kind": "text",
+   "line": "Let me try the"
+  },
+  {
+   "kind": "line",
+   "line": "#MON I claimed"
+  },
+  {
+   "kind": "cont",
+   "line": "in a cold trade!"
+  }
+ ],
+ "Route15CooltrainerF1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Not"
+  },
+  {
+   "kind": "line",
+   "line": "good enough!"
+  }
+ ],
+ "Route15CooltrainerF1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You cannot rename"
+  },
+  {
+   "kind": "line",
+   "line": "any #MON you"
+  },
+  {
+   "kind": "cont",
+   "line": "gain by trade."
+  },
+  {
+   "kind": "para",
+   "line": "Only its first"
+  },
+  {
+   "kind": "line",
+   "line": "master may."
+  }
+ ],
+ "Route15CooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "You seem gentle,"
+  },
+  {
+   "kind": "line",
+   "line": "so I think I can"
+  },
+  {
+   "kind": "cont",
+   "line": "best you!"
+  }
+ ],
+ "Route15CooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "No,"
+  },
+  {
+   "kind": "line",
+   "line": "I was wrong!"
+  }
+ ],
+ "Route15CooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I dread BIKERs,"
+  },
+  {
+   "kind": "line",
+   "line": "they look so"
+  },
+  {
+   "kind": "cont",
+   "line": "cruel and foul!"
+  }
+ ],
+ "Route15CooltrainerM1BattleText": [
+  {
+   "kind": "text",
+   "line": "When I whistle,"
+  },
+  {
+   "kind": "line",
+   "line": "dark birds heed"
+  },
+  {
+   "kind": "cont",
+   "line": "my call!"
+  }
+ ],
+ "Route15CooltrainerM1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ow!"
+  },
+  {
+   "kind": "line",
+   "line": "How tragic!"
+  }
+ ],
+ "Route15CooltrainerM1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Perhaps I was not"
+  },
+  {
+   "kind": "line",
+   "line": "made for battle."
+  }
+ ],
+ "Route15CooltrainerM2BattleText": [
+  {
+   "kind": "text",
+   "line": "Hmm? My birds do"
+  },
+  {
+   "kind": "line",
+   "line": "tremble! You must"
+  },
+  {
+   "kind": "cont",
+   "line": "be quite skilled."
+  }
+ ],
+ "Route15CooltrainerM2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Just"
+  },
+  {
+   "kind": "line",
+   "line": "as I feared!"
+  }
+ ],
+ "Route15CooltrainerM2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Did you know moves"
+  },
+  {
+   "kind": "line",
+   "line": "like EARTHQUAKE"
+  },
+  {
+   "kind": "cont",
+   "line": "have no power"
+  },
+  {
+   "kind": "cont",
+   "line": "over birds?"
+  }
+ ],
+ "Route15Beauty1BattleText": [
+  {
+   "kind": "text",
+   "line": "Oh, aren't you"
+  },
+  {
+   "kind": "line",
+   "line": "a wretched dear!"
+  }
+ ],
+ "Route15Beauty1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You looked"
+  },
+  {
+   "kind": "line",
+   "line": "so sweet, too!"
+  }
+ ],
+ "Route15Beauty1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I forgive you!"
+  },
+  {
+   "kind": "line",
+   "line": "I can bear worse!"
+  }
+ ],
+ "Route15Beauty2BattleText": [
+  {
+   "kind": "text",
+   "line": "I keep #MON,"
+  },
+  {
+   "kind": "line",
+   "line": "for I dwell so"
+  },
+  {
+   "kind": "cont",
+   "line": "alone!"
+  }
+ ],
+ "Route15Beauty2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I never"
+  },
+  {
+   "kind": "line",
+   "line": "asked for this!"
+  }
+ ],
+ "Route15Beauty2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I just love"
+  },
+  {
+   "kind": "line",
+   "line": "returning home to"
+  },
+  {
+   "kind": "cont",
+   "line": "my quiet #MON!"
+  }
+ ],
+ "Route15Biker1BattleText": [
+  {
+   "kind": "text",
+   "line": "Hey kid! C'mon!"
+  },
+  {
+   "kind": "line",
+   "line": "These are freshly"
+  },
+  {
+   "kind": "cont",
+   "line": "stolen!"
+  }
+ ],
+ "Route15Biker1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Why"
+  },
+  {
+   "kind": "line",
+   "line": "not, damn it?"
+  }
+ ],
+ "Route15Biker1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You live once, so"
+  },
+  {
+   "kind": "line",
+   "line": "I live an outlaw!"
+  },
+  {
+   "kind": "cont",
+   "line": "TEAM ROCKET RULES!"
+  }
+ ],
+ "Route15Biker2BattleText": [
+  {
+   "kind": "text",
+   "line": "Hand over all your"
+  },
+  {
+   "kind": "line",
+   "line": "coin when you"
+  },
+  {
+   "kind": "cont",
+   "line": "lose to me, kid!"
+  }
+ ],
+ "Route15Biker2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "That"
+  },
+  {
+   "kind": "line",
+   "line": "can't be true!"
+  }
+ ],
+ "Route15Biker2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I was only jesting"
+  },
+  {
+   "kind": "line",
+   "line": "about the coin!"
+  }
+ ],
+ "Route15CooltrainerF3BattleText": [
+  {
+   "kind": "text",
+   "line": "What's grim and"
+  },
+  {
+   "kind": "line",
+   "line": "grand? Trading"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON!"
+  }
+ ],
+ "Route15CooltrainerF3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "said trade!"
+  }
+ ],
+ "Route15CooltrainerF3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I trade #MON"
+  },
+  {
+   "kind": "line",
+   "line": "with my few kin!"
+  }
+ ],
+ "Route15CooltrainerF4BattleText": [
+  {
+   "kind": "text",
+   "line": "Care to test your"
+  },
+  {
+   "kind": "line",
+   "line": "luck with my"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON?"
+  }
+ ],
+ "Route15CooltrainerF4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I was"
+  },
+  {
+   "kind": "line",
+   "line": "too hasty!"
+  }
+ ],
+ "Route15CooltrainerF4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I'll seek out"
+  },
+  {
+   "kind": "line",
+   "line": "weaker souls.@"
+  }
+ ],
+ "Route15SignText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 15"
+  },
+  {
+   "kind": "line",
+   "line": "West to FUCHSIA"
+  },
+  {
+   "kind": "cont",
+   "line": "CITY"
+  }
+ ]
+}

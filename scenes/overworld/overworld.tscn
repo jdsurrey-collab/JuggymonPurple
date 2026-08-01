@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bppoverworld1"]
+
+[ext_resource type="Script" uid="uid://c0co2g308akuy" path="res://scripts/overworld/overworld_map.gd" id="1_map"]
+[ext_resource type="PackedScene" uid="uid://bppdlg0001" path="res://scenes/ui/dialogue_box.tscn" id="2_dlg"]
+[ext_resource type="PackedScene" path="res://scenes/ui/party_menu_box.tscn" id="3_party"]
+
+[node name="Overworld" type="Node2D"]
+script = ExtResource("1_map")
+
+[node name="Tiles" type="TileMapLayer" parent="."]
+
+[node name="Entities" type="Node2D" parent="."]
+
+[node name="DialogueBox" parent="." instance=ExtResource("2_dlg")]
+
+[node name="PartyMenuBox" parent="." instance=ExtResource("3_party")]

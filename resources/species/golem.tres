@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=42 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/golem.png" id="1_jotft"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_syq16"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/golem.png" id="3_odgv2"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_t7ktn"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="5_yfuy0"]
+[ext_resource type="Resource" path="res://resources/moves/rock_throw.tres" id="6_mgmqh"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="7_q5kj8"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="8_wito6"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="9_8bthy"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="10_qx0ij"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_lkh33"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_jkkiw"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_0epa3"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="14_l8npp"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="15_brap0"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_cjpk3"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="17_iq15t"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_ahotu"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_t40iw"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="20_mgnui"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="21_5fh1d"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="22_b27rp"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="23_wonih"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="24_twy56"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="25_ln8a6"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="26_3lhyu"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="27_uj0xf"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="28_c11ms"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="29_cmd0q"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="30_tk23b"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="31_g76hr"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="32_r4at8"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="33_pu6lb"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="34_h82nq"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="35_d0oiy"]
+
+[sub_resource type="Resource" id="Resource_vic7j"]
+script = ExtResource("4_t7ktn")
+level = 11
+move = ExtResource("5_yfuy0")
+
+[sub_resource type="Resource" id="Resource_gbteu"]
+script = ExtResource("4_t7ktn")
+level = 16
+move = ExtResource("6_mgmqh")
+
+[sub_resource type="Resource" id="Resource_tsogy"]
+script = ExtResource("4_t7ktn")
+level = 21
+move = ExtResource("7_q5kj8")
+
+[sub_resource type="Resource" id="Resource_lvmog"]
+script = ExtResource("4_t7ktn")
+level = 29
+move = ExtResource("8_wito6")
+
+[sub_resource type="Resource" id="Resource_xa48n"]
+script = ExtResource("4_t7ktn")
+level = 36
+move = ExtResource("9_8bthy")
+
+[sub_resource type="Resource" id="Resource_57hdu"]
+script = ExtResource("4_t7ktn")
+level = 43
+move = ExtResource("10_qx0ij")
+
+[resource]
+script = ExtResource("13_0epa3")
+species_name = "GOLEM"
+dex = 76
+index = 49
+slug = "golem"
+label = "Golem"
+category = "MEGATON"
+height_ft = 4
+height_in = 7
+weight_tenths_lb = 6620
+hp = 80
+attack = 110
+defense = 130
+speed = 45
+special = 55
+type1 = "ROCK"
+type2 = "GROUND"
+catch_rate = 45
+base_exp = 177
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_lkh33")]([ExtResource("12_jkkiw"), ExtResource("5_yfuy0")])
+learnset = Array[ExtResource("4_t7ktn")]([SubResource("Resource_vic7j"), SubResource("Resource_gbteu"), SubResource("Resource_tsogy"), SubResource("Resource_lvmog"), SubResource("Resource_xa48n"), SubResource("Resource_57hdu")])
+tmhm = Array[ExtResource("11_lkh33")]([ExtResource("14_l8npp"), ExtResource("15_brap0"), ExtResource("16_cjpk3"), ExtResource("17_iq15t"), ExtResource("18_ahotu"), ExtResource("19_t40iw"), ExtResource("20_mgnui"), ExtResource("21_5fh1d"), ExtResource("22_b27rp"), ExtResource("23_wonih"), ExtResource("24_twy56"), ExtResource("9_8bthy"), ExtResource("25_ln8a6"), ExtResource("26_3lhyu"), ExtResource("27_uj0xf"), ExtResource("28_c11ms"), ExtResource("29_cmd0q"), ExtResource("30_tk23b"), ExtResource("7_q5kj8"), ExtResource("31_g76hr"), ExtResource("32_r4at8"), ExtResource("10_qx0ij"), ExtResource("33_pu6lb"), ExtResource("34_h82nq"), ExtResource("35_d0oiy")])
+evolutions = Array[ExtResource("2_syq16")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Its boulder-like", "body is extremely", "hard. It can", "easily withstand", "dynamite blasts", "without damage"])
+front_sprite = ExtResource("3_odgv2")
+back_sprite = ExtResource("1_jotft")

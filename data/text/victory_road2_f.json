@@ -1,0 +1,186 @@
+{
+ "VictoryRoad2FMoltresBattleText": [
+  {
+   "kind": "text",
+   "line": "Gyaoo!@"
+  }
+ ],
+ "VictoryRoad2FHikerBattleText": [
+  {
+   "kind": "text",
+   "line": "VICTORY ROAD is"
+  },
+  {
+   "kind": "line",
+   "line": "the final trial"
+  },
+  {
+   "kind": "cont",
+   "line": "for all trainers!"
+  }
+ ],
+ "VictoryRoad2FHikerEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Aiyah!"
+  }
+ ],
+ "VictoryRoad2FHikerAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "If you're stuck,"
+  },
+  {
+   "kind": "line",
+   "line": "try shifting some"
+  },
+  {
+   "kind": "cont",
+   "line": "boulders about!"
+  }
+ ],
+ "VictoryRoad2FSuperNerd1BattleText": [
+  {
+   "kind": "text",
+   "line": "Ah, so you mean"
+  },
+  {
+   "kind": "line",
+   "line": "to challenge the"
+  },
+  {
+   "kind": "cont",
+   "line": "ELITE FOUR?"
+  }
+ ],
+ "VictoryRoad2FSuperNerd1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You"
+  },
+  {
+   "kind": "line",
+   "line": "bested me!"
+  }
+ ],
+ "VictoryRoad2FSuperNerd1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL> passed"
+  },
+  {
+   "kind": "line",
+   "line": "through here too!"
+  }
+ ],
+ "VictoryRoad2FCooltrainerMBattleText": [
+  {
+   "kind": "text",
+   "line": "Come on!"
+  },
+  {
+   "kind": "line",
+   "line": "I'll ruin you!"
+  }
+ ],
+ "VictoryRoad2FCooltrainerMEndBattleText": [
+  {
+   "kind": "text",
+   "line": "I got"
+  },
+  {
+   "kind": "line",
+   "line": "ruined!"
+  }
+ ],
+ "VictoryRoad2FCooltrainerMAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You've earned"
+  },
+  {
+   "kind": "line",
+   "line": "your place on"
+  },
+  {
+   "kind": "cont",
+   "line": "VICTORY ROAD!"
+  }
+ ],
+ "VictoryRoad2FSuperNerd2BattleText": [
+  {
+   "kind": "text",
+   "line": "If you pass"
+  },
+  {
+   "kind": "line",
+   "line": "through here, you"
+  },
+  {
+   "kind": "cont",
+   "line": "may face the"
+  },
+  {
+   "kind": "cont",
+   "line": "ELITE FOUR!"
+  }
+ ],
+ "VictoryRoad2FSuperNerd2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "No!"
+  },
+  {
+   "kind": "line",
+   "line": "Unbelievable!"
+  }
+ ],
+ "VictoryRoad2FSuperNerd2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I can best you"
+  },
+  {
+   "kind": "line",
+   "line": "yet, in matters"
+  },
+  {
+   "kind": "cont",
+   "line": "of #MON lore!"
+  }
+ ],
+ "VictoryRoad2FSuperNerd3BattleText": [
+  {
+   "kind": "text",
+   "line": "Is VICTORY ROAD"
+  },
+  {
+   "kind": "line",
+   "line": "too harsh for you?"
+  }
+ ],
+ "VictoryRoad2FSuperNerd3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Well"
+  },
+  {
+   "kind": "line",
+   "line": "done!"
+  }
+ ],
+ "VictoryRoad2FSuperNerd3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Many trainers"
+  },
+  {
+   "kind": "line",
+   "line": "abandon this"
+  },
+  {
+   "kind": "cont",
+   "line": "trial, here."
+  }
+ ]
+}

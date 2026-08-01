@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_iabsn"]
+
+[resource]
+script = ExtResource("1_iabsn")
+move_name = "DRILL_PECK"
+move_id = 65
+display_name = "DRILL PECK"
+move_type = "FLYING"
+power = 80
+accuracy = 100
+pp = 20
+effect = "NO_ADDITIONAL_EFFECT"

@@ -1,0 +1,246 @@
+{
+ "BillsHouseBillImNotAPokemonText": [
+  {
+   "kind": "text",
+   "line": "I am a #MON..."
+  },
+  {
+   "kind": "line",
+   "line": "...No."
+  },
+  {
+   "kind": "cont",
+   "line": "That isn't true."
+  },
+  {
+   "kind": "para",
+   "line": "I'm BILL. A"
+  },
+  {
+   "kind": "line",
+   "line": "true #MANIAC,"
+  },
+  {
+   "kind": "cont",
+   "line": "for what that's"
+  },
+  {
+   "kind": "cont",
+   "line": "worth. Why the"
+  },
+  {
+   "kind": "cont",
+   "line": "look of pity?"
+  },
+  {
+   "kind": "para",
+   "line": "This is no jest."
+  },
+  {
+   "kind": "line",
+   "line": "An experiment"
+  },
+  {
+   "kind": "cont",
+   "line": "gone wrong, and"
+  },
+  {
+   "kind": "cont",
+   "line": "now I'm fused"
+  },
+  {
+   "kind": "cont",
+   "line": "with a #MON."
+  },
+  {
+   "kind": "para",
+   "line": "Would you help"
+  },
+  {
+   "kind": "line",
+   "line": "a wretch like me?"
+  }
+ ],
+ "BillsHouseBillUseSeparationSystemText": [
+  {
+   "kind": "text",
+   "line": "While I'm in the"
+  },
+  {
+   "kind": "line",
+   "line": "TELEPORTER, use"
+  },
+  {
+   "kind": "cont",
+   "line": "my PC. Run the"
+  },
+  {
+   "kind": "cont",
+   "line": "Cell Separation"
+  },
+  {
+   "kind": "cont",
+   "line": "System. Hurry."
+  }
+ ],
+ "BillsHouseBillNoYouGottaHelpText": [
+  {
+   "kind": "text",
+   "line": "No? Please. I'm"
+  },
+  {
+   "kind": "line",
+   "line": "in a wretched"
+  },
+  {
+   "kind": "cont",
+   "line": "state here."
+  },
+  {
+   "kind": "para",
+   "line": "I beg you."
+  },
+  {
+   "kind": "line",
+   "line": "Please?"
+  },
+  {
+   "kind": "cont",
+   "line": "Anything?"
+  }
+ ],
+ "BillsHouseBillThankYouText": [
+  {
+   "kind": "text",
+   "line": "BILL: At last."
+  },
+  {
+   "kind": "line",
+   "line": "My thanks. I'm"
+  },
+  {
+   "kind": "cont",
+   "line": "in your debt."
+  },
+  {
+   "kind": "para",
+   "line": "Did you come to"
+  },
+  {
+   "kind": "line",
+   "line": "see my #MON,"
+  },
+  {
+   "kind": "cont",
+   "line": "then? No?"
+  },
+  {
+   "kind": "cont",
+   "line": "How disappointing."
+  },
+  {
+   "kind": "para",
+   "line": "I must repay"
+  },
+  {
+   "kind": "line",
+   "line": "you, somehow."
+  },
+  {
+   "kind": "cont",
+   "line": "Here. Perhaps"
+  },
+  {
+   "kind": "cont",
+   "line": "this will do."
+  }
+ ],
+ "SSTicketReceivedText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "an @"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "SSTicketNoRoomText": [
+  {
+   "kind": "text",
+   "line": "You carry too"
+  },
+  {
+   "kind": "line",
+   "line": "much, friend!"
+  }
+ ],
+ "BillsHouseBillWhyDontYouGoInsteadOfMeText": [
+  {
+   "kind": "text",
+   "line": "That ship,"
+  },
+  {
+   "kind": "line",
+   "line": "S.S.ANNE, waits"
+  },
+  {
+   "kind": "cont",
+   "line": "in VERMILION"
+  },
+  {
+   "kind": "cont",
+   "line": "CITY, full of"
+  },
+  {
+   "kind": "cont",
+   "line": "trainers."
+  },
+  {
+   "kind": "para",
+   "line": "They asked me"
+  },
+  {
+   "kind": "line",
+   "line": "to their party."
+  },
+  {
+   "kind": "cont",
+   "line": "I can't abide"
+  },
+  {
+   "kind": "cont",
+   "line": "such gatherings."
+  },
+  {
+   "kind": "cont",
+   "line": "Go in my place,"
+  },
+  {
+   "kind": "cont",
+   "line": "won't you?"
+  }
+ ],
+ "BillsHouseBillCheckOutMyRarePokemonText": [
+  {
+   "kind": "text",
+   "line": "BILL: Go on,"
+  },
+  {
+   "kind": "line",
+   "line": "then. See my"
+  },
+  {
+   "kind": "cont",
+   "line": "rare #MON,"
+  },
+  {
+   "kind": "cont",
+   "line": "on the PC."
+  }
+ ]
+}

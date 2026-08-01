@@ -1,0 +1,156 @@
+{
+ "PokemonTower2FRivalWhatBringsYouHereText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: So,"
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>. What"
+  },
+  {
+   "kind": "cont",
+   "line": "brings you to"
+  },
+  {
+   "kind": "cont",
+   "line": "this graveyard?"
+  },
+  {
+   "kind": "cont",
+   "line": "Come to mourn?"
+  },
+  {
+   "kind": "para",
+   "line": "I could arrange"
+  },
+  {
+   "kind": "line",
+   "line": "a burial or two."
+  },
+  {
+   "kind": "cont",
+   "line": "Shall we, then?"
+  }
+ ],
+ "PokemonTower2FRivalDefeatedText": [
+  {
+   "kind": "text",
+   "line": "What? You"
+  },
+  {
+   "kind": "line",
+   "line": "wretch!"
+  },
+  {
+   "kind": "para",
+   "line": "And I showed"
+  },
+  {
+   "kind": "line",
+   "line": "you mercy!"
+  }
+ ],
+ "PokemonTower2FRivalVictoryText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Look at"
+  },
+  {
+   "kind": "line",
+   "line": "your pitiful"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON."
+  },
+  {
+   "kind": "para",
+   "line": "Harden them, or"
+  },
+  {
+   "kind": "line",
+   "line": "bury them."
+  }
+ ],
+ "PokemonTower2FRivalHowsYourDexText": [
+  {
+   "kind": "text",
+   "line": "How fares your"
+  },
+  {
+   "kind": "line",
+   "line": "#DEX? I've just"
+  },
+  {
+   "kind": "cont",
+   "line": "snared an orphan"
+  },
+  {
+   "kind": "cont",
+   "line": "CUBONE."
+  },
+  {
+   "kind": "para",
+   "line": "Its mother, I'd"
+  },
+  {
+   "kind": "line",
+   "line": "wager, wears that"
+  },
+  {
+   "kind": "cont",
+   "line": "skull it grieves."
+  },
+  {
+   "kind": "para",
+   "line": "None left grown,"
+  },
+  {
+   "kind": "line",
+   "line": "I'd guess. Well, I"
+  },
+  {
+   "kind": "cont",
+   "line": "must be going."
+  },
+  {
+   "kind": "cont",
+   "line": "Much yet to"
+  },
+  {
+   "kind": "cont",
+   "line": "accomplish."
+  },
+  {
+   "kind": "para",
+   "line": "We'll meet again."
+  }
+ ],
+ "PokemonTower2FChannelerText": [
+  {
+   "kind": "text",
+   "line": "Even we could not"
+  },
+  {
+   "kind": "line",
+   "line": "identify the"
+  },
+  {
+   "kind": "cont",
+   "line": "wayward GHOSTs!"
+  },
+  {
+   "kind": "para",
+   "line": "A SILPH SCOPE"
+  },
+  {
+   "kind": "line",
+   "line": "might be able to"
+  },
+  {
+   "kind": "cont",
+   "line": "unmask them."
+  }
+ ]
+}

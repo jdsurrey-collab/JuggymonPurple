@@ -1,0 +1,240 @@
+{
+ "CeruleanBadgeHouseMiddleAgedManText": [
+  {
+   "kind": "text",
+   "line": "#MON BADGEs"
+  },
+  {
+   "kind": "line",
+   "line": "mark the skilled,"
+  },
+  {
+   "kind": "cont",
+   "line": "or the lucky."
+  },
+  {
+   "kind": "para",
+   "line": "You bear at"
+  },
+  {
+   "kind": "line",
+   "line": "least one."
+  },
+  {
+   "kind": "para",
+   "line": "Each BADGE hides"
+  },
+  {
+   "kind": "line",
+   "line": "its own secret."
+  }
+ ],
+ "CeruleanBadgeHouseMiddleAgedManWhichBadgeText": [
+  {
+   "kind": "text",
+   "line": "Now, then..."
+  },
+  {
+   "kind": "para",
+   "line": "Which of the 8"
+  },
+  {
+   "kind": "line",
+   "line": "BADGEs shall I"
+  },
+  {
+   "kind": "cont",
+   "line": "unravel for you?"
+  }
+ ],
+ "CeruleanBadgeHouseMiddleAgedManVisitAnyTimeText": [
+  {
+   "kind": "text",
+   "line": "Visit whenever"
+  },
+  {
+   "kind": "line",
+   "line": "you like."
+  }
+ ],
+ "CeruleanBadgeHouseBoulderBadgeText": [
+  {
+   "kind": "text",
+   "line": "The ATTACK of all"
+  },
+  {
+   "kind": "line",
+   "line": "#MON creeps"
+  },
+  {
+   "kind": "cont",
+   "line": "up, somewhat."
+  },
+  {
+   "kind": "para",
+   "line": "It grants FLASH,"
+  },
+  {
+   "kind": "line",
+   "line": "too, whenever"
+  },
+  {
+   "kind": "cont",
+   "line": "the dark presses."
+  }
+ ],
+ "CeruleanBadgeHouseCascadeBadgeText": [
+  {
+   "kind": "text",
+   "line": "#MON up to L30"
+  },
+  {
+   "kind": "line",
+   "line": "will heed you."
+  },
+  {
+   "kind": "para",
+   "line": "Beyond that,"
+  },
+  {
+   "kind": "line",
+   "line": "they turn wild!"
+  },
+  {
+   "kind": "para",
+   "line": "It grants CUT,"
+  },
+  {
+   "kind": "line",
+   "line": "too, beyond"
+  },
+  {
+   "kind": "cont",
+   "line": "battle."
+  }
+ ],
+ "CeruleanBadgeHouseThunderBadgeText": [
+  {
+   "kind": "text",
+   "line": "The SPEED of all"
+  },
+  {
+   "kind": "line",
+   "line": "#MON quickens,"
+  },
+  {
+   "kind": "cont",
+   "line": "somewhat."
+  },
+  {
+   "kind": "para",
+   "line": "It grants FLY,"
+  },
+  {
+   "kind": "line",
+   "line": "too, beyond"
+  },
+  {
+   "kind": "cont",
+   "line": "battle."
+  }
+ ],
+ "CeruleanBadgeHouseRainbowBadgeText": [
+  {
+   "kind": "text",
+   "line": "#MON up to L50"
+  },
+  {
+   "kind": "line",
+   "line": "will heed you."
+  },
+  {
+   "kind": "para",
+   "line": "Beyond that,"
+  },
+  {
+   "kind": "line",
+   "line": "they turn wild!"
+  },
+  {
+   "kind": "para",
+   "line": "It grants"
+  },
+  {
+   "kind": "line",
+   "line": "STRENGTH, too,"
+  },
+  {
+   "kind": "cont",
+   "line": "beyond battle."
+  }
+ ],
+ "CeruleanBadgeHouseSoulBadgeText": [
+  {
+   "kind": "text",
+   "line": "The DEFENSE of"
+  },
+  {
+   "kind": "line",
+   "line": "all #MON hardens,"
+  },
+  {
+   "kind": "cont",
+   "line": "somewhat."
+  },
+  {
+   "kind": "para",
+   "line": "It grants SURF,"
+  },
+  {
+   "kind": "line",
+   "line": "too, beyond"
+  },
+  {
+   "kind": "cont",
+   "line": "battle."
+  }
+ ],
+ "CeruleanBadgeHouseMarshBadgeText": [
+  {
+   "kind": "text",
+   "line": "#MON up to L70"
+  },
+  {
+   "kind": "line",
+   "line": "will heed you."
+  },
+  {
+   "kind": "para",
+   "line": "Beyond that,"
+  },
+  {
+   "kind": "line",
+   "line": "they turn wild!"
+  }
+ ],
+ "CeruleanBadgeHouseVolcanoBadgeText": [
+  {
+   "kind": "text",
+   "line": "Your #MON's"
+  },
+  {
+   "kind": "line",
+   "line": "SPECIAL strength"
+  },
+  {
+   "kind": "cont",
+   "line": "grows, somewhat."
+  }
+ ],
+ "CeruleanBadgeHouseEarthBadgeText": [
+  {
+   "kind": "text",
+   "line": "All #MON, at"
+  },
+  {
+   "kind": "line",
+   "line": "last, obey you."
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/flaaffy.png" id="1_aatap"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_64sl3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/flaaffy.png" id="3_qd7q3"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_s66kb"]
+[ext_resource type="Resource" path="res://resources/moves/thundershock.tres" id="5_ur0v6"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="6_vsix1"]
+[ext_resource type="Resource" path="res://resources/moves/cotton_spore.tres" id="7_q0k4r"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="8_mwtf1"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="9_exia7"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_fsrkl"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_vs3jg"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="12_wjn8u"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_m40ry"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_gku5x"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_76rdh"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_l2bdq"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_t0jlw"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_jrppc"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_q2o4w"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_3ow17"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_qcul8"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="22_75pyc"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="23_nepcv"]
+
+[sub_resource type="Resource" id="Resource_3trd2"]
+script = ExtResource("2_64sl3")
+method = "LEVEL"
+target = "AMPHAROS"
+level = 30
+item = ""
+
+[sub_resource type="Resource" id="Resource_qmbk0"]
+script = ExtResource("4_s66kb")
+level = 9
+move = ExtResource("5_ur0v6")
+
+[sub_resource type="Resource" id="Resource_p543c"]
+script = ExtResource("4_s66kb")
+level = 18
+move = ExtResource("6_vsix1")
+
+[sub_resource type="Resource" id="Resource_hpdhh"]
+script = ExtResource("4_s66kb")
+level = 27
+move = ExtResource("7_q0k4r")
+
+[sub_resource type="Resource" id="Resource_2yepp"]
+script = ExtResource("4_s66kb")
+level = 36
+move = ExtResource("8_mwtf1")
+
+[sub_resource type="Resource" id="Resource_a5a81"]
+script = ExtResource("4_s66kb")
+level = 45
+move = ExtResource("9_exia7")
+
+[resource]
+script = ExtResource("13_m40ry")
+species_name = "FLAAFFY"
+dex = 180
+index = 159
+slug = "flaaffy"
+label = "Flaaffy"
+category = "WOOL"
+height_ft = 2
+height_in = 7
+weight_tenths_lb = 290
+hp = 70
+attack = 55
+defense = 55
+speed = 45
+special = 70
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 120
+base_exp = 117
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("10_fsrkl")]([ExtResource("11_vs3jg"), ExtResource("12_wjn8u"), ExtResource("5_ur0v6")])
+learnset = Array[ExtResource("4_s66kb")]([SubResource("Resource_qmbk0"), SubResource("Resource_p543c"), SubResource("Resource_hpdhh"), SubResource("Resource_2yepp"), SubResource("Resource_a5a81")])
+tmhm = Array[ExtResource("10_fsrkl")]([ExtResource("14_gku5x"), ExtResource("15_76rdh"), ExtResource("16_l2bdq"), ExtResource("17_t0jlw"), ExtResource("18_jrppc"), ExtResource("19_q2o4w"), ExtResource("20_3ow17"), ExtResource("21_qcul8"), ExtResource("22_75pyc"), ExtResource("9_exia7"), ExtResource("6_vsix1"), ExtResource("23_nepcv")])
+evolutions = Array[ExtResource("2_64sl3")]([SubResource("Resource_3trd2")])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Where the wool", "has worn away,", "the skin beneath", "glows. It is not", "a healthy light."])
+front_sprite = ExtResource("3_qd7q3")
+back_sprite = ExtResource("1_aatap")

@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=49 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/slowpoke.png" id="1_vmgph"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_12tae"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/slowpoke.png" id="3_ddljd"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_yppl6"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="5_ufps3"]
+[ext_resource type="Resource" path="res://resources/moves/headbutt.tres" id="6_yrhm8"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="7_gvk5b"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="8_hku41"]
+[ext_resource type="Resource" path="res://resources/moves/amnesia.tres" id="9_pyhjp"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="10_mvynm"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_ya5tv"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="12_4ny6b"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_gi8cm"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_j7tjp"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_u13tj"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_0s6tb"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_a15rc"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="18_t2fhn"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="19_e718r"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="20_hridd"]
+[ext_resource type="Resource" path="res://resources/moves/pay_day.tres" id="21_cd5fe"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="22_r3kw1"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="23_noj45"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="24_s2oql"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="25_edlnr"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="26_r0udr"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="27_ch1b5"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="28_kuuuq"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="29_h8kkv"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="30_p5lhw"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="31_2j578"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="32_5sus1"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="33_dayow"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="34_5ro85"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="35_go3id"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="36_c12sc"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="37_5swfp"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="38_h47ca"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="39_lu5ib"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="40_awgnm"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="41_06qta"]
+
+[sub_resource type="Resource" id="Resource_1eltp"]
+script = ExtResource("2_12tae")
+method = "LEVEL"
+target = "SLOWBRO"
+level = 37
+item = ""
+
+[sub_resource type="Resource" id="Resource_cnaaf"]
+script = ExtResource("4_yppl6")
+level = 18
+move = ExtResource("5_ufps3")
+
+[sub_resource type="Resource" id="Resource_bnwrp"]
+script = ExtResource("4_yppl6")
+level = 22
+move = ExtResource("6_yrhm8")
+
+[sub_resource type="Resource" id="Resource_bm0u3"]
+script = ExtResource("4_yppl6")
+level = 27
+move = ExtResource("7_gvk5b")
+
+[sub_resource type="Resource" id="Resource_wx6ua"]
+script = ExtResource("4_yppl6")
+level = 33
+move = ExtResource("8_hku41")
+
+[sub_resource type="Resource" id="Resource_oeesi"]
+script = ExtResource("4_yppl6")
+level = 40
+move = ExtResource("9_pyhjp")
+
+[sub_resource type="Resource" id="Resource_ld2t3"]
+script = ExtResource("4_yppl6")
+level = 48
+move = ExtResource("10_mvynm")
+
+[resource]
+script = ExtResource("13_gi8cm")
+species_name = "SLOWPOKE"
+dex = 79
+index = 37
+slug = "slowpoke"
+label = "Slowpoke"
+category = "DOPEY"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 790
+hp = 90
+attack = 65
+defense = 65
+speed = 15
+special = 40
+type1 = "WATER"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 190
+base_exp = 99
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_ya5tv")]([ExtResource("12_4ny6b")])
+learnset = Array[ExtResource("4_yppl6")]([SubResource("Resource_cnaaf"), SubResource("Resource_bnwrp"), SubResource("Resource_bm0u3"), SubResource("Resource_wx6ua"), SubResource("Resource_oeesi"), SubResource("Resource_ld2t3")])
+tmhm = Array[ExtResource("11_ya5tv")]([ExtResource("14_j7tjp"), ExtResource("15_u13tj"), ExtResource("16_0s6tb"), ExtResource("17_a15rc"), ExtResource("18_t2fhn"), ExtResource("8_hku41"), ExtResource("19_e718r"), ExtResource("20_hridd"), ExtResource("21_cd5fe"), ExtResource("22_r3kw1"), ExtResource("23_noj45"), ExtResource("24_s2oql"), ExtResource("25_edlnr"), ExtResource("10_mvynm"), ExtResource("26_r0udr"), ExtResource("27_ch1b5"), ExtResource("28_kuuuq"), ExtResource("29_h8kkv"), ExtResource("30_p5lhw"), ExtResource("31_2j578"), ExtResource("32_5sus1"), ExtResource("33_dayow"), ExtResource("34_5ro85"), ExtResource("35_go3id"), ExtResource("36_c12sc"), ExtResource("37_5swfp"), ExtResource("38_h47ca"), ExtResource("39_lu5ib"), ExtResource("40_awgnm"), ExtResource("41_06qta")])
+evolutions = Array[ExtResource("2_12tae")]([SubResource("Resource_1eltp")])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Incredibly slow", "and dopey. It", "takes 5 seconds", "for it to feel", "pain when under", "attack"])
+front_sprite = ExtResource("3_ddljd")
+back_sprite = ExtResource("1_vmgph")

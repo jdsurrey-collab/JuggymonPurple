@@ -1,0 +1,58 @@
+{
+ "SSAnne1FWaiterText": [
+  {
+   "kind": "text",
+   "line": "Bonjour."
+  },
+  {
+   "kind": "line",
+   "line": "I serve aboard"
+  },
+  {
+   "kind": "cont",
+   "line": "this vessel."
+  },
+  {
+   "kind": "para",
+   "line": "I will bring"
+  },
+  {
+   "kind": "line",
+   "line": "you anything"
+  },
+  {
+   "kind": "cont",
+   "line": "you desire."
+  },
+  {
+   "kind": "para",
+   "line": "Ah. The quiet,"
+  },
+  {
+   "kind": "line",
+   "line": "brooding sort."
+  }
+ ],
+ "SSAnne1FSailorText": [
+  {
+   "kind": "text",
+   "line": "The passengers"
+  },
+  {
+   "kind": "line",
+   "line": "grow restless."
+  },
+  {
+   "kind": "para",
+   "line": "The bored ones"
+  },
+  {
+   "kind": "line",
+   "line": "may challenge"
+  },
+  {
+   "kind": "cont",
+   "line": "you yet."
+  }
+ ]
+}

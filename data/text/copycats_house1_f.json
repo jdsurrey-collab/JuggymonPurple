@@ -1,0 +1,56 @@
+{
+ "CopycatsHouse1FMiddleAgedWomanText": [
+  {
+   "kind": "text",
+   "line": "My daughter is"
+  },
+  {
+   "kind": "line",
+   "line": "so self-absorbed."
+  },
+  {
+   "kind": "cont",
+   "line": "She keeps but"
+  },
+  {
+   "kind": "cont",
+   "line": "few friends."
+  }
+ ],
+ "CopycatsHouse1FMiddleAgedManText": [
+  {
+   "kind": "text",
+   "line": "My daughter loves"
+  },
+  {
+   "kind": "line",
+   "line": "to mimic others."
+  },
+  {
+   "kind": "para",
+   "line": "Her mimicry has"
+  },
+  {
+   "kind": "line",
+   "line": "earned her the"
+  },
+  {
+   "kind": "cont",
+   "line": "name COPYCAT,"
+  },
+  {
+   "kind": "cont",
+   "line": "hereabouts!"
+  }
+ ],
+ "CopycatsHouse1FChanseyText": [
+  {
+   "kind": "text",
+   "line": "CHANSEY: Chaan!"
+  },
+  {
+   "kind": "line",
+   "line": "Sii!@"
+  }
+ ]
+}

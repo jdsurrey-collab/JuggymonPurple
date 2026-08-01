@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_rcbkd"]
+
+[resource]
+script = ExtResource("1_rcbkd")
+move_name = "HAZE"
+move_id = 114
+display_name = "HAZE"
+move_type = "ICE"
+power = 0
+accuracy = 100
+pp = 30
+effect = "HAZE_EFFECT"

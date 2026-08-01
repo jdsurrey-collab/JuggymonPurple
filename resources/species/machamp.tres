@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=40 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/machamp.png" id="1_b0cjm"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_ow4vv"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/machamp.png" id="3_sx3x2"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_8a6ow"]
+[ext_resource type="Resource" path="res://resources/moves/low_kick.tres" id="5_mcqd2"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="6_d3f3i"]
+[ext_resource type="Resource" path="res://resources/moves/focus_energy.tres" id="7_rhwfr"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="8_gyawh"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="9_ux87t"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_4sj3h"]
+[ext_resource type="Resource" path="res://resources/moves/karate_chop.tres" id="11_5nx0r"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_xan0b"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="13_gqk41"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="14_f18fa"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_1pcsq"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_ua6eu"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_33a6q"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_hdkq0"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="19_12uwn"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="20_1huk8"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="21_26qh3"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="22_2j0ic"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="23_okong"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="24_crirl"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="25_dx0w3"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="26_7supn"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="27_prajy"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="28_vdupu"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="29_n3krx"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="30_oxuia"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="31_tkj7b"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="32_drkuc"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="33_bqjlx"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="34_v4le0"]
+
+[sub_resource type="Resource" id="Resource_pq828"]
+script = ExtResource("4_8a6ow")
+level = 20
+move = ExtResource("5_mcqd2")
+
+[sub_resource type="Resource" id="Resource_kj4qt"]
+script = ExtResource("4_8a6ow")
+level = 25
+move = ExtResource("6_d3f3i")
+
+[sub_resource type="Resource" id="Resource_2hdb3"]
+script = ExtResource("4_8a6ow")
+level = 36
+move = ExtResource("7_rhwfr")
+
+[sub_resource type="Resource" id="Resource_lq6np"]
+script = ExtResource("4_8a6ow")
+level = 44
+move = ExtResource("8_gyawh")
+
+[sub_resource type="Resource" id="Resource_mgaiv"]
+script = ExtResource("4_8a6ow")
+level = 52
+move = ExtResource("9_ux87t")
+
+[resource]
+script = ExtResource("12_xan0b")
+species_name = "MACHAMP"
+dex = 68
+index = 126
+slug = "machamp"
+label = "Machamp"
+category = "SUPERPOWER"
+height_ft = 5
+height_in = 3
+weight_tenths_lb = 2870
+hp = 90
+attack = 130
+defense = 80
+speed = 55
+special = 65
+type1 = "FIGHTING"
+type2 = "FIGHTING"
+catch_rate = 45
+base_exp = 193
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("10_4sj3h")]([ExtResource("11_5nx0r"), ExtResource("5_mcqd2"), ExtResource("6_d3f3i")])
+learnset = Array[ExtResource("4_8a6ow")]([SubResource("Resource_pq828"), SubResource("Resource_kj4qt"), SubResource("Resource_2hdb3"), SubResource("Resource_lq6np"), SubResource("Resource_mgaiv")])
+tmhm = Array[ExtResource("10_4sj3h")]([ExtResource("13_gqk41"), ExtResource("14_f18fa"), ExtResource("15_1pcsq"), ExtResource("16_ua6eu"), ExtResource("17_33a6q"), ExtResource("18_hdkq0"), ExtResource("19_12uwn"), ExtResource("9_ux87t"), ExtResource("20_1huk8"), ExtResource("8_gyawh"), ExtResource("21_26qh3"), ExtResource("22_2j0ic"), ExtResource("23_okong"), ExtResource("24_crirl"), ExtResource("25_dx0w3"), ExtResource("26_7supn"), ExtResource("27_prajy"), ExtResource("28_vdupu"), ExtResource("29_n3krx"), ExtResource("30_oxuia"), ExtResource("31_tkj7b"), ExtResource("32_drkuc"), ExtResource("33_bqjlx"), ExtResource("34_v4le0")])
+evolutions = Array[ExtResource("2_ow4vv")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Using its heavy", "muscles, it throws", "powerful punches", "that can send the", "victim clear over", "the horizon"])
+front_sprite = ExtResource("3_sx3x2")
+back_sprite = ExtResource("1_b0cjm")

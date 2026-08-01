@@ -1,0 +1,96 @@
+{
+ "PokemonMansionB1FBurglarBattleText": [
+  {
+   "kind": "text",
+   "line": "Uh-oh. Where in"
+  },
+  {
+   "kind": "line",
+   "line": "these ashes am I?"
+  }
+ ],
+ "PokemonMansionB1FBurglarEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Awooh!"
+  }
+ ],
+ "PokemonMansionB1FBurglarAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You may find"
+  },
+  {
+   "kind": "line",
+   "line": "things left"
+  },
+  {
+   "kind": "cont",
+   "line": "scattered about."
+  }
+ ],
+ "PokemonMansionB1FScientistBattleText": [
+  {
+   "kind": "text",
+   "line": "This ruin serves"
+  },
+  {
+   "kind": "line",
+   "line": "as fine a lab as"
+  },
+  {
+   "kind": "cont",
+   "line": "any."
+  }
+ ],
+ "PokemonMansionB1FScientistEndBattleText": [
+  {
+   "kind": "text",
+   "line": "What"
+  },
+  {
+   "kind": "line",
+   "line": "was that for?"
+  }
+ ],
+ "PokemonMansionB1FScientistAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I favor it here!"
+  },
+  {
+   "kind": "line",
+   "line": "So fitting, for"
+  },
+  {
+   "kind": "cont",
+   "line": "my grim studies!"
+  }
+ ],
+ "PokemonMansionB1FDiaryText": [
+  {
+   "kind": "text",
+   "line": "Diary; Sept. 1"
+  },
+  {
+   "kind": "line",
+   "line": "MEWTWO grows far"
+  },
+  {
+   "kind": "cont",
+   "line": "too powerful."
+  },
+  {
+   "kind": "para",
+   "line": "We have failed to"
+  },
+  {
+   "kind": "line",
+   "line": "tame its vicious,"
+  },
+  {
+   "kind": "cont",
+   "line": "murderous will..."
+  }
+ ]
+}

@@ -1,0 +1,254 @@
+{
+ "SSAnneB1FRoomsMachokeText": [
+  {
+   "kind": "text",
+   "line": "MACHOKE: Gwoh!"
+  },
+  {
+   "kind": "line",
+   "line": "Goggoh!@"
+  }
+ ],
+ "SSAnneB1FRoomsSailor1BattleText": [
+  {
+   "kind": "text",
+   "line": "You know what"
+  },
+  {
+   "kind": "line",
+   "line": "they say of"
+  },
+  {
+   "kind": "cont",
+   "line": "sailors, and blood."
+  }
+ ],
+ "SSAnneB1FRoomsSailor1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Right! Good"
+  },
+  {
+   "kind": "line",
+   "line": "fight, mate!"
+  }
+ ],
+ "SSAnneB1FRoomsSailor1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Care to be a"
+  },
+  {
+   "kind": "line",
+   "line": "sailor, mate?"
+  }
+ ],
+ "SSAnneB1FRoomsSailor2BattleText": [
+  {
+   "kind": "text",
+   "line": "My sailor's"
+  },
+  {
+   "kind": "line",
+   "line": "pride's at stake!"
+  }
+ ],
+ "SSAnneB1FRoomsSailor2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Your spirit has"
+  },
+  {
+   "kind": "line",
+   "line": "sunk me!"
+  }
+ ],
+ "SSAnneB1FRoomsSailor2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Did you see the"
+  },
+  {
+   "kind": "line",
+   "line": "FISHING GURU, in"
+  },
+  {
+   "kind": "cont",
+   "line": "VERMILION CITY?"
+  }
+ ],
+ "SSAnneB1FRoomsSailor3BattleText": [
+  {
+   "kind": "text",
+   "line": "We sailors"
+  },
+  {
+   "kind": "line",
+   "line": "keep #MON too!"
+  }
+ ],
+ "SSAnneB1FRoomsSailor3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "OK, "
+  },
+  {
+   "kind": "line",
+   "line": "you're not bad."
+  }
+ ],
+ "SSAnneB1FRoomsSailor3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "We caught all"
+  },
+  {
+   "kind": "line",
+   "line": "our #MON out"
+  },
+  {
+   "kind": "cont",
+   "line": "at sea, ourselves."
+  }
+ ],
+ "SSAnneB1FRoomsSailor4BattleText": [
+  {
+   "kind": "text",
+   "line": "I favor feisty"
+  },
+  {
+   "kind": "line",
+   "line": "children like you!@"
+  }
+ ],
+ "SSAnneB1FRoomsSailor4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Argh!"
+  },
+  {
+   "kind": "line",
+   "line": "Lost it!"
+  }
+ ],
+ "SSAnneB1FRoomsSailor4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Sea #MON dwell"
+  },
+  {
+   "kind": "line",
+   "line": "in the deep."
+  },
+  {
+   "kind": "cont",
+   "line": "You'll need a ROD."
+  }
+ ],
+ "SSAnneB1FRoomsSailor5BattleText": [
+  {
+   "kind": "text",
+   "line": "Matey, walk the"
+  },
+  {
+   "kind": "line",
+   "line": "plank, should"
+  },
+  {
+   "kind": "cont",
+   "line": "you lose!"
+  }
+ ],
+ "SSAnneB1FRoomsSailor5EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Argh! Beaten by"
+  },
+  {
+   "kind": "line",
+   "line": "a child!"
+  }
+ ],
+ "SSAnneB1FRoomsSailor5AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Jellyfish drift"
+  },
+  {
+   "kind": "line",
+   "line": "in sometimes,"
+  },
+  {
+   "kind": "cont",
+   "line": "unnoticed."
+  }
+ ],
+ "SSAnneB1FRoomsFisherBattleText": [
+  {
+   "kind": "text",
+   "line": "Hello, stranger."
+  },
+  {
+   "kind": "line",
+   "line": "Stay a while."
+  },
+  {
+   "kind": "para",
+   "line": "All my #MON"
+  },
+  {
+   "kind": "line",
+   "line": "hail from the sea."
+  }
+ ],
+ "SSAnneB1FRoomsFisherEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Darn! That one"
+  },
+  {
+   "kind": "line",
+   "line": "slipped away,"
+  },
+  {
+   "kind": "cont",
+   "line": "too!"
+  }
+ ],
+ "SSAnneB1FRoomsFisherAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I'd have made you"
+  },
+  {
+   "kind": "line",
+   "line": "my assistant,"
+  },
+  {
+   "kind": "cont",
+   "line": "besides."
+  }
+ ],
+ "SSAnneB1FRoomsSuperNerdText": [
+  {
+   "kind": "text",
+   "line": "My MACHOKE, so"
+  },
+  {
+   "kind": "line",
+   "line": "very strong."
+  },
+  {
+   "kind": "para",
+   "line": "Strong enough to"
+  },
+  {
+   "kind": "line",
+   "line": "move boulders,"
+  },
+  {
+   "kind": "cont",
+   "line": "with ease."
+  }
+ ]
+}

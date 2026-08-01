@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=29 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/haunter.png" id="1_oxrao"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_i786m"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/haunter.png" id="3_f72ax"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_t3662"]
+[ext_resource type="Resource" path="res://resources/moves/hypnosis.tres" id="5_5ovqn"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="6_1st7f"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="7_8swof"]
+[ext_resource type="Resource" path="res://resources/moves/lick.tres" id="8_vmvif"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="9_wfo75"]
+[ext_resource type="Resource" path="res://resources/moves/night_shade.tres" id="10_b4mub"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_qkw1g"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_r5g71"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_rsygk"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="14_4wvoy"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="15_qh220"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="16_xvmjv"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="17_poner"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="18_vii1n"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="19_an2ib"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_jawko"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="21_e2qti"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="22_77qri"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="23_hc4i8"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="24_4mnnm"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="25_6wbx0"]
+
+[sub_resource type="Resource" id="Resource_kmjoj"]
+script = ExtResource("2_i786m")
+method = "TRADE"
+target = "GENGAR"
+level = 0
+item = ""
+
+[sub_resource type="Resource" id="Resource_2aqie"]
+script = ExtResource("4_t3662")
+level = 29
+move = ExtResource("5_5ovqn")
+
+[sub_resource type="Resource" id="Resource_ilmug"]
+script = ExtResource("4_t3662")
+level = 38
+move = ExtResource("6_1st7f")
+
+[resource]
+script = ExtResource("11_qkw1g")
+species_name = "HAUNTER"
+dex = 93
+index = 147
+slug = "haunter"
+label = "Haunter"
+category = "GAS"
+height_ft = 5
+height_in = 3
+weight_tenths_lb = 2
+hp = 45
+attack = 50
+defense = 45
+speed = 95
+special = 115
+type1 = "GHOST"
+type2 = "POISON"
+catch_rate = 90
+base_exp = 126
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("7_8swof")]([ExtResource("8_vmvif"), ExtResource("9_wfo75"), ExtResource("10_b4mub")])
+learnset = Array[ExtResource("4_t3662")]([SubResource("Resource_2aqie"), SubResource("Resource_ilmug")])
+tmhm = Array[ExtResource("7_8swof")]([ExtResource("12_r5g71"), ExtResource("13_rsygk"), ExtResource("14_4wvoy"), ExtResource("15_qh220"), ExtResource("16_xvmjv"), ExtResource("17_poner"), ExtResource("18_vii1n"), ExtResource("19_an2ib"), ExtResource("20_jawko"), ExtResource("21_e2qti"), ExtResource("6_1st7f"), ExtResource("22_77qri"), ExtResource("23_hc4i8"), ExtResource("24_4mnnm"), ExtResource("25_6wbx0")])
+evolutions = Array[ExtResource("2_i786m")]([SubResource("Resource_kmjoj")])
+palette = "PAL_PURPLEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Because of its", "ability to slip", "through block", "walls, it is said", "to be from an-", "other dimension"])
+front_sprite = ExtResource("3_f72ax")
+back_sprite = ExtResource("1_oxrao")

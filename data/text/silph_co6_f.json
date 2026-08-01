@@ -1,0 +1,240 @@
+{
+ "SilphCo6FSilphWorkerM1TookOverTheBuildingText": [
+  {
+   "kind": "text",
+   "line": "The ROCKETs came"
+  },
+  {
+   "kind": "line",
+   "line": "and seized this"
+  },
+  {
+   "kind": "cont",
+   "line": "whole building!"
+  }
+ ],
+ "SilphCo6FSilphWorkerM1BackToWorkText": [
+  {
+   "kind": "text",
+   "line": "Well, back to"
+  },
+  {
+   "kind": "line",
+   "line": "grim labor, then!"
+  }
+ ],
+ "SilphCo6FSilphWorkerMHelpMePleaseText": [
+  {
+   "kind": "text",
+   "line": "Oh dear, oh dear."
+  },
+  {
+   "kind": "line",
+   "line": "Help me, I beg!"
+  }
+ ],
+ "SilphCo6FSilphWorkerMWeGotEngagedText": [
+  {
+   "kind": "text",
+   "line": "We are betrothed!"
+  },
+  {
+   "kind": "line",
+   "line": "Heheh!"
+  }
+ ],
+ "SilphCo6FSilphWorkerF1SuchACowardText": [
+  {
+   "kind": "text",
+   "line": "Look at him! Such"
+  },
+  {
+   "kind": "line",
+   "line": "a coward, truly!"
+  }
+ ],
+ "SilphCo6FSilphWorkerF1HaveToMarryHimText": [
+  {
+   "kind": "text",
+   "line": "I pity him so, I"
+  },
+  {
+   "kind": "line",
+   "line": "suppose I must"
+  },
+  {
+   "kind": "cont",
+   "line": "wed him!"
+  }
+ ],
+ "SilphCo6FSilphWorkerF2TeamRocketConquerWorldText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET means"
+  },
+  {
+   "kind": "line",
+   "line": "to conquer the"
+  },
+  {
+   "kind": "cont",
+   "line": "world, through"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON!"
+  }
+ ],
+ "SilphCo6FSilphWorkerF2TeamRocketRanText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET fled,"
+  },
+  {
+   "kind": "line",
+   "line": "all thanks to you!"
+  }
+ ],
+ "SilphCo6FSilphWorkerM3TargetedSilphText": [
+  {
+   "kind": "text",
+   "line": "They must have"
+  },
+  {
+   "kind": "line",
+   "line": "marked SILPH for"
+  },
+  {
+   "kind": "cont",
+   "line": "our #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "creations."
+  }
+ ],
+ "SilphCo6FSilphWorkerM3WorkForSilphText": [
+  {
+   "kind": "text",
+   "line": "Come serve SILPH"
+  },
+  {
+   "kind": "line",
+   "line": "when you are"
+  },
+  {
+   "kind": "cont",
+   "line": "grown, someday!"
+  }
+ ],
+ "SilphCo6FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "I am one of the 4"
+  },
+  {
+   "kind": "line",
+   "line": "ROCKET BROTHERS!"
+  }
+ ],
+ "SilphCo6FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Flame"
+  },
+  {
+   "kind": "line",
+   "line": "out!"
+  }
+ ],
+ "SilphCo6FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "No matter!"
+  },
+  {
+   "kind": "line",
+   "line": "My brothers shall"
+  },
+  {
+   "kind": "cont",
+   "line": "avenge my fall!"
+  }
+ ],
+ "SilphCo6FScientistBattleText": [
+  {
+   "kind": "text",
+   "line": "That rotten"
+  },
+  {
+   "kind": "line",
+   "line": "PRESIDENT!"
+  },
+  {
+   "kind": "para",
+   "line": "He should not have"
+  },
+  {
+   "kind": "line",
+   "line": "banished me to"
+  },
+  {
+   "kind": "cont",
+   "line": "the TIKSI BRANCH!"
+  }
+ ],
+ "SilphCo6FScientistEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Shoot!"
+  }
+ ],
+ "SilphCo6FScientistAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "TIKSI BRANCH?"
+  },
+  {
+   "kind": "line",
+   "line": "A frozen, Russian"
+  },
+  {
+   "kind": "cont",
+   "line": "no man's land!"
+  }
+ ],
+ "SilphCo6FRocket2BattleText": [
+  {
+   "kind": "text",
+   "line": "You dare betray"
+  },
+  {
+   "kind": "line",
+   "line": "TEAM ROCKET?"
+  }
+ ],
+ "SilphCo6FRocket2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You"
+  },
+  {
+   "kind": "line",
+   "line": "traitor!"
+  }
+ ],
+ "SilphCo6FRocket2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "If you stand for"
+  },
+  {
+   "kind": "line",
+   "line": "justice, you"
+  },
+  {
+   "kind": "cont",
+   "line": "betray true evil!"
+  }
+ ]
+}

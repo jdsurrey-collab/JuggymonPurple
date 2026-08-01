@@ -1,0 +1,91 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/magneton.png" id="1_bt8yj"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_gof1c"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/magneton.png" id="3_rs7ry"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ygxfd"]
+[ext_resource type="Resource" path="res://resources/moves/sonicboom.tres" id="5_y1mw4"]
+[ext_resource type="Resource" path="res://resources/moves/thundershock.tres" id="6_fny5t"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="7_kwyxw"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="8_mdhxm"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="9_6x2he"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="10_mpl10"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_fxpuf"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_68osx"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_2rhnm"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_q2n60"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_k0xcb"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_3b6hp"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="17_45qbm"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_rsnwp"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="19_wylo5"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="20_3hfo0"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="21_64h0f"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="22_mojwv"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="23_ai2f6"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="24_o0ppy"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="25_otj8l"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_4m4si"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="27_ygast"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="28_nfcnx"]
+
+[sub_resource type="Resource" id="Resource_1bcgv"]
+script = ExtResource("4_ygxfd")
+level = 21
+move = ExtResource("5_y1mw4")
+
+[sub_resource type="Resource" id="Resource_3pw5g"]
+script = ExtResource("4_ygxfd")
+level = 25
+move = ExtResource("6_fny5t")
+
+[sub_resource type="Resource" id="Resource_nfbuo"]
+script = ExtResource("4_ygxfd")
+level = 29
+move = ExtResource("7_kwyxw")
+
+[sub_resource type="Resource" id="Resource_4eaac"]
+script = ExtResource("4_ygxfd")
+level = 38
+move = ExtResource("8_mdhxm")
+
+[sub_resource type="Resource" id="Resource_atq6n"]
+script = ExtResource("4_ygxfd")
+level = 46
+move = ExtResource("9_6x2he")
+
+[sub_resource type="Resource" id="Resource_rl1be"]
+script = ExtResource("4_ygxfd")
+level = 54
+move = ExtResource("10_mpl10")
+
+[resource]
+script = ExtResource("13_2rhnm")
+species_name = "MAGNETON"
+dex = 82
+index = 54
+slug = "magneton"
+label = "Magneton"
+category = "MAGNET"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 1320
+hp = 50
+attack = 60
+defense = 95
+speed = 70
+special = 120
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 60
+base_exp = 161
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_fxpuf")]([ExtResource("12_68osx"), ExtResource("5_y1mw4"), ExtResource("6_fny5t")])
+learnset = Array[ExtResource("4_ygxfd")]([SubResource("Resource_1bcgv"), SubResource("Resource_3pw5g"), SubResource("Resource_nfbuo"), SubResource("Resource_4eaac"), SubResource("Resource_atq6n"), SubResource("Resource_rl1be")])
+tmhm = Array[ExtResource("11_fxpuf")]([ExtResource("14_q2n60"), ExtResource("15_k0xcb"), ExtResource("16_3b6hp"), ExtResource("17_45qbm"), ExtResource("18_rsnwp"), ExtResource("19_wylo5"), ExtResource("20_3hfo0"), ExtResource("21_64h0f"), ExtResource("22_mojwv"), ExtResource("23_ai2f6"), ExtResource("24_o0ppy"), ExtResource("25_otj8l"), ExtResource("9_6x2he"), ExtResource("26_4m4si"), ExtResource("8_mdhxm"), ExtResource("27_ygast"), ExtResource("28_nfcnx")])
+evolutions = Array[ExtResource("2_gof1c")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_BALL"
+dex_text = Array[String](["Formed by several", "MAGNEMITEs linked", "together. They", "frequently appear", "when sunspots", "flare up"])
+front_sprite = ExtResource("3_rs7ry")
+back_sprite = ExtResource("1_bt8yj")

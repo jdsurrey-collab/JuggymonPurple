@@ -1,0 +1,138 @@
+{
+ "VictoryRoad3FCooltrainerM1BattleText": [
+  {
+   "kind": "text",
+   "line": "I heard rumors of"
+  },
+  {
+   "kind": "line",
+   "line": "a child prodigy!"
+  }
+ ],
+ "VictoryRoad3FCooltrainerM1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "The"
+  },
+  {
+   "kind": "line",
+   "line": "rumors were true!"
+  }
+ ],
+ "VictoryRoad3FCooltrainerM1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You defeated"
+  },
+  {
+   "kind": "line",
+   "line": "GIOVANNI himself?"
+  }
+ ],
+ "VictoryRoad3FCooltrainerF1BattleText": [
+  {
+   "kind": "text",
+   "line": "I'll show you just"
+  },
+  {
+   "kind": "line",
+   "line": "how good you are!"
+  }
+ ],
+ "VictoryRoad3FCooltrainerF1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm"
+  },
+  {
+   "kind": "line",
+   "line": "furious!"
+  }
+ ],
+ "VictoryRoad3FCooltrainerF1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You showed me just"
+  },
+  {
+   "kind": "line",
+   "line": "how good I was!"
+  }
+ ],
+ "VictoryRoad3FCooltrainerM2BattleText": [
+  {
+   "kind": "text",
+   "line": "Only the chosen"
+  },
+  {
+   "kind": "line",
+   "line": "can pass here!"
+  }
+ ],
+ "VictoryRoad3FCooltrainerM2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "don't believe it!"
+  }
+ ],
+ "VictoryRoad3FCooltrainerM2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "All trainers here"
+  },
+  {
+   "kind": "line",
+   "line": "are headed to the"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON LEAGUE!"
+  },
+  {
+   "kind": "cont",
+   "line": "Be careful!"
+  }
+ ],
+ "VictoryRoad3FCooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "Trainers live to"
+  },
+  {
+   "kind": "line",
+   "line": "seek stronger"
+  },
+  {
+   "kind": "cont",
+   "line": "opponents!"
+  }
+ ],
+ "VictoryRoad3FCooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh!"
+  },
+  {
+   "kind": "line",
+   "line": "So strong!"
+  }
+ ],
+ "VictoryRoad3FCooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "By fighting tough"
+  },
+  {
+   "kind": "line",
+   "line": "battles, you get"
+  },
+  {
+   "kind": "cont",
+   "line": "stronger!"
+  }
+ ]
+}

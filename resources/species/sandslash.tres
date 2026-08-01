@@ -1,0 +1,91 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=39 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/sandslash.png" id="1_pnbxg"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_j1wa1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/sandslash.png" id="3_2lxu5"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_dgoa3"]
+[ext_resource type="Resource" path="res://resources/moves/sand_attack.tres" id="5_skw8r"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="6_0cqlt"]
+[ext_resource type="Resource" path="res://resources/moves/poison_sting.tres" id="7_b7qq1"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="8_bpyaj"]
+[ext_resource type="Resource" path="res://resources/moves/fury_swipes.tres" id="9_63njd"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_s16rn"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="11_b0xf1"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_mjrlm"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="13_le3cj"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_py1x1"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_xdp8n"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_hhabt"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_5h5ig"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="18_me4v4"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="19_a3f2p"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="20_ulg13"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="21_0bpmh"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="22_7wcyw"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="23_i8scv"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="24_drb5u"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="25_yeb38"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="26_x0tjy"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="27_dhu36"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="28_482ju"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="29_3rcp5"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="30_5du8i"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="31_xfgh3"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="32_hg1t1"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="33_nbhp0"]
+
+[sub_resource type="Resource" id="Resource_t5tb4"]
+script = ExtResource("4_dgoa3")
+level = 10
+move = ExtResource("5_skw8r")
+
+[sub_resource type="Resource" id="Resource_lr3qp"]
+script = ExtResource("4_dgoa3")
+level = 17
+move = ExtResource("6_0cqlt")
+
+[sub_resource type="Resource" id="Resource_2eppl"]
+script = ExtResource("4_dgoa3")
+level = 27
+move = ExtResource("7_b7qq1")
+
+[sub_resource type="Resource" id="Resource_0dhmh"]
+script = ExtResource("4_dgoa3")
+level = 36
+move = ExtResource("8_bpyaj")
+
+[sub_resource type="Resource" id="Resource_1iipw"]
+script = ExtResource("4_dgoa3")
+level = 47
+move = ExtResource("9_63njd")
+
+[resource]
+script = ExtResource("12_mjrlm")
+species_name = "SANDSLASH"
+dex = 28
+index = 97
+slug = "sandslash"
+label = "Sandslash"
+category = "MOUSE"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 650
+hp = 75
+attack = 100
+defense = 110
+speed = 65
+special = 55
+type1 = "GROUND"
+type2 = "GROUND"
+catch_rate = 90
+base_exp = 163
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_s16rn")]([ExtResource("11_b0xf1"), ExtResource("5_skw8r")])
+learnset = Array[ExtResource("4_dgoa3")]([SubResource("Resource_t5tb4"), SubResource("Resource_lr3qp"), SubResource("Resource_2eppl"), SubResource("Resource_0dhmh"), SubResource("Resource_1iipw")])
+tmhm = Array[ExtResource("10_s16rn")]([ExtResource("13_le3cj"), ExtResource("14_py1x1"), ExtResource("15_xdp8n"), ExtResource("16_hhabt"), ExtResource("17_5h5ig"), ExtResource("18_me4v4"), ExtResource("19_a3f2p"), ExtResource("20_ulg13"), ExtResource("21_0bpmh"), ExtResource("22_7wcyw"), ExtResource("23_i8scv"), ExtResource("24_drb5u"), ExtResource("25_yeb38"), ExtResource("26_x0tjy"), ExtResource("27_dhu36"), ExtResource("8_bpyaj"), ExtResource("28_482ju"), ExtResource("29_3rcp5"), ExtResource("30_5du8i"), ExtResource("31_xfgh3"), ExtResource("32_hg1t1"), ExtResource("33_nbhp0")])
+evolutions = Array[ExtResource("2_j1wa1")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Curls up into a", "spiny ball when", "threatened. It", "can roll while", "curled up to", "attack or escape"])
+front_sprite = ExtResource("3_2lxu5")
+back_sprite = ExtResource("1_pnbxg")

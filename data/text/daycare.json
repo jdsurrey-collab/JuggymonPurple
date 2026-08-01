@@ -1,0 +1,130 @@
+{
+ "DaycareGentlemanIntroText": [
+  {
+   "kind": "text",
+   "line": "I keep a DAYCARE."
+  },
+  {
+   "kind": "line",
+   "line": "Shall I raise one"
+  },
+  {
+   "kind": "cont",
+   "line": "of your #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "for you a while?"
+  }
+ ],
+ "DaycareGentlemanWhichMonText": [
+  {
+   "kind": "text",
+   "line": "Which #MON"
+  },
+  {
+   "kind": "line",
+   "line": "shall I raise?"
+  }
+ ],
+ "DaycareGentlemanWillLookAfterMonText": [
+  {
+   "kind": "text",
+   "line": "Very well, I'll"
+  },
+  {
+   "kind": "line",
+   "line": "look after @"
+  },
+  {
+   "kind": "cont",
+   "line": "for a while."
+  }
+ ],
+ "DaycareGentlemanComeSeeMeInAWhileText": [
+  {
+   "kind": "text",
+   "line": "Return to me"
+  },
+  {
+   "kind": "line",
+   "line": "in a while."
+  }
+ ],
+ "DaycareGentlemanMonHasGrownText": [
+  {
+   "kind": "text",
+   "line": "Your @"
+  },
+  {
+   "kind": "line",
+   "line": "has grown a great"
+  },
+  {
+   "kind": "cont",
+   "line": "deal!"
+  },
+  {
+   "kind": "para",
+   "line": "By level, it has"
+  },
+  {
+   "kind": "line",
+   "line": "grown by @"
+  },
+  {
+   "kind": "text",
+   "line": "!"
+  },
+  {
+   "kind": "para",
+   "line": "Am I not skilled?"
+  }
+ ],
+ "DaycareGentlemanOweMoneyText": [
+  {
+   "kind": "text",
+   "line": "You owe me \u00a5@"
+  },
+  {
+   "kind": "line",
+   "line": "for the return"
+  },
+  {
+   "kind": "cont",
+   "line": "of this #MON."
+  }
+ ],
+ "DaycareGentlemanGotMonBackText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> got"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": " back!"
+  }
+ ],
+ "DaycareGentlemanMonNeedsMoreTimeText": [
+  {
+   "kind": "text",
+   "line": "Back so soon?"
+  },
+  {
+   "kind": "line",
+   "line": "Your @"
+  },
+  {
+   "kind": "cont",
+   "line": "needs still more"
+  },
+  {
+   "kind": "cont",
+   "line": "time with me."
+  }
+ ]
+}

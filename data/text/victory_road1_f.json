@@ -1,0 +1,70 @@
+{
+ "VictoryRoad1FCooltrainerFBattleText": [
+  {
+   "kind": "text",
+   "line": "I wonder if you"
+  },
+  {
+   "kind": "line",
+   "line": "are worthy of"
+  },
+  {
+   "kind": "cont",
+   "line": "me!"
+  }
+ ],
+ "VictoryRoad1FCooltrainerFEndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "have lost out!"
+  }
+ ],
+ "VictoryRoad1FCooltrainerFAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I never meant to"
+  },
+  {
+   "kind": "line",
+   "line": "lose to any soul!"
+  }
+ ],
+ "VictoryRoad1FCooltrainerMBattleText": [
+  {
+   "kind": "text",
+   "line": "I see you have"
+  },
+  {
+   "kind": "line",
+   "line": "some skill! Let"
+  },
+  {
+   "kind": "cont",
+   "line": "me judge it well!"
+  }
+ ],
+ "VictoryRoad1FCooltrainerMEndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "had a chance..."
+  }
+ ],
+ "VictoryRoad1FCooltrainerMAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I yield, you are"
+  },
+  {
+   "kind": "line",
+   "line": "far better still!"
+  }
+ ]
+}

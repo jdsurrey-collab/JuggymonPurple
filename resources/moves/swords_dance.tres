@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_ji0uo"]
+
+[resource]
+script = ExtResource("1_ji0uo")
+move_name = "SWORDS_DANCE"
+move_id = 14
+display_name = "SWORDS DANCE"
+move_type = "NORMAL"
+power = 0
+accuracy = 100
+pp = 30
+effect = "ATTACK_UP2_EFFECT"

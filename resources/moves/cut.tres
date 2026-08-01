@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_h6bac"]
+
+[resource]
+script = ExtResource("1_h6bac")
+move_name = "CUT"
+move_id = 15
+display_name = "CUT"
+move_type = "NORMAL"
+power = 50
+accuracy = 95
+pp = 30
+effect = "NO_ADDITIONAL_EFFECT"

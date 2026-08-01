@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=38 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/seaking.png" id="1_qgac0"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_7f20f"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/seaking.png" id="3_pgk0k"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_6mmhc"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="5_wmqoi"]
+[ext_resource type="Resource" path="res://resources/moves/horn_attack.tres" id="6_ohuba"]
+[ext_resource type="Resource" path="res://resources/moves/fury_attack.tres" id="7_va6lk"]
+[ext_resource type="Resource" path="res://resources/moves/waterfall.tres" id="8_7adcv"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="9_osqjk"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="10_qvllb"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_1bi7r"]
+[ext_resource type="Resource" path="res://resources/moves/peck.tres" id="12_8lc5d"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="13_xwfvd"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_xesuv"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_e5x77"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_3blye"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_pwpmv"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="18_n6iga"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="19_86uyg"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="20_dcbsx"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="21_h2xjv"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="22_5njdj"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="23_80ga7"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="24_bco0a"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="25_3vjnw"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="26_a3wt1"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="27_gmjjh"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="28_rhmuy"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="29_xsliw"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="30_xae38"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="31_gyrlw"]
+
+[sub_resource type="Resource" id="Resource_4fq8s"]
+script = ExtResource("4_6mmhc")
+level = 19
+move = ExtResource("5_wmqoi")
+
+[sub_resource type="Resource" id="Resource_aukl4"]
+script = ExtResource("4_6mmhc")
+level = 24
+move = ExtResource("6_ohuba")
+
+[sub_resource type="Resource" id="Resource_hhgky"]
+script = ExtResource("4_6mmhc")
+level = 30
+move = ExtResource("7_va6lk")
+
+[sub_resource type="Resource" id="Resource_7gsnh"]
+script = ExtResource("4_6mmhc")
+level = 39
+move = ExtResource("8_7adcv")
+
+[sub_resource type="Resource" id="Resource_cmeir"]
+script = ExtResource("4_6mmhc")
+level = 48
+move = ExtResource("9_osqjk")
+
+[sub_resource type="Resource" id="Resource_la5pd"]
+script = ExtResource("4_6mmhc")
+level = 54
+move = ExtResource("10_qvllb")
+
+[resource]
+script = ExtResource("14_xesuv")
+species_name = "SEAKING"
+dex = 119
+index = 158
+slug = "seaking"
+label = "Seaking"
+category = "GOLDFISH"
+height_ft = 4
+height_in = 3
+weight_tenths_lb = 860
+hp = 80
+attack = 92
+defense = 65
+speed = 68
+special = 80
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 60
+base_exp = 170
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_1bi7r")]([ExtResource("12_8lc5d"), ExtResource("13_xwfvd"), ExtResource("5_wmqoi")])
+learnset = Array[ExtResource("4_6mmhc")]([SubResource("Resource_4fq8s"), SubResource("Resource_aukl4"), SubResource("Resource_hhgky"), SubResource("Resource_7gsnh"), SubResource("Resource_cmeir"), SubResource("Resource_la5pd")])
+tmhm = Array[ExtResource("11_1bi7r")]([ExtResource("15_e5x77"), ExtResource("9_osqjk"), ExtResource("16_3blye"), ExtResource("17_pwpmv"), ExtResource("18_n6iga"), ExtResource("19_86uyg"), ExtResource("20_dcbsx"), ExtResource("21_h2xjv"), ExtResource("22_5njdj"), ExtResource("23_80ga7"), ExtResource("24_bco0a"), ExtResource("25_3vjnw"), ExtResource("26_a3wt1"), ExtResource("27_gmjjh"), ExtResource("28_rhmuy"), ExtResource("29_xsliw"), ExtResource("30_xae38"), ExtResource("31_gyrlw")])
+evolutions = Array[ExtResource("2_7f20f")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["In the autumn", "spawning season,", "they can be seen", "swimming power-", "fully up rivers", "and creeks"])
+front_sprite = ExtResource("3_pgk0k")
+back_sprite = ExtResource("1_qgac0")

@@ -1,0 +1,84 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/ursaring.png" id="1_d7ux1"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_r8ni3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/ursaring.png" id="3_hfr16"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_p8axm"]
+[ext_resource type="Resource" path="res://resources/moves/lick.tres" id="5_7esds"]
+[ext_resource type="Resource" path="res://resources/moves/fury_swipes.tres" id="6_0idqg"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="7_liknf"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="8_jk03l"]
+[ext_resource type="Resource" path="res://resources/moves/thrash.tres" id="9_qox5t"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_yhavw"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="11_lttbh"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_1sr80"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_s72p6"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_hi6vy"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_nkjke"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_rknfw"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_81efa"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_t1vxx"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_yko5w"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_dp08a"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="21_k5tp8"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="22_8mpv7"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="23_6i5a7"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="24_hnu60"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="25_ku36w"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="26_3ba73"]
+
+[sub_resource type="Resource" id="Resource_btwfb"]
+script = ExtResource("4_p8axm")
+level = 8
+move = ExtResource("5_7esds")
+
+[sub_resource type="Resource" id="Resource_upkco"]
+script = ExtResource("4_p8axm")
+level = 15
+move = ExtResource("6_0idqg")
+
+[sub_resource type="Resource" id="Resource_0xauh"]
+script = ExtResource("4_p8axm")
+level = 29
+move = ExtResource("7_liknf")
+
+[sub_resource type="Resource" id="Resource_qhiwh"]
+script = ExtResource("4_p8axm")
+level = 39
+move = ExtResource("8_jk03l")
+
+[sub_resource type="Resource" id="Resource_3wnpe"]
+script = ExtResource("4_p8axm")
+level = 59
+move = ExtResource("9_qox5t")
+
+[resource]
+script = ExtResource("13_s72p6")
+species_name = "URSARING"
+dex = 210
+index = 213
+slug = "ursaring"
+label = "Ursaring"
+category = "HIBERNANT"
+height_ft = 5
+height_in = 11
+weight_tenths_lb = 2770
+hp = 90
+attack = 130
+defense = 75
+speed = 55
+special = 75
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 60
+base_exp = 189
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_yhavw")]([ExtResource("11_lttbh"), ExtResource("12_1sr80"), ExtResource("5_7esds"), ExtResource("6_0idqg")])
+learnset = Array[ExtResource("4_p8axm")]([SubResource("Resource_btwfb"), SubResource("Resource_upkco"), SubResource("Resource_0xauh"), SubResource("Resource_qhiwh"), SubResource("Resource_3wnpe")])
+tmhm = Array[ExtResource("10_yhavw")]([ExtResource("14_hi6vy"), ExtResource("15_nkjke"), ExtResource("16_rknfw"), ExtResource("17_81efa"), ExtResource("7_liknf"), ExtResource("18_t1vxx"), ExtResource("19_yko5w"), ExtResource("20_dp08a"), ExtResource("21_k5tp8"), ExtResource("22_8mpv7"), ExtResource("23_6i5a7"), ExtResource("24_hnu60"), ExtResource("25_ku36w"), ExtResource("26_3ba73")])
+evolutions = Array[ExtResource("2_r8ni3")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It marks the trees", "that bear food.", "The marks outlast", "the bear, and the", "forest remembers."])
+front_sprite = ExtResource("3_hfr16")
+back_sprite = ExtResource("1_d7ux1")

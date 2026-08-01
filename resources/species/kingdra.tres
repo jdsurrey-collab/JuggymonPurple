@@ -1,0 +1,84 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/kingdra.png" id="1_4iyr5"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_6gd0i"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/kingdra.png" id="3_8jgn7"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_xtus8"]
+[ext_resource type="Resource" path="res://resources/moves/smokescreen.tres" id="5_8dskf"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="6_egcmr"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="7_i0vmw"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="8_y3lct"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="9_anhvl"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_ecyxm"]
+[ext_resource type="Resource" path="res://resources/moves/bubble.tres" id="11_bne0v"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_h21nc"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_dbet2"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_ogvmj"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_fkyrc"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_kayyw"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_2hx6v"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_4qpnv"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_unluv"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_k3j2t"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="21_a6gem"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="22_7aa8f"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="23_ua765"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="24_potkq"]
+[ext_resource type="Resource" path="res://resources/moves/dragon_rage.tres" id="25_vvnxf"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="26_0t81e"]
+
+[sub_resource type="Resource" id="Resource_atxpv"]
+script = ExtResource("4_xtus8")
+level = 8
+move = ExtResource("5_8dskf")
+
+[sub_resource type="Resource" id="Resource_34tg6"]
+script = ExtResource("4_xtus8")
+level = 15
+move = ExtResource("6_egcmr")
+
+[sub_resource type="Resource" id="Resource_6o5y3"]
+script = ExtResource("4_xtus8")
+level = 22
+move = ExtResource("7_i0vmw")
+
+[sub_resource type="Resource" id="Resource_kvrun"]
+script = ExtResource("4_xtus8")
+level = 40
+move = ExtResource("8_y3lct")
+
+[sub_resource type="Resource" id="Resource_lmqp3"]
+script = ExtResource("4_xtus8")
+level = 51
+move = ExtResource("9_anhvl")
+
+[resource]
+script = ExtResource("12_h21nc")
+species_name = "KINGDRA"
+dex = 220
+index = 223
+slug = "kingdra"
+label = "Kingdra"
+category = "DRAGON"
+height_ft = 5
+height_in = 11
+weight_tenths_lb = 3350
+hp = 75
+attack = 95
+defense = 95
+speed = 85
+special = 95
+type1 = "WATER"
+type2 = "DRAGON"
+catch_rate = 45
+base_exp = 207
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_ecyxm")]([ExtResource("11_bne0v"), ExtResource("5_8dskf"), ExtResource("6_egcmr"), ExtResource("7_i0vmw")])
+learnset = Array[ExtResource("4_xtus8")]([SubResource("Resource_atxpv"), SubResource("Resource_34tg6"), SubResource("Resource_6o5y3"), SubResource("Resource_kvrun"), SubResource("Resource_lmqp3")])
+tmhm = Array[ExtResource("10_ecyxm")]([ExtResource("13_dbet2"), ExtResource("14_ogvmj"), ExtResource("15_fkyrc"), ExtResource("16_kayyw"), ExtResource("17_2hx6v"), ExtResource("18_4qpnv"), ExtResource("19_unluv"), ExtResource("20_k3j2t"), ExtResource("21_a6gem"), ExtResource("7_i0vmw"), ExtResource("22_7aa8f"), ExtResource("23_ua765"), ExtResource("24_potkq"), ExtResource("25_vvnxf"), ExtResource("26_0t81e")])
+evolutions = Array[ExtResource("2_6gd0i")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["It sleeps in the", "deepest trench", "and its waking", "stirs the whole", "sea to storm."])
+front_sprite = ExtResource("3_8jgn7")
+back_sprite = ExtResource("1_4iyr5")

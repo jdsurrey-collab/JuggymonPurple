@@ -1,0 +1,87 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/electrode.png" id="1_cyj17"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_rbcmr"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/electrode.png" id="3_i5x0l"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_cnm8n"]
+[ext_resource type="Resource" path="res://resources/moves/sonicboom.tres" id="5_0gcaa"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="6_04pn6"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="7_16k4s"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="8_c0cl1"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="9_xpjv1"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_gob51"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_fwnsr"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="12_eurhi"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_4b24w"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_ej85i"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_v14qs"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="16_i426u"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="17_gosrw"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="18_pmnid"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="19_kc7v3"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="20_bexmj"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="21_taj68"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="22_uf74x"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="23_4vrwv"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="24_fxikg"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="25_nemk2"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_rxk3n"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="27_1x3sx"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="28_k0psh"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="29_bja0a"]
+
+[sub_resource type="Resource" id="Resource_mhgcl"]
+script = ExtResource("4_cnm8n")
+level = 17
+move = ExtResource("5_0gcaa")
+
+[sub_resource type="Resource" id="Resource_rqpek"]
+script = ExtResource("4_cnm8n")
+level = 22
+move = ExtResource("6_04pn6")
+
+[sub_resource type="Resource" id="Resource_inema"]
+script = ExtResource("4_cnm8n")
+level = 29
+move = ExtResource("7_16k4s")
+
+[sub_resource type="Resource" id="Resource_bnrcy"]
+script = ExtResource("4_cnm8n")
+level = 40
+move = ExtResource("8_c0cl1")
+
+[sub_resource type="Resource" id="Resource_ga81p"]
+script = ExtResource("4_cnm8n")
+level = 50
+move = ExtResource("9_xpjv1")
+
+[resource]
+script = ExtResource("13_4b24w")
+species_name = "ELECTRODE"
+dex = 101
+index = 141
+slug = "electrode"
+label = "Electrode"
+category = "BALL"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 1470
+hp = 60
+attack = 50
+defense = 70
+speed = 140
+special = 80
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 60
+base_exp = 150
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_gob51")]([ExtResource("11_fwnsr"), ExtResource("12_eurhi"), ExtResource("5_0gcaa")])
+learnset = Array[ExtResource("4_cnm8n")]([SubResource("Resource_mhgcl"), SubResource("Resource_rqpek"), SubResource("Resource_inema"), SubResource("Resource_bnrcy"), SubResource("Resource_ga81p")])
+tmhm = Array[ExtResource("10_gob51")]([ExtResource("14_ej85i"), ExtResource("15_v14qs"), ExtResource("16_i426u"), ExtResource("17_gosrw"), ExtResource("18_pmnid"), ExtResource("19_kc7v3"), ExtResource("20_bexmj"), ExtResource("21_taj68"), ExtResource("22_uf74x"), ExtResource("23_4vrwv"), ExtResource("24_fxikg"), ExtResource("6_04pn6"), ExtResource("8_c0cl1"), ExtResource("25_nemk2"), ExtResource("26_rxk3n"), ExtResource("27_1x3sx"), ExtResource("9_xpjv1"), ExtResource("28_k0psh"), ExtResource("29_bja0a")])
+evolutions = Array[ExtResource("2_rbcmr")]([])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_BALL"
+dex_text = Array[String](["It stores electric", "energy under very", "high pressure.", "It often explodes", "with little or no", "provocation"])
+front_sprite = ExtResource("3_i5x0l")
+back_sprite = ExtResource("1_cyj17")

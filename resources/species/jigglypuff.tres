@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=52 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/jigglypuff.png" id="1_hktpk"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_xeaov"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/jigglypuff.png" id="3_0ftaj"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_3nuo8"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="5_rctpn"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="6_v8c6e"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="7_4t18m"]
+[ext_resource type="Resource" path="res://resources/moves/doubleslap.tres" id="8_13kcw"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="9_it58r"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="10_cj28p"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="11_ioppa"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="12_emkxe"]
+[ext_resource type="Resource" path="res://resources/moves/sing.tres" id="13_dw6of"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_tvv85"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="15_co38p"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="16_0mra2"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_fxyo0"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_krebe"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="19_i06h8"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="20_m0r0u"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="21_e48ii"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="22_3ixr4"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="23_8o45w"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="24_ppv7u"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="25_t72ie"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="26_rom7f"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="27_jajuf"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="28_kvugq"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="29_b2uaa"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="30_73r05"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="31_y01mw"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="32_i3ucl"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="33_odcnb"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="34_1mg84"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="35_b27vr"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="36_eq6i1"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="37_kq2jr"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="38_l4x7p"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="39_aplo1"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="40_a7pyv"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="41_r4nkl"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="42_umxlt"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="43_x4tbm"]
+
+[sub_resource type="Resource" id="Resource_nqrty"]
+script = ExtResource("2_xeaov")
+method = "ITEM"
+target = "WIGGLYTUFF"
+level = 0
+item = "MOON_STONE"
+
+[sub_resource type="Resource" id="Resource_w27pt"]
+script = ExtResource("4_3nuo8")
+level = 9
+move = ExtResource("5_rctpn")
+
+[sub_resource type="Resource" id="Resource_c8pfs"]
+script = ExtResource("4_3nuo8")
+level = 14
+move = ExtResource("6_v8c6e")
+
+[sub_resource type="Resource" id="Resource_frfxo"]
+script = ExtResource("4_3nuo8")
+level = 19
+move = ExtResource("7_4t18m")
+
+[sub_resource type="Resource" id="Resource_5v5p1"]
+script = ExtResource("4_3nuo8")
+level = 24
+move = ExtResource("8_13kcw")
+
+[sub_resource type="Resource" id="Resource_r3m5k"]
+script = ExtResource("4_3nuo8")
+level = 29
+move = ExtResource("9_it58r")
+
+[sub_resource type="Resource" id="Resource_crtfk"]
+script = ExtResource("4_3nuo8")
+level = 34
+move = ExtResource("10_cj28p")
+
+[sub_resource type="Resource" id="Resource_xl8uy"]
+script = ExtResource("4_3nuo8")
+level = 39
+move = ExtResource("11_ioppa")
+
+[resource]
+script = ExtResource("14_tvv85")
+species_name = "JIGGLYPUFF"
+dex = 39
+index = 100
+slug = "jigglypuff"
+label = "Jigglypuff"
+category = "BALLOON"
+height_ft = 1
+height_in = 8
+weight_tenths_lb = 120
+hp = 115
+attack = 45
+defense = 20
+speed = 20
+special = 25
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 170
+base_exp = 76
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("12_emkxe")]([ExtResource("13_dw6of")])
+learnset = Array[ExtResource("4_3nuo8")]([SubResource("Resource_w27pt"), SubResource("Resource_c8pfs"), SubResource("Resource_frfxo"), SubResource("Resource_5v5p1"), SubResource("Resource_r3m5k"), SubResource("Resource_crtfk"), SubResource("Resource_xl8uy")])
+tmhm = Array[ExtResource("12_emkxe")]([ExtResource("15_co38p"), ExtResource("16_0mra2"), ExtResource("17_fxyo0"), ExtResource("10_cj28p"), ExtResource("18_krebe"), ExtResource("11_ioppa"), ExtResource("19_i06h8"), ExtResource("20_m0r0u"), ExtResource("21_e48ii"), ExtResource("22_3ixr4"), ExtResource("23_8o45w"), ExtResource("24_ppv7u"), ExtResource("25_t72ie"), ExtResource("26_rom7f"), ExtResource("27_jajuf"), ExtResource("28_kvugq"), ExtResource("29_b2uaa"), ExtResource("30_73r05"), ExtResource("31_y01mw"), ExtResource("32_i3ucl"), ExtResource("33_odcnb"), ExtResource("34_1mg84"), ExtResource("35_b27vr"), ExtResource("36_eq6i1"), ExtResource("37_kq2jr"), ExtResource("9_it58r"), ExtResource("38_l4x7p"), ExtResource("39_aplo1"), ExtResource("40_a7pyv"), ExtResource("41_r4nkl"), ExtResource("42_umxlt"), ExtResource("43_x4tbm")])
+evolutions = Array[ExtResource("2_xeaov")]([SubResource("Resource_nqrty")])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_FAIRY"
+dex_text = Array[String](["When its huge eyes", "light up, it sings", "a mysteriously", "soothing melody", "that lulls its", "enemies to sleep"])
+front_sprite = ExtResource("3_0ftaj")
+back_sprite = ExtResource("1_hktpk")

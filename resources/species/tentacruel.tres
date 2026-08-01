@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=43 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/tentacruel.png" id="1_uc5lw"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_dc4ht"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/tentacruel.png" id="3_trxe3"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_1mm65"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="5_e25r7"]
+[ext_resource type="Resource" path="res://resources/moves/wrap.tres" id="6_apnln"]
+[ext_resource type="Resource" path="res://resources/moves/poison_sting.tres" id="7_p2g60"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="8_2fi5n"]
+[ext_resource type="Resource" path="res://resources/moves/constrict.tres" id="9_xsbuw"]
+[ext_resource type="Resource" path="res://resources/moves/barrier.tres" id="10_76pi1"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="11_knndd"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="12_ro7rx"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="13_c5jvy"]
+[ext_resource type="Resource" path="res://resources/moves/acid.tres" id="14_fl14b"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="15_wmx7r"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="16_5vppe"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_b2sbh"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_d6gl1"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_sownu"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="20_2kfcl"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="21_koysm"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="22_2q23m"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="23_rw7yr"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="24_dp7dn"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="25_ay1yw"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="26_47d06"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="27_2hkea"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="28_qohsj"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="29_44lir"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="30_r8fhe"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="31_dr2e3"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="32_6p33a"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="33_f1c52"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="34_gx4i8"]
+
+[sub_resource type="Resource" id="Resource_f53qi"]
+script = ExtResource("4_1mm65")
+level = 7
+move = ExtResource("5_e25r7")
+
+[sub_resource type="Resource" id="Resource_m48yq"]
+script = ExtResource("4_1mm65")
+level = 13
+move = ExtResource("6_apnln")
+
+[sub_resource type="Resource" id="Resource_k2710"]
+script = ExtResource("4_1mm65")
+level = 18
+move = ExtResource("7_p2g60")
+
+[sub_resource type="Resource" id="Resource_ios8n"]
+script = ExtResource("4_1mm65")
+level = 22
+move = ExtResource("8_2fi5n")
+
+[sub_resource type="Resource" id="Resource_3j72n"]
+script = ExtResource("4_1mm65")
+level = 27
+move = ExtResource("9_xsbuw")
+
+[sub_resource type="Resource" id="Resource_ig25a"]
+script = ExtResource("4_1mm65")
+level = 35
+move = ExtResource("10_76pi1")
+
+[sub_resource type="Resource" id="Resource_ee3oq"]
+script = ExtResource("4_1mm65")
+level = 43
+move = ExtResource("11_knndd")
+
+[sub_resource type="Resource" id="Resource_0do3x"]
+script = ExtResource("4_1mm65")
+level = 50
+move = ExtResource("12_ro7rx")
+
+[resource]
+script = ExtResource("15_wmx7r")
+species_name = "TENTACRUEL"
+dex = 73
+index = 155
+slug = "tentacruel"
+label = "Tentacruel"
+category = "JELLYFISH"
+height_ft = 5
+height_in = 3
+weight_tenths_lb = 1210
+hp = 80
+attack = 70
+defense = 65
+speed = 100
+special = 120
+type1 = "WATER"
+type2 = "POISON"
+catch_rate = 60
+base_exp = 205
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("13_c5jvy")]([ExtResource("14_fl14b"), ExtResource("5_e25r7"), ExtResource("6_apnln")])
+learnset = Array[ExtResource("4_1mm65")]([SubResource("Resource_f53qi"), SubResource("Resource_m48yq"), SubResource("Resource_k2710"), SubResource("Resource_ios8n"), SubResource("Resource_3j72n"), SubResource("Resource_ig25a"), SubResource("Resource_ee3oq"), SubResource("Resource_0do3x")])
+tmhm = Array[ExtResource("13_c5jvy")]([ExtResource("16_5vppe"), ExtResource("17_b2sbh"), ExtResource("18_d6gl1"), ExtResource("19_sownu"), ExtResource("20_2kfcl"), ExtResource("8_2fi5n"), ExtResource("21_koysm"), ExtResource("22_2q23m"), ExtResource("23_rw7yr"), ExtResource("24_dp7dn"), ExtResource("25_ay1yw"), ExtResource("26_47d06"), ExtResource("27_2hkea"), ExtResource("28_qohsj"), ExtResource("29_44lir"), ExtResource("30_r8fhe"), ExtResource("31_dr2e3"), ExtResource("32_6p33a"), ExtResource("33_f1c52"), ExtResource("34_gx4i8")])
+evolutions = Array[ExtResource("2_dc4ht")]([])
+palette = "PAL_CYANMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["The tentacles are", "normally kept", "short. On hunts,", "they are extended", "to ensnare and", "immobilize prey"])
+front_sprite = ExtResource("3_trxe3")
+back_sprite = ExtResource("1_uc5lw")

@@ -1,0 +1,160 @@
+{
+ "SSAnne2FWaiterText": [
+  {
+   "kind": "text",
+   "line": "This ship, she is"
+  },
+  {
+   "kind": "line",
+   "line": "a luxury liner"
+  },
+  {
+   "kind": "cont",
+   "line": "for trainers!"
+  },
+  {
+   "kind": "para",
+   "line": "At every port, we"
+  },
+  {
+   "kind": "line",
+   "line": "hold parties with"
+  },
+  {
+   "kind": "cont",
+   "line": "invited trainers!"
+  }
+ ],
+ "SSAnne2FRivalText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Ah."
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "What a dismal"
+  },
+  {
+   "kind": "line",
+   "line": "surprise."
+  },
+  {
+   "kind": "para",
+   "line": "Tell me you were"
+  },
+  {
+   "kind": "line",
+   "line": "truly invited."
+  },
+  {
+   "kind": "para",
+   "line": "How goes your"
+  },
+  {
+   "kind": "line",
+   "line": "#DEX, I wonder?"
+  },
+  {
+   "kind": "para",
+   "line": "I've forty kinds"
+  },
+  {
+   "kind": "line",
+   "line": "already claimed."
+  },
+  {
+   "kind": "para",
+   "line": "They're everywhere,"
+  },
+  {
+   "kind": "line",
+   "line": "if you'd only look."
+  },
+  {
+   "kind": "para",
+   "line": "Crawl through the"
+  },
+  {
+   "kind": "line",
+   "line": "grass. It suits you"
+  }
+ ],
+ "SSAnne2FRivalDefeatedText": [
+  {
+   "kind": "text",
+   "line": "Humph."
+  },
+  {
+   "kind": "para",
+   "line": "At least you"
+  },
+  {
+   "kind": "line",
+   "line": "tend your #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "well enough."
+  }
+ ],
+ "SSAnne2FRivalVictoryText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER>. Are you"
+  },
+  {
+   "kind": "line",
+   "line": "ill, or merely"
+  },
+  {
+   "kind": "para",
+   "line": "weak? Do shape"
+  },
+  {
+   "kind": "line",
+   "line": "up."
+  }
+ ],
+ "SSAnne2FRivalCutMasterText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: I'm told"
+  },
+  {
+   "kind": "line",
+   "line": "a CUT master"
+  },
+  {
+   "kind": "cont",
+   "line": "sails with us."
+  },
+  {
+   "kind": "para",
+   "line": "Just a wretched,"
+  },
+  {
+   "kind": "line",
+   "line": "seasick old fool."
+  },
+  {
+   "kind": "para",
+   "line": "Still, CUT itself"
+  },
+  {
+   "kind": "line",
+   "line": "has its uses."
+  },
+  {
+   "kind": "para",
+   "line": "Go see him,"
+  },
+  {
+   "kind": "line",
+   "line": "then. Farewell."
+  }
+ ]
+}

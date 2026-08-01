@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/lugia.png" id="1_4yne0"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_ywos3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/lugia.png" id="3_yo1q7"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_rg6gq"]
+[ext_resource type="Resource" path="res://resources/moves/gust.tres" id="5_8nstr"]
+[ext_resource type="Resource" path="res://resources/moves/recover.tres" id="6_un2gj"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="7_xqk0p"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="8_rbes1"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="9_orbyx"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_1i113"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="11_v15sp"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_uvrao"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_s7k2h"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_0hc5w"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_viv0a"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_o7adb"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_rbiqs"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_2qrsl"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_m22od"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="20_y0igk"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="21_jj3wo"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="22_ay7iy"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="23_jycys"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="24_b6jmw"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="25_7ie2d"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="26_x8x5x"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="27_spwmn"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="28_h0tse"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="29_fkca4"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="30_22hcd"]
+
+[sub_resource type="Resource" id="Resource_nenaq"]
+script = ExtResource("4_rg6gq")
+level = 22
+move = ExtResource("5_8nstr")
+
+[sub_resource type="Resource" id="Resource_mavgt"]
+script = ExtResource("4_rg6gq")
+level = 33
+move = ExtResource("6_un2gj")
+
+[sub_resource type="Resource" id="Resource_6mpco"]
+script = ExtResource("4_rg6gq")
+level = 44
+move = ExtResource("7_xqk0p")
+
+[sub_resource type="Resource" id="Resource_x8s1u"]
+script = ExtResource("4_rg6gq")
+level = 66
+move = ExtResource("8_rbes1")
+
+[sub_resource type="Resource" id="Resource_eesnl"]
+script = ExtResource("4_rg6gq")
+level = 77
+move = ExtResource("9_orbyx")
+
+[resource]
+script = ExtResource("12_uvrao")
+species_name = "LUGIA"
+dex = 238
+index = 241
+slug = "lugia"
+label = "Lugia"
+category = "DIVING"
+height_ft = 17
+height_in = 1
+weight_tenths_lb = 4760
+hp = 106
+attack = 90
+defense = 130
+speed = 110
+special = 122
+type1 = "PSYCHIC_TYPE"
+type2 = "FLYING"
+catch_rate = 3
+base_exp = 220
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("10_1i113")]([ExtResource("11_v15sp")])
+learnset = Array[ExtResource("4_rg6gq")]([SubResource("Resource_nenaq"), SubResource("Resource_mavgt"), SubResource("Resource_6mpco"), SubResource("Resource_x8s1u"), SubResource("Resource_eesnl")])
+tmhm = Array[ExtResource("10_1i113")]([ExtResource("13_s7k2h"), ExtResource("14_0hc5w"), ExtResource("15_viv0a"), ExtResource("16_o7adb"), ExtResource("17_rbiqs"), ExtResource("18_2qrsl"), ExtResource("19_m22od"), ExtResource("8_rbes1"), ExtResource("20_y0igk"), ExtResource("21_jj3wo"), ExtResource("9_orbyx"), ExtResource("22_ay7iy"), ExtResource("23_jycys"), ExtResource("24_b6jmw"), ExtResource("25_7ie2d"), ExtResource("26_x8x5x"), ExtResource("27_spwmn"), ExtResource("28_h0tse"), ExtResource("29_fkca4"), ExtResource("30_22hcd")])
+evolutions = Array[ExtResource("2_ywos3")]([])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It keeps the deep", "and does not", "rise. When it", "rises, so does", "the sea, and all", "upon it."])
+front_sprite = ExtResource("3_yo1q7")
+back_sprite = ExtResource("1_4yne0")

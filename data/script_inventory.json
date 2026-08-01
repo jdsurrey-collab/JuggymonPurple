@@ -1,0 +1,402 @@
+[
+ {
+  "map": "AgathasRoom",
+  "states": 4
+ },
+ {
+  "map": "BikeShop",
+  "states": 0
+ },
+ {
+  "map": "BillsHouse",
+  "states": 7
+ },
+ {
+  "map": "BluesHouse",
+  "states": 2
+ },
+ {
+  "map": "BrunosRoom",
+  "states": 4
+ },
+ {
+  "map": "CeladonCity",
+  "states": 0
+ },
+ {
+  "map": "CeladonDiner",
+  "states": 0
+ },
+ {
+  "map": "CeladonGym",
+  "states": 1
+ },
+ {
+  "map": "CeladonMart3F",
+  "states": 0
+ },
+ {
+  "map": "CeladonMartRoof",
+  "states": 0
+ },
+ {
+  "map": "CeruleanCity",
+  "states": 5
+ },
+ {
+  "map": "CeruleanGym",
+  "states": 1
+ },
+ {
+  "map": "ChampionsRoom",
+  "states": 11
+ },
+ {
+  "map": "CinnabarGym",
+  "states": 4
+ },
+ {
+  "map": "CinnabarIsland",
+  "states": 2
+ },
+ {
+  "map": "CinnabarLabFossilRoom",
+  "states": 0
+ },
+ {
+  "map": "CinnabarLabMetronomeRoom",
+  "states": 0
+ },
+ {
+  "map": "CopycatsHouse2F",
+  "states": 0
+ },
+ {
+  "map": "FightingDojo",
+  "states": 2
+ },
+ {
+  "map": "FuchsiaCity",
+  "states": 0
+ },
+ {
+  "map": "FuchsiaGym",
+  "states": 1
+ },
+ {
+  "map": "GameCorner",
+  "states": 3
+ },
+ {
+  "map": "HallOfFame",
+  "states": 4
+ },
+ {
+  "map": "LancesRoom",
+  "states": 4
+ },
+ {
+  "map": "LavenderCuboneHouse",
+  "states": 0
+ },
+ {
+  "map": "LavenderMart",
+  "states": 0
+ },
+ {
+  "map": "LoreleisRoom",
+  "states": 4
+ },
+ {
+  "map": "MrFujisHouse",
+  "states": 0
+ },
+ {
+  "map": "MrPsychicsHouse",
+  "states": 0
+ },
+ {
+  "map": "MtMoonB2F",
+  "states": 4
+ },
+ {
+  "map": "MtMoonPokecenter",
+  "states": 0
+ },
+ {
+  "map": "Museum1F",
+  "states": 2
+ },
+ {
+  "map": "OaksLab",
+  "states": 19
+ },
+ {
+  "map": "PalletTown",
+  "states": 7
+ },
+ {
+  "map": "PewterCity",
+  "states": 7
+ },
+ {
+  "map": "PewterGym",
+  "states": 0
+ },
+ {
+  "map": "PokemonFanClub",
+  "states": 0
+ },
+ {
+  "map": "PokemonMansion1F",
+  "states": 0
+ },
+ {
+  "map": "PokemonMansion2F",
+  "states": 0
+ },
+ {
+  "map": "PokemonMansion3F",
+  "states": 1
+ },
+ {
+  "map": "PokemonMansionB1F",
+  "states": 0
+ },
+ {
+  "map": "PokemonTower2F",
+  "states": 3
+ },
+ {
+  "map": "PokemonTower5F",
+  "states": 1
+ },
+ {
+  "map": "PokemonTower6F",
+  "states": 3
+ },
+ {
+  "map": "PokemonTower7F",
+  "states": 3
+ },
+ {
+  "map": "RedsHouse2F",
+  "states": 2
+ },
+ {
+  "map": "RocketHideoutB1F",
+  "states": 0
+ },
+ {
+  "map": "RocketHideoutB2F",
+  "states": 2
+ },
+ {
+  "map": "RocketHideoutB3F",
+  "states": 2
+ },
+ {
+  "map": "RocketHideoutB4F",
+  "states": 1
+ },
+ {
+  "map": "Route1",
+  "states": 0
+ },
+ {
+  "map": "Route11Gate2F",
+  "states": 0
+ },
+ {
+  "map": "Route12",
+  "states": 2
+ },
+ {
+  "map": "Route12Gate2F",
+  "states": 0
+ },
+ {
+  "map": "Route15Gate2F",
+  "states": 0
+ },
+ {
+  "map": "Route16",
+  "states": 2
+ },
+ {
+  "map": "Route16FlyHouse",
+  "states": 0
+ },
+ {
+  "map": "Route16Gate1F",
+  "states": 4
+ },
+ {
+  "map": "Route18Gate1F",
+  "states": 4
+ },
+ {
+  "map": "Route22",
+  "states": 8
+ },
+ {
+  "map": "Route22Gate",
+  "states": 3
+ },
+ {
+  "map": "Route23",
+  "states": 3
+ },
+ {
+  "map": "Route24",
+  "states": 3
+ },
+ {
+  "map": "Route25",
+  "states": 0
+ },
+ {
+  "map": "Route2Gate",
+  "states": 0
+ },
+ {
+  "map": "Route5Gate",
+  "states": 2
+ },
+ {
+  "map": "Route6Gate",
+  "states": 2
+ },
+ {
+  "map": "Route7Gate",
+  "states": 2
+ },
+ {
+  "map": "Route8Gate",
+  "states": 2
+ },
+ {
+  "map": "SSAnne2F",
+  "states": 5
+ },
+ {
+  "map": "SSAnneCaptainsRoom",
+  "states": 0
+ },
+ {
+  "map": "SafariZoneGate",
+  "states": 7
+ },
+ {
+  "map": "SafariZoneSecretHouse",
+  "states": 0
+ },
+ {
+  "map": "SaffronGym",
+  "states": 0
+ },
+ {
+  "map": "SeafoamIslands1F",
+  "states": 0
+ },
+ {
+  "map": "SeafoamIslandsB1F",
+  "states": 0
+ },
+ {
+  "map": "SeafoamIslandsB2F",
+  "states": 0
+ },
+ {
+  "map": "SeafoamIslandsB3F",
+  "states": 4
+ },
+ {
+  "map": "SeafoamIslandsB4F",
+  "states": 5
+ },
+ {
+  "map": "SilphCo10F",
+  "states": 0
+ },
+ {
+  "map": "SilphCo11F",
+  "states": 4
+ },
+ {
+  "map": "SilphCo1F",
+  "states": 0
+ },
+ {
+  "map": "SilphCo2F",
+  "states": 0
+ },
+ {
+  "map": "SilphCo3F",
+  "states": 0
+ },
+ {
+  "map": "SilphCo4F",
+  "states": 0
+ },
+ {
+  "map": "SilphCo5F",
+  "states": 0
+ },
+ {
+  "map": "SilphCo6F",
+  "states": 0
+ },
+ {
+  "map": "SilphCo7F",
+  "states": 4
+ },
+ {
+  "map": "SilphCo8F",
+  "states": 0
+ },
+ {
+  "map": "SilphCo9F",
+  "states": 0
+ },
+ {
+  "map": "VermilionCity",
+  "states": 5
+ },
+ {
+  "map": "VermilionDock",
+  "states": 0
+ },
+ {
+  "map": "VermilionGym",
+  "states": 1
+ },
+ {
+  "map": "VictoryRoad1F",
+  "states": 1
+ },
+ {
+  "map": "VictoryRoad2F",
+  "states": 1
+ },
+ {
+  "map": "VictoryRoad3F",
+  "states": 1
+ },
+ {
+  "map": "ViridianCity",
+  "states": 4
+ },
+ {
+  "map": "ViridianGym",
+  "states": 2
+ },
+ {
+  "map": "ViridianMart",
+  "states": 3
+ },
+ {
+  "map": "WardensHouse",
+  "states": 0
+ }
+]

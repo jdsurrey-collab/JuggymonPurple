@@ -1,0 +1,82 @@
+{
+ "Route4CooltrainerF1Text": [
+  {
+   "kind": "text",
+   "line": "I stumbled on a"
+  },
+  {
+   "kind": "line",
+   "line": "rocky #MON-"
+  },
+  {
+   "kind": "cont",
+   "line": "GEODUDE, cursed."
+  }
+ ],
+ "Route4CooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "I came for my"
+  },
+  {
+   "kind": "line",
+   "line": "mushroom #MON!"
+  }
+ ],
+ "Route4CooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh! My poor"
+  },
+  {
+   "kind": "line",
+   "line": "mushroom #MON!"
+  }
+ ],
+ "Route4CooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "There may be no"
+  },
+  {
+   "kind": "line",
+   "line": "mushrooms left"
+  },
+  {
+   "kind": "cont",
+   "line": "here now."
+  },
+  {
+   "kind": "para",
+   "line": "I've taken them"
+  },
+  {
+   "kind": "line",
+   "line": "all, I think."
+  }
+ ],
+ "Route4MtMoonSignText": [
+  {
+   "kind": "text",
+   "line": "MT.MOON"
+  },
+  {
+   "kind": "line",
+   "line": "Tunnel Entrance"
+  }
+ ],
+ "Route4SignText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 4"
+  },
+  {
+   "kind": "line",
+   "line": "MT.MOON -"
+  },
+  {
+   "kind": "cont",
+   "line": "CERULEAN CITY"
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/ponyta.png" id="1_3kedj"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_5h0tb"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/ponyta.png" id="3_6oxoi"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_22x5x"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="5_wu7jy"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="6_6xdwy"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="7_ab5vp"]
+[ext_resource type="Resource" path="res://resources/moves/fire_spin.tres" id="8_ak1nc"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="9_n7r1m"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="10_74cxv"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_nbsth"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="12_khqgl"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_tglue"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_3q7u8"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="15_0ijaf"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_yoxmo"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_xlpeg"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_a3lu4"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="19_2spyf"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="20_xdl01"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="21_rgoek"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="22_7cikd"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="23_bp4ey"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="24_si0ec"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="25_w3q6j"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_dnmd0"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="27_8ghqw"]
+
+[sub_resource type="Resource" id="Resource_thl6i"]
+script = ExtResource("2_5h0tb")
+method = "LEVEL"
+target = "RAPIDASH"
+level = 40
+item = ""
+
+[sub_resource type="Resource" id="Resource_s6eh4"]
+script = ExtResource("4_22x5x")
+level = 30
+move = ExtResource("5_wu7jy")
+
+[sub_resource type="Resource" id="Resource_u6en6"]
+script = ExtResource("4_22x5x")
+level = 32
+move = ExtResource("6_6xdwy")
+
+[sub_resource type="Resource" id="Resource_sj0bd"]
+script = ExtResource("4_22x5x")
+level = 35
+move = ExtResource("7_ab5vp")
+
+[sub_resource type="Resource" id="Resource_vwi16"]
+script = ExtResource("4_22x5x")
+level = 39
+move = ExtResource("8_ak1nc")
+
+[sub_resource type="Resource" id="Resource_0uwoe"]
+script = ExtResource("4_22x5x")
+level = 43
+move = ExtResource("9_n7r1m")
+
+[sub_resource type="Resource" id="Resource_pxxnw"]
+script = ExtResource("4_22x5x")
+level = 48
+move = ExtResource("10_74cxv")
+
+[resource]
+script = ExtResource("13_tglue")
+species_name = "PONYTA"
+dex = 77
+index = 163
+slug = "ponyta"
+label = "Ponyta"
+category = "FIRE HORSE"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 660
+hp = 50
+attack = 85
+defense = 55
+speed = 90
+special = 65
+type1 = "FIRE"
+type2 = "FIRE"
+catch_rate = 190
+base_exp = 152
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_nbsth")]([ExtResource("12_khqgl")])
+learnset = Array[ExtResource("4_22x5x")]([SubResource("Resource_s6eh4"), SubResource("Resource_u6en6"), SubResource("Resource_sj0bd"), SubResource("Resource_vwi16"), SubResource("Resource_0uwoe"), SubResource("Resource_pxxnw")])
+tmhm = Array[ExtResource("11_nbsth")]([ExtResource("14_3q7u8"), ExtResource("15_0ijaf"), ExtResource("16_yoxmo"), ExtResource("9_n7r1m"), ExtResource("17_xlpeg"), ExtResource("18_a3lu4"), ExtResource("19_2spyf"), ExtResource("20_xdl01"), ExtResource("21_rgoek"), ExtResource("22_7cikd"), ExtResource("23_bp4ey"), ExtResource("24_si0ec"), ExtResource("25_w3q6j"), ExtResource("26_dnmd0"), ExtResource("27_8ghqw")])
+evolutions = Array[ExtResource("2_5h0tb")]([SubResource("Resource_thl6i")])
+palette = "PAL_REDMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its hooves are 10", "times harder than", "diamonds. It can", "trample anything", "completely flat", "in little time"])
+front_sprite = ExtResource("3_6oxoi")
+back_sprite = ExtResource("1_3kedj")

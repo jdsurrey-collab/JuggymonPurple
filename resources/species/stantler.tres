@@ -1,0 +1,86 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/stantler.png" id="1_jjvtx"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_6iw10"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/stantler.png" id="3_2fhwo"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ewxo2"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="5_hgumf"]
+[ext_resource type="Resource" path="res://resources/moves/hypnosis.tres" id="6_2uwpd"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="7_8pe8g"]
+[ext_resource type="Resource" path="res://resources/moves/sand_attack.tres" id="8_xq83u"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="9_gmstq"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="10_33pdx"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_nkb81"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_260li"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_3mp7f"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_yrexi"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_67kc3"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_7rhkh"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_cjkim"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_notnd"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_x7vsq"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_ll3l6"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_rxyeq"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="22_42rje"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="23_p0x0n"]
+
+[sub_resource type="Resource" id="Resource_yxdd6"]
+script = ExtResource("4_ewxo2")
+level = 8
+move = ExtResource("5_hgumf")
+
+[sub_resource type="Resource" id="Resource_wf15p"]
+script = ExtResource("4_ewxo2")
+level = 15
+move = ExtResource("6_2uwpd")
+
+[sub_resource type="Resource" id="Resource_nfsqt"]
+script = ExtResource("4_ewxo2")
+level = 23
+move = ExtResource("7_8pe8g")
+
+[sub_resource type="Resource" id="Resource_lkbkh"]
+script = ExtResource("4_ewxo2")
+level = 31
+move = ExtResource("8_xq83u")
+
+[sub_resource type="Resource" id="Resource_los4u"]
+script = ExtResource("4_ewxo2")
+level = 40
+move = ExtResource("9_gmstq")
+
+[sub_resource type="Resource" id="Resource_cnupn"]
+script = ExtResource("4_ewxo2")
+level = 49
+move = ExtResource("10_33pdx")
+
+[resource]
+script = ExtResource("13_3mp7f")
+species_name = "STANTLER"
+dex = 224
+index = 227
+slug = "stantler"
+label = "Stantler"
+category = "BIG HORN"
+height_ft = 4
+height_in = 7
+weight_tenths_lb = 1570
+hp = 73
+attack = 95
+defense = 62
+speed = 85
+special = 75
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 45
+base_exp = 165
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("11_nkb81")]([ExtResource("12_260li")])
+learnset = Array[ExtResource("4_ewxo2")]([SubResource("Resource_yxdd6"), SubResource("Resource_wf15p"), SubResource("Resource_nfsqt"), SubResource("Resource_lkbkh"), SubResource("Resource_los4u"), SubResource("Resource_cnupn")])
+tmhm = Array[ExtResource("11_nkb81")]([ExtResource("14_yrexi"), ExtResource("15_67kc3"), ExtResource("16_7rhkh"), ExtResource("17_cjkim"), ExtResource("18_notnd"), ExtResource("19_x7vsq"), ExtResource("20_ll3l6"), ExtResource("21_rxyeq"), ExtResource("22_42rje"), ExtResource("9_gmstq"), ExtResource("23_p0x0n")])
+evolutions = Array[ExtResource("2_6iw10")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its antlers bend", "the air and show", "what is not there.", "Travellers follow", "and are not seen", "again."])
+front_sprite = ExtResource("3_2fhwo")
+back_sprite = ExtResource("1_jjvtx")

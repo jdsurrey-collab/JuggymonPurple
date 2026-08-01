@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=9 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/metapod.png" id="1_an5ue"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_u7l6c"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/metapod.png" id="3_ilijy"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_k5djo"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="5_rj0b3"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="6_uc8yb"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="7_gsg82"]
+
+[sub_resource type="Resource" id="Resource_uanhs"]
+script = ExtResource("2_u7l6c")
+method = "LEVEL"
+target = "BUTTERFREE"
+level = 10
+item = ""
+
+[resource]
+script = ExtResource("7_gsg82")
+species_name = "METAPOD"
+dex = 11
+index = 124
+slug = "metapod"
+label = "Metapod"
+category = "COCOON"
+height_ft = 2
+height_in = 4
+weight_tenths_lb = 220
+hp = 50
+attack = 20
+defense = 55
+speed = 30
+special = 25
+type1 = "BUG"
+type2 = "BUG"
+catch_rate = 120
+base_exp = 72
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("5_rj0b3")]([ExtResource("6_uc8yb")])
+learnset = Array[ExtResource("4_k5djo")]([])
+tmhm = Array[ExtResource("5_rj0b3")]([])
+evolutions = Array[ExtResource("2_u7l6c")]([SubResource("Resource_uanhs")])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["This #MON is", "vulnerable to", "attack while its", "shell is soft,", "exposing its weak", "and tender body"])
+front_sprite = ExtResource("3_ilijy")
+back_sprite = ExtResource("1_an5ue")

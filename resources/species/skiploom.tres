@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=39 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/skiploom.png" id="1_f2uml"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_idmqs"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/skiploom.png" id="3_f0hkf"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_p6dp6"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="5_vk013"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="6_ygjjr"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="7_g2i8m"]
+[ext_resource type="Resource" path="res://resources/moves/stun_spore.tres" id="8_0akvl"]
+[ext_resource type="Resource" path="res://resources/moves/sleep_powder.tres" id="9_rsqmp"]
+[ext_resource type="Resource" path="res://resources/moves/leech_seed.tres" id="10_k0m1r"]
+[ext_resource type="Resource" path="res://resources/moves/cotton_spore.tres" id="11_ktnmh"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="12_c60eg"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="13_jddm6"]
+[ext_resource type="Resource" path="res://resources/moves/splash.tres" id="14_s3q73"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="15_rrcry"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_dabq6"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="17_v815k"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="18_4dvkd"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="19_psn4a"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="20_u78ya"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="21_n8g5i"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="22_jgpf7"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="23_ei6wj"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="24_cnpma"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="25_qpv7y"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="26_tptys"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="27_ea1b8"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="28_j61wi"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="29_s6hsv"]
+
+[sub_resource type="Resource" id="Resource_ab0io"]
+script = ExtResource("2_idmqs")
+method = "LEVEL"
+target = "JUMPLUFF"
+level = 27
+item = ""
+
+[sub_resource type="Resource" id="Resource_dhlxx"]
+script = ExtResource("4_p6dp6")
+level = 5
+move = ExtResource("5_vk013")
+
+[sub_resource type="Resource" id="Resource_vbq45"]
+script = ExtResource("4_p6dp6")
+level = 10
+move = ExtResource("6_ygjjr")
+
+[sub_resource type="Resource" id="Resource_vk3v3"]
+script = ExtResource("4_p6dp6")
+level = 13
+move = ExtResource("7_g2i8m")
+
+[sub_resource type="Resource" id="Resource_jqelx"]
+script = ExtResource("4_p6dp6")
+level = 15
+move = ExtResource("8_0akvl")
+
+[sub_resource type="Resource" id="Resource_a4a01"]
+script = ExtResource("4_p6dp6")
+level = 17
+move = ExtResource("9_rsqmp")
+
+[sub_resource type="Resource" id="Resource_57o84"]
+script = ExtResource("4_p6dp6")
+level = 22
+move = ExtResource("10_k0m1r")
+
+[sub_resource type="Resource" id="Resource_cv5s8"]
+script = ExtResource("4_p6dp6")
+level = 29
+move = ExtResource("11_ktnmh")
+
+[sub_resource type="Resource" id="Resource_rfjcx"]
+script = ExtResource("4_p6dp6")
+level = 36
+move = ExtResource("12_c60eg")
+
+[resource]
+script = ExtResource("15_rrcry")
+species_name = "SKIPLOOM"
+dex = 188
+index = 191
+slug = "skiploom"
+label = "Skiploom"
+category = "COTTONWEED"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 20
+hp = 55
+attack = 45
+defense = 50
+speed = 80
+special = 55
+type1 = "GRASS"
+type2 = "FLYING"
+catch_rate = 120
+base_exp = 136
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("13_jddm6")]([ExtResource("14_s3q73"), ExtResource("5_vk013"), ExtResource("6_ygjjr")])
+learnset = Array[ExtResource("4_p6dp6")]([SubResource("Resource_dhlxx"), SubResource("Resource_vbq45"), SubResource("Resource_vk3v3"), SubResource("Resource_jqelx"), SubResource("Resource_a4a01"), SubResource("Resource_57o84"), SubResource("Resource_cv5s8"), SubResource("Resource_rfjcx")])
+tmhm = Array[ExtResource("13_jddm6")]([ExtResource("16_dabq6"), ExtResource("17_v815k"), ExtResource("18_4dvkd"), ExtResource("19_psn4a"), ExtResource("20_u78ya"), ExtResource("21_n8g5i"), ExtResource("22_jgpf7"), ExtResource("23_ei6wj"), ExtResource("24_cnpma"), ExtResource("12_c60eg"), ExtResource("25_qpv7y"), ExtResource("26_tptys"), ExtResource("27_ea1b8"), ExtResource("28_j61wi"), ExtResource("29_s6hsv")])
+evolutions = Array[ExtResource("2_idmqs")]([SubResource("Resource_ab0io")])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["Its bloom opens", "in warmth and", "shuts in cold.", "Farmers read it", "as a barometer", "and a warning."])
+front_sprite = ExtResource("3_f0hkf")
+back_sprite = ExtResource("1_f2uml")

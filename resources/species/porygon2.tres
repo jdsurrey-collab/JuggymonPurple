@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/porygon2.png" id="1_sbvea"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_qav4m"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/porygon2.png" id="3_kyj8m"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_j58kq"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="5_yp0sj"]
+[ext_resource type="Resource" path="res://resources/moves/psybeam.tres" id="6_ufhq6"]
+[ext_resource type="Resource" path="res://resources/moves/recover.tres" id="7_nvy1j"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="8_k38ca"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="9_8x12f"]
+[ext_resource type="Resource" path="res://resources/moves/zap_cannon.tres" id="10_hodmy"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_sw1qq"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_laotu"]
+[ext_resource type="Resource" path="res://resources/moves/conversion.tres" id="13_g2hwe"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_idbuj"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_y23ec"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_v02e1"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_i6s4q"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_6uqm3"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_58hfs"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_ngi7h"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_tlpr8"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_lxxar"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="23_msxcm"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="24_2kofa"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="25_h8ygi"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="26_6vuy6"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="27_qna1c"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="28_ktsur"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="29_wqd3y"]
+
+[sub_resource type="Resource" id="Resource_c8rgg"]
+script = ExtResource("4_j58kq")
+level = 9
+move = ExtResource("5_yp0sj")
+
+[sub_resource type="Resource" id="Resource_0swo8"]
+script = ExtResource("4_j58kq")
+level = 12
+move = ExtResource("6_ufhq6")
+
+[sub_resource type="Resource" id="Resource_htmq6"]
+script = ExtResource("4_j58kq")
+level = 20
+move = ExtResource("7_nvy1j")
+
+[sub_resource type="Resource" id="Resource_odxgh"]
+script = ExtResource("4_j58kq")
+level = 24
+move = ExtResource("8_k38ca")
+
+[sub_resource type="Resource" id="Resource_kowvh"]
+script = ExtResource("4_j58kq")
+level = 36
+move = ExtResource("9_8x12f")
+
+[sub_resource type="Resource" id="Resource_v4ifb"]
+script = ExtResource("4_j58kq")
+level = 44
+move = ExtResource("10_hodmy")
+
+[resource]
+script = ExtResource("14_idbuj")
+species_name = "PORYGON2"
+dex = 223
+index = 226
+slug = "porygon2"
+label = "Porygon2"
+category = "VIRTUAL"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 720
+hp = 85
+attack = 80
+defense = 90
+speed = 60
+special = 100
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 45
+base_exp = 180
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_sw1qq")]([ExtResource("12_laotu"), ExtResource("13_g2hwe")])
+learnset = Array[ExtResource("4_j58kq")]([SubResource("Resource_c8rgg"), SubResource("Resource_0swo8"), SubResource("Resource_htmq6"), SubResource("Resource_odxgh"), SubResource("Resource_kowvh"), SubResource("Resource_v4ifb")])
+tmhm = Array[ExtResource("11_sw1qq")]([ExtResource("15_y23ec"), ExtResource("16_v02e1"), ExtResource("17_i6s4q"), ExtResource("18_6uqm3"), ExtResource("19_58hfs"), ExtResource("20_ngi7h"), ExtResource("21_tlpr8"), ExtResource("22_lxxar"), ExtResource("23_msxcm"), ExtResource("24_2kofa"), ExtResource("25_h8ygi"), ExtResource("9_8x12f"), ExtResource("26_6vuy6"), ExtResource("27_qna1c"), ExtResource("28_ktsur"), ExtResource("29_wqd3y")])
+evolutions = Array[ExtResource("2_qav4m")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It was made, not", "born. It learns", "what it was not", "taught, which", "troubles those", "who made it."])
+front_sprite = ExtResource("3_kyj8m")
+back_sprite = ExtResource("1_sbvea")

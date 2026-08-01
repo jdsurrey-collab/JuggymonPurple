@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=31 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/elekid.png" id="1_0qtsj"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_jnj2l"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/elekid.png" id="3_d7wh1"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_n6r5a"]
+[ext_resource type="Resource" path="res://resources/moves/thunderpunch.tres" id="5_je80m"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="6_hdo4y"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="7_k0bjg"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="8_vh2sy"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="9_2ng1x"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="10_sveb0"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_hup0i"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="12_h258c"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="13_kg8sk"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_qneif"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_3ogwg"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_4tx7o"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_e2f75"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_1qffq"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_v0ppb"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_nuvt0"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_agewn"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="22_wyo1o"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="23_y6kjj"]
+
+[sub_resource type="Resource" id="Resource_l3ija"]
+script = ExtResource("2_jnj2l")
+method = "LEVEL"
+target = "ELECTABUZZ"
+level = 30
+item = ""
+
+[sub_resource type="Resource" id="Resource_t6r2e"]
+script = ExtResource("4_n6r5a")
+level = 9
+move = ExtResource("5_je80m")
+
+[sub_resource type="Resource" id="Resource_7tua3"]
+script = ExtResource("4_n6r5a")
+level = 17
+move = ExtResource("6_hdo4y")
+
+[sub_resource type="Resource" id="Resource_byh4y"]
+script = ExtResource("4_n6r5a")
+level = 25
+move = ExtResource("7_k0bjg")
+
+[sub_resource type="Resource" id="Resource_1mksh"]
+script = ExtResource("4_n6r5a")
+level = 33
+move = ExtResource("8_vh2sy")
+
+[sub_resource type="Resource" id="Resource_vd3yo"]
+script = ExtResource("4_n6r5a")
+level = 41
+move = ExtResource("9_2ng1x")
+
+[sub_resource type="Resource" id="Resource_s3dmv"]
+script = ExtResource("4_n6r5a")
+level = 49
+move = ExtResource("10_sveb0")
+
+[resource]
+script = ExtResource("14_qneif")
+species_name = "ELEKID"
+dex = 229
+index = 232
+slug = "elekid"
+label = "Elekid"
+category = "ELECTRIC"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 520
+hp = 45
+attack = 63
+defense = 37
+speed = 95
+special = 60
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 45
+base_exp = 106
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_hup0i")]([ExtResource("12_h258c"), ExtResource("13_kg8sk")])
+learnset = Array[ExtResource("4_n6r5a")]([SubResource("Resource_t6r2e"), SubResource("Resource_7tua3"), SubResource("Resource_byh4y"), SubResource("Resource_1mksh"), SubResource("Resource_vd3yo"), SubResource("Resource_s3dmv")])
+tmhm = Array[ExtResource("11_hup0i")]([ExtResource("15_3ogwg"), ExtResource("16_4tx7o"), ExtResource("17_e2f75"), ExtResource("18_1qffq"), ExtResource("19_v0ppb"), ExtResource("20_nuvt0"), ExtResource("21_agewn"), ExtResource("7_k0bjg"), ExtResource("9_2ng1x"), ExtResource("10_sveb0"), ExtResource("22_wyo1o"), ExtResource("23_y6kjj")])
+evolutions = Array[ExtResource("2_jnj2l")]([SubResource("Resource_l3ija")])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It spins its arms", "to make a charge", "and cannot stop", "once begun. Storms", "follow it about."])
+front_sprite = ExtResource("3_d7wh1")
+back_sprite = ExtResource("1_0qtsj")

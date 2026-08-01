@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_i8lpp"]
+
+[resource]
+script = ExtResource("1_i8lpp")
+move_name = "SKY_ATTACK"
+move_id = 143
+display_name = "SKY ATTACK"
+move_type = "FLYING"
+power = 140
+accuracy = 90
+pp = 5
+effect = "CHARGE_EFFECT"

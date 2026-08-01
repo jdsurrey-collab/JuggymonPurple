@@ -1,0 +1,91 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/rapidash.png" id="1_v7eyc"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_5l461"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/rapidash.png" id="3_surie"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_4ob28"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="5_gh3ey"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="6_bu3ew"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="7_ohlr4"]
+[ext_resource type="Resource" path="res://resources/moves/fire_spin.tres" id="8_jkl1k"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="9_frq5l"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="10_g568w"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_n0sps"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="12_41gby"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_4u0st"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_ybnbw"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="15_tgb2n"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_cc7fr"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_dssqf"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="18_yxe1o"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="19_6uhh1"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="20_wjgc8"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="21_v7s10"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="22_at2rn"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="23_46erg"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="24_sy8qa"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="25_wgyhb"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="26_n81o2"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="27_1nx4c"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="28_k47o4"]
+
+[sub_resource type="Resource" id="Resource_j6hcg"]
+script = ExtResource("4_4ob28")
+level = 30
+move = ExtResource("5_gh3ey")
+
+[sub_resource type="Resource" id="Resource_nmiei"]
+script = ExtResource("4_4ob28")
+level = 32
+move = ExtResource("6_bu3ew")
+
+[sub_resource type="Resource" id="Resource_hjiw8"]
+script = ExtResource("4_4ob28")
+level = 35
+move = ExtResource("7_ohlr4")
+
+[sub_resource type="Resource" id="Resource_58ih4"]
+script = ExtResource("4_4ob28")
+level = 39
+move = ExtResource("8_jkl1k")
+
+[sub_resource type="Resource" id="Resource_tbafx"]
+script = ExtResource("4_4ob28")
+level = 47
+move = ExtResource("9_frq5l")
+
+[sub_resource type="Resource" id="Resource_pn6hm"]
+script = ExtResource("4_4ob28")
+level = 55
+move = ExtResource("10_g568w")
+
+[resource]
+script = ExtResource("13_4u0st")
+species_name = "RAPIDASH"
+dex = 78
+index = 164
+slug = "rapidash"
+label = "Rapidash"
+category = "FIRE HORSE"
+height_ft = 5
+height_in = 7
+weight_tenths_lb = 2090
+hp = 65
+attack = 100
+defense = 70
+speed = 105
+special = 80
+type1 = "FIRE"
+type2 = "FIRE"
+catch_rate = 60
+base_exp = 192
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_n0sps")]([ExtResource("12_41gby"), ExtResource("5_gh3ey"), ExtResource("6_bu3ew"), ExtResource("7_ohlr4")])
+learnset = Array[ExtResource("4_4ob28")]([SubResource("Resource_j6hcg"), SubResource("Resource_nmiei"), SubResource("Resource_hjiw8"), SubResource("Resource_58ih4"), SubResource("Resource_tbafx"), SubResource("Resource_pn6hm")])
+tmhm = Array[ExtResource("11_n0sps")]([ExtResource("14_ybnbw"), ExtResource("15_tgb2n"), ExtResource("16_cc7fr"), ExtResource("9_frq5l"), ExtResource("17_dssqf"), ExtResource("18_yxe1o"), ExtResource("19_6uhh1"), ExtResource("20_wjgc8"), ExtResource("21_v7s10"), ExtResource("22_at2rn"), ExtResource("23_46erg"), ExtResource("24_sy8qa"), ExtResource("25_wgyhb"), ExtResource("26_n81o2"), ExtResource("27_1nx4c"), ExtResource("28_k47o4")])
+evolutions = Array[ExtResource("2_5l461")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Very competitive,", "this #MON will", "chase anything", "that moves fast", "in the hopes of", "racing it"])
+front_sprite = ExtResource("3_surie")
+back_sprite = ExtResource("1_v7eyc")

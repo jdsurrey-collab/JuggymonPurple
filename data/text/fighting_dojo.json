@@ -1,0 +1,296 @@
+{
+ "FightingDojoKarateMasterText": [
+  {
+   "kind": "text",
+   "line": "Hnf."
+  },
+  {
+   "kind": "para",
+   "line": "I am the KARATE"
+  },
+  {
+   "kind": "line",
+   "line": "MASTER. I lead"
+  },
+  {
+   "kind": "cont",
+   "line": "this house of pain."
+  },
+  {
+   "kind": "para",
+   "line": "You wish to"
+  },
+  {
+   "kind": "line",
+   "line": "challenge us?"
+  },
+  {
+   "kind": "cont",
+   "line": "Expect no mercy."
+  },
+  {
+   "kind": "para",
+   "line": "Hah!"
+  }
+ ],
+ "FightingDojoKarateMasterDefeatedText": [
+  {
+   "kind": "text",
+   "line": "Hwa!"
+  },
+  {
+   "kind": "line",
+   "line": "Arrgh! Defeated!"
+  }
+ ],
+ "FightingDojoKarateMasterIWillGiveYouAPokemonText": [
+  {
+   "kind": "text",
+   "line": "Indeed, I have"
+  },
+  {
+   "kind": "line",
+   "line": "fallen."
+  },
+  {
+   "kind": "para",
+   "line": "I beg you, do"
+  },
+  {
+   "kind": "line",
+   "line": "not claim our"
+  },
+  {
+   "kind": "cont",
+   "line": "emblem as your"
+  },
+  {
+   "kind": "cont",
+   "line": "trophy!"
+  },
+  {
+   "kind": "para",
+   "line": "Instead, take a"
+  },
+  {
+   "kind": "line",
+   "line": "prized fighting"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON, of mine."
+  },
+  {
+   "kind": "para",
+   "line": "Choose as you"
+  },
+  {
+   "kind": "line",
+   "line": "wish."
+  }
+ ],
+ "FightingDojoKarateMasterStayAndTrainWithUsText": [
+  {
+   "kind": "text",
+   "line": "Ho."
+  },
+  {
+   "kind": "para",
+   "line": "Stay, and train"
+  },
+  {
+   "kind": "line",
+   "line": "in pain with us."
+  }
+ ],
+ "FightingDojoBlackbelt1BattleText": [
+  {
+   "kind": "text",
+   "line": "Hoargh! Shoes"
+  },
+  {
+   "kind": "line",
+   "line": "off, before me!"
+  }
+ ],
+ "FightingDojoBlackbelt1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I give"
+  },
+  {
+   "kind": "line",
+   "line": "up!"
+  }
+ ],
+ "FightingDojoBlackbelt1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Wait till you"
+  },
+  {
+   "kind": "line",
+   "line": "meet our Master."
+  },
+  {
+   "kind": "para",
+   "line": "I'm nothing,"
+  },
+  {
+   "kind": "line",
+   "line": "next to him."
+  }
+ ],
+ "FightingDojoBlackbelt2BattleText": [
+  {
+   "kind": "text",
+   "line": "I hear you're"
+  },
+  {
+   "kind": "line",
+   "line": "good. Prove it."
+  }
+ ],
+ "FightingDojoBlackbelt2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Judge!"
+  },
+  {
+   "kind": "line",
+   "line": "1 point!"
+  }
+ ],
+ "FightingDojoBlackbelt2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Our Master, a"
+  },
+  {
+   "kind": "line",
+   "line": "true master."
+  }
+ ],
+ "FightingDojoBlackbelt3BattleText": [
+  {
+   "kind": "text",
+   "line": "Nothing tough"
+  },
+  {
+   "kind": "line",
+   "line": "unsettles me."
+  },
+  {
+   "kind": "para",
+   "line": "I shatter stone,"
+  },
+  {
+   "kind": "line",
+   "line": "to train."
+  }
+ ],
+ "FightingDojoBlackbelt3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Yow!"
+  },
+  {
+   "kind": "line",
+   "line": "Stubbed fingers!"
+  }
+ ],
+ "FightingDojoBlackbelt3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Only one thing"
+  },
+  {
+   "kind": "line",
+   "line": "unsettles us-"
+  },
+  {
+   "kind": "cont",
+   "line": "psychic power."
+  }
+ ],
+ "FightingDojoBlackbelt4BattleText": [
+  {
+   "kind": "text",
+   "line": "Hoohah!"
+  },
+  {
+   "kind": "para",
+   "line": "You trespass in"
+  },
+  {
+   "kind": "line",
+   "line": "our FIGHTING"
+  },
+  {
+   "kind": "cont",
+   "line": "DOJO!"
+  }
+ ],
+ "FightingDojoBlackbelt4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oof!"
+  },
+  {
+   "kind": "line",
+   "line": "I give up!"
+  }
+ ],
+ "FightingDojoBlackbelt4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "The finest"
+  },
+  {
+   "kind": "line",
+   "line": "fighters in the"
+  },
+  {
+   "kind": "cont",
+   "line": "land train here."
+  }
+ ],
+ "FightingDojoHitmonleePokeBallText": [
+  {
+   "kind": "text",
+   "line": "You want the"
+  },
+  {
+   "kind": "line",
+   "line": "hard kicking"
+  },
+  {
+   "kind": "cont",
+   "line": "HITMONLEE?"
+  }
+ ],
+ "FightingDojoHitmonchanPokeBallText": [
+  {
+   "kind": "text",
+   "line": "You want the"
+  },
+  {
+   "kind": "line",
+   "line": "piston punching"
+  },
+  {
+   "kind": "cont",
+   "line": "HITMONCHAN?"
+  }
+ ],
+ "FightingDojoBetterNotGetGreedyText": [
+  {
+   "kind": "text",
+   "line": "Better not get"
+  },
+  {
+   "kind": "line",
+   "line": "greedy..."
+  }
+ ]
+}

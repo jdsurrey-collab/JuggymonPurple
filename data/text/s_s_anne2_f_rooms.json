@@ -1,0 +1,256 @@
+{
+ "SSAnne2FRoomsGentleman3Text": [
+  {
+   "kind": "text",
+   "line": "In all my years,"
+  },
+  {
+   "kind": "line",
+   "line": "I've seen no"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON sleep"
+  },
+  {
+   "kind": "cont",
+   "line": "as this one does."
+  },
+  {
+   "kind": "para",
+   "line": "It went something"
+  },
+  {
+   "kind": "line",
+   "line": "like this-"
+  }
+ ],
+ "SSAnne2FRoomsGentleman4Text": [
+  {
+   "kind": "text",
+   "line": "Ah, yes. I've"
+  },
+  {
+   "kind": "line",
+   "line": "seen #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "ferry the living"
+  },
+  {
+   "kind": "cont",
+   "line": "across the water!"
+  }
+ ],
+ "SSAnne2FRoomsGrampsText": [
+  {
+   "kind": "text",
+   "line": "#MON can CUT"
+  },
+  {
+   "kind": "line",
+   "line": "small bushes down."
+  }
+ ],
+ "SSAnne2FRoomsGentleman5Text": [
+  {
+   "kind": "text",
+   "line": "Have you seen the"
+  },
+  {
+   "kind": "line",
+   "line": "SAFARI ZONE, in"
+  },
+  {
+   "kind": "cont",
+   "line": "FUCHSIA CITY?"
+  },
+  {
+   "kind": "para",
+   "line": "So many rare"
+  },
+  {
+   "kind": "line",
+   "line": "#MON, caged."
+  }
+ ],
+ "SSAnne2FRoomsLittleBoyText": [
+  {
+   "kind": "text",
+   "line": "Father and I"
+  },
+  {
+   "kind": "line",
+   "line": "think the SAFARI"
+  },
+  {
+   "kind": "cont",
+   "line": "ZONE is grand."
+  }
+ ],
+ "SSAnne2FRoomsBrunetteGirlText": [
+  {
+   "kind": "text",
+   "line": "The CAPTAIN looks"
+  },
+  {
+   "kind": "line",
+   "line": "so ill, so pale,"
+  },
+  {
+   "kind": "cont",
+   "line": "these days."
+  }
+ ],
+ "SSAnne2FRoomsBeautyText": [
+  {
+   "kind": "text",
+   "line": "Many aboard"
+  },
+  {
+   "kind": "line",
+   "line": "fall seasick."
+  }
+ ],
+ "SSAnne2FRoomsGentleman1BattleText": [
+  {
+   "kind": "text",
+   "line": "Fighting the young"
+  },
+  {
+   "kind": "line",
+   "line": "keeps this old"
+  },
+  {
+   "kind": "cont",
+   "line": "man youthful."
+  }
+ ],
+ "SSAnne2FRoomsGentleman1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Good"
+  },
+  {
+   "kind": "line",
+   "line": "fight! I feel"
+  },
+  {
+   "kind": "cont",
+   "line": "young again!"
+  }
+ ],
+ "SSAnne2FRoomsGentleman1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "15 years past, I'd"
+  },
+  {
+   "kind": "line",
+   "line": "have won this."
+  }
+ ],
+ "SSAnne2FRoomsFisherBattleText": [
+  {
+   "kind": "text",
+   "line": "See what I've"
+  },
+  {
+   "kind": "line",
+   "line": "fished up!"
+  }
+ ],
+ "SSAnne2FRoomsFisherEndBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm"
+  },
+  {
+   "kind": "line",
+   "line": "all out!"
+  }
+ ],
+ "SSAnne2FRoomsFisherAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "A party?"
+  },
+  {
+   "kind": "para",
+   "line": "That's long"
+  },
+  {
+   "kind": "line",
+   "line": "since ended, I'd"
+  },
+  {
+   "kind": "cont",
+   "line": "wager."
+  }
+ ],
+ "SSAnne2FRoomsGentleman2BattleText": [
+  {
+   "kind": "text",
+   "line": "Which do you"
+  },
+  {
+   "kind": "line",
+   "line": "prize- a strong"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON, or a rare?"
+  }
+ ],
+ "SSAnne2FRoomsGentleman2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I must salute"
+  },
+  {
+   "kind": "line",
+   "line": "you, truly!"
+  }
+ ],
+ "SSAnne2FRoomsGentleman2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I prize both"
+  },
+  {
+   "kind": "line",
+   "line": "strong and rare."
+  }
+ ],
+ "SSAnne2FRoomsCooltrainerFBattleText": [
+  {
+   "kind": "text",
+   "line": "I never saw you"
+  },
+  {
+   "kind": "line",
+   "line": "at the party."
+  }
+ ],
+ "SSAnne2FRoomsCooltrainerFEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Take"
+  },
+  {
+   "kind": "line",
+   "line": "it easy!"
+  }
+ ],
+ "SSAnne2FRoomsCooltrainerFAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh, I adore"
+  },
+  {
+   "kind": "line",
+   "line": "your strong #MON!"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=28 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/bellossom.png" id="1_jsuyf"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_yrpjc"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/bellossom.png" id="3_pvdim"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_or4t0"]
+[ext_resource type="Resource" path="res://resources/moves/vine_whip.tres" id="5_xtc8w"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="6_altcd"]
+[ext_resource type="Resource" path="res://resources/moves/razor_leaf.tres" id="7_v0n3h"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="8_8lylb"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_yka8d"]
+[ext_resource type="Resource" path="res://resources/moves/absorb.tres" id="10_708bv"]
+[ext_resource type="Resource" path="res://resources/moves/sweet_scent.tres" id="11_1hwr7"]
+[ext_resource type="Resource" path="res://resources/moves/stun_spore.tres" id="12_4hihk"]
+[ext_resource type="Resource" path="res://resources/moves/petal_dance.tres" id="13_vvyve"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_oshh8"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_586xv"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_ylftc"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_nty7g"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_bq5hy"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_vqqj8"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_87q3p"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_gow6u"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_fum1q"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="23_4nujv"]
+
+[sub_resource type="Resource" id="Resource_oabfj"]
+script = ExtResource("4_or4t0")
+level = 10
+move = ExtResource("5_xtc8w")
+
+[sub_resource type="Resource" id="Resource_ew7sb"]
+script = ExtResource("4_or4t0")
+level = 20
+move = ExtResource("6_altcd")
+
+[sub_resource type="Resource" id="Resource_x1ti0"]
+script = ExtResource("4_or4t0")
+level = 32
+move = ExtResource("7_v0n3h")
+
+[sub_resource type="Resource" id="Resource_t5ytb"]
+script = ExtResource("4_or4t0")
+level = 55
+move = ExtResource("8_8lylb")
+
+[resource]
+script = ExtResource("14_oshh8")
+species_name = "BELLOSSOM"
+dex = 182
+index = 161
+slug = "bellossom"
+label = "Bellossom"
+category = "FLOWER"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 130
+hp = 75
+attack = 80
+defense = 85
+speed = 50
+special = 95
+type1 = "GRASS"
+type2 = "GRASS"
+catch_rate = 45
+base_exp = 184
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("9_yka8d")]([ExtResource("10_708bv"), ExtResource("11_1hwr7"), ExtResource("12_4hihk"), ExtResource("13_vvyve")])
+learnset = Array[ExtResource("4_or4t0")]([SubResource("Resource_oabfj"), SubResource("Resource_ew7sb"), SubResource("Resource_x1ti0"), SubResource("Resource_t5ytb")])
+tmhm = Array[ExtResource("9_yka8d")]([ExtResource("15_586xv"), ExtResource("16_ylftc"), ExtResource("17_nty7g"), ExtResource("18_bq5hy"), ExtResource("19_vqqj8"), ExtResource("20_87q3p"), ExtResource("21_gow6u"), ExtResource("22_fum1q"), ExtResource("8_8lylb"), ExtResource("6_altcd"), ExtResource("23_4nujv")])
+evolutions = Array[ExtResource("2_yrpjc")]([])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["It dances when", "the rain comes.", "The old say the", "dance is a rite", "and not a joy."])
+front_sprite = ExtResource("3_pvdim")
+back_sprite = ExtResource("1_jsuyf")

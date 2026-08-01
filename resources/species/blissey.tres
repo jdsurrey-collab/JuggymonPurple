@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=40 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/blissey.png" id="1_0gjke"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_cqc2v"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/blissey.png" id="3_5cpfm"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_quilg"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="5_5hd8a"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="6_jhye6"]
+[ext_resource type="Resource" path="res://resources/moves/softboiled.tres" id="7_cc4m3"]
+[ext_resource type="Resource" path="res://resources/moves/doubleslap.tres" id="8_uis0p"]
+[ext_resource type="Resource" path="res://resources/moves/minimize.tres" id="9_xvrgs"]
+[ext_resource type="Resource" path="res://resources/moves/sing.tres" id="10_lh0oy"]
+[ext_resource type="Resource" path="res://resources/moves/egg_bomb.tres" id="11_q30yr"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="12_kmdjx"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="13_w6krx"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="14_o8u4s"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="15_66r8c"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="16_nnpyc"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="17_tuhdv"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="18_riyml"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="19_a5tky"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="20_mn5o2"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="21_xl4ua"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="22_rwacg"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="23_iqr83"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="24_ffo1w"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="25_f3hpe"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="26_t3kp8"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="27_sn34i"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="28_uu1ue"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="29_by6bw"]
+
+[sub_resource type="Resource" id="Resource_qhta3"]
+script = ExtResource("4_quilg")
+level = 4
+move = ExtResource("5_5hd8a")
+
+[sub_resource type="Resource" id="Resource_drkbr"]
+script = ExtResource("4_quilg")
+level = 7
+move = ExtResource("6_jhye6")
+
+[sub_resource type="Resource" id="Resource_gjddg"]
+script = ExtResource("4_quilg")
+level = 10
+move = ExtResource("7_cc4m3")
+
+[sub_resource type="Resource" id="Resource_x5tir"]
+script = ExtResource("4_quilg")
+level = 13
+move = ExtResource("8_uis0p")
+
+[sub_resource type="Resource" id="Resource_px64d"]
+script = ExtResource("4_quilg")
+level = 18
+move = ExtResource("9_xvrgs")
+
+[sub_resource type="Resource" id="Resource_hl31h"]
+script = ExtResource("4_quilg")
+level = 23
+move = ExtResource("10_lh0oy")
+
+[sub_resource type="Resource" id="Resource_oevae"]
+script = ExtResource("4_quilg")
+level = 28
+move = ExtResource("11_q30yr")
+
+[sub_resource type="Resource" id="Resource_g4vsu"]
+script = ExtResource("4_quilg")
+level = 33
+move = ExtResource("12_kmdjx")
+
+[sub_resource type="Resource" id="Resource_4r087"]
+script = ExtResource("4_quilg")
+level = 40
+move = ExtResource("13_w6krx")
+
+[sub_resource type="Resource" id="Resource_d70cd"]
+script = ExtResource("4_quilg")
+level = 47
+move = ExtResource("14_o8u4s")
+
+[resource]
+script = ExtResource("17_tuhdv")
+species_name = "BLISSEY"
+dex = 232
+index = 235
+slug = "blissey"
+label = "Blissey"
+category = "HAPPINESS"
+height_ft = 4
+height_in = 11
+weight_tenths_lb = 1030
+hp = 255
+attack = 10
+defense = 10
+speed = 55
+special = 105
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 30
+base_exp = 255
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("15_66r8c")]([ExtResource("16_nnpyc")])
+learnset = Array[ExtResource("4_quilg")]([SubResource("Resource_qhta3"), SubResource("Resource_drkbr"), SubResource("Resource_gjddg"), SubResource("Resource_x5tir"), SubResource("Resource_px64d"), SubResource("Resource_hl31h"), SubResource("Resource_oevae"), SubResource("Resource_g4vsu"), SubResource("Resource_4r087"), SubResource("Resource_d70cd")])
+tmhm = Array[ExtResource("15_66r8c")]([ExtResource("18_riyml"), ExtResource("19_a5tky"), ExtResource("20_mn5o2"), ExtResource("21_xl4ua"), ExtResource("22_rwacg"), ExtResource("23_iqr83"), ExtResource("24_ffo1w"), ExtResource("25_f3hpe"), ExtResource("26_t3kp8"), ExtResource("27_sn34i"), ExtResource("14_o8u4s"), ExtResource("7_cc4m3"), ExtResource("28_uu1ue"), ExtResource("29_by6bw"), ExtResource("11_q30yr")])
+evolutions = Array[ExtResource("2_cqc2v")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It shares its egg", "with the suffering", "and asks nothing.", "It is hunted for", "that very egg."])
+front_sprite = ExtResource("3_5cpfm")
+back_sprite = ExtResource("1_0gjke")

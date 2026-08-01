@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/hitmonchan.png" id="1_rtlso"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_0x6b5"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/hitmonchan.png" id="3_03lgc"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ikdtr"]
+[ext_resource type="Resource" path="res://resources/moves/fire_punch.tres" id="5_ydmvk"]
+[ext_resource type="Resource" path="res://resources/moves/ice_punch.tres" id="6_m0vqq"]
+[ext_resource type="Resource" path="res://resources/moves/thunderpunch.tres" id="7_3ae48"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="8_umlv1"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="9_as0gb"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_xhauo"]
+[ext_resource type="Resource" path="res://resources/moves/comet_punch.tres" id="11_ocuie"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="12_tucr7"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_gd8nj"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="14_glvgy"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_jp3d5"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_qhs6p"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_26e5u"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_smrse"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="19_uvpxo"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="20_vbbh2"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="21_q26lh"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="22_nr5vf"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="23_u0wfg"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="24_gjl13"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="25_auijk"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="26_plr3q"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="27_lfys6"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="28_1mt5h"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="29_2fjdd"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="30_t84gt"]
+
+[sub_resource type="Resource" id="Resource_c8o16"]
+script = ExtResource("4_ikdtr")
+level = 33
+move = ExtResource("5_ydmvk")
+
+[sub_resource type="Resource" id="Resource_n1fx7"]
+script = ExtResource("4_ikdtr")
+level = 38
+move = ExtResource("6_m0vqq")
+
+[sub_resource type="Resource" id="Resource_00md0"]
+script = ExtResource("4_ikdtr")
+level = 43
+move = ExtResource("7_3ae48")
+
+[sub_resource type="Resource" id="Resource_5tgsf"]
+script = ExtResource("4_ikdtr")
+level = 48
+move = ExtResource("8_umlv1")
+
+[sub_resource type="Resource" id="Resource_7ihxj"]
+script = ExtResource("4_ikdtr")
+level = 53
+move = ExtResource("9_as0gb")
+
+[resource]
+script = ExtResource("13_gd8nj")
+species_name = "HITMONCHAN"
+dex = 107
+index = 44
+slug = "hitmonchan"
+label = "Hitmonchan"
+category = "PUNCHING"
+height_ft = 4
+height_in = 7
+weight_tenths_lb = 1110
+hp = 50
+attack = 105
+defense = 79
+speed = 76
+special = 35
+type1 = "FIGHTING"
+type2 = "FIGHTING"
+catch_rate = 45
+base_exp = 140
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_xhauo")]([ExtResource("11_ocuie"), ExtResource("12_tucr7")])
+learnset = Array[ExtResource("4_ikdtr")]([SubResource("Resource_c8o16"), SubResource("Resource_n1fx7"), SubResource("Resource_00md0"), SubResource("Resource_5tgsf"), SubResource("Resource_7ihxj")])
+tmhm = Array[ExtResource("10_xhauo")]([ExtResource("8_umlv1"), ExtResource("14_glvgy"), ExtResource("15_jp3d5"), ExtResource("16_qhs6p"), ExtResource("17_26e5u"), ExtResource("18_smrse"), ExtResource("19_uvpxo"), ExtResource("9_as0gb"), ExtResource("20_vbbh2"), ExtResource("21_q26lh"), ExtResource("22_nr5vf"), ExtResource("23_u0wfg"), ExtResource("24_gjl13"), ExtResource("25_auijk"), ExtResource("26_plr3q"), ExtResource("27_lfys6"), ExtResource("28_1mt5h"), ExtResource("29_2fjdd"), ExtResource("30_t84gt")])
+evolutions = Array[ExtResource("2_0x6b5")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["While apparently", "doing nothing, it", "fires punches in", "lightning fast", "volleys that are", "impossible to see"])
+front_sprite = ExtResource("3_03lgc")
+back_sprite = ExtResource("1_rtlso")

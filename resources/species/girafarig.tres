@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/girafarig.png" id="1_5qe8l"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_judoi"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/girafarig.png" id="3_ia21i"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_g1yu3"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="5_xjc61"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="6_6xspm"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="7_bwn0p"]
+[ext_resource type="Resource" path="res://resources/moves/psybeam.tres" id="8_vbjtk"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_1a2u3"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="10_auj1y"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="11_whbfb"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_u7xfd"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_wb366"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_7iqk5"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_qv5eo"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_q1b4o"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_vu1pq"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_gy2eg"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_3vwqv"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_clm4w"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="21_vwr40"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="22_05bfl"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="23_n32hw"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="24_3sa43"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="25_al645"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="26_4rj46"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="27_of64o"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="28_cwx1n"]
+
+[sub_resource type="Resource" id="Resource_al6kc"]
+script = ExtResource("4_g1yu3")
+level = 7
+move = ExtResource("5_xjc61")
+
+[sub_resource type="Resource" id="Resource_pvfu6"]
+script = ExtResource("4_g1yu3")
+level = 13
+move = ExtResource("6_6xspm")
+
+[sub_resource type="Resource" id="Resource_ye5ke"]
+script = ExtResource("4_g1yu3")
+level = 20
+move = ExtResource("7_bwn0p")
+
+[sub_resource type="Resource" id="Resource_se7jf"]
+script = ExtResource("4_g1yu3")
+level = 41
+move = ExtResource("8_vbjtk")
+
+[resource]
+script = ExtResource("12_u7xfd")
+species_name = "GIRAFARIG"
+dex = 200
+index = 203
+slug = "girafarig"
+label = "Girafarig"
+category = "LONG NECK"
+height_ft = 4
+height_in = 11
+weight_tenths_lb = 910
+hp = 70
+attack = 80
+defense = 65
+speed = 85
+special = 77
+type1 = "NORMAL"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 60
+base_exp = 149
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("9_1a2u3")]([ExtResource("10_auj1y"), ExtResource("11_whbfb"), ExtResource("5_xjc61"), ExtResource("6_6xspm")])
+learnset = Array[ExtResource("4_g1yu3")]([SubResource("Resource_al6kc"), SubResource("Resource_pvfu6"), SubResource("Resource_ye5ke"), SubResource("Resource_se7jf")])
+tmhm = Array[ExtResource("9_1a2u3")]([ExtResource("13_wb366"), ExtResource("14_7iqk5"), ExtResource("15_qv5eo"), ExtResource("16_q1b4o"), ExtResource("17_vu1pq"), ExtResource("18_gy2eg"), ExtResource("19_3vwqv"), ExtResource("20_clm4w"), ExtResource("21_vwr40"), ExtResource("22_05bfl"), ExtResource("23_n32hw"), ExtResource("24_3sa43"), ExtResource("25_al645"), ExtResource("26_4rj46"), ExtResource("27_of64o"), ExtResource("28_cwx1n")])
+evolutions = Array[ExtResource("2_judoi")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["The head at its", "tail does not", "sleep, and bites", "whoever comes", "up from behind."])
+front_sprite = ExtResource("3_ia21i")
+back_sprite = ExtResource("1_5qe8l")

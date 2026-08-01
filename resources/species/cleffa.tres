@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=27 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/cleffa.png" id="1_v3xg8"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_l47ps"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/cleffa.png" id="3_vqiir"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_30a7d"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="5_c1ln1"]
+[ext_resource type="Resource" path="res://resources/moves/sing.tres" id="6_bwlmk"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="7_4ps05"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="8_0y5o7"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_8o6f4"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="10_jymqg"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_tdflw"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_ujvly"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_tvxft"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="14_t6m7v"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="15_m5x5q"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="16_k85dq"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="17_3rhtp"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="18_iw3ev"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="19_0hkrv"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="20_mi56y"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="21_7c466"]
+
+[sub_resource type="Resource" id="Resource_a1g0i"]
+script = ExtResource("2_l47ps")
+method = "LEVEL"
+target = "CLEFAIRY"
+level = 12
+item = ""
+
+[sub_resource type="Resource" id="Resource_mc2vn"]
+script = ExtResource("4_30a7d")
+level = 8
+move = ExtResource("5_c1ln1")
+
+[sub_resource type="Resource" id="Resource_a0att"]
+script = ExtResource("4_30a7d")
+level = 8
+move = ExtResource("6_bwlmk")
+
+[sub_resource type="Resource" id="Resource_ben2p"]
+script = ExtResource("4_30a7d")
+level = 15
+move = ExtResource("7_4ps05")
+
+[sub_resource type="Resource" id="Resource_v4c0n"]
+script = ExtResource("4_30a7d")
+level = 24
+move = ExtResource("8_0y5o7")
+
+[resource]
+script = ExtResource("11_tdflw")
+species_name = "CLEFFA"
+dex = 173
+index = 127
+slug = "cleffa"
+label = "Cleffa"
+category = "STARSHAPE"
+height_ft = 1
+height_in = 0
+weight_tenths_lb = 70
+hp = 50
+attack = 25
+defense = 28
+speed = 15
+special = 50
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 150
+base_exp = 37
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("9_8o6f4")]([ExtResource("10_jymqg")])
+learnset = Array[ExtResource("4_30a7d")]([SubResource("Resource_mc2vn"), SubResource("Resource_a0att"), SubResource("Resource_ben2p"), SubResource("Resource_v4c0n")])
+tmhm = Array[ExtResource("9_8o6f4")]([ExtResource("12_ujvly"), ExtResource("13_tvxft"), ExtResource("14_t6m7v"), ExtResource("15_m5x5q"), ExtResource("16_k85dq"), ExtResource("17_3rhtp"), ExtResource("18_iw3ev"), ExtResource("19_0hkrv"), ExtResource("8_0y5o7"), ExtResource("20_mi56y"), ExtResource("21_7c466")])
+evolutions = Array[ExtResource("2_l47ps")]([SubResource("Resource_a1g0i")])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Found only where", "stars have fallen.", "It remembers the", "sky it came from", "and grieves it."])
+front_sprite = ExtResource("3_vqiir")
+back_sprite = ExtResource("1_v3xg8")

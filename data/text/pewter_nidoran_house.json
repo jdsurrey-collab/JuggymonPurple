@@ -1,0 +1,64 @@
+{
+ "PewterNidoranHouseNidoranText": [
+  {
+   "kind": "text",
+   "line": "NIDORAN: Bowbow!@"
+  }
+ ],
+ "PewterNidoranHouseLittleBoyText": [
+  {
+   "kind": "text",
+   "line": "NIDORAN, still!"
+  }
+ ],
+ "PewterNidoranHouseMiddleAgedManText": [
+  {
+   "kind": "text",
+   "line": "Our #MON came"
+  },
+  {
+   "kind": "line",
+   "line": "from elsewhere,"
+  },
+  {
+   "kind": "cont",
+   "line": "and won't obey."
+  },
+  {
+   "kind": "para",
+   "line": "A traded #MON,"
+  },
+  {
+   "kind": "line",
+   "line": "you understand-"
+  },
+  {
+   "kind": "cont",
+   "line": "not truly ours."
+  },
+  {
+   "kind": "para",
+   "line": "It grows quick,"
+  },
+  {
+   "kind": "line",
+   "line": "but scorns a"
+  },
+  {
+   "kind": "cont",
+   "line": "trainer without"
+  },
+  {
+   "kind": "cont",
+   "line": "the right BADGEs."
+  },
+  {
+   "kind": "para",
+   "line": "If only we had"
+  },
+  {
+   "kind": "line",
+   "line": "earned some..."
+  }
+ ]
+}

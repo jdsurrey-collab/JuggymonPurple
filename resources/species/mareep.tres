@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/mareep.png" id="1_32kpg"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_l2661"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/mareep.png" id="3_kg32v"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_35w8u"]
+[ext_resource type="Resource" path="res://resources/moves/thundershock.tres" id="5_a70mh"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="6_6hvtc"]
+[ext_resource type="Resource" path="res://resources/moves/cotton_spore.tres" id="7_cy2hd"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="8_dqjia"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="9_5pikr"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_ult01"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_qpgrg"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="12_cto07"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_nurf6"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_li5ba"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_tej3i"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_vnyyo"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_mjdlx"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_dc1af"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_oe0r3"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_niwy8"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_2gxkl"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="22_i2lu5"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="23_xgh2d"]
+
+[sub_resource type="Resource" id="Resource_ctt07"]
+script = ExtResource("2_l2661")
+method = "LEVEL"
+target = "FLAAFFY"
+level = 15
+item = ""
+
+[sub_resource type="Resource" id="Resource_phoqe"]
+script = ExtResource("4_35w8u")
+level = 9
+move = ExtResource("5_a70mh")
+
+[sub_resource type="Resource" id="Resource_t7id2"]
+script = ExtResource("4_35w8u")
+level = 16
+move = ExtResource("6_6hvtc")
+
+[sub_resource type="Resource" id="Resource_ejbds"]
+script = ExtResource("4_35w8u")
+level = 23
+move = ExtResource("7_cy2hd")
+
+[sub_resource type="Resource" id="Resource_3qh30"]
+script = ExtResource("4_35w8u")
+level = 30
+move = ExtResource("8_dqjia")
+
+[sub_resource type="Resource" id="Resource_qfg6t"]
+script = ExtResource("4_35w8u")
+level = 37
+move = ExtResource("9_5pikr")
+
+[resource]
+script = ExtResource("13_nurf6")
+species_name = "MAREEP"
+dex = 179
+index = 156
+slug = "mareep"
+label = "Mareep"
+category = "WOOL"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 170
+hp = 55
+attack = 40
+defense = 40
+speed = 35
+special = 55
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 235
+base_exp = 59
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("10_ult01")]([ExtResource("11_qpgrg"), ExtResource("12_cto07")])
+learnset = Array[ExtResource("4_35w8u")]([SubResource("Resource_phoqe"), SubResource("Resource_t7id2"), SubResource("Resource_ejbds"), SubResource("Resource_3qh30"), SubResource("Resource_qfg6t")])
+tmhm = Array[ExtResource("10_ult01")]([ExtResource("14_li5ba"), ExtResource("15_tej3i"), ExtResource("16_vnyyo"), ExtResource("17_mjdlx"), ExtResource("18_dc1af"), ExtResource("19_oe0r3"), ExtResource("20_niwy8"), ExtResource("21_2gxkl"), ExtResource("22_i2lu5"), ExtResource("9_5pikr"), ExtResource("6_6hvtc"), ExtResource("23_xgh2d")])
+evolutions = Array[ExtResource("2_l2661")]([SubResource("Resource_ctt07")])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its fleece gathers", "charge until the", "air itself stings.", "Shear it in storm", "and you will not", "shear again."])
+front_sprite = ExtResource("3_kg32v")
+back_sprite = ExtResource("1_32kpg")

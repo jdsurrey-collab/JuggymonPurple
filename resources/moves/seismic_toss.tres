@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_w3vs5"]
+
+[resource]
+script = ExtResource("1_w3vs5")
+move_name = "SEISMIC_TOSS"
+move_id = 69
+display_name = "SEISMIC TOSS"
+move_type = "FIGHTING"
+power = 1
+accuracy = 100
+pp = 20
+effect = "SPECIAL_DAMAGE_EFFECT"

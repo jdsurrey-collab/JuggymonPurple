@@ -1,0 +1,104 @@
+{
+ "SilphCo9FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "Your #MON seem"
+  },
+  {
+   "kind": "line",
+   "line": "devoted to you!"
+  }
+ ],
+ "SilphCo9FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ghaaah!"
+  }
+ ],
+ "SilphCo9FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Had I begun as a"
+  },
+  {
+   "kind": "line",
+   "line": "trainer, at your"
+  },
+  {
+   "kind": "cont",
+   "line": "age..."
+  }
+ ],
+ "SilphCo9FScientistBattleText": [
+  {
+   "kind": "text",
+   "line": "Your #MON bear"
+  },
+  {
+   "kind": "line",
+   "line": "weak points! I"
+  },
+  {
+   "kind": "cont",
+   "line": "can strike them!"
+  }
+ ],
+ "SilphCo9FScientistEndBattleText": [
+  {
+   "kind": "text",
+   "line": "You"
+  },
+  {
+   "kind": "line",
+   "line": "hammered me!"
+  }
+ ],
+ "SilphCo9FScientistAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Exploiting weak"
+  },
+  {
+   "kind": "line",
+   "line": "points does"
+  },
+  {
+   "kind": "cont",
+   "line": "work! Consider"
+  },
+  {
+   "kind": "cont",
+   "line": "element types!"
+  }
+ ],
+ "SilphCo9FRocket2BattleText": [
+  {
+   "kind": "text",
+   "line": "I am one of the 4"
+  },
+  {
+   "kind": "line",
+   "line": "ROCKET BROTHERS!"
+  }
+ ],
+ "SilphCo9FRocket2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Warg!"
+  },
+  {
+   "kind": "line",
+   "line": "Brothers, I fall!"
+  }
+ ],
+ "SilphCo9FRocket2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "My brothers shall"
+  },
+  {
+   "kind": "line",
+   "line": "avenge me!"
+  }
+ ]
+}

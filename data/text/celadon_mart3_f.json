@@ -1,0 +1,236 @@
+{
+ "CeladonMart3FClerkTM18PreReceiveText": [
+  {
+   "kind": "text",
+   "line": "Oh, hi! I've"
+  },
+  {
+   "kind": "line",
+   "line": "finally finished"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON!"
+  },
+  {
+   "kind": "para",
+   "line": "Not done yet?"
+  },
+  {
+   "kind": "line",
+   "line": "This may serve"
+  },
+  {
+   "kind": "cont",
+   "line": "you well!"
+  }
+ ],
+ "CeladonMart3FClerkReceivedTM18Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "CeladonMart3FClerkTM18ExplanationText": [
+  {
+   "kind": "text",
+   "line": "TM18 holds"
+  },
+  {
+   "kind": "line",
+   "line": "COUNTER! Not the"
+  },
+  {
+   "kind": "cont",
+   "line": "one I'm leaning"
+  },
+  {
+   "kind": "cont",
+   "line": "on, mind you!"
+  }
+ ],
+ "CeladonMart3FClerkTM18NoRoomText": [
+  {
+   "kind": "text",
+   "line": "Your pack is"
+  },
+  {
+   "kind": "line",
+   "line": "burdened full!"
+  }
+ ],
+ "CeladonMart3FGameBoyKid1Text": [
+  {
+   "kind": "text",
+   "line": "Captured #MON"
+  },
+  {
+   "kind": "line",
+   "line": "bear an ID mark"
+  },
+  {
+   "kind": "cont",
+   "line": "and OT, name of"
+  },
+  {
+   "kind": "cont",
+   "line": "the first soul"
+  },
+  {
+   "kind": "cont",
+   "line": "who claimed"
+  },
+  {
+   "kind": "cont",
+   "line": "them!"
+  }
+ ],
+ "CeladonMart3FGameBoyKid2Text": [
+  {
+   "kind": "text",
+   "line": "At last!"
+  },
+  {
+   "kind": "para",
+   "line": "My comrade will"
+  },
+  {
+   "kind": "line",
+   "line": "trade his"
+  },
+  {
+   "kind": "cont",
+   "line": "KANGASKHAN for"
+  },
+  {
+   "kind": "cont",
+   "line": "my GRAVELER!"
+  }
+ ],
+ "CeladonMart3FGameBoyKid3Text": [
+  {
+   "kind": "text",
+   "line": "Come, GRAVELER!"
+  },
+  {
+   "kind": "para",
+   "line": "I do so love"
+  },
+  {
+   "kind": "line",
+   "line": "GRAVELER! I"
+  },
+  {
+   "kind": "cont",
+   "line": "keep them all!"
+  },
+  {
+   "kind": "para",
+   "line": "What's this?"
+  },
+  {
+   "kind": "para",
+   "line": "GRAVELER has"
+  },
+  {
+   "kind": "line",
+   "line": "become some"
+  },
+  {
+   "kind": "cont",
+   "line": "other #MON!"
+  }
+ ],
+ "CeladonMart3FLittleBoyText": [
+  {
+   "kind": "text",
+   "line": "You may know"
+  },
+  {
+   "kind": "line",
+   "line": "traded #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "by their solemn"
+  },
+  {
+   "kind": "cont",
+   "line": "ID numbers!"
+  }
+ ],
+ "CeladonMart3FSNESText": [
+  {
+   "kind": "text",
+   "line": "A strange engine!"
+  }
+ ],
+ "CeladonMart3FRPGText": [
+  {
+   "kind": "text",
+   "line": "A saga! No time"
+  },
+  {
+   "kind": "line",
+   "line": "for such things!"
+  }
+ ],
+ "CeladonMart3FSportsGameText": [
+  {
+   "kind": "text",
+   "line": "A sporting game!"
+  },
+  {
+   "kind": "line",
+   "line": "Father will love"
+  },
+  {
+   "kind": "cont",
+   "line": "it!"
+  }
+ ],
+ "CeladonMart3FPuzzleGameText": [
+  {
+   "kind": "text",
+   "line": "A puzzle game!"
+  },
+  {
+   "kind": "line",
+   "line": "How it beguiles!"
+  }
+ ],
+ "CeladonMart3FFightingGameText": [
+  {
+   "kind": "text",
+   "line": "A fighting game!"
+  },
+  {
+   "kind": "line",
+   "line": "Looks brutal!"
+  }
+ ],
+ "CeladonMart3FCurrentFloorSignText": [
+  {
+   "kind": "text",
+   "line": "3F: TV GAME SHOP"
+  }
+ ],
+ "CeladonMart3FPokemonPosterText": [
+  {
+   "kind": "text",
+   "line": "Red and Blue!"
+  },
+  {
+   "kind": "line",
+   "line": "Both are #MON!"
+  }
+ ]
+}

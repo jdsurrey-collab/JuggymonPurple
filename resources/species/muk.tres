@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/muk.png" id="1_y1pls"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_blbjg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/muk.png" id="3_kys7w"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_pvre4"]
+[ext_resource type="Resource" path="res://resources/moves/poison_gas.tres" id="5_pu4y1"]
+[ext_resource type="Resource" path="res://resources/moves/minimize.tres" id="6_htxl2"]
+[ext_resource type="Resource" path="res://resources/moves/sludge.tres" id="7_qegos"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="8_xg7y4"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="9_e0le8"]
+[ext_resource type="Resource" path="res://resources/moves/acid_armor.tres" id="10_8rmpy"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_6v0sb"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="12_ix45e"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="13_lho6s"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_rsqdp"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_114ex"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_8fn4c"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="17_dglko"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_ja3bd"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="19_ogpsj"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="20_ixp0d"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="21_li6p6"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="22_7gs4j"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="23_x8gqo"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="24_6r0ji"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="25_438mb"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="26_f6w5t"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="27_mcvu3"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="28_55vxf"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="29_nbmlu"]
+
+[sub_resource type="Resource" id="Resource_br4or"]
+script = ExtResource("4_pvre4")
+level = 30
+move = ExtResource("5_pu4y1")
+
+[sub_resource type="Resource" id="Resource_vapre"]
+script = ExtResource("4_pvre4")
+level = 33
+move = ExtResource("6_htxl2")
+
+[sub_resource type="Resource" id="Resource_jvdt7"]
+script = ExtResource("4_pvre4")
+level = 37
+move = ExtResource("7_qegos")
+
+[sub_resource type="Resource" id="Resource_lr334"]
+script = ExtResource("4_pvre4")
+level = 45
+move = ExtResource("8_xg7y4")
+
+[sub_resource type="Resource" id="Resource_hkhmh"]
+script = ExtResource("4_pvre4")
+level = 53
+move = ExtResource("9_e0le8")
+
+[sub_resource type="Resource" id="Resource_r80ml"]
+script = ExtResource("4_pvre4")
+level = 60
+move = ExtResource("10_8rmpy")
+
+[resource]
+script = ExtResource("14_rsqdp")
+species_name = "MUK"
+dex = 89
+index = 136
+slug = "muk"
+label = "Muk"
+category = "SLUDGE"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 660
+hp = 105
+attack = 105
+defense = 75
+speed = 50
+special = 65
+type1 = "POISON"
+type2 = "POISON"
+catch_rate = 75
+base_exp = 157
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_6v0sb")]([ExtResource("12_ix45e"), ExtResource("13_lho6s"), ExtResource("5_pu4y1")])
+learnset = Array[ExtResource("4_pvre4")]([SubResource("Resource_br4or"), SubResource("Resource_vapre"), SubResource("Resource_jvdt7"), SubResource("Resource_lr334"), SubResource("Resource_hkhmh"), SubResource("Resource_r80ml")])
+tmhm = Array[ExtResource("11_6v0sb")]([ExtResource("15_114ex"), ExtResource("16_8fn4c"), ExtResource("17_dglko"), ExtResource("18_ja3bd"), ExtResource("19_ogpsj"), ExtResource("20_ixp0d"), ExtResource("21_li6p6"), ExtResource("22_7gs4j"), ExtResource("23_x8gqo"), ExtResource("24_6r0ji"), ExtResource("25_438mb"), ExtResource("26_f6w5t"), ExtResource("27_mcvu3"), ExtResource("28_55vxf"), ExtResource("29_nbmlu")])
+evolutions = Array[ExtResource("2_blbjg")]([])
+palette = "PAL_PURPLEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Thickly covered", "with a filthy,", "vile sludge. It", "is so toxic, even", "its footprints", "contain poison"])
+front_sprite = ExtResource("3_kys7w")
+back_sprite = ExtResource("1_y1pls")

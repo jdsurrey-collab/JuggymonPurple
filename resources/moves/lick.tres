@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_0sajx"]
+
+[resource]
+script = ExtResource("1_0sajx")
+move_name = "LICK"
+move_id = 122
+display_name = "LICK"
+move_type = "GHOST"
+power = 20
+accuracy = 100
+pp = 30
+effect = "PARALYZE_SIDE_EFFECT2"

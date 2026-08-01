@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=39 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/rhyhorn.png" id="1_46gwh"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_6uf4m"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/rhyhorn.png" id="3_apsw5"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_23rnd"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="5_gd1uq"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="6_gaaq2"]
+[ext_resource type="Resource" path="res://resources/moves/fury_attack.tres" id="7_2vuhc"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="8_8fb0u"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="9_wvs70"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="10_weu1c"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_rsrw8"]
+[ext_resource type="Resource" path="res://resources/moves/horn_attack.tres" id="12_gxwn1"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_cwrye"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_qfdlr"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_vxiae"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_5b74a"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="17_m31t5"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="18_1r4dq"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="19_sesef"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="20_ejb5y"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="21_5vsu7"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="22_h1awn"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="23_n2rtj"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="24_pwecv"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="25_pp5n3"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="26_vyeno"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="27_y576r"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="28_jtt1j"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="29_cq74w"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="30_23l18"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="31_8n1xx"]
+
+[sub_resource type="Resource" id="Resource_hjxxn"]
+script = ExtResource("2_6uf4m")
+method = "LEVEL"
+target = "RHYDON"
+level = 42
+item = ""
+
+[sub_resource type="Resource" id="Resource_3rl7r"]
+script = ExtResource("4_23rnd")
+level = 30
+move = ExtResource("5_gd1uq")
+
+[sub_resource type="Resource" id="Resource_n0veg"]
+script = ExtResource("4_23rnd")
+level = 35
+move = ExtResource("6_gaaq2")
+
+[sub_resource type="Resource" id="Resource_uyam5"]
+script = ExtResource("4_23rnd")
+level = 40
+move = ExtResource("7_2vuhc")
+
+[sub_resource type="Resource" id="Resource_ge1km"]
+script = ExtResource("4_23rnd")
+level = 45
+move = ExtResource("8_8fb0u")
+
+[sub_resource type="Resource" id="Resource_mu7qb"]
+script = ExtResource("4_23rnd")
+level = 50
+move = ExtResource("9_wvs70")
+
+[sub_resource type="Resource" id="Resource_t2psi"]
+script = ExtResource("4_23rnd")
+level = 55
+move = ExtResource("10_weu1c")
+
+[resource]
+script = ExtResource("13_cwrye")
+species_name = "RHYHORN"
+dex = 111
+index = 18
+slug = "rhyhorn"
+label = "Rhyhorn"
+category = "SPIKES"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 2540
+hp = 80
+attack = 85
+defense = 95
+speed = 25
+special = 30
+type1 = "GROUND"
+type2 = "ROCK"
+catch_rate = 120
+base_exp = 135
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("11_rsrw8")]([ExtResource("12_gxwn1")])
+learnset = Array[ExtResource("4_23rnd")]([SubResource("Resource_3rl7r"), SubResource("Resource_n0veg"), SubResource("Resource_uyam5"), SubResource("Resource_ge1km"), SubResource("Resource_mu7qb"), SubResource("Resource_t2psi")])
+tmhm = Array[ExtResource("11_rsrw8")]([ExtResource("14_qfdlr"), ExtResource("8_8fb0u"), ExtResource("15_vxiae"), ExtResource("10_weu1c"), ExtResource("16_5b74a"), ExtResource("17_m31t5"), ExtResource("18_1r4dq"), ExtResource("19_sesef"), ExtResource("20_ejb5y"), ExtResource("21_5vsu7"), ExtResource("22_h1awn"), ExtResource("23_n2rtj"), ExtResource("24_pwecv"), ExtResource("25_pp5n3"), ExtResource("26_vyeno"), ExtResource("27_y576r"), ExtResource("28_jtt1j"), ExtResource("29_cq74w"), ExtResource("30_23l18"), ExtResource("31_8n1xx")])
+evolutions = Array[ExtResource("2_6uf4m")]([SubResource("Resource_hjxxn")])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its massive bones", "are 1000 times", "harder than human", "bones. It can", "easily knock a", "trailer flying"])
+front_sprite = ExtResource("3_apsw5")
+back_sprite = ExtResource("1_46gwh")

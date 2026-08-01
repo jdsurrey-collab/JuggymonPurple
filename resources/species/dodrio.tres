@@ -1,0 +1,91 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/dodrio.png" id="1_t5ljt"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_j3nbw"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/dodrio.png" id="3_dl55p"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ktxph"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="5_gf2iu"]
+[ext_resource type="Resource" path="res://resources/moves/fury_attack.tres" id="6_a35sq"]
+[ext_resource type="Resource" path="res://resources/moves/drill_peck.tres" id="7_c3vcd"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="8_vbgj2"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="9_xwk0n"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="10_yxkmk"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_tntwu"]
+[ext_resource type="Resource" path="res://resources/moves/peck.tres" id="12_jqafb"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_v5ex3"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="14_b6xnm"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_oqi4j"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_5i3bd"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_cc450"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_s02c6"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="19_gr1ax"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="20_fvehe"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="21_qmfr1"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="22_cvw8n"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="23_k3cmy"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="24_v6ogo"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="25_5uxjd"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_vynw1"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="27_hyoet"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="28_ogkw8"]
+
+[sub_resource type="Resource" id="Resource_fmbgj"]
+script = ExtResource("4_ktxph")
+level = 20
+move = ExtResource("5_gf2iu")
+
+[sub_resource type="Resource" id="Resource_jav7u"]
+script = ExtResource("4_ktxph")
+level = 24
+move = ExtResource("6_a35sq")
+
+[sub_resource type="Resource" id="Resource_1aop8"]
+script = ExtResource("4_ktxph")
+level = 30
+move = ExtResource("7_c3vcd")
+
+[sub_resource type="Resource" id="Resource_847t0"]
+script = ExtResource("4_ktxph")
+level = 39
+move = ExtResource("8_vbgj2")
+
+[sub_resource type="Resource" id="Resource_d0bxb"]
+script = ExtResource("4_ktxph")
+level = 45
+move = ExtResource("9_xwk0n")
+
+[sub_resource type="Resource" id="Resource_2iqvf"]
+script = ExtResource("4_ktxph")
+level = 51
+move = ExtResource("10_yxkmk")
+
+[resource]
+script = ExtResource("13_v5ex3")
+species_name = "DODRIO"
+dex = 85
+index = 116
+slug = "dodrio"
+label = "Dodrio"
+category = "TRIPLEBIRD"
+height_ft = 5
+height_in = 11
+weight_tenths_lb = 1880
+hp = 60
+attack = 110
+defense = 70
+speed = 100
+special = 60
+type1 = "NORMAL"
+type2 = "FLYING"
+catch_rate = 45
+base_exp = 158
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_tntwu")]([ExtResource("12_jqafb"), ExtResource("5_gf2iu"), ExtResource("6_a35sq")])
+learnset = Array[ExtResource("4_ktxph")]([SubResource("Resource_fmbgj"), SubResource("Resource_jav7u"), SubResource("Resource_1aop8"), SubResource("Resource_847t0"), SubResource("Resource_d0bxb"), SubResource("Resource_2iqvf")])
+tmhm = Array[ExtResource("11_tntwu")]([ExtResource("14_b6xnm"), ExtResource("15_oqi4j"), ExtResource("16_5i3bd"), ExtResource("17_cc450"), ExtResource("18_s02c6"), ExtResource("19_gr1ax"), ExtResource("8_vbgj2"), ExtResource("20_fvehe"), ExtResource("21_qmfr1"), ExtResource("22_cvw8n"), ExtResource("23_k3cmy"), ExtResource("24_v6ogo"), ExtResource("25_5uxjd"), ExtResource("26_vynw1"), ExtResource("9_xwk0n"), ExtResource("27_hyoet"), ExtResource("28_ogkw8")])
+evolutions = Array[ExtResource("2_j3nbw")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_BIRD"
+dex_text = Array[String](["Uses its three", "brains to execute", "complex plans.", "While two heads", "sleep, one head", "stays awake"])
+front_sprite = ExtResource("3_dl55p")
+back_sprite = ExtResource("1_t5ljt")

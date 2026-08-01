@@ -1,0 +1,84 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/ho_oh.png" id="1_wu6i4"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_e32pv"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/ho_oh.png" id="3_4vtah"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_k1uop"]
+[ext_resource type="Resource" path="res://resources/moves/gust.tres" id="5_iccq1"]
+[ext_resource type="Resource" path="res://resources/moves/recover.tres" id="6_f3nmw"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="7_y4wq2"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="8_uvsfy"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="9_qflc6"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_frc13"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="11_le1ar"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_v1qrc"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_o53qk"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_dt1d1"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_h4834"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_yqov5"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_qcpts"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_beqa0"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_wegy8"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="20_0a7p7"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="21_gfecj"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="22_cxgkj"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="23_ql2gh"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="24_n8vbo"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="25_y21k4"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="26_emher"]
+
+[sub_resource type="Resource" id="Resource_o0niq"]
+script = ExtResource("4_k1uop")
+level = 22
+move = ExtResource("5_iccq1")
+
+[sub_resource type="Resource" id="Resource_cx8tv"]
+script = ExtResource("4_k1uop")
+level = 33
+move = ExtResource("6_f3nmw")
+
+[sub_resource type="Resource" id="Resource_qxh8s"]
+script = ExtResource("4_k1uop")
+level = 44
+move = ExtResource("7_y4wq2")
+
+[sub_resource type="Resource" id="Resource_3okor"]
+script = ExtResource("4_k1uop")
+level = 66
+move = ExtResource("8_uvsfy")
+
+[sub_resource type="Resource" id="Resource_0ga2w"]
+script = ExtResource("4_k1uop")
+level = 77
+move = ExtResource("9_qflc6")
+
+[resource]
+script = ExtResource("12_v1qrc")
+species_name = "HO_OH"
+dex = 239
+index = 242
+slug = "ho_oh"
+label = "HoOh"
+category = "RAINBOW"
+height_ft = 12
+height_in = 6
+weight_tenths_lb = 4390
+hp = 106
+attack = 130
+defense = 90
+speed = 90
+special = 132
+type1 = "FIRE"
+type2 = "FLYING"
+catch_rate = 3
+base_exp = 220
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("10_frc13")]([ExtResource("11_le1ar")])
+learnset = Array[ExtResource("4_k1uop")]([SubResource("Resource_o0niq"), SubResource("Resource_cx8tv"), SubResource("Resource_qxh8s"), SubResource("Resource_3okor"), SubResource("Resource_0ga2w")])
+tmhm = Array[ExtResource("10_frc13")]([ExtResource("13_o53qk"), ExtResource("14_dt1d1"), ExtResource("15_h4834"), ExtResource("16_yqov5"), ExtResource("17_qcpts"), ExtResource("18_beqa0"), ExtResource("19_wegy8"), ExtResource("8_uvsfy"), ExtResource("20_0a7p7"), ExtResource("21_gfecj"), ExtResource("9_qflc6"), ExtResource("22_cxgkj"), ExtResource("7_y4wq2"), ExtResource("23_ql2gh"), ExtResource("24_n8vbo"), ExtResource("25_y21k4"), ExtResource("26_emher")])
+evolutions = Array[ExtResource("2_e32pv")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its wake is a", "rainbow. Those", "who see it are", "promised joy,", "and few live", "to collect it."])
+front_sprite = ExtResource("3_4vtah")
+back_sprite = ExtResource("1_wu6i4")

@@ -1,0 +1,94 @@
+{
+ "CeruleanTrashedHouseFishingGuruTheyStoleATMText": [
+  {
+   "kind": "text",
+   "line": "Those wretched"
+  },
+  {
+   "kind": "line",
+   "line": "ROCKETs."
+  },
+  {
+   "kind": "para",
+   "line": "Look what ruin"
+  },
+  {
+   "kind": "line",
+   "line": "they've left."
+  },
+  {
+   "kind": "para",
+   "line": "They took a TM"
+  },
+  {
+   "kind": "line",
+   "line": "that taught"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON to DIG"
+  },
+  {
+   "kind": "cont",
+   "line": "graves, I'd wager."
+  },
+  {
+   "kind": "para",
+   "line": "Cost me dearly,"
+  },
+  {
+   "kind": "line",
+   "line": "it did."
+  }
+ ],
+ "CeruleanTrashedHouseFishingGuruWhatsLostIsLostText": [
+  {
+   "kind": "text",
+   "line": "What's lost is"
+  },
+  {
+   "kind": "line",
+   "line": "lost, I suppose."
+  },
+  {
+   "kind": "para",
+   "line": "I'll teach DIGLETT"
+  },
+  {
+   "kind": "line",
+   "line": "to DIG the hard"
+  },
+  {
+   "kind": "cont",
+   "line": "way, then."
+  }
+ ],
+ "CeruleanTrashedHouseGirlText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET digs"
+  },
+  {
+   "kind": "line",
+   "line": "toward some new"
+  },
+  {
+   "kind": "cont",
+   "line": "misery, no"
+  },
+  {
+   "kind": "cont",
+   "line": "doubt."
+  }
+ ],
+ "CeruleanTrashedHouseWallHoleText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET left"
+  },
+  {
+   "kind": "line",
+   "line": "this way out."
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/koffing.png" id="1_7bma8"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_7xiry"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/koffing.png" id="3_gm3kk"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_312yv"]
+[ext_resource type="Resource" path="res://resources/moves/sludge.tres" id="5_4cgp8"]
+[ext_resource type="Resource" path="res://resources/moves/smokescreen.tres" id="6_hgsco"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="7_wx0it"]
+[ext_resource type="Resource" path="res://resources/moves/haze.tres" id="8_qv265"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="9_fndv3"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_2s2bk"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_8xxgq"]
+[ext_resource type="Resource" path="res://resources/moves/smog.tres" id="12_rybi7"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_qw45w"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_usj14"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_k4t8g"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="16_307g5"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="17_7l0x4"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="18_odmt1"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="19_8t7d7"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_3b5qs"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="21_bytnc"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="22_1vlro"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="23_c74yx"]
+
+[sub_resource type="Resource" id="Resource_hqmsp"]
+script = ExtResource("2_7xiry")
+method = "LEVEL"
+target = "WEEZING"
+level = 35
+item = ""
+
+[sub_resource type="Resource" id="Resource_x72p0"]
+script = ExtResource("4_312yv")
+level = 32
+move = ExtResource("5_4cgp8")
+
+[sub_resource type="Resource" id="Resource_06jtr"]
+script = ExtResource("4_312yv")
+level = 37
+move = ExtResource("6_hgsco")
+
+[sub_resource type="Resource" id="Resource_e25vs"]
+script = ExtResource("4_312yv")
+level = 40
+move = ExtResource("7_wx0it")
+
+[sub_resource type="Resource" id="Resource_0b67m"]
+script = ExtResource("4_312yv")
+level = 45
+move = ExtResource("8_qv265")
+
+[sub_resource type="Resource" id="Resource_aelxp"]
+script = ExtResource("4_312yv")
+level = 48
+move = ExtResource("9_fndv3")
+
+[resource]
+script = ExtResource("13_qw45w")
+species_name = "KOFFING"
+dex = 109
+index = 55
+slug = "koffing"
+label = "Koffing"
+category = "POISON GAS"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 20
+hp = 40
+attack = 65
+defense = 95
+speed = 35
+special = 60
+type1 = "POISON"
+type2 = "POISON"
+catch_rate = 190
+base_exp = 114
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_2s2bk")]([ExtResource("11_8xxgq"), ExtResource("12_rybi7")])
+learnset = Array[ExtResource("4_312yv")]([SubResource("Resource_x72p0"), SubResource("Resource_06jtr"), SubResource("Resource_e25vs"), SubResource("Resource_0b67m"), SubResource("Resource_aelxp")])
+tmhm = Array[ExtResource("10_2s2bk")]([ExtResource("14_usj14"), ExtResource("15_k4t8g"), ExtResource("16_307g5"), ExtResource("17_7l0x4"), ExtResource("18_odmt1"), ExtResource("19_8t7d7"), ExtResource("20_3b5qs"), ExtResource("7_wx0it"), ExtResource("21_bytnc"), ExtResource("22_1vlro"), ExtResource("9_fndv3"), ExtResource("23_c74yx")])
+evolutions = Array[ExtResource("2_7xiry")]([SubResource("Resource_hqmsp")])
+palette = "PAL_PURPLEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Because it stores", "several kinds of", "toxic gases in", "its body, it is", "prone to exploding", "without warning"])
+front_sprite = ExtResource("3_gm3kk")
+back_sprite = ExtResource("1_7bma8")

@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=68 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/mew.png" id="1_5ujx3"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_qbb4d"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/mew.png" id="3_cydnu"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_qm88h"]
+[ext_resource type="Resource" path="res://resources/moves/transform.tres" id="5_owit6"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="6_fa34x"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="7_qv6h4"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="8_xsoqx"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_pmthf"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="10_y7vaq"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_butre"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="12_6wbtw"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="13_deim3"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="14_877ja"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="15_k4wgi"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_p2dv2"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="17_34xfx"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="18_wsfjm"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_6uhvk"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_1607d"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="21_4yulv"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="22_vq2iv"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="23_kma6s"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="24_srvk4"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="25_p8ekq"]
+[ext_resource type="Resource" path="res://resources/moves/pay_day.tres" id="26_p1s2b"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="27_pfal2"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="28_m10fd"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="29_i7o4p"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="30_6dwf7"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="31_66xs2"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="32_8gc26"]
+[ext_resource type="Resource" path="res://resources/moves/dragon_rage.tres" id="33_3fd0c"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="34_mhaas"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="35_rtgdp"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="36_t4ro1"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="37_x2eni"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="38_d50f7"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="39_vgba5"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="40_6hftc"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="41_6w4n7"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="42_6ecl2"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="43_ka4tm"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="44_tobpq"]
+[ext_resource type="Resource" path="res://resources/moves/egg_bomb.tres" id="45_amtde"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="46_5v1ag"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="47_npl23"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="48_3ydmx"]
+[ext_resource type="Resource" path="res://resources/moves/softboiled.tres" id="49_bsram"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="50_m2lf8"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="51_6eyn3"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="52_x0vwu"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="53_c6fi6"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="54_pbbnl"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="55_7pux4"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="56_hu3hm"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="57_dhku0"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="58_2c8v3"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="59_wj612"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="60_s036g"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="61_uy0pa"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="62_8r1p5"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="63_11ip7"]
+
+[sub_resource type="Resource" id="Resource_4un1j"]
+script = ExtResource("4_qm88h")
+level = 10
+move = ExtResource("5_owit6")
+
+[sub_resource type="Resource" id="Resource_2uit1"]
+script = ExtResource("4_qm88h")
+level = 20
+move = ExtResource("6_fa34x")
+
+[sub_resource type="Resource" id="Resource_ua1cu"]
+script = ExtResource("4_qm88h")
+level = 30
+move = ExtResource("7_qv6h4")
+
+[sub_resource type="Resource" id="Resource_wmhpr"]
+script = ExtResource("4_qm88h")
+level = 40
+move = ExtResource("8_xsoqx")
+
+[resource]
+script = ExtResource("11_butre")
+species_name = "MEW"
+dex = 151
+index = 21
+slug = "mew"
+label = "Mew"
+category = "NEW SPECIE"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 90
+hp = 100
+attack = 100
+defense = 100
+speed = 100
+special = 100
+type1 = "PSYCHIC_TYPE"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 45
+base_exp = 64
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("9_pmthf")]([ExtResource("10_y7vaq")])
+learnset = Array[ExtResource("4_qm88h")]([SubResource("Resource_4un1j"), SubResource("Resource_2uit1"), SubResource("Resource_ua1cu"), SubResource("Resource_wmhpr")])
+tmhm = Array[ExtResource("9_pmthf")]([ExtResource("6_fa34x"), ExtResource("12_6wbtw"), ExtResource("13_deim3"), ExtResource("14_877ja"), ExtResource("15_k4wgi"), ExtResource("16_p2dv2"), ExtResource("17_34xfx"), ExtResource("18_wsfjm"), ExtResource("19_6uhvk"), ExtResource("20_1607d"), ExtResource("21_4yulv"), ExtResource("22_vq2iv"), ExtResource("23_kma6s"), ExtResource("24_srvk4"), ExtResource("25_p8ekq"), ExtResource("26_p1s2b"), ExtResource("27_pfal2"), ExtResource("28_m10fd"), ExtResource("29_i7o4p"), ExtResource("30_6dwf7"), ExtResource("31_66xs2"), ExtResource("32_8gc26"), ExtResource("33_3fd0c"), ExtResource("34_mhaas"), ExtResource("35_rtgdp"), ExtResource("36_t4ro1"), ExtResource("37_x2eni"), ExtResource("38_d50f7"), ExtResource("8_xsoqx"), ExtResource("39_vgba5"), ExtResource("40_6hftc"), ExtResource("41_6w4n7"), ExtResource("42_6ecl2"), ExtResource("43_ka4tm"), ExtResource("7_qv6h4"), ExtResource("44_tobpq"), ExtResource("45_amtde"), ExtResource("46_5v1ag"), ExtResource("47_npl23"), ExtResource("48_3ydmx"), ExtResource("49_bsram"), ExtResource("50_m2lf8"), ExtResource("51_6eyn3"), ExtResource("52_x0vwu"), ExtResource("53_c6fi6"), ExtResource("54_pbbnl"), ExtResource("55_7pux4"), ExtResource("56_hu3hm"), ExtResource("57_dhku0"), ExtResource("58_2c8v3"), ExtResource("59_wj612"), ExtResource("60_s036g"), ExtResource("61_uy0pa"), ExtResource("62_8r1p5"), ExtResource("63_11ip7")])
+evolutions = Array[ExtResource("2_qbb4d")]([])
+palette = "PAL_MEWMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["So rare that it", "is still said to", "be a mirage by", "many experts. Only", "a few people have", "seen it worldwide"])
+front_sprite = ExtResource("3_cydnu")
+back_sprite = ExtResource("1_5ujx3")

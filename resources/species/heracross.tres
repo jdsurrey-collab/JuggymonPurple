@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/heracross.png" id="1_pmr3t"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_qp8t4"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/heracross.png" id="3_ll46j"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_hdfw2"]
+[ext_resource type="Resource" path="res://resources/moves/horn_attack.tres" id="5_hqo7j"]
+[ext_resource type="Resource" path="res://resources/moves/fury_attack.tres" id="6_fi732"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="7_rtjo0"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="8_015xg"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_hmxmr"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="10_s6fxm"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="11_efuo4"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_uj5kl"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_04y5p"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_vjiuv"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_lyvgl"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_id8uc"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_nrb6v"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_6butm"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_22h5w"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_pabph"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="21_7sf4l"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="22_bkq70"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="23_pauds"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="24_n3iwu"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="25_pnw3r"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="26_6etny"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="27_m13d4"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="28_xjv5l"]
+
+[sub_resource type="Resource" id="Resource_ok5w5"]
+script = ExtResource("4_hdfw2")
+level = 6
+move = ExtResource("5_hqo7j")
+
+[sub_resource type="Resource" id="Resource_4gqdu"]
+script = ExtResource("4_hdfw2")
+level = 19
+move = ExtResource("6_fi732")
+
+[sub_resource type="Resource" id="Resource_qs0tx"]
+script = ExtResource("4_hdfw2")
+level = 27
+move = ExtResource("7_rtjo0")
+
+[sub_resource type="Resource" id="Resource_krr74"]
+script = ExtResource("4_hdfw2")
+level = 35
+move = ExtResource("8_015xg")
+
+[resource]
+script = ExtResource("12_uj5kl")
+species_name = "HERACROSS"
+dex = 208
+index = 211
+slug = "heracross"
+label = "Heracross"
+category = "SINGLEHORN"
+height_ft = 4
+height_in = 11
+weight_tenths_lb = 1190
+hp = 80
+attack = 125
+defense = 75
+speed = 85
+special = 67
+type1 = "BUG"
+type2 = "FIGHTING"
+catch_rate = 45
+base_exp = 200
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("9_hmxmr")]([ExtResource("10_s6fxm"), ExtResource("11_efuo4")])
+learnset = Array[ExtResource("4_hdfw2")]([SubResource("Resource_ok5w5"), SubResource("Resource_4gqdu"), SubResource("Resource_qs0tx"), SubResource("Resource_krr74")])
+tmhm = Array[ExtResource("9_hmxmr")]([ExtResource("13_04y5p"), ExtResource("14_vjiuv"), ExtResource("15_lyvgl"), ExtResource("16_id8uc"), ExtResource("17_nrb6v"), ExtResource("18_6butm"), ExtResource("19_22h5w"), ExtResource("20_pabph"), ExtResource("21_7sf4l"), ExtResource("22_bkq70"), ExtResource("23_pauds"), ExtResource("24_n3iwu"), ExtResource("25_pnw3r"), ExtResource("7_rtjo0"), ExtResource("26_6etny"), ExtResource("27_m13d4"), ExtResource("28_xjv5l")])
+evolutions = Array[ExtResource("2_qp8t4")]([])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["It throws far", "stronger things", "than itself and", "takes their sap.", "It fights nightly", "for the same tree."])
+front_sprite = ExtResource("3_ll46j")
+back_sprite = ExtResource("1_pmr3t")

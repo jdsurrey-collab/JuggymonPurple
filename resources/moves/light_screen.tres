@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_gumma"]
+
+[resource]
+script = ExtResource("1_gumma")
+move_name = "LIGHT_SCREEN"
+move_id = 113
+display_name = "LIGHT SCREEN"
+move_type = "PSYCHIC_TYPE"
+power = 0
+accuracy = 100
+pp = 30
+effect = "LIGHT_SCREEN_EFFECT"

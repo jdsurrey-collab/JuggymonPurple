@@ -1,0 +1,124 @@
+{
+ "SilphCo4FSilphWorkerMImHidingText": [
+  {
+   "kind": "text",
+   "line": "Sssh! Can't you"
+  },
+  {
+   "kind": "line",
+   "line": "see I'm hiding?"
+  }
+ ],
+ "SilphCo4FSilphWorkerMTeamRocketIsGoneText": [
+  {
+   "kind": "text",
+   "line": "Huh? TEAM ROCKET"
+  },
+  {
+   "kind": "line",
+   "line": "has truly gone?"
+  }
+ ],
+ "SilphCo4FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET holds"
+  },
+  {
+   "kind": "line",
+   "line": "command of SILPH"
+  },
+  {
+   "kind": "cont",
+   "line": "CO. now!"
+  }
+ ],
+ "SilphCo4FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Arrgh!"
+  }
+ ],
+ "SilphCo4FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Fwahahaha!"
+  },
+  {
+   "kind": "line",
+   "line": "My BOSS has long"
+  },
+  {
+   "kind": "cont",
+   "line": "coveted this"
+  },
+  {
+   "kind": "cont",
+   "line": "place!"
+  }
+ ],
+ "SilphCo4FScientistBattleText": [
+  {
+   "kind": "text",
+   "line": "My #MON are my"
+  },
+  {
+   "kind": "line",
+   "line": "loyal soldiers!"
+  }
+ ],
+ "SilphCo4FScientistEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Darn!"
+  },
+  {
+   "kind": "line",
+   "line": "Such weak #MON!"
+  }
+ ],
+ "SilphCo4FScientistAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "The doors lie"
+  },
+  {
+   "kind": "line",
+   "line": "locked, by wire"
+  },
+  {
+   "kind": "cont",
+   "line": "and coil! A CARD"
+  },
+  {
+   "kind": "cont",
+   "line": "KEY opens them!"
+  }
+ ],
+ "SilphCo4FRocket2BattleText": [
+  {
+   "kind": "text",
+   "line": "Intruder spotted!"
+  }
+ ],
+ "SilphCo4FRocket2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Who"
+  },
+  {
+   "kind": "line",
+   "line": "are you?"
+  }
+ ],
+ "SilphCo4FRocket2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I'd best warn the"
+  },
+  {
+   "kind": "line",
+   "line": "BOSS, on 11F!"
+  }
+ ]
+}

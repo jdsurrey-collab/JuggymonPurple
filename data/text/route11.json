@@ -1,0 +1,288 @@
+{
+ "Route11Gambler1BattleText": [
+  {
+   "kind": "text",
+   "line": "Win, lose, ruin."
+  }
+ ],
+ "Route11Gambler1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Tch! Fortune"
+  },
+  {
+   "kind": "line",
+   "line": "abandons me!"
+  }
+ ],
+ "Route11Gambler1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "#MON is life!"
+  },
+  {
+   "kind": "line",
+   "line": "And life is one"
+  },
+  {
+   "kind": "cont",
+   "line": "long gamble."
+  }
+ ],
+ "Route11Gambler2BattleText": [
+  {
+   "kind": "text",
+   "line": "Competition! I"
+  },
+  {
+   "kind": "line",
+   "line": "crave it always!"
+  }
+ ],
+ "Route11Gambler2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I had my"
+  },
+  {
+   "kind": "line",
+   "line": "chance, and lost."
+  }
+ ],
+ "Route11Gambler2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Cowards don't"
+  },
+  {
+   "kind": "line",
+   "line": "survive, in the"
+  },
+  {
+   "kind": "cont",
+   "line": "world of #MON!"
+  }
+ ],
+ "Route11Youngster1BattleText": [
+  {
+   "kind": "text",
+   "line": "Let's go. Don't"
+  },
+  {
+   "kind": "line",
+   "line": "you dare cheat!"
+  }
+ ],
+ "Route11Youngster1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Huh?"
+  },
+  {
+   "kind": "line",
+   "line": "That's not right!"
+  }
+ ],
+ "Route11Youngster1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I gave my all."
+  },
+  {
+   "kind": "line",
+   "line": "No regrets."
+  }
+ ],
+ "Route11SuperNerd1BattleText": [
+  {
+   "kind": "text",
+   "line": "Careful! I lay"
+  },
+  {
+   "kind": "line",
+   "line": "cables here,"
+  },
+  {
+   "kind": "cont",
+   "line": "dangerous ones."
+  }
+ ],
+ "Route11SuperNerd1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "That"
+  },
+  {
+   "kind": "line",
+   "line": "was electric!"
+  }
+ ],
+ "Route11SuperNerd1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Spread the word-"
+  },
+  {
+   "kind": "line",
+   "line": "conserve, or"
+  },
+  {
+   "kind": "cont",
+   "line": "perish."
+  }
+ ],
+ "Route11Youngster2BattleText": [
+  {
+   "kind": "text",
+   "line": "New to this, but"
+  },
+  {
+   "kind": "line",
+   "line": "I mean to win,"
+  },
+  {
+   "kind": "cont",
+   "line": "regardless."
+  }
+ ],
+ "Route11Youngster2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "My"
+  },
+  {
+   "kind": "line",
+   "line": "#MON couldn't!"
+  }
+ ],
+ "Route11Youngster2AfterBattleText5": [
+  {
+   "kind": "text",
+   "line": "What do you"
+  },
+  {
+   "kind": "line",
+   "line": "want? Leave me."
+  }
+ ],
+ "Route11Gambler3BattleText": [
+  {
+   "kind": "text",
+   "line": "Hah! I have"
+  },
+  {
+   "kind": "line",
+   "line": "never lost!"
+  }
+ ],
+ "Route11Gambler3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "My"
+  },
+  {
+   "kind": "line",
+   "line": "first loss..."
+  }
+ ],
+ "Route11Gambler3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Luck of the draw."
+  },
+  {
+   "kind": "line",
+   "line": "Nothing more."
+  }
+ ],
+ "Route11Gambler4BattleText": [
+  {
+   "kind": "text",
+   "line": "I've never once"
+  },
+  {
+   "kind": "line",
+   "line": "won, before..."
+  }
+ ],
+ "Route11Gambler4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I saw"
+  },
+  {
+   "kind": "line",
+   "line": "this coming..."
+  }
+ ],
+ "Route11Gambler4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Just luck. Luck"
+  },
+  {
+   "kind": "line",
+   "line": "of the draw."
+  }
+ ],
+ "Route11Youngster3BattleText": [
+  {
+   "kind": "text",
+   "line": "I'm the best in"
+  },
+  {
+   "kind": "line",
+   "line": "my class!"
+  }
+ ],
+ "Route11Youngster3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Darn! My #MON"
+  },
+  {
+   "kind": "line",
+   "line": "must grow"
+  },
+  {
+   "kind": "cont",
+   "line": "stronger, yet!"
+  }
+ ],
+ "Route11Youngster3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "A fat #MON"
+  },
+  {
+   "kind": "line",
+   "line": "comes down, from"
+  },
+  {
+   "kind": "cont",
+   "line": "the mountains,"
+  },
+  {
+   "kind": "cont",
+   "line": "sometimes."
+  },
+  {
+   "kind": "para",
+   "line": "Strong, if you"
+  },
+  {
+   "kind": "line",
+   "line": "can take it."
+  }
+ ],
+ "Route11SuperNerd2BattleText": [
+  {
+   "kind": "text",
+   "line": "Mind the live"
+  },
+  {
+   "kind": "line",
+   "line": "wires!"
+  }
+ ]
+}

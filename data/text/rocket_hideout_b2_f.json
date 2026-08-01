@@ -1,0 +1,44 @@
+{
+ "RocketHideoutB2FRocketBattleText": [
+  {
+   "kind": "text",
+   "line": "BOSS said you may"
+  },
+  {
+   "kind": "line",
+   "line": "spy the GHOSTs"
+  },
+  {
+   "kind": "cont",
+   "line": "with SILPH SCOPE!"
+  }
+ ],
+ "RocketHideoutB2FRocketEndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "yield!"
+  }
+ ],
+ "RocketHideoutB2FRocketAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET's HQ"
+  },
+  {
+   "kind": "line",
+   "line": "holds 4 sunken"
+  },
+  {
+   "kind": "cont",
+   "line": "floors. Can you"
+  },
+  {
+   "kind": "cont",
+   "line": "reach the BOSS?"
+  }
+ ]
+}

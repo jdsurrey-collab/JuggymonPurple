@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/espeon.png" id="1_5su41"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_uo2xh"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/espeon.png" id="3_rolvr"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_w1eoa"]
+[ext_resource type="Resource" path="res://resources/moves/sand_attack.tres" id="5_3fyj2"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="6_sqbrt"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="7_dagk1"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="8_x147g"]
+[ext_resource type="Resource" path="res://resources/moves/psybeam.tres" id="9_pmwby"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="10_blh2n"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_4tply"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_hciua"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="13_lv4x7"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_oie0m"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_c4jyu"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_m2qj6"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_gmsl4"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_h535k"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_xakfg"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_ic7th"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_gaffb"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="22_40qa1"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="23_34cvv"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="24_by1mj"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="25_45qr4"]
+
+[sub_resource type="Resource" id="Resource_snhdb"]
+script = ExtResource("4_w1eoa")
+level = 8
+move = ExtResource("5_3fyj2")
+
+[sub_resource type="Resource" id="Resource_xc0db"]
+script = ExtResource("4_w1eoa")
+level = 16
+move = ExtResource("6_sqbrt")
+
+[sub_resource type="Resource" id="Resource_wo14o"]
+script = ExtResource("4_w1eoa")
+level = 23
+move = ExtResource("7_dagk1")
+
+[sub_resource type="Resource" id="Resource_i83il"]
+script = ExtResource("4_w1eoa")
+level = 30
+move = ExtResource("8_x147g")
+
+[sub_resource type="Resource" id="Resource_0drwm"]
+script = ExtResource("4_w1eoa")
+level = 36
+move = ExtResource("9_pmwby")
+
+[sub_resource type="Resource" id="Resource_rbn1o"]
+script = ExtResource("4_w1eoa")
+level = 47
+move = ExtResource("10_blh2n")
+
+[resource]
+script = ExtResource("14_oie0m")
+species_name = "ESPEON"
+dex = 196
+index = 199
+slug = "espeon"
+label = "Espeon"
+category = "SUN"
+height_ft = 2
+height_in = 11
+weight_tenths_lb = 580
+hp = 65
+attack = 65
+defense = 60
+speed = 110
+special = 112
+type1 = "PSYCHIC_TYPE"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 45
+base_exp = 197
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_4tply")]([ExtResource("12_hciua"), ExtResource("13_lv4x7")])
+learnset = Array[ExtResource("4_w1eoa")]([SubResource("Resource_snhdb"), SubResource("Resource_xc0db"), SubResource("Resource_wo14o"), SubResource("Resource_i83il"), SubResource("Resource_0drwm"), SubResource("Resource_rbn1o")])
+tmhm = Array[ExtResource("11_4tply")]([ExtResource("15_c4jyu"), ExtResource("16_m2qj6"), ExtResource("17_gmsl4"), ExtResource("18_h535k"), ExtResource("19_xakfg"), ExtResource("20_ic7th"), ExtResource("21_gaffb"), ExtResource("8_x147g"), ExtResource("10_blh2n"), ExtResource("22_40qa1"), ExtResource("23_34cvv"), ExtResource("24_by1mj"), ExtResource("25_45qr4")])
+evolutions = Array[ExtResource("2_uo2xh")]([])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It reads intent", "before the deed,", "and turns away", "from those whose", "hearts are foul."])
+front_sprite = ExtResource("3_rolvr")
+back_sprite = ExtResource("1_5su41")

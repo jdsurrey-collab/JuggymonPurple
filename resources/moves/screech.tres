@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_2cfu1"]
+
+[resource]
+script = ExtResource("1_2cfu1")
+move_name = "SCREECH"
+move_id = 103
+display_name = "SCREECH"
+move_type = "NORMAL"
+power = 0
+accuracy = 85
+pp = 40
+effect = "DEFENSE_DOWN2_EFFECT"

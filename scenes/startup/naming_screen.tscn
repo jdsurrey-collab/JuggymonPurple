@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://bppnaming01"]
+
+[ext_resource type="Script" path="res://scripts/startup/naming_screen.gd" id="1_naming"]
+
+[node name="NamingScreen" type="CanvasLayer"]
+layer = 20
+script = ExtResource("1_naming")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 152.0
+offset_bottom = 136.0
+
+[node name="Title" type="Label" parent="Panel"]
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 140.0
+offset_bottom = 12.0
+theme_override_font_sizes/font_size = 8
+
+[node name="Typed" type="Label" parent="Panel"]
+offset_left = 4.0
+offset_top = 14.0
+offset_right = 140.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 8
+
+[node name="List" type="VBoxContainer" parent="Panel"]
+offset_left = 8.0
+offset_top = 28.0
+offset_right = 140.0
+offset_bottom = 100.0
+
+[node name="Grid" type="Label" parent="Panel"]
+offset_left = 4.0
+offset_top = 28.0
+offset_right = 140.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 8
+theme_override_constants/line_spacing = 2
+
+[node name="GridCursor" type="Label" parent="Panel"]
+offset_top = 24.0
+offset_right = 8.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.8, 0.1, 0.1, 1)
+theme_override_font_sizes/font_size = 8
+text = "▼"

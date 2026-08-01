@@ -1,0 +1,96 @@
+{
+ "PokemonTower4FChanneler1BattleText": [
+  {
+   "kind": "text",
+   "line": "GHOST! No!"
+  },
+  {
+   "kind": "line",
+   "line": "Kwaaah!"
+  }
+ ],
+ "PokemonTower4FChanneler1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Where"
+  },
+  {
+   "kind": "line",
+   "line": "is the GHOST?"
+  }
+ ],
+ "PokemonTower4FChanneler1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I must have been"
+  },
+  {
+   "kind": "line",
+   "line": "dreaming..."
+  }
+ ],
+ "PokemonTower4FChanneler2BattleText": [
+  {
+   "kind": "text",
+   "line": "Be cursed with"
+  },
+  {
+   "kind": "line",
+   "line": "me! Kwaaah!"
+  }
+ ],
+ "PokemonTower4FChanneler2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "What!"
+  }
+ ],
+ "PokemonTower4FChanneler2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "We cannot learn"
+  },
+  {
+   "kind": "line",
+   "line": "the GHOSTs' true"
+  },
+  {
+   "kind": "cont",
+   "line": "names."
+  }
+ ],
+ "PokemonTower4FChanneler3BattleText": [
+  {
+   "kind": "text",
+   "line": "Huhuhu..."
+  },
+  {
+   "kind": "line",
+   "line": "Beat me not!"
+  }
+ ],
+ "PokemonTower4FChanneler3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Huh?"
+  },
+  {
+   "kind": "line",
+   "line": "Who? What?"
+  }
+ ],
+ "PokemonTower4FChanneler3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "May the departed"
+  },
+  {
+   "kind": "line",
+   "line": "souls of #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "rest in peace..."
+  }
+ ]
+}

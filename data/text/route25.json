@@ -1,0 +1,350 @@
+{
+ "Route25Youngster1BattleText": [
+  {
+   "kind": "text",
+   "line": "Trainers come"
+  },
+  {
+   "kind": "line",
+   "line": "here to hone"
+  },
+  {
+   "kind": "cont",
+   "line": "themselves."
+  }
+ ],
+ "Route25Youngster1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You're"
+  },
+  {
+   "kind": "line",
+   "line": "capable."
+  }
+ ],
+ "Route25Youngster1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Every #MON has"
+  },
+  {
+   "kind": "line",
+   "line": "a weakness. Raise"
+  },
+  {
+   "kind": "cont",
+   "line": "many kinds, and"
+  },
+  {
+   "kind": "cont",
+   "line": "hedge against it."
+  }
+ ],
+ "Route25Youngster2BattleText": [
+  {
+   "kind": "text",
+   "line": "Father took me"
+  },
+  {
+   "kind": "line",
+   "line": "to a party on"
+  },
+  {
+   "kind": "cont",
+   "line": "the S.S.ANNE, in"
+  },
+  {
+   "kind": "cont",
+   "line": "VERMILION CITY!"
+  }
+ ],
+ "Route25Youngster2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm"
+  },
+  {
+   "kind": "line",
+   "line": "not cross!"
+  }
+ ],
+ "Route25Youngster2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Aboard, I saw"
+  },
+  {
+   "kind": "line",
+   "line": "trainers from"
+  },
+  {
+   "kind": "cont",
+   "line": "every corner."
+  }
+ ],
+ "Route25CooltrainerMBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm quite the"
+  },
+  {
+   "kind": "line",
+   "line": "catch. I've a"
+  },
+  {
+   "kind": "cont",
+   "line": "sweetheart, too!"
+  }
+ ],
+ "Route25CooltrainerMEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Aww,"
+  },
+  {
+   "kind": "line",
+   "line": "blast..."
+  }
+ ],
+ "Route25CooltrainerMAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "No matter. She'll"
+  },
+  {
+   "kind": "line",
+   "line": "console me."
+  }
+ ],
+ "Route25CooltrainerF1BattleText": [
+  {
+   "kind": "text",
+   "line": "Hello. My"
+  },
+  {
+   "kind": "line",
+   "line": "sweetheart's grand!"
+  }
+ ],
+ "Route25CooltrainerF1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I was in"
+  },
+  {
+   "kind": "line",
+   "line": "bad condition!"
+  }
+ ],
+ "Route25CooltrainerF1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I wish my dear"
+  },
+  {
+   "kind": "line",
+   "line": "fought as well."
+  }
+ ],
+ "Route25Youngster3BattleText": [
+  {
+   "kind": "text",
+   "line": "I knew we'd"
+  },
+  {
+   "kind": "line",
+   "line": "have to fight!"
+  }
+ ],
+ "Route25Youngster3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I knew"
+  },
+  {
+   "kind": "line",
+   "line": "I'd lose too!"
+  }
+ ],
+ "Route25Youngster3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Should your #MON"
+  },
+  {
+   "kind": "line",
+   "line": "grow confused, or"
+  },
+  {
+   "kind": "cont",
+   "line": "fall asleep,"
+  },
+  {
+   "kind": "cont",
+   "line": "withdraw it."
+  }
+ ],
+ "Route25CooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "My friend keeps"
+  },
+  {
+   "kind": "line",
+   "line": "a fine #MON."
+  },
+  {
+   "kind": "cont",
+   "line": "I envy her."
+  }
+ ],
+ "Route25CooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Less"
+  },
+  {
+   "kind": "line",
+   "line": "envious now."
+  }
+ ],
+ "Route25CooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "From MT.MOON?"
+  },
+  {
+   "kind": "line",
+   "line": "Might you spare"
+  },
+  {
+   "kind": "cont",
+   "line": "a CLEFAIRY?"
+  }
+ ],
+ "Route25Hiker1BattleText": [
+  {
+   "kind": "text",
+   "line": "Just down from"
+  },
+  {
+   "kind": "line",
+   "line": "MT.MOON, but"
+  },
+  {
+   "kind": "cont",
+   "line": "I'm ready still!"
+  }
+ ],
+ "Route25Hiker1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You"
+  },
+  {
+   "kind": "line",
+   "line": "worked hard!"
+  }
+ ],
+ "Route25Hiker1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Drat. A ZUBAT"
+  },
+  {
+   "kind": "line",
+   "line": "bled me, back"
+  },
+  {
+   "kind": "cont",
+   "line": "in that dark."
+  }
+ ],
+ "Route25Hiker2BattleText": [
+  {
+   "kind": "text",
+   "line": "Off to see a"
+  },
+  {
+   "kind": "line",
+   "line": "#MON collector"
+  },
+  {
+   "kind": "cont",
+   "line": "at the cape!"
+  }
+ ],
+ "Route25Hiker2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You"
+  },
+  {
+   "kind": "line",
+   "line": "got me."
+  }
+ ],
+ "Route25Hiker2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "The collector"
+  },
+  {
+   "kind": "line",
+   "line": "keeps many rare"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON, caged."
+  }
+ ],
+ "Route25Hiker3BattleText": [
+  {
+   "kind": "text",
+   "line": "Off to see BILL?"
+  },
+  {
+   "kind": "line",
+   "line": "First, you'll"
+  },
+  {
+   "kind": "cont",
+   "line": "fight me."
+  }
+ ],
+ "Route25Hiker3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You're"
+  },
+  {
+   "kind": "line",
+   "line": "something."
+  }
+ ],
+ "Route25Hiker3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "That trail below"
+  },
+  {
+   "kind": "line",
+   "line": "cuts quick to"
+  },
+  {
+   "kind": "cont",
+   "line": "CERULEAN CITY."
+  }
+ ],
+ "Route25BillSignText": [
+  {
+   "kind": "text",
+   "line": "SEA COTTAGE"
+  },
+  {
+   "kind": "line",
+   "line": "BILL dwells here."
+  }
+ ]
+}

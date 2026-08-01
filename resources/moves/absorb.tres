@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_k4dng"]
+
+[resource]
+script = ExtResource("1_k4dng")
+move_name = "ABSORB"
+move_id = 71
+display_name = "ABSORB"
+move_type = "GRASS"
+power = 20
+accuracy = 100
+pp = 20
+effect = "DRAIN_HP_EFFECT"

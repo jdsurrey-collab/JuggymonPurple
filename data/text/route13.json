@@ -1,0 +1,400 @@
+{
+ "Route13CooltrainerM1BattleText": [
+  {
+   "kind": "text",
+   "line": "My ravens hunger"
+  },
+  {
+   "kind": "line",
+   "line": "for the fight!"
+  }
+ ],
+ "Route13CooltrainerM1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "My"
+  },
+  {
+   "kind": "line",
+   "line": "ravens have died?"
+  }
+ ],
+ "Route13CooltrainerM1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "My #MON smile,"
+  },
+  {
+   "kind": "line",
+   "line": "even bowed in"
+  },
+  {
+   "kind": "cont",
+   "line": "their defeat."
+  }
+ ],
+ "Route13CooltrainerF1BattleText": [
+  {
+   "kind": "text",
+   "line": "They deem me"
+  },
+  {
+   "kind": "line",
+   "line": "gifted, for a"
+  },
+  {
+   "kind": "cont",
+   "line": "child of my age."
+  }
+ ],
+ "Route13CooltrainerF1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh!"
+  },
+  {
+   "kind": "line",
+   "line": "I have lost!"
+  }
+ ],
+ "Route13CooltrainerF1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I mean to become"
+  },
+  {
+   "kind": "line",
+   "line": "a true trainer."
+  },
+  {
+   "kind": "cont",
+   "line": "I shall suffer"
+  },
+  {
+   "kind": "cont",
+   "line": "for that end."
+  }
+ ],
+ "Route13CooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "Your badges gleam"
+  },
+  {
+   "kind": "line",
+   "line": "too brightly!"
+  }
+ ],
+ "Route13CooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Not"
+  },
+  {
+   "kind": "line",
+   "line": "bright enough!"
+  }
+ ],
+ "Route13CooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Those badges cost"
+  },
+  {
+   "kind": "line",
+   "line": "GYM LEADERs their"
+  },
+  {
+   "kind": "cont",
+   "line": "pride. I know it."
+  }
+ ],
+ "Route13CooltrainerF3BattleText": [
+  {
+   "kind": "text",
+   "line": "My gentle #MON"
+  },
+  {
+   "kind": "line",
+   "line": "wish to make your"
+  },
+  {
+   "kind": "cont",
+   "line": "grim acquaintance."
+  }
+ ],
+ "Route13CooltrainerF3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh!"
+  },
+  {
+   "kind": "line",
+   "line": "You've won it all!"
+  }
+ ],
+ "Route13CooltrainerF3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "One must make"
+  },
+  {
+   "kind": "line",
+   "line": "#MON suffer to"
+  },
+  {
+   "kind": "cont",
+   "line": "harden them so!"
+  }
+ ],
+ "Route13CooltrainerF4BattleText": [
+  {
+   "kind": "text",
+   "line": "I found CARBOS"
+  },
+  {
+   "kind": "line",
+   "line": "in a tomb, once."
+  }
+ ],
+ "Route13CooltrainerF4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Just"
+  },
+  {
+   "kind": "line",
+   "line": "undone!"
+  }
+ ],
+ "Route13CooltrainerF4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "CARBOS quickened"
+  },
+  {
+   "kind": "line",
+   "line": "the pace of my"
+  },
+  {
+   "kind": "cont",
+   "line": "poor #MON."
+  }
+ ],
+ "Route13CooltrainerM2BattleText": [
+  {
+   "kind": "text",
+   "line": "The wind favors"
+  },
+  {
+   "kind": "line",
+   "line": "me this hour!"
+  }
+ ],
+ "Route13CooltrainerM2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "The"
+  },
+  {
+   "kind": "line",
+   "line": "wind has turned!"
+  }
+ ],
+ "Route13CooltrainerM2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I am spent. I'll"
+  },
+  {
+   "kind": "line",
+   "line": "wing my way home."
+  }
+ ],
+ "Route13Beauty1BattleText": [
+  {
+   "kind": "text",
+   "line": "Very well, I"
+  },
+  {
+   "kind": "line",
+   "line": "shall indulge you."
+  }
+ ],
+ "Route13Beauty1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh!"
+  },
+  {
+   "kind": "line",
+   "line": "You savage thing!"
+  }
+ ],
+ "Route13Beauty1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I wonder which"
+  },
+  {
+   "kind": "line",
+   "line": "suffers more, the"
+  },
+  {
+   "kind": "cont",
+   "line": "male or female?"
+  }
+ ],
+ "Route13Beauty2BattleText": [
+  {
+   "kind": "text",
+   "line": "Will you #MON"
+  },
+  {
+   "kind": "line",
+   "line": "with a lonely"
+  },
+  {
+   "kind": "cont",
+   "line": "soul like me?"
+  }
+ ],
+ "Route13Beauty2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "It's over"
+  },
+  {
+   "kind": "line",
+   "line": "already, then?"
+  }
+ ],
+ "Route13Beauty2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I know nothing"
+  },
+  {
+   "kind": "line",
+   "line": "of #MON. I"
+  },
+  {
+   "kind": "cont",
+   "line": "just crave beauty,"
+  },
+  {
+   "kind": "cont",
+   "line": "however cold."
+  }
+ ],
+ "Route13BikerBattleText": [
+  {
+   "kind": "text",
+   "line": "What're you"
+  },
+  {
+   "kind": "line",
+   "line": "gawking at?"
+  }
+ ],
+ "Route13BikerEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Damn!"
+  },
+  {
+   "kind": "line",
+   "line": "Stripped my gears!"
+  }
+ ],
+ "Route13BikerAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Get out of my"
+  },
+  {
+   "kind": "line",
+   "line": "sight!"
+  }
+ ],
+ "Route13CooltrainerM3BattleText": [
+  {
+   "kind": "text",
+   "line": "I favor carrion"
+  },
+  {
+   "kind": "line",
+   "line": "birds always!"
+  }
+ ],
+ "Route13CooltrainerM3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Out"
+  },
+  {
+   "kind": "line",
+   "line": "of breath!"
+  }
+ ],
+ "Route13CooltrainerM3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I wish I could fly"
+  },
+  {
+   "kind": "line",
+   "line": "as PIDGEY and"
+  },
+  {
+   "kind": "cont",
+   "line": "PIDGEOTTO do..."
+  }
+ ],
+ "Route13TrainerTips1Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Look left of"
+  },
+  {
+   "kind": "line",
+   "line": "that grim post!"
+  }
+ ],
+ "Route13TrainerTips2Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Press SELECT to"
+  },
+  {
+   "kind": "line",
+   "line": "shift items in"
+  },
+  {
+   "kind": "cont",
+   "line": "the ITEM window!"
+  }
+ ],
+ "Route13SignText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 13"
+  },
+  {
+   "kind": "line",
+   "line": "North to SILENCE"
+  },
+  {
+   "kind": "cont",
+   "line": "BRIDGE"
+  }
+ ]
+}

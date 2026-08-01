@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_qe8kl"]
+
+[resource]
+script = ExtResource("1_qe8kl")
+move_name = "SOLARBEAM"
+move_id = 76
+display_name = "SOLARBEAM"
+move_type = "GRASS"
+power = 120
+accuracy = 100
+pp = 10
+effect = "CHARGE_EFFECT"

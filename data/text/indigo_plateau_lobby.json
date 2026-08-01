@@ -1,0 +1,74 @@
+{
+ "IndigoPlateauLobbyGymGuideText": [
+  {
+   "kind": "text",
+   "line": "So. A challenger"
+  },
+  {
+   "kind": "line",
+   "line": "at last."
+  },
+  {
+   "kind": "para",
+   "line": "In this LEAGUE,"
+  },
+  {
+   "kind": "line",
+   "line": "you face the"
+  },
+  {
+   "kind": "cont",
+   "line": "ELITE FOUR, one"
+  },
+  {
+   "kind": "cont",
+   "line": "after another."
+  },
+  {
+   "kind": "para",
+   "line": "Falter once, and"
+  },
+  {
+   "kind": "line",
+   "line": "you begin again,"
+  },
+  {
+   "kind": "cont",
+   "line": "from nothing."
+  },
+  {
+   "kind": "cont",
+   "line": "This is your hour."
+  }
+ ],
+ "IndigoPlateauLobbyCooltrainerFText": [
+  {
+   "kind": "text",
+   "line": "From here, you"
+  },
+  {
+   "kind": "line",
+   "line": "face the ELITE"
+  },
+  {
+   "kind": "cont",
+   "line": "FOUR, one by one."
+  },
+  {
+   "kind": "para",
+   "line": "Win, and a door"
+  },
+  {
+   "kind": "line",
+   "line": "opens to the"
+  },
+  {
+   "kind": "cont",
+   "line": "next. Lose, and"
+  },
+  {
+   "kind": "cont",
+   "line": "it ends here."
+  }
+ ]
+}

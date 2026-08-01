@@ -1,0 +1,68 @@
+{
+ "CeladonMart4FSuperNerdText": [
+  {
+   "kind": "text",
+   "line": "A # DOLL, for"
+  },
+  {
+   "kind": "line",
+   "line": "my beloved!"
+  }
+ ],
+ "CeladonMart4FYoungsterText": [
+  {
+   "kind": "text",
+   "line": "I learned"
+  },
+  {
+   "kind": "line",
+   "line": "something of"
+  },
+  {
+   "kind": "cont",
+   "line": "use."
+  },
+  {
+   "kind": "para",
+   "line": "You may flee wild"
+  },
+  {
+   "kind": "line",
+   "line": "#MON by"
+  },
+  {
+   "kind": "cont",
+   "line": "beguiling them"
+  },
+  {
+   "kind": "cont",
+   "line": "with a # DOLL!"
+  }
+ ],
+ "CeladonMart4FCurrentFloorSignText": [
+  {
+   "kind": "text",
+   "line": "Gifts for the"
+  },
+  {
+   "kind": "line",
+   "line": "somber heart!"
+  },
+  {
+   "kind": "para",
+   "line": "4F: WISEMAN GIFTS"
+  },
+  {
+   "kind": "para",
+   "line": "Mourning Sale!"
+  },
+  {
+   "kind": "line",
+   "line": "Element STONEs"
+  },
+  {
+   "kind": "cont",
+   "line": "now offered!"
+  }
+ ]
+}

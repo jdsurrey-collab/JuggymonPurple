@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/hoothoot.png" id="1_6733y"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_0lk7s"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/hoothoot.png" id="3_falex"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_fywix"]
+[ext_resource type="Resource" path="res://resources/moves/peck.tres" id="5_lffgo"]
+[ext_resource type="Resource" path="res://resources/moves/hypnosis.tres" id="6_v5yj1"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="7_7vl72"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="8_pum8f"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="9_1awfj"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="10_ah2eq"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_lfitu"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_5lsa8"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="13_0oup2"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_isrxg"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_vll1d"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_1hrjj"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_xywqm"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_1qdy0"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_fx3jn"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_ordxg"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_w80nn"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_vj2u7"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="23_5y1gc"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="24_y1618"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="25_evs0f"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="26_x3ibg"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="27_p04ip"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="28_xw5tu"]
+
+[sub_resource type="Resource" id="Resource_lky8f"]
+script = ExtResource("2_0lk7s")
+method = "LEVEL"
+target = "NOCTOWL"
+level = 20
+item = ""
+
+[sub_resource type="Resource" id="Resource_guu17"]
+script = ExtResource("4_fywix")
+level = 11
+move = ExtResource("5_lffgo")
+
+[sub_resource type="Resource" id="Resource_x537r"]
+script = ExtResource("4_fywix")
+level = 16
+move = ExtResource("6_v5yj1")
+
+[sub_resource type="Resource" id="Resource_qtiq2"]
+script = ExtResource("4_fywix")
+level = 22
+move = ExtResource("7_7vl72")
+
+[sub_resource type="Resource" id="Resource_j4pbn"]
+script = ExtResource("4_fywix")
+level = 28
+move = ExtResource("8_pum8f")
+
+[sub_resource type="Resource" id="Resource_qvvlo"]
+script = ExtResource("4_fywix")
+level = 34
+move = ExtResource("9_1awfj")
+
+[sub_resource type="Resource" id="Resource_0f435"]
+script = ExtResource("4_fywix")
+level = 48
+move = ExtResource("10_ah2eq")
+
+[resource]
+script = ExtResource("14_isrxg")
+species_name = "HOOTHOOT"
+dex = 163
+index = 79
+slug = "hoothoot"
+label = "Hoothoot"
+category = "OWL"
+height_ft = 2
+height_in = 4
+weight_tenths_lb = 470
+hp = 60
+attack = 30
+defense = 30
+speed = 50
+special = 46
+type1 = "NORMAL"
+type2 = "FLYING"
+catch_rate = 255
+base_exp = 58
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_lfitu")]([ExtResource("12_5lsa8"), ExtResource("13_0oup2")])
+learnset = Array[ExtResource("4_fywix")]([SubResource("Resource_guu17"), SubResource("Resource_x537r"), SubResource("Resource_qtiq2"), SubResource("Resource_j4pbn"), SubResource("Resource_qvvlo"), SubResource("Resource_0f435")])
+tmhm = Array[ExtResource("11_lfitu")]([ExtResource("15_vll1d"), ExtResource("16_1hrjj"), ExtResource("17_xywqm"), ExtResource("18_1qdy0"), ExtResource("19_fx3jn"), ExtResource("20_ordxg"), ExtResource("21_w80nn"), ExtResource("22_vj2u7"), ExtResource("23_5y1gc"), ExtResource("24_y1618"), ExtResource("25_evs0f"), ExtResource("26_x3ibg"), ExtResource("27_p04ip"), ExtResource("8_pum8f"), ExtResource("28_xw5tu")])
+evolutions = Array[ExtResource("2_0lk7s")]([SubResource("Resource_lky8f")])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It keeps the hour", "exactly, and hoots", "at each one.", "The sleepless", "count their nights", "by its voice."])
+front_sprite = ExtResource("3_falex")
+back_sprite = ExtResource("1_6733y")

@@ -1,0 +1,250 @@
+{
+ "RockTunnel1FHiker1BattleText": [
+  {
+   "kind": "text",
+   "line": "This tunnel runs"
+  },
+  {
+   "kind": "line",
+   "line": "deep, child."
+  }
+ ],
+ "RockTunnel1FHiker1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ugh!"
+  },
+  {
+   "kind": "line",
+   "line": "You win!"
+  }
+ ],
+ "RockTunnel1FHiker1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Mind the ONIX."
+  },
+  {
+   "kind": "line",
+   "line": "It will crush"
+  },
+  {
+   "kind": "cont",
+   "line": "the breath from"
+  },
+  {
+   "kind": "cont",
+   "line": "you."
+  }
+ ],
+ "RockTunnel1FHiker2BattleText": [
+  {
+   "kind": "text",
+   "line": "Hmm. I may be"
+  },
+  {
+   "kind": "line",
+   "line": "lost in here..."
+  }
+ ],
+ "RockTunnel1FHiker2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Enough! What am"
+  },
+  {
+   "kind": "line",
+   "line": "I doing? Which"
+  },
+  {
+   "kind": "cont",
+   "line": "way leads out?"
+  }
+ ],
+ "RockTunnel1FHiker2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "That sleeping"
+  },
+  {
+   "kind": "line",
+   "line": "#MON on ROUTE"
+  },
+  {
+   "kind": "cont",
+   "line": "12 forced this"
+  },
+  {
+   "kind": "cont",
+   "line": "detour on me."
+  }
+ ],
+ "RockTunnel1FHiker3BattleText": [
+  {
+   "kind": "text",
+   "line": "Outsiders like"
+  },
+  {
+   "kind": "line",
+   "line": "you owe me some"
+  },
+  {
+   "kind": "cont",
+   "line": "respect!"
+  }
+ ],
+ "RockTunnel1FHiker3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I give!"
+  }
+ ],
+ "RockTunnel1FHiker3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You've talent"
+  },
+  {
+   "kind": "line",
+   "line": "enough to hike."
+  }
+ ],
+ "RockTunnel1FSuperNerdBattleText": [
+  {
+   "kind": "text",
+   "line": "#MON, fight!"
+  },
+  {
+   "kind": "line",
+   "line": "Ready. Go."
+  }
+ ],
+ "RockTunnel1FSuperNerdEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Game"
+  },
+  {
+   "kind": "line",
+   "line": "over!"
+  }
+ ],
+ "RockTunnel1FSuperNerdAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "No matter. A"
+  },
+  {
+   "kind": "line",
+   "line": "ZUBAT will do."
+  }
+ ],
+ "RockTunnel1FCooltrainerF1BattleText": [
+  {
+   "kind": "text",
+   "line": "Eek! Try nothing"
+  },
+  {
+   "kind": "line",
+   "line": "foolish, in this"
+  },
+  {
+   "kind": "cont",
+   "line": "dark!"
+  }
+ ],
+ "RockTunnel1FCooltrainerF1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Too dark to"
+  },
+  {
+   "kind": "line",
+   "line": "see!"
+  }
+ ],
+ "RockTunnel1FCooltrainerF1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I saw a MACHOP,"
+  },
+  {
+   "kind": "line",
+   "line": "in this tunnel!"
+  }
+ ],
+ "RockTunnel1FCooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "I came this far"
+  },
+  {
+   "kind": "line",
+   "line": "for #MON."
+  }
+ ],
+ "RockTunnel1FCooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm"
+  },
+  {
+   "kind": "line",
+   "line": "out of #MON!"
+  }
+ ],
+ "RockTunnel1FCooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You seemed so"
+  },
+  {
+   "kind": "line",
+   "line": "harmless!"
+  }
+ ],
+ "RockTunnel1FCooltrainerF3BattleText": [
+  {
+   "kind": "text",
+   "line": "You've #MON."
+  },
+  {
+   "kind": "line",
+   "line": "Let us begin."
+  }
+ ],
+ "RockTunnel1FCooltrainerF3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You"
+  },
+  {
+   "kind": "line",
+   "line": "play hard!"
+  }
+ ],
+ "RockTunnel1FCooltrainerF3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Whew. I'm"
+  },
+  {
+   "kind": "line",
+   "line": "drenched now."
+  }
+ ],
+ "RockTunnel1FSignText": [
+  {
+   "kind": "text",
+   "line": "ROCK TUNNEL"
+  },
+  {
+   "kind": "line",
+   "line": "CERULEAN CITY -"
+  },
+  {
+   "kind": "cont",
+   "line": "LAVENDER TOWN"
+  }
+ ]
+}

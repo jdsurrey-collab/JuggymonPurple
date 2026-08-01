@@ -1,0 +1,97 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/spinarak.png" id="1_8e3xp"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_kl68a"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/spinarak.png" id="3_7aalc"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_kt57l"]
+[ext_resource type="Resource" path="res://resources/moves/constrict.tres" id="5_uwm8p"]
+[ext_resource type="Resource" path="res://resources/moves/night_shade.tres" id="6_og321"]
+[ext_resource type="Resource" path="res://resources/moves/leech_life.tres" id="7_m3k3w"]
+[ext_resource type="Resource" path="res://resources/moves/fury_swipes.tres" id="8_dkkja"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="9_apkv5"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="10_7qmjp"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_lpxiv"]
+[ext_resource type="Resource" path="res://resources/moves/poison_sting.tres" id="12_hb721"]
+[ext_resource type="Resource" path="res://resources/moves/string_shot.tres" id="13_q7aoi"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_3woad"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_oigew"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_f1tqw"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_aytbt"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_5dmuw"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_e8fjq"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_nqu23"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_7hmma"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_vlhfj"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="23_cndkp"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="24_fm0a0"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="25_8gspd"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="26_2c4b2"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="27_qa6i3"]
+
+[sub_resource type="Resource" id="Resource_hgtf7"]
+script = ExtResource("2_kl68a")
+method = "LEVEL"
+target = "ARIADOS"
+level = 22
+item = ""
+
+[sub_resource type="Resource" id="Resource_omwh0"]
+script = ExtResource("4_kt57l")
+level = 11
+move = ExtResource("5_uwm8p")
+
+[sub_resource type="Resource" id="Resource_q24i6"]
+script = ExtResource("4_kt57l")
+level = 17
+move = ExtResource("6_og321")
+
+[sub_resource type="Resource" id="Resource_b1e5c"]
+script = ExtResource("4_kt57l")
+level = 23
+move = ExtResource("7_m3k3w")
+
+[sub_resource type="Resource" id="Resource_0ln4r"]
+script = ExtResource("4_kt57l")
+level = 30
+move = ExtResource("8_dkkja")
+
+[sub_resource type="Resource" id="Resource_aqp8l"]
+script = ExtResource("4_kt57l")
+level = 45
+move = ExtResource("9_apkv5")
+
+[sub_resource type="Resource" id="Resource_3joc0"]
+script = ExtResource("4_kt57l")
+level = 53
+move = ExtResource("10_7qmjp")
+
+[resource]
+script = ExtResource("14_3woad")
+species_name = "SPINARAK"
+dex = 167
+index = 87
+slug = "spinarak"
+label = "Spinarak"
+category = "STRINGSPIT"
+height_ft = 1
+height_in = 8
+weight_tenths_lb = 190
+hp = 40
+attack = 60
+defense = 40
+speed = 30
+special = 40
+type1 = "BUG"
+type2 = "POISON"
+catch_rate = 255
+base_exp = 54
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("11_lpxiv")]([ExtResource("12_hb721"), ExtResource("13_q7aoi")])
+learnset = Array[ExtResource("4_kt57l")]([SubResource("Resource_omwh0"), SubResource("Resource_q24i6"), SubResource("Resource_b1e5c"), SubResource("Resource_0ln4r"), SubResource("Resource_aqp8l"), SubResource("Resource_3joc0")])
+tmhm = Array[ExtResource("11_lpxiv")]([ExtResource("15_oigew"), ExtResource("16_f1tqw"), ExtResource("17_aytbt"), ExtResource("18_5dmuw"), ExtResource("19_e8fjq"), ExtResource("20_nqu23"), ExtResource("21_7hmma"), ExtResource("22_vlhfj"), ExtResource("23_cndkp"), ExtResource("24_fm0a0"), ExtResource("25_8gspd"), ExtResource("26_2c4b2"), ExtResource("27_qa6i3")])
+evolutions = Array[ExtResource("2_kl68a")]([SubResource("Resource_hgtf7")])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["It waits without", "moving for days,", "patient as debt.", "The thread it", "spins is stronger", "than it looks."])
+front_sprite = ExtResource("3_7aalc")
+back_sprite = ExtResource("1_8e3xp")

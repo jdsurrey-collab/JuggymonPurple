@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_5ou5s"]
+
+[resource]
+script = ExtResource("1_5ou5s")
+move_name = "ICE_BEAM"
+move_id = 58
+display_name = "ICE BEAM"
+move_type = "ICE"
+power = 95
+accuracy = 100
+pp = 10
+effect = "FREEZE_SIDE_EFFECT1"

@@ -1,0 +1,22 @@
+{
+ "Route2SignText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 2"
+  },
+  {
+   "kind": "line",
+   "line": "VIRIDIAN CITY -"
+  },
+  {
+   "kind": "cont",
+   "line": "PEWTER CITY"
+  }
+ ],
+ "Route2DiglettsCaveSignText": [
+  {
+   "kind": "text",
+   "line": "DIGLETT's CAVE"
+  }
+ ]
+}

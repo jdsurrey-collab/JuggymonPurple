@@ -1,0 +1,91 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/feraligatr.png" id="1_wdbfl"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_n5t2w"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/feraligatr.png" id="3_8s2q7"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_j870w"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="5_p5ddt"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="6_oeq1i"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="7_n24dc"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="8_kdig6"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="9_qx2o4"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="10_4nsda"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_e577g"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="12_ya6ws"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="13_rh80c"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_ijh2e"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_l1w3a"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_hal11"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_5mc0v"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_6i4xv"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_kia3t"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_ofm46"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_o7wlh"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="22_rqr36"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="23_smmul"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="24_5c2pb"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="25_c6pdi"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="26_4igis"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="27_8co2n"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="28_iffan"]
+
+[sub_resource type="Resource" id="Resource_5y7ko"]
+script = ExtResource("4_j870w")
+level = 7
+move = ExtResource("5_p5ddt")
+
+[sub_resource type="Resource" id="Resource_8lnfs"]
+script = ExtResource("4_j870w")
+level = 13
+move = ExtResource("6_oeq1i")
+
+[sub_resource type="Resource" id="Resource_pnped"]
+script = ExtResource("4_j870w")
+level = 21
+move = ExtResource("7_n24dc")
+
+[sub_resource type="Resource" id="Resource_tebao"]
+script = ExtResource("4_j870w")
+level = 38
+move = ExtResource("8_kdig6")
+
+[sub_resource type="Resource" id="Resource_lshvb"]
+script = ExtResource("4_j870w")
+level = 47
+move = ExtResource("9_qx2o4")
+
+[sub_resource type="Resource" id="Resource_3paw6"]
+script = ExtResource("4_j870w")
+level = 58
+move = ExtResource("10_4nsda")
+
+[resource]
+script = ExtResource("14_ijh2e")
+species_name = "FERALIGATR"
+dex = 160
+index = 67
+slug = "feraligatr"
+label = "Feraligatr"
+category = "BIG JAW"
+height_ft = 7
+height_in = 7
+weight_tenths_lb = 1960
+hp = 85
+attack = 105
+defense = 100
+speed = 78
+special = 81
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 45
+base_exp = 210
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_e577g")]([ExtResource("12_ya6ws"), ExtResource("13_rh80c"), ExtResource("5_p5ddt"), ExtResource("6_oeq1i")])
+learnset = Array[ExtResource("4_j870w")]([SubResource("Resource_5y7ko"), SubResource("Resource_8lnfs"), SubResource("Resource_pnped"), SubResource("Resource_tebao"), SubResource("Resource_lshvb"), SubResource("Resource_3paw6")])
+tmhm = Array[ExtResource("11_e577g")]([ExtResource("15_l1w3a"), ExtResource("5_p5ddt"), ExtResource("16_hal11"), ExtResource("17_5mc0v"), ExtResource("18_6i4xv"), ExtResource("19_kia3t"), ExtResource("20_ofm46"), ExtResource("21_o7wlh"), ExtResource("22_rqr36"), ExtResource("6_oeq1i"), ExtResource("23_smmul"), ExtResource("24_5c2pb"), ExtResource("25_c6pdi"), ExtResource("26_4igis"), ExtResource("27_8co2n"), ExtResource("28_iffan")])
+evolutions = Array[ExtResource("2_n5t2w")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["It drags what it", "takes below, and", "waits. Patience", "is the cruellest", "part of the hunt."])
+front_sprite = ExtResource("3_8s2q7")
+back_sprite = ExtResource("1_wdbfl")

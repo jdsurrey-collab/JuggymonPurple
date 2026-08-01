@@ -1,0 +1,58 @@
+{
+ "VermilionPokecenterFishingGuruText": [
+  {
+   "kind": "text",
+   "line": "Even at the same"
+  },
+  {
+   "kind": "line",
+   "line": "level, #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "may differ"
+  },
+  {
+   "kind": "cont",
+   "line": "greatly in"
+  },
+  {
+   "kind": "cont",
+   "line": "strength."
+  },
+  {
+   "kind": "para",
+   "line": "A #MON raised"
+  },
+  {
+   "kind": "line",
+   "line": "by hand outlasts"
+  },
+  {
+   "kind": "cont",
+   "line": "one left to the"
+  },
+  {
+   "kind": "cont",
+   "line": "wild."
+  }
+ ],
+ "VermilionPokecenterSailorText": [
+  {
+   "kind": "text",
+   "line": "My #MON was"
+  },
+  {
+   "kind": "line",
+   "line": "poisoned. It"
+  },
+  {
+   "kind": "cont",
+   "line": "fell, and did"
+  },
+  {
+   "kind": "cont",
+   "line": "not rise again."
+  }
+ ]
+}

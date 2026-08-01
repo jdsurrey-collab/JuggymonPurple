@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_2erj2"]
+
+[resource]
+script = ExtResource("1_2erj2")
+move_name = "SPIKE_CANNON"
+move_id = 131
+display_name = "SPIKE CANNON"
+move_type = "NORMAL"
+power = 20
+accuracy = 100
+pp = 15
+effect = "TWO_TO_FIVE_ATTACKS_EFFECT"

@@ -1,0 +1,76 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=44 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/clefable.png" id="1_rtf4n"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_0odi3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/clefable.png" id="3_nnmk7"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_8c53c"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="5_bl24i"]
+[ext_resource type="Resource" path="res://resources/moves/sing.tres" id="6_bmpu0"]
+[ext_resource type="Resource" path="res://resources/moves/doubleslap.tres" id="7_sqd0n"]
+[ext_resource type="Resource" path="res://resources/moves/minimize.tres" id="8_ow4wi"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="9_7735b"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="10_35jhy"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="11_npyhm"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="12_ogs7b"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_0v1l8"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="14_m0dc0"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_mdrqu"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_xack3"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="17_72ayq"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="18_4ujli"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="19_w3fc3"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="20_evnuw"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="21_84vy1"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="22_byxau"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="23_ynd26"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="24_3wi0w"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="25_rnsbv"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="26_6bhle"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="27_ecn64"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="28_c6w4d"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="29_cbm6v"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="30_urp1b"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="31_tjaqi"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="32_xciwt"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="33_a0wwm"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="34_8e4e1"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="35_6y2je"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="36_p0ukh"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="37_2c41w"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="38_bmvu1"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="39_stftg"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="40_ttwqj"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="41_rdhmg"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="42_smla7"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="43_hnmh5"]
+
+[resource]
+script = ExtResource("10_35jhy")
+species_name = "CLEFABLE"
+dex = 36
+index = 142
+slug = "clefable"
+label = "Clefable"
+category = "FAIRY"
+height_ft = 4
+height_in = 3
+weight_tenths_lb = 880
+hp = 95
+attack = 70
+defense = 73
+speed = 60
+special = 85
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 25
+base_exp = 129
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("5_bl24i")]([ExtResource("6_bmpu0"), ExtResource("7_sqd0n"), ExtResource("8_ow4wi"), ExtResource("9_7735b")])
+learnset = Array[ExtResource("4_8c53c")]([])
+tmhm = Array[ExtResource("5_bl24i")]([ExtResource("11_npyhm"), ExtResource("12_ogs7b"), ExtResource("13_0v1l8"), ExtResource("14_m0dc0"), ExtResource("15_mdrqu"), ExtResource("16_xack3"), ExtResource("17_72ayq"), ExtResource("18_4ujli"), ExtResource("19_w3fc3"), ExtResource("20_evnuw"), ExtResource("21_84vy1"), ExtResource("22_byxau"), ExtResource("23_ynd26"), ExtResource("24_3wi0w"), ExtResource("25_rnsbv"), ExtResource("26_6bhle"), ExtResource("27_ecn64"), ExtResource("28_c6w4d"), ExtResource("29_cbm6v"), ExtResource("30_urp1b"), ExtResource("31_tjaqi"), ExtResource("32_xciwt"), ExtResource("33_a0wwm"), ExtResource("34_8e4e1"), ExtResource("9_7735b"), ExtResource("35_6y2je"), ExtResource("36_p0ukh"), ExtResource("37_2c41w"), ExtResource("38_bmvu1"), ExtResource("39_stftg"), ExtResource("40_ttwqj"), ExtResource("41_rdhmg"), ExtResource("42_smla7"), ExtResource("43_hnmh5")])
+evolutions = Array[ExtResource("2_0odi3")]([])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_FAIRY"
+dex_text = Array[String](["A timid fairy", "#MON that is", "rarely seen. It", "will run and hide", "the moment it", "senses people"])
+front_sprite = ExtResource("3_nnmk7")
+back_sprite = ExtResource("1_rtf4n")

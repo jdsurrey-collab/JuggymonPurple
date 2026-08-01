@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/marill.png" id="1_1eyn3"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_cj1r5"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/marill.png" id="3_3rd04"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_vx081"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="5_x67om"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="6_ibs13"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="7_qf80p"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="8_lsu2s"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="9_gc6e2"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_skhey"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_hm7gr"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_rey0m"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_18vo4"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_olast"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_oqw8s"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_eixn8"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_mxfcl"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_0x7eq"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_72cbx"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_mt2mt"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="21_o5pc0"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="22_n3vjf"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="23_hamva"]
+
+[sub_resource type="Resource" id="Resource_kj7p6"]
+script = ExtResource("2_cj1r5")
+method = "LEVEL"
+target = "AZUMARILL"
+level = 18
+item = ""
+
+[sub_resource type="Resource" id="Resource_yrmwr"]
+script = ExtResource("4_vx081")
+level = 3
+move = ExtResource("5_x67om")
+
+[sub_resource type="Resource" id="Resource_vrpbx"]
+script = ExtResource("4_vx081")
+level = 6
+move = ExtResource("6_ibs13")
+
+[sub_resource type="Resource" id="Resource_ge6li"]
+script = ExtResource("4_vx081")
+level = 10
+move = ExtResource("7_qf80p")
+
+[sub_resource type="Resource" id="Resource_fk1e4"]
+script = ExtResource("4_vx081")
+level = 21
+move = ExtResource("8_lsu2s")
+
+[sub_resource type="Resource" id="Resource_6a6gt"]
+script = ExtResource("4_vx081")
+level = 28
+move = ExtResource("9_gc6e2")
+
+[resource]
+script = ExtResource("12_rey0m")
+species_name = "MARILL"
+dex = 183
+index = 162
+slug = "marill"
+label = "Marill"
+category = "AQUAMOUSE"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 190
+hp = 70
+attack = 20
+defense = 50
+speed = 40
+special = 35
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 190
+base_exp = 58
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("10_skhey")]([ExtResource("11_hm7gr")])
+learnset = Array[ExtResource("4_vx081")]([SubResource("Resource_yrmwr"), SubResource("Resource_vrpbx"), SubResource("Resource_ge6li"), SubResource("Resource_fk1e4"), SubResource("Resource_6a6gt")])
+tmhm = Array[ExtResource("10_skhey")]([ExtResource("13_18vo4"), ExtResource("14_olast"), ExtResource("15_oqw8s"), ExtResource("16_eixn8"), ExtResource("17_mxfcl"), ExtResource("18_0x7eq"), ExtResource("19_72cbx"), ExtResource("20_mt2mt"), ExtResource("21_o5pc0"), ExtResource("7_qf80p"), ExtResource("8_lsu2s"), ExtResource("22_n3vjf"), ExtResource("23_hamva")])
+evolutions = Array[ExtResource("2_cj1r5")]([SubResource("Resource_kj7p6")])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["Its tail floats,", "and so it cannot", "drown, though it", "has watched many", "others do so."])
+front_sprite = ExtResource("3_3rd04")
+back_sprite = ExtResource("1_1eyn3")

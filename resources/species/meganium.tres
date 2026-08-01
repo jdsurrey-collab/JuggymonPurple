@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/meganium.png" id="1_gvrgy"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_nn6tq"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/meganium.png" id="3_amigk"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_c1wfh"]
+[ext_resource type="Resource" path="res://resources/moves/razor_leaf.tres" id="5_ws0jw"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="6_p2ckr"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="7_lb4jy"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="8_1k1f8"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="9_ktoxl"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="10_cx0w7"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_aqk4o"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_prkfs"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="13_siknx"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_h4mfd"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_4o6o2"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_pgbtg"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_frw7k"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_fap7c"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_wt246"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_v4mwg"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_u0ygm"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_2c6nw"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="23_djhpk"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="24_arofk"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="25_drg2e"]
+
+[sub_resource type="Resource" id="Resource_anp2f"]
+script = ExtResource("4_c1wfh")
+level = 8
+move = ExtResource("5_ws0jw")
+
+[sub_resource type="Resource" id="Resource_p7vms"]
+script = ExtResource("4_c1wfh")
+level = 12
+move = ExtResource("6_p2ckr")
+
+[sub_resource type="Resource" id="Resource_dbc3u"]
+script = ExtResource("4_c1wfh")
+level = 15
+move = ExtResource("7_lb4jy")
+
+[sub_resource type="Resource" id="Resource_tefan"]
+script = ExtResource("4_c1wfh")
+level = 31
+move = ExtResource("8_1k1f8")
+
+[sub_resource type="Resource" id="Resource_yasii"]
+script = ExtResource("4_c1wfh")
+level = 41
+move = ExtResource("9_ktoxl")
+
+[sub_resource type="Resource" id="Resource_stieb"]
+script = ExtResource("4_c1wfh")
+level = 61
+move = ExtResource("10_cx0w7")
+
+[resource]
+script = ExtResource("14_h4mfd")
+species_name = "MEGANIUM"
+dex = 154
+index = 50
+slug = "meganium"
+label = "Meganium"
+category = "HERB"
+height_ft = 5
+height_in = 11
+weight_tenths_lb = 2220
+hp = 80
+attack = 82
+defense = 100
+speed = 80
+special = 91
+type1 = "GRASS"
+type2 = "GRASS"
+catch_rate = 45
+base_exp = 208
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_aqk4o")]([ExtResource("12_prkfs"), ExtResource("13_siknx"), ExtResource("5_ws0jw"), ExtResource("6_p2ckr")])
+learnset = Array[ExtResource("4_c1wfh")]([SubResource("Resource_anp2f"), SubResource("Resource_p7vms"), SubResource("Resource_dbc3u"), SubResource("Resource_tefan"), SubResource("Resource_yasii"), SubResource("Resource_stieb")])
+tmhm = Array[ExtResource("11_aqk4o")]([ExtResource("15_4o6o2"), ExtResource("16_pgbtg"), ExtResource("17_frw7k"), ExtResource("18_fap7c"), ExtResource("19_wt246"), ExtResource("20_v4mwg"), ExtResource("21_u0ygm"), ExtResource("22_2c6nw"), ExtResource("10_cx0w7"), ExtResource("23_djhpk"), ExtResource("24_arofk"), ExtResource("25_drg2e"), ExtResource("8_1k1f8")])
+evolutions = Array[ExtResource("2_nn6tq")]([])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["Where it treads,", "dead soil wakes.", "Where it grieves,", "the blossoms rot", "within the hour."])
+front_sprite = ExtResource("3_amigk")
+back_sprite = ExtResource("1_gvrgy")

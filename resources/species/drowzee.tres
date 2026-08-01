@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=46 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/drowzee.png" id="1_j255f"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_8sxtr"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/drowzee.png" id="3_ovvif"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_fi3m6"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="5_djigg"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="6_c8dl0"]
+[ext_resource type="Resource" path="res://resources/moves/headbutt.tres" id="7_bwgb0"]
+[ext_resource type="Resource" path="res://resources/moves/poison_gas.tres" id="8_3jmgq"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="9_xa528"]
+[ext_resource type="Resource" path="res://resources/moves/meditate.tres" id="10_1jc5h"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_3qx1p"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="12_wwwy1"]
+[ext_resource type="Resource" path="res://resources/moves/hypnosis.tres" id="13_anxec"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_8aygk"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="15_6b67j"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="16_g4dcv"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_lp7a6"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="18_fw7e5"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_cwqcf"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_p5q8k"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="21_cv0ce"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="22_of21o"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="23_ylvth"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="24_06trj"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="25_ofx2j"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="26_jpem6"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="27_2edlh"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="28_vog64"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="29_aewlj"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="30_qheku"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="31_a6gyy"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="32_tklya"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="33_1sql5"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="34_ygj1r"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="35_4unev"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="36_2uxtf"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="37_gmout"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="38_5oenm"]
+
+[sub_resource type="Resource" id="Resource_qerbn"]
+script = ExtResource("2_8sxtr")
+method = "LEVEL"
+target = "HYPNO"
+level = 26
+item = ""
+
+[sub_resource type="Resource" id="Resource_jnit7"]
+script = ExtResource("4_fi3m6")
+level = 12
+move = ExtResource("5_djigg")
+
+[sub_resource type="Resource" id="Resource_jknlq"]
+script = ExtResource("4_fi3m6")
+level = 17
+move = ExtResource("6_c8dl0")
+
+[sub_resource type="Resource" id="Resource_7ambv"]
+script = ExtResource("4_fi3m6")
+level = 24
+move = ExtResource("7_bwgb0")
+
+[sub_resource type="Resource" id="Resource_floq7"]
+script = ExtResource("4_fi3m6")
+level = 29
+move = ExtResource("8_3jmgq")
+
+[sub_resource type="Resource" id="Resource_n8u4n"]
+script = ExtResource("4_fi3m6")
+level = 32
+move = ExtResource("9_xa528")
+
+[sub_resource type="Resource" id="Resource_h2w5j"]
+script = ExtResource("4_fi3m6")
+level = 37
+move = ExtResource("10_1jc5h")
+
+[resource]
+script = ExtResource("14_8aygk")
+species_name = "DROWZEE"
+dex = 96
+index = 48
+slug = "drowzee"
+label = "Drowzee"
+category = "HYPNOSIS"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 710
+hp = 60
+attack = 48
+defense = 45
+speed = 42
+special = 90
+type1 = "PSYCHIC_TYPE"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 190
+base_exp = 102
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_3qx1p")]([ExtResource("12_wwwy1"), ExtResource("13_anxec")])
+learnset = Array[ExtResource("4_fi3m6")]([SubResource("Resource_jnit7"), SubResource("Resource_jknlq"), SubResource("Resource_7ambv"), SubResource("Resource_floq7"), SubResource("Resource_n8u4n"), SubResource("Resource_h2w5j")])
+tmhm = Array[ExtResource("11_3qx1p")]([ExtResource("15_6b67j"), ExtResource("16_g4dcv"), ExtResource("17_lp7a6"), ExtResource("18_fw7e5"), ExtResource("19_cwqcf"), ExtResource("20_p5q8k"), ExtResource("21_cv0ce"), ExtResource("22_of21o"), ExtResource("23_ylvth"), ExtResource("24_06trj"), ExtResource("9_xa528"), ExtResource("25_ofx2j"), ExtResource("26_jpem6"), ExtResource("27_2edlh"), ExtResource("28_vog64"), ExtResource("29_aewlj"), ExtResource("30_qheku"), ExtResource("31_a6gyy"), ExtResource("32_tklya"), ExtResource("33_1sql5"), ExtResource("34_ygj1r"), ExtResource("35_4unev"), ExtResource("36_2uxtf"), ExtResource("37_gmout"), ExtResource("38_5oenm")])
+evolutions = Array[ExtResource("2_8sxtr")]([SubResource("Resource_qerbn")])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Puts enemies to", "sleep then eats", "their dreams.", "Occasionally gets", "sick from eating", "bad dreams"])
+front_sprite = ExtResource("3_ovvif")
+back_sprite = ExtResource("1_j255f")

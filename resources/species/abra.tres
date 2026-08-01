@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/abra.png" id="1_kpbxb"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_sl03b"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/abra.png" id="3_gvf61"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_hp5tm"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="5_kci2x"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="6_fsyku"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="7_2l8j7"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="8_41h8w"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="9_je81h"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="10_gs6a7"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="11_i6boy"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="12_62jul"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="13_2tmub"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="14_baf8w"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="15_n5oug"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="16_i4ydr"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="17_fs60y"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="18_nj1vq"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="19_et6ox"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="20_sokbh"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="21_it1rw"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="22_pb36b"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="23_35xyg"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="24_3t0bw"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="25_3d6nq"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="26_igigl"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="27_w223k"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="28_d3j3k"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="29_ni7ep"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="30_l27v0"]
+
+[sub_resource type="Resource" id="Resource_eqcf1"]
+script = ExtResource("2_sl03b")
+method = "LEVEL"
+target = "KADABRA"
+level = 16
+item = ""
+
+[resource]
+script = ExtResource("7_2l8j7")
+species_name = "ABRA"
+dex = 63
+index = 148
+slug = "abra"
+label = "Abra"
+category = "PSI"
+height_ft = 2
+height_in = 11
+weight_tenths_lb = 430
+hp = 25
+attack = 20
+defense = 15
+speed = 90
+special = 105
+type1 = "PSYCHIC_TYPE"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 200
+base_exp = 73
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("5_kci2x")]([ExtResource("6_fsyku")])
+learnset = Array[ExtResource("4_hp5tm")]([])
+tmhm = Array[ExtResource("5_kci2x")]([ExtResource("8_41h8w"), ExtResource("9_je81h"), ExtResource("10_gs6a7"), ExtResource("11_i6boy"), ExtResource("12_62jul"), ExtResource("13_2tmub"), ExtResource("14_baf8w"), ExtResource("15_n5oug"), ExtResource("16_i4ydr"), ExtResource("17_fs60y"), ExtResource("18_nj1vq"), ExtResource("6_fsyku"), ExtResource("19_et6ox"), ExtResource("20_sokbh"), ExtResource("21_it1rw"), ExtResource("22_pb36b"), ExtResource("23_35xyg"), ExtResource("24_3t0bw"), ExtResource("25_3d6nq"), ExtResource("26_igigl"), ExtResource("27_w223k"), ExtResource("28_d3j3k"), ExtResource("29_ni7ep"), ExtResource("30_l27v0")])
+evolutions = Array[ExtResource("2_sl03b")]([SubResource("Resource_eqcf1")])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Using its ability", "to read minds, it", "will identify", "impending danger", "and TELEPORT to", "safety"])
+front_sprite = ExtResource("3_gvf61")
+back_sprite = ExtResource("1_kpbxb")

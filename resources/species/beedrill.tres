@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/beedrill.png" id="1_283kl"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_c1vys"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/beedrill.png" id="3_7om5m"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_3d4ov"]
+[ext_resource type="Resource" path="res://resources/moves/fury_attack.tres" id="5_omltg"]
+[ext_resource type="Resource" path="res://resources/moves/focus_energy.tres" id="6_bo0s3"]
+[ext_resource type="Resource" path="res://resources/moves/twineedle.tres" id="7_w3gkt"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="8_1lfbe"]
+[ext_resource type="Resource" path="res://resources/moves/pin_missile.tres" id="9_tiwmp"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="10_eolkn"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_d1m5q"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_k5guy"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="13_2cb4b"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_t66ut"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_75enc"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_o7yom"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="17_n0daj"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="18_7a53j"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="19_lr3kq"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="20_5r23t"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="21_o6avk"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="22_fotjj"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="23_6wgks"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="24_qlqm6"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="25_sa6cm"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="26_0g135"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="27_40itv"]
+
+[sub_resource type="Resource" id="Resource_6o6ad"]
+script = ExtResource("4_3d4ov")
+level = 12
+move = ExtResource("5_omltg")
+
+[sub_resource type="Resource" id="Resource_8shb6"]
+script = ExtResource("4_3d4ov")
+level = 16
+move = ExtResource("6_bo0s3")
+
+[sub_resource type="Resource" id="Resource_c1juh"]
+script = ExtResource("4_3d4ov")
+level = 20
+move = ExtResource("7_w3gkt")
+
+[sub_resource type="Resource" id="Resource_delt5"]
+script = ExtResource("4_3d4ov")
+level = 25
+move = ExtResource("8_1lfbe")
+
+[sub_resource type="Resource" id="Resource_tdgh1"]
+script = ExtResource("4_3d4ov")
+level = 30
+move = ExtResource("9_tiwmp")
+
+[sub_resource type="Resource" id="Resource_vjjty"]
+script = ExtResource("4_3d4ov")
+level = 35
+move = ExtResource("10_eolkn")
+
+[resource]
+script = ExtResource("12_k5guy")
+species_name = "BEEDRILL"
+dex = 15
+index = 114
+slug = "beedrill"
+label = "Beedrill"
+category = "POISON BEE"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 650
+hp = 65
+attack = 80
+defense = 40
+speed = 75
+special = 45
+type1 = "BUG"
+type2 = "POISON"
+catch_rate = 45
+base_exp = 159
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_d1m5q")]([ExtResource("5_omltg")])
+learnset = Array[ExtResource("4_3d4ov")]([SubResource("Resource_6o6ad"), SubResource("Resource_8shb6"), SubResource("Resource_c1juh"), SubResource("Resource_delt5"), SubResource("Resource_tdgh1"), SubResource("Resource_vjjty")])
+tmhm = Array[ExtResource("11_d1m5q")]([ExtResource("13_2cb4b"), ExtResource("14_t66ut"), ExtResource("15_75enc"), ExtResource("16_o7yom"), ExtResource("17_n0daj"), ExtResource("8_1lfbe"), ExtResource("18_7a53j"), ExtResource("19_lr3kq"), ExtResource("20_5r23t"), ExtResource("21_o6avk"), ExtResource("22_fotjj"), ExtResource("23_6wgks"), ExtResource("24_qlqm6"), ExtResource("25_sa6cm"), ExtResource("26_0g135"), ExtResource("27_40itv")])
+evolutions = Array[ExtResource("2_c1vys")]([])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["Flies at high", "speed and attacks", "using its large", "venomous stingers", "on its forelegs", "and tail"])
+front_sprite = ExtResource("3_7om5m")
+back_sprite = ExtResource("1_283kl")

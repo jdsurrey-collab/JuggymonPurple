@@ -1,0 +1,100 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=42 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/dragonair.png" id="1_ghw6o"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_nsf6c"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/dragonair.png" id="3_0vdnp"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_7ug7o"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="5_pjevi"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="6_tvvjy"]
+[ext_resource type="Resource" path="res://resources/moves/slam.tres" id="7_cqxwv"]
+[ext_resource type="Resource" path="res://resources/moves/dragon_rage.tres" id="8_sf6td"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="9_ej4ba"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_ew6nn"]
+[ext_resource type="Resource" path="res://resources/moves/wrap.tres" id="11_1h6be"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_jnm3d"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_7ulqm"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_2ow5t"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="15_p8niu"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_tu3m8"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_mf5sg"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_e0iys"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="19_2lbt7"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="20_72ovr"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="21_dpavu"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="22_iu0wf"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="23_e2w5f"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="24_e2fmw"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="25_aihev"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="26_e23li"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="27_ka86u"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="28_05eui"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="29_ax0wr"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="30_wsccb"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="31_3502s"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="32_3qlyo"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="33_1nka4"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="34_r64vm"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="35_15sko"]
+
+[sub_resource type="Resource" id="Resource_txv75"]
+script = ExtResource("2_nsf6c")
+method = "LEVEL"
+target = "DRAGONITE"
+level = 55
+item = ""
+
+[sub_resource type="Resource" id="Resource_pyaic"]
+script = ExtResource("4_7ug7o")
+level = 10
+move = ExtResource("5_pjevi")
+
+[sub_resource type="Resource" id="Resource_f04g1"]
+script = ExtResource("4_7ug7o")
+level = 20
+move = ExtResource("6_tvvjy")
+
+[sub_resource type="Resource" id="Resource_siggl"]
+script = ExtResource("4_7ug7o")
+level = 35
+move = ExtResource("7_cqxwv")
+
+[sub_resource type="Resource" id="Resource_t8tho"]
+script = ExtResource("4_7ug7o")
+level = 45
+move = ExtResource("8_sf6td")
+
+[sub_resource type="Resource" id="Resource_7i1wv"]
+script = ExtResource("4_7ug7o")
+level = 55
+move = ExtResource("9_ej4ba")
+
+[resource]
+script = ExtResource("13_7ulqm")
+species_name = "DRAGONAIR"
+dex = 148
+index = 89
+slug = "dragonair"
+label = "Dragonair"
+category = "DRAGON"
+height_ft = 13
+height_in = 1
+weight_tenths_lb = 360
+hp = 61
+attack = 84
+defense = 65
+speed = 70
+special = 70
+type1 = "DRAGON"
+type2 = "DRAGON"
+catch_rate = 45
+base_exp = 144
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("10_ew6nn")]([ExtResource("11_1h6be"), ExtResource("12_jnm3d"), ExtResource("5_pjevi")])
+learnset = Array[ExtResource("4_7ug7o")]([SubResource("Resource_pyaic"), SubResource("Resource_f04g1"), SubResource("Resource_siggl"), SubResource("Resource_t8tho"), SubResource("Resource_7i1wv")])
+tmhm = Array[ExtResource("10_ew6nn")]([ExtResource("14_2ow5t"), ExtResource("15_p8niu"), ExtResource("16_tu3m8"), ExtResource("17_mf5sg"), ExtResource("18_e0iys"), ExtResource("19_2lbt7"), ExtResource("20_72ovr"), ExtResource("21_dpavu"), ExtResource("22_iu0wf"), ExtResource("23_e2w5f"), ExtResource("8_sf6td"), ExtResource("24_e2fmw"), ExtResource("25_aihev"), ExtResource("26_e23li"), ExtResource("27_ka86u"), ExtResource("28_05eui"), ExtResource("29_ax0wr"), ExtResource("30_wsccb"), ExtResource("31_3502s"), ExtResource("32_3qlyo"), ExtResource("33_1nka4"), ExtResource("5_pjevi"), ExtResource("34_r64vm"), ExtResource("35_15sko")])
+evolutions = Array[ExtResource("2_nsf6c")]([SubResource("Resource_txv75")])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_SNAKE"
+dex_text = Array[String](["A mystical #MON", "that exudes a", "gentle aura.", "Has the ability", "to change climate", "conditions"])
+front_sprite = ExtResource("3_0vdnp")
+back_sprite = ExtResource("1_ghw6o")

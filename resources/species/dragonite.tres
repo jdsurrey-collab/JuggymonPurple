@@ -1,0 +1,95 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=43 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/dragonite.png" id="1_abe4h"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_fec6o"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/dragonite.png" id="3_4k6xf"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_6j5yk"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="5_cvi0j"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="6_xj7cp"]
+[ext_resource type="Resource" path="res://resources/moves/slam.tres" id="7_ibaq2"]
+[ext_resource type="Resource" path="res://resources/moves/dragon_rage.tres" id="8_2e6gx"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="9_3wgdt"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_vi3o6"]
+[ext_resource type="Resource" path="res://resources/moves/wrap.tres" id="11_o4f1e"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_vfksw"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_tre7d"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="14_nmyoa"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_4jpl8"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="16_mx3dy"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="17_b3ljd"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_hh2kj"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_lhtd3"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="20_3036w"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="21_26l3v"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="22_xa07t"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="23_n4sio"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="24_gvgl8"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="25_lebtw"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="26_y4enj"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="27_n3ahw"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="28_him3c"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="29_7iakp"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="30_dtmjv"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="31_sug4v"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="32_jyduo"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="33_pahgu"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="34_166cd"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="35_0n4qb"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="36_josc3"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="37_0xpu1"]
+
+[sub_resource type="Resource" id="Resource_7cg7c"]
+script = ExtResource("4_6j5yk")
+level = 10
+move = ExtResource("5_cvi0j")
+
+[sub_resource type="Resource" id="Resource_2f2n3"]
+script = ExtResource("4_6j5yk")
+level = 20
+move = ExtResource("6_xj7cp")
+
+[sub_resource type="Resource" id="Resource_aw3j2"]
+script = ExtResource("4_6j5yk")
+level = 35
+move = ExtResource("7_ibaq2")
+
+[sub_resource type="Resource" id="Resource_vntab"]
+script = ExtResource("4_6j5yk")
+level = 45
+move = ExtResource("8_2e6gx")
+
+[sub_resource type="Resource" id="Resource_gggc1"]
+script = ExtResource("4_6j5yk")
+level = 60
+move = ExtResource("9_3wgdt")
+
+[resource]
+script = ExtResource("13_tre7d")
+species_name = "DRAGONITE"
+dex = 149
+index = 66
+slug = "dragonite"
+label = "Dragonite"
+category = "DRAGON"
+height_ft = 7
+height_in = 3
+weight_tenths_lb = 4630
+hp = 91
+attack = 134
+defense = 95
+speed = 80
+special = 100
+type1 = "DRAGON"
+type2 = "FLYING"
+catch_rate = 45
+base_exp = 218
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("10_vi3o6")]([ExtResource("11_o4f1e"), ExtResource("12_vfksw"), ExtResource("5_cvi0j"), ExtResource("6_xj7cp")])
+learnset = Array[ExtResource("4_6j5yk")]([SubResource("Resource_7cg7c"), SubResource("Resource_2f2n3"), SubResource("Resource_aw3j2"), SubResource("Resource_vntab"), SubResource("Resource_gggc1")])
+tmhm = Array[ExtResource("10_vi3o6")]([ExtResource("14_nmyoa"), ExtResource("15_4jpl8"), ExtResource("16_mx3dy"), ExtResource("17_b3ljd"), ExtResource("18_hh2kj"), ExtResource("19_lhtd3"), ExtResource("20_3036w"), ExtResource("21_26l3v"), ExtResource("22_xa07t"), ExtResource("23_n4sio"), ExtResource("9_3wgdt"), ExtResource("24_gvgl8"), ExtResource("8_2e6gx"), ExtResource("25_lebtw"), ExtResource("26_y4enj"), ExtResource("27_n3ahw"), ExtResource("28_him3c"), ExtResource("29_7iakp"), ExtResource("30_dtmjv"), ExtResource("31_sug4v"), ExtResource("32_jyduo"), ExtResource("33_pahgu"), ExtResource("34_166cd"), ExtResource("5_cvi0j"), ExtResource("35_0n4qb"), ExtResource("36_josc3"), ExtResource("37_0xpu1")])
+evolutions = Array[ExtResource("2_fec6o")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_SNAKE"
+dex_text = Array[String](["An extremely", "rarely seen", "marine #MON.", "Its intelligence", "is said to match", "that of humans"])
+front_sprite = ExtResource("3_4k6xf")
+back_sprite = ExtResource("1_abe4h")

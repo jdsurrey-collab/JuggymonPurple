@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=44 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/wartortle.png" id="1_cvx0t"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_6kx24"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/wartortle.png" id="3_frkap"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_4oy5a"]
+[ext_resource type="Resource" path="res://resources/moves/bubble.tres" id="5_7kb0e"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="6_htuwg"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="7_ml8ru"]
+[ext_resource type="Resource" path="res://resources/moves/withdraw.tres" id="8_ukuqq"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="9_gcbfk"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="10_fk244"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_dq23j"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_4510k"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="13_oxcb3"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_rcmml"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="15_ay7iw"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="16_uiqra"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_0kj81"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="18_r5pbx"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_34y5j"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_i8mnh"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="21_s085a"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="22_cjkyr"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="23_dpkc0"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="24_ngu8m"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="25_7diou"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="26_sj051"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="27_ux3lr"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="28_4f4cn"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="29_qi6os"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="30_o4nrs"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="31_4wc31"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="32_g5jxs"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="33_kpkcl"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="34_vau6f"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="35_w2d11"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="36_6gv2h"]
+
+[sub_resource type="Resource" id="Resource_jiijf"]
+script = ExtResource("2_6kx24")
+method = "LEVEL"
+target = "BLASTOISE"
+level = 36
+item = ""
+
+[sub_resource type="Resource" id="Resource_w7hl7"]
+script = ExtResource("4_4oy5a")
+level = 8
+move = ExtResource("5_7kb0e")
+
+[sub_resource type="Resource" id="Resource_f0o3o"]
+script = ExtResource("4_4oy5a")
+level = 15
+move = ExtResource("6_htuwg")
+
+[sub_resource type="Resource" id="Resource_qn0xs"]
+script = ExtResource("4_4oy5a")
+level = 24
+move = ExtResource("7_ml8ru")
+
+[sub_resource type="Resource" id="Resource_vmeoj"]
+script = ExtResource("4_4oy5a")
+level = 31
+move = ExtResource("8_ukuqq")
+
+[sub_resource type="Resource" id="Resource_hbjaa"]
+script = ExtResource("4_4oy5a")
+level = 39
+move = ExtResource("9_gcbfk")
+
+[sub_resource type="Resource" id="Resource_kj0m1"]
+script = ExtResource("4_4oy5a")
+level = 47
+move = ExtResource("10_fk244")
+
+[resource]
+script = ExtResource("14_rcmml")
+species_name = "WARTORTLE"
+dex = 8
+index = 179
+slug = "wartortle"
+label = "Wartortle"
+category = "TURTLE"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 500
+hp = 59
+attack = 63
+defense = 80
+speed = 58
+special = 65
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 45
+base_exp = 143
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_dq23j")]([ExtResource("12_4510k"), ExtResource("13_oxcb3"), ExtResource("5_7kb0e")])
+learnset = Array[ExtResource("4_4oy5a")]([SubResource("Resource_w7hl7"), SubResource("Resource_f0o3o"), SubResource("Resource_qn0xs"), SubResource("Resource_vmeoj"), SubResource("Resource_hbjaa"), SubResource("Resource_kj0m1")])
+tmhm = Array[ExtResource("11_dq23j")]([ExtResource("15_ay7iw"), ExtResource("16_uiqra"), ExtResource("17_0kj81"), ExtResource("18_r5pbx"), ExtResource("19_34y5j"), ExtResource("20_i8mnh"), ExtResource("21_s085a"), ExtResource("6_htuwg"), ExtResource("22_cjkyr"), ExtResource("23_dpkc0"), ExtResource("24_ngu8m"), ExtResource("25_7diou"), ExtResource("26_sj051"), ExtResource("27_ux3lr"), ExtResource("28_4f4cn"), ExtResource("29_qi6os"), ExtResource("30_o4nrs"), ExtResource("31_4wc31"), ExtResource("32_g5jxs"), ExtResource("9_gcbfk"), ExtResource("33_kpkcl"), ExtResource("34_vau6f"), ExtResource("35_w2d11"), ExtResource("36_6gv2h")])
+evolutions = Array[ExtResource("2_6kx24")]([SubResource("Resource_jiijf")])
+palette = "PAL_CYANMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["Often hides in", "water to stalk", "unwary prey. For", "swimming fast, it", "moves its ears to", "maintain balance"])
+front_sprite = ExtResource("3_frkap")
+back_sprite = ExtResource("1_cvx0t")

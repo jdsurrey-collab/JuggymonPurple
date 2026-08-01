@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/kabuto.png" id="1_lwadg"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_y1yeg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/kabuto.png" id="3_5rqxm"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_sdiqx"]
+[ext_resource type="Resource" path="res://resources/moves/absorb.tres" id="5_ap6ma"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="6_mt56l"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="7_bxtmu"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="8_qlmbm"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_sdljf"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="10_rqrc7"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="11_eb72j"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_ogydo"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_rip1o"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="14_icut5"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_faefq"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_3vub3"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="17_s3t3t"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="18_rfthj"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="19_j36v6"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="20_gi4b0"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="21_yp0fg"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="22_rljup"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="23_jcujv"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="24_6i7m4"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="25_rpr01"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_4dg10"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="27_hdlif"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="28_351jx"]
+
+[sub_resource type="Resource" id="Resource_owv4j"]
+script = ExtResource("2_y1yeg")
+method = "LEVEL"
+target = "KABUTOPS"
+level = 40
+item = ""
+
+[sub_resource type="Resource" id="Resource_vdon3"]
+script = ExtResource("4_sdiqx")
+level = 34
+move = ExtResource("5_ap6ma")
+
+[sub_resource type="Resource" id="Resource_vjbqe"]
+script = ExtResource("4_sdiqx")
+level = 39
+move = ExtResource("6_mt56l")
+
+[sub_resource type="Resource" id="Resource_rrs6l"]
+script = ExtResource("4_sdiqx")
+level = 44
+move = ExtResource("7_bxtmu")
+
+[sub_resource type="Resource" id="Resource_8rusv"]
+script = ExtResource("4_sdiqx")
+level = 49
+move = ExtResource("8_qlmbm")
+
+[resource]
+script = ExtResource("12_ogydo")
+species_name = "KABUTO"
+dex = 140
+index = 90
+slug = "kabuto"
+label = "Kabuto"
+category = "SHELLFISH"
+height_ft = 1
+height_in = 8
+weight_tenths_lb = 250
+hp = 30
+attack = 80
+defense = 90
+speed = 55
+special = 45
+type1 = "ROCK"
+type2 = "WATER"
+catch_rate = 45
+base_exp = 119
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("9_sdljf")]([ExtResource("10_rqrc7"), ExtResource("11_eb72j")])
+learnset = Array[ExtResource("4_sdiqx")]([SubResource("Resource_vdon3"), SubResource("Resource_vjbqe"), SubResource("Resource_rrs6l"), SubResource("Resource_8rusv")])
+tmhm = Array[ExtResource("9_sdljf")]([ExtResource("13_rip1o"), ExtResource("14_icut5"), ExtResource("15_faefq"), ExtResource("16_3vub3"), ExtResource("17_s3t3t"), ExtResource("18_rfthj"), ExtResource("19_j36v6"), ExtResource("20_gi4b0"), ExtResource("21_yp0fg"), ExtResource("22_rljup"), ExtResource("23_jcujv"), ExtResource("24_6i7m4"), ExtResource("25_rpr01"), ExtResource("26_4dg10"), ExtResource("27_hdlif"), ExtResource("28_351jx")])
+evolutions = Array[ExtResource("2_y1yeg")]([SubResource("Resource_owv4j")])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_HELIX"
+dex_text = Array[String](["A #MON that", "was resurrected", "from a fossil", "found in what was", "once the ocean", "floor eons ago"])
+front_sprite = ExtResource("3_5rqxm")
+back_sprite = ExtResource("1_lwadg")

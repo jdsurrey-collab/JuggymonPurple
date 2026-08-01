@@ -1,0 +1,150 @@
+{
+ "Route12SuperRodHouseFishingGuruDoYouLikeToFishText": [
+  {
+   "kind": "text",
+   "line": "I'm the FISHING"
+  },
+  {
+   "kind": "line",
+   "line": "GURU's brother."
+  },
+  {
+   "kind": "para",
+   "line": "I love it, too,"
+  },
+  {
+   "kind": "line",
+   "line": "more than most."
+  },
+  {
+   "kind": "para",
+   "line": "Do you care for"
+  },
+  {
+   "kind": "line",
+   "line": "it, as well?"
+  }
+ ],
+ "Route12SuperRodHouseFishingGuruReceivedSuperRodText": [
+  {
+   "kind": "text",
+   "line": "Splendid. I like"
+  },
+  {
+   "kind": "line",
+   "line": "your spirit!"
+  },
+  {
+   "kind": "para",
+   "line": "Take this, and"
+  },
+  {
+   "kind": "line",
+   "line": "fish, child."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "a @"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "Route12SuperRodHouseFishingGuruFishingWayOfLifeText": [
+  {
+   "kind": "para",
+   "line": "Fishing is a"
+  },
+  {
+   "kind": "line",
+   "line": "way of grief,"
+  },
+  {
+   "kind": "cont",
+   "line": "and patience."
+  },
+  {
+   "kind": "para",
+   "line": "From sea to"
+  },
+  {
+   "kind": "line",
+   "line": "river, go and"
+  },
+  {
+   "kind": "cont",
+   "line": "land the great"
+  },
+  {
+   "kind": "cont",
+   "line": "one."
+  }
+ ],
+ "Route12SuperRodHouseFishingGuruThatsDisappointingText": [
+  {
+   "kind": "text",
+   "line": "Oh... How"
+  },
+  {
+   "kind": "line",
+   "line": "disheartening..."
+  }
+ ],
+ "Route12SuperRodHouseFishingGuruTryFishingText": [
+  {
+   "kind": "text",
+   "line": "Ah, <PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "The SUPER ROD"
+  },
+  {
+   "kind": "line",
+   "line": "works in any"
+  },
+  {
+   "kind": "cont",
+   "line": "water. It will"
+  },
+  {
+   "kind": "cont",
+   "line": "land rarer"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON."
+  },
+  {
+   "kind": "para",
+   "line": "Fish wherever"
+  },
+  {
+   "kind": "line",
+   "line": "you dare."
+  }
+ ],
+ "Route12SuperRodHouseFishingGuruNoRoomText": [
+  {
+   "kind": "text",
+   "line": "Oh no."
+  },
+  {
+   "kind": "para",
+   "line": "My gift, wasted-"
+  },
+  {
+   "kind": "line",
+   "line": "you've no room"
+  },
+  {
+   "kind": "cont",
+   "line": "for it."
+  }
+ ]
+}

@@ -1,0 +1,174 @@
+{
+ "RedsHouse2FCultistText": [
+  {
+   "kind": "text",
+   "line": "...it was but"
+  },
+  {
+   "kind": "line",
+   "line": "a dream, surely."
+  }
+ ],
+ "RedsHouse2FCultistIntroText": [
+  {
+   "kind": "text",
+   "line": "???: Hush now,"
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>. Do not"
+  },
+  {
+   "kind": "cont",
+   "line": "open your eyes."
+  },
+  {
+   "kind": "para",
+   "line": "I have watched you"
+  },
+  {
+   "kind": "line",
+   "line": "since before you"
+  },
+  {
+   "kind": "cont",
+   "line": "could even walk,"
+  },
+  {
+   "kind": "cont",
+   "line": "waiting for you."
+  },
+  {
+   "kind": "para",
+   "line": "You feel me close,"
+  },
+  {
+   "kind": "line",
+   "line": "and that is right."
+  },
+  {
+   "kind": "cont",
+   "line": "I'm nearer to you"
+  },
+  {
+   "kind": "cont",
+   "line": "closer than blood."
+  },
+  {
+   "kind": "para",
+   "line": "Whisper true now,"
+  },
+  {
+   "kind": "line",
+   "line": "and I will whisper"
+  },
+  {
+   "kind": "cont",
+   "line": "back what you will"
+  },
+  {
+   "kind": "cont",
+   "line": "become."
+  }
+ ],
+ "RedsHouse2FCultistQuestion1Text": [
+  {
+   "kind": "text",
+   "line": "Tell me, softly-"
+  },
+  {
+   "kind": "line",
+   "line": "when the world has"
+  },
+  {
+   "kind": "cont",
+   "line": "wronged you, what"
+  },
+  {
+   "kind": "cont",
+   "line": "claws inside you?"
+  }
+ ],
+ "RedsHouse2FCultistQuestion2Text": [
+  {
+   "kind": "text",
+   "line": "Nearer now. When"
+  },
+  {
+   "kind": "line",
+   "line": "hope has left you,"
+  },
+  {
+   "kind": "cont",
+   "line": "what moves you on?"
+  }
+ ],
+ "RedsHouse2FCultistQuestion3Text": [
+  {
+   "kind": "text",
+   "line": "One thing more,"
+  },
+  {
+   "kind": "line",
+   "line": "then I leave you"
+  },
+  {
+   "kind": "cont",
+   "line": "to dream. Tell me,"
+  },
+  {
+   "kind": "cont",
+   "line": "what shall your"
+  },
+  {
+   "kind": "cont",
+   "line": "familiar become,"
+  },
+  {
+   "kind": "cont",
+   "line": "in the end?"
+  }
+ ],
+ "RedsHouse2FCultistOutroText": [
+  {
+   "kind": "text",
+   "line": "???: There now."
+  },
+  {
+   "kind": "line",
+   "line": "It is settled now,"
+  },
+  {
+   "kind": "cont",
+   "line": "deep in your soul."
+  },
+  {
+   "kind": "para",
+   "line": "You will forget my"
+  },
+  {
+   "kind": "line",
+   "line": "face and my words."
+  },
+  {
+   "kind": "cont",
+   "line": "Only the shape of"
+  },
+  {
+   "kind": "cont",
+   "line": "what you will be."
+  },
+  {
+   "kind": "para",
+   "line": "Sleep now."
+  },
+  {
+   "kind": "line",
+   "line": "I'll be watching,"
+  },
+  {
+   "kind": "cont",
+   "line": "<PLAYER>."
+  }
+ ]
+}

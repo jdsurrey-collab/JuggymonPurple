@@ -1,0 +1,80 @@
+{
+ "Route16FlyHouseBrunetteGirlText": [
+  {
+   "kind": "text",
+   "line": "Oh, you've found"
+  },
+  {
+   "kind": "line",
+   "line": "my secret refuge!"
+  },
+  {
+   "kind": "para",
+   "line": "Do not betray my"
+  },
+  {
+   "kind": "line",
+   "line": "hiding place. I'll"
+  },
+  {
+   "kind": "cont",
+   "line": "make it worth"
+  },
+  {
+   "kind": "cont",
+   "line": "your silence!"
+  }
+ ],
+ "Route16FlyHouseBrunetteGirlReceivedHM02Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "HM02!@"
+  }
+ ],
+ "Route16FlyHouseBrunetteGirlHM02ExplanationText": [
+  {
+   "kind": "text",
+   "line": "HM02 holds FLY."
+  },
+  {
+   "kind": "line",
+   "line": "It bears you back"
+  },
+  {
+   "kind": "cont",
+   "line": "to any town."
+  },
+  {
+   "kind": "para",
+   "line": "Use it well, and"
+  },
+  {
+   "kind": "line",
+   "line": "do not squander"
+  },
+  {
+   "kind": "cont",
+   "line": "it."
+  }
+ ],
+ "Route16FlyHouseBrunetteGirlHM02NoRoomText": [
+  {
+   "kind": "text",
+   "line": "You've no room"
+  },
+  {
+   "kind": "line",
+   "line": "left for this."
+  }
+ ],
+ "Route16FlyHouseFearowText": [
+  {
+   "kind": "text",
+   "line": "FEAROW: Kyueen!"
+  }
+ ]
+}

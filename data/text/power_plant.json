@@ -1,0 +1,14 @@
+{
+ "PowerPlantVoltorbBattleText": [
+  {
+   "kind": "text",
+   "line": "Bzzzt!"
+  }
+ ],
+ "PowerPlantZapdosBattleText": [
+  {
+   "kind": "text",
+   "line": "Gyaoo!@"
+  }
+ ]
+}

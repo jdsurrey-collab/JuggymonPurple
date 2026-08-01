@@ -1,0 +1,86 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/furret.png" id="1_6ikco"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_67l3w"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/furret.png" id="3_qx36r"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_013v5"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="5_kjuhs"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="6_k0bqd"]
+[ext_resource type="Resource" path="res://resources/moves/fury_swipes.tres" id="7_fdfah"]
+[ext_resource type="Resource" path="res://resources/moves/slam.tres" id="8_o0p2o"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="9_h6xcp"]
+[ext_resource type="Resource" path="res://resources/moves/amnesia.tres" id="10_smvp0"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_rxgk2"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="12_5mkwf"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_rty4s"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_c7a2v"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_ccn3c"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_s6f0g"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_xl4tb"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_dorln"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_15c4s"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_7xex1"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="21_v6wsm"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="22_ml3iq"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="23_8lu40"]
+
+[sub_resource type="Resource" id="Resource_ejwgv"]
+script = ExtResource("4_013v5")
+level = 5
+move = ExtResource("5_kjuhs")
+
+[sub_resource type="Resource" id="Resource_x04af"]
+script = ExtResource("4_013v5")
+level = 11
+move = ExtResource("6_k0bqd")
+
+[sub_resource type="Resource" id="Resource_s3ten"]
+script = ExtResource("4_013v5")
+level = 18
+move = ExtResource("7_fdfah")
+
+[sub_resource type="Resource" id="Resource_hggco"]
+script = ExtResource("4_013v5")
+level = 28
+move = ExtResource("8_o0p2o")
+
+[sub_resource type="Resource" id="Resource_b0ja3"]
+script = ExtResource("4_013v5")
+level = 38
+move = ExtResource("9_h6xcp")
+
+[sub_resource type="Resource" id="Resource_111p0"]
+script = ExtResource("4_013v5")
+level = 48
+move = ExtResource("10_smvp0")
+
+[resource]
+script = ExtResource("13_rty4s")
+species_name = "FURRET"
+dex = 162
+index = 69
+slug = "furret"
+label = "Furret"
+category = "LONG BODY"
+height_ft = 5
+height_in = 11
+weight_tenths_lb = 720
+hp = 85
+attack = 76
+defense = 64
+speed = 90
+special = 50
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 90
+base_exp = 116
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_rxgk2")]([ExtResource("12_5mkwf"), ExtResource("5_kjuhs"), ExtResource("6_k0bqd")])
+learnset = Array[ExtResource("4_013v5")]([SubResource("Resource_ejwgv"), SubResource("Resource_x04af"), SubResource("Resource_s3ten"), SubResource("Resource_hggco"), SubResource("Resource_b0ja3"), SubResource("Resource_111p0")])
+tmhm = Array[ExtResource("11_rxgk2")]([ExtResource("14_c7a2v"), ExtResource("15_ccn3c"), ExtResource("16_s6f0g"), ExtResource("17_xl4tb"), ExtResource("9_h6xcp"), ExtResource("18_dorln"), ExtResource("19_15c4s"), ExtResource("20_7xex1"), ExtResource("21_v6wsm"), ExtResource("22_ml3iq"), ExtResource("23_8lu40")])
+evolutions = Array[ExtResource("2_67l3w")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its burrows wind", "so far that none", "who follow return.", "Some are old", "graves widened."])
+front_sprite = ExtResource("3_qx36r")
+back_sprite = ExtResource("1_6ikco")

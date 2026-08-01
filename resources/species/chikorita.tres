@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/chikorita.png" id="1_fvk30"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_xxlg3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/chikorita.png" id="3_a5e6f"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_mynma"]
+[ext_resource type="Resource" path="res://resources/moves/razor_leaf.tres" id="5_cb35r"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="6_k7hie"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="7_xfj8y"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="8_onyiv"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="9_muywk"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="10_3dyvp"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_5bxek"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_4nwbd"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="13_epqg4"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_dieoj"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_2npqh"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_1vj1i"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_xwqcn"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_cpxgr"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_loamq"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_ukjqa"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_um7y3"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_u32e8"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="23_ct60n"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="24_vwcmc"]
+
+[sub_resource type="Resource" id="Resource_a3yl3"]
+script = ExtResource("2_xxlg3")
+method = "LEVEL"
+target = "BAYLEEF"
+level = 16
+item = ""
+
+[sub_resource type="Resource" id="Resource_mlc7i"]
+script = ExtResource("4_mynma")
+level = 8
+move = ExtResource("5_cb35r")
+
+[sub_resource type="Resource" id="Resource_l2vcl"]
+script = ExtResource("4_mynma")
+level = 12
+move = ExtResource("6_k7hie")
+
+[sub_resource type="Resource" id="Resource_wsimf"]
+script = ExtResource("4_mynma")
+level = 15
+move = ExtResource("7_xfj8y")
+
+[sub_resource type="Resource" id="Resource_16fwa"]
+script = ExtResource("4_mynma")
+level = 29
+move = ExtResource("8_onyiv")
+
+[sub_resource type="Resource" id="Resource_4a0yc"]
+script = ExtResource("4_mynma")
+level = 36
+move = ExtResource("9_muywk")
+
+[sub_resource type="Resource" id="Resource_21fqk"]
+script = ExtResource("4_mynma")
+level = 50
+move = ExtResource("10_3dyvp")
+
+[resource]
+script = ExtResource("14_dieoj")
+species_name = "CHIKORITA"
+dex = 152
+index = 31
+slug = "chikorita"
+label = "Chikorita"
+category = "LEAF"
+height_ft = 2
+height_in = 11
+weight_tenths_lb = 140
+hp = 45
+attack = 49
+defense = 65
+speed = 45
+special = 57
+type1 = "GRASS"
+type2 = "GRASS"
+catch_rate = 45
+base_exp = 64
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_5bxek")]([ExtResource("12_4nwbd"), ExtResource("13_epqg4")])
+learnset = Array[ExtResource("4_mynma")]([SubResource("Resource_mlc7i"), SubResource("Resource_l2vcl"), SubResource("Resource_wsimf"), SubResource("Resource_16fwa"), SubResource("Resource_4a0yc"), SubResource("Resource_21fqk")])
+tmhm = Array[ExtResource("11_5bxek")]([ExtResource("15_2npqh"), ExtResource("16_1vj1i"), ExtResource("17_xwqcn"), ExtResource("18_cpxgr"), ExtResource("19_loamq"), ExtResource("20_ukjqa"), ExtResource("21_um7y3"), ExtResource("22_u32e8"), ExtResource("10_3dyvp"), ExtResource("23_ct60n"), ExtResource("24_vwcmc")])
+evolutions = Array[ExtResource("2_xxlg3")]([SubResource("Resource_a3yl3")])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["The leaf at its", "neck wilts when", "it senses grief.", "Gardeners call it", "a mourner's herb."])
+front_sprite = ExtResource("3_a5e6f")
+back_sprite = ExtResource("1_fvk30")

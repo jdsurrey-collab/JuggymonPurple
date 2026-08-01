@@ -1,0 +1,87 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/crobat.png" id="1_pd6pr"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_j2fqw"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/crobat.png" id="3_r0y2x"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ompnq"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="5_50e22"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="6_a4j2y"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="7_g7ocn"]
+[ext_resource type="Resource" path="res://resources/moves/wing_attack.tres" id="8_ojdsh"]
+[ext_resource type="Resource" path="res://resources/moves/haze.tres" id="9_nibki"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_rtjyb"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="11_y4ef2"]
+[ext_resource type="Resource" path="res://resources/moves/leech_life.tres" id="12_tb0ae"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_qw833"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_s4wqo"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_lgpbx"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_h0hpw"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_jybs1"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_feh84"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_3e6p6"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_oej01"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_e6vif"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="22_xhmp0"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="23_2c1c8"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="24_enl24"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="25_vh1yr"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="26_vgi1d"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="27_s7fla"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="28_d31qo"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="29_vohm0"]
+
+[sub_resource type="Resource" id="Resource_iebdv"]
+script = ExtResource("4_ompnq")
+level = 6
+move = ExtResource("5_50e22")
+
+[sub_resource type="Resource" id="Resource_02x4v"]
+script = ExtResource("4_ompnq")
+level = 12
+move = ExtResource("6_a4j2y")
+
+[sub_resource type="Resource" id="Resource_lrueu"]
+script = ExtResource("4_ompnq")
+level = 19
+move = ExtResource("7_g7ocn")
+
+[sub_resource type="Resource" id="Resource_q3yrj"]
+script = ExtResource("4_ompnq")
+level = 30
+move = ExtResource("8_ojdsh")
+
+[sub_resource type="Resource" id="Resource_ugulb"]
+script = ExtResource("4_ompnq")
+level = 55
+move = ExtResource("9_nibki")
+
+[resource]
+script = ExtResource("13_qw833")
+species_name = "CROBAT"
+dex = 169
+index = 95
+slug = "crobat"
+label = "Crobat"
+category = "BAT"
+height_ft = 5
+height_in = 11
+weight_tenths_lb = 1650
+hp = 85
+attack = 90
+defense = 80
+speed = 130
+special = 75
+type1 = "POISON"
+type2 = "FLYING"
+catch_rate = 90
+base_exp = 204
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_rtjyb")]([ExtResource("11_y4ef2"), ExtResource("12_tb0ae"), ExtResource("5_50e22")])
+learnset = Array[ExtResource("4_ompnq")]([SubResource("Resource_iebdv"), SubResource("Resource_02x4v"), SubResource("Resource_lrueu"), SubResource("Resource_q3yrj"), SubResource("Resource_ugulb")])
+tmhm = Array[ExtResource("10_rtjyb")]([ExtResource("14_s4wqo"), ExtResource("15_lgpbx"), ExtResource("16_h0hpw"), ExtResource("17_jybs1"), ExtResource("18_feh84"), ExtResource("19_3e6p6"), ExtResource("20_oej01"), ExtResource("21_e6vif"), ExtResource("22_xhmp0"), ExtResource("23_2c1c8"), ExtResource("24_enl24"), ExtResource("25_vh1yr"), ExtResource("26_vgi1d"), ExtResource("27_s7fla"), ExtResource("28_d31qo"), ExtResource("29_vohm0")])
+evolutions = Array[ExtResource("2_j2fqw")]([])
+palette = "PAL_PURPLEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Four wings make", "it silent. You", "will not hear it", "until the blood", "is already gone."])
+front_sprite = ExtResource("3_r0y2x")
+back_sprite = ExtResource("1_pd6pr")

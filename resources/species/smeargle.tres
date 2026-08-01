@@ -1,0 +1,69 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=25 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/smeargle.png" id="1_ly613"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_h5xls"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/smeargle.png" id="3_wp1n2"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_cv523"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="5_vd2c8"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="6_mkk3x"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="7_ksy8t"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_qmckv"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="9_ccrye"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="10_8ym5o"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="11_svuga"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="12_c1xeo"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="13_8wnv0"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="14_axqky"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="15_wiih3"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="16_y6xc8"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="17_ycr3p"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="18_3dkja"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_dsjxl"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_hqcvw"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="21_mw41p"]
+
+[sub_resource type="Resource" id="Resource_pccj7"]
+script = ExtResource("4_cv523")
+level = 8
+move = ExtResource("5_vd2c8")
+
+[sub_resource type="Resource" id="Resource_hkica"]
+script = ExtResource("4_cv523")
+level = 15
+move = ExtResource("6_mkk3x")
+
+[sub_resource type="Resource" id="Resource_2t664"]
+script = ExtResource("4_cv523")
+level = 24
+move = ExtResource("7_ksy8t")
+
+[resource]
+script = ExtResource("10_8ym5o")
+species_name = "SMEARGLE"
+dex = 225
+index = 228
+slug = "smeargle"
+label = "Smeargle"
+category = "PAINTER"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 1280
+hp = 55
+attack = 20
+defense = 35
+speed = 75
+special = 32
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 45
+base_exp = 106
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("8_qmckv")]([ExtResource("9_ccrye")])
+learnset = Array[ExtResource("4_cv523")]([SubResource("Resource_pccj7"), SubResource("Resource_hkica"), SubResource("Resource_2t664")])
+tmhm = Array[ExtResource("8_qmckv")]([ExtResource("11_svuga"), ExtResource("12_c1xeo"), ExtResource("13_8wnv0"), ExtResource("14_axqky"), ExtResource("15_wiih3"), ExtResource("16_y6xc8"), ExtResource("17_ycr3p"), ExtResource("18_3dkja"), ExtResource("7_ksy8t"), ExtResource("19_dsjxl"), ExtResource("20_hqcvw"), ExtResource("21_mw41p")])
+evolutions = Array[ExtResource("2_h5xls")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It paints with", "its tail in a", "fluid all its own.", "The marks fade", "by morning, every", "one of them."])
+front_sprite = ExtResource("3_wp1n2")
+back_sprite = ExtResource("1_ly613")

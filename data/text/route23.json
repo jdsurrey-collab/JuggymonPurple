@@ -1,0 +1,94 @@
+{
+ "Route23YouDontHaveTheBadgeYetText": [
+  {
+   "kind": "text",
+   "line": "None may pass"
+  },
+  {
+   "kind": "line",
+   "line": "here, save those"
+  },
+  {
+   "kind": "cont",
+   "line": "who bear the @"
+  },
+  {
+   "kind": "text",
+   "line": "!"
+  },
+  {
+   "kind": "para",
+   "line": "You lack the"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": " still!"
+  },
+  {
+   "kind": "para",
+   "line": "You must have it"
+  },
+  {
+   "kind": "line",
+   "line": "to reach the"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON LEAGUE!@"
+  }
+ ],
+ "Route23OhThatIsTheBadgeText": [
+  {
+   "kind": "text",
+   "line": "None may pass"
+  },
+  {
+   "kind": "line",
+   "line": "here, save those"
+  },
+  {
+   "kind": "cont",
+   "line": "who bear the @"
+  },
+  {
+   "kind": "text",
+   "line": "!"
+  },
+  {
+   "kind": "para",
+   "line": "Oh! That is the"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "Route23GoRightAheadText": [
+  {
+   "kind": "para",
+   "line": "Very well, then!"
+  },
+  {
+   "kind": "line",
+   "line": "Go right ahead!"
+  }
+ ],
+ "Route23VictoryRoadGateSignText": [
+  {
+   "kind": "text",
+   "line": "VICTORY ROAD GATE"
+  },
+  {
+   "kind": "line",
+   "line": "- #MON LEAGUE"
+  }
+ ]
+}

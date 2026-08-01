@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=49 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/lickitung.png" id="1_1fuw4"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_qftqe"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/lickitung.png" id="3_rr36k"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_vvrfw"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="5_hwpux"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="6_mfb1o"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="7_s81ds"]
+[ext_resource type="Resource" path="res://resources/moves/slam.tres" id="8_imcie"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="9_wqr1y"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_mkxtd"]
+[ext_resource type="Resource" path="res://resources/moves/wrap.tres" id="11_shkj0"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="12_srp8g"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_wy7a7"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="14_cvg7k"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="15_6g4e8"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="16_nkrt3"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_f1mrl"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="18_smqq6"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_fbwqv"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_p66n7"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="21_bt7v3"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="22_lhjss"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="23_5jjf6"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="24_histx"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="25_dr51o"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="26_ahcxt"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="27_n1610"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="28_3j1f0"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="29_5q8nc"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="30_q5yty"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="31_h5xbd"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="32_dq2rk"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="33_op8hh"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="34_22oas"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="35_1exve"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="36_wtfmk"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="37_0edsf"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="38_pkslu"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="39_60v2a"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="40_4mv16"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="41_k7r5n"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="42_56isb"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="43_oodo7"]
+
+[sub_resource type="Resource" id="Resource_g6t3i"]
+script = ExtResource("4_vvrfw")
+level = 7
+move = ExtResource("5_hwpux")
+
+[sub_resource type="Resource" id="Resource_5gxni"]
+script = ExtResource("4_vvrfw")
+level = 15
+move = ExtResource("6_mfb1o")
+
+[sub_resource type="Resource" id="Resource_ioyn1"]
+script = ExtResource("4_vvrfw")
+level = 23
+move = ExtResource("7_s81ds")
+
+[sub_resource type="Resource" id="Resource_5ngwg"]
+script = ExtResource("4_vvrfw")
+level = 31
+move = ExtResource("8_imcie")
+
+[sub_resource type="Resource" id="Resource_fnwbo"]
+script = ExtResource("4_vvrfw")
+level = 39
+move = ExtResource("9_wqr1y")
+
+[resource]
+script = ExtResource("13_wy7a7")
+species_name = "LICKITUNG"
+dex = 108
+index = 11
+slug = "lickitung"
+label = "Lickitung"
+category = "LICKING"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 1440
+hp = 90
+attack = 55
+defense = 75
+speed = 30
+special = 60
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 45
+base_exp = 127
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_mkxtd")]([ExtResource("11_shkj0"), ExtResource("12_srp8g")])
+learnset = Array[ExtResource("4_vvrfw")]([SubResource("Resource_g6t3i"), SubResource("Resource_5gxni"), SubResource("Resource_ioyn1"), SubResource("Resource_5ngwg"), SubResource("Resource_fnwbo")])
+tmhm = Array[ExtResource("10_mkxtd")]([ExtResource("14_cvg7k"), ExtResource("15_6g4e8"), ExtResource("16_nkrt3"), ExtResource("17_f1mrl"), ExtResource("18_smqq6"), ExtResource("19_fbwqv"), ExtResource("20_p66n7"), ExtResource("21_bt7v3"), ExtResource("22_lhjss"), ExtResource("23_5jjf6"), ExtResource("24_histx"), ExtResource("25_dr51o"), ExtResource("26_ahcxt"), ExtResource("27_n1610"), ExtResource("28_3j1f0"), ExtResource("29_5q8nc"), ExtResource("30_q5yty"), ExtResource("31_h5xbd"), ExtResource("32_dq2rk"), ExtResource("33_op8hh"), ExtResource("34_22oas"), ExtResource("35_1exve"), ExtResource("36_wtfmk"), ExtResource("37_0edsf"), ExtResource("38_pkslu"), ExtResource("39_60v2a"), ExtResource("40_4mv16"), ExtResource("41_k7r5n"), ExtResource("42_56isb"), ExtResource("43_oodo7")])
+evolutions = Array[ExtResource("2_qftqe")]([])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Its tongue can be", "extended like a", "chameleon's. It", "leaves a tingling", "sensation when it", "licks enemies"])
+front_sprite = ExtResource("3_rr36k")
+back_sprite = ExtResource("1_1fuw4")

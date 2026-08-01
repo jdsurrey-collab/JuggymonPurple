@@ -1,0 +1,70 @@
+{
+ "VermilionMartCooltrainerMText": [
+  {
+   "kind": "text",
+   "line": "Some souls will"
+  },
+  {
+   "kind": "line",
+   "line": "twist #MON to"
+  },
+  {
+   "kind": "cont",
+   "line": "cruel, criminal"
+  },
+  {
+   "kind": "cont",
+   "line": "ends."
+  },
+  {
+   "kind": "para",
+   "line": "TEAM ROCKET"
+  },
+  {
+   "kind": "line",
+   "line": "traffics in rare"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON."
+  },
+  {
+   "kind": "para",
+   "line": "They discard the"
+  },
+  {
+   "kind": "line",
+   "line": "ones they deem"
+  },
+  {
+   "kind": "cont",
+   "line": "worthless, or"
+  },
+  {
+   "kind": "cont",
+   "line": "unlovely, or"
+  },
+  {
+   "kind": "cont",
+   "line": "slow."
+  }
+ ],
+ "VermilionMartCooltrainerFText": [
+  {
+   "kind": "text",
+   "line": "A #MON is good"
+  },
+  {
+   "kind": "line",
+   "line": "or evil as its"
+  },
+  {
+   "kind": "cont",
+   "line": "trainer makes"
+  },
+  {
+   "kind": "cont",
+   "line": "it so."
+  }
+ ]
+}

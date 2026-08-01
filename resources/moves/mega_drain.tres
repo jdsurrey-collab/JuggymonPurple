@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_bqi4y"]
+
+[resource]
+script = ExtResource("1_bqi4y")
+move_name = "MEGA_DRAIN"
+move_id = 72
+display_name = "MEGA DRAIN"
+move_type = "GRASS"
+power = 40
+accuracy = 100
+pp = 10
+effect = "DRAIN_HP_EFFECT"

@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/wooper.png" id="1_g7dqh"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_wupgp"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/wooper.png" id="3_fhnty"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_w31hd"]
+[ext_resource type="Resource" path="res://resources/moves/slam.tres" id="5_0exs6"]
+[ext_resource type="Resource" path="res://resources/moves/amnesia.tres" id="6_i7ucp"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="7_j2m3x"]
+[ext_resource type="Resource" path="res://resources/moves/haze.tres" id="8_va8xl"]
+[ext_resource type="Resource" path="res://resources/moves/mist.tres" id="9_7hmmw"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_nclw2"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="11_2pa73"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="12_vj3re"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_mwttt"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_gn3gb"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_gwcjd"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_n6sax"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_1ksio"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_bkbrr"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_m8lmh"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_rur0b"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_836f2"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="22_c0tnp"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="23_rw0fv"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="24_cyyjf"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="25_tkr5l"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="26_mx3ll"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="27_yhhp6"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="28_5r66e"]
+
+[sub_resource type="Resource" id="Resource_nwvb4"]
+script = ExtResource("2_wupgp")
+method = "LEVEL"
+target = "QUAGSIRE"
+level = 20
+item = ""
+
+[sub_resource type="Resource" id="Resource_hrc52"]
+script = ExtResource("4_w31hd")
+level = 11
+move = ExtResource("5_0exs6")
+
+[sub_resource type="Resource" id="Resource_qq5bn"]
+script = ExtResource("4_w31hd")
+level = 21
+move = ExtResource("6_i7ucp")
+
+[sub_resource type="Resource" id="Resource_7txyy"]
+script = ExtResource("4_w31hd")
+level = 31
+move = ExtResource("7_j2m3x")
+
+[sub_resource type="Resource" id="Resource_vslrx"]
+script = ExtResource("4_w31hd")
+level = 51
+move = ExtResource("8_va8xl")
+
+[sub_resource type="Resource" id="Resource_uce4u"]
+script = ExtResource("4_w31hd")
+level = 51
+move = ExtResource("9_7hmmw")
+
+[resource]
+script = ExtResource("13_mwttt")
+species_name = "WOOPER"
+dex = 194
+index = 197
+slug = "wooper"
+label = "Wooper"
+category = "WATER FISH"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 190
+hp = 55
+attack = 45
+defense = 45
+speed = 15
+special = 25
+type1 = "WATER"
+type2 = "GROUND"
+catch_rate = 255
+base_exp = 52
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_nclw2")]([ExtResource("11_2pa73"), ExtResource("12_vj3re")])
+learnset = Array[ExtResource("4_w31hd")]([SubResource("Resource_hrc52"), SubResource("Resource_qq5bn"), SubResource("Resource_7txyy"), SubResource("Resource_vslrx"), SubResource("Resource_uce4u")])
+tmhm = Array[ExtResource("10_nclw2")]([ExtResource("14_gn3gb"), ExtResource("15_gwcjd"), ExtResource("16_n6sax"), ExtResource("17_1ksio"), ExtResource("18_bkbrr"), ExtResource("19_m8lmh"), ExtResource("20_rur0b"), ExtResource("21_836f2"), ExtResource("22_c0tnp"), ExtResource("11_2pa73"), ExtResource("23_rw0fv"), ExtResource("24_cyyjf"), ExtResource("25_tkr5l"), ExtResource("7_j2m3x"), ExtResource("26_mx3ll"), ExtResource("27_yhhp6"), ExtResource("28_5r66e")])
+evolutions = Array[ExtResource("2_wupgp")]([SubResource("Resource_nwvb4")])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["It coats itself", "in poison film", "and sleeps in mud.", "Touch it barehand", "and regret it."])
+front_sprite = ExtResource("3_fhnty")
+back_sprite = ExtResource("1_g7dqh")

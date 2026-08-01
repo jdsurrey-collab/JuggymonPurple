@@ -1,0 +1,54 @@
+{
+ "CeruleanMartCooltrainerMText": [
+  {
+   "kind": "text",
+   "line": "REPEL keeps the"
+  },
+  {
+   "kind": "line",
+   "line": "weak and the"
+  },
+  {
+   "kind": "cont",
+   "line": "insects at bay."
+  },
+  {
+   "kind": "para",
+   "line": "Lead with your"
+  },
+  {
+   "kind": "line",
+   "line": "strongest #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "for the best"
+  },
+  {
+   "kind": "cont",
+   "line": "results."
+  }
+ ],
+ "CeruleanMartCooltrainerFText": [
+  {
+   "kind": "text",
+   "line": "Seen any RARE"
+  },
+  {
+   "kind": "line",
+   "line": "CANDY about?"
+  },
+  {
+   "kind": "para",
+   "line": "One bite, they"
+  },
+  {
+   "kind": "line",
+   "line": "say, and a #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "ages a year."
+  }
+ ]
+}

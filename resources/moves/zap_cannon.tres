@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_us08e"]
+
+[resource]
+script = ExtResource("1_us08e")
+move_name = "ZAP_CANNON"
+move_id = 166
+display_name = "ZAP CANNON"
+move_type = "ELECTRIC"
+power = 100
+accuracy = 50
+pp = 5
+effect = "PARALYZE_SIDE_EFFECT2"

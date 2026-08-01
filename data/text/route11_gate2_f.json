@@ -1,0 +1,106 @@
+{
+ "Route11Gate2FOaksAideItemfinderDescriptionText": [
+  {
+   "kind": "text",
+   "line": "Some things lie"
+  },
+  {
+   "kind": "line",
+   "line": "hidden on the"
+  },
+  {
+   "kind": "cont",
+   "line": "ground, unseen."
+  },
+  {
+   "kind": "para",
+   "line": "ITEMFINDER"
+  },
+  {
+   "kind": "line",
+   "line": "senses them"
+  },
+  {
+   "kind": "cont",
+   "line": "nearby."
+  },
+  {
+   "kind": "para",
+   "line": "It won't say"
+  },
+  {
+   "kind": "line",
+   "line": "where, though."
+  },
+  {
+   "kind": "cont",
+   "line": "You must search."
+  }
+ ],
+ "Route11Gate2FLeftBinocularsSnorlaxText": [
+  {
+   "kind": "text",
+   "line": "Looked through"
+  },
+  {
+   "kind": "line",
+   "line": "the binoculars."
+  },
+  {
+   "kind": "para",
+   "line": "A vast #MON"
+  },
+  {
+   "kind": "line",
+   "line": "sleeps on the road."
+  }
+ ],
+ "Route11Gate2FLeftBinocularsNoSnorlaxText": [
+  {
+   "kind": "text",
+   "line": "Looked through"
+  },
+  {
+   "kind": "line",
+   "line": "the binoculars."
+  },
+  {
+   "kind": "para",
+   "line": "A beautiful,"
+  },
+  {
+   "kind": "line",
+   "line": "empty view."
+  }
+ ],
+ "Route11Gate2FRightBinocularsText": [
+  {
+   "kind": "text",
+   "line": "Looked through"
+  },
+  {
+   "kind": "line",
+   "line": "the binoculars."
+  },
+  {
+   "kind": "para",
+   "line": "The only road"
+  },
+  {
+   "kind": "line",
+   "line": "from CERULEAN to"
+  },
+  {
+   "kind": "cont",
+   "line": "LAVENDER runs"
+  },
+  {
+   "kind": "cont",
+   "line": "through ROCK"
+  },
+  {
+   "kind": "cont",
+   "line": "TUNNEL's dark."
+  }
+ ]
+}

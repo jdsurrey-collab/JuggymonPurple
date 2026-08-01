@@ -1,0 +1,182 @@
+{
+ "CinnabarLabFossilRoomScientist1Text": [
+  {
+   "kind": "text",
+   "line": "Hiya!"
+  },
+  {
+   "kind": "para",
+   "line": "I am important"
+  },
+  {
+   "kind": "line",
+   "line": "doctor!"
+  },
+  {
+   "kind": "para",
+   "line": "I study here rare"
+  },
+  {
+   "kind": "line",
+   "line": "#MON fossils,"
+  },
+  {
+   "kind": "cont",
+   "line": "dead so long!"
+  },
+  {
+   "kind": "para",
+   "line": "You! Have you a"
+  },
+  {
+   "kind": "line",
+   "line": "fossil for me?"
+  }
+ ],
+ "CinnabarLabFossilRoomScientist1NoFossilsText": [
+  {
+   "kind": "text",
+   "line": "No! Is too bad!"
+  }
+ ],
+ "CinnabarLabFossilRoomScientist1GoForAWalkText": [
+  {
+   "kind": "text",
+   "line": "I take a little"
+  },
+  {
+   "kind": "line",
+   "line": "time!"
+  },
+  {
+   "kind": "para",
+   "line": "You go for walk a"
+  },
+  {
+   "kind": "line",
+   "line": "little while!"
+  }
+ ],
+ "CinnabarLabFossilRoomScientist1FossilIsBackToLifeText": [
+  {
+   "kind": "text",
+   "line": "Where were you?"
+  },
+  {
+   "kind": "para",
+   "line": "Your fossil is"
+  },
+  {
+   "kind": "line",
+   "line": "living again!"
+  },
+  {
+   "kind": "para",
+   "line": "It was @"
+  },
+  {
+   "kind": "line",
+   "line": "like I think!"
+  }
+ ],
+ "CinnabarLabFossilRoomScientist1SeesFossilText": [
+  {
+   "kind": "text",
+   "line": "Oh! That is"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!"
+  },
+  {
+   "kind": "para",
+   "line": "It is fossil of"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": ", a"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON long dead"
+  },
+  {
+   "kind": "cont",
+   "line": "and forgotten!"
+  },
+  {
+   "kind": "para",
+   "line": "My Resurrection"
+  },
+  {
+   "kind": "line",
+   "line": "Machine will make"
+  },
+  {
+   "kind": "cont",
+   "line": "that #MON live"
+  },
+  {
+   "kind": "cont",
+   "line": "once more!"
+  }
+ ],
+ "CinnabarLabFossilRoomScientist1TakesFossilText": [
+  {
+   "kind": "text",
+   "line": "So! You hurry and"
+  },
+  {
+   "kind": "line",
+   "line": "give me that!"
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER> handed"
+  },
+  {
+   "kind": "line",
+   "line": "over @"
+  },
+  {
+   "kind": "text",
+   "line": "!"
+  }
+ ],
+ "CinnabarLabFossilRoomScientist1GoForAWalkText2": [
+  {
+   "kind": "text",
+   "line": "I take a little"
+  },
+  {
+   "kind": "line",
+   "line": "time!"
+  },
+  {
+   "kind": "para",
+   "line": "You go for walk a"
+  },
+  {
+   "kind": "line",
+   "line": "little while!"
+  }
+ ],
+ "CinnabarLabFossilRoomScientist1ComeAgainText": [
+  {
+   "kind": "text",
+   "line": "Aiyah! You come"
+  },
+  {
+   "kind": "line",
+   "line": "again!"
+  }
+ ]
+}

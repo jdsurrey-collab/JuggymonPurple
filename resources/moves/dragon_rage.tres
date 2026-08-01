@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_yhwfc"]
+
+[resource]
+script = ExtResource("1_yhwfc")
+move_name = "DRAGON_RAGE"
+move_id = 82
+display_name = "DRAGON RAGE"
+move_type = "DRAGON"
+power = 1
+accuracy = 100
+pp = 10
+effect = "SPECIAL_DAMAGE_EFFECT"

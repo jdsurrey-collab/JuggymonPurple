@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/zubat.png" id="1_k6riy"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_8tw4a"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/zubat.png" id="3_dhr1x"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_8faw7"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="5_5xiyf"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="6_tm78u"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="7_j1juq"]
+[ext_resource type="Resource" path="res://resources/moves/wing_attack.tres" id="8_jfnb0"]
+[ext_resource type="Resource" path="res://resources/moves/haze.tres" id="9_fr5t3"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_4t1m8"]
+[ext_resource type="Resource" path="res://resources/moves/leech_life.tres" id="11_rvcg3"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_ei8tv"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="13_bx20s"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="14_wonui"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_gr7sq"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_beu8b"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_r5c80"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_7j6oy"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="19_5hkdg"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="20_mnoue"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="21_s31ug"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="22_84asd"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="23_ol27p"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="24_8mjxu"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="25_xj1go"]
+
+[sub_resource type="Resource" id="Resource_s13f1"]
+script = ExtResource("2_8tw4a")
+method = "LEVEL"
+target = "GOLBAT"
+level = 22
+item = ""
+
+[sub_resource type="Resource" id="Resource_rd2ab"]
+script = ExtResource("4_8faw7")
+level = 10
+move = ExtResource("5_5xiyf")
+
+[sub_resource type="Resource" id="Resource_gph0q"]
+script = ExtResource("4_8faw7")
+level = 15
+move = ExtResource("6_tm78u")
+
+[sub_resource type="Resource" id="Resource_tdqo1"]
+script = ExtResource("4_8faw7")
+level = 21
+move = ExtResource("7_j1juq")
+
+[sub_resource type="Resource" id="Resource_ty6ly"]
+script = ExtResource("4_8faw7")
+level = 28
+move = ExtResource("8_jfnb0")
+
+[sub_resource type="Resource" id="Resource_8fr8h"]
+script = ExtResource("4_8faw7")
+level = 36
+move = ExtResource("9_fr5t3")
+
+[resource]
+script = ExtResource("12_ei8tv")
+species_name = "ZUBAT"
+dex = 41
+index = 107
+slug = "zubat"
+label = "Zubat"
+category = "BAT"
+height_ft = 2
+height_in = 7
+weight_tenths_lb = 170
+hp = 40
+attack = 45
+defense = 35
+speed = 55
+special = 40
+type1 = "POISON"
+type2 = "FLYING"
+catch_rate = 255
+base_exp = 54
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_4t1m8")]([ExtResource("11_rvcg3")])
+learnset = Array[ExtResource("4_8faw7")]([SubResource("Resource_rd2ab"), SubResource("Resource_gph0q"), SubResource("Resource_tdqo1"), SubResource("Resource_ty6ly"), SubResource("Resource_8fr8h")])
+tmhm = Array[ExtResource("10_4t1m8")]([ExtResource("13_bx20s"), ExtResource("14_wonui"), ExtResource("15_gr7sq"), ExtResource("16_beu8b"), ExtResource("17_r5c80"), ExtResource("18_7j6oy"), ExtResource("19_5hkdg"), ExtResource("20_mnoue"), ExtResource("21_s31ug"), ExtResource("22_84asd"), ExtResource("23_ol27p"), ExtResource("24_8mjxu"), ExtResource("25_xj1go")])
+evolutions = Array[ExtResource("2_8tw4a")]([SubResource("Resource_s13f1")])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Forms colonies in", "perpetually dark", "places. Uses", "ultrasonic waves", "to identify and", "approach targets"])
+front_sprite = ExtResource("3_dhr1x")
+back_sprite = ExtResource("1_k6riy")

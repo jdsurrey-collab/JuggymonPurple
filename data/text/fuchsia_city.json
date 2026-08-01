@@ -1,0 +1,266 @@
+{
+ "FuchsiaCityYoungster1Text": [
+  {
+   "kind": "text",
+   "line": "Have you tried"
+  },
+  {
+   "kind": "line",
+   "line": "the SAFARI GAME?"
+  },
+  {
+   "kind": "cont",
+   "line": "Some #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "hide there alone."
+  }
+ ],
+ "FuchsiaCityGamblerText": [
+  {
+   "kind": "text",
+   "line": "SAFARI ZONE keeps"
+  },
+  {
+   "kind": "line",
+   "line": "a menagerie"
+  },
+  {
+   "kind": "cont",
+   "line": "before its gate."
+  },
+  {
+   "kind": "para",
+   "line": "Beyond lies the"
+  },
+  {
+   "kind": "line",
+   "line": "SAFARI GAME, for"
+  },
+  {
+   "kind": "cont",
+   "line": "trapping #MON."
+  }
+ ],
+ "FuchsiaCityErikText": [
+  {
+   "kind": "text",
+   "line": "ERIK: Where is"
+  },
+  {
+   "kind": "line",
+   "line": "SARA? I swore"
+  },
+  {
+   "kind": "cont",
+   "line": "I'd meet her here."
+  }
+ ],
+ "FuchsiaCityYoungster2Text": [
+  {
+   "kind": "text",
+   "line": "That item ball"
+  },
+  {
+   "kind": "line",
+   "line": "yonder is truly"
+  },
+  {
+   "kind": "cont",
+   "line": "a #MON."
+  }
+ ],
+ "FuchsiaCityPokemonText": [
+  {
+   "kind": "text",
+   "line": "!"
+  }
+ ],
+ "FuchsiaCitySignText": [
+  {
+   "kind": "text",
+   "line": "FUCHSIA CITY"
+  },
+  {
+   "kind": "line",
+   "line": "Behold! The"
+  },
+  {
+   "kind": "cont",
+   "line": "Faded Pink"
+  }
+ ],
+ "FuchsiaCitySafariGameSignText": [
+  {
+   "kind": "text",
+   "line": "SAFARI GAME"
+  },
+  {
+   "kind": "line",
+   "line": "#MON-U-CATCH!"
+  }
+ ],
+ "FuchsiaCityWardensHomeSignText": [
+  {
+   "kind": "text",
+   "line": "SAFARI ZONE"
+  },
+  {
+   "kind": "line",
+   "line": "WARDEN's HOME"
+  }
+ ],
+ "FuchsiaCitySafariZoneSignText": [
+  {
+   "kind": "text",
+   "line": "#MON PARADISE"
+  },
+  {
+   "kind": "line",
+   "line": "SAFARI ZONE"
+  }
+ ],
+ "FuchsiaCityGymSignText": [
+  {
+   "kind": "text",
+   "line": "FUCHSIA CITY"
+  },
+  {
+   "kind": "line",
+   "line": "#MON GYM"
+  },
+  {
+   "kind": "cont",
+   "line": "LEADER: KOGA"
+  },
+  {
+   "kind": "para",
+   "line": "The Plague"
+  },
+  {
+   "kind": "line",
+   "line": "Ninja Master"
+  }
+ ],
+ "FuchsiaCityChanseySignText": [
+  {
+   "kind": "text",
+   "line": "Name: CHANSEY"
+  },
+  {
+   "kind": "para",
+   "line": "Catching one is"
+  },
+  {
+   "kind": "line",
+   "line": "left to fate."
+  }
+ ],
+ "FuchsiaCityVoltorbSignText": [
+  {
+   "kind": "text",
+   "line": "Name: VOLTORB"
+  },
+  {
+   "kind": "para",
+   "line": "The very image"
+  },
+  {
+   "kind": "line",
+   "line": "of a # BALL."
+  }
+ ],
+ "FuchsiaCityKangaskhanSignText": [
+  {
+   "kind": "text",
+   "line": "Name: KANGASKHAN"
+  },
+  {
+   "kind": "para",
+   "line": "A mournful #MON"
+  },
+  {
+   "kind": "line",
+   "line": "that shelters its"
+  },
+  {
+   "kind": "cont",
+   "line": "young in a pouch"
+  },
+  {
+   "kind": "cont",
+   "line": "on its belly."
+  }
+ ],
+ "FuchsiaCitySlowpokeSignText": [
+  {
+   "kind": "text",
+   "line": "Name: SLOWPOKE"
+  },
+  {
+   "kind": "para",
+   "line": "Gentle and ever"
+  },
+  {
+   "kind": "line",
+   "line": "so slow moving."
+  }
+ ],
+ "FuchsiaCityLaprasSignText": [
+  {
+   "kind": "text",
+   "line": "Name: LAPRAS"
+  },
+  {
+   "kind": "para",
+   "line": "A.K.A. the king"
+  },
+  {
+   "kind": "line",
+   "line": "of dark waters."
+  }
+ ],
+ "FuchsiaCityFossilSignOmanyteText": [
+  {
+   "kind": "text",
+   "line": "Name: OMANYTE"
+  },
+  {
+   "kind": "para",
+   "line": "A #MON dragged"
+  },
+  {
+   "kind": "line",
+   "line": "back from death,"
+  },
+  {
+   "kind": "cont",
+   "line": "by fossil rite."
+  }
+ ],
+ "FuchsiaCityFossilSignKabutoText": [
+  {
+   "kind": "text",
+   "line": "Name: KABUTO"
+  },
+  {
+   "kind": "para",
+   "line": "A #MON dragged"
+  },
+  {
+   "kind": "line",
+   "line": "back from death,"
+  },
+  {
+   "kind": "cont",
+   "line": "by fossil rite."
+  }
+ ],
+ "FuchsiaCityFossilSignUndeterminedText": [
+  {
+   "kind": "text",
+   "line": "..."
+  }
+ ]
+}

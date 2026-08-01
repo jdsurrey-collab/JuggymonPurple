@@ -1,0 +1,87 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=29 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/igglybuff.png" id="1_jhodo"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_jp85o"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/igglybuff.png" id="3_ptoo1"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_pyekp"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="5_oxd4u"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="6_nsdgn"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="7_wi0gq"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="8_xn5xy"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="9_yk3ds"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_1wnnk"]
+[ext_resource type="Resource" path="res://resources/moves/sing.tres" id="11_nkfrm"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_d1eye"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_kfqwj"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_vay35"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_sdpem"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_xbyx4"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_wigm4"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_deaok"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_5p8u3"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_jw13u"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="21_3cuem"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="22_gdyg3"]
+
+[sub_resource type="Resource" id="Resource_0y7x2"]
+script = ExtResource("2_jp85o")
+method = "LEVEL"
+target = "JIGGLYPUFF"
+level = 12
+item = ""
+
+[sub_resource type="Resource" id="Resource_l8hbh"]
+script = ExtResource("4_pyekp")
+level = 4
+move = ExtResource("5_oxd4u")
+
+[sub_resource type="Resource" id="Resource_rxugt"]
+script = ExtResource("4_pyekp")
+level = 8
+move = ExtResource("6_nsdgn")
+
+[sub_resource type="Resource" id="Resource_ks1ap"]
+script = ExtResource("4_pyekp")
+level = 9
+move = ExtResource("7_wi0gq")
+
+[sub_resource type="Resource" id="Resource_83fc8"]
+script = ExtResource("4_pyekp")
+level = 15
+move = ExtResource("8_xn5xy")
+
+[sub_resource type="Resource" id="Resource_8yikx"]
+script = ExtResource("4_pyekp")
+level = 24
+move = ExtResource("9_yk3ds")
+
+[resource]
+script = ExtResource("12_d1eye")
+species_name = "IGGLYBUFF"
+dex = 174
+index = 134
+slug = "igglybuff"
+label = "Igglybuff"
+category = "BALLOON"
+height_ft = 1
+height_in = 0
+weight_tenths_lb = 20
+hp = 90
+attack = 30
+defense = 15
+speed = 15
+special = 30
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 170
+base_exp = 39
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("10_1wnnk")]([ExtResource("11_nkfrm")])
+learnset = Array[ExtResource("4_pyekp")]([SubResource("Resource_l8hbh"), SubResource("Resource_rxugt"), SubResource("Resource_ks1ap"), SubResource("Resource_83fc8"), SubResource("Resource_8yikx")])
+tmhm = Array[ExtResource("10_1wnnk")]([ExtResource("13_kfqwj"), ExtResource("14_vay35"), ExtResource("15_sdpem"), ExtResource("16_xbyx4"), ExtResource("17_wigm4"), ExtResource("18_deaok"), ExtResource("19_5p8u3"), ExtResource("20_jw13u"), ExtResource("9_yk3ds"), ExtResource("21_3cuem"), ExtResource("22_gdyg3")])
+evolutions = Array[ExtResource("2_jp85o")]([SubResource("Resource_0y7x2")])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its song is soft", "and short, and", "those who hear it", "sleep more deeply", "than they meant."])
+front_sprite = ExtResource("3_ptoo1")
+back_sprite = ExtResource("1_jhodo")

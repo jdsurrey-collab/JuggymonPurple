@@ -1,0 +1,418 @@
+{
+ "Route17Biker1BattleText": [
+  {
+   "kind": "text",
+   "line": "No coin comes from"
+  },
+  {
+   "kind": "line",
+   "line": "beating children!"
+  }
+ ],
+ "Route17Biker1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Burned"
+  },
+  {
+   "kind": "line",
+   "line": "clean out!"
+  }
+ ],
+ "Route17Biker1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Fine plunder lies"
+  },
+  {
+   "kind": "line",
+   "line": "scattered along"
+  },
+  {
+   "kind": "cont",
+   "line": "CYCLING ROAD!"
+  }
+ ],
+ "Route17Biker2BattleText": [
+  {
+   "kind": "text",
+   "line": "What do you want,"
+  },
+  {
+   "kind": "line",
+   "line": "little one?"
+  }
+ ],
+ "Route17Biker2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Whoo!"
+  }
+ ],
+ "Route17Biker2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I could've knocked"
+  },
+  {
+   "kind": "line",
+   "line": "you clean off"
+  },
+  {
+   "kind": "cont",
+   "line": "this road!"
+  }
+ ],
+ "Route17Biker3BattleText": [
+  {
+   "kind": "text",
+   "line": "Bound for"
+  },
+  {
+   "kind": "line",
+   "line": "FUCHSIA, are you?"
+  }
+ ],
+ "Route17Biker3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Crash and"
+  },
+  {
+   "kind": "line",
+   "line": "burn!"
+  }
+ ],
+ "Route17Biker3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I love the race"
+  },
+  {
+   "kind": "line",
+   "line": "downhill!"
+  }
+ ],
+ "Route17Biker4BattleText": [
+  {
+   "kind": "text",
+   "line": "We are BIKERs!"
+  },
+  {
+   "kind": "line",
+   "line": "Stars of the"
+  },
+  {
+   "kind": "cont",
+   "line": "highway of ruin!"
+  }
+ ],
+ "Route17Biker4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Smoked!"
+  }
+ ],
+ "Route17Biker4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Do you seek out"
+  },
+  {
+   "kind": "line",
+   "line": "misadventure?"
+  }
+ ],
+ "Route17Biker5BattleText": [
+  {
+   "kind": "text",
+   "line": "Let VOLTORB"
+  },
+  {
+   "kind": "line",
+   "line": "shock you numb!"
+  }
+ ],
+ "Route17Biker5EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Grounded"
+  },
+  {
+   "kind": "line",
+   "line": "out cold!"
+  }
+ ],
+ "Route17Biker5AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I found my"
+  },
+  {
+   "kind": "line",
+   "line": "VOLTORB in the"
+  },
+  {
+   "kind": "cont",
+   "line": "ruined POWER"
+  },
+  {
+   "kind": "cont",
+   "line": "PLANT."
+  }
+ ],
+ "Route17Biker6BattleText": [
+  {
+   "kind": "text",
+   "line": "My #MON won't"
+  },
+  {
+   "kind": "line",
+   "line": "evolve! Why not?"
+  }
+ ],
+ "Route17Biker6EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Why,"
+  },
+  {
+   "kind": "line",
+   "line": "you wretch!"
+  }
+ ],
+ "Route17Biker6AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Perhaps some"
+  },
+  {
+   "kind": "line",
+   "line": "#MON need a"
+  },
+  {
+   "kind": "cont",
+   "line": "STONE to change."
+  }
+ ],
+ "Route17Biker7BattleText": [
+  {
+   "kind": "text",
+   "line": "I could use some"
+  },
+  {
+   "kind": "line",
+   "line": "grim exercise!"
+  }
+ ],
+ "Route17Biker7EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Whew!"
+  },
+  {
+   "kind": "line",
+   "line": "Fine, dark work!"
+  }
+ ],
+ "Route17Biker7AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm sure I've"
+  },
+  {
+   "kind": "line",
+   "line": "shed weight there!"
+  }
+ ],
+ "Route17Biker8BattleText": [
+  {
+   "kind": "text",
+   "line": "Be a rebel, then!"
+  }
+ ],
+ "Route17Biker8EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Aaaargh!"
+  }
+ ],
+ "Route17Biker8AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Stand ready to"
+  },
+  {
+   "kind": "line",
+   "line": "fight for what"
+  },
+  {
+   "kind": "cont",
+   "line": "you believe!"
+  }
+ ],
+ "Route17Biker9BattleText": [
+  {
+   "kind": "text",
+   "line": "Fine BIKE! How"
+  },
+  {
+   "kind": "line",
+   "line": "does it handle?"
+  }
+ ],
+ "Route17Biker9EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Shoot!"
+  }
+ ],
+ "Route17Biker9AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "This slope makes"
+  },
+  {
+   "kind": "line",
+   "line": "it hard to steer!"
+  }
+ ],
+ "Route17Biker10BattleText": [
+  {
+   "kind": "text",
+   "line": "Away, child!"
+  },
+  {
+   "kind": "line",
+   "line": "I am spent!"
+  }
+ ],
+ "Route17Biker10EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Are you"
+  },
+  {
+   "kind": "line",
+   "line": "satisfied now?"
+  }
+ ],
+ "Route17Biker10AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I must catch a"
+  },
+  {
+   "kind": "line",
+   "line": "few dark hours!"
+  }
+ ],
+ "Route17NoticeSign1Text": [
+  {
+   "kind": "text",
+   "line": "It's a notice!"
+  },
+  {
+   "kind": "para",
+   "line": "Beware discarded"
+  },
+  {
+   "kind": "line",
+   "line": "belongings!"
+  }
+ ],
+ "Route17TrainerTips1Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Every #MON is"
+  },
+  {
+   "kind": "line",
+   "line": "singular."
+  },
+  {
+   "kind": "para",
+   "line": "Even kin of same"
+  },
+  {
+   "kind": "line",
+   "line": "type and level"
+  },
+  {
+   "kind": "cont",
+   "line": "grow at their own"
+  },
+  {
+   "kind": "cont",
+   "line": "grim pace."
+  }
+ ],
+ "Route17TrainerTips2Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Hold A or B to"
+  },
+  {
+   "kind": "line",
+   "line": "stand fast upon"
+  },
+  {
+   "kind": "cont",
+   "line": "a slope."
+  }
+ ],
+ "Route17SignText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 17"
+  },
+  {
+   "kind": "line",
+   "line": "CELADON CITY -"
+  },
+  {
+   "kind": "cont",
+   "line": "FUCHSIA CITY"
+  }
+ ],
+ "Route17NoticeSign2Text": [
+  {
+   "kind": "text",
+   "line": "It's a notice!"
+  },
+  {
+   "kind": "para",
+   "line": "Don't waste your"
+  },
+  {
+   "kind": "line",
+   "line": "chance, throw #"
+  },
+  {
+   "kind": "cont",
+   "line": "BALLs instead!"
+  }
+ ],
+ "Route17CyclingRoadEndsSignText": [
+  {
+   "kind": "text",
+   "line": "CYCLING ROAD"
+  },
+  {
+   "kind": "line",
+   "line": "The slope ends"
+  },
+  {
+   "kind": "cont",
+   "line": "here."
+  }
+ ]
+}

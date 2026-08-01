@@ -1,0 +1,54 @@
+{
+ "ViridianNicknameHouseBaldingGuyText": [
+  {
+   "kind": "text",
+   "line": "Naming the living"
+  },
+  {
+   "kind": "line",
+   "line": "is sweet. Naming"
+  },
+  {
+   "kind": "cont",
+   "line": "the dead, harder."
+  },
+  {
+   "kind": "para",
+   "line": "Simple names"
+  },
+  {
+   "kind": "line",
+   "line": "are easiest to"
+  },
+  {
+   "kind": "cont",
+   "line": "carve on stone."
+  }
+ ],
+ "ViridianNicknameHouseLittleGirlText": [
+  {
+   "kind": "text",
+   "line": "My father loved"
+  },
+  {
+   "kind": "line",
+   "line": "#MON too."
+  }
+ ],
+ "ViridianNicknameHouseSpearowText": [
+  {
+   "kind": "text",
+   "line": "SPEARY: Tetweet!"
+  }
+ ],
+ "ViridianNicknameHouseSpearySignText": [
+  {
+   "kind": "text",
+   "line": "SPEAROW"
+  },
+  {
+   "kind": "line",
+   "line": "Name: SPEARY"
+  }
+ ]
+}

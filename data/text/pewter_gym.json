@@ -1,0 +1,56 @@
+{
+ "PewterGymBrockPreBattleText": [
+  {
+   "kind": "text",
+   "line": "I am BROCK,"
+  },
+  {
+   "kind": "line",
+   "line": "PEWTER's GYM"
+  },
+  {
+   "kind": "cont",
+   "line": "LEADER."
+  },
+  {
+   "kind": "para",
+   "line": "I believe only"
+  },
+  {
+   "kind": "line",
+   "line": "in defenses that"
+  },
+  {
+   "kind": "cont",
+   "line": "outlast the flesh."
+  },
+  {
+   "kind": "para",
+   "line": "Stone endures."
+  },
+  {
+   "kind": "line",
+   "line": "My #MON are"
+  },
+  {
+   "kind": "cont",
+   "line": "all of stone."
+  },
+  {
+   "kind": "para",
+   "line": "Still you'd"
+  },
+  {
+   "kind": "line",
+   "line": "challenge me?"
+  },
+  {
+   "kind": "cont",
+   "line": "Then show me"
+  },
+  {
+   "kind": "cont",
+   "line": "what breaks first."
+  }
+ ]
+}

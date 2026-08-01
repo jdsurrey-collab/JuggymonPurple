@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=50 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/rhydon.png" id="1_xl73e"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_wyvlj"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/rhydon.png" id="3_r81sr"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_h2hsy"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="5_frjlk"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="6_6uplp"]
+[ext_resource type="Resource" path="res://resources/moves/fury_attack.tres" id="7_w6age"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="8_drg30"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="9_xiufh"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="10_8x5we"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_gve8h"]
+[ext_resource type="Resource" path="res://resources/moves/horn_attack.tres" id="12_arsm5"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_52h1q"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="14_3ff6c"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="15_pberj"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_e21o5"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="17_4gahp"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_7ai62"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="19_4ws4x"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="20_amw7s"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="21_684qe"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="22_5piul"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="23_i3k4f"]
+[ext_resource type="Resource" path="res://resources/moves/pay_day.tres" id="24_cstxg"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="25_jbuo5"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="26_hasan"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="27_dj0se"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="28_hpthx"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="29_hlq26"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="30_gpy4r"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="31_ev0ij"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="32_de1vf"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="33_4dbsy"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="34_74sry"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="35_qe8vh"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="36_sop0i"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="37_ktejc"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="38_epjit"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="39_b8m7e"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="40_ar0ep"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="41_6as2j"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="42_n8ty3"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="43_sb0lb"]
+
+[sub_resource type="Resource" id="Resource_oln8s"]
+script = ExtResource("4_h2hsy")
+level = 30
+move = ExtResource("5_frjlk")
+
+[sub_resource type="Resource" id="Resource_nvv3k"]
+script = ExtResource("4_h2hsy")
+level = 35
+move = ExtResource("6_6uplp")
+
+[sub_resource type="Resource" id="Resource_wxvi6"]
+script = ExtResource("4_h2hsy")
+level = 40
+move = ExtResource("7_w6age")
+
+[sub_resource type="Resource" id="Resource_7a6xd"]
+script = ExtResource("4_h2hsy")
+level = 48
+move = ExtResource("8_drg30")
+
+[sub_resource type="Resource" id="Resource_ikyq3"]
+script = ExtResource("4_h2hsy")
+level = 55
+move = ExtResource("9_xiufh")
+
+[sub_resource type="Resource" id="Resource_ankld"]
+script = ExtResource("4_h2hsy")
+level = 64
+move = ExtResource("10_8x5we")
+
+[resource]
+script = ExtResource("13_52h1q")
+species_name = "RHYDON"
+dex = 112
+index = 1
+slug = "rhydon"
+label = "Rhydon"
+category = "DRILL"
+height_ft = 6
+height_in = 3
+weight_tenths_lb = 2650
+hp = 105
+attack = 130
+defense = 120
+speed = 40
+special = 45
+type1 = "GROUND"
+type2 = "ROCK"
+catch_rate = 60
+base_exp = 204
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("11_gve8h")]([ExtResource("12_arsm5"), ExtResource("5_frjlk"), ExtResource("6_6uplp"), ExtResource("7_w6age")])
+learnset = Array[ExtResource("4_h2hsy")]([SubResource("Resource_oln8s"), SubResource("Resource_nvv3k"), SubResource("Resource_wxvi6"), SubResource("Resource_7a6xd"), SubResource("Resource_ikyq3"), SubResource("Resource_ankld")])
+tmhm = Array[ExtResource("11_gve8h")]([ExtResource("14_3ff6c"), ExtResource("15_pberj"), ExtResource("16_e21o5"), ExtResource("8_drg30"), ExtResource("17_4gahp"), ExtResource("10_8x5we"), ExtResource("18_7ai62"), ExtResource("19_4ws4x"), ExtResource("20_amw7s"), ExtResource("21_684qe"), ExtResource("22_5piul"), ExtResource("23_i3k4f"), ExtResource("24_cstxg"), ExtResource("25_jbuo5"), ExtResource("26_hasan"), ExtResource("27_dj0se"), ExtResource("28_hpthx"), ExtResource("29_hlq26"), ExtResource("30_gpy4r"), ExtResource("31_ev0ij"), ExtResource("32_de1vf"), ExtResource("33_4dbsy"), ExtResource("34_74sry"), ExtResource("35_qe8vh"), ExtResource("36_sop0i"), ExtResource("37_ktejc"), ExtResource("38_epjit"), ExtResource("39_b8m7e"), ExtResource("40_ar0ep"), ExtResource("41_6as2j"), ExtResource("42_n8ty3"), ExtResource("43_sb0lb")])
+evolutions = Array[ExtResource("2_wyvlj")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Protected by an", "armor-like hide,", "it is capable of", "living in molten", "lava of 3,600", "degrees"])
+front_sprite = ExtResource("3_r81sr")
+back_sprite = ExtResource("1_xl73e")

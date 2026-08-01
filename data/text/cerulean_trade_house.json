@@ -1,0 +1,28 @@
+{
+ "CeruleanTradeHouseGrannyText": [
+  {
+   "kind": "text",
+   "line": "My husband's fond"
+  },
+  {
+   "kind": "line",
+   "line": "of trading #MON."
+  },
+  {
+   "kind": "para",
+   "line": "If you collect"
+  },
+  {
+   "kind": "line",
+   "line": "them too, would"
+  },
+  {
+   "kind": "cont",
+   "line": "you trade with"
+  },
+  {
+   "kind": "cont",
+   "line": "an old man?"
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "SilphCo5FSilphWorkerMThatsYouRightText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET rages"
+  },
+  {
+   "kind": "line",
+   "line": "over some"
+  },
+  {
+   "kind": "cont",
+   "line": "intruder about."
+  },
+  {
+   "kind": "cont",
+   "line": "That's you, then?"
+  }
+ ],
+ "SilphCo5FSilphWorkerMYoureOurHeroText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET has"
+  },
+  {
+   "kind": "line",
+   "line": "fled! You are"
+  },
+  {
+   "kind": "cont",
+   "line": "our savior! Thank"
+  },
+  {
+   "kind": "cont",
+   "line": "you, truly!"
+  }
+ ],
+ "SilphCo5FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "I heard some"
+  },
+  {
+   "kind": "line",
+   "line": "child wandered"
+  },
+  {
+   "kind": "cont",
+   "line": "in here."
+  }
+ ],
+ "SilphCo5FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Boom!"
+  }
+ ],
+ "SilphCo5FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Foolish, to pick"
+  },
+  {
+   "kind": "line",
+   "line": "a fight with"
+  },
+  {
+   "kind": "cont",
+   "line": "TEAM ROCKET!"
+  }
+ ],
+ "SilphCo5FScientistBattleText": [
+  {
+   "kind": "text",
+   "line": "We study #"
+  },
+  {
+   "kind": "line",
+   "line": "BALL craft on"
+  },
+  {
+   "kind": "cont",
+   "line": "this very floor!"
+  }
+ ],
+ "SilphCo5FScientistEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Dang!"
+  },
+  {
+   "kind": "line",
+   "line": "Blast it!"
+  }
+ ],
+ "SilphCo5FScientistAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "We labored on the"
+  },
+  {
+   "kind": "line",
+   "line": "perfect #"
+  },
+  {
+   "kind": "cont",
+   "line": "BALL, to snare"
+  },
+  {
+   "kind": "cont",
+   "line": "anything at all!"
+  }
+ ],
+ "SilphCo5FRockerBattleText": [
+  {
+   "kind": "text",
+   "line": "Whaaat? No child"
+  },
+  {
+   "kind": "line",
+   "line": "ought to be"
+  },
+  {
+   "kind": "cont",
+   "line": "here at all!"
+  }
+ ]
+}

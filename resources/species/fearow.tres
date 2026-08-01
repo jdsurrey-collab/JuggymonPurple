@@ -1,0 +1,86 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/fearow.png" id="1_efdnj"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_ix2tn"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/fearow.png" id="3_j10oq"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_b8svs"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="5_hu7pj"]
+[ext_resource type="Resource" path="res://resources/moves/fury_attack.tres" id="6_0ed5s"]
+[ext_resource type="Resource" path="res://resources/moves/mirror_move.tres" id="7_6v8fl"]
+[ext_resource type="Resource" path="res://resources/moves/drill_peck.tres" id="8_0sqnu"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="9_nejxi"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_ycmx1"]
+[ext_resource type="Resource" path="res://resources/moves/peck.tres" id="11_rcls6"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="12_gfyqy"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_f8du6"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="14_3044i"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="15_0e0re"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_2nhv6"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_1n1y6"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_vmhyd"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="19_m2f6l"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="20_qbenj"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="21_4eyha"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="22_87dwj"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="23_sxtrj"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="24_f248x"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="25_4ln1y"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_kh6oi"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="27_go28a"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="28_pqckb"]
+
+[sub_resource type="Resource" id="Resource_0mifo"]
+script = ExtResource("4_b8svs")
+level = 9
+move = ExtResource("5_hu7pj")
+
+[sub_resource type="Resource" id="Resource_wxble"]
+script = ExtResource("4_b8svs")
+level = 15
+move = ExtResource("6_0ed5s")
+
+[sub_resource type="Resource" id="Resource_kocuu"]
+script = ExtResource("4_b8svs")
+level = 25
+move = ExtResource("7_6v8fl")
+
+[sub_resource type="Resource" id="Resource_ivkkk"]
+script = ExtResource("4_b8svs")
+level = 34
+move = ExtResource("8_0sqnu")
+
+[sub_resource type="Resource" id="Resource_3ooql"]
+script = ExtResource("4_b8svs")
+level = 43
+move = ExtResource("9_nejxi")
+
+[resource]
+script = ExtResource("13_f8du6")
+species_name = "FEAROW"
+dex = 22
+index = 35
+slug = "fearow"
+label = "Fearow"
+category = "BEAK"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 840
+hp = 65
+attack = 90
+defense = 65
+speed = 100
+special = 61
+type1 = "NORMAL"
+type2 = "FLYING"
+catch_rate = 90
+base_exp = 162
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_ycmx1")]([ExtResource("11_rcls6"), ExtResource("12_gfyqy"), ExtResource("5_hu7pj")])
+learnset = Array[ExtResource("4_b8svs")]([SubResource("Resource_0mifo"), SubResource("Resource_wxble"), SubResource("Resource_kocuu"), SubResource("Resource_ivkkk"), SubResource("Resource_3ooql")])
+tmhm = Array[ExtResource("10_ycmx1")]([ExtResource("14_3044i"), ExtResource("15_0e0re"), ExtResource("16_2nhv6"), ExtResource("17_1n1y6"), ExtResource("18_vmhyd"), ExtResource("19_m2f6l"), ExtResource("20_qbenj"), ExtResource("21_4eyha"), ExtResource("22_87dwj"), ExtResource("23_sxtrj"), ExtResource("24_f248x"), ExtResource("25_4ln1y"), ExtResource("26_kh6oi"), ExtResource("27_go28a"), ExtResource("28_pqckb")])
+evolutions = Array[ExtResource("2_ix2tn")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_BIRD"
+dex_text = Array[String](["With its huge and", "magnificent wings,", "it can keep aloft", "without ever", "having to land", "for rest"])
+front_sprite = ExtResource("3_j10oq")
+back_sprite = ExtResource("1_efdnj")

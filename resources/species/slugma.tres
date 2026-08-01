@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/slugma.png" id="1_npidh"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_mxxjc"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/slugma.png" id="3_sdhjl"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_cvkba"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="5_p6w23"]
+[ext_resource type="Resource" path="res://resources/moves/rock_throw.tres" id="6_sx2ug"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="7_aoidh"]
+[ext_resource type="Resource" path="res://resources/moves/amnesia.tres" id="8_ph20b"]
+[ext_resource type="Resource" path="res://resources/moves/flamethrower.tres" id="9_tapxe"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="10_q82wc"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="11_ewkiy"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="12_e7gua"]
+[ext_resource type="Resource" path="res://resources/moves/smog.tres" id="13_cyjqe"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_2a2de"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_chler"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_yq7rx"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_p4wnu"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_qv4jx"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_mns4s"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_lmbpm"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_6sd7e"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_lv5jy"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="23_7qwd6"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="24_oqqy7"]
+
+[sub_resource type="Resource" id="Resource_dhiby"]
+script = ExtResource("2_mxxjc")
+method = "LEVEL"
+target = "MAGCARGO"
+level = 38
+item = ""
+
+[sub_resource type="Resource" id="Resource_ilo57"]
+script = ExtResource("4_cvkba")
+level = 8
+move = ExtResource("5_p6w23")
+
+[sub_resource type="Resource" id="Resource_7olfh"]
+script = ExtResource("4_cvkba")
+level = 15
+move = ExtResource("6_sx2ug")
+
+[sub_resource type="Resource" id="Resource_1dn8a"]
+script = ExtResource("4_cvkba")
+level = 22
+move = ExtResource("7_aoidh")
+
+[sub_resource type="Resource" id="Resource_x87vo"]
+script = ExtResource("4_cvkba")
+level = 29
+move = ExtResource("8_ph20b")
+
+[sub_resource type="Resource" id="Resource_r5j5a"]
+script = ExtResource("4_cvkba")
+level = 36
+move = ExtResource("9_tapxe")
+
+[sub_resource type="Resource" id="Resource_s2yk5"]
+script = ExtResource("4_cvkba")
+level = 43
+move = ExtResource("10_q82wc")
+
+[sub_resource type="Resource" id="Resource_3n5hw"]
+script = ExtResource("4_cvkba")
+level = 50
+move = ExtResource("11_ewkiy")
+
+[resource]
+script = ExtResource("14_2a2de")
+species_name = "SLUGMA"
+dex = 211
+index = 214
+slug = "slugma"
+label = "Slugma"
+category = "LAVA"
+height_ft = 2
+height_in = 4
+weight_tenths_lb = 770
+hp = 40
+attack = 40
+defense = 40
+speed = 20
+special = 55
+type1 = "FIRE"
+type2 = "FIRE"
+catch_rate = 190
+base_exp = 78
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("12_e7gua")]([ExtResource("13_cyjqe")])
+learnset = Array[ExtResource("4_cvkba")]([SubResource("Resource_ilo57"), SubResource("Resource_7olfh"), SubResource("Resource_1dn8a"), SubResource("Resource_x87vo"), SubResource("Resource_r5j5a"), SubResource("Resource_s2yk5"), SubResource("Resource_3n5hw")])
+tmhm = Array[ExtResource("12_e7gua")]([ExtResource("15_chler"), ExtResource("16_yq7rx"), ExtResource("17_p4wnu"), ExtResource("18_qv4jx"), ExtResource("19_mns4s"), ExtResource("20_lmbpm"), ExtResource("21_6sd7e"), ExtResource("22_lv5jy"), ExtResource("23_7qwd6"), ExtResource("11_ewkiy"), ExtResource("24_oqqy7")])
+evolutions = Array[ExtResource("2_mxxjc")]([SubResource("Resource_dhiby")])
+palette = "PAL_REDMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Should its blood", "cool, it hardens", "and it dies.", "So it never", "sleeps, and never", "may rest at all."])
+front_sprite = ExtResource("3_sdhjl")
+back_sprite = ExtResource("1_npidh")

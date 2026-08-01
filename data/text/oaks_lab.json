@@ -1,0 +1,912 @@
+{
+ "OaksLabRivalGrampsIsntAroundText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Well."
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>. The old"
+  },
+  {
+   "kind": "cont",
+   "line": "man's not here."
+  }
+ ],
+ "OaksLabRivalGoAheadAndChooseText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: I shan't"
+  },
+  {
+   "kind": "line",
+   "line": "begrudge you the"
+  },
+  {
+   "kind": "cont",
+   "line": "creature, cousin."
+  },
+  {
+   "kind": "para",
+   "line": "Go on, then- take"
+  },
+  {
+   "kind": "line",
+   "line": "your due, <PLAYER>."
+  }
+ ],
+ "OaksLabRivalMyPokemonLooksStrongerText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Mark me-"
+  },
+  {
+   "kind": "line",
+   "line": "mine shall prove"
+  },
+  {
+   "kind": "cont",
+   "line": "the finer beast."
+  }
+ ],
+ "OaksLabThoseArePokeBallsText": [
+  {
+   "kind": "text",
+   "line": "Those are #"
+  },
+  {
+   "kind": "line",
+   "line": "BALLs. Prisons"
+  },
+  {
+   "kind": "cont",
+   "line": "for #MON!"
+  }
+ ],
+ "OaksLabYouWantEeveeText": [
+  {
+   "kind": "text",
+   "line": "So, you would have"
+  },
+  {
+   "kind": "line",
+   "line": "this final #MON,"
+  },
+  {
+   "kind": "cont",
+   "line": "EEVEE?"
+  }
+ ],
+ "OaksLabMonEnergeticText": [
+  {
+   "kind": "text",
+   "line": "This #MON has"
+  },
+  {
+   "kind": "line",
+   "line": "such fight in it!"
+  }
+ ],
+ "OaksLabReceivedMonText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> claimed"
+  },
+  {
+   "kind": "line",
+   "line": "a @"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "OaksLabLastMonText": [
+  {
+   "kind": "text",
+   "line": "That's OAK's very"
+  },
+  {
+   "kind": "line",
+   "line": "last #MON!"
+  }
+ ],
+ "OaksLabOak1WhichPokemonDoYouWantText": [
+  {
+   "kind": "text",
+   "line": "OAK: Now, <PLAYER>,"
+  },
+  {
+   "kind": "line",
+   "line": "which #MON will"
+  },
+  {
+   "kind": "cont",
+   "line": "you have?"
+  }
+ ],
+ "OaksLabOak1YourPokemonCanFightText": [
+  {
+   "kind": "text",
+   "line": "OAK: Should a wild"
+  },
+  {
+   "kind": "line",
+   "line": "#MON appear,"
+  },
+  {
+   "kind": "cont",
+   "line": "your #MON must"
+  },
+  {
+   "kind": "cont",
+   "line": "fight for you!"
+  }
+ ],
+ "OaksLabOak1RaiseYourYoungPokemonText": [
+  {
+   "kind": "text",
+   "line": "OAK: <PLAYER>,"
+  },
+  {
+   "kind": "line",
+   "line": "temper your young"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON in fire,"
+  },
+  {
+   "kind": "cont",
+   "line": "as blacksmiths do!"
+  }
+ ],
+ "OaksLabOak1DeliverParcelText": [
+  {
+   "kind": "text",
+   "line": "OAK: Ah, <PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "How fares my old"
+  },
+  {
+   "kind": "line",
+   "line": "companion?"
+  },
+  {
+   "kind": "para",
+   "line": "It seems to have"
+  },
+  {
+   "kind": "line",
+   "line": "taken to you well."
+  },
+  {
+   "kind": "para",
+   "line": "You must have a"
+  },
+  {
+   "kind": "line",
+   "line": "true gift for"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON, I daresay."
+  },
+  {
+   "kind": "para",
+   "line": "What's this, then?"
+  },
+  {
+   "kind": "line",
+   "line": "You've brought me"
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER> delivered"
+  },
+  {
+   "kind": "line",
+   "line": "OAK's PARCEL.@"
+  }
+ ],
+ "OaksLabOak1ParcelThanksText": [
+  {
+   "kind": "para",
+   "line": "At last. The"
+  },
+  {
+   "kind": "line",
+   "line": "custom # BALL"
+  },
+  {
+   "kind": "cont",
+   "line": "I've awaited."
+  },
+  {
+   "kind": "cont",
+   "line": "My thanks, child."
+  }
+ ],
+ "OaksLabOak1PokemonAroundTheWorldText": [
+  {
+   "kind": "text",
+   "line": "#MON round the"
+  },
+  {
+   "kind": "line",
+   "line": "world await you,"
+  },
+  {
+   "kind": "cont",
+   "line": "for good or ill."
+  }
+ ],
+ "OaksLabOak1ReceivedPokeballsText": [
+  {
+   "kind": "text",
+   "line": "OAK: Sight alone"
+  },
+  {
+   "kind": "line",
+   "line": "won't tell you"
+  },
+  {
+   "kind": "cont",
+   "line": "what a #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "truly is."
+  },
+  {
+   "kind": "para",
+   "line": "You must trap"
+  },
+  {
+   "kind": "line",
+   "line": "them, use these"
+  },
+  {
+   "kind": "cont",
+   "line": "to snare the wild"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER> got 5"
+  },
+  {
+   "kind": "line",
+   "line": "# BALLs!@"
+  }
+ ],
+ "OaksLabGivePokeballsExplanationText": [
+  {
+   "kind": "para",
+   "line": "When a wild"
+  },
+  {
+   "kind": "line",
+   "line": "#MON appears,"
+  },
+  {
+   "kind": "cont",
+   "line": "it's yours to take."
+  },
+  {
+   "kind": "para",
+   "line": "Just cast a #"
+  },
+  {
+   "kind": "line",
+   "line": "BALL and pray it"
+  },
+  {
+   "kind": "line",
+   "line": "does not break!"
+  },
+  {
+   "kind": "para",
+   "line": "It will not"
+  },
+  {
+   "kind": "line",
+   "line": "always hold."
+  },
+  {
+   "kind": "para",
+   "line": "A strong #MON"
+  },
+  {
+   "kind": "line",
+   "line": "may yet break free."
+  },
+  {
+   "kind": "cont",
+   "line": "Fortune decides."
+  }
+ ],
+ "OaksLabOak1ComeSeeMeSometimesText": [
+  {
+   "kind": "text",
+   "line": "OAK: Visit me"
+  },
+  {
+   "kind": "line",
+   "line": "now and then."
+  },
+  {
+   "kind": "para",
+   "line": "I would know how"
+  },
+  {
+   "kind": "line",
+   "line": "your #DEX fares"
+  },
+  {
+   "kind": "cont",
+   "line": "as time wears on."
+  }
+ ],
+ "OaksLabOak1HowIsYourPokedexComingText": [
+  {
+   "kind": "text",
+   "line": "OAK: Still alive,"
+  },
+  {
+   "kind": "line",
+   "line": "I see. How fares"
+  },
+  {
+   "kind": "cont",
+   "line": "your #DEX now?"
+  },
+  {
+   "kind": "cont",
+   "line": "Let me have"
+  },
+  {
+   "kind": "cont",
+   "line": "a look."
+  }
+ ],
+ "OaksLabPokedexText": [
+  {
+   "kind": "text",
+   "line": "A grand tome,"
+  },
+  {
+   "kind": "line",
+   "line": "they claim, yet"
+  },
+  {
+   "kind": "cont",
+   "line": "its pages are bare."
+  }
+ ],
+ "OaksLabOak2Text": [
+  {
+   "kind": "text",
+   "line": "?"
+  }
+ ],
+ "OaksLabGirlText": [
+  {
+   "kind": "text",
+   "line": "PROF.OAK is the"
+  },
+  {
+   "kind": "line",
+   "line": "foremost mind on"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON living."
+  },
+  {
+   "kind": "para",
+   "line": "Many trainers"
+  },
+  {
+   "kind": "line",
+   "line": "still hold him"
+  },
+  {
+   "kind": "cont",
+   "line": "in high regard!"
+  }
+ ],
+ "OaksLabRivalFedUpWithWaitingText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Old man!"
+  },
+  {
+   "kind": "line",
+   "line": "I've had my fill"
+  },
+  {
+   "kind": "cont",
+   "line": "of waiting!"
+  }
+ ],
+ "OaksLabOakLastBallText": [
+  {
+   "kind": "text",
+   "line": "OAK: Then it is"
+  },
+  {
+   "kind": "line",
+   "line": "dead. Truly dead."
+  },
+  {
+   "kind": "para",
+   "line": "No physician"
+  },
+  {
+   "kind": "line",
+   "line": "mends what I see"
+  },
+  {
+   "kind": "cont",
+   "line": "upon that floor."
+  },
+  {
+   "kind": "para",
+   "line": "One vessel yet"
+  },
+  {
+   "kind": "line",
+   "line": "remains upon my"
+  },
+  {
+   "kind": "cont",
+   "line": "table. Take it."
+  },
+  {
+   "kind": "para",
+   "line": "Grieve later,"
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>. The road"
+  },
+  {
+   "kind": "cont",
+   "line": "does not wait."
+  }
+ ],
+ "OaksLabOakChooseMonText": [
+  {
+   "kind": "text",
+   "line": "OAK: <RIVAL>?"
+  },
+  {
+   "kind": "line",
+   "line": "Let me think..."
+  },
+  {
+   "kind": "para",
+   "line": "Ah, yes, indeed-"
+  },
+  {
+   "kind": "line",
+   "line": "I did bid you"
+  },
+  {
+   "kind": "cont",
+   "line": "come. Do wait."
+  },
+  {
+   "kind": "para",
+   "line": "Here, <PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "One #MON"
+  },
+  {
+   "kind": "line",
+   "line": "remains to me."
+  },
+  {
+   "kind": "para",
+   "line": "Heh."
+  },
+  {
+   "kind": "para",
+   "line": "It waits within"
+  },
+  {
+   "kind": "line",
+   "line": "that # BALL."
+  },
+  {
+   "kind": "para",
+   "line": "In youth, I too"
+  },
+  {
+   "kind": "line",
+   "line": "was a serious"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON trainer."
+  },
+  {
+   "kind": "para",
+   "line": "Now in my dotage,"
+  },
+  {
+   "kind": "line",
+   "line": "but one remains,"
+  },
+  {
+   "kind": "cont",
+   "line": "yet it is yours"
+  },
+  {
+   "kind": "cont",
+   "line": "for the taking."
+  }
+ ],
+ "OaksLabRivalWhatAboutMeText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Hey!"
+  },
+  {
+   "kind": "line",
+   "line": "Gramps, what of"
+  },
+  {
+   "kind": "cont",
+   "line": "me, then?"
+  }
+ ],
+ "OaksLabOakBePatientText": [
+  {
+   "kind": "text",
+   "line": "OAK: Patience."
+  },
+  {
+   "kind": "line",
+   "line": "<RIVAL>, you too"
+  },
+  {
+   "kind": "cont",
+   "line": "shall have one."
+  }
+ ],
+ "OaksLabOakDontGoAwayYetText": [
+  {
+   "kind": "text",
+   "line": "OAK: Wait! Don't"
+  },
+  {
+   "kind": "line",
+   "line": "wander off yet!"
+  }
+ ],
+ "OaksLabRivalIllTakeThisOneText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Fine. This"
+  },
+  {
+   "kind": "line",
+   "line": "one shall do!"
+  }
+ ],
+ "OaksLabRivalReceivedMonText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL> claimed"
+  },
+  {
+   "kind": "line",
+   "line": "a @"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "OaksLabRivalIllTakeYouOnText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Hold,"
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>. Let us"
+  },
+  {
+   "kind": "cont",
+   "line": "measure our"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON's worth."
+  },
+  {
+   "kind": "para",
+   "line": "Come, then,"
+  },
+  {
+   "kind": "line",
+   "line": "I'll have you on!"
+  }
+ ],
+ "OaksLabRivalIPickedTheWrongPokemonText": [
+  {
+   "kind": "text",
+   "line": "WHAT?"
+  },
+  {
+   "kind": "line",
+   "line": "Unthinkable!"
+  },
+  {
+   "kind": "cont",
+   "line": "I chose the"
+  },
+  {
+   "kind": "cont",
+   "line": "wrong #MON!"
+  }
+ ],
+ "OaksLabRivalAmIGreatOrWhatText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Well? Am"
+  },
+  {
+   "kind": "line",
+   "line": "I not superior?"
+  }
+ ],
+ "OaksLabRivalSmellYouLaterText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Very well."
+  },
+  {
+   "kind": "line",
+   "line": "I'll blood my"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON in battle,"
+  },
+  {
+   "kind": "cont",
+   "line": "and harden it."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>. Old man."
+  },
+  {
+   "kind": "line",
+   "line": "We'll meet again."
+  }
+ ],
+ "OaksLabRivalGrampsText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Old man!"
+  }
+ ],
+ "OaksLabRivalWhatDidYouCallMeForText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Why have"
+  },
+  {
+   "kind": "line",
+   "line": "you called me?"
+  }
+ ],
+ "OaksLabOakIHaveARequestText": [
+  {
+   "kind": "text",
+   "line": "OAK: Ah, yes. I"
+  },
+  {
+   "kind": "line",
+   "line": "have a request"
+  },
+  {
+   "kind": "cont",
+   "line": "of you both."
+  }
+ ],
+ "OaksLabOakMyInventionPokedexText": [
+  {
+   "kind": "text",
+   "line": "On yonder desk"
+  },
+  {
+   "kind": "line",
+   "line": "lies my creation,"
+  },
+  {
+   "kind": "cont",
+   "line": "the #DEX!"
+  },
+  {
+   "kind": "para",
+   "line": "It records all"
+  },
+  {
+   "kind": "line",
+   "line": "#MON you have"
+  },
+  {
+   "kind": "cont",
+   "line": "seen or snared."
+  },
+  {
+   "kind": "para",
+   "line": "A marvel of"
+  },
+  {
+   "kind": "line",
+   "line": "our age."
+  }
+ ],
+ "OaksLabOakGotPokedexText": [
+  {
+   "kind": "text",
+   "line": "OAK: <PLAYER>,"
+  },
+  {
+   "kind": "line",
+   "line": "<RIVAL>, take these"
+  },
+  {
+   "kind": "cont",
+   "line": "and go now."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER> got"
+  },
+  {
+   "kind": "line",
+   "line": "#DEX from OAK!@"
+  }
+ ],
+ "OaksLabOakThatWasMyDreamText": [
+  {
+   "kind": "text",
+   "line": "To chronicle all"
+  },
+  {
+   "kind": "line",
+   "line": "the #MON in"
+  },
+  {
+   "kind": "cont",
+   "line": "this cruel"
+  },
+  {
+   "kind": "cont",
+   "line": "world..."
+  },
+  {
+   "kind": "para",
+   "line": "That was my dream."
+  },
+  {
+   "kind": "para",
+   "line": "But I am too old."
+  },
+  {
+   "kind": "line",
+   "line": "My time has passed."
+  },
+  {
+   "kind": "para",
+   "line": "So the burden now"
+  },
+  {
+   "kind": "line",
+   "line": "falls to you both-"
+  },
+  {
+   "kind": "cont",
+   "line": "finish what I"
+  },
+  {
+   "kind": "cont",
+   "line": "could not."
+  },
+  {
+   "kind": "para",
+   "line": "Go, then."
+  },
+  {
+   "kind": "line",
+   "line": "Waste no more time."
+  },
+  {
+   "kind": "para",
+   "line": "This may be the"
+  },
+  {
+   "kind": "line",
+   "line": "last great work"
+  },
+  {
+   "kind": "cont",
+   "line": "of my life."
+  }
+ ],
+ "OaksLabRivalLeaveItAllToMeText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Very"
+  },
+  {
+   "kind": "line",
+   "line": "well, old man."
+  },
+  {
+   "kind": "cont",
+   "line": "Leave it to me."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>. I shan't"
+  },
+  {
+   "kind": "line",
+   "line": "pretend I need"
+  },
+  {
+   "kind": "cont",
+   "line": "the likes of you."
+  },
+  {
+   "kind": "para",
+   "line": "I'll borrow a"
+  },
+  {
+   "kind": "line",
+   "line": "TOWN MAP from"
+  },
+  {
+   "kind": "cont",
+   "line": "my sister, too."
+  },
+  {
+   "kind": "para",
+   "line": "And I'll see she"
+  },
+  {
+   "kind": "line",
+   "line": "never lends you"
+  },
+  {
+   "kind": "cont",
+   "line": "one, <PLAYER>."
+  }
+ ],
+ "OaksLabScientistText": [
+  {
+   "kind": "text",
+   "line": "I study #MON"
+  },
+  {
+   "kind": "line",
+   "line": "as OAK's AIDE now."
+  }
+ ]
+}

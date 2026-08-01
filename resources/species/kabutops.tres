@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=40 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/kabutops.png" id="1_1ayac"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_g5f6t"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/kabutops.png" id="3_syc1y"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_2lgsn"]
+[ext_resource type="Resource" path="res://resources/moves/absorb.tres" id="5_gpxco"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="6_niobm"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="7_dwevm"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="8_cad62"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_tirrg"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="10_6e0xi"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="11_fon1x"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_h2i25"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="13_h63u3"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="14_ct0ng"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="15_08cfm"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_es25g"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="17_sp23y"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_hjywg"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_nbipw"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="20_pd1ce"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="21_xpjgk"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="22_hd2av"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="23_dm5u1"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="24_gql8r"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="25_jmyqn"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="26_jepux"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="27_ot7jx"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="28_is3v8"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="29_7wegl"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="30_03102"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="31_ep2b2"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="32_sy8gt"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="33_1sy56"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="34_waikw"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="35_cwq0x"]
+
+[sub_resource type="Resource" id="Resource_rtaeq"]
+script = ExtResource("4_2lgsn")
+level = 34
+move = ExtResource("5_gpxco")
+
+[sub_resource type="Resource" id="Resource_djfm7"]
+script = ExtResource("4_2lgsn")
+level = 39
+move = ExtResource("6_niobm")
+
+[sub_resource type="Resource" id="Resource_witlb"]
+script = ExtResource("4_2lgsn")
+level = 46
+move = ExtResource("7_dwevm")
+
+[sub_resource type="Resource" id="Resource_aqeeu"]
+script = ExtResource("4_2lgsn")
+level = 53
+move = ExtResource("8_cad62")
+
+[resource]
+script = ExtResource("12_h2i25")
+species_name = "KABUTOPS"
+dex = 141
+index = 91
+slug = "kabutops"
+label = "Kabutops"
+category = "SHELLFISH"
+height_ft = 4
+height_in = 3
+weight_tenths_lb = 890
+hp = 60
+attack = 115
+defense = 105
+speed = 80
+special = 70
+type1 = "ROCK"
+type2 = "WATER"
+catch_rate = 45
+base_exp = 201
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("9_tirrg")]([ExtResource("10_6e0xi"), ExtResource("11_fon1x"), ExtResource("5_gpxco")])
+learnset = Array[ExtResource("4_2lgsn")]([SubResource("Resource_rtaeq"), SubResource("Resource_djfm7"), SubResource("Resource_witlb"), SubResource("Resource_aqeeu")])
+tmhm = Array[ExtResource("9_tirrg")]([ExtResource("13_h63u3"), ExtResource("14_ct0ng"), ExtResource("15_08cfm"), ExtResource("16_es25g"), ExtResource("17_sp23y"), ExtResource("18_hjywg"), ExtResource("19_nbipw"), ExtResource("20_pd1ce"), ExtResource("21_xpjgk"), ExtResource("22_hd2av"), ExtResource("23_dm5u1"), ExtResource("24_gql8r"), ExtResource("25_jmyqn"), ExtResource("26_jepux"), ExtResource("27_ot7jx"), ExtResource("28_is3v8"), ExtResource("29_7wegl"), ExtResource("30_03102"), ExtResource("31_ep2b2"), ExtResource("32_sy8gt"), ExtResource("33_1sy56"), ExtResource("34_waikw"), ExtResource("35_cwq0x")])
+evolutions = Array[ExtResource("2_g5f6t")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_HELIX"
+dex_text = Array[String](["Its sleek shape is", "perfect for swim-", "ming. It slashes", "prey with its", "claws and drains", "the body fluids"])
+front_sprite = ExtResource("3_syc1y")
+back_sprite = ExtResource("1_1ayac")

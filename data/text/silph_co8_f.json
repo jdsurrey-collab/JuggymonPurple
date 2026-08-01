@@ -1,0 +1,120 @@
+{
+ "SilphCo8FSilphWorkerMSilphIsFinishedText": [
+  {
+   "kind": "text",
+   "line": "I wonder if SILPH"
+  },
+  {
+   "kind": "line",
+   "line": "is done for, now..."
+  }
+ ],
+ "SilphCo8FSilphWorkerMThanksForSavingUsText": [
+  {
+   "kind": "text",
+   "line": "My thanks, for"
+  },
+  {
+   "kind": "line",
+   "line": "saving us all!"
+  }
+ ],
+ "SilphCo8FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "That's as far as"
+  },
+  {
+   "kind": "line",
+   "line": "you shall go!"
+  }
+ ],
+ "SilphCo8FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Not"
+  },
+  {
+   "kind": "line",
+   "line": "enough grit!"
+  }
+ ],
+ "SilphCo8FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "If you don't turn"
+  },
+  {
+   "kind": "line",
+   "line": "back, I'll call"
+  },
+  {
+   "kind": "cont",
+   "line": "for backup!"
+  }
+ ],
+ "SilphCo8FScientistBattleText": [
+  {
+   "kind": "text",
+   "line": "You're causing us"
+  },
+  {
+   "kind": "line",
+   "line": "such grief!"
+  }
+ ],
+ "SilphCo8FScientistEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Huh?"
+  },
+  {
+   "kind": "line",
+   "line": "I have lost?"
+  }
+ ],
+ "SilphCo8FScientistAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "So tell me, what"
+  },
+  {
+   "kind": "line",
+   "line": "of SILPH's grim"
+  },
+  {
+   "kind": "cont",
+   "line": "maze?"
+  }
+ ],
+ "SilphCo8FRocket2BattleText": [
+  {
+   "kind": "text",
+   "line": "I am one of the 4"
+  },
+  {
+   "kind": "line",
+   "line": "ROCKET BROTHERS!"
+  }
+ ],
+ "SilphCo8FRocket2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Whoo!"
+  },
+  {
+   "kind": "line",
+   "line": "Oh, brothers!"
+  }
+ ],
+ "SilphCo8FRocket2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I leave you to"
+  },
+  {
+   "kind": "line",
+   "line": "my brothers now!"
+  }
+ ]
+}

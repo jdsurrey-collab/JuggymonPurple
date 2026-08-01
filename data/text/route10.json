@@ -1,0 +1,246 @@
+{
+ "Route10SuperNerd1BattleText": [
+  {
+   "kind": "text",
+   "line": "A #MANIAC too,"
+  },
+  {
+   "kind": "line",
+   "line": "are you? Care"
+  },
+  {
+   "kind": "cont",
+   "line": "to see my grim"
+  },
+  {
+   "kind": "cont",
+   "line": "collection?"
+  }
+ ],
+ "Route10SuperNerd1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Humph. I'm not"
+  },
+  {
+   "kind": "line",
+   "line": "angry!"
+  }
+ ],
+ "Route10SuperNerd1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I keep rarer"
+  },
+  {
+   "kind": "line",
+   "line": "#MON at home."
+  }
+ ],
+ "Route10Hiker1BattleText": [
+  {
+   "kind": "text",
+   "line": "Ha-hahah-ah-ha!"
+  }
+ ],
+ "Route10Hiker1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ha-haha!"
+  },
+  {
+   "kind": "line",
+   "line": "Not laughing!"
+  },
+  {
+   "kind": "cont",
+   "line": "Ha-hay fever!"
+  },
+  {
+   "kind": "cont",
+   "line": "Haha-ha-choo!"
+  }
+ ],
+ "Route10Hiker1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Haha-ha-choo!"
+  },
+  {
+   "kind": "line",
+   "line": "Ha-choo!"
+  },
+  {
+   "kind": "cont",
+   "line": "Snort! Snivel!"
+  }
+ ],
+ "Route10SuperNerd2BattleText": [
+  {
+   "kind": "text",
+   "line": "Care to see"
+  },
+  {
+   "kind": "line",
+   "line": "my #MON, child?"
+  }
+ ],
+ "Route10SuperNerd2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh no."
+  },
+  {
+   "kind": "line",
+   "line": "My #MON..."
+  }
+ ],
+ "Route10SuperNerd2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I don't care for"
+  },
+  {
+   "kind": "line",
+   "line": "you, beating me."
+  }
+ ],
+ "Route10CooltrainerF1BattleText": [
+  {
+   "kind": "text",
+   "line": "I've visited GYMs"
+  },
+  {
+   "kind": "line",
+   "line": "more than once."
+  },
+  {
+   "kind": "cont",
+   "line": "Lost, every"
+  },
+  {
+   "kind": "cont",
+   "line": "single time."
+  }
+ ],
+ "Route10CooltrainerF1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ohh."
+  },
+  {
+   "kind": "line",
+   "line": "Failed again!"
+  }
+ ],
+ "Route10CooltrainerF1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I've seen some"
+  },
+  {
+   "kind": "line",
+   "line": "#MANIACs"
+  },
+  {
+   "kind": "cont",
+   "line": "lurking about."
+  }
+ ],
+ "Route10Hiker2BattleText": [
+  {
+   "kind": "text",
+   "line": "Ah, this thin"
+  },
+  {
+   "kind": "line",
+   "line": "mountain air!"
+  }
+ ],
+ "Route10Hiker2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "That"
+  },
+  {
+   "kind": "line",
+   "line": "cleared my head,"
+  },
+  {
+   "kind": "cont",
+   "line": "some."
+  }
+ ],
+ "Route10Hiker2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I feel heavy"
+  },
+  {
+   "kind": "line",
+   "line": "on this air."
+  }
+ ],
+ "Route10CooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "I feel faint"
+  },
+  {
+   "kind": "line",
+   "line": "from this cruel"
+  },
+  {
+   "kind": "cont",
+   "line": "climb."
+  }
+ ],
+ "Route10CooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm"
+  },
+  {
+   "kind": "line",
+   "line": "not up to this!"
+  }
+ ],
+ "Route10CooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "The #MON here"
+  },
+  {
+   "kind": "line",
+   "line": "are so stout."
+  },
+  {
+   "kind": "cont",
+   "line": "Somewhere, they"
+  },
+  {
+   "kind": "cont",
+   "line": "say, a pink one"
+  },
+  {
+   "kind": "cont",
+   "line": "blooms like a"
+  },
+  {
+   "kind": "cont",
+   "line": "flower."
+  }
+ ],
+ "Route10RockTunnelSignText": [
+  {
+   "kind": "text",
+   "line": "ROCK TUNNEL"
+  }
+ ],
+ "Route10PowerPlantSignText": [
+  {
+   "kind": "text",
+   "line": "POWER PLANT"
+  }
+ ]
+}

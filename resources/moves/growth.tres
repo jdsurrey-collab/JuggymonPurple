@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_qwmmt"]
+
+[resource]
+script = ExtResource("1_qwmmt")
+move_name = "GROWTH"
+move_id = 74
+display_name = "GROWTH"
+move_type = "NORMAL"
+power = 0
+accuracy = 100
+pp = 40
+effect = "SPECIAL_UP1_EFFECT"

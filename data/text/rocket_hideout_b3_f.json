@@ -1,0 +1,86 @@
+{
+ "RocketHideoutB3FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "Cease meddling in"
+  },
+  {
+   "kind": "line",
+   "line": "TEAM ROCKET's"
+  },
+  {
+   "kind": "cont",
+   "line": "affairs!"
+  }
+ ],
+ "RocketHideoutB3FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oof!"
+  },
+  {
+   "kind": "line",
+   "line": "Taken down!"
+  }
+ ],
+ "RocketHideoutB3FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "SILPH SCOPE?"
+  },
+  {
+   "kind": "line",
+   "line": "The device the"
+  },
+  {
+   "kind": "cont",
+   "line": "BOSS stole. It"
+  },
+  {
+   "kind": "cont",
+   "line": "lies here still."
+  }
+ ],
+ "RocketHideout3BattleText": [
+  {
+   "kind": "text",
+   "line": "We heard from"
+  },
+  {
+   "kind": "line",
+   "line": "above that you"
+  },
+  {
+   "kind": "cont",
+   "line": "were coming!"
+  }
+ ],
+ "RocketHideout3EndBattleText3": [
+  {
+   "kind": "text",
+   "line": "What?"
+  },
+  {
+   "kind": "line",
+   "line": "I lost? No!"
+  }
+ ],
+ "RocketHide3AfterBattleText3": [
+  {
+   "kind": "text",
+   "line": "Go on, then!"
+  },
+  {
+   "kind": "line",
+   "line": "But you need the"
+  },
+  {
+   "kind": "cont",
+   "line": "LIFT KEY to run"
+  },
+  {
+   "kind": "cont",
+   "line": "the elevator!"
+  }
+ ]
+}

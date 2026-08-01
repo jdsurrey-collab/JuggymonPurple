@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_skr6l"]
+
+[resource]
+script = ExtResource("1_skr6l")
+move_name = "RAGE"
+move_id = 99
+display_name = "RAGE"
+move_type = "NORMAL"
+power = 20
+accuracy = 100
+pp = 20
+effect = "RAGE_EFFECT"

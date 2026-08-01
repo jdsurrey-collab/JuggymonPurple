@@ -1,0 +1,32 @@
+{
+ "CeladonMansionRoofHouseHikerText": [
+  {
+   "kind": "text",
+   "line": "I know all there"
+  },
+  {
+   "kind": "line",
+   "line": "is of the world"
+  },
+  {
+   "kind": "cont",
+   "line": "of #MON within"
+  },
+  {
+   "kind": "cont",
+   "line": "your GAME BOY!"
+  },
+  {
+   "kind": "para",
+   "line": "Gather your kin"
+  },
+  {
+   "kind": "line",
+   "line": "and trade your"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON away!"
+  }
+ ]
+}

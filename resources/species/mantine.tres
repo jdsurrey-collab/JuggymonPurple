@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=37 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/mantine.png" id="1_m1tok"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_cwfi7"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/mantine.png" id="3_6r5bv"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_hgsno"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="5_byedj"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="6_aw5qr"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="7_7y883"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="8_f7ia8"]
+[ext_resource type="Resource" path="res://resources/moves/wing_attack.tres" id="9_0r13d"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="10_mkqe3"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_jysgd"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_qob6w"]
+[ext_resource type="Resource" path="res://resources/moves/bubble.tres" id="13_e3nid"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_v8dmb"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_bfun3"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_gjrrt"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_wsoup"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_locm3"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_xy66l"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_nlna3"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_le2jt"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_dt4dd"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="23_ddeyy"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="24_8u2rn"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="25_ewgwo"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="26_udm84"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="27_yywv5"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="28_njwvs"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="29_mpk5f"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="30_bb4im"]
+
+[sub_resource type="Resource" id="Resource_k1g0i"]
+script = ExtResource("4_hgsno")
+level = 10
+move = ExtResource("5_byedj")
+
+[sub_resource type="Resource" id="Resource_cy48r"]
+script = ExtResource("4_hgsno")
+level = 18
+move = ExtResource("6_aw5qr")
+
+[sub_resource type="Resource" id="Resource_beif7"]
+script = ExtResource("4_hgsno")
+level = 25
+move = ExtResource("7_7y883")
+
+[sub_resource type="Resource" id="Resource_p2i44"]
+script = ExtResource("4_hgsno")
+level = 32
+move = ExtResource("8_f7ia8")
+
+[sub_resource type="Resource" id="Resource_0sjku"]
+script = ExtResource("4_hgsno")
+level = 40
+move = ExtResource("9_0r13d")
+
+[sub_resource type="Resource" id="Resource_cosqf"]
+script = ExtResource("4_hgsno")
+level = 49
+move = ExtResource("10_mkqe3")
+
+[resource]
+script = ExtResource("14_v8dmb")
+species_name = "MANTINE"
+dex = 219
+index = 222
+slug = "mantine"
+label = "Mantine"
+category = "KITE"
+height_ft = 6
+height_in = 11
+weight_tenths_lb = 4850
+hp = 65
+attack = 40
+defense = 70
+speed = 70
+special = 110
+type1 = "WATER"
+type2 = "FLYING"
+catch_rate = 25
+base_exp = 168
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("11_jysgd")]([ExtResource("12_qob6w"), ExtResource("13_e3nid")])
+learnset = Array[ExtResource("4_hgsno")]([SubResource("Resource_k1g0i"), SubResource("Resource_cy48r"), SubResource("Resource_beif7"), SubResource("Resource_p2i44"), SubResource("Resource_0sjku"), SubResource("Resource_cosqf")])
+tmhm = Array[ExtResource("11_jysgd")]([ExtResource("15_bfun3"), ExtResource("16_gjrrt"), ExtResource("17_wsoup"), ExtResource("18_locm3"), ExtResource("19_xy66l"), ExtResource("20_nlna3"), ExtResource("21_le2jt"), ExtResource("22_dt4dd"), ExtResource("23_ddeyy"), ExtResource("24_8u2rn"), ExtResource("6_aw5qr"), ExtResource("25_ewgwo"), ExtResource("26_udm84"), ExtResource("27_yywv5"), ExtResource("28_njwvs"), ExtResource("29_mpk5f"), ExtResource("30_bb4im")])
+evolutions = Array[ExtResource("2_cwfi7")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["It leaps the", "waves and glides", "a hundred yards.", "Sailors take it", "for an omen, and", "argue which."])
+front_sprite = ExtResource("3_6r5bv")
+back_sprite = ExtResource("1_m1tok")

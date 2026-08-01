@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_2yn72"]
+
+[resource]
+script = ExtResource("1_2yn72")
+move_name = "RECOVER"
+move_id = 105
+display_name = "RECOVER"
+move_type = "NORMAL"
+power = 0
+accuracy = 100
+pp = 20
+effect = "HEAL_EFFECT"

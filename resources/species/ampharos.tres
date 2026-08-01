@@ -1,0 +1,89 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/ampharos.png" id="1_7be2i"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_2jsb6"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/ampharos.png" id="3_pymui"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_mg5hj"]
+[ext_resource type="Resource" path="res://resources/moves/thundershock.tres" id="5_p53mf"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="6_txc0h"]
+[ext_resource type="Resource" path="res://resources/moves/cotton_spore.tres" id="7_55o6e"]
+[ext_resource type="Resource" path="res://resources/moves/thunderpunch.tres" id="8_f07lq"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="9_tcc12"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="10_namdt"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_608oj"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_kqw7b"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="13_j3n80"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_k2dg2"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_tnso3"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_ls6sb"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_iclw4"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_655l7"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_c2bmr"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_lypc6"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_5is1u"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_qlcn3"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="23_gu2bu"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="24_cgggw"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="25_fsqvi"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="26_fpifc"]
+
+[sub_resource type="Resource" id="Resource_hqtsl"]
+script = ExtResource("4_mg5hj")
+level = 9
+move = ExtResource("5_p53mf")
+
+[sub_resource type="Resource" id="Resource_lfvct"]
+script = ExtResource("4_mg5hj")
+level = 18
+move = ExtResource("6_txc0h")
+
+[sub_resource type="Resource" id="Resource_7f80m"]
+script = ExtResource("4_mg5hj")
+level = 27
+move = ExtResource("7_55o6e")
+
+[sub_resource type="Resource" id="Resource_dchr0"]
+script = ExtResource("4_mg5hj")
+level = 30
+move = ExtResource("8_f07lq")
+
+[sub_resource type="Resource" id="Resource_lxa35"]
+script = ExtResource("4_mg5hj")
+level = 42
+move = ExtResource("9_tcc12")
+
+[sub_resource type="Resource" id="Resource_cgetk"]
+script = ExtResource("4_mg5hj")
+level = 57
+move = ExtResource("10_namdt")
+
+[resource]
+script = ExtResource("14_k2dg2")
+species_name = "AMPHAROS"
+dex = 181
+index = 160
+slug = "ampharos"
+label = "Ampharos"
+category = "LIGHT"
+height_ft = 4
+height_in = 7
+weight_tenths_lb = 1360
+hp = 90
+attack = 75
+defense = 75
+speed = 55
+special = 102
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 45
+base_exp = 194
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_608oj")]([ExtResource("12_kqw7b"), ExtResource("13_j3n80"), ExtResource("5_p53mf"), ExtResource("6_txc0h")])
+learnset = Array[ExtResource("4_mg5hj")]([SubResource("Resource_hqtsl"), SubResource("Resource_lfvct"), SubResource("Resource_7f80m"), SubResource("Resource_dchr0"), SubResource("Resource_lxa35"), SubResource("Resource_cgetk")])
+tmhm = Array[ExtResource("11_608oj")]([ExtResource("15_tnso3"), ExtResource("16_ls6sb"), ExtResource("17_iclw4"), ExtResource("18_655l7"), ExtResource("19_c2bmr"), ExtResource("20_lypc6"), ExtResource("21_5is1u"), ExtResource("22_qlcn3"), ExtResource("23_gu2bu"), ExtResource("10_namdt"), ExtResource("6_txc0h"), ExtResource("24_cgggw"), ExtResource("25_fsqvi"), ExtResource("26_fpifc")])
+evolutions = Array[ExtResource("2_2jsb6")]([])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its tail was once", "a beacon for", "ships. Now it", "burns for no one", "and burns still."])
+front_sprite = ExtResource("3_pymui")
+back_sprite = ExtResource("1_7be2i")

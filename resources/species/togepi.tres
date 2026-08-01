@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=27 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/togepi.png" id="1_gtcbs"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_3bcug"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/togepi.png" id="3_gmmhg"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_kn2ck"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="5_yulb6"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="6_sksvi"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="7_y4fif"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="8_xwbt2"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="9_5amtn"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_e1vpr"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_fmuc4"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_px3ht"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_j5x5l"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="14_v37jx"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="15_jebnn"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="16_i18bw"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="17_2sxiy"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="18_43768"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="19_bckr2"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="20_es5fo"]
+
+[sub_resource type="Resource" id="Resource_vvhss"]
+script = ExtResource("2_3bcug")
+method = "LEVEL"
+target = "TOGETIC"
+level = 20
+item = ""
+
+[sub_resource type="Resource" id="Resource_n73bk"]
+script = ExtResource("4_kn2ck")
+level = 7
+move = ExtResource("5_yulb6")
+
+[sub_resource type="Resource" id="Resource_e57qo"]
+script = ExtResource("4_kn2ck")
+level = 8
+move = ExtResource("6_sksvi")
+
+[sub_resource type="Resource" id="Resource_7dtms"]
+script = ExtResource("4_kn2ck")
+level = 15
+move = ExtResource("7_y4fif")
+
+[sub_resource type="Resource" id="Resource_pk7hr"]
+script = ExtResource("4_kn2ck")
+level = 24
+move = ExtResource("8_xwbt2")
+
+[sub_resource type="Resource" id="Resource_q87pi"]
+script = ExtResource("4_kn2ck")
+level = 38
+move = ExtResource("9_5amtn")
+
+[resource]
+script = ExtResource("11_fmuc4")
+species_name = "TOGEPI"
+dex = 175
+index = 135
+slug = "togepi"
+label = "Togepi"
+category = "SPIKE BALL"
+height_ft = 1
+height_in = 0
+weight_tenths_lb = 30
+hp = 35
+attack = 20
+defense = 65
+speed = 20
+special = 52
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 190
+base_exp = 74
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("10_e1vpr")]([ExtResource("6_sksvi")])
+learnset = Array[ExtResource("4_kn2ck")]([SubResource("Resource_n73bk"), SubResource("Resource_e57qo"), SubResource("Resource_7dtms"), SubResource("Resource_pk7hr"), SubResource("Resource_q87pi")])
+tmhm = Array[ExtResource("10_e1vpr")]([ExtResource("12_px3ht"), ExtResource("13_j5x5l"), ExtResource("14_v37jx"), ExtResource("15_jebnn"), ExtResource("16_i18bw"), ExtResource("17_2sxiy"), ExtResource("18_43768"), ExtResource("19_bckr2"), ExtResource("8_xwbt2"), ExtResource("20_es5fo"), ExtResource("9_5amtn")])
+evolutions = Array[ExtResource("2_3bcug")]([SubResource("Resource_vvhss")])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["The shell is said", "to hold good", "fortune. None has", "opened one to see", "and lived pleased."])
+front_sprite = ExtResource("3_gmmhg")
+back_sprite = ExtResource("1_gtcbs")

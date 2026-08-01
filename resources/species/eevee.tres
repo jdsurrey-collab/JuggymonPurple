@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/eevee.png" id="1_7jthc"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_leh5y"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/eevee.png" id="3_4avs3"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_wqfjs"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="5_koxrd"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="6_l4cv5"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="7_2y2qe"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="8_m7b3c"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_myx30"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="10_aqjan"]
+[ext_resource type="Resource" path="res://resources/moves/sand_attack.tres" id="11_rtpvv"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_b4qg5"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_wanh6"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="14_d5e4w"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="15_vqo8m"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_cdp2f"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_gtx43"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_yb4iy"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="19_vovjm"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_ricab"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_c8bdo"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="22_0q6df"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="23_6llju"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="24_g76ds"]
+
+[sub_resource type="Resource" id="Resource_2kajc"]
+script = ExtResource("2_leh5y")
+method = "ITEM"
+target = "FLAREON"
+level = 0
+item = "FIRE_STONE"
+
+[sub_resource type="Resource" id="Resource_61kb4"]
+script = ExtResource("2_leh5y")
+method = "ITEM"
+target = "JOLTEON"
+level = 0
+item = "THUNDER_STONE"
+
+[sub_resource type="Resource" id="Resource_hm817"]
+script = ExtResource("2_leh5y")
+method = "ITEM"
+target = "VAPOREON"
+level = 0
+item = "WATER_STONE"
+
+[sub_resource type="Resource" id="Resource_qhsyh"]
+script = ExtResource("4_wqfjs")
+level = 27
+move = ExtResource("5_koxrd")
+
+[sub_resource type="Resource" id="Resource_so4r3"]
+script = ExtResource("4_wqfjs")
+level = 31
+move = ExtResource("6_l4cv5")
+
+[sub_resource type="Resource" id="Resource_nyhhd"]
+script = ExtResource("4_wqfjs")
+level = 37
+move = ExtResource("7_2y2qe")
+
+[sub_resource type="Resource" id="Resource_cn0oc"]
+script = ExtResource("4_wqfjs")
+level = 45
+move = ExtResource("8_m7b3c")
+
+[resource]
+script = ExtResource("12_b4qg5")
+species_name = "EEVEE"
+dex = 133
+index = 102
+slug = "eevee"
+label = "Eevee"
+category = "EVOLUTION"
+height_ft = 1
+height_in = 0
+weight_tenths_lb = 140
+hp = 55
+attack = 55
+defense = 50
+speed = 55
+special = 65
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 45
+base_exp = 92
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("9_myx30")]([ExtResource("10_aqjan"), ExtResource("11_rtpvv")])
+learnset = Array[ExtResource("4_wqfjs")]([SubResource("Resource_qhsyh"), SubResource("Resource_so4r3"), SubResource("Resource_nyhhd"), SubResource("Resource_cn0oc")])
+tmhm = Array[ExtResource("9_myx30")]([ExtResource("13_wanh6"), ExtResource("14_d5e4w"), ExtResource("8_m7b3c"), ExtResource("15_vqo8m"), ExtResource("16_cdp2f"), ExtResource("17_gtx43"), ExtResource("18_yb4iy"), ExtResource("19_vovjm"), ExtResource("20_ricab"), ExtResource("21_c8bdo"), ExtResource("22_0q6df"), ExtResource("23_6llju"), ExtResource("24_g76ds")])
+evolutions = Array[ExtResource("2_leh5y")]([SubResource("Resource_2kajc"), SubResource("Resource_61kb4"), SubResource("Resource_hm817")])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its genetic code", "is irregular.", "It may mutate if", "it is exposed to", "radiation from", "element STONEs"])
+front_sprite = ExtResource("3_4avs3")
+back_sprite = ExtResource("1_7jthc")

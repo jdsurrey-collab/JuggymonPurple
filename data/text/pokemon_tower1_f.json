@@ -1,0 +1,76 @@
+{
+ "PokemonTower1FReceptionistText": [
+  {
+   "kind": "text",
+   "line": "#MON TOWER"
+  },
+  {
+   "kind": "line",
+   "line": "stands in memory"
+  },
+  {
+   "kind": "cont",
+   "line": "of #MON that"
+  },
+  {
+   "kind": "cont",
+   "line": "did not survive."
+  }
+ ],
+ "PokemonTower1FMiddleAgedWomanText": [
+  {
+   "kind": "text",
+   "line": "Come to pay"
+  },
+  {
+   "kind": "line",
+   "line": "your respects?"
+  },
+  {
+   "kind": "cont",
+   "line": "Bless you, child."
+  }
+ ],
+ "PokemonTower1FBaldingGuyText": [
+  {
+   "kind": "text",
+   "line": "I came to pray"
+  },
+  {
+   "kind": "line",
+   "line": "for my CLEFAIRY."
+  },
+  {
+   "kind": "para",
+   "line": "I cannot stop"
+  },
+  {
+   "kind": "line",
+   "line": "weeping..."
+  }
+ ],
+ "PokemonTower1FGirlText": [
+  {
+   "kind": "text",
+   "line": "My GROWLITHE..."
+  },
+  {
+   "kind": "line",
+   "line": "Why did you go?"
+  }
+ ],
+ "PokemonTower1FChannelerText": [
+  {
+   "kind": "text",
+   "line": "I am a"
+  },
+  {
+   "kind": "line",
+   "line": "CHANNELER. Spirits"
+  },
+  {
+   "kind": "cont",
+   "line": "stir here, unwell."
+  }
+ ]
+}

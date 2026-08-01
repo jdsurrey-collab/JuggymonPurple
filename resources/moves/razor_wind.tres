@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_6fevu"]
+
+[resource]
+script = ExtResource("1_6fevu")
+move_name = "RAZOR_WIND"
+move_id = 13
+display_name = "RAZOR WIND"
+move_type = "NORMAL"
+power = 80
+accuracy = 75
+pp = 10
+effect = "CHARGE_EFFECT"

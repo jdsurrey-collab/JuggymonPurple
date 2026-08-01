@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=26 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/sudowoodo.png" id="1_3vhis"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_3awvn"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/sudowoodo.png" id="3_vja8m"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_hrbd6"]
+[ext_resource type="Resource" path="res://resources/moves/low_kick.tres" id="5_ccj3b"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="6_6vpcx"]
+[ext_resource type="Resource" path="res://resources/moves/slam.tres" id="7_28rir"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_gq161"]
+[ext_resource type="Resource" path="res://resources/moves/rock_throw.tres" id="9_27dvq"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="10_ek6uc"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_l4uvy"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_654bt"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_3cngb"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="14_i7lu0"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="15_n4k6y"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="16_erlca"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="17_yhcag"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="18_wm3kr"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="19_qmqcf"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="20_2y3bw"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="21_qpl7m"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="22_goqjl"]
+
+[sub_resource type="Resource" id="Resource_ue551"]
+script = ExtResource("4_hrbd6")
+level = 19
+move = ExtResource("5_ccj3b")
+
+[sub_resource type="Resource" id="Resource_cti04"]
+script = ExtResource("4_hrbd6")
+level = 28
+move = ExtResource("6_6vpcx")
+
+[sub_resource type="Resource" id="Resource_2e6yj"]
+script = ExtResource("4_hrbd6")
+level = 46
+move = ExtResource("7_28rir")
+
+[resource]
+script = ExtResource("11_l4uvy")
+species_name = "SUDOWOODO"
+dex = 185
+index = 174
+slug = "sudowoodo"
+label = "Sudowoodo"
+category = "IMITATION"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 840
+hp = 70
+attack = 100
+defense = 115
+speed = 30
+special = 47
+type1 = "ROCK"
+type2 = "ROCK"
+catch_rate = 65
+base_exp = 135
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("8_gq161")]([ExtResource("9_27dvq"), ExtResource("10_ek6uc")])
+learnset = Array[ExtResource("4_hrbd6")]([SubResource("Resource_ue551"), SubResource("Resource_cti04"), SubResource("Resource_2e6yj")])
+tmhm = Array[ExtResource("8_gq161")]([ExtResource("12_654bt"), ExtResource("13_3cngb"), ExtResource("10_ek6uc"), ExtResource("14_i7lu0"), ExtResource("15_n4k6y"), ExtResource("16_erlca"), ExtResource("17_yhcag"), ExtResource("18_wm3kr"), ExtResource("6_6vpcx"), ExtResource("19_qmqcf"), ExtResource("20_2y3bw"), ExtResource("21_qpl7m"), ExtResource("22_goqjl")])
+evolutions = Array[ExtResource("2_3awvn")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It stands as", "stone for years", "on end. Rain", "reveals it, and", "it hates the rain."])
+front_sprite = ExtResource("3_vja8m")
+back_sprite = ExtResource("1_3vhis")

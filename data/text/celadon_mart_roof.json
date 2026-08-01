@@ -1,0 +1,324 @@
+{
+ "CeladonMartRoofLittleGirlGiveHerWhichDrinkText": [
+  {
+   "kind": "text",
+   "line": "Offer her which"
+  },
+  {
+   "kind": "line",
+   "line": "drink?"
+  }
+ ],
+ "CeladonMartRoofLittleGirlYayFreshWaterText": [
+  {
+   "kind": "text",
+   "line": "Oh!"
+  },
+  {
+   "kind": "para",
+   "line": "FRESH WATER!"
+  },
+  {
+   "kind": "para",
+   "line": "My thanks, truly."
+  },
+  {
+   "kind": "para",
+   "line": "Take this, in"
+  },
+  {
+   "kind": "line",
+   "line": "kind return!@"
+  }
+ ],
+ "CeladonMartRoofLittleGirlReceivedTM13Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "CeladonMartRoofLittleGirlTM13ExplanationText": [
+  {
+   "kind": "para",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": " holds"
+  },
+  {
+   "kind": "line",
+   "line": "ICE BEAM!"
+  },
+  {
+   "kind": "para",
+   "line": "It may freeze"
+  },
+  {
+   "kind": "line",
+   "line": "the foe, at times!@"
+  }
+ ],
+ "CeladonMartRoofLittleGirlYaySodaPopText": [
+  {
+   "kind": "text",
+   "line": "Oh!"
+  },
+  {
+   "kind": "para",
+   "line": "SODA POP!"
+  },
+  {
+   "kind": "para",
+   "line": "My thanks, truly."
+  },
+  {
+   "kind": "para",
+   "line": "Take this, in"
+  },
+  {
+   "kind": "line",
+   "line": "kind return!@"
+  }
+ ],
+ "CeladonMartRoofLittleGirlReceivedTM48Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "CeladonMartRoofLittleGirlTM48ExplanationText": [
+  {
+   "kind": "para",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": " holds"
+  },
+  {
+   "kind": "line",
+   "line": "ROCK SLIDE!"
+  },
+  {
+   "kind": "para",
+   "line": "It may unnerve"
+  },
+  {
+   "kind": "line",
+   "line": "the foe, at times!@"
+  }
+ ],
+ "CeladonMartRoofLittleGirlYayLemonadeText": [
+  {
+   "kind": "text",
+   "line": "Oh!"
+  },
+  {
+   "kind": "para",
+   "line": "LEMONADE!"
+  },
+  {
+   "kind": "para",
+   "line": "My thanks, truly."
+  },
+  {
+   "kind": "para",
+   "line": "Take this, in"
+  },
+  {
+   "kind": "line",
+   "line": "kind return!@"
+  }
+ ],
+ "CeladonMartRoofLittleGirlReceivedTM49Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "TM49!@"
+  }
+ ],
+ "CeladonMartRoofLittleGirlTM49ExplanationText": [
+  {
+   "kind": "para",
+   "line": "TM49 holds"
+  },
+  {
+   "kind": "line",
+   "line": "TRI ATTACK!@"
+  }
+ ],
+ "CeladonMartRoofLittleGirlNoRoomText": [
+  {
+   "kind": "text",
+   "line": "You've no room"
+  },
+  {
+   "kind": "line",
+   "line": "left for this!@"
+  }
+ ],
+ "CeladonMartRoofLittleGirlImNotThirstyText": [
+  {
+   "kind": "text",
+   "line": "No, thank you."
+  },
+  {
+   "kind": "line",
+   "line": "I'm no longer"
+  },
+  {
+   "kind": "cont",
+   "line": "thirsty, after"
+  },
+  {
+   "kind": "cont",
+   "line": "all!@"
+  }
+ ],
+ "CeladonMartRoofSuperNerdText": [
+  {
+   "kind": "text",
+   "line": "My sister is a"
+  },
+  {
+   "kind": "line",
+   "line": "trainer, if you"
+  },
+  {
+   "kind": "cont",
+   "line": "believe it."
+  },
+  {
+   "kind": "para",
+   "line": "Yet she's so"
+  },
+  {
+   "kind": "line",
+   "line": "childish, she"
+  },
+  {
+   "kind": "cont",
+   "line": "vexes me so!"
+  }
+ ],
+ "CeladonMartRoofLittleGirlImThirstyText": [
+  {
+   "kind": "text",
+   "line": "I am thirsty!"
+  },
+  {
+   "kind": "line",
+   "line": "I long for"
+  },
+  {
+   "kind": "cont",
+   "line": "something to"
+  },
+  {
+   "kind": "cont",
+   "line": "drink!"
+  }
+ ],
+ "CeladonMartRoofLittleGirlGiveHerADrinkText": [
+  {
+   "kind": "text",
+   "line": "I am thirsty!"
+  },
+  {
+   "kind": "line",
+   "line": "I long for"
+  },
+  {
+   "kind": "cont",
+   "line": "something to"
+  },
+  {
+   "kind": "cont",
+   "line": "drink!"
+  },
+  {
+   "kind": "para",
+   "line": "Offer her a"
+  },
+  {
+   "kind": "line",
+   "line": "drink?"
+  }
+ ],
+ "CeladonMartRoofCurrentFloorSignText": [
+  {
+   "kind": "text",
+   "line": "ROOFTOP SQUARE:"
+  },
+  {
+   "kind": "line",
+   "line": "VENDING MACHINES"
+  }
+ ],
+ "VendingMachineText1": [
+  {
+   "kind": "text",
+   "line": "A vending"
+  },
+  {
+   "kind": "line",
+   "line": "machine! Behold"
+  },
+  {
+   "kind": "cont",
+   "line": "its offerings!"
+  }
+ ],
+ "VendingMachineText4": [
+  {
+   "kind": "text",
+   "line": "Alas, not enough"
+  },
+  {
+   "kind": "line",
+   "line": "coin!"
+  }
+ ],
+ "VendingMachineText5": [
+  {
+   "kind": "line",
+   "line": "fell out below!"
+  }
+ ],
+ "VendingMachineText6": [
+  {
+   "kind": "text",
+   "line": "There's no more"
+  },
+  {
+   "kind": "line",
+   "line": "room for it!"
+  }
+ ],
+ "VendingMachineText7": [
+  {
+   "kind": "text",
+   "line": "Not thirsty!"
+  }
+ ]
+}

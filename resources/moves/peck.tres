@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_co1o6"]
+
+[resource]
+script = ExtResource("1_co1o6")
+move_name = "PECK"
+move_id = 64
+display_name = "PECK"
+move_type = "FLYING"
+power = 35
+accuracy = 100
+pp = 35
+effect = "NO_ADDITIONAL_EFFECT"

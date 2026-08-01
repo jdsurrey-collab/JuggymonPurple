@@ -1,0 +1,86 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/seadra.png" id="1_lbxu0"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_o5fss"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/seadra.png" id="3_ejfu3"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_v5ddd"]
+[ext_resource type="Resource" path="res://resources/moves/smokescreen.tres" id="5_w6420"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="6_dpuyb"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="7_d3nr4"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="8_72rho"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="9_k3a5q"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_1g3kd"]
+[ext_resource type="Resource" path="res://resources/moves/bubble.tres" id="11_hpjme"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_os0xe"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_p132i"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="14_hao8j"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="15_jwdtw"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="16_455t3"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="17_tinle"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="18_mcncp"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="19_7pkae"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="20_swjjk"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="21_tus3i"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="22_mp6lj"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="23_ismvk"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="24_c1dkq"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="25_i76da"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_5fxbv"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="27_wx6hk"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="28_1qpur"]
+
+[sub_resource type="Resource" id="Resource_cs5vd"]
+script = ExtResource("4_v5ddd")
+level = 19
+move = ExtResource("5_w6420")
+
+[sub_resource type="Resource" id="Resource_wbi1g"]
+script = ExtResource("4_v5ddd")
+level = 24
+move = ExtResource("6_dpuyb")
+
+[sub_resource type="Resource" id="Resource_lrkd0"]
+script = ExtResource("4_v5ddd")
+level = 30
+move = ExtResource("7_d3nr4")
+
+[sub_resource type="Resource" id="Resource_2hs1t"]
+script = ExtResource("4_v5ddd")
+level = 41
+move = ExtResource("8_72rho")
+
+[sub_resource type="Resource" id="Resource_orpii"]
+script = ExtResource("4_v5ddd")
+level = 52
+move = ExtResource("9_k3a5q")
+
+[resource]
+script = ExtResource("12_os0xe")
+species_name = "SEADRA"
+dex = 117
+index = 93
+slug = "seadra"
+label = "Seadra"
+category = "DRAGON"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 550
+hp = 55
+attack = 65
+defense = 95
+speed = 85
+special = 95
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 75
+base_exp = 155
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_1g3kd")]([ExtResource("11_hpjme"), ExtResource("5_w6420")])
+learnset = Array[ExtResource("4_v5ddd")]([SubResource("Resource_cs5vd"), SubResource("Resource_wbi1g"), SubResource("Resource_lrkd0"), SubResource("Resource_2hs1t"), SubResource("Resource_orpii")])
+tmhm = Array[ExtResource("10_1g3kd")]([ExtResource("13_p132i"), ExtResource("14_hao8j"), ExtResource("15_jwdtw"), ExtResource("16_455t3"), ExtResource("7_d3nr4"), ExtResource("17_tinle"), ExtResource("18_mcncp"), ExtResource("19_7pkae"), ExtResource("20_swjjk"), ExtResource("21_tus3i"), ExtResource("22_mp6lj"), ExtResource("23_ismvk"), ExtResource("24_c1dkq"), ExtResource("25_i76da"), ExtResource("26_5fxbv"), ExtResource("27_wx6hk"), ExtResource("28_1qpur")])
+evolutions = Array[ExtResource("2_o5fss")]([])
+palette = "PAL_CYANMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["Capable of swim-", "ming backwards by", "rapidly flapping", "its wing-like", "pectoral fins and", "stout tail"])
+front_sprite = ExtResource("3_ejfu3")
+back_sprite = ExtResource("1_lbxu0")

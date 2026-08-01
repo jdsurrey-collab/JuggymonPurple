@@ -1,0 +1,100 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=44 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/lapras.png" id="1_5trnm"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_e2wt6"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/lapras.png" id="3_nvs3s"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_82kr1"]
+[ext_resource type="Resource" path="res://resources/moves/sing.tres" id="5_gewph"]
+[ext_resource type="Resource" path="res://resources/moves/mist.tres" id="6_k5dcv"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="7_bp0sx"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="8_0qubt"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="9_aapvd"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="10_js42m"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_68q1h"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="12_fwg02"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="13_2pm8w"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_htnes"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_pmbfr"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="16_ab70s"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_mxwwn"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_0ywq7"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="19_pygg6"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="20_3a2vv"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="21_qne24"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="22_ewqx7"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="23_k7uff"]
+[ext_resource type="Resource" path="res://resources/moves/dragon_rage.tres" id="24_j87cb"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="25_ip7i6"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="26_6x5dw"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="27_awla0"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="28_eljen"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="29_aty4d"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="30_y7iuy"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="31_ekaxd"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="32_f5jb7"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="33_ae1oi"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="34_fn4pr"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="35_ii3xl"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="36_a7nwv"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="37_psx2m"]
+
+[sub_resource type="Resource" id="Resource_v6a8v"]
+script = ExtResource("4_82kr1")
+level = 16
+move = ExtResource("5_gewph")
+
+[sub_resource type="Resource" id="Resource_0mkq4"]
+script = ExtResource("4_82kr1")
+level = 20
+move = ExtResource("6_k5dcv")
+
+[sub_resource type="Resource" id="Resource_b80gg"]
+script = ExtResource("4_82kr1")
+level = 25
+move = ExtResource("7_bp0sx")
+
+[sub_resource type="Resource" id="Resource_any70"]
+script = ExtResource("4_82kr1")
+level = 31
+move = ExtResource("8_0qubt")
+
+[sub_resource type="Resource" id="Resource_eriac"]
+script = ExtResource("4_82kr1")
+level = 38
+move = ExtResource("9_aapvd")
+
+[sub_resource type="Resource" id="Resource_tuv6n"]
+script = ExtResource("4_82kr1")
+level = 46
+move = ExtResource("10_js42m")
+
+[resource]
+script = ExtResource("14_htnes")
+species_name = "LAPRAS"
+dex = 131
+index = 19
+slug = "lapras"
+label = "Lapras"
+category = "TRANSPORT"
+height_ft = 8
+height_in = 2
+weight_tenths_lb = 4850
+hp = 130
+attack = 85
+defense = 80
+speed = 60
+special = 95
+type1 = "WATER"
+type2 = "ICE"
+catch_rate = 45
+base_exp = 219
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("11_68q1h")]([ExtResource("12_fwg02"), ExtResource("13_2pm8w")])
+learnset = Array[ExtResource("4_82kr1")]([SubResource("Resource_v6a8v"), SubResource("Resource_0mkq4"), SubResource("Resource_b80gg"), SubResource("Resource_any70"), SubResource("Resource_eriac"), SubResource("Resource_tuv6n")])
+tmhm = Array[ExtResource("11_68q1h")]([ExtResource("15_pmbfr"), ExtResource("16_ab70s"), ExtResource("7_bp0sx"), ExtResource("17_mxwwn"), ExtResource("18_0ywq7"), ExtResource("19_pygg6"), ExtResource("12_fwg02"), ExtResource("9_aapvd"), ExtResource("20_3a2vv"), ExtResource("21_qne24"), ExtResource("22_ewqx7"), ExtResource("23_k7uff"), ExtResource("24_j87cb"), ExtResource("25_ip7i6"), ExtResource("26_6x5dw"), ExtResource("27_awla0"), ExtResource("28_eljen"), ExtResource("29_aty4d"), ExtResource("30_y7iuy"), ExtResource("31_ekaxd"), ExtResource("32_f5jb7"), ExtResource("33_ae1oi"), ExtResource("34_fn4pr"), ExtResource("35_ii3xl"), ExtResource("36_a7nwv"), ExtResource("37_psx2m")])
+evolutions = Array[ExtResource("2_e2wt6")]([])
+palette = "PAL_CYANMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["A #MON that", "has been over-", "hunted almost to", "extinction. It", "can ferry people", "across the water"])
+front_sprite = ExtResource("3_nvs3s")
+back_sprite = ExtResource("1_5trnm")

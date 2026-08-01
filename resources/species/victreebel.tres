@@ -1,0 +1,76 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/victreebel.png" id="1_2jwrf"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_33r7k"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/victreebel.png" id="3_037a3"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_i8382"]
+[ext_resource type="Resource" path="res://resources/moves/wrap.tres" id="5_jqqmc"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="6_4mtqv"]
+[ext_resource type="Resource" path="res://resources/moves/sleep_powder.tres" id="7_rqva7"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_gojq1"]
+[ext_resource type="Resource" path="res://resources/moves/stun_spore.tres" id="9_oyd70"]
+[ext_resource type="Resource" path="res://resources/moves/acid.tres" id="10_agb08"]
+[ext_resource type="Resource" path="res://resources/moves/razor_leaf.tres" id="11_26bx2"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_2nktt"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="13_o480v"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_2dl8s"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_mi6w2"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_1wx6a"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_2j67v"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="18_1cilx"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="19_8ia61"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="20_vfmij"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="21_gbvn1"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="22_6caj2"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="23_ogy46"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="24_vd3jh"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="25_vrwtl"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_0ui10"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="27_ydkti"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="28_2nanv"]
+
+[sub_resource type="Resource" id="Resource_frbl7"]
+script = ExtResource("4_i8382")
+level = 13
+move = ExtResource("5_jqqmc")
+
+[sub_resource type="Resource" id="Resource_qllbe"]
+script = ExtResource("4_i8382")
+level = 15
+move = ExtResource("6_4mtqv")
+
+[sub_resource type="Resource" id="Resource_baw4b"]
+script = ExtResource("4_i8382")
+level = 18
+move = ExtResource("7_rqva7")
+
+[resource]
+script = ExtResource("12_2nktt")
+species_name = "VICTREEBEL"
+dex = 71
+index = 190
+slug = "victreebel"
+label = "Victreebel"
+category = "FLYCATCHER"
+height_ft = 5
+height_in = 7
+weight_tenths_lb = 340
+hp = 80
+attack = 105
+defense = 65
+speed = 70
+special = 100
+type1 = "GRASS"
+type2 = "POISON"
+catch_rate = 45
+base_exp = 191
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("8_gojq1")]([ExtResource("7_rqva7"), ExtResource("9_oyd70"), ExtResource("10_agb08"), ExtResource("11_26bx2")])
+learnset = Array[ExtResource("4_i8382")]([SubResource("Resource_frbl7"), SubResource("Resource_qllbe"), SubResource("Resource_baw4b")])
+tmhm = Array[ExtResource("8_gojq1")]([ExtResource("13_o480v"), ExtResource("14_2dl8s"), ExtResource("15_mi6w2"), ExtResource("16_1wx6a"), ExtResource("17_2j67v"), ExtResource("18_1cilx"), ExtResource("19_8ia61"), ExtResource("20_vfmij"), ExtResource("21_gbvn1"), ExtResource("22_6caj2"), ExtResource("23_ogy46"), ExtResource("24_vd3jh"), ExtResource("25_vrwtl"), ExtResource("26_0ui10"), ExtResource("27_ydkti"), ExtResource("28_2nanv")])
+evolutions = Array[ExtResource("2_33r7k")]([])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["Said to live in", "huge colonies", "deep in jungles,", "although no one", "has ever returned", "from there"])
+front_sprite = ExtResource("3_037a3")
+back_sprite = ExtResource("1_2jwrf")

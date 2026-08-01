@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_lt0u4"]
+
+[resource]
+script = ExtResource("1_lt0u4")
+move_name = "SCRATCH"
+move_id = 10
+display_name = "SCRATCH"
+move_type = "NORMAL"
+power = 40
+accuracy = 100
+pp = 35
+effect = "NO_ADDITIONAL_EFFECT"

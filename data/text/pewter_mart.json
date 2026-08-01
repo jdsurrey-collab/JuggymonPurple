@@ -1,0 +1,54 @@
+{
+ "PewterMartYoungsterText": [
+  {
+   "kind": "text",
+   "line": "A shady old man"
+  },
+  {
+   "kind": "line",
+   "line": "sold me this"
+  },
+  {
+   "kind": "cont",
+   "line": "wretched fish"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON!"
+  },
+  {
+   "kind": "para",
+   "line": "Weak as death"
+  },
+  {
+   "kind": "line",
+   "line": "itself. \u00a5500,"
+  },
+  {
+   "kind": "cont",
+   "line": "wasted."
+  }
+ ],
+ "PewterMartSuperNerdText": [
+  {
+   "kind": "text",
+   "line": "Even the weakest"
+  },
+  {
+   "kind": "line",
+   "line": "#MON may yet"
+  },
+  {
+   "kind": "cont",
+   "line": "become something,"
+  },
+  {
+   "kind": "cont",
+   "line": "if you raise it"
+  },
+  {
+   "kind": "cont",
+   "line": "with patience."
+  }
+ ]
+}

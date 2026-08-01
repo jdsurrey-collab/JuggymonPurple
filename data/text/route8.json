@@ -1,0 +1,338 @@
+{
+ "Route8SuperNerd1BattleText": [
+  {
+   "kind": "text",
+   "line": "Fine with #MON,"
+  },
+  {
+   "kind": "line",
+   "line": "are you? How's"
+  },
+  {
+   "kind": "cont",
+   "line": "your chemistry?"
+  }
+ ],
+ "Route8SuperNerd1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ow!"
+  },
+  {
+   "kind": "line",
+   "line": "Meltdown!"
+  }
+ ],
+ "Route8SuperNerd1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I fare better"
+  },
+  {
+   "kind": "line",
+   "line": "in school."
+  }
+ ],
+ "Route8Gambler1BattleText": [
+  {
+   "kind": "text",
+   "line": "Very well. Let"
+  },
+  {
+   "kind": "line",
+   "line": "the dice fall."
+  }
+ ],
+ "Route8Gambler1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Drat!"
+  },
+  {
+   "kind": "line",
+   "line": "Came up short!"
+  }
+ ],
+ "Route8Gambler1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Luck has"
+  },
+  {
+   "kind": "line",
+   "line": "abandoned me."
+  }
+ ],
+ "Route8SuperNerd2BattleText": [
+  {
+   "kind": "text",
+   "line": "One needs"
+  },
+  {
+   "kind": "line",
+   "line": "strategy, here!"
+  }
+ ],
+ "Route8SuperNerd2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "It's"
+  },
+  {
+   "kind": "line",
+   "line": "not logical!"
+  }
+ ],
+ "Route8SuperNerd2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Go with GRIMER"
+  },
+  {
+   "kind": "line",
+   "line": "first...and..."
+  },
+  {
+   "kind": "cont",
+   "line": "...and...then..."
+  }
+ ],
+ "Route8CooltrainerF1BattleText": [
+  {
+   "kind": "text",
+   "line": "I favor NIDORAN."
+  },
+  {
+   "kind": "line",
+   "line": "I hoard them!"
+  }
+ ],
+ "Route8CooltrainerF1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Why? Why??"
+  }
+ ],
+ "Route8CooltrainerF1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Grown #MON turn"
+  },
+  {
+   "kind": "line",
+   "line": "hideous. They"
+  },
+  {
+   "kind": "cont",
+   "line": "ought never"
+  },
+  {
+   "kind": "cont",
+   "line": "evolve at all."
+  }
+ ],
+ "Route8SuperNerd3BattleText": [
+  {
+   "kind": "text",
+   "line": "School has its"
+  },
+  {
+   "kind": "line",
+   "line": "joys. #MON, too."
+  }
+ ],
+ "Route8SuperNerd3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I'll"
+  },
+  {
+   "kind": "line",
+   "line": "stay with school."
+  }
+ ],
+ "Route8SuperNerd3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "We're trapped"
+  },
+  {
+   "kind": "line",
+   "line": "here, thanks to"
+  },
+  {
+   "kind": "cont",
+   "line": "SAFFRON's gates."
+  }
+ ],
+ "Route8CooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "MEOWTH, so"
+  },
+  {
+   "kind": "line",
+   "line": "sweet. Meow."
+  }
+ ],
+ "Route8CooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Meow!"
+  }
+ ],
+ "Route8CooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "PIDGEY, RATTATA-"
+  },
+  {
+   "kind": "line",
+   "line": "sweet things,"
+  },
+  {
+   "kind": "cont",
+   "line": "too, I think."
+  }
+ ],
+ "Route8CooltrainerF3BattleText": [
+  {
+   "kind": "text",
+   "line": "We must seem"
+  },
+  {
+   "kind": "line",
+   "line": "foolish, stood"
+  },
+  {
+   "kind": "cont",
+   "line": "here like this."
+  }
+ ],
+ "Route8CooltrainerF3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Look what"
+  },
+  {
+   "kind": "line",
+   "line": "you did!"
+  }
+ ],
+ "Route8CooltrainerF3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "SAFFRON's"
+  },
+  {
+   "kind": "line",
+   "line": "gatekeeper bars"
+  },
+  {
+   "kind": "cont",
+   "line": "us. Such a cruel"
+  },
+  {
+   "kind": "cont",
+   "line": "little man."
+  }
+ ],
+ "Route8Gambler2BattleText": [
+  {
+   "kind": "text",
+   "line": "I'm a rambling,"
+  },
+  {
+   "kind": "line",
+   "line": "gambling wretch!"
+  }
+ ],
+ "Route8Gambler2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Missed"
+  },
+  {
+   "kind": "line",
+   "line": "my fortune!"
+  }
+ ],
+ "Route8Gambler2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Gambling, #MON-"
+  },
+  {
+   "kind": "line",
+   "line": "like a hunger"
+  },
+  {
+   "kind": "cont",
+   "line": "that never"
+  },
+  {
+   "kind": "cont",
+   "line": "quite fills."
+  }
+ ],
+ "Route8CooltrainerF4BattleText": [
+  {
+   "kind": "text",
+   "line": "What's soft, and"
+  },
+  {
+   "kind": "line",
+   "line": "round, and dear"
+  },
+  {
+   "kind": "cont",
+   "line": "as a #MON?"
+  }
+ ],
+ "Route8CooltrainerF4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Stop!"
+  },
+  {
+   "kind": "para",
+   "line": "Don't be cruel"
+  },
+  {
+   "kind": "line",
+   "line": "to my CLEFAIRY!"
+  }
+ ],
+ "Route8CooltrainerF4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "They say CLEFAIRY"
+  },
+  {
+   "kind": "line",
+   "line": "changes, when"
+  },
+  {
+   "kind": "cont",
+   "line": "shown a MOON"
+  },
+  {
+   "kind": "cont",
+   "line": "STONE. Forever."
+  }
+ ],
+ "Route8UndergroundSignText": [
+  {
+   "kind": "text",
+   "line": "UNDERGROUND PATH"
+  },
+  {
+   "kind": "line",
+   "line": "CELADON CITY -"
+  },
+  {
+   "kind": "cont",
+   "line": "LAVENDER TOWN"
+  }
+ ]
+}

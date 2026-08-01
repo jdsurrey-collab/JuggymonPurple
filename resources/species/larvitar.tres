@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/larvitar.png" id="1_gbrc7"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_v87v7"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/larvitar.png" id="3_8tpgu"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_4mtba"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="5_v5x5k"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="6_arlj1"]
+[ext_resource type="Resource" path="res://resources/moves/thrash.tres" id="7_ikh8b"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="8_la8nw"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="9_e024l"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_nkdfv"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="11_cuuym"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_6hkca"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_ymm77"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_lnxap"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_everv"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_csve8"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_fw4vs"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_aq1a1"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_auygh"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_d1cxt"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_rbnul"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="22_elnrn"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="23_d3r6l"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="24_o2ate"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="25_oxes0"]
+
+[sub_resource type="Resource" id="Resource_pl3f3"]
+script = ExtResource("2_v87v7")
+method = "LEVEL"
+target = "PUPITAR"
+level = 30
+item = ""
+
+[sub_resource type="Resource" id="Resource_eq8qo"]
+script = ExtResource("4_4mtba")
+level = 15
+move = ExtResource("5_v5x5k")
+
+[sub_resource type="Resource" id="Resource_urmug"]
+script = ExtResource("4_4mtba")
+level = 22
+move = ExtResource("6_arlj1")
+
+[sub_resource type="Resource" id="Resource_f4tfd"]
+script = ExtResource("4_4mtba")
+level = 29
+move = ExtResource("7_ikh8b")
+
+[sub_resource type="Resource" id="Resource_7531v"]
+script = ExtResource("4_4mtba")
+level = 50
+move = ExtResource("8_la8nw")
+
+[sub_resource type="Resource" id="Resource_inv67"]
+script = ExtResource("4_4mtba")
+level = 57
+move = ExtResource("9_e024l")
+
+[resource]
+script = ExtResource("13_ymm77")
+species_name = "LARVITAR"
+dex = 236
+index = 239
+slug = "larvitar"
+label = "Larvitar"
+category = "ROCK SKIN"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 1590
+hp = 50
+attack = 64
+defense = 50
+speed = 41
+special = 47
+type1 = "ROCK"
+type2 = "GROUND"
+catch_rate = 45
+base_exp = 67
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("10_nkdfv")]([ExtResource("11_cuuym"), ExtResource("12_6hkca")])
+learnset = Array[ExtResource("4_4mtba")]([SubResource("Resource_eq8qo"), SubResource("Resource_urmug"), SubResource("Resource_f4tfd"), SubResource("Resource_7531v"), SubResource("Resource_inv67")])
+tmhm = Array[ExtResource("10_nkdfv")]([ExtResource("14_lnxap"), ExtResource("15_everv"), ExtResource("16_csve8"), ExtResource("17_fw4vs"), ExtResource("18_aq1a1"), ExtResource("19_auygh"), ExtResource("20_d1cxt"), ExtResource("21_rbnul"), ExtResource("8_la8nw"), ExtResource("22_elnrn"), ExtResource("23_d3r6l"), ExtResource("24_o2ate"), ExtResource("6_arlj1"), ExtResource("25_oxes0")])
+evolutions = Array[ExtResource("2_v87v7")]([SubResource("Resource_pl3f3")])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It eats a whole", "mountain before", "it may see the", "sky. Few things", "want so much", "for so little."])
+front_sprite = ExtResource("3_8tpgu")
+back_sprite = ExtResource("1_gbrc7")

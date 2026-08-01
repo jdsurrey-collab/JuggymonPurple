@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=38 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/bellsprout.png" id="1_vjc8c"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_vct0t"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/bellsprout.png" id="3_1i76u"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_i6ysq"]
+[ext_resource type="Resource" path="res://resources/moves/wrap.tres" id="5_wgmin"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="6_m8ckp"]
+[ext_resource type="Resource" path="res://resources/moves/sleep_powder.tres" id="7_fyy8p"]
+[ext_resource type="Resource" path="res://resources/moves/stun_spore.tres" id="8_q87pl"]
+[ext_resource type="Resource" path="res://resources/moves/acid.tres" id="9_0cwid"]
+[ext_resource type="Resource" path="res://resources/moves/razor_leaf.tres" id="10_w04lj"]
+[ext_resource type="Resource" path="res://resources/moves/slam.tres" id="11_ocjpw"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="12_why5w"]
+[ext_resource type="Resource" path="res://resources/moves/vine_whip.tres" id="13_2m0a3"]
+[ext_resource type="Resource" path="res://resources/moves/growth.tres" id="14_ggu0b"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="15_x30a3"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="16_1rlbd"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_cyhrf"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_dt281"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_xjcds"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="20_1nbvj"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="21_6uwvh"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="22_j0ql5"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="23_as70k"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="24_bkawe"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="25_v7d1s"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="26_tt6gt"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="27_bss06"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="28_aqdnh"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="29_taroy"]
+
+[sub_resource type="Resource" id="Resource_qwtuc"]
+script = ExtResource("2_vct0t")
+method = "LEVEL"
+target = "WEEPINBELL"
+level = 21
+item = ""
+
+[sub_resource type="Resource" id="Resource_mal4a"]
+script = ExtResource("4_i6ysq")
+level = 13
+move = ExtResource("5_wgmin")
+
+[sub_resource type="Resource" id="Resource_aek30"]
+script = ExtResource("4_i6ysq")
+level = 15
+move = ExtResource("6_m8ckp")
+
+[sub_resource type="Resource" id="Resource_e32ty"]
+script = ExtResource("4_i6ysq")
+level = 18
+move = ExtResource("7_fyy8p")
+
+[sub_resource type="Resource" id="Resource_aa7aa"]
+script = ExtResource("4_i6ysq")
+level = 21
+move = ExtResource("8_q87pl")
+
+[sub_resource type="Resource" id="Resource_cq88h"]
+script = ExtResource("4_i6ysq")
+level = 26
+move = ExtResource("9_0cwid")
+
+[sub_resource type="Resource" id="Resource_xjt6y"]
+script = ExtResource("4_i6ysq")
+level = 33
+move = ExtResource("10_w04lj")
+
+[sub_resource type="Resource" id="Resource_7spyl"]
+script = ExtResource("4_i6ysq")
+level = 42
+move = ExtResource("11_ocjpw")
+
+[resource]
+script = ExtResource("15_x30a3")
+species_name = "BELLSPROUT"
+dex = 69
+index = 188
+slug = "bellsprout"
+label = "Bellsprout"
+category = "FLOWER"
+height_ft = 2
+height_in = 4
+weight_tenths_lb = 90
+hp = 50
+attack = 75
+defense = 35
+speed = 40
+special = 70
+type1 = "GRASS"
+type2 = "POISON"
+catch_rate = 255
+base_exp = 84
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("12_why5w")]([ExtResource("13_2m0a3"), ExtResource("14_ggu0b")])
+learnset = Array[ExtResource("4_i6ysq")]([SubResource("Resource_mal4a"), SubResource("Resource_aek30"), SubResource("Resource_e32ty"), SubResource("Resource_aa7aa"), SubResource("Resource_cq88h"), SubResource("Resource_xjt6y"), SubResource("Resource_7spyl")])
+tmhm = Array[ExtResource("12_why5w")]([ExtResource("16_1rlbd"), ExtResource("17_cyhrf"), ExtResource("18_dt281"), ExtResource("19_xjcds"), ExtResource("20_1nbvj"), ExtResource("21_6uwvh"), ExtResource("22_j0ql5"), ExtResource("23_as70k"), ExtResource("24_bkawe"), ExtResource("25_v7d1s"), ExtResource("26_tt6gt"), ExtResource("27_bss06"), ExtResource("28_aqdnh"), ExtResource("29_taroy")])
+evolutions = Array[ExtResource("2_vct0t")]([SubResource("Resource_qwtuc")])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["A carnivorous", "#MON that traps", "and eats bugs.", "It uses its root", "feet to soak up", "needed moisture"])
+front_sprite = ExtResource("3_1i76u")
+back_sprite = ExtResource("1_vjc8c")

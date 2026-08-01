@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=10 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/caterpie.png" id="1_cudwr"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_apryq"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/caterpie.png" id="3_itymi"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_c8wcv"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="5_afhto"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="6_dea7h"]
+[ext_resource type="Resource" path="res://resources/moves/string_shot.tres" id="7_dln0n"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="8_gkmp1"]
+
+[sub_resource type="Resource" id="Resource_3m15h"]
+script = ExtResource("2_apryq")
+method = "LEVEL"
+target = "METAPOD"
+level = 7
+item = ""
+
+[resource]
+script = ExtResource("8_gkmp1")
+species_name = "CATERPIE"
+dex = 10
+index = 123
+slug = "caterpie"
+label = "Caterpie"
+category = "WORM"
+height_ft = 1
+height_in = 0
+weight_tenths_lb = 60
+hp = 45
+attack = 30
+defense = 35
+speed = 45
+special = 20
+type1 = "BUG"
+type2 = "BUG"
+catch_rate = 255
+base_exp = 53
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("5_afhto")]([ExtResource("6_dea7h"), ExtResource("7_dln0n")])
+learnset = Array[ExtResource("4_c8wcv")]([])
+tmhm = Array[ExtResource("5_afhto")]([])
+evolutions = Array[ExtResource("2_apryq")]([SubResource("Resource_3m15h")])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["Its short feet", "are tipped with", "suction pads that", "enable it to", "tirelessly climb", "slopes and walls"])
+front_sprite = ExtResource("3_itymi")
+back_sprite = ExtResource("1_cudwr")

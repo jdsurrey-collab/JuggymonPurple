@@ -1,0 +1,42 @@
+{
+ "SaffronMartSuperNerdText": [
+  {
+   "kind": "text",
+   "line": "MAX REPEL lasts"
+  },
+  {
+   "kind": "line",
+   "line": "longer than"
+  },
+  {
+   "kind": "cont",
+   "line": "SUPER REPEL, to"
+  },
+  {
+   "kind": "cont",
+   "line": "ward off weaker"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON!"
+  }
+ ],
+ "SaffronMartCooltrainerFText": [
+  {
+   "kind": "text",
+   "line": "REVIVE costs"
+  },
+  {
+   "kind": "line",
+   "line": "dearly, but it"
+  },
+  {
+   "kind": "cont",
+   "line": "revives the"
+  },
+  {
+   "kind": "cont",
+   "line": "fallen!"
+  }
+ ]
+}

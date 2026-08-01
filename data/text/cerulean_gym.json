@@ -1,0 +1,334 @@
+{
+ "CeruleanGymMistyPreBattleText": [
+  {
+   "kind": "text",
+   "line": "A new face,"
+  },
+  {
+   "kind": "line",
+   "line": "come to drown."
+  },
+  {
+   "kind": "para",
+   "line": "Any trainer"
+  },
+  {
+   "kind": "line",
+   "line": "worth her salt"
+  },
+  {
+   "kind": "cont",
+   "line": "has a creed about"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON."
+  },
+  {
+   "kind": "para",
+   "line": "What's yours,"
+  },
+  {
+   "kind": "line",
+   "line": "I wonder, when"
+  },
+  {
+   "kind": "cont",
+   "line": "you catch them?"
+  },
+  {
+   "kind": "para",
+   "line": "Mine is simple:"
+  },
+  {
+   "kind": "line",
+   "line": "give no quarter."
+  },
+  {
+   "kind": "cont",
+   "line": "Let the water"
+  },
+  {
+   "kind": "cont",
+   "line": "take you under."
+  }
+ ],
+ "CeruleanGymMistyTM11ExplanationText": [
+  {
+   "kind": "text",
+   "line": "TM11 teaches"
+  },
+  {
+   "kind": "line",
+   "line": "BUBBLEBEAM!"
+  },
+  {
+   "kind": "para",
+   "line": "Use it on an"
+  },
+  {
+   "kind": "line",
+   "line": "aquatic #MON!"
+  }
+ ],
+ "CeruleanGymMistyCascadeBadgeInfoText": [
+  {
+   "kind": "text",
+   "line": "The CASCADEBADGE"
+  },
+  {
+   "kind": "line",
+   "line": "bends #MON up"
+  },
+  {
+   "kind": "cont",
+   "line": "to L30 to heel."
+  },
+  {
+   "kind": "para",
+   "line": "Even the ones"
+  },
+  {
+   "kind": "line",
+   "line": "not your own."
+  },
+  {
+   "kind": "para",
+   "line": "You may also"
+  },
+  {
+   "kind": "line",
+   "line": "wield CUT freely"
+  },
+  {
+   "kind": "cont",
+   "line": "now."
+  },
+  {
+   "kind": "para",
+   "line": "Cut through the"
+  },
+  {
+   "kind": "line",
+   "line": "brush. Open what"
+  },
+  {
+   "kind": "cont",
+   "line": "was closed."
+  },
+  {
+   "kind": "para",
+   "line": "And take my"
+  },
+  {
+   "kind": "line",
+   "line": "favorite TM,"
+  },
+  {
+   "kind": "para",
+   "line": "besides."
+  }
+ ],
+ "CeruleanGymMistyReceivedTM11Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "TM11!@"
+  }
+ ],
+ "CeruleanGymMistyTM11NoRoomText": [
+  {
+   "kind": "text",
+   "line": "You better make"
+  },
+  {
+   "kind": "line",
+   "line": "room for this!"
+  }
+ ],
+ "CeruleanGymMistyReceivedCascadeBadgeText": [
+  {
+   "kind": "text",
+   "line": "...Fine."
+  },
+  {
+   "kind": "line",
+   "line": "You've bested me."
+  },
+  {
+   "kind": "para",
+   "line": "So be it."
+  },
+  {
+   "kind": "para",
+   "line": "Take the"
+  },
+  {
+   "kind": "line",
+   "line": "CASCADEBADGE,"
+  },
+  {
+   "kind": "cont",
+   "line": "proof that you"
+  },
+  {
+   "kind": "cont",
+   "line": "drowned me too.@"
+  }
+ ],
+ "CeruleanGymBattleText1": [
+  {
+   "kind": "text",
+   "line": "I'm more than good"
+  },
+  {
+   "kind": "line",
+   "line": "enough for you!"
+  },
+  {
+   "kind": "para",
+   "line": "MISTY can wait!"
+  }
+ ],
+ "CeruleanGymEndBattleText1": [
+  {
+   "kind": "text",
+   "line": "You"
+  },
+  {
+   "kind": "line",
+   "line": "overwhelmed me!"
+  }
+ ],
+ "CeruleanGymAfterBattleText1": [
+  {
+   "kind": "text",
+   "line": "You have to face"
+  },
+  {
+   "kind": "line",
+   "line": "other trainers to"
+  },
+  {
+   "kind": "cont",
+   "line": "find out how good"
+  },
+  {
+   "kind": "cont",
+   "line": "you really are."
+  }
+ ],
+ "CeruleanGymBattleText2": [
+  {
+   "kind": "text",
+   "line": "Splash!"
+  },
+  {
+   "kind": "para",
+   "line": "I'm first up!"
+  },
+  {
+   "kind": "line",
+   "line": "Let's do it!"
+  }
+ ],
+ "CeruleanGymEndBattleText2": [
+  {
+   "kind": "text",
+   "line": "That"
+  },
+  {
+   "kind": "line",
+   "line": "can't be!"
+  }
+ ],
+ "CeruleanGymAfterBattleText2": [
+  {
+   "kind": "text",
+   "line": "MISTY is going to"
+  },
+  {
+   "kind": "line",
+   "line": "keep improving!"
+  },
+  {
+   "kind": "para",
+   "line": "She won't lose to"
+  },
+  {
+   "kind": "line",
+   "line": "someone like you!"
+  }
+ ],
+ "CeruleanGymGymGuideChampInMakingText": [
+  {
+   "kind": "text",
+   "line": "Yo! Champ in"
+  },
+  {
+   "kind": "line",
+   "line": "making!"
+  },
+  {
+   "kind": "para",
+   "line": "Here's my advice!"
+  },
+  {
+   "kind": "para",
+   "line": "The LEADER, MISTY,"
+  },
+  {
+   "kind": "line",
+   "line": "is a pro who uses"
+  },
+  {
+   "kind": "cont",
+   "line": "water #MON!"
+  },
+  {
+   "kind": "para",
+   "line": "You can drain all"
+  },
+  {
+   "kind": "line",
+   "line": "their water with"
+  },
+  {
+   "kind": "cont",
+   "line": "plant #MON!"
+  },
+  {
+   "kind": "para",
+   "line": "Or, zap them with"
+  },
+  {
+   "kind": "line",
+   "line": "electricity!"
+  }
+ ],
+ "CeruleanGymGymGuideBeatMistyText": [
+  {
+   "kind": "text",
+   "line": "You beat MISTY!"
+  },
+  {
+   "kind": "line",
+   "line": "What'd I tell ya?"
+  },
+  {
+   "kind": "para",
+   "line": "You and me kid,"
+  },
+  {
+   "kind": "line",
+   "line": "we make a pretty"
+  },
+  {
+   "kind": "cont",
+   "line": "darn good team!"
+  }
+ ]
+}

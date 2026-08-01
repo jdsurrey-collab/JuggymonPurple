@@ -1,0 +1,30 @@
+{
+ "GameCornerPrizeRoomBaldingGuyText": [
+  {
+   "kind": "text",
+   "line": "I do fancy that"
+  },
+  {
+   "kind": "line",
+   "line": "PORYGON so!"
+  },
+  {
+   "kind": "para",
+   "line": "Yet the slots"
+  },
+  {
+   "kind": "line",
+   "line": "are cruel to win!"
+  }
+ ],
+ "GameCornerPrizeRoomGamblerText": [
+  {
+   "kind": "text",
+   "line": "I made a grand"
+  },
+  {
+   "kind": "line",
+   "line": "haul this day!"
+  }
+ ]
+}

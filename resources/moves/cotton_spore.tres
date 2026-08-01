@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_5n8r2"]
+
+[resource]
+script = ExtResource("1_5n8r2")
+move_name = "COTTON_SPORE"
+move_id = 169
+display_name = "COTTON SPORE"
+move_type = "GRASS"
+power = 0
+accuracy = 85
+pp = 40
+effect = "SPEED_DOWN2_EFFECT"

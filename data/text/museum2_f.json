@@ -1,0 +1,108 @@
+{
+ "Museum2FYoungsterText": [
+  {
+   "kind": "text",
+   "line": "MOON STONE?"
+  },
+  {
+   "kind": "para",
+   "line": "What makes it"
+  },
+  {
+   "kind": "line",
+   "line": "so peculiar?"
+  }
+ ],
+ "Museum2FGrampsText": [
+  {
+   "kind": "text",
+   "line": "July 20, 1969!"
+  },
+  {
+   "kind": "para",
+   "line": "The 1st lunar"
+  },
+  {
+   "kind": "line",
+   "line": "landing!"
+  },
+  {
+   "kind": "para",
+   "line": "I bought a color"
+  },
+  {
+   "kind": "line",
+   "line": "TV, just to"
+  },
+  {
+   "kind": "cont",
+   "line": "watch it happen!"
+  }
+ ],
+ "Museum2FScientistText": [
+  {
+   "kind": "text",
+   "line": "We hold a space"
+  },
+  {
+   "kind": "line",
+   "line": "exhibit, now."
+  }
+ ],
+ "Museum2FBrunetteGirlText": [
+  {
+   "kind": "text",
+   "line": "I long for a"
+  },
+  {
+   "kind": "line",
+   "line": "PIKACHU! So dear!"
+  },
+  {
+   "kind": "para",
+   "line": "I begged my"
+  },
+  {
+   "kind": "line",
+   "line": "father to catch"
+  },
+  {
+   "kind": "cont",
+   "line": "me one!"
+  }
+ ],
+ "Museum2FHikerText": [
+  {
+   "kind": "text",
+   "line": "Yes, a PIKACHU"
+  },
+  {
+   "kind": "line",
+   "line": "soon, I swear it!"
+  }
+ ],
+ "Museum2FSpaceShuttleSignText": [
+  {
+   "kind": "text",
+   "line": "SPACE SHUTTLE"
+  },
+  {
+   "kind": "line",
+   "line": "COLUMBIA"
+  }
+ ],
+ "Museum2FMoonStoneSignText": [
+  {
+   "kind": "text",
+   "line": "A meteorite that"
+  },
+  {
+   "kind": "line",
+   "line": "fell on MT.MOON."
+  },
+  {
+   "kind": "cont",
+   "line": "(MOON STONE?)"
+  }
+ ]
+}

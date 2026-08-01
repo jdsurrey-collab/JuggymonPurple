@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=39 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/butterfree.png" id="1_gldq2"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_6bt8a"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/butterfree.png" id="3_is6ly"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_umsmc"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="5_xo5bf"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="6_ufl83"]
+[ext_resource type="Resource" path="res://resources/moves/stun_spore.tres" id="7_lvhfq"]
+[ext_resource type="Resource" path="res://resources/moves/sleep_powder.tres" id="8_be8e3"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="9_4d5xr"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="10_yi7le"]
+[ext_resource type="Resource" path="res://resources/moves/psybeam.tres" id="11_fsaw2"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="12_8ap5y"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_mgijj"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="14_sfscx"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_i81uw"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_2u1nr"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_xkyem"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="18_dyian"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="19_yecmu"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="20_wf8hb"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="21_6c151"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="22_h5iq2"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="23_uvk2r"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="24_p6hpm"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="25_rkawn"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="26_0m4vk"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="27_j6gov"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="28_rgyc4"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="29_u1lnx"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="30_14ixn"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="31_1eqs4"]
+
+[sub_resource type="Resource" id="Resource_6yju7"]
+script = ExtResource("4_umsmc")
+level = 12
+move = ExtResource("5_xo5bf")
+
+[sub_resource type="Resource" id="Resource_ae2sq"]
+script = ExtResource("4_umsmc")
+level = 15
+move = ExtResource("6_ufl83")
+
+[sub_resource type="Resource" id="Resource_115kf"]
+script = ExtResource("4_umsmc")
+level = 16
+move = ExtResource("7_lvhfq")
+
+[sub_resource type="Resource" id="Resource_jqjvu"]
+script = ExtResource("4_umsmc")
+level = 17
+move = ExtResource("8_be8e3")
+
+[sub_resource type="Resource" id="Resource_mh556"]
+script = ExtResource("4_umsmc")
+level = 21
+move = ExtResource("9_4d5xr")
+
+[sub_resource type="Resource" id="Resource_eew6c"]
+script = ExtResource("4_umsmc")
+level = 26
+move = ExtResource("10_yi7le")
+
+[sub_resource type="Resource" id="Resource_4ljt6"]
+script = ExtResource("4_umsmc")
+level = 32
+move = ExtResource("11_fsaw2")
+
+[resource]
+script = ExtResource("13_mgijj")
+species_name = "BUTTERFREE"
+dex = 12
+index = 125
+slug = "butterfree"
+label = "Butterfree"
+category = "BUTTERFLY"
+height_ft = 3
+height_in = 7
+weight_tenths_lb = 710
+hp = 60
+attack = 45
+defense = 50
+speed = 70
+special = 80
+type1 = "BUG"
+type2 = "FLYING"
+catch_rate = 45
+base_exp = 160
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("12_8ap5y")]([ExtResource("5_xo5bf")])
+learnset = Array[ExtResource("4_umsmc")]([SubResource("Resource_6yju7"), SubResource("Resource_ae2sq"), SubResource("Resource_115kf"), SubResource("Resource_jqjvu"), SubResource("Resource_mh556"), SubResource("Resource_eew6c"), SubResource("Resource_4ljt6")])
+tmhm = Array[ExtResource("12_8ap5y")]([ExtResource("14_sfscx"), ExtResource("10_yi7le"), ExtResource("15_i81uw"), ExtResource("16_2u1nr"), ExtResource("17_xkyem"), ExtResource("18_dyian"), ExtResource("19_yecmu"), ExtResource("20_wf8hb"), ExtResource("21_6c151"), ExtResource("22_h5iq2"), ExtResource("23_uvk2r"), ExtResource("24_p6hpm"), ExtResource("25_rkawn"), ExtResource("26_0m4vk"), ExtResource("27_j6gov"), ExtResource("28_rgyc4"), ExtResource("29_u1lnx"), ExtResource("30_14ixn"), ExtResource("31_1eqs4")])
+evolutions = Array[ExtResource("2_6bt8a")]([])
+palette = "PAL_CYANMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["In battle, it", "flaps its wings", "at high speed to", "release highly", "toxic dust into", "the air"])
+front_sprite = ExtResource("3_is6ly")
+back_sprite = ExtResource("1_gldq2")

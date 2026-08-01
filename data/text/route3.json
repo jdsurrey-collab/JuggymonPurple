@@ -1,0 +1,326 @@
+{
+ "Route3Text1": [
+  {
+   "kind": "text",
+   "line": "Whew... I must"
+  },
+  {
+   "kind": "line",
+   "line": "rest a moment..."
+  },
+  {
+   "kind": "cont",
+   "line": "Groan..."
+  },
+  {
+   "kind": "para",
+   "line": "That tunnel from"
+  },
+  {
+   "kind": "line",
+   "line": "CERULEAN drains"
+  },
+  {
+   "kind": "cont",
+   "line": "the life from you."
+  }
+ ],
+ "Route3Youngster1BattleText": [
+  {
+   "kind": "text",
+   "line": "I know you-"
+  },
+  {
+   "kind": "line",
+   "line": "from VIRIDIAN"
+  },
+  {
+   "kind": "cont",
+   "line": "FOREST!"
+  }
+ ],
+ "Route3Youngster1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You"
+  },
+  {
+   "kind": "line",
+   "line": "best me again."
+  }
+ ],
+ "Route3Youngster1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "There are #MON"
+  },
+  {
+   "kind": "line",
+   "line": "beyond the"
+  },
+  {
+   "kind": "cont",
+   "line": "forest's dark,"
+  },
+  {
+   "kind": "cont",
+   "line": "believe me."
+  }
+ ],
+ "Route3Youngster2BattleText": [
+  {
+   "kind": "text",
+   "line": "I favor shorts."
+  },
+  {
+   "kind": "line",
+   "line": "Comfortable, for"
+  },
+  {
+   "kind": "cont",
+   "line": "a life like mine."
+  }
+ ],
+ "Route3Youngster2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I don't"
+  },
+  {
+   "kind": "line",
+   "line": "believe it."
+  }
+ ],
+ "Route3Youngster2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Do you store"
+  },
+  {
+   "kind": "line",
+   "line": "your #MON by"
+  },
+  {
+   "kind": "cont",
+   "line": "PC? Each BOX"
+  },
+  {
+   "kind": "cont",
+   "line": "holds 20 souls."
+  }
+ ],
+ "Route3CooltrainerF1BattleText": [
+  {
+   "kind": "text",
+   "line": "You looked at"
+  },
+  {
+   "kind": "line",
+   "line": "me, didn't you?"
+  }
+ ],
+ "Route3CooltrainerF1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You're"
+  },
+  {
+   "kind": "line",
+   "line": "cruel."
+  }
+ ],
+ "Route3CooltrainerF1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Don't stare, if"
+  },
+  {
+   "kind": "line",
+   "line": "you'd rather not"
+  },
+  {
+   "kind": "cont",
+   "line": "fight me."
+  }
+ ],
+ "Route3Youngster3BattleText": [
+  {
+   "kind": "text",
+   "line": "A trainer? Then"
+  },
+  {
+   "kind": "line",
+   "line": "let's fight."
+  }
+ ],
+ "Route3Youngster3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Had I"
+  },
+  {
+   "kind": "line",
+   "line": "fresher #MON I"
+  },
+  {
+   "kind": "cont",
+   "line": "would've won!"
+  }
+ ],
+ "Route3Youngster3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Should a BOX"
+  },
+  {
+   "kind": "line",
+   "line": "fill with #MON,"
+  },
+  {
+   "kind": "cont",
+   "line": "just move to"
+  },
+  {
+   "kind": "cont",
+   "line": "another, empty."
+  }
+ ],
+ "Route3CooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "That look you"
+  },
+  {
+   "kind": "line",
+   "line": "gave me... how"
+  },
+  {
+   "kind": "cont",
+   "line": "intriguing."
+  }
+ ],
+ "Route3CooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Be gentle!"
+  }
+ ],
+ "Route3CooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Avoid a fight-"
+  },
+  {
+   "kind": "line",
+   "line": "stay unseen, if"
+  },
+  {
+   "kind": "cont",
+   "line": "you're able."
+  }
+ ],
+ "Route3Youngster4BattleText": [
+  {
+   "kind": "text",
+   "line": "You wear no"
+  },
+  {
+   "kind": "line",
+   "line": "shorts!"
+  }
+ ],
+ "Route3Youngster4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Lost!"
+  },
+  {
+   "kind": "line",
+   "line": "Lost! Lost!"
+  }
+ ],
+ "Route3Youngster4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I wear shorts"
+  },
+  {
+   "kind": "line",
+   "line": "always, even in"
+  },
+  {
+   "kind": "cont",
+   "line": "the dead of winter."
+  }
+ ],
+ "Route3Youngster5BattleText": [
+  {
+   "kind": "text",
+   "line": "Face my new"
+  },
+  {
+   "kind": "line",
+   "line": "#MON!"
+  }
+ ],
+ "Route3Youngster5EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Done"
+  },
+  {
+   "kind": "line",
+   "line": "for, it seems."
+  }
+ ],
+ "Route3Youngster5AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "A trained #MON"
+  },
+  {
+   "kind": "line",
+   "line": "outmatches the"
+  },
+  {
+   "kind": "cont",
+   "line": "wild every time."
+  }
+ ],
+ "Route3CooltrainerF3BattleText": [
+  {
+   "kind": "text",
+   "line": "Eek! Did you"
+  },
+  {
+   "kind": "line",
+   "line": "touch me?"
+  }
+ ],
+ "Route3CooltrainerF3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Is that all?"
+  }
+ ],
+ "Route3CooltrainerF3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 4 lies at"
+  },
+  {
+   "kind": "line",
+   "line": "MT.MOON's foot."
+  }
+ ],
+ "Route3SignText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 3"
+  },
+  {
+   "kind": "line",
+   "line": "MT.MOON AHEAD"
+  }
+ ]
+}

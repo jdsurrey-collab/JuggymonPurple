@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_qdalp"]
+
+[resource]
+script = ExtResource("1_qdalp")
+move_name = "STRUGGLE"
+move_id = 165
+display_name = "STRUGGLE"
+move_type = "NORMAL"
+power = 50
+accuracy = 100
+pp = 10
+effect = "RECOIL_EFFECT"

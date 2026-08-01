@@ -1,0 +1,58 @@
+{
+ "PokemonMansion1FScientistBattleText": [
+  {
+   "kind": "text",
+   "line": "Who are you? None"
+  },
+  {
+   "kind": "line",
+   "line": "ought to dwell"
+  },
+  {
+   "kind": "cont",
+   "line": "in these ashes."
+  }
+ ],
+ "PokemonMansion1FScientistEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ouch!"
+  }
+ ],
+ "PokemonMansion1FScientistAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "A key? I know"
+  },
+  {
+   "kind": "line",
+   "line": "not what you"
+  },
+  {
+   "kind": "cont",
+   "line": "speak of."
+  }
+ ],
+ "PokemonMansion1FSwitchText": [
+  {
+   "kind": "text",
+   "line": "A hidden switch!"
+  },
+  {
+   "kind": "para",
+   "line": "Press it?"
+  }
+ ],
+ "PokemonMansion1FSwitchPressedText": [
+  {
+   "kind": "text",
+   "line": "Who wouldn't?"
+  }
+ ],
+ "PokemonMansion1FSwitchNotPressedText": [
+  {
+   "kind": "text",
+   "line": "Not quite yet!"
+  }
+ ]
+}

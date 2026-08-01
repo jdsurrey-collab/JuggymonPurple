@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_1xnnw"]
+
+[resource]
+script = ExtResource("1_1xnnw")
+move_name = "LEECH_LIFE"
+move_id = 141
+display_name = "LEECH LIFE"
+move_type = "BUG"
+power = 20
+accuracy = 100
+pp = 15
+effect = "DRAIN_HP_EFFECT"

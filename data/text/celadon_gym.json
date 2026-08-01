@@ -1,0 +1,530 @@
+{
+ "CeladonGymErikaPreBattleText": [
+  {
+   "kind": "text",
+   "line": "Hello. Such"
+  },
+  {
+   "kind": "line",
+   "line": "lovely weather,"
+  },
+  {
+   "kind": "cont",
+   "line": "isn't it? So"
+  },
+  {
+   "kind": "cont",
+   "line": "still. So quiet."
+  },
+  {
+   "kind": "para",
+   "line": "...Forgive me."
+  },
+  {
+   "kind": "line",
+   "line": "I was dreaming"
+  },
+  {
+   "kind": "cont",
+   "line": "of funerals."
+  },
+  {
+   "kind": "para",
+   "line": "I am ERIKA,"
+  },
+  {
+   "kind": "line",
+   "line": "LEADER of this"
+  },
+  {
+   "kind": "cont",
+   "line": "garden, and GYM."
+  },
+  {
+   "kind": "para",
+   "line": "I arrange flowers"
+  },
+  {
+   "kind": "line",
+   "line": "for the dead."
+  },
+  {
+   "kind": "cont",
+   "line": "My #MON share"
+  },
+  {
+   "kind": "cont",
+   "line": "that quiet rot."
+  },
+  {
+   "kind": "para",
+   "line": "You wish to"
+  },
+  {
+   "kind": "line",
+   "line": "challenge me?"
+  },
+  {
+   "kind": "para",
+   "line": "How lovely."
+  },
+  {
+   "kind": "line",
+   "line": "I shan't lose."
+  }
+ ],
+ "CeladonGymErikaReceivedRainbowBadgeText": [
+  {
+   "kind": "text",
+   "line": "Oh."
+  },
+  {
+   "kind": "line",
+   "line": "I concede, then."
+  },
+  {
+   "kind": "para",
+   "line": "You are terribly"
+  },
+  {
+   "kind": "line",
+   "line": "strong, aren't you."
+  },
+  {
+   "kind": "para",
+   "line": "Here. The"
+  },
+  {
+   "kind": "line",
+   "line": "RAINBOWBADGE, and"
+  },
+  {
+   "kind": "cont",
+   "line": "my condolences."
+  }
+ ],
+ "CeladonGymErikaPostBattleAdviceText": [
+  {
+   "kind": "text",
+   "line": "Cataloguing"
+  },
+  {
+   "kind": "line",
+   "line": "#MON? How"
+  },
+  {
+   "kind": "cont",
+   "line": "quaint. I'm"
+  },
+  {
+   "kind": "cont",
+   "line": "impressed, truly."
+  },
+  {
+   "kind": "para",
+   "line": "I'd never keep"
+  },
+  {
+   "kind": "line",
+   "line": "one that wasn't"
+  },
+  {
+   "kind": "cont",
+   "line": "beautiful."
+  },
+  {
+   "kind": "cont",
+   "line": "Even in death."
+  }
+ ],
+ "CeladonGymRainbowBadgeInfoText": [
+  {
+   "kind": "text",
+   "line": "The RAINBOWBADGE"
+  },
+  {
+   "kind": "line",
+   "line": "compels #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "up to L50 to obey."
+  },
+  {
+   "kind": "para",
+   "line": "It also grants"
+  },
+  {
+   "kind": "line",
+   "line": "STRENGTH, in"
+  },
+  {
+   "kind": "cont",
+   "line": "battle and out"
+  },
+  {
+   "kind": "cont",
+   "line": "of it."
+  },
+  {
+   "kind": "para",
+   "line": "Take this too,"
+  },
+  {
+   "kind": "line",
+   "line": "won't you."
+  }
+ ],
+ "CeladonGymReceivedTM21Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "TM21ExplanationText": [
+  {
+   "kind": "para",
+   "line": "TM21 contains"
+  },
+  {
+   "kind": "line",
+   "line": "MEGA DRAIN."
+  },
+  {
+   "kind": "para",
+   "line": "Half the damage"
+  },
+  {
+   "kind": "line",
+   "line": "it inflicts is"
+  },
+  {
+   "kind": "cont",
+   "line": "drained to heal"
+  },
+  {
+   "kind": "cont",
+   "line": "your #MON!"
+  }
+ ],
+ "CeladonGymTM21NoRoomText": [
+  {
+   "kind": "text",
+   "line": "You should make"
+  },
+  {
+   "kind": "line",
+   "line": "room for this."
+  }
+ ],
+ "CeladonGymBattleText2": [
+  {
+   "kind": "text",
+   "line": "Hey!"
+  },
+  {
+   "kind": "para",
+   "line": "You are not"
+  },
+  {
+   "kind": "line",
+   "line": "allowed in here!"
+  }
+ ],
+ "CeladonGymEndBattleText2": [
+  {
+   "kind": "text",
+   "line": "You're"
+  },
+  {
+   "kind": "line",
+   "line": "too rough!"
+  }
+ ],
+ "CeladonGymAfterBattleText2": [
+  {
+   "kind": "text",
+   "line": "Bleaah!"
+  },
+  {
+   "kind": "line",
+   "line": "I hope ERIKA"
+  },
+  {
+   "kind": "cont",
+   "line": "wipes you out!"
+  }
+ ],
+ "CeladonGymBattleText3": [
+  {
+   "kind": "text",
+   "line": "I was getting"
+  },
+  {
+   "kind": "line",
+   "line": "bored."
+  }
+ ],
+ "CeladonGymEndBattleText3": [
+  {
+   "kind": "text",
+   "line": "My"
+  },
+  {
+   "kind": "line",
+   "line": "makeup!"
+  }
+ ],
+ "CeladonGymAfterBattleText3": [
+  {
+   "kind": "text",
+   "line": "Grass-type #MON"
+  },
+  {
+   "kind": "line",
+   "line": "are tough against"
+  },
+  {
+   "kind": "cont",
+   "line": "the water-type!"
+  },
+  {
+   "kind": "para",
+   "line": "They also have an"
+  },
+  {
+   "kind": "line",
+   "line": "edge on rock and"
+  },
+  {
+   "kind": "cont",
+   "line": "ground #MON!"
+  }
+ ],
+ "CeladonGymBattleText4": [
+  {
+   "kind": "text",
+   "line": "Aren't you the"
+  },
+  {
+   "kind": "line",
+   "line": "peeping Tom?"
+  }
+ ],
+ "CeladonGymEndBattleText4": [
+  {
+   "kind": "text",
+   "line": "I'm"
+  },
+  {
+   "kind": "line",
+   "line": "in shock!"
+  }
+ ],
+ "CeladonGymAfterBattleText4": [
+  {
+   "kind": "text",
+   "line": "Oh, you weren't"
+  },
+  {
+   "kind": "line",
+   "line": "peeping? We get a"
+  },
+  {
+   "kind": "cont",
+   "line": "lot of gawkers!"
+  }
+ ],
+ "CeladonGymBattleText5": [
+  {
+   "kind": "text",
+   "line": "Look at my grass"
+  },
+  {
+   "kind": "line",
+   "line": "#MON!"
+  },
+  {
+   "kind": "para",
+   "line": "They're so easy"
+  },
+  {
+   "kind": "line",
+   "line": "to raise!"
+  }
+ ],
+ "CeladonGymEndBattleText5": [
+  {
+   "kind": "text",
+   "line": "No!"
+  }
+ ],
+ "CeladonGymAfterBattleText5": [
+  {
+   "kind": "text",
+   "line": "We only use grass-"
+  },
+  {
+   "kind": "line",
+   "line": "type #MON at"
+  },
+  {
+   "kind": "cont",
+   "line": "our GYM!"
+  },
+  {
+   "kind": "para",
+   "line": "We also use them"
+  },
+  {
+   "kind": "line",
+   "line": "for making flower"
+  },
+  {
+   "kind": "cont",
+   "line": "arrangements!"
+  }
+ ],
+ "CeladonGymBattleText6": [
+  {
+   "kind": "text",
+   "line": "Don't bring any"
+  },
+  {
+   "kind": "line",
+   "line": "bugs or fire"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON in here!"
+  }
+ ],
+ "CeladonGymEndBattleText6": [
+  {
+   "kind": "text",
+   "line": "Oh!"
+  },
+  {
+   "kind": "line",
+   "line": "You!"
+  }
+ ],
+ "CeladonGymAfterBattleText6": [
+  {
+   "kind": "text",
+   "line": "Our LEADER, ERIKA,"
+  },
+  {
+   "kind": "line",
+   "line": "might be quiet,"
+  },
+  {
+   "kind": "cont",
+   "line": "but she's also"
+  },
+  {
+   "kind": "cont",
+   "line": "very skilled!"
+  }
+ ],
+ "CeladonGymBattleText7": [
+  {
+   "kind": "text",
+   "line": "Pleased to meet"
+  },
+  {
+   "kind": "line",
+   "line": "you. My hobby is"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON training."
+  }
+ ],
+ "CeladonGymEndBattleText7": [
+  {
+   "kind": "text",
+   "line": "Oh!"
+  },
+  {
+   "kind": "line",
+   "line": "Splendid!"
+  }
+ ],
+ "CeladonGymAfterBattleText7": [
+  {
+   "kind": "text",
+   "line": "I have a blind"
+  },
+  {
+   "kind": "line",
+   "line": "date coming up."
+  },
+  {
+   "kind": "cont",
+   "line": "I have to learn"
+  },
+  {
+   "kind": "cont",
+   "line": "to be polite."
+  }
+ ],
+ "CeladonGymBattleText8": [
+  {
+   "kind": "text",
+   "line": "Welcome to"
+  },
+  {
+   "kind": "line",
+   "line": "CELADON GYM!"
+  },
+  {
+   "kind": "para",
+   "line": "You better not"
+  },
+  {
+   "kind": "line",
+   "line": "underestimate"
+  },
+  {
+   "kind": "cont",
+   "line": "girl power!"
+  }
+ ],
+ "CeladonGymEndBattleText8": [
+  {
+   "kind": "text",
+   "line": "Oh!"
+  },
+  {
+   "kind": "line",
+   "line": "Beaten!"
+  }
+ ],
+ "CeladonGymAfterBattleText8": [
+  {
+   "kind": "text",
+   "line": "I didn't bring my"
+  },
+  {
+   "kind": "line",
+   "line": "best #MON!"
+  },
+  {
+   "kind": "para",
+   "line": "Wait 'til next"
+  },
+  {
+   "kind": "line",
+   "line": "time!"
+  }
+ ]
+}

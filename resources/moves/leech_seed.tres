@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_b16vc"]
+
+[resource]
+script = ExtResource("1_b16vc")
+move_name = "LEECH_SEED"
+move_id = 73
+display_name = "LEECH SEED"
+move_type = "GRASS"
+power = 0
+accuracy = 90
+pp = 10
+effect = "LEECH_SEED_EFFECT"

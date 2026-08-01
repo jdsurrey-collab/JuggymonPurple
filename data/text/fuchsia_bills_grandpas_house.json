@@ -1,0 +1,76 @@
+{
+ "FuchsiaBillsGrandpasHouseMiddleAgedWomanText": [
+  {
+   "kind": "text",
+   "line": "SAFARI ZONE's"
+  },
+  {
+   "kind": "line",
+   "line": "WARDEN is old,"
+  },
+  {
+   "kind": "cont",
+   "line": "yet still keen!"
+  },
+  {
+   "kind": "para",
+   "line": "All his teeth"
+  },
+  {
+   "kind": "line",
+   "line": "are false, though."
+  }
+ ],
+ "FuchsiaBillsGrandpasHouseBillsGrandpaText": [
+  {
+   "kind": "text",
+   "line": "Hmm? You've met"
+  },
+  {
+   "kind": "line",
+   "line": "BILL?"
+  },
+  {
+   "kind": "para",
+   "line": "He's my own"
+  },
+  {
+   "kind": "line",
+   "line": "grandson!"
+  },
+  {
+   "kind": "para",
+   "line": "He always loved"
+  },
+  {
+   "kind": "line",
+   "line": "collecting things,"
+  },
+  {
+   "kind": "cont",
+   "line": "since childhood!"
+  }
+ ],
+ "FuchsiaBillsGrandpasHouseYoungsterText": [
+  {
+   "kind": "text",
+   "line": "BILL keeps his"
+  },
+  {
+   "kind": "line",
+   "line": "own #MON data"
+  },
+  {
+   "kind": "cont",
+   "line": "on his PC!"
+  },
+  {
+   "kind": "para",
+   "line": "Did he show you"
+  },
+  {
+   "kind": "line",
+   "line": "it, ever?"
+  }
+ ]
+}

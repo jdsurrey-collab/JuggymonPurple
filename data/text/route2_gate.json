@@ -1,0 +1,34 @@
+{
+ "Route2GateOaksAideFlashExplanationText": [
+  {
+   "kind": "text",
+   "line": "FLASH lights even"
+  },
+  {
+   "kind": "line",
+   "line": "the darkest of"
+  },
+  {
+   "kind": "cont",
+   "line": "tombs we enter."
+  }
+ ],
+ "Route2GateYoungsterText": [
+  {
+   "kind": "text",
+   "line": "Once your #MON"
+  },
+  {
+   "kind": "line",
+   "line": "learns FLASH, the"
+  },
+  {
+   "kind": "cont",
+   "line": "TUNNEL won't"
+  },
+  {
+   "kind": "cont",
+   "line": "swallow you."
+  }
+ ]
+}

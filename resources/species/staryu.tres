@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=46 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/staryu.png" id="1_ii4qi"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_eojt0"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/staryu.png" id="3_tmco8"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_biuso"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="5_p6ba1"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="6_xh08f"]
+[ext_resource type="Resource" path="res://resources/moves/recover.tres" id="7_7nk30"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="8_bgjww"]
+[ext_resource type="Resource" path="res://resources/moves/minimize.tres" id="9_fooky"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="10_k2l0y"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="11_hp0tr"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="12_4tl5b"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="13_h351w"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_21fiq"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_hclnr"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_j5ioq"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_m4e5b"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="18_657mq"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="19_tbbtw"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="20_u8ibf"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="21_7v48u"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="22_4avoa"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="23_l422o"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="24_3wp4b"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="25_dqf0l"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="26_m7i60"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="27_eysba"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="28_5fbr0"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="29_1gg3m"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="30_tqfwq"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="31_pdfq2"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="32_3kklw"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="33_f3sgj"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="34_x8exk"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="35_74bsn"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="36_02wnj"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="37_mx2nm"]
+
+[sub_resource type="Resource" id="Resource_ic0ji"]
+script = ExtResource("2_eojt0")
+method = "ITEM"
+target = "STARMIE"
+level = 0
+item = "WATER_STONE"
+
+[sub_resource type="Resource" id="Resource_7372v"]
+script = ExtResource("4_biuso")
+level = 17
+move = ExtResource("5_p6ba1")
+
+[sub_resource type="Resource" id="Resource_af6ah"]
+script = ExtResource("4_biuso")
+level = 22
+move = ExtResource("6_xh08f")
+
+[sub_resource type="Resource" id="Resource_e441g"]
+script = ExtResource("4_biuso")
+level = 27
+move = ExtResource("7_7nk30")
+
+[sub_resource type="Resource" id="Resource_vkqw4"]
+script = ExtResource("4_biuso")
+level = 32
+move = ExtResource("8_bgjww")
+
+[sub_resource type="Resource" id="Resource_kt5og"]
+script = ExtResource("4_biuso")
+level = 37
+move = ExtResource("9_fooky")
+
+[sub_resource type="Resource" id="Resource_wyqm6"]
+script = ExtResource("4_biuso")
+level = 42
+move = ExtResource("10_k2l0y")
+
+[sub_resource type="Resource" id="Resource_h0al3"]
+script = ExtResource("4_biuso")
+level = 47
+move = ExtResource("11_hp0tr")
+
+[resource]
+script = ExtResource("14_21fiq")
+species_name = "STARYU"
+dex = 120
+index = 27
+slug = "staryu"
+label = "Staryu"
+category = "STARSHAPE"
+height_ft = 2
+height_in = 7
+weight_tenths_lb = 760
+hp = 30
+attack = 45
+defense = 55
+speed = 85
+special = 70
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 225
+base_exp = 106
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("12_4tl5b")]([ExtResource("13_h351w")])
+learnset = Array[ExtResource("4_biuso")]([SubResource("Resource_7372v"), SubResource("Resource_af6ah"), SubResource("Resource_e441g"), SubResource("Resource_vkqw4"), SubResource("Resource_kt5og"), SubResource("Resource_wyqm6"), SubResource("Resource_h0al3")])
+tmhm = Array[ExtResource("12_4tl5b")]([ExtResource("15_hclnr"), ExtResource("16_j5ioq"), ExtResource("17_m4e5b"), ExtResource("18_657mq"), ExtResource("5_p6ba1"), ExtResource("19_tbbtw"), ExtResource("20_u8ibf"), ExtResource("21_7v48u"), ExtResource("22_4avoa"), ExtResource("23_l422o"), ExtResource("24_3wp4b"), ExtResource("25_dqf0l"), ExtResource("26_m7i60"), ExtResource("27_eysba"), ExtResource("28_5fbr0"), ExtResource("29_1gg3m"), ExtResource("8_bgjww"), ExtResource("30_tqfwq"), ExtResource("31_pdfq2"), ExtResource("32_3kklw"), ExtResource("33_f3sgj"), ExtResource("34_x8exk"), ExtResource("35_74bsn"), ExtResource("36_02wnj"), ExtResource("37_mx2nm")])
+evolutions = Array[ExtResource("2_eojt0")]([SubResource("Resource_ic0ji")])
+palette = "PAL_REDMON"
+menu_icon = "ICON_HELIX"
+dex_text = Array[String](["An enigmatic", "#MON that can", "effortlessly", "regenerate any", "appendage it", "loses in battle"])
+front_sprite = ExtResource("3_tmco8")
+back_sprite = ExtResource("1_ii4qi")

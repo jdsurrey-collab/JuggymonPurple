@@ -1,0 +1,204 @@
+{
+ "WardensHouseWardenGibberish1Text": [
+  {
+   "kind": "text",
+   "line": "WARDEN: Hif fuff"
+  },
+  {
+   "kind": "line",
+   "line": "hefifoo!"
+  },
+  {
+   "kind": "para",
+   "line": "Ha lof ha feef ee"
+  },
+  {
+   "kind": "line",
+   "line": "hafahi ho. Heff"
+  },
+  {
+   "kind": "cont",
+   "line": "hee fwee!"
+  }
+ ],
+ "WardensHouseWardenGibberish2Text": [
+  {
+   "kind": "text",
+   "line": "Ah howhee ho hoo!"
+  },
+  {
+   "kind": "line",
+   "line": "Eef ee hafahi ho!"
+  }
+ ],
+ "WardensHouseWardenGibberish3Text": [
+  {
+   "kind": "text",
+   "line": "Ha? He ohay heh"
+  },
+  {
+   "kind": "line",
+   "line": "ha hoo ee haheh!"
+  }
+ ],
+ "WardensHouseWardenGaveTheGoldTeethText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> gave the"
+  },
+  {
+   "kind": "line",
+   "line": "GOLD TEETH to the"
+  },
+  {
+   "kind": "cont",
+   "line": "WARDEN!@"
+  }
+ ],
+ "WardensHouseWardenTeethPoppedInHisTeethText": [
+  {
+   "kind": "para",
+   "line": "The WARDEN popped"
+  },
+  {
+   "kind": "line",
+   "line": "in his teeth!"
+  }
+ ],
+ "WardensHouseWardenThanksText": [
+  {
+   "kind": "text",
+   "line": "WARDEN: My thanks,"
+  },
+  {
+   "kind": "line",
+   "line": "child! No soul"
+  },
+  {
+   "kind": "cont",
+   "line": "could understand"
+  },
+  {
+   "kind": "cont",
+   "line": "a word I said."
+  },
+  {
+   "kind": "para",
+   "line": "I couldn't labor"
+  },
+  {
+   "kind": "line",
+   "line": "that way."
+  },
+  {
+   "kind": "cont",
+   "line": "Let me offer you"
+  },
+  {
+   "kind": "cont",
+   "line": "something for"
+  },
+  {
+   "kind": "cont",
+   "line": "your trouble."
+  }
+ ],
+ "WardensHouseWardenReceivedHM04Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "WardensHouseWardenHM04ExplanationText": [
+  {
+   "kind": "text",
+   "line": "WARDEN: HM04"
+  },
+  {
+   "kind": "line",
+   "line": "teaches STRENGTH!"
+  },
+  {
+   "kind": "para",
+   "line": "It lets #MON"
+  },
+  {
+   "kind": "line",
+   "line": "shift boulders"
+  },
+  {
+   "kind": "cont",
+   "line": "when you're out-"
+  },
+  {
+   "kind": "cont",
+   "line": "side of battle."
+  },
+  {
+   "kind": "para",
+   "line": "Oh, and did you"
+  },
+  {
+   "kind": "line",
+   "line": "find SECRET HOUSE"
+  },
+  {
+   "kind": "cont",
+   "line": "in SAFARI ZONE?"
+  },
+  {
+   "kind": "para",
+   "line": "If you do, you"
+  },
+  {
+   "kind": "line",
+   "line": "win an HM!"
+  },
+  {
+   "kind": "para",
+   "line": "I hear it's the"
+  },
+  {
+   "kind": "line",
+   "line": "rare SURF HM."
+  }
+ ],
+ "WardensHouseWardenHM04NoRoomText": [
+  {
+   "kind": "text",
+   "line": "Your pack is"
+  },
+  {
+   "kind": "line",
+   "line": "stuffed full!"
+  }
+ ],
+ "WardensHouseDisplayPhotosAndFossilsText": [
+  {
+   "kind": "text",
+   "line": "#MON photos"
+  },
+  {
+   "kind": "line",
+   "line": "and fossils."
+  }
+ ],
+ "WardensHouseDisplayMerchandiseText": [
+  {
+   "kind": "text",
+   "line": "Old #MON"
+  },
+  {
+   "kind": "line",
+   "line": "relics."
+  }
+ ]
+}

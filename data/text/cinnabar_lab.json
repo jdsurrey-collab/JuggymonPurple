@@ -1,0 +1,72 @@
+{
+ "CinnabarLabFishingGuruText": [
+  {
+   "kind": "text",
+   "line": "We study #MON"
+  },
+  {
+   "kind": "line",
+   "line": "deep in this ash-"
+  },
+  {
+   "kind": "cont",
+   "line": "scarred place."
+  },
+  {
+   "kind": "para",
+   "line": "Folk often bring"
+  },
+  {
+   "kind": "line",
+   "line": "us rare #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "for our study."
+  }
+ ],
+ "CinnabarLabPhotoText": [
+  {
+   "kind": "text",
+   "line": "A photo of the"
+  },
+  {
+   "kind": "line",
+   "line": "LAB's founder,"
+  },
+  {
+   "kind": "cont",
+   "line": "DR.FUJI!"
+  }
+ ],
+ "CinnabarLabMeetingRoomSignText": [
+  {
+   "kind": "text",
+   "line": "#MON LAB"
+  },
+  {
+   "kind": "line",
+   "line": "Meeting Room"
+  }
+ ],
+ "CinnabarLabRAndDSignText": [
+  {
+   "kind": "text",
+   "line": "#MON LAB"
+  },
+  {
+   "kind": "line",
+   "line": "R-and-D Room"
+  }
+ ],
+ "CinnabarLabTestingRoomSignText": [
+  {
+   "kind": "text",
+   "line": "#MON LAB"
+  },
+  {
+   "kind": "line",
+   "line": "Testing Room"
+  }
+ ]
+}

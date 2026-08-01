@@ -1,0 +1,58 @@
+{
+ "MrPsychicsHouseMrPsychicYouWantedThisText": [
+  {
+   "kind": "text",
+   "line": "...Wait! Speak"
+  },
+  {
+   "kind": "line",
+   "line": "not a word!"
+  },
+  {
+   "kind": "para",
+   "line": "You desired this!"
+  }
+ ],
+ "MrPsychicsHouseMrPsychicReceivedTM29Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "MrPsychicsHouseMrPsychicTM29ExplanationText": [
+  {
+   "kind": "text",
+   "line": "TM29 is PSYCHIC!"
+  },
+  {
+   "kind": "para",
+   "line": "It may weaken"
+  },
+  {
+   "kind": "line",
+   "line": "the foe's own"
+  },
+  {
+   "kind": "cont",
+   "line": "SPECIAL powers."
+  }
+ ],
+ "MrPsychicsHouseMrPsychicTM29NoRoomText": [
+  {
+   "kind": "text",
+   "line": "Where do you mean"
+  },
+  {
+   "kind": "line",
+   "line": "to place this?"
+  }
+ ]
+}

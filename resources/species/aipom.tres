@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=29 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/aipom.png" id="1_02b4h"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_dg7kw"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/aipom.png" id="3_1ygub"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_skqyw"]
+[ext_resource type="Resource" path="res://resources/moves/sand_attack.tres" id="5_sww1o"]
+[ext_resource type="Resource" path="res://resources/moves/fury_swipes.tres" id="6_3ycdk"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="7_g7nhl"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="8_v8t13"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="9_ew0db"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_j1di8"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="11_r6ujf"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="12_h2v16"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_vqj3u"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_pfx5t"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_8c15b"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_g8wag"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_3qsyy"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_upfx8"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_1ahbp"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_egw5i"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="21_bfjkh"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="22_nt3j8"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="23_lnwpx"]
+
+[sub_resource type="Resource" id="Resource_ljm74"]
+script = ExtResource("4_skqyw")
+level = 6
+move = ExtResource("5_sww1o")
+
+[sub_resource type="Resource" id="Resource_m5amj"]
+script = ExtResource("4_skqyw")
+level = 19
+move = ExtResource("6_3ycdk")
+
+[sub_resource type="Resource" id="Resource_x42go"]
+script = ExtResource("4_skqyw")
+level = 27
+move = ExtResource("7_g7nhl")
+
+[sub_resource type="Resource" id="Resource_xl6pa"]
+script = ExtResource("4_skqyw")
+level = 36
+move = ExtResource("8_v8t13")
+
+[sub_resource type="Resource" id="Resource_1vfss"]
+script = ExtResource("4_skqyw")
+level = 46
+move = ExtResource("9_ew0db")
+
+[resource]
+script = ExtResource("13_vqj3u")
+species_name = "AIPOM"
+dex = 190
+index = 193
+slug = "aipom"
+label = "Aipom"
+category = "LONG TAIL"
+height_ft = 2
+height_in = 7
+weight_tenths_lb = 250
+hp = 55
+attack = 70
+defense = 55
+speed = 85
+special = 47
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 45
+base_exp = 94
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("10_j1di8")]([ExtResource("11_r6ujf"), ExtResource("12_h2v16")])
+learnset = Array[ExtResource("4_skqyw")]([SubResource("Resource_ljm74"), SubResource("Resource_m5amj"), SubResource("Resource_x42go"), SubResource("Resource_xl6pa"), SubResource("Resource_1vfss")])
+tmhm = Array[ExtResource("10_j1di8")]([ExtResource("14_pfx5t"), ExtResource("15_8c15b"), ExtResource("16_g8wag"), ExtResource("17_3qsyy"), ExtResource("18_upfx8"), ExtResource("19_1ahbp"), ExtResource("20_egw5i"), ExtResource("7_g7nhl"), ExtResource("21_bfjkh"), ExtResource("22_nt3j8"), ExtResource("23_lnwpx")])
+evolutions = Array[ExtResource("2_dg7kw")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its tail is more", "clever than its", "hands, and takes", "what it pleases", "from the careless."])
+front_sprite = ExtResource("3_1ygub")
+back_sprite = ExtResource("1_02b4h")

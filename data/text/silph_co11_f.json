@@ -1,0 +1,352 @@
+{
+ "SilphCo11FSilphPresidentText": [
+  {
+   "kind": "text",
+   "line": "PRESIDENT: My"
+  },
+  {
+   "kind": "line",
+   "line": "thanks. You've"
+  },
+  {
+   "kind": "cont",
+   "line": "saved us all."
+  },
+  {
+   "kind": "para",
+   "line": "I shan't forget"
+  },
+  {
+   "kind": "line",
+   "line": "this moment of"
+  },
+  {
+   "kind": "cont",
+   "line": "terror, nor your"
+  },
+  {
+   "kind": "cont",
+   "line": "part in ending it."
+  },
+  {
+   "kind": "para",
+   "line": "I must repay"
+  },
+  {
+   "kind": "line",
+   "line": "you, somehow."
+  },
+  {
+   "kind": "para",
+   "line": "My wealth is"
+  },
+  {
+   "kind": "line",
+   "line": "considerable."
+  },
+  {
+   "kind": "cont",
+   "line": "Name your price."
+  },
+  {
+   "kind": "para",
+   "line": "Here. Perhaps"
+  },
+  {
+   "kind": "line",
+   "line": "this will suffice."
+  }
+ ],
+ "SilphCo11FSilphPresidentReceivedMasterBallText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> got a"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "SilphCo11FSilphPresidentMasterBallDescriptionText": [
+  {
+   "kind": "text",
+   "line": "PRESIDENT: No"
+  },
+  {
+   "kind": "line",
+   "line": "coin could buy"
+  },
+  {
+   "kind": "cont",
+   "line": "that, anywhere."
+  },
+  {
+   "kind": "para",
+   "line": "It is our secret"
+  },
+  {
+   "kind": "line",
+   "line": "prototype MASTER"
+  },
+  {
+   "kind": "cont",
+   "line": "BALL."
+  },
+  {
+   "kind": "para",
+   "line": "It shall not fail"
+  },
+  {
+   "kind": "line",
+   "line": "you. Not once."
+  },
+  {
+   "kind": "para",
+   "line": "Speak of it to"
+  },
+  {
+   "kind": "line",
+   "line": "no one, mind."
+  },
+  {
+   "kind": "cont",
+   "line": "Not a soul."
+  }
+ ],
+ "SilphCo11FSilphPresidentNoRoomText": [
+  {
+   "kind": "text",
+   "line": "You have no"
+  },
+  {
+   "kind": "line",
+   "line": "room for this."
+  }
+ ],
+ "SilphCo11FBeautyText": [
+  {
+   "kind": "text",
+   "line": "SECRETARY: Thank"
+  },
+  {
+   "kind": "line",
+   "line": "you for rescuing"
+  },
+  {
+   "kind": "cont",
+   "line": "all of us!"
+  },
+  {
+   "kind": "para",
+   "line": "We admire your"
+  },
+  {
+   "kind": "line",
+   "line": "courage."
+  }
+ ],
+ "SilphCo11FGiovanniText": [
+  {
+   "kind": "text",
+   "line": "Ah, <PLAYER>."
+  },
+  {
+   "kind": "line",
+   "line": "We meet again."
+  },
+  {
+   "kind": "para",
+   "line": "The PRESIDENT and"
+  },
+  {
+   "kind": "line",
+   "line": "I discuss a"
+  },
+  {
+   "kind": "cont",
+   "line": "matter of some"
+  },
+  {
+   "kind": "cont",
+   "line": "delicacy."
+  },
+  {
+   "kind": "para",
+   "line": "Mind your place,"
+  },
+  {
+   "kind": "line",
+   "line": "child. This does"
+  },
+  {
+   "kind": "cont",
+   "line": "not concern you."
+  },
+  {
+   "kind": "para",
+   "line": "Or learn what"
+  },
+  {
+   "kind": "line",
+   "line": "true suffering is."
+  }
+ ],
+ "SilphCo10FGiovanniILostAgainText": [
+  {
+   "kind": "text",
+   "line": "...Impossible."
+  },
+  {
+   "kind": "line",
+   "line": "Beaten. Again."
+  }
+ ],
+ "SilphCo11FGiovanniYouRuinedOurPlansText": [
+  {
+   "kind": "text",
+   "line": "...Very well."
+  },
+  {
+   "kind": "line",
+   "line": "You've undone"
+  },
+  {
+   "kind": "cont",
+   "line": "our work here."
+  },
+  {
+   "kind": "para",
+   "line": "But TEAM ROCKET"
+  },
+  {
+   "kind": "line",
+   "line": "does not fall so"
+  },
+  {
+   "kind": "cont",
+   "line": "easily as that."
+  },
+  {
+   "kind": "para",
+   "line": "Remember this,"
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>: every"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON in this"
+  },
+  {
+   "kind": "cont",
+   "line": "world belongs"
+  },
+  {
+   "kind": "cont",
+   "line": "to us."
+  },
+  {
+   "kind": "para",
+   "line": "I take my leave"
+  },
+  {
+   "kind": "line",
+   "line": "of you now."
+  },
+  {
+   "kind": "para",
+   "line": "We shall meet"
+  },
+  {
+   "kind": "line",
+   "line": "again, I promise"
+  },
+  {
+   "kind": "cont",
+   "line": "you that."
+  }
+ ],
+ "SilphCo11FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "Stop right there!"
+  },
+  {
+   "kind": "line",
+   "line": "Don't you move!"
+  }
+ ],
+ "SilphCo11FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Don't..."
+  },
+  {
+   "kind": "line",
+   "line": "Please!"
+  }
+ ],
+ "SilphCo11FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "So, you want to"
+  },
+  {
+   "kind": "line",
+   "line": "see my BOSS?"
+  }
+ ],
+ "SilphCo11FRocket2BattleText": [
+  {
+   "kind": "text",
+   "line": "Halt! Do you have"
+  },
+  {
+   "kind": "line",
+   "line": "an appointment"
+  },
+  {
+   "kind": "cont",
+   "line": "with my BOSS?"
+  }
+ ],
+ "SilphCo11FRocket2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Gaah!"
+  },
+  {
+   "kind": "line",
+   "line": "Demolished!"
+  }
+ ],
+ "SilphCo11FRocket2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Watch your step,"
+  },
+  {
+   "kind": "line",
+   "line": "my BOSS likes his"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON tough!"
+  }
+ ],
+ "SilphCo10FPorygonText": [
+  {
+   "kind": "text",
+   "line": "The monitor has"
+  },
+  {
+   "kind": "line",
+   "line": "#MON on it!"
+  }
+ ]
+}

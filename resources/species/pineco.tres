@@ -1,0 +1,80 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=28 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/pineco.png" id="1_glbth"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_pi6cj"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/pineco.png" id="3_ob1we"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_llybe"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="5_yk0r4"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="6_dyhg2"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="7_6agxx"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="8_ll10x"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="9_ovyyp"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_f2cx4"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_4c1ku"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_ybue2"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_dpua2"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_2t6mk"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_awapw"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_1gnck"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_3yj2i"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_6jxsc"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="19_3qf6i"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="20_eaj5j"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="21_71uov"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="22_cg5mq"]
+
+[sub_resource type="Resource" id="Resource_dd7qh"]
+script = ExtResource("4_llybe")
+level = 8
+move = ExtResource("5_yk0r4")
+
+[sub_resource type="Resource" id="Resource_mwxwb"]
+script = ExtResource("4_llybe")
+level = 15
+move = ExtResource("6_dyhg2")
+
+[sub_resource type="Resource" id="Resource_ldky5"]
+script = ExtResource("4_llybe")
+level = 29
+move = ExtResource("7_6agxx")
+
+[sub_resource type="Resource" id="Resource_oas71"]
+script = ExtResource("4_llybe")
+level = 36
+move = ExtResource("8_ll10x")
+
+[sub_resource type="Resource" id="Resource_wftqe"]
+script = ExtResource("4_llybe")
+level = 50
+move = ExtResource("9_ovyyp")
+
+[resource]
+script = ExtResource("12_ybue2")
+species_name = "PINECO"
+dex = 201
+index = 204
+slug = "pineco"
+label = "Pineco"
+category = "BAGWORM"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 160
+hp = 50
+attack = 65
+defense = 90
+speed = 15
+special = 35
+type1 = "BUG"
+type2 = "BUG"
+catch_rate = 190
+base_exp = 60
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_f2cx4")]([ExtResource("11_4c1ku")])
+learnset = Array[ExtResource("4_llybe")]([SubResource("Resource_dd7qh"), SubResource("Resource_mwxwb"), SubResource("Resource_ldky5"), SubResource("Resource_oas71"), SubResource("Resource_wftqe")])
+tmhm = Array[ExtResource("10_f2cx4")]([ExtResource("13_dpua2"), ExtResource("14_2t6mk"), ExtResource("15_awapw"), ExtResource("16_1gnck"), ExtResource("17_3yj2i"), ExtResource("18_6jxsc"), ExtResource("7_6agxx"), ExtResource("19_3qf6i"), ExtResource("20_eaj5j"), ExtResource("21_71uov"), ExtResource("22_cg5mq")])
+evolutions = Array[ExtResource("2_pi6cj")]([])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["It hangs still", "and bursts when", "jostled. Woodsmen", "have learned not", "to strike trees."])
+front_sprite = ExtResource("3_ob1we")
+back_sprite = ExtResource("1_glbth")

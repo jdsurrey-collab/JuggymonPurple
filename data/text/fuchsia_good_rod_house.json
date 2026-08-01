@@ -1,0 +1,104 @@
+{
+ "FuchsiaGoodRodHouseFishingGuruText": [
+  {
+   "kind": "text",
+   "line": "I'm the FISHING"
+  },
+  {
+   "kind": "line",
+   "line": "GURU's elder"
+  },
+  {
+   "kind": "cont",
+   "line": "brother!"
+  },
+  {
+   "kind": "para",
+   "line": "I do so love"
+  },
+  {
+   "kind": "line",
+   "line": "to fish!"
+  },
+  {
+   "kind": "para",
+   "line": "Do you care for"
+  },
+  {
+   "kind": "line",
+   "line": "it, as well?"
+  }
+ ],
+ "FuchsiaGoodRodHouseFishingGuruReceivedGoodRodText": [
+  {
+   "kind": "text",
+   "line": "Splendid! I do"
+  },
+  {
+   "kind": "line",
+   "line": "favor your kind!"
+  },
+  {
+   "kind": "para",
+   "line": "Take this, and"
+  },
+  {
+   "kind": "line",
+   "line": "go fish, child!"
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "a @"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "FuchsiaGoodRodHouseFishingGuruThatsSoDisappointingText": [
+  {
+   "kind": "text",
+   "line": "Oh... how truly"
+  },
+  {
+   "kind": "line",
+   "line": "disheartening..."
+  }
+ ],
+ "FuchsiaGoodRodHouseFishingGuruHowAreTheFishText": [
+  {
+   "kind": "text",
+   "line": "Good day to you,"
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>!"
+  },
+  {
+   "kind": "para",
+   "line": "Are the fish"
+  },
+  {
+   "kind": "line",
+   "line": "still biting?"
+  }
+ ],
+ "FuchsiaGoodRodHouseFishingGuruNoRoomText": [
+  {
+   "kind": "text",
+   "line": "Oh no!"
+  },
+  {
+   "kind": "para",
+   "line": "You've no room"
+  },
+  {
+   "kind": "line",
+   "line": "for my gift!"
+  }
+ ]
+}

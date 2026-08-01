@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=45 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/charmander.png" id="1_5pqsx"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_3y33e"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/charmander.png" id="3_wihau"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_okgny"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="5_wuo41"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="6_vvwyu"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="7_l5dnk"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="8_ey412"]
+[ext_resource type="Resource" path="res://resources/moves/flamethrower.tres" id="9_x1q58"]
+[ext_resource type="Resource" path="res://resources/moves/fire_spin.tres" id="10_tgu3h"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_lm0qe"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="12_orkod"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="13_5jtjd"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_cj0sp"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="15_l2ubu"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="16_08a8a"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="17_nlrm6"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="18_5t2t7"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="19_582uh"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="20_bhbjf"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="21_uo4dj"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="22_r7ogu"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="23_8nwfc"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="24_4vlc8"]
+[ext_resource type="Resource" path="res://resources/moves/dragon_rage.tres" id="25_obr6d"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="26_7i4ar"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="27_pw77p"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="28_88iee"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="29_0jlcr"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="30_om1os"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="31_evkfv"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="32_ma13c"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="33_dnulg"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="34_fy52r"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="35_a1j75"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="36_w37qj"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="37_3a151"]
+
+[sub_resource type="Resource" id="Resource_notm8"]
+script = ExtResource("2_3y33e")
+method = "LEVEL"
+target = "CHARMELEON"
+level = 16
+item = ""
+
+[sub_resource type="Resource" id="Resource_itswk"]
+script = ExtResource("4_okgny")
+level = 9
+move = ExtResource("5_wuo41")
+
+[sub_resource type="Resource" id="Resource_h7d7q"]
+script = ExtResource("4_okgny")
+level = 15
+move = ExtResource("6_vvwyu")
+
+[sub_resource type="Resource" id="Resource_v2m1v"]
+script = ExtResource("4_okgny")
+level = 22
+move = ExtResource("7_l5dnk")
+
+[sub_resource type="Resource" id="Resource_012is"]
+script = ExtResource("4_okgny")
+level = 30
+move = ExtResource("8_ey412")
+
+[sub_resource type="Resource" id="Resource_2hudp"]
+script = ExtResource("4_okgny")
+level = 38
+move = ExtResource("9_x1q58")
+
+[sub_resource type="Resource" id="Resource_4kwnf"]
+script = ExtResource("4_okgny")
+level = 46
+move = ExtResource("10_tgu3h")
+
+[resource]
+script = ExtResource("14_cj0sp")
+species_name = "CHARMANDER"
+dex = 4
+index = 176
+slug = "charmander"
+label = "Charmander"
+category = "LIZARD"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 190
+hp = 39
+attack = 52
+defense = 43
+speed = 65
+special = 50
+type1 = "FIRE"
+type2 = "FIRE"
+catch_rate = 45
+base_exp = 65
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_lm0qe")]([ExtResource("12_orkod"), ExtResource("13_5jtjd")])
+learnset = Array[ExtResource("4_okgny")]([SubResource("Resource_itswk"), SubResource("Resource_h7d7q"), SubResource("Resource_v2m1v"), SubResource("Resource_012is"), SubResource("Resource_2hudp"), SubResource("Resource_4kwnf")])
+tmhm = Array[ExtResource("11_lm0qe")]([ExtResource("15_l2ubu"), ExtResource("16_08a8a"), ExtResource("17_nlrm6"), ExtResource("18_5t2t7"), ExtResource("19_582uh"), ExtResource("20_bhbjf"), ExtResource("21_uo4dj"), ExtResource("22_r7ogu"), ExtResource("23_8nwfc"), ExtResource("24_4vlc8"), ExtResource("7_l5dnk"), ExtResource("25_obr6d"), ExtResource("26_7i4ar"), ExtResource("27_pw77p"), ExtResource("28_88iee"), ExtResource("29_0jlcr"), ExtResource("30_om1os"), ExtResource("31_evkfv"), ExtResource("32_ma13c"), ExtResource("33_dnulg"), ExtResource("34_fy52r"), ExtResource("35_a1j75"), ExtResource("36_w37qj"), ExtResource("37_3a151")])
+evolutions = Array[ExtResource("2_3y33e")]([SubResource("Resource_notm8")])
+palette = "PAL_REDMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Obviously prefers", "hot places. When", "it rains, steam", "is said to spout", "from the tip of", "its tail"])
+front_sprite = ExtResource("3_wihau")
+back_sprite = ExtResource("1_5pqsx")

@@ -1,0 +1,126 @@
+{
+ "PokemonTower6FGhostWasCubonesMotherText": [
+  {
+   "kind": "text",
+   "line": "The GHOST was"
+  },
+  {
+   "kind": "line",
+   "line": "the restless soul"
+  },
+  {
+   "kind": "cont",
+   "line": "of CUBONE's mother."
+  }
+ ],
+ "PokemonTower6FSoulWasCalmedText": [
+  {
+   "kind": "text",
+   "line": "The mother's soul"
+  },
+  {
+   "kind": "line",
+   "line": "was calmed."
+  },
+  {
+   "kind": "para",
+   "line": "She departed to"
+  },
+  {
+   "kind": "line",
+   "line": "rest, at last."
+  }
+ ],
+ "PokemonTower6FChanneler1BattleText": [
+  {
+   "kind": "text",
+   "line": "Give...me..."
+  },
+  {
+   "kind": "line",
+   "line": "blood..."
+  }
+ ],
+ "PokemonTower6FChanneler1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Groan!"
+  }
+ ],
+ "PokemonTower6FChanneler1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I feel anemic and"
+  },
+  {
+   "kind": "line",
+   "line": "weak..."
+  }
+ ],
+ "PokemonTower6FChanneler2BattleText": [
+  {
+   "kind": "text",
+   "line": "Urff... Kwaah!"
+  }
+ ],
+ "PokemonTower6FChanneler2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Some-"
+  },
+  {
+   "kind": "line",
+   "line": "thing fell out!"
+  }
+ ],
+ "PokemonTower6FChanneler2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Not my hair-"
+  },
+  {
+   "kind": "line",
+   "line": "that was an evil"
+  },
+  {
+   "kind": "cont",
+   "line": "spirit, leaving."
+  }
+ ],
+ "PokemonTower6FChanneler3BattleText": [
+  {
+   "kind": "text",
+   "line": "Ke..ke...ke..."
+  },
+  {
+   "kind": "line",
+   "line": "ke..ke...ke!!"
+  }
+ ],
+ "PokemonTower6FChanneler3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Keee!"
+  }
+ ],
+ "PokemonTower6FChanneler3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "What's going on"
+  },
+  {
+   "kind": "line",
+   "line": "here?"
+  }
+ ],
+ "PokemonTower6FBeGoneText": [
+  {
+   "kind": "text",
+   "line": "Be gone..."
+  },
+  {
+   "kind": "line",
+   "line": "Intruders..."
+  }
+ ]
+}

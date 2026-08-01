@@ -1,0 +1,96 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=44 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/golduck.png" id="1_2ndv6"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_sl1mu"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/golduck.png" id="3_atnkw"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_qt0f2"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="5_spj04"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="6_5nmwm"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="7_w6txs"]
+[ext_resource type="Resource" path="res://resources/moves/fury_swipes.tres" id="8_d3yo3"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="9_dsngb"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_u3yy5"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="11_kw6pr"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_ru6wh"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="13_qsnwj"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="14_quk2d"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_o7xm1"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_yboml"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_k5fqa"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_ibcqw"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="19_2untt"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="20_dm4lt"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="21_f1ojh"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="22_iy57j"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="23_6wdwv"]
+[ext_resource type="Resource" path="res://resources/moves/pay_day.tres" id="24_cqj2w"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="25_7ijg1"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="26_t40jf"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="27_f7ev4"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="28_ev1j3"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="29_v0vbv"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="30_vfm5y"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="31_440uk"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="32_ubedu"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="33_ldunw"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="34_e3206"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="35_vhsfq"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="36_ajgpr"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="37_deqxc"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="38_ic2g3"]
+
+[sub_resource type="Resource" id="Resource_jk4uu"]
+script = ExtResource("4_qt0f2")
+level = 28
+move = ExtResource("5_spj04")
+
+[sub_resource type="Resource" id="Resource_y66p8"]
+script = ExtResource("4_qt0f2")
+level = 31
+move = ExtResource("6_5nmwm")
+
+[sub_resource type="Resource" id="Resource_hr2ry"]
+script = ExtResource("4_qt0f2")
+level = 39
+move = ExtResource("7_w6txs")
+
+[sub_resource type="Resource" id="Resource_4d0p2"]
+script = ExtResource("4_qt0f2")
+level = 48
+move = ExtResource("8_d3yo3")
+
+[sub_resource type="Resource" id="Resource_fh1e3"]
+script = ExtResource("4_qt0f2")
+level = 59
+move = ExtResource("9_dsngb")
+
+[resource]
+script = ExtResource("12_ru6wh")
+species_name = "GOLDUCK"
+dex = 55
+index = 128
+slug = "golduck"
+label = "Golduck"
+category = "DUCK"
+height_ft = 5
+height_in = 7
+weight_tenths_lb = 1690
+hp = 80
+attack = 82
+defense = 78
+speed = 85
+special = 80
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 75
+base_exp = 174
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_u3yy5")]([ExtResource("11_kw6pr"), ExtResource("5_spj04"), ExtResource("6_5nmwm")])
+learnset = Array[ExtResource("4_qt0f2")]([SubResource("Resource_jk4uu"), SubResource("Resource_y66p8"), SubResource("Resource_hr2ry"), SubResource("Resource_4d0p2"), SubResource("Resource_fh1e3")])
+tmhm = Array[ExtResource("10_u3yy5")]([ExtResource("13_qsnwj"), ExtResource("14_quk2d"), ExtResource("15_o7xm1"), ExtResource("16_yboml"), ExtResource("17_k5fqa"), ExtResource("18_ibcqw"), ExtResource("19_2untt"), ExtResource("20_dm4lt"), ExtResource("21_f1ojh"), ExtResource("22_iy57j"), ExtResource("23_6wdwv"), ExtResource("24_cqj2w"), ExtResource("25_7ijg1"), ExtResource("26_t40jf"), ExtResource("27_f7ev4"), ExtResource("28_ev1j3"), ExtResource("29_v0vbv"), ExtResource("30_vfm5y"), ExtResource("31_440uk"), ExtResource("32_ubedu"), ExtResource("33_ldunw"), ExtResource("34_e3206"), ExtResource("35_vhsfq"), ExtResource("36_ajgpr"), ExtResource("37_deqxc"), ExtResource("38_ic2g3")])
+evolutions = Array[ExtResource("2_sl1mu")]([])
+palette = "PAL_CYANMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Often seen swim-", "ming elegantly by", "lake shores. It", "is often mistaken", "for the Japanese", "monster, Kappa"])
+front_sprite = ExtResource("3_atnkw")
+back_sprite = ExtResource("1_2ndv6")

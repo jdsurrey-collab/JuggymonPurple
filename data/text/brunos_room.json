@@ -1,0 +1,98 @@
+{
+ "BrunoBeforeBattleText": [
+  {
+   "kind": "text",
+   "line": "I am BRUNO,"
+  },
+  {
+   "kind": "line",
+   "line": "the ELITE FOUR's"
+  },
+  {
+   "kind": "cont",
+   "line": "iron fist."
+  },
+  {
+   "kind": "para",
+   "line": "Through suffering"
+  },
+  {
+   "kind": "line",
+   "line": "alone do man"
+  },
+  {
+   "kind": "cont",
+   "line": "and #MON grow"
+  },
+  {
+   "kind": "cont",
+   "line": "worth anything."
+  },
+  {
+   "kind": "para",
+   "line": "I have broken"
+  },
+  {
+   "kind": "line",
+   "line": "my body training"
+  },
+  {
+   "kind": "cont",
+   "line": "with my #MON."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "We shall grind"
+  },
+  {
+   "kind": "line",
+   "line": "you to nothing"
+  },
+  {
+   "kind": "cont",
+   "line": "with our strength."
+  },
+  {
+   "kind": "para",
+   "line": "Hah."
+  }
+ ],
+ "BrunoEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Why..."
+  },
+  {
+   "kind": "line",
+   "line": "How could this be?"
+  }
+ ],
+ "BrunoAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "My purpose here"
+  },
+  {
+   "kind": "line",
+   "line": "is spent. Go face"
+  },
+  {
+   "kind": "cont",
+   "line": "what comes next."
+  }
+ ],
+ "BrunosRoomBrunoDontRunAwayText": [
+  {
+   "kind": "text",
+   "line": "A voice, hard as"
+  },
+  {
+   "kind": "line",
+   "line": "stone: Don't flee."
+  }
+ ]
+}

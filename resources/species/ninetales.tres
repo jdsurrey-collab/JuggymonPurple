@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=27 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/ninetales.png" id="1_j0sw2"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_2cxo6"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/ninetales.png" id="3_k6dsr"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_nd3au"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="5_nsa5r"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="6_5jexm"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="7_o3i5q"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="8_lxg2p"]
+[ext_resource type="Resource" path="res://resources/moves/roar.tres" id="9_6c8d6"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="10_ii2wb"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="11_4hcpe"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="12_dc117"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="13_08e0f"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="14_dn1f0"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="15_4q2pi"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_cgemo"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="17_2402h"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="18_eq27e"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="19_olyfg"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="20_bxtmu"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_k5abl"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="22_1kvln"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="23_myoo4"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="24_2ui20"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="25_intho"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="26_a7j7p"]
+
+[resource]
+script = ExtResource("10_ii2wb")
+species_name = "NINETALES"
+dex = 38
+index = 83
+slug = "ninetales"
+label = "Ninetales"
+category = "FOX"
+height_ft = 3
+height_in = 7
+weight_tenths_lb = 440
+hp = 73
+attack = 76
+defense = 75
+speed = 100
+special = 100
+type1 = "FIRE"
+type2 = "FIRE"
+catch_rate = 75
+base_exp = 178
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("5_nsa5r")]([ExtResource("6_5jexm"), ExtResource("7_o3i5q"), ExtResource("8_lxg2p"), ExtResource("9_6c8d6")])
+learnset = Array[ExtResource("4_nd3au")]([])
+tmhm = Array[ExtResource("5_nsa5r")]([ExtResource("11_4hcpe"), ExtResource("12_dc117"), ExtResource("13_08e0f"), ExtResource("14_dn1f0"), ExtResource("15_4q2pi"), ExtResource("16_cgemo"), ExtResource("17_2402h"), ExtResource("18_eq27e"), ExtResource("19_olyfg"), ExtResource("20_bxtmu"), ExtResource("21_k5abl"), ExtResource("22_1kvln"), ExtResource("23_myoo4"), ExtResource("24_2ui20"), ExtResource("25_intho"), ExtResource("26_a7j7p")])
+evolutions = Array[ExtResource("2_2cxo6")]([])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Very smart and", "very vengeful.", "Grabbing one of", "its many tails", "could result in a", "1000-year curse"])
+front_sprite = ExtResource("3_k6dsr")
+back_sprite = ExtResource("1_j0sw2")

@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/magby.png" id="1_r6dcy"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_pp75o"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/magby.png" id="3_25rdq"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_0dh4u"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="5_2sdws"]
+[ext_resource type="Resource" path="res://resources/moves/smog.tres" id="6_sk6fc"]
+[ext_resource type="Resource" path="res://resources/moves/fire_punch.tres" id="7_r3g8n"]
+[ext_resource type="Resource" path="res://resources/moves/smokescreen.tres" id="8_h8siu"]
+[ext_resource type="Resource" path="res://resources/moves/flamethrower.tres" id="9_m1o8c"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="10_17i6a"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="11_3vk07"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="12_31xr3"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="13_xq2j5"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_fnplu"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_k3na2"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_6y11x"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_ggkuf"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_u7gy6"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_fse0l"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_o10yr"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_sr16x"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_qqftk"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="23_ji7j6"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="24_jvbm2"]
+
+[sub_resource type="Resource" id="Resource_7m2sv"]
+script = ExtResource("2_pp75o")
+method = "LEVEL"
+target = "MAGMAR"
+level = 30
+item = ""
+
+[sub_resource type="Resource" id="Resource_ripp3"]
+script = ExtResource("4_0dh4u")
+level = 7
+move = ExtResource("5_2sdws")
+
+[sub_resource type="Resource" id="Resource_510gs"]
+script = ExtResource("4_0dh4u")
+level = 13
+move = ExtResource("6_sk6fc")
+
+[sub_resource type="Resource" id="Resource_8octj"]
+script = ExtResource("4_0dh4u")
+level = 19
+move = ExtResource("7_r3g8n")
+
+[sub_resource type="Resource" id="Resource_0made"]
+script = ExtResource("4_0dh4u")
+level = 25
+move = ExtResource("8_h8siu")
+
+[sub_resource type="Resource" id="Resource_vwtr5"]
+script = ExtResource("4_0dh4u")
+level = 37
+move = ExtResource("9_m1o8c")
+
+[sub_resource type="Resource" id="Resource_ytroj"]
+script = ExtResource("4_0dh4u")
+level = 43
+move = ExtResource("10_17i6a")
+
+[sub_resource type="Resource" id="Resource_nvu7b"]
+script = ExtResource("4_0dh4u")
+level = 49
+move = ExtResource("11_3vk07")
+
+[resource]
+script = ExtResource("14_fnplu")
+species_name = "MAGBY"
+dex = 230
+index = 233
+slug = "magby"
+label = "Magby"
+category = "LIVE COAL"
+height_ft = 2
+height_in = 4
+weight_tenths_lb = 470
+hp = 45
+attack = 75
+defense = 37
+speed = 83
+special = 62
+type1 = "FIRE"
+type2 = "FIRE"
+catch_rate = 45
+base_exp = 117
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("12_31xr3")]([ExtResource("13_xq2j5")])
+learnset = Array[ExtResource("4_0dh4u")]([SubResource("Resource_ripp3"), SubResource("Resource_510gs"), SubResource("Resource_8octj"), SubResource("Resource_0made"), SubResource("Resource_vwtr5"), SubResource("Resource_ytroj"), SubResource("Resource_nvu7b")])
+tmhm = Array[ExtResource("12_31xr3")]([ExtResource("15_k3na2"), ExtResource("16_6y11x"), ExtResource("17_ggkuf"), ExtResource("18_u7gy6"), ExtResource("19_fse0l"), ExtResource("20_o10yr"), ExtResource("21_sr16x"), ExtResource("22_qqftk"), ExtResource("11_3vk07"), ExtResource("23_ji7j6"), ExtResource("24_jvbm2")])
+evolutions = Array[ExtResource("2_pp75o")]([SubResource("Resource_7m2sv")])
+palette = "PAL_REDMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its breath comes", "out as embers.", "Where it sleeps,", "nothing green", "grows after."])
+front_sprite = ExtResource("3_25rdq")
+back_sprite = ExtResource("1_r6dcy")

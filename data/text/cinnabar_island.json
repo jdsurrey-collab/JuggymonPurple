@@ -1,0 +1,90 @@
+{
+ "CinnabarIslandDoorIsLockedText": [
+  {
+   "kind": "text",
+   "line": "The door lies"
+  },
+  {
+   "kind": "line",
+   "line": "sealed..."
+  }
+ ],
+ "CinnabarIslandGirlText": [
+  {
+   "kind": "text",
+   "line": "CINNABAR GYM's"
+  },
+  {
+   "kind": "line",
+   "line": "BLAINE is a"
+  },
+  {
+   "kind": "cont",
+   "line": "strange man, worn"
+  },
+  {
+   "kind": "cont",
+   "line": "by decades of ash."
+  }
+ ],
+ "CinnabarIslandGamblerText": [
+  {
+   "kind": "text",
+   "line": "Scientists still"
+  },
+  {
+   "kind": "line",
+   "line": "toil within that"
+  },
+  {
+   "kind": "cont",
+   "line": "charred, ruined"
+  },
+  {
+   "kind": "cont",
+   "line": "building."
+  }
+ ],
+ "CinnabarIslandSignText": [
+  {
+   "kind": "text",
+   "line": "CINNABAR ISLAND"
+  },
+  {
+   "kind": "line",
+   "line": "The Ashen Town of"
+  },
+  {
+   "kind": "cont",
+   "line": "Dying Embers"
+  }
+ ],
+ "CinnabarIslandPokemonLabSignText": [
+  {
+   "kind": "text",
+   "line": "#MON LAB"
+  }
+ ],
+ "CinnabarIslandGymSignText": [
+  {
+   "kind": "text",
+   "line": "CINNABAR ISLAND"
+  },
+  {
+   "kind": "line",
+   "line": "#MON GYM"
+  },
+  {
+   "kind": "cont",
+   "line": "LEADER: BLAINE"
+  },
+  {
+   "kind": "para",
+   "line": "The Ashen"
+  },
+  {
+   "kind": "line",
+   "line": "Quiz Master!"
+  }
+ ]
+}

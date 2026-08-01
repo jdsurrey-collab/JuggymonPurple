@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=31 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/vileplume.png" id="1_5lfv8"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_e022w"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/vileplume.png" id="3_u6v5v"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_xw6iy"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="5_jimuu"]
+[ext_resource type="Resource" path="res://resources/moves/stun_spore.tres" id="6_gpy5s"]
+[ext_resource type="Resource" path="res://resources/moves/sleep_powder.tres" id="7_dlg46"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_s73hh"]
+[ext_resource type="Resource" path="res://resources/moves/acid.tres" id="9_odbnv"]
+[ext_resource type="Resource" path="res://resources/moves/petal_dance.tres" id="10_4xcad"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_b5y68"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="12_42ai6"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_kr8pq"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="14_n58vn"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_5p6u8"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_8i3ud"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="17_j3lb5"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_1fmqv"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="19_7rgfc"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="20_nwxqs"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="21_2njld"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="22_brwor"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="23_k1god"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="24_lgp8x"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="25_vudsg"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="26_ang21"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="27_uvb28"]
+
+[sub_resource type="Resource" id="Resource_rucjs"]
+script = ExtResource("4_xw6iy")
+level = 15
+move = ExtResource("5_jimuu")
+
+[sub_resource type="Resource" id="Resource_rtp3m"]
+script = ExtResource("4_xw6iy")
+level = 17
+move = ExtResource("6_gpy5s")
+
+[sub_resource type="Resource" id="Resource_sfpl3"]
+script = ExtResource("4_xw6iy")
+level = 19
+move = ExtResource("7_dlg46")
+
+[resource]
+script = ExtResource("11_b5y68")
+species_name = "VILEPLUME"
+dex = 45
+index = 187
+slug = "vileplume"
+label = "Vileplume"
+category = "FLOWER"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 410
+hp = 75
+attack = 80
+defense = 85
+speed = 50
+special = 100
+type1 = "GRASS"
+type2 = "POISON"
+catch_rate = 45
+base_exp = 184
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("8_s73hh")]([ExtResource("6_gpy5s"), ExtResource("7_dlg46"), ExtResource("9_odbnv"), ExtResource("10_4xcad")])
+learnset = Array[ExtResource("4_xw6iy")]([SubResource("Resource_rucjs"), SubResource("Resource_rtp3m"), SubResource("Resource_sfpl3")])
+tmhm = Array[ExtResource("8_s73hh")]([ExtResource("12_42ai6"), ExtResource("13_kr8pq"), ExtResource("14_n58vn"), ExtResource("15_5p6u8"), ExtResource("16_8i3ud"), ExtResource("17_j3lb5"), ExtResource("18_1fmqv"), ExtResource("19_7rgfc"), ExtResource("20_nwxqs"), ExtResource("21_2njld"), ExtResource("22_brwor"), ExtResource("23_k1god"), ExtResource("24_lgp8x"), ExtResource("25_vudsg"), ExtResource("26_ang21"), ExtResource("27_uvb28")])
+evolutions = Array[ExtResource("2_e022w")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["The larger its", "petals, the more", "toxic pollen it", "contains. Its big", "head is heavy and", "hard to hold up"])
+front_sprite = ExtResource("3_u6v5v")
+back_sprite = ExtResource("1_5lfv8")

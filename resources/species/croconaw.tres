@@ -1,0 +1,95 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/croconaw.png" id="1_au3v7"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_2fkb6"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/croconaw.png" id="3_wxosm"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_p4y0y"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="5_526x8"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="6_o5chs"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="7_hel0v"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="8_8cxym"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="9_tw2j0"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="10_spvo1"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_qgmli"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="12_eiu4f"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="13_0qjpf"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_17v15"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_duaaw"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_vegrp"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_5gmt7"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_3mjtt"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_tmjr7"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_1t616"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_jktqh"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="22_qqkwp"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="23_jjlfb"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="24_kqqg5"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="25_2qkjv"]
+
+[sub_resource type="Resource" id="Resource_5f7px"]
+script = ExtResource("2_2fkb6")
+method = "LEVEL"
+target = "FERALIGATR"
+level = 30
+item = ""
+
+[sub_resource type="Resource" id="Resource_i358x"]
+script = ExtResource("4_p4y0y")
+level = 7
+move = ExtResource("5_526x8")
+
+[sub_resource type="Resource" id="Resource_iolmi"]
+script = ExtResource("4_p4y0y")
+level = 13
+move = ExtResource("6_o5chs")
+
+[sub_resource type="Resource" id="Resource_s8dt0"]
+script = ExtResource("4_p4y0y")
+level = 21
+move = ExtResource("7_hel0v")
+
+[sub_resource type="Resource" id="Resource_h3ll8"]
+script = ExtResource("4_p4y0y")
+level = 37
+move = ExtResource("8_8cxym")
+
+[sub_resource type="Resource" id="Resource_85qso"]
+script = ExtResource("4_p4y0y")
+level = 45
+move = ExtResource("9_tw2j0")
+
+[sub_resource type="Resource" id="Resource_hppsr"]
+script = ExtResource("4_p4y0y")
+level = 55
+move = ExtResource("10_spvo1")
+
+[resource]
+script = ExtResource("14_17v15")
+species_name = "CROCONAW"
+dex = 159
+index = 63
+slug = "croconaw"
+label = "Croconaw"
+category = "BIG JAW"
+height_ft = 3
+height_in = 7
+weight_tenths_lb = 550
+hp = 65
+attack = 80
+defense = 80
+speed = 58
+special = 61
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 45
+base_exp = 143
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_qgmli")]([ExtResource("12_eiu4f"), ExtResource("13_0qjpf"), ExtResource("5_526x8")])
+learnset = Array[ExtResource("4_p4y0y")]([SubResource("Resource_i358x"), SubResource("Resource_iolmi"), SubResource("Resource_s8dt0"), SubResource("Resource_h3ll8"), SubResource("Resource_85qso"), SubResource("Resource_hppsr")])
+tmhm = Array[ExtResource("11_qgmli")]([ExtResource("15_duaaw"), ExtResource("5_526x8"), ExtResource("16_vegrp"), ExtResource("17_5gmt7"), ExtResource("18_3mjtt"), ExtResource("19_tmjr7"), ExtResource("20_1t616"), ExtResource("21_jktqh"), ExtResource("22_qqkwp"), ExtResource("6_o5chs"), ExtResource("23_jjlfb"), ExtResource("24_kqqg5"), ExtResource("25_2qkjv")])
+evolutions = Array[ExtResource("2_2fkb6")]([SubResource("Resource_5f7px")])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["Its fangs, once", "sunk, will not", "loose. They snap", "before they yield,", "and grow again."])
+front_sprite = ExtResource("3_wxosm")
+back_sprite = ExtResource("1_au3v7")

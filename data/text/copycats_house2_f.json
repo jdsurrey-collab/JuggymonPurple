@@ -1,0 +1,236 @@
+{
+ "CopycatsHouse2FCopycatDoYouLikePokemonText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER>: Hi! Do"
+  },
+  {
+   "kind": "line",
+   "line": "you like #MON?"
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>: Uh no, I"
+  },
+  {
+   "kind": "line",
+   "line": "just asked you."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>: Huh?"
+  },
+  {
+   "kind": "line",
+   "line": "You're odd!"
+  },
+  {
+   "kind": "para",
+   "line": "COPYCAT: Hmm?"
+  },
+  {
+   "kind": "line",
+   "line": "Quit mimicking?"
+  },
+  {
+   "kind": "para",
+   "line": "But that's my"
+  },
+  {
+   "kind": "line",
+   "line": "one true hobby!"
+  }
+ ],
+ "CopycatsHouse2FCopycatTM31PreReceiveText": [
+  {
+   "kind": "text",
+   "line": "Oh my!"
+  },
+  {
+   "kind": "line",
+   "line": "A # DOLL!"
+  },
+  {
+   "kind": "para",
+   "line": "For me?"
+  },
+  {
+   "kind": "line",
+   "line": "My thanks!"
+  },
+  {
+   "kind": "para",
+   "line": "Then take this"
+  },
+  {
+   "kind": "line",
+   "line": "in kind!"
+  }
+ ],
+ "CopycatsHouse2FCopycatReceivedTM31Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "CopycatsHouse2FCopycatTM31Explanation1Text": [
+  {
+   "kind": "para",
+   "line": "TM31 holds my"
+  },
+  {
+   "kind": "line",
+   "line": "favorite, MIMIC!"
+  },
+  {
+   "kind": "para",
+   "line": "Use it on a fine"
+  },
+  {
+   "kind": "line",
+   "line": "#MON!@"
+  }
+ ],
+ "CopycatsHouse2FCopycatTM31Explanation2Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER>: Hi!"
+  },
+  {
+   "kind": "line",
+   "line": "Thanks for TM31!"
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>: Pardon?"
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>: Is it"
+  },
+  {
+   "kind": "line",
+   "line": "such fun, mimick-"
+  },
+  {
+   "kind": "cont",
+   "line": "ing my every"
+  },
+  {
+   "kind": "cont",
+   "line": "move?"
+  },
+  {
+   "kind": "para",
+   "line": "COPYCAT: You bet!"
+  },
+  {
+   "kind": "line",
+   "line": "It's a scream!"
+  }
+ ],
+ "CopycatsHouse2FCopycatTM31NoRoomText": [
+  {
+   "kind": "text",
+   "line": "Don't you want"
+  },
+  {
+   "kind": "line",
+   "line": "this?@"
+  }
+ ],
+ "CopycatsHouse2FDoduoText": [
+  {
+   "kind": "text",
+   "line": "DODUO: Giiih!"
+  },
+  {
+   "kind": "para",
+   "line": "MIRROR MIRROR ON"
+  },
+  {
+   "kind": "line",
+   "line": "THE WALL, WHO IS"
+  },
+  {
+   "kind": "cont",
+   "line": "THE FAIREST ONE"
+  },
+  {
+   "kind": "cont",
+   "line": "OF ALL?"
+  }
+ ],
+ "CopycatsHouse2FRareDollText": [
+  {
+   "kind": "text",
+   "line": "A rare #MON,"
+  },
+  {
+   "kind": "line",
+   "line": "surely! Huh?"
+  },
+  {
+   "kind": "cont",
+   "line": "Just a doll!"
+  }
+ ],
+ "CopycatsHouse2FSNESText": [
+  {
+   "kind": "text",
+   "line": "A game with MARIO"
+  },
+  {
+   "kind": "line",
+   "line": "wearing a bucket"
+  },
+  {
+   "kind": "cont",
+   "line": "on his head!"
+  }
+ ],
+ "CopycatsHouse2FPCMySecretsText": [
+  {
+   "kind": "text",
+   "line": "..."
+  },
+  {
+   "kind": "para",
+   "line": "My Secrets!"
+  },
+  {
+   "kind": "para",
+   "line": "Skill: Mimicry!"
+  },
+  {
+   "kind": "line",
+   "line": "Hobby: Collecting"
+  },
+  {
+   "kind": "cont",
+   "line": "dolls!"
+  },
+  {
+   "kind": "cont",
+   "line": "Favorite #MON:"
+  },
+  {
+   "kind": "cont",
+   "line": "CLEFAIRY!"
+  }
+ ],
+ "CopycatsHouse2FPCCantSeeText": [
+  {
+   "kind": "text",
+   "line": "Huh? Can't see!"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=9 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/kakuna.png" id="1_xe62g"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_bmjfm"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/kakuna.png" id="3_eg1on"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_4j032"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="5_01it2"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="6_t50kg"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="7_gftir"]
+
+[sub_resource type="Resource" id="Resource_d2dt0"]
+script = ExtResource("2_bmjfm")
+method = "LEVEL"
+target = "BEEDRILL"
+level = 10
+item = ""
+
+[resource]
+script = ExtResource("7_gftir")
+species_name = "KAKUNA"
+dex = 14
+index = 113
+slug = "kakuna"
+label = "Kakuna"
+category = "COCOON"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 220
+hp = 45
+attack = 25
+defense = 50
+speed = 35
+special = 25
+type1 = "BUG"
+type2 = "POISON"
+catch_rate = 120
+base_exp = 71
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("5_01it2")]([ExtResource("6_t50kg")])
+learnset = Array[ExtResource("4_4j032")]([])
+tmhm = Array[ExtResource("5_01it2")]([])
+evolutions = Array[ExtResource("2_bmjfm")]([SubResource("Resource_d2dt0")])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["Almost incapable", "of moving, this", "#MON can only", "harden its shell", "to protect itself", "from predators"])
+front_sprite = ExtResource("3_eg1on")
+back_sprite = ExtResource("1_xe62g")

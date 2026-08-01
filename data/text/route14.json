@@ -1,0 +1,388 @@
+{
+ "Route14CooltrainerM1BattleText": [
+  {
+   "kind": "text",
+   "line": "You must anoint"
+  },
+  {
+   "kind": "line",
+   "line": "#MON with TMs"
+  },
+  {
+   "kind": "cont",
+   "line": "to hone their art!"
+  }
+ ],
+ "Route14CooltrainerM1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Not"
+  },
+  {
+   "kind": "line",
+   "line": "nearly enough!"
+  }
+ ],
+ "Route14CooltrainerM1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You hold some HMs,"
+  },
+  {
+   "kind": "line",
+   "line": "yes? #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "can never forget"
+  },
+  {
+   "kind": "cont",
+   "line": "those cursed arts."
+  }
+ ],
+ "Route14CooltrainerM2BattleText": [
+  {
+   "kind": "text",
+   "line": "My carrion birds"
+  },
+  {
+   "kind": "line",
+   "line": "stand ready for"
+  },
+  {
+   "kind": "cont",
+   "line": "grim battle."
+  }
+ ],
+ "Route14CooltrainerM2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Not"
+  },
+  {
+   "kind": "line",
+   "line": "ready, it seems!"
+  }
+ ],
+ "Route14CooltrainerM2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "They must learn"
+  },
+  {
+   "kind": "line",
+   "line": "crueler arts yet."
+  }
+ ],
+ "Route14CooltrainerM3BattleText": [
+  {
+   "kind": "text",
+   "line": "TMs are sold in"
+  },
+  {
+   "kind": "line",
+   "line": "CELADON's halls!"
+  },
+  {
+   "kind": "cont",
+   "line": "Yet few possess"
+  },
+  {
+   "kind": "cont",
+   "line": "the rarer HMs!"
+  }
+ ],
+ "Route14CooltrainerM3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ah,"
+  },
+  {
+   "kind": "line",
+   "line": "how bitter!"
+  }
+ ],
+ "Route14CooltrainerM3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Teach #MON of"
+  },
+  {
+   "kind": "line",
+   "line": "one kindred type"
+  },
+  {
+   "kind": "cont",
+   "line": "for greater dark"
+  },
+  {
+   "kind": "cont",
+   "line": "power."
+  }
+ ],
+ "Route14CooltrainerM4BattleText": [
+  {
+   "kind": "text",
+   "line": "Have you taught"
+  },
+  {
+   "kind": "line",
+   "line": "your carrion birds"
+  },
+  {
+   "kind": "cont",
+   "line": "to take wing?"
+  }
+ ],
+ "Route14CooltrainerM4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Shot"
+  },
+  {
+   "kind": "line",
+   "line": "down in flame!"
+  }
+ ],
+ "Route14CooltrainerM4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Birds of death are"
+  },
+  {
+   "kind": "line",
+   "line": "my true devotion!"
+  }
+ ],
+ "Route14CooltrainerM5BattleText": [
+  {
+   "kind": "text",
+   "line": "Have you heard of"
+  },
+  {
+   "kind": "line",
+   "line": "the fabled dying"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON?"
+  }
+ ],
+ "Route14CooltrainerM5EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Why?"
+  },
+  {
+   "kind": "line",
+   "line": "Why must I lose?"
+  }
+ ],
+ "Route14CooltrainerM5AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "The three fabled"
+  },
+  {
+   "kind": "line",
+   "line": "#MON are all"
+  },
+  {
+   "kind": "cont",
+   "line": "birds of ill omen."
+  }
+ ],
+ "Route14CooltrainerM6BattleText": [
+  {
+   "kind": "text",
+   "line": "I care little, but"
+  },
+  {
+   "kind": "line",
+   "line": "very well! Begin!"
+  }
+ ],
+ "Route14CooltrainerM6EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "expected as much!"
+  }
+ ],
+ "Route14CooltrainerM6AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Win or lose, all"
+  },
+  {
+   "kind": "line",
+   "line": "ends the same, in"
+  },
+  {
+   "kind": "cont",
+   "line": "the long dark run!"
+  }
+ ],
+ "Route14Biker1BattleText": [
+  {
+   "kind": "text",
+   "line": "C'mon, c'mon."
+  },
+  {
+   "kind": "line",
+   "line": "Let's ride, let's"
+  },
+  {
+   "kind": "cont",
+   "line": "ride to the grave!"
+  }
+ ],
+ "Route14Biker1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Argh!"
+  },
+  {
+   "kind": "line",
+   "line": "Lost! Be gone!"
+  }
+ ],
+ "Route14Biker1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "What, what, what?"
+  },
+  {
+   "kind": "line",
+   "line": "What do you want?"
+  }
+ ],
+ "Route14Biker2BattleText": [
+  {
+   "kind": "text",
+   "line": "Good! I need to"
+  },
+  {
+   "kind": "line",
+   "line": "burn dead time!"
+  }
+ ],
+ "Route14Biker2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "What?"
+  },
+  {
+   "kind": "line",
+   "line": "You!?"
+  }
+ ],
+ "Route14Biker2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Raising #MON's"
+  },
+  {
+   "kind": "line",
+   "line": "a grim drag, man."
+  }
+ ],
+ "Route14Biker3BattleText": [
+  {
+   "kind": "text",
+   "line": "We ride out here,"
+  },
+  {
+   "kind": "line",
+   "line": "for there's more"
+  },
+  {
+   "kind": "cont",
+   "line": "room to fall!"
+  }
+ ],
+ "Route14Biker3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Wiped"
+  },
+  {
+   "kind": "line",
+   "line": "out!"
+  }
+ ],
+ "Route14Biker3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "It's grim you made"
+  },
+  {
+   "kind": "line",
+   "line": "your #MON so"
+  },
+  {
+   "kind": "cont",
+   "line": "strong!"
+  },
+  {
+   "kind": "para",
+   "line": "Might is all!"
+  },
+  {
+   "kind": "line",
+   "line": "And you know it!"
+  }
+ ],
+ "Route14Biker4BattleText": [
+  {
+   "kind": "text",
+   "line": "#MON fight?"
+  },
+  {
+   "kind": "line",
+   "line": "Good! Let's rumble!"
+  }
+ ],
+ "Route14Biker4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Blown"
+  },
+  {
+   "kind": "line",
+   "line": "away!"
+  }
+ ],
+ "Route14Biker4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You know full well"
+  },
+  {
+   "kind": "line",
+   "line": "who'd win, just you"
+  },
+  {
+   "kind": "cont",
+   "line": "and I, alone!"
+  }
+ ],
+ "Route14SignText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 14"
+  },
+  {
+   "kind": "line",
+   "line": "West to FUCHSIA"
+  },
+  {
+   "kind": "cont",
+   "line": "CITY"
+  }
+ ]
+}

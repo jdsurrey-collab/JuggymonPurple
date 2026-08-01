@@ -1,0 +1,79 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=39 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/poliwrath.png" id="1_dcvk0"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_lp5q1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/poliwrath.png" id="3_aeyty"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ii328"]
+[ext_resource type="Resource" path="res://resources/moves/hypnosis.tres" id="5_87f85"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="6_xxgyq"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="7_3yf5w"]
+[ext_resource type="Resource" path="res://resources/moves/doubleslap.tres" id="8_jh5d8"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="9_r87r0"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="10_bng1p"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="11_4m0p3"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="12_jbi03"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_caeyj"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="14_0k8mj"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="15_68knk"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="16_n7bn7"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="17_i05o2"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="18_rauld"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="19_k5u6s"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="20_4w3l2"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="21_wf30r"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="22_a70nm"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="23_ubtn5"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="24_qbwcc"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="25_84tpu"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="26_p4h84"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="27_n3r1o"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="28_bkuug"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="29_i6wxd"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="30_jgrb6"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="31_vk7ky"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="32_gm50m"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="33_twj83"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="34_tlj87"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="35_gv0qw"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="36_7vi87"]
+
+[sub_resource type="Resource" id="Resource_nnoya"]
+script = ExtResource("4_ii328")
+level = 16
+move = ExtResource("5_87f85")
+
+[sub_resource type="Resource" id="Resource_lb5v2"]
+script = ExtResource("4_ii328")
+level = 19
+move = ExtResource("6_xxgyq")
+
+[resource]
+script = ExtResource("10_bng1p")
+species_name = "POLIWRATH"
+dex = 62
+index = 111
+slug = "poliwrath"
+label = "Poliwrath"
+category = "TADPOLE"
+height_ft = 4
+height_in = 3
+weight_tenths_lb = 1190
+hp = 90
+attack = 85
+defense = 95
+speed = 70
+special = 70
+type1 = "WATER"
+type2 = "FIGHTING"
+catch_rate = 45
+base_exp = 185
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("7_3yf5w")]([ExtResource("5_87f85"), ExtResource("6_xxgyq"), ExtResource("8_jh5d8"), ExtResource("9_r87r0")])
+learnset = Array[ExtResource("4_ii328")]([SubResource("Resource_nnoya"), SubResource("Resource_lb5v2")])
+tmhm = Array[ExtResource("7_3yf5w")]([ExtResource("11_4m0p3"), ExtResource("12_jbi03"), ExtResource("13_caeyj"), ExtResource("9_r87r0"), ExtResource("14_0k8mj"), ExtResource("15_68knk"), ExtResource("16_n7bn7"), ExtResource("6_xxgyq"), ExtResource("17_i05o2"), ExtResource("18_rauld"), ExtResource("19_k5u6s"), ExtResource("20_4w3l2"), ExtResource("21_wf30r"), ExtResource("22_a70nm"), ExtResource("23_ubtn5"), ExtResource("24_qbwcc"), ExtResource("25_84tpu"), ExtResource("26_p4h84"), ExtResource("27_n3r1o"), ExtResource("28_bkuug"), ExtResource("29_i6wxd"), ExtResource("30_jgrb6"), ExtResource("31_vk7ky"), ExtResource("32_gm50m"), ExtResource("33_twj83"), ExtResource("34_tlj87"), ExtResource("35_gv0qw"), ExtResource("36_7vi87")])
+evolutions = Array[ExtResource("2_lp5q1")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["An adept swimmer", "at both the front", "crawl and breast", "stroke. Easily", "overtakes the best", "human swimmers"])
+front_sprite = ExtResource("3_aeyty")
+back_sprite = ExtResource("1_dcvk0")

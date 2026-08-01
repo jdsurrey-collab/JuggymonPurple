@@ -1,0 +1,67 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=31 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/exeggutor.png" id="1_7f7os"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_5f3li"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/exeggutor.png" id="3_0cuse"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_d4052"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="5_0ncel"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="6_ipcdo"]
+[ext_resource type="Resource" path="res://resources/moves/barrage.tres" id="7_pbsqx"]
+[ext_resource type="Resource" path="res://resources/moves/hypnosis.tres" id="8_uluqj"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="9_w1bg3"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="10_0c6fs"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="11_gubmd"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="12_63kpq"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="13_3je0e"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_ab6j0"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="15_yfnpy"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="16_apgwr"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="17_d0gq6"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="18_nk8bm"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="19_68a38"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="20_1ydju"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="21_hrc87"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="22_ii84s"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="23_n75v0"]
+[ext_resource type="Resource" path="res://resources/moves/egg_bomb.tres" id="24_gnrby"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="25_osfqt"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="26_cn6sm"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="27_gioyq"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="28_ucr20"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="29_8du5q"]
+
+[sub_resource type="Resource" id="Resource_jfgub"]
+script = ExtResource("4_d4052")
+level = 28
+move = ExtResource("5_0ncel")
+
+[resource]
+script = ExtResource("9_w1bg3")
+species_name = "EXEGGUTOR"
+dex = 103
+index = 10
+slug = "exeggutor"
+label = "Exeggutor"
+category = "COCONUT"
+height_ft = 6
+height_in = 7
+weight_tenths_lb = 2650
+hp = 95
+attack = 95
+defense = 85
+speed = 55
+special = 125
+type1 = "GRASS"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 45
+base_exp = 212
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("6_ipcdo")]([ExtResource("7_pbsqx"), ExtResource("8_uluqj")])
+learnset = Array[ExtResource("4_d4052")]([SubResource("Resource_jfgub")])
+tmhm = Array[ExtResource("6_ipcdo")]([ExtResource("10_0c6fs"), ExtResource("11_gubmd"), ExtResource("12_63kpq"), ExtResource("13_3je0e"), ExtResource("14_ab6j0"), ExtResource("15_yfnpy"), ExtResource("16_apgwr"), ExtResource("17_d0gq6"), ExtResource("18_nk8bm"), ExtResource("19_68a38"), ExtResource("20_1ydju"), ExtResource("21_hrc87"), ExtResource("22_ii84s"), ExtResource("23_n75v0"), ExtResource("24_gnrby"), ExtResource("25_osfqt"), ExtResource("26_cn6sm"), ExtResource("27_gioyq"), ExtResource("28_ucr20"), ExtResource("29_8du5q")])
+evolutions = Array[ExtResource("2_5f3li")]([])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["Legend has it that", "on rare occasions,", "one of its heads", "will drop off and", "continue on as an", "EXEGGCUTE"])
+front_sprite = ExtResource("3_0cuse")
+back_sprite = ExtResource("1_7f7os")

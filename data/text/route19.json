@@ -1,0 +1,332 @@
+{
+ "Route19CooltrainerM1BattleText": [
+  {
+   "kind": "text",
+   "line": "I must brace"
+  },
+  {
+   "kind": "line",
+   "line": "myself before"
+  },
+  {
+   "kind": "cont",
+   "line": "the swim!"
+  }
+ ],
+ "Route19CooltrainerM1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Fully"
+  },
+  {
+   "kind": "line",
+   "line": "braced now!"
+  }
+ ],
+ "Route19CooltrainerM1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "My thanks! I'm"
+  },
+  {
+   "kind": "line",
+   "line": "ready for the"
+  },
+  {
+   "kind": "cont",
+   "line": "black water!"
+  }
+ ],
+ "Route19CooltrainerM2BattleText": [
+  {
+   "kind": "text",
+   "line": "Wait! Your heart"
+  },
+  {
+   "kind": "line",
+   "line": "may give out!"
+  }
+ ],
+ "Route19CooltrainerM2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ooh!"
+  },
+  {
+   "kind": "line",
+   "line": "So bitter cold!"
+  }
+ ],
+ "Route19CooltrainerM2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Beware the"
+  },
+  {
+   "kind": "line",
+   "line": "TENTACOOL below!"
+  }
+ ],
+ "Route19Swimmer1BattleText": [
+  {
+   "kind": "text",
+   "line": "I love the deep!"
+  },
+  {
+   "kind": "line",
+   "line": "And you?"
+  }
+ ],
+ "Route19Swimmer1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Belly"
+  },
+  {
+   "kind": "line",
+   "line": "flop, drowned!"
+  }
+ ],
+ "Route19Swimmer1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I can outswim"
+  },
+  {
+   "kind": "line",
+   "line": "any #MON!"
+  }
+ ],
+ "Route19Swimmer2BattleText": [
+  {
+   "kind": "text",
+   "line": "What lies beyond"
+  },
+  {
+   "kind": "line",
+   "line": "the horizon?"
+  }
+ ],
+ "Route19Swimmer2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Glub!"
+  }
+ ],
+ "Route19Swimmer2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I glimpse a few"
+  },
+  {
+   "kind": "line",
+   "line": "grey islands!"
+  }
+ ],
+ "Route19Swimmer3BattleText": [
+  {
+   "kind": "text",
+   "line": "I dove for"
+  },
+  {
+   "kind": "line",
+   "line": "#MON, but"
+  },
+  {
+   "kind": "cont",
+   "line": "found nothing."
+  }
+ ],
+ "Route19Swimmer3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Help!"
+  }
+ ],
+ "Route19Swimmer3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You must fish for"
+  },
+  {
+   "kind": "line",
+   "line": "sea #MON!"
+  }
+ ],
+ "Route19Swimmer4BattleText": [
+  {
+   "kind": "text",
+   "line": "I stare at the"
+  },
+  {
+   "kind": "line",
+   "line": "sea to forget!"
+  }
+ ],
+ "Route19Swimmer4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ooh!"
+  },
+  {
+   "kind": "line",
+   "line": "So traumatic!"
+  }
+ ],
+ "Route19Swimmer4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm still staring,"
+  },
+  {
+   "kind": "line",
+   "line": "trying to forget."
+  }
+ ],
+ "Route19Swimmer5BattleText": [
+  {
+   "kind": "text",
+   "line": "Oh, I do covet"
+  },
+  {
+   "kind": "line",
+   "line": "your steed! May"
+  },
+  {
+   "kind": "cont",
+   "line": "I claim it, won?"
+  }
+ ],
+ "Route19Swimmer5EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh!"
+  },
+  {
+   "kind": "line",
+   "line": "I have lost!"
+  }
+ ],
+ "Route19Swimmer5AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "It's still a long"
+  },
+  {
+   "kind": "line",
+   "line": "way yet, to"
+  },
+  {
+   "kind": "cont",
+   "line": "SEAFOAM ISLANDS."
+  }
+ ],
+ "Route19Swimmer6BattleText": [
+  {
+   "kind": "text",
+   "line": "Swimming's grand!"
+  },
+  {
+   "kind": "line",
+   "line": "Sunburns aren't!"
+  }
+ ],
+ "Route19Swimmer6EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Shocker!"
+  }
+ ],
+ "Route19Swimmer6AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "My beau longed"
+  },
+  {
+   "kind": "line",
+   "line": "to swim out to"
+  },
+  {
+   "kind": "cont",
+   "line": "SEAFOAM ISLANDS."
+  }
+ ],
+ "Route19Swimmer7BattleText": [
+  {
+   "kind": "text",
+   "line": "These waters run"
+  },
+  {
+   "kind": "line",
+   "line": "treacherous!"
+  }
+ ],
+ "Route19Swimmer7EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ooh!"
+  },
+  {
+   "kind": "line",
+   "line": "So dangerous!"
+  }
+ ],
+ "Route19Swimmer7AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "A cramp seized"
+  },
+  {
+   "kind": "line",
+   "line": "me! Glub, glub..."
+  }
+ ],
+ "Route19Swimmer8BattleText": [
+  {
+   "kind": "text",
+   "line": "I swam so far,"
+  },
+  {
+   "kind": "line",
+   "line": "but I am spent."
+  }
+ ],
+ "Route19Swimmer8EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm"
+  },
+  {
+   "kind": "line",
+   "line": "utterly spent..."
+  }
+ ],
+ "Route19Swimmer8AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "LAPRAS is so vast,"
+  },
+  {
+   "kind": "line",
+   "line": "it must keep you"
+  },
+  {
+   "kind": "cont",
+   "line": "dry above water."
+  }
+ ],
+ "Route19SignText": [
+  {
+   "kind": "text",
+   "line": "SEA ROUTE 19"
+  },
+  {
+   "kind": "line",
+   "line": "FUCHSIA CITY -"
+  },
+  {
+   "kind": "cont",
+   "line": "SEAFOAM ISLANDS"
+  }
+ ]
+}

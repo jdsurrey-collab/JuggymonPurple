@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_kdf77"]
+
+[resource]
+script = ExtResource("1_kdf77")
+move_name = "HI_JUMP_KICK"
+move_id = 136
+display_name = "HI JUMP KICK"
+move_type = "FIGHTING"
+power = 85
+accuracy = 90
+pp = 20
+effect = "JUMP_KICK_EFFECT"

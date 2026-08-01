@@ -1,0 +1,38 @@
+{
+ "SaffronPokecenterBeautyText": [
+  {
+   "kind": "text",
+   "line": "#MON growth"
+  },
+  {
+   "kind": "line",
+   "line": "rates differ,"
+  },
+  {
+   "kind": "cont",
+   "line": "species from"
+  },
+  {
+   "kind": "cont",
+   "line": "species."
+  }
+ ],
+ "SaffronPokecenterGentlemanText": [
+  {
+   "kind": "text",
+   "line": "SILPH CO. is so"
+  },
+  {
+   "kind": "line",
+   "line": "renowned. That's"
+  },
+  {
+   "kind": "cont",
+   "line": "why it drew TEAM"
+  },
+  {
+   "kind": "cont",
+   "line": "ROCKET's eye!"
+  }
+ ]
+}

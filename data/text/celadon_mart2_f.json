@@ -1,0 +1,60 @@
+{
+ "CeladonMart2FMiddleAgedManText": [
+  {
+   "kind": "text",
+   "line": "SUPER REPEL wards"
+  },
+  {
+   "kind": "line",
+   "line": "off frail #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "for a while..."
+  },
+  {
+   "kind": "para",
+   "line": "A stronger ward"
+  },
+  {
+   "kind": "line",
+   "line": "than REPEL, in"
+  },
+  {
+   "kind": "cont",
+   "line": "truth!"
+  }
+ ],
+ "CeladonMart2FGirlText": [
+  {
+   "kind": "text",
+   "line": "For long, grim"
+  },
+  {
+   "kind": "line",
+   "line": "journeys, keep a"
+  },
+  {
+   "kind": "cont",
+   "line": "REVIVE close."
+  }
+ ],
+ "CeladonMart2FCurrentFloorSignText": [
+  {
+   "kind": "text",
+   "line": "Fine Wares for"
+  },
+  {
+   "kind": "line",
+   "line": "Weary Trainers!"
+  },
+  {
+   "kind": "para",
+   "line": "2F: TRAINER'S"
+  },
+  {
+   "kind": "line",
+   "line": "    MARKET"
+  }
+ ]
+}

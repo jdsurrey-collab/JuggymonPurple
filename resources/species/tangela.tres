@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=37 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/tangela.png" id="1_pcuk3"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_0po34"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/tangela.png" id="3_73cua"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_uc1q3"]
+[ext_resource type="Resource" path="res://resources/moves/absorb.tres" id="5_0mbgx"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="6_rg0av"]
+[ext_resource type="Resource" path="res://resources/moves/stun_spore.tres" id="7_kbkow"]
+[ext_resource type="Resource" path="res://resources/moves/sleep_powder.tres" id="8_uugcf"]
+[ext_resource type="Resource" path="res://resources/moves/slam.tres" id="9_h3gd3"]
+[ext_resource type="Resource" path="res://resources/moves/growth.tres" id="10_68kim"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_o2ga8"]
+[ext_resource type="Resource" path="res://resources/moves/constrict.tres" id="12_rrhfk"]
+[ext_resource type="Resource" path="res://resources/moves/bind.tres" id="13_j6of6"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_k5yis"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="15_c6s7v"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_k2ivh"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="17_ce5qq"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_hdso0"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_0wffr"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="20_su76u"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="21_wwc4g"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="22_sr3ll"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="23_ek0iv"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="24_xfo5e"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="25_vwduu"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="26_ehwnj"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="27_fvxgg"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="28_opm7h"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="29_srve4"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="30_oleq7"]
+
+[sub_resource type="Resource" id="Resource_1atr6"]
+script = ExtResource("4_uc1q3")
+level = 29
+move = ExtResource("5_0mbgx")
+
+[sub_resource type="Resource" id="Resource_vkwxf"]
+script = ExtResource("4_uc1q3")
+level = 32
+move = ExtResource("6_rg0av")
+
+[sub_resource type="Resource" id="Resource_xpd3i"]
+script = ExtResource("4_uc1q3")
+level = 36
+move = ExtResource("7_kbkow")
+
+[sub_resource type="Resource" id="Resource_vrgpo"]
+script = ExtResource("4_uc1q3")
+level = 39
+move = ExtResource("8_uugcf")
+
+[sub_resource type="Resource" id="Resource_rpmlh"]
+script = ExtResource("4_uc1q3")
+level = 45
+move = ExtResource("9_h3gd3")
+
+[sub_resource type="Resource" id="Resource_8haik"]
+script = ExtResource("4_uc1q3")
+level = 49
+move = ExtResource("10_68kim")
+
+[resource]
+script = ExtResource("14_k5yis")
+species_name = "TANGELA"
+dex = 114
+index = 30
+slug = "tangela"
+label = "Tangela"
+category = "VINE"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 770
+hp = 65
+attack = 55
+defense = 115
+speed = 60
+special = 100
+type1 = "GRASS"
+type2 = "GRASS"
+catch_rate = 45
+base_exp = 166
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_o2ga8")]([ExtResource("12_rrhfk"), ExtResource("13_j6of6")])
+learnset = Array[ExtResource("4_uc1q3")]([SubResource("Resource_1atr6"), SubResource("Resource_vkwxf"), SubResource("Resource_xpd3i"), SubResource("Resource_vrgpo"), SubResource("Resource_rpmlh"), SubResource("Resource_8haik")])
+tmhm = Array[ExtResource("11_o2ga8")]([ExtResource("15_c6s7v"), ExtResource("16_k2ivh"), ExtResource("17_ce5qq"), ExtResource("18_hdso0"), ExtResource("19_0wffr"), ExtResource("20_su76u"), ExtResource("21_wwc4g"), ExtResource("22_sr3ll"), ExtResource("23_ek0iv"), ExtResource("24_xfo5e"), ExtResource("25_vwduu"), ExtResource("26_ehwnj"), ExtResource("27_fvxgg"), ExtResource("28_opm7h"), ExtResource("29_srve4"), ExtResource("30_oleq7")])
+evolutions = Array[ExtResource("2_0po34")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["The whole body is", "swathed with wide", "vines that are", "similar to sea-", "weed. Its vines", "shake as it walks"])
+front_sprite = ExtResource("3_73cua")
+back_sprite = ExtResource("1_pcuk3")

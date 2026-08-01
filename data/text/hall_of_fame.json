@@ -1,0 +1,92 @@
+{
+ "HallOfFameOakText": [
+  {
+   "kind": "text",
+   "line": "OAK: Ahem."
+  },
+  {
+   "kind": "line",
+   "line": "Well done,"
+  },
+  {
+   "kind": "cont",
+   "line": "<PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "This chamber is"
+  },
+  {
+   "kind": "line",
+   "line": "the HALL OF"
+  },
+  {
+   "kind": "cont",
+   "line": "FAME."
+  },
+  {
+   "kind": "para",
+   "line": "Here #MON LEAGUE"
+  },
+  {
+   "kind": "line",
+   "line": "champions are"
+  },
+  {
+   "kind": "cont",
+   "line": "remembered, long"
+  },
+  {
+   "kind": "cont",
+   "line": "after they're gone."
+  },
+  {
+   "kind": "para",
+   "line": "Their #MON rest"
+  },
+  {
+   "kind": "line",
+   "line": "here too, in"
+  },
+  {
+   "kind": "cont",
+   "line": "memory eternal."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>. You gave"
+  },
+  {
+   "kind": "line",
+   "line": "so very much to"
+  },
+  {
+   "kind": "cont",
+   "line": "become the new"
+  },
+  {
+   "kind": "cont",
+   "line": "LEAGUE champion."
+  },
+  {
+   "kind": "para",
+   "line": "Whatever it cost"
+  },
+  {
+   "kind": "line",
+   "line": "you: you and your"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON are HALL OF"
+  },
+  {
+   "kind": "cont",
+   "line": "FAMERS now."
+  },
+  {
+   "kind": "para",
+   "line": "Always."
+  }
+ ]
+}

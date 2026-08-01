@@ -1,0 +1,62 @@
+{
+ "Route16Gate2FLittleBoyText": [
+  {
+   "kind": "text",
+   "line": "I ride out with"
+  },
+  {
+   "kind": "line",
+   "line": "my sweetheart"
+  },
+  {
+   "kind": "cont",
+   "line": "today!"
+  }
+ ],
+ "Route16Gate2FLittleGirlText": [
+  {
+   "kind": "text",
+   "line": "We ride together,"
+  },
+  {
+   "kind": "line",
+   "line": "just we two!"
+  }
+ ],
+ "Route16Gate2FLeftBinocularsText": [
+  {
+   "kind": "text",
+   "line": "Peered through"
+  },
+  {
+   "kind": "line",
+   "line": "the binoculars."
+  },
+  {
+   "kind": "para",
+   "line": "It's CELADON's"
+  },
+  {
+   "kind": "line",
+   "line": "grand DEPT. STORE!"
+  }
+ ],
+ "Route16Gate2FRightBinocularsText": [
+  {
+   "kind": "text",
+   "line": "Peered through"
+  },
+  {
+   "kind": "line",
+   "line": "the binoculars."
+  },
+  {
+   "kind": "para",
+   "line": "A long path lies"
+  },
+  {
+   "kind": "line",
+   "line": "over the water!"
+  }
+ ]
+}

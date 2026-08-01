@@ -1,0 +1,80 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=40 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/gengar.png" id="1_jwedp"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_sr40h"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/gengar.png" id="3_0y0j3"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_dsyk0"]
+[ext_resource type="Resource" path="res://resources/moves/hypnosis.tres" id="5_680qj"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="6_l18pi"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="7_41y7b"]
+[ext_resource type="Resource" path="res://resources/moves/lick.tres" id="8_6fjf4"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="9_p02ch"]
+[ext_resource type="Resource" path="res://resources/moves/night_shade.tres" id="10_2jgfq"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_kao1w"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="12_ooam8"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="13_dcoay"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_tbam6"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_t1agp"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_hel4w"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_t1n2a"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="18_f583k"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="19_pragn"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="20_4sk4j"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="21_mbhsb"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="22_m44wn"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="23_v80jh"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="24_slsru"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="25_h26qy"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="26_c04gb"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="27_h4tgb"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="28_5d24y"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="29_f7xci"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="30_7rovc"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="31_q6x6j"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="32_l6hjs"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="33_bnero"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="34_6dwyy"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="35_ktt7h"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="36_d606x"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="37_u2xf5"]
+
+[sub_resource type="Resource" id="Resource_86n5j"]
+script = ExtResource("4_dsyk0")
+level = 29
+move = ExtResource("5_680qj")
+
+[sub_resource type="Resource" id="Resource_5lt0d"]
+script = ExtResource("4_dsyk0")
+level = 38
+move = ExtResource("6_l18pi")
+
+[resource]
+script = ExtResource("11_kao1w")
+species_name = "GENGAR"
+dex = 94
+index = 14
+slug = "gengar"
+label = "Gengar"
+category = "SHADOW"
+height_ft = 4
+height_in = 11
+weight_tenths_lb = 890
+hp = 60
+attack = 65
+defense = 60
+speed = 110
+special = 130
+type1 = "GHOST"
+type2 = "POISON"
+catch_rate = 45
+base_exp = 190
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("7_41y7b")]([ExtResource("8_6fjf4"), ExtResource("9_p02ch"), ExtResource("10_2jgfq")])
+learnset = Array[ExtResource("4_dsyk0")]([SubResource("Resource_86n5j"), SubResource("Resource_5lt0d")])
+tmhm = Array[ExtResource("7_41y7b")]([ExtResource("12_ooam8"), ExtResource("13_dcoay"), ExtResource("14_tbam6"), ExtResource("15_t1agp"), ExtResource("16_hel4w"), ExtResource("17_t1n2a"), ExtResource("18_f583k"), ExtResource("19_pragn"), ExtResource("20_4sk4j"), ExtResource("21_mbhsb"), ExtResource("22_m44wn"), ExtResource("23_v80jh"), ExtResource("24_slsru"), ExtResource("25_h26qy"), ExtResource("26_c04gb"), ExtResource("27_h4tgb"), ExtResource("28_5d24y"), ExtResource("29_f7xci"), ExtResource("30_7rovc"), ExtResource("31_q6x6j"), ExtResource("32_l6hjs"), ExtResource("6_l18pi"), ExtResource("33_bnero"), ExtResource("34_6dwyy"), ExtResource("35_ktt7h"), ExtResource("36_d606x"), ExtResource("37_u2xf5")])
+evolutions = Array[ExtResource("2_sr40h")]([])
+palette = "PAL_PURPLEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Under a full moon,", "this #MON", "likes to mimic", "the shadows of", "people and laugh", "at their fright"])
+front_sprite = ExtResource("3_0y0j3")
+back_sprite = ExtResource("1_jwedp")

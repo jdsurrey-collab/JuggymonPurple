@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_lno0x"]
+
+[resource]
+script = ExtResource("1_lno0x")
+move_name = "DOUBLE_TEAM"
+move_id = 104
+display_name = "DOUBLE TEAM"
+move_type = "NORMAL"
+power = 0
+accuracy = 100
+pp = 15
+effect = "EVASION_UP1_EFFECT"

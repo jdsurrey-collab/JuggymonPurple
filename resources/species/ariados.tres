@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/ariados.png" id="1_u3rx8"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_dxkud"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/ariados.png" id="3_nsycq"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_w5pvy"]
+[ext_resource type="Resource" path="res://resources/moves/constrict.tres" id="5_oan2i"]
+[ext_resource type="Resource" path="res://resources/moves/night_shade.tres" id="6_wchas"]
+[ext_resource type="Resource" path="res://resources/moves/leech_life.tres" id="7_hhh7g"]
+[ext_resource type="Resource" path="res://resources/moves/fury_swipes.tres" id="8_aydrs"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="9_lljgi"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="10_67k31"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_b84wn"]
+[ext_resource type="Resource" path="res://resources/moves/poison_sting.tres" id="12_8tdqh"]
+[ext_resource type="Resource" path="res://resources/moves/string_shot.tres" id="13_4rsrd"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_7l5uh"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_16f06"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_luidr"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_dntlg"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_epeci"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_vid61"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_7o5qg"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_1onsx"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_7hlcv"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="23_6dgqi"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="24_ypbrx"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="25_ee0gt"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="26_5baoj"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="27_1aqiu"]
+
+[sub_resource type="Resource" id="Resource_np78w"]
+script = ExtResource("4_w5pvy")
+level = 11
+move = ExtResource("5_oan2i")
+
+[sub_resource type="Resource" id="Resource_3pxpb"]
+script = ExtResource("4_w5pvy")
+level = 17
+move = ExtResource("6_wchas")
+
+[sub_resource type="Resource" id="Resource_i62mq"]
+script = ExtResource("4_w5pvy")
+level = 25
+move = ExtResource("7_hhh7g")
+
+[sub_resource type="Resource" id="Resource_3py7d"]
+script = ExtResource("4_w5pvy")
+level = 34
+move = ExtResource("8_aydrs")
+
+[sub_resource type="Resource" id="Resource_puq7k"]
+script = ExtResource("4_w5pvy")
+level = 53
+move = ExtResource("9_lljgi")
+
+[sub_resource type="Resource" id="Resource_3lahs"]
+script = ExtResource("4_w5pvy")
+level = 63
+move = ExtResource("10_67k31")
+
+[resource]
+script = ExtResource("14_7l5uh")
+species_name = "ARIADOS"
+dex = 168
+index = 94
+slug = "ariados"
+label = "Ariados"
+category = "LONG LEG"
+height_ft = 3
+height_in = 7
+weight_tenths_lb = 740
+hp = 70
+attack = 90
+defense = 70
+speed = 40
+special = 60
+type1 = "BUG"
+type2 = "POISON"
+catch_rate = 90
+base_exp = 134
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("11_b84wn")]([ExtResource("12_8tdqh"), ExtResource("13_4rsrd"), ExtResource("5_oan2i")])
+learnset = Array[ExtResource("4_w5pvy")]([SubResource("Resource_np78w"), SubResource("Resource_3pxpb"), SubResource("Resource_i62mq"), SubResource("Resource_3py7d"), SubResource("Resource_puq7k"), SubResource("Resource_3lahs")])
+tmhm = Array[ExtResource("11_b84wn")]([ExtResource("15_16f06"), ExtResource("16_luidr"), ExtResource("17_dntlg"), ExtResource("18_epeci"), ExtResource("19_vid61"), ExtResource("20_7o5qg"), ExtResource("21_1onsx"), ExtResource("22_7hlcv"), ExtResource("23_6dgqi"), ExtResource("24_ypbrx"), ExtResource("25_ee0gt"), ExtResource("26_5baoj"), ExtResource("27_1aqiu")])
+evolutions = Array[ExtResource("2_dxkud")]([])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["It fastens silk", "to its prey, then", "lets it wander", "home. It follows", "at its leisure."])
+front_sprite = ExtResource("3_nsycq")
+back_sprite = ExtResource("1_u3rx8")

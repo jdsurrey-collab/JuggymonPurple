@@ -1,0 +1,156 @@
+{
+ "RocketHideoutB1FRocket5EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Why...?@"
+  }
+ ],
+ "RocketHideoutB1FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "Who are you? How"
+  },
+  {
+   "kind": "line",
+   "line": "did you find this"
+  },
+  {
+   "kind": "cont",
+   "line": "grim place?"
+  }
+ ],
+ "RocketHideoutB1FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oww!"
+  },
+  {
+   "kind": "line",
+   "line": "Beaten!"
+  }
+ ],
+ "RocketHideoutB1FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Do you dare mock"
+  },
+  {
+   "kind": "line",
+   "line": "TEAM ROCKET?"
+  }
+ ],
+ "RocketHideoutB1FRocket2BattleText": [
+  {
+   "kind": "text",
+   "line": "You broke into"
+  },
+  {
+   "kind": "line",
+   "line": "our den, child?"
+  }
+ ],
+ "RocketHideoutB1FRocket2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Burnt!"
+  }
+ ],
+ "RocketHideoutB1FRocket2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You'll not escape"
+  },
+  {
+   "kind": "line",
+   "line": "this, little"
+  },
+  {
+   "kind": "cont",
+   "line": "wretch!"
+  }
+ ],
+ "RocketHideoutB1FRocket3BattleText": [
+  {
+   "kind": "text",
+   "line": "Intruder alert!"
+  }
+ ],
+ "RocketHideoutB1FRocket3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "cannot do it!"
+  }
+ ],
+ "RocketHideoutB1FRocket3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "SILPH SCOPE?"
+  },
+  {
+   "kind": "line",
+   "line": "I know not where"
+  },
+  {
+   "kind": "cont",
+   "line": "it lies!"
+  }
+ ],
+ "RocketHideoutB1FRocket4BattleText": [
+  {
+   "kind": "text",
+   "line": "Why have you"
+  },
+  {
+   "kind": "line",
+   "line": "come here?"
+  }
+ ],
+ "RocketHideoutB1FRocket4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "This"
+  },
+  {
+   "kind": "line",
+   "line": "cannot stand!"
+  }
+ ],
+ "RocketHideoutB1FRocket4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Fine, I'll talk!"
+  },
+  {
+   "kind": "line",
+   "line": "Take the lift to"
+  },
+  {
+   "kind": "cont",
+   "line": "meet my BOSS!"
+  }
+ ],
+ "RocketHideoutB1FRocket5BattleText": [
+  {
+   "kind": "text",
+   "line": "Are you lost, you"
+  },
+  {
+   "kind": "line",
+   "line": "wretched rat?"
+  }
+ ],
+ "RocketHideoutB1FRocket5AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Uh-oh, that fight"
+  },
+  {
+   "kind": "line",
+   "line": "sprung the door!"
+  }
+ ]
+}

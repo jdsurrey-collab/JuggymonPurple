@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=46 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/poliwhirl.png" id="1_yeon4"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_3w4ae"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/poliwhirl.png" id="3_mmte7"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_cbuwe"]
+[ext_resource type="Resource" path="res://resources/moves/hypnosis.tres" id="5_q4nim"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="6_xokhs"]
+[ext_resource type="Resource" path="res://resources/moves/doubleslap.tres" id="7_fsp04"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="8_rf67v"]
+[ext_resource type="Resource" path="res://resources/moves/amnesia.tres" id="9_105a1"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="10_trt83"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_i276x"]
+[ext_resource type="Resource" path="res://resources/moves/bubble.tres" id="12_unjur"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_oro71"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="14_u6pie"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="15_jvjp6"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_0q7s8"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_it15m"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_awpvm"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="19_s85gx"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="20_uji0e"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="21_c24n8"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="22_3et4y"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="23_lkgr4"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="24_v0te1"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="25_20csv"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="26_25pt7"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="27_kdrki"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="28_eka6q"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="29_u2312"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="30_487in"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="31_eyike"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="32_5ljea"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="33_jnawd"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="34_y5mur"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="35_joq3a"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="36_atkf8"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="37_r6gmr"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="38_rqjtf"]
+
+[sub_resource type="Resource" id="Resource_c4wuw"]
+script = ExtResource("2_3w4ae")
+method = "ITEM"
+target = "POLIWRATH"
+level = 0
+item = "WATER_STONE"
+
+[sub_resource type="Resource" id="Resource_10tds"]
+script = ExtResource("4_cbuwe")
+level = 16
+move = ExtResource("5_q4nim")
+
+[sub_resource type="Resource" id="Resource_du3sy"]
+script = ExtResource("4_cbuwe")
+level = 19
+move = ExtResource("6_xokhs")
+
+[sub_resource type="Resource" id="Resource_ekag6"]
+script = ExtResource("4_cbuwe")
+level = 26
+move = ExtResource("7_fsp04")
+
+[sub_resource type="Resource" id="Resource_l3krr"]
+script = ExtResource("4_cbuwe")
+level = 33
+move = ExtResource("8_rf67v")
+
+[sub_resource type="Resource" id="Resource_34sfw"]
+script = ExtResource("4_cbuwe")
+level = 41
+move = ExtResource("9_105a1")
+
+[sub_resource type="Resource" id="Resource_epmt0"]
+script = ExtResource("4_cbuwe")
+level = 49
+move = ExtResource("10_trt83")
+
+[resource]
+script = ExtResource("13_oro71")
+species_name = "POLIWHIRL"
+dex = 61
+index = 110
+slug = "poliwhirl"
+label = "Poliwhirl"
+category = "TADPOLE"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 440
+hp = 65
+attack = 65
+defense = 65
+speed = 90
+special = 50
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 120
+base_exp = 131
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_i276x")]([ExtResource("12_unjur"), ExtResource("5_q4nim"), ExtResource("6_xokhs")])
+learnset = Array[ExtResource("4_cbuwe")]([SubResource("Resource_10tds"), SubResource("Resource_du3sy"), SubResource("Resource_ekag6"), SubResource("Resource_l3krr"), SubResource("Resource_34sfw"), SubResource("Resource_epmt0")])
+tmhm = Array[ExtResource("11_i276x")]([ExtResource("14_u6pie"), ExtResource("15_jvjp6"), ExtResource("16_0q7s8"), ExtResource("8_rf67v"), ExtResource("17_it15m"), ExtResource("18_awpvm"), ExtResource("19_s85gx"), ExtResource("6_xokhs"), ExtResource("20_uji0e"), ExtResource("21_c24n8"), ExtResource("22_3et4y"), ExtResource("23_lkgr4"), ExtResource("24_v0te1"), ExtResource("25_20csv"), ExtResource("26_25pt7"), ExtResource("27_kdrki"), ExtResource("28_eka6q"), ExtResource("29_u2312"), ExtResource("30_487in"), ExtResource("31_eyike"), ExtResource("32_5ljea"), ExtResource("33_jnawd"), ExtResource("34_y5mur"), ExtResource("35_joq3a"), ExtResource("36_atkf8"), ExtResource("37_r6gmr"), ExtResource("38_rqjtf")])
+evolutions = Array[ExtResource("2_3w4ae")]([SubResource("Resource_c4wuw")])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Capable of living", "in or out of", "water. When out", "of water, it", "sweats to keep", "its body slimy"])
+front_sprite = ExtResource("3_mmte7")
+back_sprite = ExtResource("1_yeon4")

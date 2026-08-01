@@ -1,0 +1,96 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/magcargo.png" id="1_bgill"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_ndk6m"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/magcargo.png" id="3_pxnpe"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_2slb8"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="5_82n2b"]
+[ext_resource type="Resource" path="res://resources/moves/rock_throw.tres" id="6_phlld"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="7_ivk4i"]
+[ext_resource type="Resource" path="res://resources/moves/amnesia.tres" id="8_bmewj"]
+[ext_resource type="Resource" path="res://resources/moves/flamethrower.tres" id="9_fcupp"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="10_l4vpd"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="11_ujg38"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="12_us4cg"]
+[ext_resource type="Resource" path="res://resources/moves/smog.tres" id="13_nhquu"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_vvswi"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_u4fyc"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_eub4u"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_7jlwo"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_67vos"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_cdile"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_sd184"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_eub0y"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_tfph3"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="23_tjkbc"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="24_nr6h2"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="25_h0bfr"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="26_4dfp3"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="27_sfaox"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="28_rg78s"]
+
+[sub_resource type="Resource" id="Resource_sbcqi"]
+script = ExtResource("4_2slb8")
+level = 8
+move = ExtResource("5_82n2b")
+
+[sub_resource type="Resource" id="Resource_433f1"]
+script = ExtResource("4_2slb8")
+level = 15
+move = ExtResource("6_phlld")
+
+[sub_resource type="Resource" id="Resource_10yr0"]
+script = ExtResource("4_2slb8")
+level = 22
+move = ExtResource("7_ivk4i")
+
+[sub_resource type="Resource" id="Resource_b0wbg"]
+script = ExtResource("4_2slb8")
+level = 29
+move = ExtResource("8_bmewj")
+
+[sub_resource type="Resource" id="Resource_pgmye"]
+script = ExtResource("4_2slb8")
+level = 36
+move = ExtResource("9_fcupp")
+
+[sub_resource type="Resource" id="Resource_lg0v0"]
+script = ExtResource("4_2slb8")
+level = 48
+move = ExtResource("10_l4vpd")
+
+[sub_resource type="Resource" id="Resource_sfhvo"]
+script = ExtResource("4_2slb8")
+level = 60
+move = ExtResource("11_ujg38")
+
+[resource]
+script = ExtResource("14_vvswi")
+species_name = "MAGCARGO"
+dex = 212
+index = 215
+slug = "magcargo"
+label = "Magcargo"
+category = "LAVA"
+height_ft = 2
+height_in = 7
+weight_tenths_lb = 1210
+hp = 50
+attack = 50
+defense = 120
+speed = 30
+special = 80
+type1 = "FIRE"
+type2 = "ROCK"
+catch_rate = 75
+base_exp = 154
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("12_us4cg")]([ExtResource("13_nhquu"), ExtResource("5_82n2b"), ExtResource("6_phlld")])
+learnset = Array[ExtResource("4_2slb8")]([SubResource("Resource_sbcqi"), SubResource("Resource_433f1"), SubResource("Resource_10yr0"), SubResource("Resource_b0wbg"), SubResource("Resource_pgmye"), SubResource("Resource_lg0v0"), SubResource("Resource_sfhvo")])
+tmhm = Array[ExtResource("12_us4cg")]([ExtResource("15_u4fyc"), ExtResource("16_eub4u"), ExtResource("17_7jlwo"), ExtResource("18_67vos"), ExtResource("19_cdile"), ExtResource("20_sd184"), ExtResource("21_eub0y"), ExtResource("22_tfph3"), ExtResource("23_tjkbc"), ExtResource("11_ujg38"), ExtResource("24_nr6h2"), ExtResource("10_l4vpd"), ExtResource("25_h0bfr"), ExtResource("26_4dfp3"), ExtResource("27_sfaox"), ExtResource("28_rg78s")])
+evolutions = Array[ExtResource("2_ndk6m")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its shell is", "crusted blood", "gone cold. The", "heat within is", "hotter than the", "flame outside."])
+front_sprite = ExtResource("3_pxnpe")
+back_sprite = ExtResource("1_bgill")

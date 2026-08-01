@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=11 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/magikarp.png" id="1_l180y"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_x2can"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/magikarp.png" id="3_cttxq"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_m7l6n"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="5_hg62l"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="6_f405q"]
+[ext_resource type="Resource" path="res://resources/moves/splash.tres" id="7_nysmo"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="8_7weot"]
+
+[sub_resource type="Resource" id="Resource_qvssv"]
+script = ExtResource("2_x2can")
+method = "LEVEL"
+target = "GYARADOS"
+level = 20
+item = ""
+
+[sub_resource type="Resource" id="Resource_bphwn"]
+script = ExtResource("4_m7l6n")
+level = 15
+move = ExtResource("5_hg62l")
+
+[resource]
+script = ExtResource("8_7weot")
+species_name = "MAGIKARP"
+dex = 129
+index = 133
+slug = "magikarp"
+label = "Magikarp"
+category = "FISH"
+height_ft = 2
+height_in = 11
+weight_tenths_lb = 220
+hp = 20
+attack = 10
+defense = 55
+speed = 80
+special = 20
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 255
+base_exp = 20
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("6_f405q")]([ExtResource("7_nysmo")])
+learnset = Array[ExtResource("4_m7l6n")]([SubResource("Resource_bphwn")])
+tmhm = Array[ExtResource("6_f405q")]([])
+evolutions = Array[ExtResource("2_x2can")]([SubResource("Resource_qvssv")])
+palette = "PAL_REDMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["In the distant", "past, it was", "somewhat stronger", "than the horribly", "weak descendants", "that exist today"])
+front_sprite = ExtResource("3_cttxq")
+back_sprite = ExtResource("1_l180y")

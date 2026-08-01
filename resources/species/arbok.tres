@@ -1,0 +1,89 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=37 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/arbok.png" id="1_5jmh3"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_2mgaf"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/arbok.png" id="3_gknhl"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_l4ibo"]
+[ext_resource type="Resource" path="res://resources/moves/poison_sting.tres" id="5_b1gfq"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="6_gkaaq"]
+[ext_resource type="Resource" path="res://resources/moves/glare.tres" id="7_0fev0"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="8_0fjqa"]
+[ext_resource type="Resource" path="res://resources/moves/acid.tres" id="9_hyg4d"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_j2f4b"]
+[ext_resource type="Resource" path="res://resources/moves/wrap.tres" id="11_070dm"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_pmw2e"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_bpqu1"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_ry05i"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_aidf5"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_pi18p"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_1vfwt"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="18_y1w6q"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="19_br2g6"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="20_efv2k"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="21_m6s1l"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="22_r83hy"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="23_tf4kl"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="24_1dxpi"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="25_tfxx5"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="26_gtacj"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="27_1gtmt"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="28_rl42n"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="29_6qjfy"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="30_ujxgf"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="31_btjx1"]
+
+[sub_resource type="Resource" id="Resource_v81u3"]
+script = ExtResource("4_l4ibo")
+level = 10
+move = ExtResource("5_b1gfq")
+
+[sub_resource type="Resource" id="Resource_u1m86"]
+script = ExtResource("4_l4ibo")
+level = 17
+move = ExtResource("6_gkaaq")
+
+[sub_resource type="Resource" id="Resource_kt13b"]
+script = ExtResource("4_l4ibo")
+level = 27
+move = ExtResource("7_0fev0")
+
+[sub_resource type="Resource" id="Resource_3lhc4"]
+script = ExtResource("4_l4ibo")
+level = 36
+move = ExtResource("8_0fjqa")
+
+[sub_resource type="Resource" id="Resource_yhm75"]
+script = ExtResource("4_l4ibo")
+level = 47
+move = ExtResource("9_hyg4d")
+
+[resource]
+script = ExtResource("13_bpqu1")
+species_name = "ARBOK"
+dex = 24
+index = 45
+slug = "arbok"
+label = "Arbok"
+category = "COBRA"
+height_ft = 11
+height_in = 6
+weight_tenths_lb = 1430
+hp = 60
+attack = 85
+defense = 69
+speed = 80
+special = 65
+type1 = "POISON"
+type2 = "POISON"
+catch_rate = 90
+base_exp = 147
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_j2f4b")]([ExtResource("11_070dm"), ExtResource("12_pmw2e"), ExtResource("5_b1gfq")])
+learnset = Array[ExtResource("4_l4ibo")]([SubResource("Resource_v81u3"), SubResource("Resource_u1m86"), SubResource("Resource_kt13b"), SubResource("Resource_3lhc4"), SubResource("Resource_yhm75")])
+tmhm = Array[ExtResource("10_j2f4b")]([ExtResource("14_ry05i"), ExtResource("15_aidf5"), ExtResource("16_pi18p"), ExtResource("17_1vfwt"), ExtResource("18_y1w6q"), ExtResource("19_br2g6"), ExtResource("20_efv2k"), ExtResource("21_m6s1l"), ExtResource("22_r83hy"), ExtResource("23_tf4kl"), ExtResource("24_1dxpi"), ExtResource("25_tfxx5"), ExtResource("26_gtacj"), ExtResource("27_1gtmt"), ExtResource("28_rl42n"), ExtResource("29_6qjfy"), ExtResource("30_ujxgf"), ExtResource("31_btjx1")])
+evolutions = Array[ExtResource("2_2mgaf")]([])
+palette = "PAL_PURPLEMON"
+menu_icon = "ICON_SNAKE"
+dex_text = Array[String](["It is rumored that", "the ferocious", "warning markings", "on its belly", "differ from area", "to area"])
+front_sprite = ExtResource("3_gknhl")
+back_sprite = ExtResource("1_5jmh3")

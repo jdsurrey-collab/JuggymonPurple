@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=37 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/exeggcute.png" id="1_cpp34"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_3o0ki"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/exeggcute.png" id="3_boc6a"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_emffw"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="5_a0sk3"]
+[ext_resource type="Resource" path="res://resources/moves/leech_seed.tres" id="6_w4gek"]
+[ext_resource type="Resource" path="res://resources/moves/stun_spore.tres" id="7_5v5ww"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="8_t0fs3"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="9_e5n60"]
+[ext_resource type="Resource" path="res://resources/moves/sleep_powder.tres" id="10_wltew"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_krx2j"]
+[ext_resource type="Resource" path="res://resources/moves/barrage.tres" id="12_xvr1c"]
+[ext_resource type="Resource" path="res://resources/moves/hypnosis.tres" id="13_01mo3"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_mwirv"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_6usdt"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_a0dna"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_mddea"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_b1dqw"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="19_658n3"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="20_c00e5"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="21_mpr1y"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="22_v6ymp"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="23_akonj"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="24_hee0g"]
+[ext_resource type="Resource" path="res://resources/moves/egg_bomb.tres" id="25_1hrps"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_fhidu"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="27_31bbt"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="28_jn7e4"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="29_x2y50"]
+
+[sub_resource type="Resource" id="Resource_7hyx3"]
+script = ExtResource("2_3o0ki")
+method = "ITEM"
+target = "EXEGGUTOR"
+level = 0
+item = "LEAF_STONE"
+
+[sub_resource type="Resource" id="Resource_28s8c"]
+script = ExtResource("4_emffw")
+level = 25
+move = ExtResource("5_a0sk3")
+
+[sub_resource type="Resource" id="Resource_8763l"]
+script = ExtResource("4_emffw")
+level = 28
+move = ExtResource("6_w4gek")
+
+[sub_resource type="Resource" id="Resource_s6p46"]
+script = ExtResource("4_emffw")
+level = 32
+move = ExtResource("7_5v5ww")
+
+[sub_resource type="Resource" id="Resource_pt5ct"]
+script = ExtResource("4_emffw")
+level = 37
+move = ExtResource("8_t0fs3")
+
+[sub_resource type="Resource" id="Resource_u2lcb"]
+script = ExtResource("4_emffw")
+level = 42
+move = ExtResource("9_e5n60")
+
+[sub_resource type="Resource" id="Resource_a8eho"]
+script = ExtResource("4_emffw")
+level = 48
+move = ExtResource("10_wltew")
+
+[resource]
+script = ExtResource("14_mwirv")
+species_name = "EXEGGCUTE"
+dex = 102
+index = 12
+slug = "exeggcute"
+label = "Exeggcute"
+category = "EGG"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 60
+hp = 60
+attack = 40
+defense = 80
+speed = 40
+special = 60
+type1 = "GRASS"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 90
+base_exp = 98
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("11_krx2j")]([ExtResource("12_xvr1c"), ExtResource("13_01mo3")])
+learnset = Array[ExtResource("4_emffw")]([SubResource("Resource_28s8c"), SubResource("Resource_8763l"), SubResource("Resource_s6p46"), SubResource("Resource_pt5ct"), SubResource("Resource_u2lcb"), SubResource("Resource_a8eho")])
+tmhm = Array[ExtResource("11_krx2j")]([ExtResource("15_6usdt"), ExtResource("16_a0dna"), ExtResource("17_mddea"), ExtResource("18_b1dqw"), ExtResource("19_658n3"), ExtResource("20_c00e5"), ExtResource("21_mpr1y"), ExtResource("22_v6ymp"), ExtResource("5_a0sk3"), ExtResource("23_akonj"), ExtResource("24_hee0g"), ExtResource("25_1hrps"), ExtResource("26_fhidu"), ExtResource("27_31bbt"), ExtResource("28_jn7e4"), ExtResource("29_x2y50")])
+evolutions = Array[ExtResource("2_3o0ki")]([SubResource("Resource_7hyx3")])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["Often mistaken", "for eggs.", "When disturbed,", "they quickly", "gather and attack", "in swarms"])
+front_sprite = ExtResource("3_boc6a")
+back_sprite = ExtResource("1_cpp34")

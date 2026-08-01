@@ -1,0 +1,390 @@
+{
+ "CeladonCityLittleGirlText": [
+  {
+   "kind": "text",
+   "line": "My KOFFING was"
+  },
+  {
+   "kind": "line",
+   "line": "bred in ashes,"
+  },
+  {
+   "kind": "cont",
+   "line": "in CINNABAR!"
+  },
+  {
+   "kind": "para",
+   "line": "Sweet, yet it"
+  },
+  {
+   "kind": "line",
+   "line": "exhales poison"
+  },
+  {
+   "kind": "cont",
+   "line": "when it is riled!"
+  }
+ ],
+ "CeladonCityGramps1Text": [
+  {
+   "kind": "text",
+   "line": "Heheh! This GYM"
+  },
+  {
+   "kind": "line",
+   "line": "is rife with"
+  },
+  {
+   "kind": "cont",
+   "line": "handsome women!"
+  }
+ ],
+ "CeladonCityGirlText": [
+  {
+   "kind": "text",
+   "line": "The GAME CORNER"
+  },
+  {
+   "kind": "line",
+   "line": "shames our fine"
+  },
+  {
+   "kind": "cont",
+   "line": "city's good name!"
+  }
+ ],
+ "CeladonCityGramps2Text": [
+  {
+   "kind": "text",
+   "line": "Damn! I squandered"
+  },
+  {
+   "kind": "line",
+   "line": "it all at the"
+  },
+  {
+   "kind": "cont",
+   "line": "cursed slots!"
+  },
+  {
+   "kind": "para",
+   "line": "I should have"
+  },
+  {
+   "kind": "line",
+   "line": "traded my coins"
+  },
+  {
+   "kind": "cont",
+   "line": "for prizes instead!"
+  }
+ ],
+ "CeladonCityGramps3Text": [
+  {
+   "kind": "text",
+   "line": "Good day to you."
+  },
+  {
+   "kind": "para",
+   "line": "I have watched"
+  },
+  {
+   "kind": "line",
+   "line": "you pass by, yet"
+  },
+  {
+   "kind": "cont",
+   "line": "never had the"
+  },
+  {
+   "kind": "cont",
+   "line": "chance to speak."
+  },
+  {
+   "kind": "para",
+   "line": "Here is a token"
+  },
+  {
+   "kind": "line",
+   "line": "for your visit!"
+  }
+ ],
+ "CeladonCityGramps3ReceivedTM41Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "CeladonCityGramps3TM41ExplanationText": [
+  {
+   "kind": "text",
+   "line": "TM41 holds the"
+  },
+  {
+   "kind": "line",
+   "line": "art SOFTBOILED!"
+  },
+  {
+   "kind": "para",
+   "line": "Only one #MON"
+  },
+  {
+   "kind": "line",
+   "line": "may wield it!"
+  },
+  {
+   "kind": "para",
+   "line": "That #MON is"
+  },
+  {
+   "kind": "line",
+   "line": "CHANSEY!"
+  }
+ ],
+ "CeladonCityGramps3TM41NoRoomText": [
+  {
+   "kind": "text",
+   "line": "Oh, your pack is"
+  },
+  {
+   "kind": "line",
+   "line": "burdened full!"
+  }
+ ],
+ "CeladonCityFisherText": [
+  {
+   "kind": "text",
+   "line": "This is my loyal"
+  },
+  {
+   "kind": "line",
+   "line": "companion,"
+  },
+  {
+   "kind": "cont",
+   "line": "POLIWRATH!"
+  },
+  {
+   "kind": "para",
+   "line": "It rose from"
+  },
+  {
+   "kind": "line",
+   "line": "POLIWHIRL, by"
+  },
+  {
+   "kind": "cont",
+   "line": "WATER STONE's"
+  },
+  {
+   "kind": "cont",
+   "line": "grim rite!"
+  }
+ ],
+ "CeladonCityPoliwrathText": [
+  {
+   "kind": "text",
+   "line": "POLIWRATH: Ribi"
+  },
+  {
+   "kind": "line",
+   "line": "ribit!@"
+  }
+ ],
+ "CeladonCityRocket1Text": [
+  {
+   "kind": "text",
+   "line": "What are you"
+  },
+  {
+   "kind": "line",
+   "line": "gawking at?"
+  }
+ ],
+ "CeladonCityRocket2Text": [
+  {
+   "kind": "text",
+   "line": "Keep clear of"
+  },
+  {
+   "kind": "line",
+   "line": "TEAM ROCKET's"
+  },
+  {
+   "kind": "cont",
+   "line": "affairs!"
+  }
+ ],
+ "CeladonCityTrainerTips1Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "X ACCURACY sharp-"
+  },
+  {
+   "kind": "line",
+   "line": "ens the aim of"
+  },
+  {
+   "kind": "cont",
+   "line": "your techniques!"
+  },
+  {
+   "kind": "para",
+   "line": "DIRE HIT raises"
+  },
+  {
+   "kind": "line",
+   "line": "the odds of a"
+  },
+  {
+   "kind": "cont",
+   "line": "deadly strike!"
+  },
+  {
+   "kind": "para",
+   "line": "Find such wares"
+  },
+  {
+   "kind": "line",
+   "line": "at CELADON DEPT."
+  },
+  {
+   "kind": "cont",
+   "line": "STORE!"
+  }
+ ],
+ "CeladonCitySignText": [
+  {
+   "kind": "text",
+   "line": "CELADON CITY"
+  },
+  {
+   "kind": "line",
+   "line": "The City of"
+  },
+  {
+   "kind": "cont",
+   "line": "Wilting Dreams"
+  }
+ ],
+ "CeladonCityGymSignText": [
+  {
+   "kind": "text",
+   "line": "CELADON CITY"
+  },
+  {
+   "kind": "line",
+   "line": "#MON GYM"
+  },
+  {
+   "kind": "cont",
+   "line": "LEADER: ERIKA"
+  },
+  {
+   "kind": "para",
+   "line": "The Withering"
+  },
+  {
+   "kind": "line",
+   "line": "Princess!"
+  }
+ ],
+ "CeladonCityMansionSignText": [
+  {
+   "kind": "text",
+   "line": "CELADON MANSION"
+  }
+ ],
+ "CeladonCityDeptStoreSignText": [
+  {
+   "kind": "text",
+   "line": "Find your needs"
+  },
+  {
+   "kind": "line",
+   "line": "at CELADON DEPT."
+  },
+  {
+   "kind": "cont",
+   "line": "STORE!"
+  }
+ ],
+ "CeladonCityTrainerTips2Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "GUARD SPEC."
+  },
+  {
+   "kind": "line",
+   "line": "shields #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "from SPECIAL"
+  },
+  {
+   "kind": "cont",
+   "line": "assaults, such as"
+  },
+  {
+   "kind": "cont",
+   "line": "flame and flood!"
+  },
+  {
+   "kind": "para",
+   "line": "Find such wares"
+  },
+  {
+   "kind": "line",
+   "line": "at CELADON DEPT."
+  },
+  {
+   "kind": "cont",
+   "line": "STORE!"
+  }
+ ],
+ "CeladonCityPrizeExchangeSignText": [
+  {
+   "kind": "text",
+   "line": "Coins traded"
+  },
+  {
+   "kind": "line",
+   "line": "for prizes,"
+  },
+  {
+   "kind": "cont",
+   "line": "PRIZE EXCHANGE"
+  }
+ ],
+ "CeladonCityGameCornerSignText": [
+  {
+   "kind": "text",
+   "line": "ROCKET GAME CORNER"
+  },
+  {
+   "kind": "line",
+   "line": "A playground"
+  },
+  {
+   "kind": "cont",
+   "line": "for the ruined!"
+  }
+ ]
+}

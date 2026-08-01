@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=39 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/flareon.png" id="1_tl4f1"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_7xub4"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/flareon.png" id="3_5kjmt"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_1c3lu"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="5_wqprl"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="6_af0hd"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="7_o83ng"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="8_6ipik"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="9_puqww"]
+[ext_resource type="Resource" path="res://resources/moves/fire_spin.tres" id="10_nyqs5"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="11_climc"]
+[ext_resource type="Resource" path="res://resources/moves/flamethrower.tres" id="12_pfoo0"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="13_oskfe"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="14_tx3q4"]
+[ext_resource type="Resource" path="res://resources/moves/sand_attack.tres" id="15_tnefp"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="16_hfutw"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_mw1tp"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="18_l5snj"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_myic6"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_rha60"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="21_rlmqr"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="22_00ywq"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="23_00es1"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="24_gnqf1"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="25_4kg03"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="26_ob8bc"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="27_vk5qm"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="28_lewi7"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="29_nna5d"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="30_g28sq"]
+
+[sub_resource type="Resource" id="Resource_2ogxc"]
+script = ExtResource("4_1c3lu")
+level = 27
+move = ExtResource("5_wqprl")
+
+[sub_resource type="Resource" id="Resource_gj022"]
+script = ExtResource("4_1c3lu")
+level = 31
+move = ExtResource("6_af0hd")
+
+[sub_resource type="Resource" id="Resource_xoh14"]
+script = ExtResource("4_1c3lu")
+level = 37
+move = ExtResource("7_o83ng")
+
+[sub_resource type="Resource" id="Resource_7unyl"]
+script = ExtResource("4_1c3lu")
+level = 40
+move = ExtResource("8_6ipik")
+
+[sub_resource type="Resource" id="Resource_nbyts"]
+script = ExtResource("4_1c3lu")
+level = 42
+move = ExtResource("9_puqww")
+
+[sub_resource type="Resource" id="Resource_ups76"]
+script = ExtResource("4_1c3lu")
+level = 44
+move = ExtResource("10_nyqs5")
+
+[sub_resource type="Resource" id="Resource_qgjm3"]
+script = ExtResource("4_1c3lu")
+level = 48
+move = ExtResource("11_climc")
+
+[sub_resource type="Resource" id="Resource_wr2vn"]
+script = ExtResource("4_1c3lu")
+level = 54
+move = ExtResource("12_pfoo0")
+
+[resource]
+script = ExtResource("16_hfutw")
+species_name = "FLAREON"
+dex = 136
+index = 103
+slug = "flareon"
+label = "Flareon"
+category = "FLAME"
+height_ft = 2
+height_in = 11
+weight_tenths_lb = 550
+hp = 65
+attack = 130
+defense = 60
+speed = 65
+special = 110
+type1 = "FIRE"
+type2 = "FIRE"
+catch_rate = 45
+base_exp = 198
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("13_oskfe")]([ExtResource("14_tx3q4"), ExtResource("15_tnefp"), ExtResource("5_wqprl"), ExtResource("6_af0hd")])
+learnset = Array[ExtResource("4_1c3lu")]([SubResource("Resource_2ogxc"), SubResource("Resource_gj022"), SubResource("Resource_xoh14"), SubResource("Resource_7unyl"), SubResource("Resource_nbyts"), SubResource("Resource_ups76"), SubResource("Resource_qgjm3"), SubResource("Resource_wr2vn")])
+tmhm = Array[ExtResource("13_oskfe")]([ExtResource("17_mw1tp"), ExtResource("18_l5snj"), ExtResource("19_myic6"), ExtResource("20_rha60"), ExtResource("21_rlmqr"), ExtResource("11_climc"), ExtResource("22_00ywq"), ExtResource("23_00es1"), ExtResource("24_gnqf1"), ExtResource("25_4kg03"), ExtResource("26_ob8bc"), ExtResource("27_vk5qm"), ExtResource("28_lewi7"), ExtResource("29_nna5d"), ExtResource("30_g28sq")])
+evolutions = Array[ExtResource("2_7xub4")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["When storing", "thermal energy in", "its body, its", "temperature could", "soar to over 1600", "degrees"])
+front_sprite = ExtResource("3_5kjmt")
+back_sprite = ExtResource("1_tl4f1")

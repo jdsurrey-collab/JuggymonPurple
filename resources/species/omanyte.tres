@@ -1,0 +1,87 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/omanyte.png" id="1_bfl3a"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_i20p6"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/omanyte.png" id="3_sc1m7"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_hu60f"]
+[ext_resource type="Resource" path="res://resources/moves/horn_attack.tres" id="5_wbwy5"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="6_txkog"]
+[ext_resource type="Resource" path="res://resources/moves/spike_cannon.tres" id="7_vmed2"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="8_gawc8"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_m7pjx"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="10_e4wa8"]
+[ext_resource type="Resource" path="res://resources/moves/withdraw.tres" id="11_hdd01"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_0wdk3"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_ttvwk"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="14_4mk5e"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_chf0y"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_p6lo6"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="17_s0qno"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="18_pgpqh"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="19_pu50p"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="20_quf4h"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="21_6tbub"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="22_ixwdm"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="23_buuqc"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="24_jokgb"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="25_jtq1g"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="26_vkewr"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="27_b7yp3"]
+
+[sub_resource type="Resource" id="Resource_0rro0"]
+script = ExtResource("2_i20p6")
+method = "LEVEL"
+target = "OMASTAR"
+level = 40
+item = ""
+
+[sub_resource type="Resource" id="Resource_gg3po"]
+script = ExtResource("4_hu60f")
+level = 34
+move = ExtResource("5_wbwy5")
+
+[sub_resource type="Resource" id="Resource_0jnik"]
+script = ExtResource("4_hu60f")
+level = 39
+move = ExtResource("6_txkog")
+
+[sub_resource type="Resource" id="Resource_qrhy1"]
+script = ExtResource("4_hu60f")
+level = 46
+move = ExtResource("7_vmed2")
+
+[sub_resource type="Resource" id="Resource_skdsk"]
+script = ExtResource("4_hu60f")
+level = 53
+move = ExtResource("8_gawc8")
+
+[resource]
+script = ExtResource("12_0wdk3")
+species_name = "OMANYTE"
+dex = 138
+index = 98
+slug = "omanyte"
+label = "Omanyte"
+category = "SPIRAL"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 170
+hp = 35
+attack = 40
+defense = 100
+speed = 35
+special = 90
+type1 = "ROCK"
+type2 = "WATER"
+catch_rate = 45
+base_exp = 120
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("9_m7pjx")]([ExtResource("10_e4wa8"), ExtResource("11_hdd01")])
+learnset = Array[ExtResource("4_hu60f")]([SubResource("Resource_gg3po"), SubResource("Resource_0jnik"), SubResource("Resource_qrhy1"), SubResource("Resource_skdsk")])
+tmhm = Array[ExtResource("9_m7pjx")]([ExtResource("13_ttvwk"), ExtResource("14_4mk5e"), ExtResource("15_chf0y"), ExtResource("16_p6lo6"), ExtResource("17_s0qno"), ExtResource("10_e4wa8"), ExtResource("18_pgpqh"), ExtResource("19_pu50p"), ExtResource("20_quf4h"), ExtResource("21_6tbub"), ExtResource("22_ixwdm"), ExtResource("23_buuqc"), ExtResource("24_jokgb"), ExtResource("25_jtq1g"), ExtResource("26_vkewr"), ExtResource("27_b7yp3")])
+evolutions = Array[ExtResource("2_i20p6")]([SubResource("Resource_0rro0")])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_HELIX"
+dex_text = Array[String](["Although long", "extinct, in rare", "cases, it can be", "genetically", "resurrected from", "fossils"])
+front_sprite = ExtResource("3_sc1m7")
+back_sprite = ExtResource("1_bfl3a")

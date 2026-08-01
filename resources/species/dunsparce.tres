@@ -1,0 +1,73 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=25 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/dunsparce.png" id="1_8xdk4"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_ih4gy"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/dunsparce.png" id="3_go1pb"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ojivm"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="5_air6p"]
+[ext_resource type="Resource" path="res://resources/moves/glare.tres" id="6_mk2fp"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="7_hklgm"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="8_t4ntq"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_3bb18"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="10_t5mtn"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_3ug47"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_2c77o"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="13_kbuca"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="14_7noju"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="15_d4cxu"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="16_6m8me"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="17_1y1ws"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="18_y1ctk"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="19_p2lxk"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_aeyl1"]
+
+[sub_resource type="Resource" id="Resource_sq5lk"]
+script = ExtResource("4_ojivm")
+level = 5
+move = ExtResource("5_air6p")
+
+[sub_resource type="Resource" id="Resource_shhno"]
+script = ExtResource("4_ojivm")
+level = 13
+move = ExtResource("6_mk2fp")
+
+[sub_resource type="Resource" id="Resource_1jpf7"]
+script = ExtResource("4_ojivm")
+level = 30
+move = ExtResource("7_hklgm")
+
+[sub_resource type="Resource" id="Resource_4xixr"]
+script = ExtResource("4_ojivm")
+level = 38
+move = ExtResource("8_t4ntq")
+
+[resource]
+script = ExtResource("11_3ug47")
+species_name = "DUNSPARCE"
+dex = 202
+index = 205
+slug = "dunsparce"
+label = "Dunsparce"
+category = "LAND SNAKE"
+height_ft = 4
+height_in = 11
+weight_tenths_lb = 310
+hp = 100
+attack = 70
+defense = 70
+speed = 45
+special = 65
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 190
+base_exp = 75
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("9_3bb18")]([ExtResource("10_t5mtn")])
+learnset = Array[ExtResource("4_ojivm")]([SubResource("Resource_sq5lk"), SubResource("Resource_shhno"), SubResource("Resource_1jpf7"), SubResource("Resource_4xixr")])
+tmhm = Array[ExtResource("9_3bb18")]([ExtResource("12_2c77o"), ExtResource("10_t5mtn"), ExtResource("13_kbuca"), ExtResource("14_7noju"), ExtResource("15_d4cxu"), ExtResource("16_6m8me"), ExtResource("17_1y1ws"), ExtResource("18_y1ctk"), ExtResource("19_p2lxk"), ExtResource("8_t4ntq"), ExtResource("20_aeyl1")])
+evolutions = Array[ExtResource("2_ih4gy")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It digs backward", "into the earth", "and vanishes.", "Few have seen it.", "Fewer are believed"])
+front_sprite = ExtResource("3_go1pb")
+back_sprite = ExtResource("1_8xdk4")

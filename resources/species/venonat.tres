@@ -1,0 +1,97 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/venonat.png" id="1_wmcvp"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_fitem"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/venonat.png" id="3_6ccvq"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_gqsyu"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="5_xc1si"]
+[ext_resource type="Resource" path="res://resources/moves/leech_life.tres" id="6_ugk2k"]
+[ext_resource type="Resource" path="res://resources/moves/stun_spore.tres" id="7_v6frm"]
+[ext_resource type="Resource" path="res://resources/moves/psybeam.tres" id="8_y1ug5"]
+[ext_resource type="Resource" path="res://resources/moves/sleep_powder.tres" id="9_lapak"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="10_o2ie1"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_5gt8k"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_kq16k"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="13_nxkty"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_cik11"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_yfgpu"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_jq7p4"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_pg5h0"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_u30gi"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="19_256ei"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="20_8522o"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="21_vc20v"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="22_uxkwy"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="23_lmptl"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="24_bjnnv"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="25_iwxg2"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="26_g4y1m"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="27_ycp7u"]
+
+[sub_resource type="Resource" id="Resource_v0joc"]
+script = ExtResource("2_fitem")
+method = "LEVEL"
+target = "VENOMOTH"
+level = 31
+item = ""
+
+[sub_resource type="Resource" id="Resource_f15a2"]
+script = ExtResource("4_gqsyu")
+level = 24
+move = ExtResource("5_xc1si")
+
+[sub_resource type="Resource" id="Resource_x1tcn"]
+script = ExtResource("4_gqsyu")
+level = 27
+move = ExtResource("6_ugk2k")
+
+[sub_resource type="Resource" id="Resource_v0l46"]
+script = ExtResource("4_gqsyu")
+level = 30
+move = ExtResource("7_v6frm")
+
+[sub_resource type="Resource" id="Resource_7xltl"]
+script = ExtResource("4_gqsyu")
+level = 35
+move = ExtResource("8_y1ug5")
+
+[sub_resource type="Resource" id="Resource_gw13d"]
+script = ExtResource("4_gqsyu")
+level = 38
+move = ExtResource("9_lapak")
+
+[sub_resource type="Resource" id="Resource_iifo8"]
+script = ExtResource("4_gqsyu")
+level = 43
+move = ExtResource("10_o2ie1")
+
+[resource]
+script = ExtResource("14_cik11")
+species_name = "VENONAT"
+dex = 48
+index = 65
+slug = "venonat"
+label = "Venonat"
+category = "INSECT"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 660
+hp = 60
+attack = 55
+defense = 50
+speed = 45
+special = 40
+type1 = "BUG"
+type2 = "POISON"
+catch_rate = 190
+base_exp = 75
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_5gt8k")]([ExtResource("12_kq16k"), ExtResource("13_nxkty")])
+learnset = Array[ExtResource("4_gqsyu")]([SubResource("Resource_f15a2"), SubResource("Resource_x1tcn"), SubResource("Resource_v0l46"), SubResource("Resource_7xltl"), SubResource("Resource_gw13d"), SubResource("Resource_iifo8")])
+tmhm = Array[ExtResource("11_5gt8k")]([ExtResource("15_yfgpu"), ExtResource("16_jq7p4"), ExtResource("17_pg5h0"), ExtResource("18_u30gi"), ExtResource("19_256ei"), ExtResource("20_8522o"), ExtResource("10_o2ie1"), ExtResource("21_vc20v"), ExtResource("22_uxkwy"), ExtResource("23_lmptl"), ExtResource("24_bjnnv"), ExtResource("25_iwxg2"), ExtResource("26_g4y1m"), ExtResource("27_ycp7u")])
+evolutions = Array[ExtResource("2_fitem")]([SubResource("Resource_v0joc")])
+palette = "PAL_PURPLEMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["Lives in the", "shadows of tall", "trees where it", "eats insects. It", "is attracted by", "light at night"])
+front_sprite = ExtResource("3_6ccvq")
+back_sprite = ExtResource("1_wmcvp")

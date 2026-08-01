@@ -1,0 +1,110 @@
+{
+ "Route12Gate2FBrunetteGirlYouCanHaveThisText": [
+  {
+   "kind": "text",
+   "line": "My #MON's"
+  },
+  {
+   "kind": "line",
+   "line": "ashes rest now"
+  },
+  {
+   "kind": "cont",
+   "line": "in #MON TOWER."
+  },
+  {
+   "kind": "para",
+   "line": "Take this TM."
+  },
+  {
+   "kind": "line",
+   "line": "I've no more use"
+  },
+  {
+   "kind": "cont",
+   "line": "for it."
+  }
+ ],
+ "Route12Gate2FBrunetteGirlReceivedTM39Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "TM39!@"
+  }
+ ],
+ "Route12Gate2FBrunetteGirlTM39ExplanationText": [
+  {
+   "kind": "text",
+   "line": "TM39 is a move"
+  },
+  {
+   "kind": "line",
+   "line": "called SWIFT."
+  },
+  {
+   "kind": "para",
+   "line": "It's very accurate,"
+  },
+  {
+   "kind": "line",
+   "line": "so use it during"
+  },
+  {
+   "kind": "cont",
+   "line": "battles you can't"
+  },
+  {
+   "kind": "cont",
+   "line": "afford to lose."
+  }
+ ],
+ "Route12Gate2FBrunetteGirlTM39NoRoomText": [
+  {
+   "kind": "text",
+   "line": "You don't have"
+  },
+  {
+   "kind": "line",
+   "line": "room for this."
+  }
+ ],
+ "Route12Gate2FLeftBinocularsText": [
+  {
+   "kind": "text",
+   "line": "Looked through"
+  },
+  {
+   "kind": "line",
+   "line": "the binoculars."
+  },
+  {
+   "kind": "para",
+   "line": "A lone man,"
+  },
+  {
+   "kind": "line",
+   "line": "fishing."
+  }
+ ],
+ "Route12Gate2FRightBinocularsText": [
+  {
+   "kind": "text",
+   "line": "Looked through"
+  },
+  {
+   "kind": "line",
+   "line": "the binoculars."
+  },
+  {
+   "kind": "para",
+   "line": "#MON TOWER,"
+  },
+  {
+   "kind": "line",
+   "line": "in the distance."
+  }
+ ]
+}

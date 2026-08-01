@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=56 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/chansey.png" id="1_qrus2"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_utr3u"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/chansey.png" id="3_3ma8v"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_w8gds"]
+[ext_resource type="Resource" path="res://resources/moves/sing.tres" id="5_w3rsa"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="6_n65r1"]
+[ext_resource type="Resource" path="res://resources/moves/minimize.tres" id="7_us48j"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="8_wq6wy"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="9_r7moi"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="10_064l1"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_hyfhj"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="12_vhlau"]
+[ext_resource type="Resource" path="res://resources/moves/doubleslap.tres" id="13_61vsr"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_n4mc2"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="15_yq24g"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="16_kenqi"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_7ka87"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="18_ebni4"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_170vm"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="20_2toob"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="21_syro8"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="22_3pyla"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="23_27vw5"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="24_3kqeg"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="25_4wv5a"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="26_gmj6y"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="27_igjof"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="28_xqbj2"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="29_y6m7y"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="30_4fmag"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="31_yc28w"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="32_ojcaw"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="33_kbu25"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="34_ems3t"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="35_2fi3o"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="36_p88tm"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="37_d54xl"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="38_e1np2"]
+[ext_resource type="Resource" path="res://resources/moves/egg_bomb.tres" id="39_abdhd"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="40_jl7ib"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="41_gp148"]
+[ext_resource type="Resource" path="res://resources/moves/softboiled.tres" id="42_ysfg3"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="43_ydr5g"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="44_mpdv4"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="45_u6pah"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="46_rabgq"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="47_3ftx2"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="48_lim1f"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="49_huvuu"]
+
+[sub_resource type="Resource" id="Resource_gqj11"]
+script = ExtResource("4_w8gds")
+level = 24
+move = ExtResource("5_w3rsa")
+
+[sub_resource type="Resource" id="Resource_68epo"]
+script = ExtResource("4_w8gds")
+level = 30
+move = ExtResource("6_n65r1")
+
+[sub_resource type="Resource" id="Resource_4ytcr"]
+script = ExtResource("4_w8gds")
+level = 38
+move = ExtResource("7_us48j")
+
+[sub_resource type="Resource" id="Resource_2fflr"]
+script = ExtResource("4_w8gds")
+level = 44
+move = ExtResource("8_wq6wy")
+
+[sub_resource type="Resource" id="Resource_c4aew"]
+script = ExtResource("4_w8gds")
+level = 48
+move = ExtResource("9_r7moi")
+
+[sub_resource type="Resource" id="Resource_7gaem"]
+script = ExtResource("4_w8gds")
+level = 54
+move = ExtResource("10_064l1")
+
+[resource]
+script = ExtResource("14_n4mc2")
+species_name = "CHANSEY"
+dex = 113
+index = 40
+slug = "chansey"
+label = "Chansey"
+category = "EGG"
+height_ft = 3
+height_in = 7
+weight_tenths_lb = 760
+hp = 250
+attack = 5
+defense = 5
+speed = 50
+special = 105
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 30
+base_exp = 255
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("11_hyfhj")]([ExtResource("12_vhlau"), ExtResource("13_61vsr")])
+learnset = Array[ExtResource("4_w8gds")]([SubResource("Resource_gqj11"), SubResource("Resource_68epo"), SubResource("Resource_4ytcr"), SubResource("Resource_2fflr"), SubResource("Resource_c4aew"), SubResource("Resource_7gaem")])
+tmhm = Array[ExtResource("11_hyfhj")]([ExtResource("15_yq24g"), ExtResource("16_kenqi"), ExtResource("17_7ka87"), ExtResource("18_ebni4"), ExtResource("19_170vm"), ExtResource("10_064l1"), ExtResource("20_2toob"), ExtResource("21_syro8"), ExtResource("22_3pyla"), ExtResource("23_27vw5"), ExtResource("24_3kqeg"), ExtResource("25_4wv5a"), ExtResource("26_gmj6y"), ExtResource("27_igjof"), ExtResource("28_xqbj2"), ExtResource("29_y6m7y"), ExtResource("30_4fmag"), ExtResource("31_yc28w"), ExtResource("32_ojcaw"), ExtResource("33_kbu25"), ExtResource("34_ems3t"), ExtResource("35_2fi3o"), ExtResource("36_p88tm"), ExtResource("37_d54xl"), ExtResource("38_e1np2"), ExtResource("39_abdhd"), ExtResource("40_jl7ib"), ExtResource("41_gp148"), ExtResource("42_ysfg3"), ExtResource("43_ydr5g"), ExtResource("44_mpdv4"), ExtResource("45_u6pah"), ExtResource("46_rabgq"), ExtResource("47_3ftx2"), ExtResource("48_lim1f"), ExtResource("49_huvuu")])
+evolutions = Array[ExtResource("2_utr3u")]([])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_FAIRY"
+dex_text = Array[String](["A rare and elusive", "#MON that is", "said to bring", "happiness to those", "who manage to get", "it"])
+front_sprite = ExtResource("3_3ma8v")
+back_sprite = ExtResource("1_qrus2")

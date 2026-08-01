@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_rioke"]
+
+[resource]
+script = ExtResource("1_rioke")
+move_name = "TRI_ATTACK"
+move_id = 161
+display_name = "TRI ATTACK"
+move_type = "NORMAL"
+power = 80
+accuracy = 100
+pp = 10
+effect = "NO_ADDITIONAL_EFFECT"

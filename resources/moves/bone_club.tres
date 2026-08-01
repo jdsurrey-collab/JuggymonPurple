@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_hex6e"]
+
+[resource]
+script = ExtResource("1_hex6e")
+move_name = "BONE_CLUB"
+move_id = 125
+display_name = "BONE CLUB"
+move_type = "GROUND"
+power = 65
+accuracy = 85
+pp = 20
+effect = "FLINCH_SIDE_EFFECT1"

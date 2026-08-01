@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=46 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/electabuzz.png" id="1_ccg0c"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_nmeum"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/electabuzz.png" id="3_gpmrg"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ivtat"]
+[ext_resource type="Resource" path="res://resources/moves/thundershock.tres" id="5_0cxbu"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="6_5y2xa"]
+[ext_resource type="Resource" path="res://resources/moves/thunderpunch.tres" id="7_efrsv"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="8_43wpb"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="9_oxdgr"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_em74b"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="11_xs2ws"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_yp633"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_dbpox"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="14_slao3"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="15_k72hs"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_enm5w"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="17_lwoxt"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_fw6gh"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_67ahu"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="20_sta3m"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="21_35ohe"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="22_cvppu"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="23_pqt50"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="24_ki313"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="25_3ajhd"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="26_lmjii"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="27_eo0rr"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="28_okcbq"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="29_sfce1"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="30_8yhfo"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="31_xcw7r"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="32_7ajsk"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="33_cwoyj"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="34_2gh7j"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="35_741vw"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="36_hftp2"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="37_g3bfy"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="38_pgp3g"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="39_h0xof"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="40_u3kr4"]
+
+[sub_resource type="Resource" id="Resource_k1ybd"]
+script = ExtResource("4_ivtat")
+level = 34
+move = ExtResource("5_0cxbu")
+
+[sub_resource type="Resource" id="Resource_s803n"]
+script = ExtResource("4_ivtat")
+level = 37
+move = ExtResource("6_5y2xa")
+
+[sub_resource type="Resource" id="Resource_mflq4"]
+script = ExtResource("4_ivtat")
+level = 42
+move = ExtResource("7_efrsv")
+
+[sub_resource type="Resource" id="Resource_2fr82"]
+script = ExtResource("4_ivtat")
+level = 49
+move = ExtResource("8_43wpb")
+
+[sub_resource type="Resource" id="Resource_5n255"]
+script = ExtResource("4_ivtat")
+level = 54
+move = ExtResource("9_oxdgr")
+
+[resource]
+script = ExtResource("13_dbpox")
+species_name = "ELECTABUZZ"
+dex = 125
+index = 53
+slug = "electabuzz"
+label = "Electabuzz"
+category = "ELECTRIC"
+height_ft = 3
+height_in = 7
+weight_tenths_lb = 660
+hp = 65
+attack = 83
+defense = 57
+speed = 105
+special = 85
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 45
+base_exp = 156
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_em74b")]([ExtResource("11_xs2ws"), ExtResource("12_yp633")])
+learnset = Array[ExtResource("4_ivtat")]([SubResource("Resource_k1ybd"), SubResource("Resource_s803n"), SubResource("Resource_mflq4"), SubResource("Resource_2fr82"), SubResource("Resource_5n255")])
+tmhm = Array[ExtResource("10_em74b")]([ExtResource("14_slao3"), ExtResource("15_k72hs"), ExtResource("16_enm5w"), ExtResource("17_lwoxt"), ExtResource("18_fw6gh"), ExtResource("19_67ahu"), ExtResource("20_sta3m"), ExtResource("21_35ohe"), ExtResource("22_cvppu"), ExtResource("23_pqt50"), ExtResource("24_ki313"), ExtResource("25_3ajhd"), ExtResource("9_oxdgr"), ExtResource("26_lmjii"), ExtResource("27_eo0rr"), ExtResource("28_okcbq"), ExtResource("29_sfce1"), ExtResource("30_8yhfo"), ExtResource("31_xcw7r"), ExtResource("32_7ajsk"), ExtResource("33_cwoyj"), ExtResource("34_2gh7j"), ExtResource("35_741vw"), ExtResource("36_hftp2"), ExtResource("37_g3bfy"), ExtResource("38_pgp3g"), ExtResource("39_h0xof"), ExtResource("40_u3kr4")])
+evolutions = Array[ExtResource("2_nmeum")]([])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Normally found", "near power plants,", "they can wander", "away and cause", "major blackouts", "in cities"])
+front_sprite = ExtResource("3_gpmrg")
+back_sprite = ExtResource("1_ccg0c")

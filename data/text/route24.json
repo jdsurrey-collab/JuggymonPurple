@@ -1,0 +1,150 @@
+{
+ "Route24CooltrainerM1YouBeatOurContestText": [
+  {
+   "kind": "text",
+   "line": "Well fought."
+  },
+  {
+   "kind": "line",
+   "line": "You've bested"
+  },
+  {
+   "kind": "cont",
+   "line": "all 5 of us.@"
+  }
+ ],
+ "Route24CooltrainerM1YouJustEarnedAPrizeText": [
+  {
+   "kind": "para",
+   "line": "You've earned"
+  },
+  {
+   "kind": "line",
+   "line": "a grim prize."
+  }
+ ],
+ "Route24CooltrainerM1ReceivedNuggetText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "a @"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "Route24CooltrainerM1NoRoomText": [
+  {
+   "kind": "text",
+   "line": "No room left."
+  }
+ ],
+ "Route24CooltrainerM1JoinTeamRocketText": [
+  {
+   "kind": "text",
+   "line": "Tell me, would"
+  },
+  {
+   "kind": "line",
+   "line": "you join TEAM"
+  },
+  {
+   "kind": "cont",
+   "line": "ROCKET?"
+  },
+  {
+   "kind": "para",
+   "line": "We're devoted"
+  },
+  {
+   "kind": "line",
+   "line": "to #MON, and"
+  },
+  {
+   "kind": "cont",
+   "line": "to evil."
+  },
+  {
+   "kind": "para",
+   "line": "Will you join?"
+  },
+  {
+   "kind": "para",
+   "line": "Are you certain?"
+  },
+  {
+   "kind": "para",
+   "line": "Come, join us."
+  },
+  {
+   "kind": "para",
+   "line": "I am telling"
+  },
+  {
+   "kind": "line",
+   "line": "you to join."
+  },
+  {
+   "kind": "para",
+   "line": "You'll need"
+  },
+  {
+   "kind": "line",
+   "line": "convincing, then."
+  },
+  {
+   "kind": "para",
+   "line": "I'll make an"
+  },
+  {
+   "kind": "line",
+   "line": "offer you cannot"
+  },
+  {
+   "kind": "cont",
+   "line": "refuse."
+  }
+ ],
+ "Route24CooltrainerM1DefeatedText": [
+  {
+   "kind": "text",
+   "line": "Arrgh. You're"
+  },
+  {
+   "kind": "line",
+   "line": "quite good!"
+  }
+ ],
+ "Route24CooltrainerM1YouCouldBecomeATopLeaderText": [
+  {
+   "kind": "text",
+   "line": "With gifts like"
+  },
+  {
+   "kind": "line",
+   "line": "yours, you'd"
+  },
+  {
+   "kind": "cont",
+   "line": "rise high in"
+  },
+  {
+   "kind": "cont",
+   "line": "TEAM ROCKET!"
+  }
+ ],
+ "Route24CooltrainerM2BattleText": [
+  {
+   "kind": "text",
+   "line": "I saw you, from"
+  },
+  {
+   "kind": "line",
+   "line": "the grass!"
+  }
+ ]
+}

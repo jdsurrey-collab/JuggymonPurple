@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=28 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/arcanine.png" id="1_yc27m"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_4terl"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/arcanine.png" id="3_nwcg2"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_rc01e"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="5_nl7w8"]
+[ext_resource type="Resource" path="res://resources/moves/roar.tres" id="6_axvq6"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="7_6esn2"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="8_sfmeg"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="9_ucjkk"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="10_xrf66"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="11_86mx3"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="12_8d02a"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="13_yd7tg"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="14_3vfu4"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_0i02c"]
+[ext_resource type="Resource" path="res://resources/moves/dragon_rage.tres" id="16_j1ife"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="17_kmqjy"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="18_efpol"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="19_057en"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="20_qk3tb"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="21_rb4td"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="22_end5c"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="23_ghpqo"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="24_63tts"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="25_qvbcr"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_3t6vu"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="27_jwgol"]
+
+[resource]
+script = ExtResource("10_xrf66")
+species_name = "ARCANINE"
+dex = 59
+index = 20
+slug = "arcanine"
+label = "Arcanine"
+category = "LEGENDARY"
+height_ft = 6
+height_in = 3
+weight_tenths_lb = 3420
+hp = 90
+attack = 110
+defense = 80
+speed = 95
+special = 80
+type1 = "FIRE"
+type2 = "FIRE"
+catch_rate = 75
+base_exp = 213
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("5_nl7w8")]([ExtResource("6_axvq6"), ExtResource("7_6esn2"), ExtResource("8_sfmeg"), ExtResource("9_ucjkk")])
+learnset = Array[ExtResource("4_rc01e")]([])
+tmhm = Array[ExtResource("5_nl7w8")]([ExtResource("11_86mx3"), ExtResource("12_8d02a"), ExtResource("9_ucjkk"), ExtResource("13_yd7tg"), ExtResource("14_3vfu4"), ExtResource("15_0i02c"), ExtResource("16_j1ife"), ExtResource("17_kmqjy"), ExtResource("18_efpol"), ExtResource("19_057en"), ExtResource("20_qk3tb"), ExtResource("21_rb4td"), ExtResource("22_end5c"), ExtResource("23_ghpqo"), ExtResource("24_63tts"), ExtResource("25_qvbcr"), ExtResource("26_3t6vu"), ExtResource("27_jwgol")])
+evolutions = Array[ExtResource("2_4terl")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["A #MON that", "has been admired", "since the past", "for its beauty.", "It runs agilely", "as if on wings"])
+front_sprite = ExtResource("3_nwcg2")
+back_sprite = ExtResource("1_yc27m")

@@ -1,0 +1,56 @@
+{
+ "Route22GateGuardNoBoulderbadgeText": [
+  {
+   "kind": "text",
+   "line": "Only the truly"
+  },
+  {
+   "kind": "line",
+   "line": "hardened may"
+  },
+  {
+   "kind": "cont",
+   "line": "pass through here."
+  },
+  {
+   "kind": "para",
+   "line": "You lack the"
+  },
+  {
+   "kind": "line",
+   "line": "BOULDERBADGE,"
+  },
+  {
+   "kind": "cont",
+   "line": "still!@"
+  }
+ ],
+ "Route22GateGuardICantLetYouPassText": [
+  {
+   "kind": "para",
+   "line": "Rules are rules."
+  },
+  {
+   "kind": "line",
+   "line": "I cannot let"
+  },
+  {
+   "kind": "cont",
+   "line": "you pass, child."
+  }
+ ],
+ "Route22GateGuardGoRightAheadText": [
+  {
+   "kind": "text",
+   "line": "Oh! That is the"
+  },
+  {
+   "kind": "line",
+   "line": "BOULDERBADGE!"
+  },
+  {
+   "kind": "cont",
+   "line": "Go right ahead!@"
+  }
+ ]
+}

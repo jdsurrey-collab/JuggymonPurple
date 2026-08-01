@@ -1,0 +1,56 @@
+{
+ "VermilionPidgeyHouseYoungsterText": [
+  {
+   "kind": "text",
+   "line": "My PIDGEY will"
+  },
+  {
+   "kind": "line",
+   "line": "carry a letter"
+  },
+  {
+   "kind": "cont",
+   "line": "north, to"
+  },
+  {
+   "kind": "cont",
+   "line": "SAFFRON."
+  }
+ ],
+ "VermilionPidgeyHousePidgeyText": [
+  {
+   "kind": "text",
+   "line": "PIDGEY: Kurukkoo!@"
+  }
+ ],
+ "VermilionPidgeyHouseLetterText": [
+  {
+   "kind": "text",
+   "line": "Dear PIPPI, I"
+  },
+  {
+   "kind": "line",
+   "line": "long to see you."
+  },
+  {
+   "kind": "para",
+   "line": "SAFFRON, they"
+  },
+  {
+   "kind": "line",
+   "line": "say, is plagued"
+  },
+  {
+   "kind": "cont",
+   "line": "by TEAM ROCKET."
+  },
+  {
+   "kind": "para",
+   "line": "VERMILION seems"
+  },
+  {
+   "kind": "line",
+   "line": "safer, for now."
+  }
+ ]
+}

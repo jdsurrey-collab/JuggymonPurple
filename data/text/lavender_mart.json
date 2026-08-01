@@ -1,0 +1,84 @@
+{
+ "LavenderMartBaldingGuyText": [
+  {
+   "kind": "text",
+   "line": "I hunt for the"
+  },
+  {
+   "kind": "line",
+   "line": "items that lend"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON strength,"
+  },
+  {
+   "kind": "cont",
+   "line": "for one battle"
+  },
+  {
+   "kind": "cont",
+   "line": "only."
+  },
+  {
+   "kind": "para",
+   "line": "X ATTACK, X"
+  },
+  {
+   "kind": "line",
+   "line": "DEFEND, X SPEED,"
+  },
+  {
+   "kind": "cont",
+   "line": "X SPECIAL- these"
+  },
+  {
+   "kind": "cont",
+   "line": "I seek."
+  },
+  {
+   "kind": "para",
+   "line": "Do you know"
+  },
+  {
+   "kind": "line",
+   "line": "where to find them?"
+  }
+ ],
+ "LavenderMartCooltrainerMReviveText": [
+  {
+   "kind": "text",
+   "line": "They say REVIVE"
+  },
+  {
+   "kind": "line",
+   "line": "restores any"
+  },
+  {
+   "kind": "cont",
+   "line": "fainted #MON."
+  }
+ ],
+ "LavenderMartCooltrainerMNuggetText": [
+  {
+   "kind": "text",
+   "line": "I found a NUGGET"
+  },
+  {
+   "kind": "line",
+   "line": "in the mountains."
+  },
+  {
+   "kind": "para",
+   "line": "Worthless, I"
+  },
+  {
+   "kind": "line",
+   "line": "thought- yet it"
+  },
+  {
+   "kind": "cont",
+   "line": "fetched \u00a55000."
+  }
+ ]
+}

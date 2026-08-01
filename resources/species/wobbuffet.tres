@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=24 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/wobbuffet.png" id="1_b4ngc"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_o07gw"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/wobbuffet.png" id="3_ka7gf"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ta8v4"]
+[ext_resource type="Resource" path="res://resources/moves/psybeam.tres" id="5_0465i"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="6_81bar"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="7_4hrge"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="8_2k0wl"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="9_27hox"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="10_dlt5q"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="11_yqf4a"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="12_6cdar"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="13_7emfo"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="14_umge3"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="15_tx2i0"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="16_5c85q"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="17_8ei0k"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="18_3o4uy"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="19_8dkof"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="20_re30b"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="21_7hfax"]
+
+[sub_resource type="Resource" id="Resource_3bp4a"]
+script = ExtResource("4_ta8v4")
+level = 15
+move = ExtResource("5_0465i")
+
+[sub_resource type="Resource" id="Resource_qkhll"]
+script = ExtResource("4_ta8v4")
+level = 30
+move = ExtResource("6_81bar")
+
+[resource]
+script = ExtResource("9_27hox")
+species_name = "WOBBUFFET"
+dex = 199
+index = 202
+slug = "wobbuffet"
+label = "Wobbuffet"
+category = "PATIENT"
+height_ft = 4
+height_in = 3
+weight_tenths_lb = 630
+hp = 190
+attack = 33
+defense = 58
+speed = 33
+special = 45
+type1 = "PSYCHIC_TYPE"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 45
+base_exp = 177
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("7_4hrge")]([ExtResource("8_2k0wl")])
+learnset = Array[ExtResource("4_ta8v4")]([SubResource("Resource_3bp4a"), SubResource("Resource_qkhll")])
+tmhm = Array[ExtResource("7_4hrge")]([ExtResource("10_dlt5q"), ExtResource("11_yqf4a"), ExtResource("12_6cdar"), ExtResource("13_7emfo"), ExtResource("14_umge3"), ExtResource("15_tx2i0"), ExtResource("16_5c85q"), ExtResource("17_8ei0k"), ExtResource("6_81bar"), ExtResource("18_3o4uy"), ExtResource("19_8dkof"), ExtResource("20_re30b"), ExtResource("21_7hfax")])
+evolutions = Array[ExtResource("2_o07gw")]([])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It suffers all", "and answers all,", "but never first.", "Strike it and", "the blow returns", "twofold to you."])
+front_sprite = ExtResource("3_ka7gf")
+back_sprite = ExtResource("1_b4ngc")

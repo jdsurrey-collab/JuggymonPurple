@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/parasect.png" id="1_803cm"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_s5g55"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/parasect.png" id="3_xyn2f"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_rwcqc"]
+[ext_resource type="Resource" path="res://resources/moves/stun_spore.tres" id="5_7ja14"]
+[ext_resource type="Resource" path="res://resources/moves/leech_life.tres" id="6_iqvr2"]
+[ext_resource type="Resource" path="res://resources/moves/spore.tres" id="7_aem3v"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="8_02snp"]
+[ext_resource type="Resource" path="res://resources/moves/growth.tres" id="9_hy25a"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_0vcbt"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="11_22tia"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_ekjck"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="13_4vuuc"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_tt1ae"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_2dfwr"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_tfaxq"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_sbhcp"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="18_8kako"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="19_nhjj4"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="20_l32ba"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="21_ovjh5"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="22_mekue"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="23_er3w1"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="24_veive"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="25_mdfxu"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="26_mpj63"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="27_mtfbf"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="28_c2saj"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="29_5isna"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="30_xif8t"]
+
+[sub_resource type="Resource" id="Resource_frc38"]
+script = ExtResource("4_rwcqc")
+level = 13
+move = ExtResource("5_7ja14")
+
+[sub_resource type="Resource" id="Resource_4axbv"]
+script = ExtResource("4_rwcqc")
+level = 20
+move = ExtResource("6_iqvr2")
+
+[sub_resource type="Resource" id="Resource_bg8yk"]
+script = ExtResource("4_rwcqc")
+level = 30
+move = ExtResource("7_aem3v")
+
+[sub_resource type="Resource" id="Resource_tta1o"]
+script = ExtResource("4_rwcqc")
+level = 39
+move = ExtResource("8_02snp")
+
+[sub_resource type="Resource" id="Resource_nmaq5"]
+script = ExtResource("4_rwcqc")
+level = 48
+move = ExtResource("9_hy25a")
+
+[resource]
+script = ExtResource("12_ekjck")
+species_name = "PARASECT"
+dex = 47
+index = 46
+slug = "parasect"
+label = "Parasect"
+category = "MUSHROOM"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 650
+hp = 60
+attack = 95
+defense = 80
+speed = 30
+special = 80
+type1 = "BUG"
+type2 = "GRASS"
+catch_rate = 75
+base_exp = 128
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_0vcbt")]([ExtResource("11_22tia"), ExtResource("5_7ja14"), ExtResource("6_iqvr2")])
+learnset = Array[ExtResource("4_rwcqc")]([SubResource("Resource_frc38"), SubResource("Resource_4axbv"), SubResource("Resource_bg8yk"), SubResource("Resource_tta1o"), SubResource("Resource_nmaq5")])
+tmhm = Array[ExtResource("10_0vcbt")]([ExtResource("13_4vuuc"), ExtResource("14_tt1ae"), ExtResource("15_2dfwr"), ExtResource("16_tfaxq"), ExtResource("17_sbhcp"), ExtResource("18_8kako"), ExtResource("19_nhjj4"), ExtResource("20_l32ba"), ExtResource("21_ovjh5"), ExtResource("22_mekue"), ExtResource("23_er3w1"), ExtResource("24_veive"), ExtResource("25_mdfxu"), ExtResource("26_mpj63"), ExtResource("27_mtfbf"), ExtResource("28_c2saj"), ExtResource("29_5isna"), ExtResource("30_xif8t")])
+evolutions = Array[ExtResource("2_s5g55")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["A host-parasite", "pair in which the", "parasite mushroom", "has taken over the", "host bug. Prefers", "damp places"])
+front_sprite = ExtResource("3_xyn2f")
+back_sprite = ExtResource("1_803cm")

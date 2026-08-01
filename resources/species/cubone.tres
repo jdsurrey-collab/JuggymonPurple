@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=44 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/cubone.png" id="1_odmp5"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_yfwrb"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/cubone.png" id="3_gm5hq"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_tv32t"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="5_onx8g"]
+[ext_resource type="Resource" path="res://resources/moves/focus_energy.tres" id="6_il5ns"]
+[ext_resource type="Resource" path="res://resources/moves/thrash.tres" id="7_vkpeq"]
+[ext_resource type="Resource" path="res://resources/moves/bonemerang.tres" id="8_3r7qs"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="9_qm2b5"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_3hmq6"]
+[ext_resource type="Resource" path="res://resources/moves/bone_club.tres" id="11_b7g23"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="12_in7h0"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_88ukn"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="14_s1n4r"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="15_y7htv"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_4epqw"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="17_0r6ab"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_rh8j0"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_caqs4"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="20_sukei"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="21_0jrac"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="22_mfyix"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="23_fmnf8"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="24_jev72"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="25_clr8q"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="26_ji55l"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="27_xu1y8"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="28_kdpwv"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="29_x41t3"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="30_3yh18"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="31_lvvw1"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="32_2isq3"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="33_fkhtd"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="34_p6daj"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="35_or1mu"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="36_yfpuc"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="37_32ae1"]
+
+[sub_resource type="Resource" id="Resource_h6l7c"]
+script = ExtResource("2_yfwrb")
+method = "LEVEL"
+target = "MAROWAK"
+level = 28
+item = ""
+
+[sub_resource type="Resource" id="Resource_nw3tp"]
+script = ExtResource("4_tv32t")
+level = 25
+move = ExtResource("5_onx8g")
+
+[sub_resource type="Resource" id="Resource_yu31q"]
+script = ExtResource("4_tv32t")
+level = 31
+move = ExtResource("6_il5ns")
+
+[sub_resource type="Resource" id="Resource_l5hgt"]
+script = ExtResource("4_tv32t")
+level = 38
+move = ExtResource("7_vkpeq")
+
+[sub_resource type="Resource" id="Resource_dcwgf"]
+script = ExtResource("4_tv32t")
+level = 43
+move = ExtResource("8_3r7qs")
+
+[sub_resource type="Resource" id="Resource_s3p04"]
+script = ExtResource("4_tv32t")
+level = 46
+move = ExtResource("9_qm2b5")
+
+[resource]
+script = ExtResource("13_88ukn")
+species_name = "CUBONE"
+dex = 104
+index = 17
+slug = "cubone"
+label = "Cubone"
+category = "LONELY"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 140
+hp = 50
+attack = 50
+defense = 95
+speed = 35
+special = 40
+type1 = "GROUND"
+type2 = "GROUND"
+catch_rate = 190
+base_exp = 87
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_3hmq6")]([ExtResource("11_b7g23"), ExtResource("12_in7h0")])
+learnset = Array[ExtResource("4_tv32t")]([SubResource("Resource_nw3tp"), SubResource("Resource_yu31q"), SubResource("Resource_l5hgt"), SubResource("Resource_dcwgf"), SubResource("Resource_s3p04")])
+tmhm = Array[ExtResource("10_3hmq6")]([ExtResource("14_s1n4r"), ExtResource("15_y7htv"), ExtResource("16_4epqw"), ExtResource("17_0r6ab"), ExtResource("18_rh8j0"), ExtResource("19_caqs4"), ExtResource("20_sukei"), ExtResource("21_0jrac"), ExtResource("22_mfyix"), ExtResource("23_fmnf8"), ExtResource("24_jev72"), ExtResource("25_clr8q"), ExtResource("26_ji55l"), ExtResource("9_qm2b5"), ExtResource("27_xu1y8"), ExtResource("28_kdpwv"), ExtResource("29_x41t3"), ExtResource("30_3yh18"), ExtResource("31_lvvw1"), ExtResource("32_2isq3"), ExtResource("33_fkhtd"), ExtResource("34_p6daj"), ExtResource("35_or1mu"), ExtResource("36_yfpuc"), ExtResource("37_32ae1")])
+evolutions = Array[ExtResource("2_yfwrb")]([SubResource("Resource_h6l7c")])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Because it never", "removes its skull", "helmet, no one", "has ever seen", "this #MON's", "real face"])
+front_sprite = ExtResource("3_gm5hq")
+back_sprite = ExtResource("1_odmp5")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_kosv0"]
+
+[resource]
+script = ExtResource("1_kosv0")
+move_name = "FURY_SWIPES"
+move_id = 154
+display_name = "FURY SWIPES"
+move_type = "NORMAL"
+power = 18
+accuracy = 80
+pp = 15
+effect = "TWO_TO_FIVE_ATTACKS_EFFECT"

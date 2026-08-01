@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_vonu7"]
+
+[resource]
+script = ExtResource("1_vonu7")
+move_name = "LEER"
+move_id = 43
+display_name = "LEER"
+move_type = "NORMAL"
+power = 0
+accuracy = 100
+pp = 30
+effect = "DEFENSE_DOWN1_EFFECT"

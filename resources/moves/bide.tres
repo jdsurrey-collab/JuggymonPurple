@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_jklsi"]
+
+[resource]
+script = ExtResource("1_jklsi")
+move_name = "BIDE"
+move_id = 117
+display_name = "BIDE"
+move_type = "NORMAL"
+power = 0
+accuracy = 100
+pp = 10
+effect = "BIDE_EFFECT"

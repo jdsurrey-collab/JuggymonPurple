@@ -1,0 +1,69 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=25 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/politoed.png" id="1_t4ldu"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_v3e8b"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/politoed.png" id="3_ulouj"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_wpfca"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="5_yeow2"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="6_4v838"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="7_ms4pw"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_m08wf"]
+[ext_resource type="Resource" path="res://resources/moves/hypnosis.tres" id="9_orpqr"]
+[ext_resource type="Resource" path="res://resources/moves/doubleslap.tres" id="10_l0xiv"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_hqxcs"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_yp0gx"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_rruuh"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="14_aln2b"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="15_60fcn"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="16_3wa0i"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="17_152s0"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="18_wixur"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="19_jcod3"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="20_ndv86"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="21_h0yga"]
+
+[sub_resource type="Resource" id="Resource_o01t1"]
+script = ExtResource("4_wpfca")
+level = 9
+move = ExtResource("5_yeow2")
+
+[sub_resource type="Resource" id="Resource_bjr2w"]
+script = ExtResource("4_wpfca")
+level = 18
+move = ExtResource("6_4v838")
+
+[sub_resource type="Resource" id="Resource_ns40a"]
+script = ExtResource("4_wpfca")
+level = 30
+move = ExtResource("7_ms4pw")
+
+[resource]
+script = ExtResource("11_hqxcs")
+species_name = "POLITOED"
+dex = 186
+index = 175
+slug = "politoed"
+label = "Politoed"
+category = "FROG"
+height_ft = 3
+height_in = 7
+weight_tenths_lb = 750
+hp = 90
+attack = 75
+defense = 75
+speed = 70
+special = 95
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 45
+base_exp = 185
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("8_m08wf")]([ExtResource("5_yeow2"), ExtResource("9_orpqr"), ExtResource("10_l0xiv")])
+learnset = Array[ExtResource("4_wpfca")]([SubResource("Resource_o01t1"), SubResource("Resource_bjr2w"), SubResource("Resource_ns40a")])
+tmhm = Array[ExtResource("8_m08wf")]([ExtResource("12_yp0gx"), ExtResource("13_rruuh"), ExtResource("14_aln2b"), ExtResource("15_60fcn"), ExtResource("16_3wa0i"), ExtResource("17_152s0"), ExtResource("18_wixur"), ExtResource("19_jcod3"), ExtResource("7_ms4pw"), ExtResource("5_yeow2"), ExtResource("6_4v838"), ExtResource("20_ndv86"), ExtResource("21_h0yga")])
+evolutions = Array[ExtResource("2_v3e8b")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["Its call summons", "others from every", "marsh. None knows", "why they gather,", "nor what decides."])
+front_sprite = ExtResource("3_ulouj")
+back_sprite = ExtResource("1_t4ldu")

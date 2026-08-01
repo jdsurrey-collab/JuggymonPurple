@@ -1,0 +1,87 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/natu.png" id="1_actl3"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_xxsmm"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/natu.png" id="3_qhnck"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_wy2yw"]
+[ext_resource type="Resource" path="res://resources/moves/night_shade.tres" id="5_oq2tm"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="6_ihsta"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="7_ra6c2"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="8_2xsud"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_0xfke"]
+[ext_resource type="Resource" path="res://resources/moves/peck.tres" id="10_l8cwl"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="11_mr73t"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_e7pnk"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_busc7"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_4sa5w"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_b6ffc"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_vh2fs"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_5lbtd"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_mdqxb"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_0g68a"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_0jt5b"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="21_6mcio"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="22_82r11"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="23_m2hk2"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="24_udtuq"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="25_whvv1"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="26_eojln"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="27_77wv1"]
+
+[sub_resource type="Resource" id="Resource_dsfmq"]
+script = ExtResource("2_xxsmm")
+method = "LEVEL"
+target = "XATU"
+level = 25
+item = ""
+
+[sub_resource type="Resource" id="Resource_8wlbf"]
+script = ExtResource("4_wy2yw")
+level = 10
+move = ExtResource("5_oq2tm")
+
+[sub_resource type="Resource" id="Resource_f4hra"]
+script = ExtResource("4_wy2yw")
+level = 20
+move = ExtResource("6_ihsta")
+
+[sub_resource type="Resource" id="Resource_2hn6j"]
+script = ExtResource("4_wy2yw")
+level = 40
+move = ExtResource("7_ra6c2")
+
+[sub_resource type="Resource" id="Resource_drs40"]
+script = ExtResource("4_wy2yw")
+level = 50
+move = ExtResource("8_2xsud")
+
+[resource]
+script = ExtResource("12_e7pnk")
+species_name = "NATU"
+dex = 177
+index = 140
+slug = "natu"
+label = "Natu"
+category = "LITTLEBIRD"
+height_ft = 0
+height_in = 8
+weight_tenths_lb = 40
+hp = 40
+attack = 50
+defense = 45
+speed = 70
+special = 57
+type1 = "PSYCHIC_TYPE"
+type2 = "FLYING"
+catch_rate = 190
+base_exp = 73
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("9_0xfke")]([ExtResource("10_l8cwl"), ExtResource("11_mr73t")])
+learnset = Array[ExtResource("4_wy2yw")]([SubResource("Resource_8wlbf"), SubResource("Resource_f4hra"), SubResource("Resource_2hn6j"), SubResource("Resource_drs40")])
+tmhm = Array[ExtResource("9_0xfke")]([ExtResource("13_busc7"), ExtResource("14_4sa5w"), ExtResource("15_b6ffc"), ExtResource("16_vh2fs"), ExtResource("17_5lbtd"), ExtResource("18_mdqxb"), ExtResource("19_0g68a"), ExtResource("20_0jt5b"), ExtResource("21_6mcio"), ExtResource("22_82r11"), ExtResource("23_m2hk2"), ExtResource("24_udtuq"), ExtResource("8_2xsud"), ExtResource("25_whvv1"), ExtResource("26_eojln"), ExtResource("6_ihsta"), ExtResource("27_77wv1")])
+evolutions = Array[ExtResource("2_xxsmm")]([SubResource("Resource_dsfmq")])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It stares without", "blinking at what", "has not happened", "yet, and does not", "seem to like it."])
+front_sprite = ExtResource("3_qhnck")
+back_sprite = ExtResource("1_actl3")

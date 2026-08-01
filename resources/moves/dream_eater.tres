@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_gtsqk"]
+
+[resource]
+script = ExtResource("1_gtsqk")
+move_name = "DREAM_EATER"
+move_id = 138
+display_name = "DREAM EATER"
+move_type = "PSYCHIC_TYPE"
+power = 100
+accuracy = 100
+pp = 15
+effect = "DREAM_EATER_EFFECT"

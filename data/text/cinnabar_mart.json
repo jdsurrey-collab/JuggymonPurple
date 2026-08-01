@@ -1,0 +1,30 @@
+{
+ "CinnabarMartSilphWorkerFText": [
+  {
+   "kind": "text",
+   "line": "Have they no X"
+  },
+  {
+   "kind": "line",
+   "line": "ATTACK? It suits"
+  },
+  {
+   "kind": "cont",
+   "line": "battle so well!"
+  }
+ ],
+ "CinnabarMartScientistText": [
+  {
+   "kind": "text",
+   "line": "It never harms"
+  },
+  {
+   "kind": "line",
+   "line": "to hoard extra"
+  },
+  {
+   "kind": "cont",
+   "line": "items!"
+  }
+ ]
+}

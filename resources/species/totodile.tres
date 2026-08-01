@@ -1,0 +1,95 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/totodile.png" id="1_sqmle"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_a6w4g"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/totodile.png" id="3_63j6t"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_41338"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="5_ydf2l"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="6_b7pko"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="7_cne8d"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="8_hjlfl"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="9_gk4yw"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="10_ate0s"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_g0wml"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="12_kpfdt"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="13_py4sy"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_e0nsr"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_06hrs"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_b3vi2"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_1rahj"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_4es46"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_lb5wp"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_x6n68"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_sgajg"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="22_16oh4"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="23_5jyqd"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="24_ccxuh"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="25_6b7xu"]
+
+[sub_resource type="Resource" id="Resource_atlq3"]
+script = ExtResource("2_a6w4g")
+method = "LEVEL"
+target = "CROCONAW"
+level = 18
+item = ""
+
+[sub_resource type="Resource" id="Resource_i74rg"]
+script = ExtResource("4_41338")
+level = 7
+move = ExtResource("5_ydf2l")
+
+[sub_resource type="Resource" id="Resource_uofkm"]
+script = ExtResource("4_41338")
+level = 13
+move = ExtResource("6_b7pko")
+
+[sub_resource type="Resource" id="Resource_os4sm"]
+script = ExtResource("4_41338")
+level = 20
+move = ExtResource("7_cne8d")
+
+[sub_resource type="Resource" id="Resource_b2pr6"]
+script = ExtResource("4_41338")
+level = 35
+move = ExtResource("8_hjlfl")
+
+[sub_resource type="Resource" id="Resource_kjpmv"]
+script = ExtResource("4_41338")
+level = 43
+move = ExtResource("9_gk4yw")
+
+[sub_resource type="Resource" id="Resource_q0etl"]
+script = ExtResource("4_41338")
+level = 52
+move = ExtResource("10_ate0s")
+
+[resource]
+script = ExtResource("14_e0nsr")
+species_name = "TOTODILE"
+dex = 158
+index = 62
+slug = "totodile"
+label = "Totodile"
+category = "BIG JAW"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 210
+hp = 50
+attack = 65
+defense = 64
+speed = 43
+special = 46
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 45
+base_exp = 66
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_g0wml")]([ExtResource("12_kpfdt"), ExtResource("13_py4sy")])
+learnset = Array[ExtResource("4_41338")]([SubResource("Resource_i74rg"), SubResource("Resource_uofkm"), SubResource("Resource_os4sm"), SubResource("Resource_b2pr6"), SubResource("Resource_kjpmv"), SubResource("Resource_q0etl")])
+tmhm = Array[ExtResource("11_g0wml")]([ExtResource("15_06hrs"), ExtResource("5_ydf2l"), ExtResource("16_b3vi2"), ExtResource("17_1rahj"), ExtResource("18_4es46"), ExtResource("19_lb5wp"), ExtResource("20_x6n68"), ExtResource("21_sgajg"), ExtResource("22_16oh4"), ExtResource("6_b7pko"), ExtResource("23_5jyqd"), ExtResource("24_ccxuh"), ExtResource("25_6b7xu")])
+evolutions = Array[ExtResource("2_a6w4g")]([SubResource("Resource_atlq3")])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["It bites for the", "joy of biting.", "It knows no other", "affection than", "the closing jaw."])
+front_sprite = ExtResource("3_63j6t")
+back_sprite = ExtResource("1_sqmle")

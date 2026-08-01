@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=41 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/jolteon.png" id="1_2dmhf"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_r2rqm"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/jolteon.png" id="3_yi1bt"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_gd8wb"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="5_5ecm6"]
+[ext_resource type="Resource" path="res://resources/moves/thundershock.tres" id="6_eroca"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="7_u2cq4"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="8_f5ygd"]
+[ext_resource type="Resource" path="res://resources/moves/double_kick.tres" id="9_on2iw"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="10_pt4cq"]
+[ext_resource type="Resource" path="res://resources/moves/pin_missile.tres" id="11_x2t5k"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="12_0u5gr"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="13_0efcq"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="14_buq4g"]
+[ext_resource type="Resource" path="res://resources/moves/sand_attack.tres" id="15_gus6n"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="16_wl31c"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_40u2t"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="18_iy4in"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_oawxu"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_hbwqx"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="21_ay6ov"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="22_kxjou"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="23_mmn7x"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="24_gb54f"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="25_unory"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="26_63i4f"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="27_428i8"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="28_70ypg"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="29_h20ie"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="30_qwla0"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="31_jl2eh"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="32_rlisi"]
+
+[sub_resource type="Resource" id="Resource_fp0wo"]
+script = ExtResource("4_gd8wb")
+level = 27
+move = ExtResource("5_5ecm6")
+
+[sub_resource type="Resource" id="Resource_cum0i"]
+script = ExtResource("4_gd8wb")
+level = 31
+move = ExtResource("6_eroca")
+
+[sub_resource type="Resource" id="Resource_14y5p"]
+script = ExtResource("4_gd8wb")
+level = 37
+move = ExtResource("7_u2cq4")
+
+[sub_resource type="Resource" id="Resource_2vdhh"]
+script = ExtResource("4_gd8wb")
+level = 40
+move = ExtResource("8_f5ygd")
+
+[sub_resource type="Resource" id="Resource_ltbqp"]
+script = ExtResource("4_gd8wb")
+level = 42
+move = ExtResource("9_on2iw")
+
+[sub_resource type="Resource" id="Resource_c3l42"]
+script = ExtResource("4_gd8wb")
+level = 44
+move = ExtResource("10_pt4cq")
+
+[sub_resource type="Resource" id="Resource_2ykg6"]
+script = ExtResource("4_gd8wb")
+level = 48
+move = ExtResource("11_x2t5k")
+
+[sub_resource type="Resource" id="Resource_3cn54"]
+script = ExtResource("4_gd8wb")
+level = 54
+move = ExtResource("12_0u5gr")
+
+[resource]
+script = ExtResource("16_wl31c")
+species_name = "JOLTEON"
+dex = 135
+index = 104
+slug = "jolteon"
+label = "Jolteon"
+category = "LIGHTNING"
+height_ft = 2
+height_in = 7
+weight_tenths_lb = 540
+hp = 65
+attack = 65
+defense = 60
+speed = 130
+special = 110
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 45
+base_exp = 197
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("13_0efcq")]([ExtResource("14_buq4g"), ExtResource("15_gus6n"), ExtResource("5_5ecm6"), ExtResource("6_eroca")])
+learnset = Array[ExtResource("4_gd8wb")]([SubResource("Resource_fp0wo"), SubResource("Resource_cum0i"), SubResource("Resource_14y5p"), SubResource("Resource_2vdhh"), SubResource("Resource_ltbqp"), SubResource("Resource_c3l42"), SubResource("Resource_2ykg6"), SubResource("Resource_3cn54")])
+tmhm = Array[ExtResource("13_0efcq")]([ExtResource("17_40u2t"), ExtResource("18_iy4in"), ExtResource("19_oawxu"), ExtResource("20_hbwqx"), ExtResource("21_ay6ov"), ExtResource("22_kxjou"), ExtResource("23_mmn7x"), ExtResource("12_0u5gr"), ExtResource("24_gb54f"), ExtResource("25_unory"), ExtResource("26_63i4f"), ExtResource("27_428i8"), ExtResource("28_70ypg"), ExtResource("29_h20ie"), ExtResource("30_qwla0"), ExtResource("8_f5ygd"), ExtResource("31_jl2eh"), ExtResource("32_rlisi")])
+evolutions = Array[ExtResource("2_r2rqm")]([])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It accumulates", "negative ions in", "the atmosphere to", "blast out 10000-", "volt lightning", "bolts"])
+front_sprite = ExtResource("3_yi1bt")
+back_sprite = ExtResource("1_2dmhf")

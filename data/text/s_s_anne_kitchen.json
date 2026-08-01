@@ -1,0 +1,152 @@
+{
+ "SSAnneKitchenCook1Text": [
+  {
+   "kind": "text",
+   "line": "You, mon petit!"
+  },
+  {
+   "kind": "line",
+   "line": "We're busy."
+  },
+  {
+   "kind": "cont",
+   "line": "Out from underfoot!"
+  }
+ ],
+ "SSAnneKitchenCook2Text": [
+  {
+   "kind": "text",
+   "line": "I saw a strange"
+  },
+  {
+   "kind": "line",
+   "line": "ball, in the trash."
+  }
+ ],
+ "SSAnneKitchenCook3Text": [
+  {
+   "kind": "text",
+   "line": "So much work, I"
+  },
+  {
+   "kind": "line",
+   "line": "grow dizzy!"
+  }
+ ],
+ "SSAnneKitchenCook4Text": [
+  {
+   "kind": "text",
+   "line": "Hum-de-hum-de-"
+  },
+  {
+   "kind": "line",
+   "line": "ho..."
+  },
+  {
+   "kind": "para",
+   "line": "I peel spuds"
+  },
+  {
+   "kind": "line",
+   "line": "every day, and"
+  },
+  {
+   "kind": "cont",
+   "line": "every day. Hum..."
+  }
+ ],
+ "SSAnneKitchenCook5Text": [
+  {
+   "kind": "text",
+   "line": "Did you hear of"
+  },
+  {
+   "kind": "line",
+   "line": "SNORLAX?"
+  },
+  {
+   "kind": "para",
+   "line": "It only eats,"
+  },
+  {
+   "kind": "line",
+   "line": "and sleeps."
+  }
+ ],
+ "SSAnneKitchenCook6Text": [
+  {
+   "kind": "text",
+   "line": "Snivel...Sniff..."
+  },
+  {
+   "kind": "para",
+   "line": "Only onions for"
+  },
+  {
+   "kind": "line",
+   "line": "me... always"
+  },
+  {
+   "kind": "cont",
+   "line": "onions. Snivel..."
+  }
+ ],
+ "SSAnneKitchenCook7MainCourseIsText": [
+  {
+   "kind": "text",
+   "line": "Er-hem! I am"
+  },
+  {
+   "kind": "line",
+   "line": "indeed le CHEF."
+  },
+  {
+   "kind": "para",
+   "line": "Tonight's main"
+  },
+  {
+   "kind": "line",
+   "line": "course is-"
+  },
+  {
+   "kind": "text",
+   "line": "Salmon du Salad!"
+  },
+  {
+   "kind": "para",
+   "line": "Les guests will"
+  },
+  {
+   "kind": "line",
+   "line": "grumble- fish,"
+  },
+  {
+   "kind": "cont",
+   "line": "again."
+  },
+  {
+   "kind": "text",
+   "line": "Eels au Barbecue!"
+  },
+  {
+   "kind": "para",
+   "line": "Les guests may"
+  },
+  {
+   "kind": "line",
+   "line": "mutiny, I fear."
+  },
+  {
+   "kind": "text",
+   "line": "Prime Beef Steak!"
+  },
+  {
+   "kind": "para",
+   "line": "Have I enough"
+  },
+  {
+   "kind": "line",
+   "line": "fillets du beef?"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_axpgw"]
+
+[resource]
+script = ExtResource("1_axpgw")
+move_name = "JUMP_KICK"
+move_id = 26
+display_name = "JUMP KICK"
+move_type = "FIGHTING"
+power = 70
+accuracy = 95
+pp = 25
+effect = "JUMP_KICK_EFFECT"

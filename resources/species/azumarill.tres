@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=29 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/azumarill.png" id="1_faij2"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_bc4qc"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/azumarill.png" id="3_k0nd2"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_8633f"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="5_fj3ar"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="6_dcf2d"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="7_jm42n"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="8_k6w1h"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="9_bghrj"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_4ei8j"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_u8b37"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_pvy4g"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_8w0ea"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_o07me"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_88gw3"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_o1iyx"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_50263"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_tfqyo"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_fnb62"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_ydhnr"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="21_dt0yr"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="22_iwvpn"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="23_wp53k"]
+
+[sub_resource type="Resource" id="Resource_qdtpt"]
+script = ExtResource("4_8633f")
+level = 3
+move = ExtResource("5_fj3ar")
+
+[sub_resource type="Resource" id="Resource_3v7ow"]
+script = ExtResource("4_8633f")
+level = 6
+move = ExtResource("6_dcf2d")
+
+[sub_resource type="Resource" id="Resource_feqk1"]
+script = ExtResource("4_8633f")
+level = 10
+move = ExtResource("7_jm42n")
+
+[sub_resource type="Resource" id="Resource_er1dy"]
+script = ExtResource("4_8633f")
+level = 25
+move = ExtResource("8_k6w1h")
+
+[sub_resource type="Resource" id="Resource_gc6dh"]
+script = ExtResource("4_8633f")
+level = 36
+move = ExtResource("9_bghrj")
+
+[resource]
+script = ExtResource("12_pvy4g")
+species_name = "AZUMARILL"
+dex = 184
+index = 172
+slug = "azumarill"
+label = "Azumarill"
+category = "AQUARABBIT"
+height_ft = 2
+height_in = 7
+weight_tenths_lb = 630
+hp = 100
+attack = 50
+defense = 80
+speed = 50
+special = 65
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 75
+base_exp = 153
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("10_4ei8j")]([ExtResource("11_u8b37"), ExtResource("5_fj3ar"), ExtResource("6_dcf2d"), ExtResource("7_jm42n")])
+learnset = Array[ExtResource("4_8633f")]([SubResource("Resource_qdtpt"), SubResource("Resource_3v7ow"), SubResource("Resource_feqk1"), SubResource("Resource_er1dy"), SubResource("Resource_gc6dh")])
+tmhm = Array[ExtResource("10_4ei8j")]([ExtResource("13_8w0ea"), ExtResource("14_o07me"), ExtResource("15_88gw3"), ExtResource("16_o1iyx"), ExtResource("17_50263"), ExtResource("18_tfqyo"), ExtResource("19_fnb62"), ExtResource("20_ydhnr"), ExtResource("21_dt0yr"), ExtResource("7_jm42n"), ExtResource("8_k6w1h"), ExtResource("22_iwvpn"), ExtResource("23_wp53k")])
+evolutions = Array[ExtResource("2_bc4qc")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["It hears through", "water what moves", "beneath. It hears", "the drowned turn", "in the current."])
+front_sprite = ExtResource("3_k0nd2")
+back_sprite = ExtResource("1_faij2")

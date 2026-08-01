@@ -1,0 +1,48 @@
+{
+ "SafariZoneEastRestHouseScientistText": [
+  {
+   "kind": "text",
+   "line": "How many did you"
+  },
+  {
+   "kind": "line",
+   "line": "trap? I'm worn"
+  },
+  {
+   "kind": "cont",
+   "line": "from the hunt!"
+  }
+ ],
+ "SafariZoneEastRestHouseRockerText": [
+  {
+   "kind": "text",
+   "line": "I trapped a"
+  },
+  {
+   "kind": "line",
+   "line": "CHANSEY!"
+  },
+  {
+   "kind": "para",
+   "line": "That makes this"
+  },
+  {
+   "kind": "line",
+   "line": "all worthwhile!"
+  }
+ ],
+ "SafariZoneEastRestHouseSilphWorkerMText": [
+  {
+   "kind": "text",
+   "line": "Whew! I'm spent"
+  },
+  {
+   "kind": "line",
+   "line": "from all this"
+  },
+  {
+   "kind": "cont",
+   "line": "grim sport!"
+  }
+ ]
+}

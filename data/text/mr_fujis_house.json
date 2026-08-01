@@ -1,0 +1,206 @@
+{
+ "MrFujisHouseSuperNerdMrFujiIsntHereText": [
+  {
+   "kind": "text",
+   "line": "Odd. MR.FUJI"
+  },
+  {
+   "kind": "line",
+   "line": "isn't home."
+  },
+  {
+   "kind": "cont",
+   "line": "Where's he gone?"
+  }
+ ],
+ "MrFujisHouseSuperNerdMrFujiHadBeenPrayingText": [
+  {
+   "kind": "text",
+   "line": "MR.FUJI prayed"
+  },
+  {
+   "kind": "line",
+   "line": "alone, for"
+  },
+  {
+   "kind": "cont",
+   "line": "CUBONE's mother."
+  }
+ ],
+ "MrFujisHouseLittleGirlThisIsMrFujisHouseText": [
+  {
+   "kind": "text",
+   "line": "This is truly"
+  },
+  {
+   "kind": "line",
+   "line": "MR.FUJI's house."
+  },
+  {
+   "kind": "para",
+   "line": "He's kind, in a"
+  },
+  {
+   "kind": "line",
+   "line": "hard world."
+  },
+  {
+   "kind": "para",
+   "line": "He shelters"
+  },
+  {
+   "kind": "line",
+   "line": "abandoned and"
+  },
+  {
+   "kind": "cont",
+   "line": "orphaned #MON."
+  }
+ ],
+ "MrFujisHouseLittleGirlPokemonAreNiceToHugText": [
+  {
+   "kind": "text",
+   "line": "So warm. #MON"
+  },
+  {
+   "kind": "line",
+   "line": "are a comfort,"
+  },
+  {
+   "kind": "cont",
+   "line": "to hold."
+  }
+ ],
+ "MrFujisHousePsyduckText": [
+  {
+   "kind": "text",
+   "line": "PSYDUCK: Gwappa!@"
+  }
+ ],
+ "MrFujisHouseNidorinoText": [
+  {
+   "kind": "text",
+   "line": "NIDORINO: Gaoo!@"
+  }
+ ],
+ "MrFujisHouseMrFujiIThinkThisMayHelpYourQuestText": [
+  {
+   "kind": "text",
+   "line": "MR.FUJI: <PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "Your quest will"
+  },
+  {
+   "kind": "line",
+   "line": "fail, without"
+  },
+  {
+   "kind": "cont",
+   "line": "love for your"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON."
+  },
+  {
+   "kind": "para",
+   "line": "This may help"
+  },
+  {
+   "kind": "line",
+   "line": "you, some."
+  }
+ ],
+ "MrFujisHouseMrFujiReceivedPokeFluteText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "a @"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "MrFujisHouseMrFujiPokeFluteExplanationText": [
+  {
+   "kind": "para",
+   "line": "At # FLUTE's"
+  },
+  {
+   "kind": "line",
+   "line": "call, sleeping"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON wake,"
+  },
+  {
+   "kind": "cont",
+   "line": "startled."
+  },
+  {
+   "kind": "para",
+   "line": "It rouses any"
+  },
+  {
+   "kind": "line",
+   "line": "sleeping #MON."
+  }
+ ],
+ "MrFujisHouseMrFujiPokeFluteNoRoomText": [
+  {
+   "kind": "text",
+   "line": "Make room for"
+  },
+  {
+   "kind": "line",
+   "line": "this, somehow."
+  }
+ ],
+ "MrFujisHouseMrFujiHasMyFluteHelpedYouText": [
+  {
+   "kind": "text",
+   "line": "MR.FUJI: Has the"
+  },
+  {
+   "kind": "line",
+   "line": "FLUTE served you?"
+  }
+ ],
+ "MrFujisHouseMrFujiPokedexText": [
+  {
+   "kind": "text",
+   "line": "#MON Monthly"
+  },
+  {
+   "kind": "line",
+   "line": "Grand Prize"
+  },
+  {
+   "kind": "cont",
+   "line": "Drawing!"
+  },
+  {
+   "kind": "para",
+   "line": "The form for"
+  },
+  {
+   "kind": "line",
+   "line": "entry is..."
+  },
+  {
+   "kind": "para",
+   "line": "Gone. Torn out"
+  },
+  {
+   "kind": "line",
+   "line": "long ago."
+  }
+ ]
+}

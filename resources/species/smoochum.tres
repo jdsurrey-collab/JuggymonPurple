@@ -1,0 +1,86 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/smoochum.png" id="1_7xslj"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_1t3ca"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/smoochum.png" id="3_4ylo0"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_6bkvg"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="5_5et46"]
+[ext_resource type="Resource" path="res://resources/moves/sing.tres" id="6_iotoy"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="7_as8hw"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="8_7i6nk"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_ry1yu"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="10_m487u"]
+[ext_resource type="Resource" path="res://resources/moves/lick.tres" id="11_rvys7"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_c7lcy"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_4smpb"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_s2xrh"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_chgbg"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_waihh"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_61nhk"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_no0c3"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_ggquj"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_mdhik"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="21_yt4lv"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="22_vgkgg"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="23_lrv4d"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="24_fod1v"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="25_we7b0"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="26_2e6o6"]
+
+[sub_resource type="Resource" id="Resource_dsxs0"]
+script = ExtResource("2_1t3ca")
+method = "LEVEL"
+target = "JYNX"
+level = 30
+item = ""
+
+[sub_resource type="Resource" id="Resource_qj3ly"]
+script = ExtResource("4_6bkvg")
+level = 21
+move = ExtResource("5_5et46")
+
+[sub_resource type="Resource" id="Resource_jslld"]
+script = ExtResource("4_6bkvg")
+level = 25
+move = ExtResource("6_iotoy")
+
+[sub_resource type="Resource" id="Resource_d0sdk"]
+script = ExtResource("4_6bkvg")
+level = 37
+move = ExtResource("7_as8hw")
+
+[sub_resource type="Resource" id="Resource_2dpwr"]
+script = ExtResource("4_6bkvg")
+level = 49
+move = ExtResource("8_7i6nk")
+
+[resource]
+script = ExtResource("12_c7lcy")
+species_name = "SMOOCHUM"
+dex = 228
+index = 231
+slug = "smoochum"
+label = "Smoochum"
+category = "KISS"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 130
+hp = 45
+attack = 30
+defense = 15
+speed = 65
+special = 75
+type1 = "ICE"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 45
+base_exp = 87
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("9_ry1yu")]([ExtResource("10_m487u"), ExtResource("11_rvys7")])
+learnset = Array[ExtResource("4_6bkvg")]([SubResource("Resource_qj3ly"), SubResource("Resource_jslld"), SubResource("Resource_d0sdk"), SubResource("Resource_2dpwr")])
+tmhm = Array[ExtResource("9_ry1yu")]([ExtResource("13_4smpb"), ExtResource("14_s2xrh"), ExtResource("15_chgbg"), ExtResource("16_waihh"), ExtResource("17_61nhk"), ExtResource("18_no0c3"), ExtResource("19_ggquj"), ExtResource("20_mdhik"), ExtResource("21_yt4lv"), ExtResource("8_7i6nk"), ExtResource("22_vgkgg"), ExtResource("7_as8hw"), ExtResource("23_lrv4d"), ExtResource("24_fod1v"), ExtResource("25_we7b0"), ExtResource("26_2e6o6")])
+evolutions = Array[ExtResource("2_1t3ca")]([SubResource("Resource_dsxs0")])
+palette = "PAL_CYANMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It touches all", "things with its", "lips to know them,", "and remembers", "what it should", "not have learned."])
+front_sprite = ExtResource("3_4ylo0")
+back_sprite = ExtResource("1_7xslj")

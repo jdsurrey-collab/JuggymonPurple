@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_jj1n0"]
+
+[resource]
+script = ExtResource("1_jj1n0")
+move_name = "BARRAGE"
+move_id = 140
+display_name = "BARRAGE"
+move_type = "NORMAL"
+power = 15
+accuracy = 85
+pp = 20
+effect = "TWO_TO_FIVE_ATTACKS_EFFECT"

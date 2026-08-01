@@ -1,0 +1,42 @@
+{
+ "FuchsiaMartMiddleAgedManText": [
+  {
+   "kind": "text",
+   "line": "Have you a"
+  },
+  {
+   "kind": "line",
+   "line": "SAFARI ZONE flag?"
+  },
+  {
+   "kind": "para",
+   "line": "Perhaps some"
+  },
+  {
+   "kind": "line",
+   "line": "cards or grim"
+  },
+  {
+   "kind": "cont",
+   "line": "calendars?"
+  }
+ ],
+ "FuchsiaMartCooltrainerFText": [
+  {
+   "kind": "text",
+   "line": "Have you tried"
+  },
+  {
+   "kind": "line",
+   "line": "X SPEED? It"
+  },
+  {
+   "kind": "cont",
+   "line": "quickens a"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON in battle!"
+  }
+ ]
+}

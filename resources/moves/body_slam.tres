@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_slbhe"]
+
+[resource]
+script = ExtResource("1_slbhe")
+move_name = "BODY_SLAM"
+move_id = 34
+display_name = "BODY SLAM"
+move_type = "NORMAL"
+power = 85
+accuracy = 100
+pp = 15
+effect = "PARALYZE_SIDE_EFFECT2"

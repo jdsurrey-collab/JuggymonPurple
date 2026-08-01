@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bppoak00001"]
+
+[ext_resource type="Script" path="res://scripts/startup/oak_speech.gd" id="1_oak"]
+[ext_resource type="PackedScene" path="res://scenes/ui/dialogue_box.tscn" id="2_dlg"]
+
+[node name="OakSpeech" type="Node2D"]
+script = ExtResource("1_oak")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 160.0
+offset_bottom = 144.0
+color = Color(0.95, 0.95, 0.95, 1)
+
+[node name="Portrait" type="TextureRect" parent="."]
+offset_left = 52.0
+offset_top = 16.0
+offset_right = 108.0
+offset_bottom = 72.0
+
+[node name="DialogueBox" parent="." instance=ExtResource("2_dlg")]

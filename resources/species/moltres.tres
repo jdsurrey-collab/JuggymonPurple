@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=31 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/moltres.png" id="1_h5i0w"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_0628i"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/moltres.png" id="3_kob03"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_s6vub"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="5_u05nd"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="6_4o2ay"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="7_hfho2"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_gmxkh"]
+[ext_resource type="Resource" path="res://resources/moves/peck.tres" id="9_4q5hf"]
+[ext_resource type="Resource" path="res://resources/moves/fire_spin.tres" id="10_aiyxb"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_omv3p"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="12_jkm7l"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="13_3625g"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_3lvmh"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_1n41s"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_x2frc"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="17_klaq7"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_fylhp"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="19_8srj1"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="20_6ij7q"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="21_ymd3a"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="22_wspik"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="23_6g1o0"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="24_e8swu"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="25_5w1rq"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="26_pql0h"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="27_neasb"]
+
+[sub_resource type="Resource" id="Resource_8gkny"]
+script = ExtResource("4_s6vub")
+level = 51
+move = ExtResource("5_u05nd")
+
+[sub_resource type="Resource" id="Resource_u7ikw"]
+script = ExtResource("4_s6vub")
+level = 55
+move = ExtResource("6_4o2ay")
+
+[sub_resource type="Resource" id="Resource_3af6t"]
+script = ExtResource("4_s6vub")
+level = 60
+move = ExtResource("7_hfho2")
+
+[resource]
+script = ExtResource("11_omv3p")
+species_name = "MOLTRES"
+dex = 146
+index = 73
+slug = "moltres"
+label = "Moltres"
+category = "FLAME"
+height_ft = 6
+height_in = 7
+weight_tenths_lb = 1320
+hp = 90
+attack = 100
+defense = 90
+speed = 90
+special = 125
+type1 = "FIRE"
+type2 = "FLYING"
+catch_rate = 3
+base_exp = 217
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("8_gmxkh")]([ExtResource("9_4q5hf"), ExtResource("10_aiyxb")])
+learnset = Array[ExtResource("4_s6vub")]([SubResource("Resource_8gkny"), SubResource("Resource_u7ikw"), SubResource("Resource_3af6t")])
+tmhm = Array[ExtResource("8_gmxkh")]([ExtResource("12_jkm7l"), ExtResource("13_3625g"), ExtResource("14_3lvmh"), ExtResource("15_1n41s"), ExtResource("16_x2frc"), ExtResource("17_klaq7"), ExtResource("18_fylhp"), ExtResource("19_8srj1"), ExtResource("20_6ij7q"), ExtResource("21_ymd3a"), ExtResource("22_wspik"), ExtResource("23_6g1o0"), ExtResource("24_e8swu"), ExtResource("7_hfho2"), ExtResource("25_5w1rq"), ExtResource("26_pql0h"), ExtResource("27_neasb")])
+evolutions = Array[ExtResource("2_0628i")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_BIRD"
+dex_text = Array[String](["Known as the", "legendary bird of", "fire. Every flap", "of its wings", "creates a dazzling", "flash of flames"])
+front_sprite = ExtResource("3_kob03")
+back_sprite = ExtResource("1_h5i0w")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_s8c10"]
+
+[resource]
+script = ExtResource("1_s8c10")
+move_name = "DOUBLESLAP"
+move_id = 3
+display_name = "DOUBLESLAP"
+move_type = "NORMAL"
+power = 15
+accuracy = 85
+pp = 10
+effect = "TWO_TO_FIVE_ATTACKS_EFFECT"

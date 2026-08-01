@@ -1,0 +1,192 @@
+{
+ "LancesRoomLanceBeforeBattleText": [
+  {
+   "kind": "text",
+   "line": "Ah. I've heard"
+  },
+  {
+   "kind": "line",
+   "line": "much of you,"
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>. I lead"
+  },
+  {
+   "kind": "line",
+   "line": "the ELITE FOUR."
+  },
+  {
+   "kind": "cont",
+   "line": "LANCE. Master of"
+  },
+  {
+   "kind": "cont",
+   "line": "dragons."
+  },
+  {
+   "kind": "para",
+   "line": "Dragons, child,"
+  },
+  {
+   "kind": "line",
+   "line": "are myth made"
+  },
+  {
+   "kind": "cont",
+   "line": "flesh."
+  },
+  {
+   "kind": "para",
+   "line": "Cruel to raise,"
+  },
+  {
+   "kind": "line",
+   "line": "crueler to face,"
+  },
+  {
+   "kind": "cont",
+   "line": "their strength"
+  },
+  {
+   "kind": "cont",
+   "line": "unmatched."
+  },
+  {
+   "kind": "para",
+   "line": "Near as death"
+  },
+  {
+   "kind": "line",
+   "line": "itself,"
+  },
+  {
+   "kind": "para",
+   "line": "indestructible."
+  },
+  {
+   "kind": "para",
+   "line": "Are you prepared"
+  },
+  {
+   "kind": "line",
+   "line": "to lose, then?"
+  },
+  {
+   "kind": "para",
+   "line": "Your journey ends"
+  },
+  {
+   "kind": "line",
+   "line": "here, with me,"
+  },
+  {
+   "kind": "cont",
+   "line": "<PLAYER>."
+  }
+ ],
+ "LancesRoomLanceEndBattleText": [
+  {
+   "kind": "text",
+   "line": "So. It's over."
+  },
+  {
+   "kind": "para",
+   "line": "I loathe to admit"
+  },
+  {
+   "kind": "line",
+   "line": "it, but you are"
+  },
+  {
+   "kind": "cont",
+   "line": "a #MON master."
+  }
+ ],
+ "LancesRoomLanceAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I still cannot"
+  },
+  {
+   "kind": "line",
+   "line": "believe my"
+  },
+  {
+   "kind": "cont",
+   "line": "dragons fell to"
+  },
+  {
+   "kind": "cont",
+   "line": "you, <PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "You would be"
+  },
+  {
+   "kind": "line",
+   "line": "#MON LEAGUE"
+  },
+  {
+   "kind": "cont",
+   "line": "champion now."
+  },
+  {
+   "kind": "para",
+   "line": "But one trial"
+  },
+  {
+   "kind": "line",
+   "line": "yet remains for"
+  },
+  {
+   "kind": "cont",
+   "line": "you, one final"
+  },
+  {
+   "kind": "cont",
+   "line": "grief to bear."
+  },
+  {
+   "kind": "para",
+   "line": "Another trainer"
+  },
+  {
+   "kind": "line",
+   "line": "stands between"
+  },
+  {
+   "kind": "cont",
+   "line": "you and glory."
+  },
+  {
+   "kind": "para",
+   "line": "<RIVAL>."
+  },
+  {
+   "kind": "line",
+   "line": "He conquered the"
+  },
+  {
+   "kind": "cont",
+   "line": "ELITE FOUR before"
+  },
+  {
+   "kind": "cont",
+   "line": "you ever came."
+  },
+  {
+   "kind": "para",
+   "line": "He is the true"
+  },
+  {
+   "kind": "line",
+   "line": "#MON LEAGUE"
+  },
+  {
+   "kind": "cont",
+   "line": "champion, not I.@"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/gligar.png" id="1_h46hc"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_43len"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/gligar.png" id="3_cclrk"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_7eflc"]
+[ext_resource type="Resource" path="res://resources/moves/sand_attack.tres" id="5_60mfg"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="6_ag2b6"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="7_r8brh"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="8_yynch"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="9_2lnab"]
+[ext_resource type="Resource" path="res://resources/moves/guillotine.tres" id="10_rriey"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_5mtr8"]
+[ext_resource type="Resource" path="res://resources/moves/poison_sting.tres" id="12_j2xcu"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_udqjm"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_00a0y"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_t3mei"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_i8vo0"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_kpnlo"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_kiaok"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_cpw2l"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_3qfjh"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_qmu5n"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="22_cyx5c"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="23_gs2d4"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="24_m7iis"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="25_kkim3"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="26_aqrop"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="27_2ap10"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="28_i3ust"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="29_1s7et"]
+
+[sub_resource type="Resource" id="Resource_f7kbn"]
+script = ExtResource("4_7eflc")
+level = 6
+move = ExtResource("5_60mfg")
+
+[sub_resource type="Resource" id="Resource_7eerd"]
+script = ExtResource("4_7eflc")
+level = 13
+move = ExtResource("6_ag2b6")
+
+[sub_resource type="Resource" id="Resource_kqxho"]
+script = ExtResource("4_7eflc")
+level = 20
+move = ExtResource("7_r8brh")
+
+[sub_resource type="Resource" id="Resource_8kwxx"]
+script = ExtResource("4_7eflc")
+level = 36
+move = ExtResource("8_yynch")
+
+[sub_resource type="Resource" id="Resource_p3aqa"]
+script = ExtResource("4_7eflc")
+level = 44
+move = ExtResource("9_2lnab")
+
+[sub_resource type="Resource" id="Resource_2ol7b"]
+script = ExtResource("4_7eflc")
+level = 52
+move = ExtResource("10_rriey")
+
+[resource]
+script = ExtResource("13_udqjm")
+species_name = "GLIGAR"
+dex = 203
+index = 206
+slug = "gligar"
+label = "Gligar"
+category = "FLYSCORPIO"
+height_ft = 3
+height_in = 7
+weight_tenths_lb = 1430
+hp = 65
+attack = 75
+defense = 105
+speed = 85
+special = 50
+type1 = "GROUND"
+type2 = "FLYING"
+catch_rate = 60
+base_exp = 108
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_5mtr8")]([ExtResource("12_j2xcu")])
+learnset = Array[ExtResource("4_7eflc")]([SubResource("Resource_f7kbn"), SubResource("Resource_7eerd"), SubResource("Resource_kqxho"), SubResource("Resource_8kwxx"), SubResource("Resource_p3aqa"), SubResource("Resource_2ol7b")])
+tmhm = Array[ExtResource("11_5mtr8")]([ExtResource("14_00a0y"), ExtResource("15_t3mei"), ExtResource("16_i8vo0"), ExtResource("17_kpnlo"), ExtResource("18_kiaok"), ExtResource("19_cpw2l"), ExtResource("20_3qfjh"), ExtResource("21_qmu5n"), ExtResource("22_cyx5c"), ExtResource("23_gs2d4"), ExtResource("24_m7iis"), ExtResource("25_kkim3"), ExtResource("26_aqrop"), ExtResource("27_2ap10"), ExtResource("28_i3ust"), ExtResource("29_1s7et")])
+evolutions = Array[ExtResource("2_43len")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It glides down at", "the face, and", "clings there while", "the stinger works.", "It makes no sound."])
+front_sprite = ExtResource("3_cclrk")
+back_sprite = ExtResource("1_h46hc")

@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=31 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/sentret.png" id="1_bnkjf"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_u85ls"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/sentret.png" id="3_8rs6l"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_baw6v"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="5_spcri"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="6_lr4di"]
+[ext_resource type="Resource" path="res://resources/moves/fury_swipes.tres" id="7_bdkp6"]
+[ext_resource type="Resource" path="res://resources/moves/slam.tres" id="8_tamxk"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="9_1w1jj"]
+[ext_resource type="Resource" path="res://resources/moves/amnesia.tres" id="10_5hw7f"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_xn25b"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_diief"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_ooiun"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_cp7tl"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_xo8ah"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_eqos6"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_ckvce"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_7vn1r"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_6vi0c"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_t0w3v"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="21_e6m8x"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="22_uvbmy"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="23_3mxnh"]
+
+[sub_resource type="Resource" id="Resource_ucqio"]
+script = ExtResource("2_u85ls")
+method = "LEVEL"
+target = "FURRET"
+level = 15
+item = ""
+
+[sub_resource type="Resource" id="Resource_pckix"]
+script = ExtResource("4_baw6v")
+level = 5
+move = ExtResource("5_spcri")
+
+[sub_resource type="Resource" id="Resource_hx7du"]
+script = ExtResource("4_baw6v")
+level = 11
+move = ExtResource("6_lr4di")
+
+[sub_resource type="Resource" id="Resource_c8nxt"]
+script = ExtResource("4_baw6v")
+level = 17
+move = ExtResource("7_bdkp6")
+
+[sub_resource type="Resource" id="Resource_a1kir"]
+script = ExtResource("4_baw6v")
+level = 25
+move = ExtResource("8_tamxk")
+
+[sub_resource type="Resource" id="Resource_72ir7"]
+script = ExtResource("4_baw6v")
+level = 33
+move = ExtResource("9_1w1jj")
+
+[sub_resource type="Resource" id="Resource_dioe5"]
+script = ExtResource("4_baw6v")
+level = 41
+move = ExtResource("10_5hw7f")
+
+[resource]
+script = ExtResource("13_ooiun")
+species_name = "SENTRET"
+dex = 161
+index = 68
+slug = "sentret"
+label = "Sentret"
+category = "SCOUT"
+height_ft = 2
+height_in = 7
+weight_tenths_lb = 130
+hp = 35
+attack = 46
+defense = 34
+speed = 20
+special = 40
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 255
+base_exp = 57
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_xn25b")]([ExtResource("12_diief")])
+learnset = Array[ExtResource("4_baw6v")]([SubResource("Resource_pckix"), SubResource("Resource_hx7du"), SubResource("Resource_c8nxt"), SubResource("Resource_a1kir"), SubResource("Resource_72ir7"), SubResource("Resource_dioe5")])
+tmhm = Array[ExtResource("11_xn25b")]([ExtResource("14_cp7tl"), ExtResource("15_xo8ah"), ExtResource("16_eqos6"), ExtResource("17_ckvce"), ExtResource("9_1w1jj"), ExtResource("18_7vn1r"), ExtResource("19_6vi0c"), ExtResource("20_t0w3v"), ExtResource("21_e6m8x"), ExtResource("22_uvbmy"), ExtResource("23_3mxnh")])
+evolutions = Array[ExtResource("2_u85ls")]([SubResource("Resource_ucqio")])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It stands its", "watch on a bare", "tail, and screams", "before it flees.", "The scream is all", "the warning given."])
+front_sprite = ExtResource("3_8rs6l")
+back_sprite = ExtResource("1_bnkjf")

@@ -1,0 +1,374 @@
+{
+ "PokemonFanClubPikachuFanNormalText": [
+  {
+   "kind": "text",
+   "line": "Won't you admire"
+  },
+  {
+   "kind": "line",
+   "line": "my PIKACHU's"
+  },
+  {
+   "kind": "cont",
+   "line": "darling tail?"
+  }
+ ],
+ "PokemonFanClubPikachuFanBetterText": [
+  {
+   "kind": "text",
+   "line": "Hmph! My PIKACHU"
+  },
+  {
+   "kind": "line",
+   "line": "is twice as fine"
+  },
+  {
+   "kind": "cont",
+   "line": "as that poor one!"
+  }
+ ],
+ "PokemonFanClubSeelFanNormalText": [
+  {
+   "kind": "text",
+   "line": "I do so love my"
+  },
+  {
+   "kind": "line",
+   "line": "SEEL!"
+  },
+  {
+   "kind": "para",
+   "line": "It cries so"
+  },
+  {
+   "kind": "line",
+   "line": "sweetly when"
+  },
+  {
+   "kind": "cont",
+   "line": "held!"
+  }
+ ],
+ "PokemonFanClubSeelFanBetterText": [
+  {
+   "kind": "text",
+   "line": "Oh, dear me!"
+  },
+  {
+   "kind": "para",
+   "line": "My SEEL is far"
+  },
+  {
+   "kind": "line",
+   "line": "the lovelier!"
+  }
+ ],
+ "PokemonFanClubPikachuText": [
+  {
+   "kind": "text",
+   "line": "PIKACHU: Chu!"
+  },
+  {
+   "kind": "line",
+   "line": "Pikachu!"
+  }
+ ],
+ "PokemonFanClubSeelText": [
+  {
+   "kind": "text",
+   "line": "SEEL: Kyuoo!"
+  }
+ ],
+ "PokemonFanClubChairmanIntroText": [
+  {
+   "kind": "text",
+   "line": "I chair this"
+  },
+  {
+   "kind": "line",
+   "line": "#MON Fan Club!"
+  },
+  {
+   "kind": "para",
+   "line": "I have gathered"
+  },
+  {
+   "kind": "line",
+   "line": "over 100 #MON!"
+  },
+  {
+   "kind": "para",
+   "line": "I am terribly"
+  },
+  {
+   "kind": "line",
+   "line": "particular about"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON!"
+  },
+  {
+   "kind": "para",
+   "line": "So..."
+  },
+  {
+   "kind": "para",
+   "line": "Have you come to"
+  },
+  {
+   "kind": "line",
+   "line": "hear me speak of"
+  },
+  {
+   "kind": "cont",
+   "line": "my #MON?"
+  }
+ ],
+ "PokemonFanClubChairmanStoryText": [
+  {
+   "kind": "text",
+   "line": "Splendid!"
+  },
+  {
+   "kind": "line",
+   "line": "Then listen well!"
+  },
+  {
+   "kind": "para",
+   "line": "My beloved"
+  },
+  {
+   "kind": "line",
+   "line": "RAPIDASH..."
+  },
+  {
+   "kind": "para",
+   "line": "It...dear...so"
+  },
+  {
+   "kind": "line",
+   "line": "lovely...so wise..."
+  },
+  {
+   "kind": "cont",
+   "line": "and yet...how sad"
+  },
+  {
+   "kind": "cont",
+   "line": "you think so?..."
+  },
+  {
+   "kind": "cont",
+   "line": "oh yes...it is..."
+  },
+  {
+   "kind": "cont",
+   "line": "stunning..."
+  },
+  {
+   "kind": "cont",
+   "line": "so tender..."
+  },
+  {
+   "kind": "cont",
+   "line": "I love it so!"
+  },
+  {
+   "kind": "para",
+   "line": "I hold it...when"
+  },
+  {
+   "kind": "cont",
+   "line": "it sleeps...warm"
+  },
+  {
+   "kind": "cont",
+   "line": "and dear to me..."
+  },
+  {
+   "kind": "cont",
+   "line": "so splendid..."
+  },
+  {
+   "kind": "cont",
+   "line": "so ravishing..."
+  },
+  {
+   "kind": "cont",
+   "line": "...Oh! Look at"
+  },
+  {
+   "kind": "cont",
+   "line": "the hour! I've"
+  },
+  {
+   "kind": "cont",
+   "line": "kept you too long!"
+  },
+  {
+   "kind": "para",
+   "line": "My thanks for"
+  },
+  {
+   "kind": "line",
+   "line": "hearing me out!"
+  },
+  {
+   "kind": "cont",
+   "line": "Please, take"
+  },
+  {
+   "kind": "cont",
+   "line": "this gift!"
+  }
+ ],
+ "PokemonFanClubReceivedBikeVoucherText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "a @"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "PokemonFanClubExplainBikeVoucherText": [
+  {
+   "kind": "para",
+   "line": "Trade that for"
+  },
+  {
+   "kind": "line",
+   "line": "a BICYCLE!"
+  },
+  {
+   "kind": "para",
+   "line": "Fear not, my"
+  },
+  {
+   "kind": "line",
+   "line": "FEAROW shall fly"
+  },
+  {
+   "kind": "cont",
+   "line": "me anywhere!"
+  },
+  {
+   "kind": "para",
+   "line": "So I have no"
+  },
+  {
+   "kind": "line",
+   "line": "need of a"
+  },
+  {
+   "kind": "cont",
+   "line": "BICYCLE!"
+  },
+  {
+   "kind": "para",
+   "line": "I do hope you"
+  },
+  {
+   "kind": "line",
+   "line": "enjoy the ride!"
+  }
+ ],
+ "PokemonFanClubNoStoryText": [
+  {
+   "kind": "text",
+   "line": "Ah. Return when"
+  },
+  {
+   "kind": "line",
+   "line": "you wish to hear"
+  },
+  {
+   "kind": "cont",
+   "line": "my story again!"
+  }
+ ],
+ "PokemonFanClubChairFinalText": [
+  {
+   "kind": "text",
+   "line": "Good day,"
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>!"
+  },
+  {
+   "kind": "para",
+   "line": "Have you come to"
+  },
+  {
+   "kind": "line",
+   "line": "hear of my"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON once more?"
+  },
+  {
+   "kind": "para",
+   "line": "No? A pity!"
+  }
+ ],
+ "PokemonFanClubBagFullText": [
+  {
+   "kind": "text",
+   "line": "Make room for"
+  },
+  {
+   "kind": "line",
+   "line": "this!"
+  }
+ ],
+ "PokemonFanClubReceptionistText": [
+  {
+   "kind": "text",
+   "line": "Our Chairman"
+  },
+  {
+   "kind": "line",
+   "line": "speaks endlessly"
+  },
+  {
+   "kind": "cont",
+   "line": "of #MON."
+  }
+ ],
+ "PokemonFanClubSign1Text": [
+  {
+   "kind": "text",
+   "line": "Let all listen"
+  },
+  {
+   "kind": "line",
+   "line": "in silence to"
+  },
+  {
+   "kind": "cont",
+   "line": "fellow trainers!"
+  }
+ ],
+ "PokemonFanClubSign2Text": [
+  {
+   "kind": "text",
+   "line": "If one boasts,"
+  },
+  {
+   "kind": "line",
+   "line": "boast back in"
+  },
+  {
+   "kind": "cont",
+   "line": "kind!"
+  }
+ ]
+}

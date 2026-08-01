@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_rcolp"]
+
+[resource]
+script = ExtResource("1_rcolp")
+move_name = "PAY_DAY"
+move_id = 6
+display_name = "PAY DAY"
+move_type = "NORMAL"
+power = 40
+accuracy = 100
+pp = 20
+effect = "PAY_DAY_EFFECT"

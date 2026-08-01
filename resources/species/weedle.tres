@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=10 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/weedle.png" id="1_xohro"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_7l7nu"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/weedle.png" id="3_n4ien"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_usvur"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="5_el1fq"]
+[ext_resource type="Resource" path="res://resources/moves/poison_sting.tres" id="6_foxu5"]
+[ext_resource type="Resource" path="res://resources/moves/string_shot.tres" id="7_h0w3j"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="8_dxujm"]
+
+[sub_resource type="Resource" id="Resource_2g8a4"]
+script = ExtResource("2_7l7nu")
+method = "LEVEL"
+target = "KAKUNA"
+level = 7
+item = ""
+
+[resource]
+script = ExtResource("8_dxujm")
+species_name = "WEEDLE"
+dex = 13
+index = 112
+slug = "weedle"
+label = "Weedle"
+category = "HAIRY BUG"
+height_ft = 1
+height_in = 0
+weight_tenths_lb = 70
+hp = 40
+attack = 35
+defense = 30
+speed = 50
+special = 20
+type1 = "BUG"
+type2 = "POISON"
+catch_rate = 255
+base_exp = 52
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("5_el1fq")]([ExtResource("6_foxu5"), ExtResource("7_h0w3j")])
+learnset = Array[ExtResource("4_usvur")]([])
+tmhm = Array[ExtResource("5_el1fq")]([])
+evolutions = Array[ExtResource("2_7l7nu")]([SubResource("Resource_2g8a4")])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["Often found in", "forests, eating", "leaves.", "It has a sharp", "venomous stinger", "on its head"])
+front_sprite = ExtResource("3_n4ien")
+back_sprite = ExtResource("1_xohro")

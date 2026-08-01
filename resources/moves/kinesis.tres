@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_6mht4"]
+
+[resource]
+script = ExtResource("1_6mht4")
+move_name = "KINESIS"
+move_id = 134
+display_name = "KINESIS"
+move_type = "PSYCHIC_TYPE"
+power = 0
+accuracy = 80
+pp = 15
+effect = "ACCURACY_DOWN1_EFFECT"

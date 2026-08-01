@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_ob214"]
+
+[resource]
+script = ExtResource("1_ob214")
+move_name = "FIRE_SPIN"
+move_id = 83
+display_name = "FIRE SPIN"
+move_type = "FIRE"
+power = 15
+accuracy = 70
+pp = 15
+effect = "TRAPPING_EFFECT"

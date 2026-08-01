@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/raichu.png" id="1_6ijlh"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_mndqg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/raichu.png" id="3_vbnm8"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ixcmf"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="5_bttbf"]
+[ext_resource type="Resource" path="res://resources/moves/thundershock.tres" id="6_mgbpr"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="7_6dgr7"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="8_bnjti"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="9_ghfo1"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="10_dtusj"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="11_8uqti"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_5s7ql"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="13_u0pp8"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="14_110ca"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="15_mdv2n"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="16_yubms"]
+[ext_resource type="Resource" path="res://resources/moves/pay_day.tres" id="17_uh8ws"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="18_odwcn"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="19_chb7h"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="20_862j2"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="21_n20kj"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="22_076qw"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="23_g6wn0"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="24_0p1jq"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="25_yjf1g"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="26_032vm"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="27_sq3nl"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="28_8d6us"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="29_046ya"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="30_nie2q"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="31_vycej"]
+
+[resource]
+script = ExtResource("9_ghfo1")
+species_name = "RAICHU"
+dex = 26
+index = 85
+slug = "raichu"
+label = "Raichu"
+category = "MOUSE"
+height_ft = 2
+height_in = 7
+weight_tenths_lb = 660
+hp = 60
+attack = 90
+defense = 55
+speed = 100
+special = 90
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 75
+base_exp = 122
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("5_bttbf")]([ExtResource("6_mgbpr"), ExtResource("7_6dgr7"), ExtResource("8_bnjti")])
+learnset = Array[ExtResource("4_ixcmf")]([])
+tmhm = Array[ExtResource("5_bttbf")]([ExtResource("10_dtusj"), ExtResource("11_8uqti"), ExtResource("12_5s7ql"), ExtResource("13_u0pp8"), ExtResource("14_110ca"), ExtResource("15_mdv2n"), ExtResource("16_yubms"), ExtResource("17_uh8ws"), ExtResource("18_odwcn"), ExtResource("19_chb7h"), ExtResource("20_862j2"), ExtResource("21_n20kj"), ExtResource("22_076qw"), ExtResource("23_g6wn0"), ExtResource("24_0p1jq"), ExtResource("25_yjf1g"), ExtResource("26_032vm"), ExtResource("27_sq3nl"), ExtResource("28_8d6us"), ExtResource("29_046ya"), ExtResource("8_bnjti"), ExtResource("30_nie2q"), ExtResource("31_vycej")])
+evolutions = Array[ExtResource("2_mndqg")]([])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_FAIRY"
+dex_text = Array[String](["Its long tail", "serves as a", "ground to protect", "itself from its", "own high voltage", "power"])
+front_sprite = ExtResource("3_vbnm8")
+back_sprite = ExtResource("1_6ijlh")

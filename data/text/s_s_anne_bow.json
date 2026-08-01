@@ -1,0 +1,120 @@
+{
+ "SSAnneBowSuperNerdText": [
+  {
+   "kind": "text",
+   "line": "The party's"
+  },
+  {
+   "kind": "line",
+   "line": "ended. We sail"
+  },
+  {
+   "kind": "cont",
+   "line": "again, soon."
+  }
+ ],
+ "SSAnneBowSailor1Text": [
+  {
+   "kind": "text",
+   "line": "Scrubbing decks-"
+  },
+  {
+   "kind": "line",
+   "line": "grim, endless work."
+  }
+ ],
+ "SSAnneBowCooltrainerMText": [
+  {
+   "kind": "text",
+   "line": "Urf. I feel ill."
+  },
+  {
+   "kind": "para",
+   "line": "I stepped out"
+  },
+  {
+   "kind": "line",
+   "line": "for air."
+  }
+ ],
+ "SSAnneBowSailor2BattleText": [
+  {
+   "kind": "text",
+   "line": "Hey, matey."
+  },
+  {
+   "kind": "para",
+   "line": "Care for a"
+  },
+  {
+   "kind": "line",
+   "line": "little jig?"
+  }
+ ],
+ "SSAnneBowSailor2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You're"
+  },
+  {
+   "kind": "line",
+   "line": "impressive!"
+  }
+ ],
+ "SSAnneBowSailor2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "How many kinds"
+  },
+  {
+   "kind": "line",
+   "line": "of #MON, do"
+  },
+  {
+   "kind": "cont",
+   "line": "you suppose there"
+  },
+  {
+   "kind": "cont",
+   "line": "are?"
+  }
+ ],
+ "SSAnneBowSailor3BattleText": [
+  {
+   "kind": "text",
+   "line": "Ahoy. Are you"
+  },
+  {
+   "kind": "line",
+   "line": "seasick, too?"
+  }
+ ],
+ "SSAnneBowSailor3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I was"
+  },
+  {
+   "kind": "line",
+   "line": "just careless!"
+  }
+ ],
+ "SSAnneBowSailor3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "My father said"
+  },
+  {
+   "kind": "line",
+   "line": "100 kinds of"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON exist."
+  },
+  {
+   "kind": "cont",
+   "line": "More, I'd wager."
+  }
+ ]
+}

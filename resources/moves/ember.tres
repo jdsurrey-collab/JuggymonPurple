@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_pyna6"]
+
+[resource]
+script = ExtResource("1_pyna6")
+move_name = "EMBER"
+move_id = 52
+display_name = "EMBER"
+move_type = "FIRE"
+power = 40
+accuracy = 100
+pp = 25
+effect = "BURN_SIDE_EFFECT1"

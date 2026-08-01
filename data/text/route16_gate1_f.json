@@ -1,0 +1,54 @@
+{
+ "Route16Gate1FGuardNoPedestriansAllowedText": [
+  {
+   "kind": "text",
+   "line": "No one afoot may"
+  },
+  {
+   "kind": "line",
+   "line": "pass onto the"
+  },
+  {
+   "kind": "cont",
+   "line": "CYCLING ROAD!"
+  }
+ ],
+ "Route16Gate1FGuardCyclingRoadExplanationText": [
+  {
+   "kind": "text",
+   "line": "CYCLING ROAD"
+  },
+  {
+   "kind": "line",
+   "line": "descends by the"
+  },
+  {
+   "kind": "cont",
+   "line": "sea. A fine, grim"
+  },
+  {
+   "kind": "cont",
+   "line": "ride it is."
+  }
+ ],
+ "Route16Gate1FGuardWaitUpText": [
+  {
+   "kind": "text",
+   "line": "You there! Wait,"
+  },
+  {
+   "kind": "line",
+   "line": "I beg you!"
+  }
+ ],
+ "Route16Gate1FGamblerText": [
+  {
+   "kind": "text",
+   "line": "How'd you slip"
+  },
+  {
+   "kind": "line",
+   "line": "in? Well played."
+  }
+ ]
+}

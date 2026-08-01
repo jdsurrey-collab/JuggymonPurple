@@ -1,0 +1,87 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/dewgong.png" id="1_53m5h"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_k8ndw"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/dewgong.png" id="3_q080k"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_bvi8l"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="5_jn84i"]
+[ext_resource type="Resource" path="res://resources/moves/aurora_beam.tres" id="6_i5htn"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="7_1v35o"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="8_cvr5i"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="9_x7t74"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_ooor4"]
+[ext_resource type="Resource" path="res://resources/moves/headbutt.tres" id="11_5bd7i"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_dml8b"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_qsugi"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="14_3nyly"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_i3h47"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_vp48l"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="17_t5ne3"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="18_30dtg"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="19_tqf2u"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="20_g7q72"]
+[ext_resource type="Resource" path="res://resources/moves/pay_day.tres" id="21_6y80a"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="22_ktpym"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="23_jbkgf"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="24_hutog"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="25_emlyo"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="26_mxsuf"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="27_06y1p"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="28_pss31"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="29_rpui3"]
+
+[sub_resource type="Resource" id="Resource_l5ogl"]
+script = ExtResource("4_bvi8l")
+level = 30
+move = ExtResource("5_jn84i")
+
+[sub_resource type="Resource" id="Resource_tpqh3"]
+script = ExtResource("4_bvi8l")
+level = 35
+move = ExtResource("6_i5htn")
+
+[sub_resource type="Resource" id="Resource_fnll8"]
+script = ExtResource("4_bvi8l")
+level = 44
+move = ExtResource("7_1v35o")
+
+[sub_resource type="Resource" id="Resource_p4hn8"]
+script = ExtResource("4_bvi8l")
+level = 50
+move = ExtResource("8_cvr5i")
+
+[sub_resource type="Resource" id="Resource_g3i4d"]
+script = ExtResource("4_bvi8l")
+level = 56
+move = ExtResource("9_x7t74")
+
+[resource]
+script = ExtResource("12_dml8b")
+species_name = "DEWGONG"
+dex = 87
+index = 120
+slug = "dewgong"
+label = "Dewgong"
+category = "SEA LION"
+height_ft = 5
+height_in = 7
+weight_tenths_lb = 2650
+hp = 90
+attack = 70
+defense = 80
+speed = 70
+special = 95
+type1 = "WATER"
+type2 = "ICE"
+catch_rate = 75
+base_exp = 176
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_ooor4")]([ExtResource("11_5bd7i"), ExtResource("5_jn84i"), ExtResource("6_i5htn")])
+learnset = Array[ExtResource("4_bvi8l")]([SubResource("Resource_l5ogl"), SubResource("Resource_tpqh3"), SubResource("Resource_fnll8"), SubResource("Resource_p4hn8"), SubResource("Resource_g3i4d")])
+tmhm = Array[ExtResource("10_ooor4")]([ExtResource("13_qsugi"), ExtResource("14_3nyly"), ExtResource("15_i3h47"), ExtResource("8_cvr5i"), ExtResource("16_vp48l"), ExtResource("17_t5ne3"), ExtResource("18_30dtg"), ExtResource("9_x7t74"), ExtResource("19_tqf2u"), ExtResource("20_g7q72"), ExtResource("21_6y80a"), ExtResource("22_ktpym"), ExtResource("23_jbkgf"), ExtResource("24_hutog"), ExtResource("25_emlyo"), ExtResource("26_mxsuf"), ExtResource("7_1v35o"), ExtResource("27_06y1p"), ExtResource("28_pss31"), ExtResource("29_rpui3")])
+evolutions = Array[ExtResource("2_k8ndw")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["Stores thermal", "energy in its", "body. Swims at a", "steady 8 knots", "even in intensely", "cold waters"])
+front_sprite = ExtResource("3_q080k")
+back_sprite = ExtResource("1_53m5h")

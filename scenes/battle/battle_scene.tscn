@@ -1,0 +1,122 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/battle/battle_scene.gd" id="1_battle"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_box"]
+bg_color = Color(0.95, 0.95, 0.95, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.1, 0.1, 0.1, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="BattleScene" type="Node2D"]
+script = ExtResource("1_battle")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 160.0
+offset_bottom = 144.0
+color = Color(0.85, 0.85, 0.85, 1)
+
+[node name="EnemySprite" type="TextureRect" parent="."]
+offset_left = 98.0
+offset_top = 6.0
+offset_right = 152.0
+offset_bottom = 54.0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="PlayerSprite" type="TextureRect" parent="."]
+offset_left = 4.0
+offset_top = 54.0
+offset_right = 60.0
+offset_bottom = 94.0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="EnemyPanel" type="Panel" parent="."]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 34.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_box")
+
+[node name="EnemyLabel" type="Label" parent="EnemyPanel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 90.0
+offset_bottom = 14.0
+theme_override_colors/font_color = Color(0.06, 0.06, 0.06, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="HPBarBG" type="ColorRect" parent="EnemyPanel"]
+offset_left = 4.0
+offset_top = 16.0
+offset_right = 84.0
+offset_bottom = 20.0
+color = Color(0.3, 0.3, 0.3, 1)
+
+[node name="HPBarFG" type="ColorRect" parent="EnemyPanel/HPBarBG"]
+offset_right = 80.0
+offset_bottom = 4.0
+color = Color(0.1, 0.1, 0.1, 1)
+
+[node name="PlayerPanel" type="Panel" parent="."]
+offset_left = 64.0
+offset_top = 56.0
+offset_right = 156.0
+offset_bottom = 90.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_box")
+
+[node name="PlayerLabel" type="Label" parent="PlayerPanel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 88.0
+offset_bottom = 14.0
+theme_override_colors/font_color = Color(0.06, 0.06, 0.06, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="HPBarBG" type="ColorRect" parent="PlayerPanel"]
+offset_left = 4.0
+offset_top = 16.0
+offset_right = 84.0
+offset_bottom = 20.0
+color = Color(0.3, 0.3, 0.3, 1)
+
+[node name="HPBarFG" type="ColorRect" parent="PlayerPanel/HPBarBG"]
+offset_right = 80.0
+offset_bottom = 4.0
+color = Color(0.1, 0.1, 0.1, 1)
+
+[node name="HPNumberLabel" type="Label" parent="PlayerPanel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 21.0
+offset_right = 84.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(0.06, 0.06, 0.06, 1)
+theme_override_font_sizes/font_size = 8
+
+[node name="BottomPanel" type="Panel" parent="."]
+offset_left = 4.0
+offset_top = 94.0
+offset_right = 156.0
+offset_bottom = 144.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_box")
+
+[node name="BottomLabel" type="Label" parent="BottomPanel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 148.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.06, 0.06, 0.06, 1)
+theme_override_font_sizes/font_size = 8
+theme_override_constants/line_spacing = 0
+autowrap_mode = 2

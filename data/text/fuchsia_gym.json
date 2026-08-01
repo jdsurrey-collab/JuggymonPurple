@@ -1,0 +1,82 @@
+{
+ "FuchsiaGymKogaBeforeBattleText": [
+  {
+   "kind": "text",
+   "line": "KOGA: Heh heh."
+  },
+  {
+   "kind": "para",
+   "line": "A mere child"
+  },
+  {
+   "kind": "line",
+   "line": "dares challenge"
+  },
+  {
+   "kind": "cont",
+   "line": "me?"
+  },
+  {
+   "kind": "para",
+   "line": "Very well. I"
+  },
+  {
+   "kind": "line",
+   "line": "shall teach you"
+  },
+  {
+   "kind": "cont",
+   "line": "the plague-arts"
+  },
+  {
+   "kind": "cont",
+   "line": "of the ninja."
+  },
+  {
+   "kind": "para",
+   "line": "You'll learn"
+  },
+  {
+   "kind": "line",
+   "line": "what despair"
+  },
+  {
+   "kind": "cont",
+   "line": "tastes like, as"
+  },
+  {
+   "kind": "cont",
+   "line": "poison fills"
+  },
+  {
+   "kind": "cont",
+   "line": "your veins."
+  }
+ ],
+ "FuchsiaGymKogaReceivedSoulBadgeText": [
+  {
+   "kind": "text",
+   "line": "Hmph."
+  },
+  {
+   "kind": "line",
+   "line": "You've proven"
+  },
+  {
+   "kind": "cont",
+   "line": "your worth, then."
+  },
+  {
+   "kind": "para",
+   "line": "Take the"
+  },
+  {
+   "kind": "line",
+   "line": "SOULBADGE, and"
+  },
+  {
+   "kind": "cont",
+   "line": "my respect."
+  }
+ ]
+}

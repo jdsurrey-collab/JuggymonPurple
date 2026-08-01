@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/grimer.png" id="1_oo8tj"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_s23n3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/grimer.png" id="3_e61u1"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_qtm2h"]
+[ext_resource type="Resource" path="res://resources/moves/poison_gas.tres" id="5_cxut1"]
+[ext_resource type="Resource" path="res://resources/moves/minimize.tres" id="6_5cmjj"]
+[ext_resource type="Resource" path="res://resources/moves/sludge.tres" id="7_qq0kl"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="8_avc1r"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="9_7t2l4"]
+[ext_resource type="Resource" path="res://resources/moves/acid_armor.tres" id="10_sxnr8"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_sdfiu"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="12_xl44q"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="13_1o2ek"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_srbfw"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_bfxh2"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_uhk2b"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="17_vss1r"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="18_15ys0"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="19_nlxbo"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="20_wwptv"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="21_d0gff"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="22_xf7yb"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="23_nnne0"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="24_m48bg"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="25_s2uw6"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_utyau"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="27_qg65l"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="28_ubpuu"]
+
+[sub_resource type="Resource" id="Resource_plhfm"]
+script = ExtResource("2_s23n3")
+method = "LEVEL"
+target = "MUK"
+level = 38
+item = ""
+
+[sub_resource type="Resource" id="Resource_enksa"]
+script = ExtResource("4_qtm2h")
+level = 30
+move = ExtResource("5_cxut1")
+
+[sub_resource type="Resource" id="Resource_21u3e"]
+script = ExtResource("4_qtm2h")
+level = 33
+move = ExtResource("6_5cmjj")
+
+[sub_resource type="Resource" id="Resource_8ksw6"]
+script = ExtResource("4_qtm2h")
+level = 37
+move = ExtResource("7_qq0kl")
+
+[sub_resource type="Resource" id="Resource_tiqsi"]
+script = ExtResource("4_qtm2h")
+level = 42
+move = ExtResource("8_avc1r")
+
+[sub_resource type="Resource" id="Resource_tuxid"]
+script = ExtResource("4_qtm2h")
+level = 48
+move = ExtResource("9_7t2l4")
+
+[sub_resource type="Resource" id="Resource_bd40g"]
+script = ExtResource("4_qtm2h")
+level = 55
+move = ExtResource("10_sxnr8")
+
+[resource]
+script = ExtResource("14_srbfw")
+species_name = "GRIMER"
+dex = 88
+index = 13
+slug = "grimer"
+label = "Grimer"
+category = "SLUDGE"
+height_ft = 2
+height_in = 11
+weight_tenths_lb = 660
+hp = 80
+attack = 80
+defense = 50
+speed = 25
+special = 40
+type1 = "POISON"
+type2 = "POISON"
+catch_rate = 190
+base_exp = 90
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_sdfiu")]([ExtResource("12_xl44q"), ExtResource("13_1o2ek")])
+learnset = Array[ExtResource("4_qtm2h")]([SubResource("Resource_enksa"), SubResource("Resource_21u3e"), SubResource("Resource_8ksw6"), SubResource("Resource_tiqsi"), SubResource("Resource_tuxid"), SubResource("Resource_bd40g")])
+tmhm = Array[ExtResource("11_sdfiu")]([ExtResource("15_bfxh2"), ExtResource("16_uhk2b"), ExtResource("17_vss1r"), ExtResource("18_15ys0"), ExtResource("19_nlxbo"), ExtResource("20_wwptv"), ExtResource("21_d0gff"), ExtResource("22_xf7yb"), ExtResource("23_nnne0"), ExtResource("24_m48bg"), ExtResource("25_s2uw6"), ExtResource("26_utyau"), ExtResource("27_qg65l"), ExtResource("28_ubpuu")])
+evolutions = Array[ExtResource("2_s23n3")]([SubResource("Resource_plhfm")])
+palette = "PAL_PURPLEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Appears in filthy", "areas. Thrives by", "sucking up", "polluted sludge", "that is pumped", "out of factories"])
+front_sprite = ExtResource("3_e61u1")
+back_sprite = ExtResource("1_oo8tj")

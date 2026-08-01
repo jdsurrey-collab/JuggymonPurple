@@ -1,0 +1,34 @@
+{
+ "PewterPokecenterGentlemanText": [
+  {
+   "kind": "text",
+   "line": "What!?"
+  },
+  {
+   "kind": "para",
+   "line": "TEAM ROCKET, at"
+  },
+  {
+   "kind": "line",
+   "line": "MT.MOON? I'm on"
+  },
+  {
+   "kind": "cont",
+   "line": "the telephone!"
+  },
+  {
+   "kind": "para",
+   "line": "Away with you!"
+  }
+ ],
+ "PewterPokecenterJigglypuffText": [
+  {
+   "kind": "text",
+   "line": "JIGGLYPUFF: Puu"
+  },
+  {
+   "kind": "line",
+   "line": "pupuu!"
+  }
+ ]
+}

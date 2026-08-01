@@ -1,0 +1,194 @@
+{
+ "PokemonTower7FMrFujiRescueText": [
+  {
+   "kind": "text",
+   "line": "MR.FUJI: Oh? You"
+  },
+  {
+   "kind": "line",
+   "line": "came to save an"
+  },
+  {
+   "kind": "cont",
+   "line": "old man?"
+  },
+  {
+   "kind": "para",
+   "line": "My thanks. But I"
+  },
+  {
+   "kind": "line",
+   "line": "came here by my"
+  },
+  {
+   "kind": "cont",
+   "line": "own will."
+  },
+  {
+   "kind": "para",
+   "line": "I came to calm"
+  },
+  {
+   "kind": "line",
+   "line": "the soul of"
+  },
+  {
+   "kind": "cont",
+   "line": "CUBONE's mother."
+  },
+  {
+   "kind": "para",
+   "line": "MAROWAK's spirit,"
+  },
+  {
+   "kind": "line",
+   "line": "I believe, has"
+  },
+  {
+   "kind": "cont",
+   "line": "gone to rest."
+  },
+  {
+   "kind": "para",
+   "line": "Your kindness"
+  },
+  {
+   "kind": "line",
+   "line": "means much to"
+  },
+  {
+   "kind": "cont",
+   "line": "me, truly."
+  },
+  {
+   "kind": "para",
+   "line": "Come to my home,"
+  },
+  {
+   "kind": "line",
+   "line": "the #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "HOUSE, at this"
+  },
+  {
+   "kind": "cont",
+   "line": "tower's foot."
+  }
+ ],
+ "PokemonTower7FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "What do you"
+  },
+  {
+   "kind": "line",
+   "line": "want? Why here?"
+  }
+ ],
+ "PokemonTower7FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I give up!"
+  }
+ ],
+ "PokemonTower7FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I won't forget"
+  },
+  {
+   "kind": "line",
+   "line": "this!"
+  }
+ ],
+ "PokemonTower7FRocket2BattleText": [
+  {
+   "kind": "text",
+   "line": "That old fool"
+  },
+  {
+   "kind": "line",
+   "line": "came, whining"
+  },
+  {
+   "kind": "cont",
+   "line": "about our use of"
+  },
+  {
+   "kind": "cont",
+   "line": "worthless #MON!"
+  },
+  {
+   "kind": "para",
+   "line": "We're settling"
+  },
+  {
+   "kind": "line",
+   "line": "this, as adults!"
+  }
+ ],
+ "PokemonTower7FRocket2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Please!"
+  },
+  {
+   "kind": "line",
+   "line": "No more!"
+  }
+ ],
+ "PokemonTower7FRocket2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "#MON exist to"
+  },
+  {
+   "kind": "line",
+   "line": "make us money."
+  },
+  {
+   "kind": "cont",
+   "line": "Nothing more."
+  },
+  {
+   "kind": "para",
+   "line": "Stay out of"
+  },
+  {
+   "kind": "line",
+   "line": "our affairs!"
+  }
+ ],
+ "PokemonTower7FRocket3BattleText": [
+  {
+   "kind": "text",
+   "line": "You save no one,"
+  },
+  {
+   "kind": "line",
+   "line": "child!"
+  }
+ ],
+ "PokemonTower7FRocket3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Don't fight"
+  },
+  {
+   "kind": "line",
+   "line": "TEAM ROCKET!"
+  }
+ ],
+ "PokemonTower7FRocket3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You won't get"
+  },
+  {
+   "kind": "line",
+   "line": "away with this!"
+  }
+ ]
+}

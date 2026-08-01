@@ -1,0 +1,87 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/corsola.png" id="1_myeh5"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_kq26p"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/corsola.png" id="3_3r86g"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_hual6"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="5_1511q"]
+[ext_resource type="Resource" path="res://resources/moves/bubble.tres" id="6_qo0pj"]
+[ext_resource type="Resource" path="res://resources/moves/recover.tres" id="7_aefbq"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="8_awxao"]
+[ext_resource type="Resource" path="res://resources/moves/spike_cannon.tres" id="9_rkb7g"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_44m08"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_8h117"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_i46bb"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_yas5f"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_d3557"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_07e0c"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_vbpv4"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_cprb1"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_4x1vx"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_olny3"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_3kn3f"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="21_mpp8f"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="22_q4fgj"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="23_koulk"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="24_b7yma"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="25_5ehne"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="26_31i7s"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="27_sicau"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="28_5bt8h"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="29_yx3d1"]
+
+[sub_resource type="Resource" id="Resource_w2vsm"]
+script = ExtResource("4_hual6")
+level = 7
+move = ExtResource("5_1511q")
+
+[sub_resource type="Resource" id="Resource_6u30m"]
+script = ExtResource("4_hual6")
+level = 13
+move = ExtResource("6_qo0pj")
+
+[sub_resource type="Resource" id="Resource_py4al"]
+script = ExtResource("4_hual6")
+level = 19
+move = ExtResource("7_aefbq")
+
+[sub_resource type="Resource" id="Resource_hvdte"]
+script = ExtResource("4_hual6")
+level = 25
+move = ExtResource("8_awxao")
+
+[sub_resource type="Resource" id="Resource_ygjdw"]
+script = ExtResource("4_hual6")
+level = 31
+move = ExtResource("9_rkb7g")
+
+[resource]
+script = ExtResource("12_i46bb")
+species_name = "CORSOLA"
+dex = 215
+index = 218
+slug = "corsola"
+label = "Corsola"
+category = "CORAL"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 110
+hp = 55
+attack = 55
+defense = 85
+speed = 35
+special = 75
+type1 = "WATER"
+type2 = "ROCK"
+catch_rate = 60
+base_exp = 113
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("10_44m08")]([ExtResource("11_8h117")])
+learnset = Array[ExtResource("4_hual6")]([SubResource("Resource_w2vsm"), SubResource("Resource_6u30m"), SubResource("Resource_py4al"), SubResource("Resource_hvdte"), SubResource("Resource_ygjdw")])
+tmhm = Array[ExtResource("10_44m08")]([ExtResource("13_yas5f"), ExtResource("14_d3557"), ExtResource("15_07e0c"), ExtResource("16_vbpv4"), ExtResource("17_cprb1"), ExtResource("18_4x1vx"), ExtResource("19_olny3"), ExtResource("20_3kn3f"), ExtResource("21_mpp8f"), ExtResource("22_q4fgj"), ExtResource("8_awxao"), ExtResource("23_koulk"), ExtResource("24_b7yma"), ExtResource("25_5ehne"), ExtResource("26_31i7s"), ExtResource("27_sicau"), ExtResource("28_5bt8h"), ExtResource("29_yx3d1")])
+evolutions = Array[ExtResource("2_kq26p")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["Its branches break", "and grow anew.", "The broken pieces", "are sold as charms", "against drowning."])
+front_sprite = ExtResource("3_3r86g")
+back_sprite = ExtResource("1_myeh5")

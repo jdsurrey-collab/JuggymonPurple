@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/snubbull.png" id="1_dfxbv"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_xi5ur"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/snubbull.png" id="3_hwmg1"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_sorkg"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="5_lja6s"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="6_4wh8d"]
+[ext_resource type="Resource" path="res://resources/moves/lick.tres" id="7_k2jfx"]
+[ext_resource type="Resource" path="res://resources/moves/roar.tres" id="8_15s7a"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="9_8k6sd"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="10_t4vh0"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_urkcx"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_ydh8c"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_0olj8"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_v768x"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_ttl6f"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_85u8m"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_nbhg1"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_4wlf5"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_74q4n"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_mt21g"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="21_krdhf"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="22_frk4u"]
+
+[sub_resource type="Resource" id="Resource_mgu0y"]
+script = ExtResource("2_xi5ur")
+method = "LEVEL"
+target = "GRANBULL"
+level = 23
+item = ""
+
+[sub_resource type="Resource" id="Resource_a5be2"]
+script = ExtResource("4_sorkg")
+level = 4
+move = ExtResource("5_lja6s")
+
+[sub_resource type="Resource" id="Resource_ajf4n"]
+script = ExtResource("4_sorkg")
+level = 13
+move = ExtResource("6_4wh8d")
+
+[sub_resource type="Resource" id="Resource_i7cm1"]
+script = ExtResource("4_sorkg")
+level = 19
+move = ExtResource("7_k2jfx")
+
+[sub_resource type="Resource" id="Resource_midsi"]
+script = ExtResource("4_sorkg")
+level = 26
+move = ExtResource("8_15s7a")
+
+[sub_resource type="Resource" id="Resource_tx80p"]
+script = ExtResource("4_sorkg")
+level = 34
+move = ExtResource("9_8k6sd")
+
+[sub_resource type="Resource" id="Resource_fjj2n"]
+script = ExtResource("4_sorkg")
+level = 43
+move = ExtResource("10_t4vh0")
+
+[resource]
+script = ExtResource("13_0olj8")
+species_name = "SNUBBULL"
+dex = 204
+index = 207
+slug = "snubbull"
+label = "Snubbull"
+category = "FAIRY"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 170
+hp = 60
+attack = 80
+defense = 50
+speed = 30
+special = 40
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 190
+base_exp = 63
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("11_urkcx")]([ExtResource("12_ydh8c")])
+learnset = Array[ExtResource("4_sorkg")]([SubResource("Resource_a5be2"), SubResource("Resource_ajf4n"), SubResource("Resource_i7cm1"), SubResource("Resource_midsi"), SubResource("Resource_tx80p"), SubResource("Resource_fjj2n")])
+tmhm = Array[ExtResource("11_urkcx")]([ExtResource("14_v768x"), ExtResource("9_8k6sd"), ExtResource("15_ttl6f"), ExtResource("16_85u8m"), ExtResource("17_nbhg1"), ExtResource("18_4wlf5"), ExtResource("19_74q4n"), ExtResource("20_mt21g"), ExtResource("21_krdhf"), ExtResource("10_t4vh0"), ExtResource("22_frk4u")])
+evolutions = Array[ExtResource("2_xi5ur")]([SubResource("Resource_mgu0y")])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its scowl frights", "all who see it,", "which grieves it,", "for it wishes", "only to be near."])
+front_sprite = ExtResource("3_hwmg1")
+back_sprite = ExtResource("1_dfxbv")

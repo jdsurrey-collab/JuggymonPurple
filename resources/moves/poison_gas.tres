@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_ocsck"]
+
+[resource]
+script = ExtResource("1_ocsck")
+move_name = "POISON_GAS"
+move_id = 139
+display_name = "POISON GAS"
+move_type = "POISON"
+power = 0
+accuracy = 55
+pp = 40
+effect = "POISON_EFFECT"

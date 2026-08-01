@@ -1,0 +1,236 @@
+{
+ "SafariZoneGateSafariZoneWorker1Text": [
+  {
+   "kind": "text",
+   "line": "Welcome to the"
+  },
+  {
+   "kind": "line",
+   "line": "SAFARI ZONE!"
+  }
+ ],
+ "SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText": [
+  {
+   "kind": "text",
+   "line": "For just \u00a5500,"
+  },
+  {
+   "kind": "line",
+   "line": "you may hunt any"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON you"
+  },
+  {
+   "kind": "cont",
+   "line": "please, in the"
+  },
+  {
+   "kind": "cont",
+   "line": "park!"
+  },
+  {
+   "kind": "para",
+   "line": "Will you join"
+  },
+  {
+   "kind": "line",
+   "line": "the hunt?@"
+  }
+ ],
+ "SafariZoneGateSafariZoneWorker1ThatllBe500PleaseText": [
+  {
+   "kind": "text",
+   "line": "That'll be \u00a5500,"
+  },
+  {
+   "kind": "line",
+   "line": "if you please!"
+  },
+  {
+   "kind": "para",
+   "line": "We use only a"
+  },
+  {
+   "kind": "line",
+   "line": "special # BALL"
+  },
+  {
+   "kind": "cont",
+   "line": "here."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "30 SAFARI BALLs!@"
+  }
+ ],
+ "SafariZoneGateSafariZoneWorker1CallYouOnThePAText": [
+  {
+   "kind": "para",
+   "line": "We'll call for"
+  },
+  {
+   "kind": "line",
+   "line": "you on the PA"
+  },
+  {
+   "kind": "cont",
+   "line": "when your time"
+  },
+  {
+   "kind": "cont",
+   "line": "or BALLs run dry!"
+  }
+ ],
+ "SafariZoneGateSafariZoneWorker1PleaseComeAgainText": [
+  {
+   "kind": "text",
+   "line": "Very well. Do"
+  },
+  {
+   "kind": "line",
+   "line": "hunt again!"
+  }
+ ],
+ "SafariZoneGateSafariZoneWorker1NotEnoughMoneyText": [
+  {
+   "kind": "text",
+   "line": "Oh dear, not"
+  },
+  {
+   "kind": "line",
+   "line": "enough money!"
+  }
+ ],
+ "SafariZoneGateSafariZoneWorker1LeavingEarlyText": [
+  {
+   "kind": "text",
+   "line": "Leaving so soon?@"
+  }
+ ],
+ "SafariZoneGateSafariZoneWorker1ReturnSafariBallsText": [
+  {
+   "kind": "text",
+   "line": "Do return any"
+  },
+  {
+   "kind": "line",
+   "line": "SAFARI BALLs"
+  },
+  {
+   "kind": "cont",
+   "line": "you've left."
+  }
+ ],
+ "SafariZoneGateSafariZoneWorker1GoodLuckText": [
+  {
+   "kind": "text",
+   "line": "Good hunting!"
+  }
+ ],
+ "SafariZoneGateSafariZoneWorker1GoodHaulComeAgainText": [
+  {
+   "kind": "text",
+   "line": "Did you take a"
+  },
+  {
+   "kind": "line",
+   "line": "good haul?"
+  },
+  {
+   "kind": "cont",
+   "line": "Do come again!"
+  }
+ ],
+ "SafariZoneGateSafariZoneWorker2FirstTimeHereText": [
+  {
+   "kind": "text",
+   "line": "Ho! Is this your"
+  },
+  {
+   "kind": "line",
+   "line": "first hunt here?"
+  }
+ ],
+ "SafariZoneGateSafariZoneWorker2SafariZoneExplanationText": [
+  {
+   "kind": "text",
+   "line": "SAFARI ZONE holds"
+  },
+  {
+   "kind": "line",
+   "line": "4 grim grounds."
+  },
+  {
+   "kind": "para",
+   "line": "Each ground"
+  },
+  {
+   "kind": "line",
+   "line": "harbors its own"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON. Use"
+  },
+  {
+   "kind": "cont",
+   "line": "SAFARI BALLs to"
+  },
+  {
+   "kind": "cont",
+   "line": "trap them!"
+  },
+  {
+   "kind": "para",
+   "line": "When your time or"
+  },
+  {
+   "kind": "line",
+   "line": "BALLs run dry,"
+  },
+  {
+   "kind": "cont",
+   "line": "the hunt is"
+  },
+  {
+   "kind": "cont",
+   "line": "over for you!"
+  },
+  {
+   "kind": "para",
+   "line": "Before you go,"
+  },
+  {
+   "kind": "line",
+   "line": "clear an unused"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON BOX so"
+  },
+  {
+   "kind": "cont",
+   "line": "there's room for"
+  },
+  {
+   "kind": "cont",
+   "line": "new #MON!"
+  }
+ ],
+ "SafariZoneGateSafariZoneWorker2YoureARegularHereText": [
+  {
+   "kind": "text",
+   "line": "Sorry, you're a"
+  },
+  {
+   "kind": "line",
+   "line": "regular here!"
+  }
+ ]
+}

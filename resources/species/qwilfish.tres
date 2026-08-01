@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/qwilfish.png" id="1_vrehk"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_msfhy"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/qwilfish.png" id="3_tysie"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_k2xlh"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="5_1mdyx"]
+[ext_resource type="Resource" path="res://resources/moves/minimize.tres" id="6_jeyml"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="7_v4vy8"]
+[ext_resource type="Resource" path="res://resources/moves/pin_missile.tres" id="8_ge1lt"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="9_sxffp"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="10_17w7p"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_e8ur6"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_f1nks"]
+[ext_resource type="Resource" path="res://resources/moves/poison_sting.tres" id="13_57rw4"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_qjsqa"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_yx4ub"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_bkbf8"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_pyhoq"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_aw3ws"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_vkmn1"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_n17ec"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_q248v"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_qcb5d"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="23_empq7"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="24_vef8n"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="25_gmcq8"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="26_cd785"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="27_a282s"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="28_ekb7r"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="29_3io6j"]
+
+[sub_resource type="Resource" id="Resource_hvjjg"]
+script = ExtResource("4_k2xlh")
+level = 10
+move = ExtResource("5_1mdyx")
+
+[sub_resource type="Resource" id="Resource_kx5u0"]
+script = ExtResource("4_k2xlh")
+level = 10
+move = ExtResource("6_jeyml")
+
+[sub_resource type="Resource" id="Resource_eeico"]
+script = ExtResource("4_k2xlh")
+level = 19
+move = ExtResource("7_v4vy8")
+
+[sub_resource type="Resource" id="Resource_suw6r"]
+script = ExtResource("4_k2xlh")
+level = 28
+move = ExtResource("8_ge1lt")
+
+[sub_resource type="Resource" id="Resource_0iouq"]
+script = ExtResource("4_k2xlh")
+level = 37
+move = ExtResource("9_sxffp")
+
+[sub_resource type="Resource" id="Resource_lt8s0"]
+script = ExtResource("4_k2xlh")
+level = 46
+move = ExtResource("10_17w7p")
+
+[resource]
+script = ExtResource("14_qjsqa")
+species_name = "QWILFISH"
+dex = 206
+index = 209
+slug = "qwilfish"
+label = "Qwilfish"
+category = "BALLOON"
+height_ft = 1
+height_in = 8
+weight_tenths_lb = 90
+hp = 65
+attack = 95
+defense = 75
+speed = 85
+special = 55
+type1 = "WATER"
+type2 = "POISON"
+catch_rate = 45
+base_exp = 100
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_e8ur6")]([ExtResource("12_f1nks"), ExtResource("13_57rw4")])
+learnset = Array[ExtResource("4_k2xlh")]([SubResource("Resource_hvjjg"), SubResource("Resource_kx5u0"), SubResource("Resource_eeico"), SubResource("Resource_suw6r"), SubResource("Resource_0iouq"), SubResource("Resource_lt8s0")])
+tmhm = Array[ExtResource("11_e8ur6")]([ExtResource("15_yx4ub"), ExtResource("16_bkbf8"), ExtResource("17_pyhoq"), ExtResource("18_aw3ws"), ExtResource("19_vkmn1"), ExtResource("20_n17ec"), ExtResource("21_q248v"), ExtResource("22_qcb5d"), ExtResource("23_empq7"), ExtResource("7_v4vy8"), ExtResource("24_vef8n"), ExtResource("25_gmcq8"), ExtResource("26_cd785"), ExtResource("27_a282s"), ExtResource("28_ekb7r"), ExtResource("29_3io6j")])
+evolutions = Array[ExtResource("2_msfhy")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["It swallows water", "until its spines", "stand out, then", "cannot swim, and", "waits to be found."])
+front_sprite = ExtResource("3_tysie")
+back_sprite = ExtResource("1_vrehk")

@@ -1,0 +1,86 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/quagsire.png" id="1_ho8vn"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_jhltf"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/quagsire.png" id="3_betwk"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_27c4k"]
+[ext_resource type="Resource" path="res://resources/moves/slam.tres" id="5_odl3v"]
+[ext_resource type="Resource" path="res://resources/moves/amnesia.tres" id="6_hhi30"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="7_pirec"]
+[ext_resource type="Resource" path="res://resources/moves/haze.tres" id="8_s2fpw"]
+[ext_resource type="Resource" path="res://resources/moves/mist.tres" id="9_hjofu"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_cwtpy"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="11_t4c1t"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="12_edkps"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_t13ei"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_vat6d"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_y7tnc"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_fhcle"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_2gu1r"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_c4wv2"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_7wol0"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_gwnbn"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_qcnir"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="22_027rk"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="23_vmfyq"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="24_2if4v"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="25_77kf6"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="26_37j1n"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="27_2utdu"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="28_qw6eu"]
+
+[sub_resource type="Resource" id="Resource_1cs2n"]
+script = ExtResource("4_27c4k")
+level = 11
+move = ExtResource("5_odl3v")
+
+[sub_resource type="Resource" id="Resource_wspq6"]
+script = ExtResource("4_27c4k")
+level = 23
+move = ExtResource("6_hhi30")
+
+[sub_resource type="Resource" id="Resource_6yx0c"]
+script = ExtResource("4_27c4k")
+level = 35
+move = ExtResource("7_pirec")
+
+[sub_resource type="Resource" id="Resource_gne00"]
+script = ExtResource("4_27c4k")
+level = 59
+move = ExtResource("8_s2fpw")
+
+[sub_resource type="Resource" id="Resource_d1pqh"]
+script = ExtResource("4_27c4k")
+level = 59
+move = ExtResource("9_hjofu")
+
+[resource]
+script = ExtResource("13_t13ei")
+species_name = "QUAGSIRE"
+dex = 195
+index = 198
+slug = "quagsire"
+label = "Quagsire"
+category = "WATER FISH"
+height_ft = 4
+height_in = 7
+weight_tenths_lb = 1650
+hp = 95
+attack = 85
+defense = 85
+speed = 35
+special = 65
+type1 = "WATER"
+type2 = "GROUND"
+catch_rate = 90
+base_exp = 137
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_cwtpy")]([ExtResource("11_t4c1t"), ExtResource("12_edkps")])
+learnset = Array[ExtResource("4_27c4k")]([SubResource("Resource_1cs2n"), SubResource("Resource_wspq6"), SubResource("Resource_6yx0c"), SubResource("Resource_gne00"), SubResource("Resource_d1pqh")])
+tmhm = Array[ExtResource("10_cwtpy")]([ExtResource("14_vat6d"), ExtResource("15_y7tnc"), ExtResource("16_fhcle"), ExtResource("17_2gu1r"), ExtResource("18_c4wv2"), ExtResource("19_7wol0"), ExtResource("20_gwnbn"), ExtResource("21_qcnir"), ExtResource("22_027rk"), ExtResource("11_t4c1t"), ExtResource("23_vmfyq"), ExtResource("24_2if4v"), ExtResource("25_77kf6"), ExtResource("7_pirec"), ExtResource("26_37j1n"), ExtResource("27_2utdu"), ExtResource("28_qw6eu")])
+evolutions = Array[ExtResource("2_jhltf")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["It drifts open-", "mouthed and eats", "whatever enters.", "It has no thought", "of hunger at all."])
+front_sprite = ExtResource("3_betwk")
+back_sprite = ExtResource("1_ho8vn")

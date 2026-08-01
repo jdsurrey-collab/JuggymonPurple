@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=27 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/sunkern.png" id="1_ilx1o"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_dys81"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/sunkern.png" id="3_rmbuf"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_uqrnw"]
+[ext_resource type="Resource" path="res://resources/moves/growth.tres" id="5_dk5hw"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="6_t6ags"]
+[ext_resource type="Resource" path="res://resources/moves/vine_whip.tres" id="7_e7jxp"]
+[ext_resource type="Resource" path="res://resources/moves/razor_leaf.tres" id="8_lni1v"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_1tax1"]
+[ext_resource type="Resource" path="res://resources/moves/absorb.tres" id="10_ilkg7"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_p8iob"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_hxla4"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_ayv3b"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="14_5sayb"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="15_fyl4h"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="16_inhiq"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="17_k7sdh"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="18_xj5jr"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="19_ti2tw"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="20_ci2on"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="21_qh6tw"]
+
+[sub_resource type="Resource" id="Resource_i15vn"]
+script = ExtResource("2_dys81")
+method = "LEVEL"
+target = "SUNFLORA"
+level = 30
+item = ""
+
+[sub_resource type="Resource" id="Resource_aq16y"]
+script = ExtResource("4_uqrnw")
+level = 4
+move = ExtResource("5_dk5hw")
+
+[sub_resource type="Resource" id="Resource_67tts"]
+script = ExtResource("4_uqrnw")
+level = 10
+move = ExtResource("6_t6ags")
+
+[sub_resource type="Resource" id="Resource_wqh6t"]
+script = ExtResource("4_uqrnw")
+level = 10
+move = ExtResource("7_e7jxp")
+
+[sub_resource type="Resource" id="Resource_sug1e"]
+script = ExtResource("4_uqrnw")
+level = 32
+move = ExtResource("8_lni1v")
+
+[resource]
+script = ExtResource("11_p8iob")
+species_name = "SUNKERN"
+dex = 191
+index = 194
+slug = "sunkern"
+label = "Sunkern"
+category = "SEED"
+height_ft = 1
+height_in = 0
+weight_tenths_lb = 40
+hp = 30
+attack = 30
+defense = 30
+speed = 30
+special = 30
+type1 = "GRASS"
+type2 = "GRASS"
+catch_rate = 235
+base_exp = 52
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("9_1tax1")]([ExtResource("10_ilkg7")])
+learnset = Array[ExtResource("4_uqrnw")]([SubResource("Resource_aq16y"), SubResource("Resource_67tts"), SubResource("Resource_wqh6t"), SubResource("Resource_sug1e")])
+tmhm = Array[ExtResource("9_1tax1")]([ExtResource("12_hxla4"), ExtResource("13_ayv3b"), ExtResource("14_5sayb"), ExtResource("15_fyl4h"), ExtResource("16_inhiq"), ExtResource("17_k7sdh"), ExtResource("18_xj5jr"), ExtResource("19_ti2tw"), ExtResource("20_ci2on"), ExtResource("6_t6ags"), ExtResource("21_qh6tw")])
+evolutions = Array[ExtResource("2_dys81")]([SubResource("Resource_i15vn")])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["It is the least", "of all creatures", "and knows it.", "It drops from", "trees to be seen", "at all."])
+front_sprite = ExtResource("3_rmbuf")
+back_sprite = ExtResource("1_ilx1o")

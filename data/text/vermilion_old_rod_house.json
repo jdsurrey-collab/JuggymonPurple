@@ -1,0 +1,130 @@
+{
+ "VermilionOldRodHouseFishingGuruDoYouLikeToFishText": [
+  {
+   "kind": "text",
+   "line": "I am the FISHING"
+  },
+  {
+   "kind": "line",
+   "line": "GURU."
+  },
+  {
+   "kind": "para",
+   "line": "I love it more"
+  },
+  {
+   "kind": "line",
+   "line": "than most things."
+  },
+  {
+   "kind": "para",
+   "line": "Do you care for"
+  },
+  {
+   "kind": "line",
+   "line": "it, too?"
+  }
+ ],
+ "VermilionOldRodHouseFishingGuruTakeThisText": [
+  {
+   "kind": "text",
+   "line": "Splendid. I like"
+  },
+  {
+   "kind": "line",
+   "line": "your spirit!"
+  },
+  {
+   "kind": "para",
+   "line": "Take this, and"
+  },
+  {
+   "kind": "line",
+   "line": "fish, child."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "an @"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "VermilionOldRodHouseFishingGuruFishingIsAWayOfLifeText": [
+  {
+   "kind": "para",
+   "line": "Fishing is a"
+  },
+  {
+   "kind": "line",
+   "line": "way of grief,"
+  },
+  {
+   "kind": "cont",
+   "line": "and patience."
+  },
+  {
+   "kind": "para",
+   "line": "From sea to"
+  },
+  {
+   "kind": "line",
+   "line": "river, go and"
+  },
+  {
+   "kind": "cont",
+   "line": "land the great"
+  },
+  {
+   "kind": "cont",
+   "line": "one, child."
+  }
+ ],
+ "VermilionOldRodHouseFishingGuruThatsSoDisappointingText": [
+  {
+   "kind": "text",
+   "line": "Oh... How"
+  },
+  {
+   "kind": "line",
+   "line": "disheartening..."
+  }
+ ],
+ "VermilionOldRodHouseFishingGuruHowAreTheFishBitingText": [
+  {
+   "kind": "text",
+   "line": "Ah, <PLAYER>."
+  },
+  {
+   "kind": "line",
+   "line": "Well met."
+  },
+  {
+   "kind": "para",
+   "line": "How do the fish"
+  },
+  {
+   "kind": "line",
+   "line": "bite, these days?"
+  }
+ ],
+ "VermilionOldRodHouseFishingGuruNoRoomText": [
+  {
+   "kind": "text",
+   "line": "Oh no!"
+  },
+  {
+   "kind": "para",
+   "line": "No room for my"
+  },
+  {
+   "kind": "line",
+   "line": "gift, it seems."
+  }
+ ]
+}

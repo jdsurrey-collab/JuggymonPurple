@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/teddiursa.png" id="1_vtwmb"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_2g76s"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/teddiursa.png" id="3_bhop0"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_rjatb"]
+[ext_resource type="Resource" path="res://resources/moves/lick.tres" id="5_4rhad"]
+[ext_resource type="Resource" path="res://resources/moves/fury_swipes.tres" id="6_18i78"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="7_vkomm"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="8_c8bv3"]
+[ext_resource type="Resource" path="res://resources/moves/thrash.tres" id="9_ddf6h"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_bwoa5"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="11_h4b3e"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_qhyn3"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_i75bl"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_goutm"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_f8h0n"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_bmbqu"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_ypdda"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_32yul"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_hu3bf"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_0jb45"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="21_euedf"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="22_54gk1"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="23_lv1se"]
+
+[sub_resource type="Resource" id="Resource_w5r3q"]
+script = ExtResource("2_2g76s")
+method = "LEVEL"
+target = "URSARING"
+level = 30
+item = ""
+
+[sub_resource type="Resource" id="Resource_8ccj5"]
+script = ExtResource("4_rjatb")
+level = 8
+move = ExtResource("5_4rhad")
+
+[sub_resource type="Resource" id="Resource_j4l81"]
+script = ExtResource("4_rjatb")
+level = 15
+move = ExtResource("6_18i78")
+
+[sub_resource type="Resource" id="Resource_aqii8"]
+script = ExtResource("4_rjatb")
+level = 29
+move = ExtResource("7_vkomm")
+
+[sub_resource type="Resource" id="Resource_hxg0y"]
+script = ExtResource("4_rjatb")
+level = 36
+move = ExtResource("8_c8bv3")
+
+[sub_resource type="Resource" id="Resource_fs8of"]
+script = ExtResource("4_rjatb")
+level = 50
+move = ExtResource("9_ddf6h")
+
+[resource]
+script = ExtResource("13_i75bl")
+species_name = "TEDDIURSA"
+dex = 209
+index = 212
+slug = "teddiursa"
+label = "Teddiursa"
+category = "LITTLEBEAR"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 190
+hp = 60
+attack = 80
+defense = 50
+speed = 40
+special = 50
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 120
+base_exp = 124
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_bwoa5")]([ExtResource("11_h4b3e"), ExtResource("12_qhyn3")])
+learnset = Array[ExtResource("4_rjatb")]([SubResource("Resource_8ccj5"), SubResource("Resource_j4l81"), SubResource("Resource_aqii8"), SubResource("Resource_hxg0y"), SubResource("Resource_fs8of")])
+tmhm = Array[ExtResource("10_bwoa5")]([ExtResource("14_goutm"), ExtResource("15_f8h0n"), ExtResource("16_bmbqu"), ExtResource("17_ypdda"), ExtResource("7_vkomm"), ExtResource("18_32yul"), ExtResource("19_hu3bf"), ExtResource("20_0jb45"), ExtResource("21_euedf"), ExtResource("22_54gk1"), ExtResource("23_lv1se")])
+evolutions = Array[ExtResource("2_2g76s")]([SubResource("Resource_w5r3q")])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It licks its paws", "sweet with stolen", "honey and sleeps", "content. The hive", "does not."])
+front_sprite = ExtResource("3_bhop0")
+back_sprite = ExtResource("1_vtwmb")

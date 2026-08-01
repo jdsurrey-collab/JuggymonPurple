@@ -1,0 +1,32 @@
+{
+ "SeafoamIslandsB4FArticunoBattleText": [
+  {
+   "kind": "text",
+   "line": "Gyaoo!@"
+  }
+ ],
+ "SeafoamIslandsB4FBouldersSignText": [
+  {
+   "kind": "text",
+   "line": "Boulders may"
+  },
+  {
+   "kind": "line",
+   "line": "alter the flow"
+  },
+  {
+   "kind": "cont",
+   "line": "of the black tide!"
+  }
+ ],
+ "SeafoamIslandsB4FDangerSignText": [
+  {
+   "kind": "text",
+   "line": "DANGER"
+  },
+  {
+   "kind": "line",
+   "line": "Vicious current!"
+  }
+ ]
+}

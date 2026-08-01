@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_xiwmc"]
+
+[resource]
+script = ExtResource("1_xiwmc")
+move_name = "SUBSTITUTE"
+move_id = 164
+display_name = "SUBSTITUTE"
+move_type = "NORMAL"
+power = 0
+accuracy = 100
+pp = 10
+effect = "SUBSTITUTE_EFFECT"

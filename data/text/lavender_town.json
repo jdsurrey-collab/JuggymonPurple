@@ -1,0 +1,156 @@
+{
+ "LavenderTownLittleGirlDoYouBelieveInGhostsText": [
+  {
+   "kind": "text",
+   "line": "Do you believe"
+  },
+  {
+   "kind": "line",
+   "line": "in GHOSTs?"
+  }
+ ],
+ "LavenderTownLittleGirlSoThereAreBelieversText": [
+  {
+   "kind": "text",
+   "line": "Truly? So there"
+  },
+  {
+   "kind": "line",
+   "line": "are believers..."
+  }
+ ],
+ "LavenderTownLittleGirlHaHaGuessNotText": [
+  {
+   "kind": "text",
+   "line": "Hah. I suppose"
+  },
+  {
+   "kind": "line",
+   "line": "not."
+  },
+  {
+   "kind": "para",
+   "line": "That cold white"
+  },
+  {
+   "kind": "line",
+   "line": "hand on your"
+  },
+  {
+   "kind": "cont",
+   "line": "shoulder isn't"
+  },
+  {
+   "kind": "cont",
+   "line": "real."
+  }
+ ],
+ "LavenderTownCooltrainerMText": [
+  {
+   "kind": "text",
+   "line": "This town is"
+  },
+  {
+   "kind": "line",
+   "line": "known as the"
+  },
+  {
+   "kind": "cont",
+   "line": "grave of #MON."
+  },
+  {
+   "kind": "para",
+   "line": "We hold our"
+  },
+  {
+   "kind": "line",
+   "line": "mourning rites"
+  },
+  {
+   "kind": "cont",
+   "line": "in #MON TOWER."
+  }
+ ],
+ "LavenderTownSuperNerdText": [
+  {
+   "kind": "text",
+   "line": "GHOSTs walk in"
+  },
+  {
+   "kind": "line",
+   "line": "#MON TOWER."
+  },
+  {
+   "kind": "para",
+   "line": "Spirits, I think,"
+  },
+  {
+   "kind": "line",
+   "line": "of #MON the"
+  },
+  {
+   "kind": "cont",
+   "line": "ROCKETs murdered."
+  },
+  {
+   "kind": "cont",
+   "line": "So many."
+  }
+ ],
+ "LavenderTownSignText": [
+  {
+   "kind": "text",
+   "line": "LAVENDER TOWN"
+  },
+  {
+   "kind": "line",
+   "line": "Where the Grieving"
+  },
+  {
+   "kind": "cont",
+   "line": "Gather"
+  }
+ ],
+ "LavenderTownSilphScopeSignText": [
+  {
+   "kind": "text",
+   "line": "New SILPH SCOPE!"
+  },
+  {
+   "kind": "para",
+   "line": "See What Should"
+  },
+  {
+   "kind": "line",
+   "line": "Stay Hidden."
+  },
+  {
+   "kind": "para",
+   "line": "SILPH CO."
+  }
+ ],
+ "LavenderTownPokemonHouseSignText": [
+  {
+   "kind": "text",
+   "line": "LAVENDER VOLUNTEER"
+  },
+  {
+   "kind": "line",
+   "line": "#MON HOUSE"
+  }
+ ],
+ "LavenderTownPokemonTowerSignText": [
+  {
+   "kind": "text",
+   "line": "May the Souls of"
+  },
+  {
+   "kind": "line",
+   "line": "#MON Rest Easy"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON TOWER"
+  }
+ ]
+}

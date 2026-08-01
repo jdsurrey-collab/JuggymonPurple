@@ -1,0 +1,89 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/yanma.png" id="1_e8jmh"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_sqhb2"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/yanma.png" id="3_r2g6h"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_lhx12"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="5_arl00"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="6_pni2p"]
+[ext_resource type="Resource" path="res://resources/moves/sonicboom.tres" id="7_wh4og"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="8_a14gd"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="9_8ohbx"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="10_w7q66"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_dtxpx"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_3m081"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_0u4a7"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_3bmo1"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_vd85q"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_2wbiq"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_hckcx"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_w3osr"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_4ga84"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="20_nme7i"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="21_irwre"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="22_ub1yc"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="23_2qypp"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="24_7qbai"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="25_fx0vr"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="26_8rqoq"]
+
+[sub_resource type="Resource" id="Resource_f4pey"]
+script = ExtResource("4_lhx12")
+level = 7
+move = ExtResource("5_arl00")
+
+[sub_resource type="Resource" id="Resource_spuiv"]
+script = ExtResource("4_lhx12")
+level = 13
+move = ExtResource("6_pni2p")
+
+[sub_resource type="Resource" id="Resource_u6uai"]
+script = ExtResource("4_lhx12")
+level = 19
+move = ExtResource("7_wh4og")
+
+[sub_resource type="Resource" id="Resource_7srhe"]
+script = ExtResource("4_lhx12")
+level = 31
+move = ExtResource("8_a14gd")
+
+[sub_resource type="Resource" id="Resource_f81sm"]
+script = ExtResource("4_lhx12")
+level = 37
+move = ExtResource("9_8ohbx")
+
+[sub_resource type="Resource" id="Resource_idtmy"]
+script = ExtResource("4_lhx12")
+level = 43
+move = ExtResource("10_w7q66")
+
+[resource]
+script = ExtResource("13_0u4a7")
+species_name = "YANMA"
+dex = 193
+index = 196
+slug = "yanma"
+label = "Yanma"
+category = "CLEAR WING"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 840
+hp = 65
+attack = 65
+defense = 45
+speed = 95
+special = 60
+type1 = "BUG"
+type2 = "FLYING"
+catch_rate = 75
+base_exp = 147
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_dtxpx")]([ExtResource("12_3m081")])
+learnset = Array[ExtResource("4_lhx12")]([SubResource("Resource_f4pey"), SubResource("Resource_spuiv"), SubResource("Resource_u6uai"), SubResource("Resource_7srhe"), SubResource("Resource_f81sm"), SubResource("Resource_idtmy")])
+tmhm = Array[ExtResource("11_dtxpx")]([ExtResource("14_3bmo1"), ExtResource("15_vd85q"), ExtResource("16_2wbiq"), ExtResource("6_pni2p"), ExtResource("17_hckcx"), ExtResource("18_w3osr"), ExtResource("19_4ga84"), ExtResource("9_8ohbx"), ExtResource("20_nme7i"), ExtResource("21_irwre"), ExtResource("22_ub1yc"), ExtResource("23_2qypp"), ExtResource("24_7qbai"), ExtResource("25_fx0vr"), ExtResource("26_8rqoq")])
+evolutions = Array[ExtResource("2_sqhb2")]([])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["It sees all round", "at once without", "turning its head.", "There is nowhere", "to stand unseen."])
+front_sprite = ExtResource("3_r2g6h")
+back_sprite = ExtResource("1_e8jmh")

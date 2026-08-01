@@ -1,0 +1,36 @@
+{
+ "SafariZoneEastRestHouseSignText": [
+  {
+   "kind": "text",
+   "line": "REST HOUSE"
+  }
+ ],
+ "SafariZoneEastTrainerTipsText": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Your time bleeds"
+  },
+  {
+   "kind": "line",
+   "line": "away only while"
+  },
+  {
+   "kind": "cont",
+   "line": "you're walking!"
+  }
+ ],
+ "SafariZoneEastSignText": [
+  {
+   "kind": "text",
+   "line": "CENTER AREA"
+  },
+  {
+   "kind": "line",
+   "line": "NORTH: AREA 2"
+  }
+ ]
+}

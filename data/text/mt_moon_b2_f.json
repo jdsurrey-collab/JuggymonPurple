@@ -1,0 +1,284 @@
+{
+ "MtMoonB2FDomeFossilYouWantText": [
+  {
+   "kind": "text",
+   "line": "You want the"
+  },
+  {
+   "kind": "line",
+   "line": "DOME FOSSIL?"
+  }
+ ],
+ "MtMoonB2FHelixFossilYouWantText": [
+  {
+   "kind": "text",
+   "line": "You want the"
+  },
+  {
+   "kind": "line",
+   "line": "HELIX FOSSIL?"
+  }
+ ],
+ "MtMoonB2FReceivedFossilText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> got the"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "MtMoonB2FYouHaveNoRoomText": [
+  {
+   "kind": "text",
+   "line": "Look, you've got"
+  },
+  {
+   "kind": "line",
+   "line": "no room for this.@"
+  }
+ ],
+ "MtMoonB2FSuperNerdTheyreBothMineText": [
+  {
+   "kind": "text",
+   "line": "Halt!"
+  },
+  {
+   "kind": "para",
+   "line": "These bones are"
+  },
+  {
+   "kind": "line",
+   "line": "mine. Both of"
+  },
+  {
+   "kind": "cont",
+   "line": "them. I found them."
+  }
+ ],
+ "MtMoonB2FSuperNerdOkIllShareText": [
+  {
+   "kind": "text",
+   "line": "Fine! We'll"
+  },
+  {
+   "kind": "line",
+   "line": "share!"
+  }
+ ],
+ "MtMoonB2fSuperNerdEachTakeOneText": [
+  {
+   "kind": "text",
+   "line": "One each, then."
+  },
+  {
+   "kind": "line",
+   "line": "No greed between"
+  },
+  {
+   "kind": "cont",
+   "line": "us, agreed?"
+  }
+ ],
+ "MtMoonB2FSuperNerdTheresAPokemonLabText": [
+  {
+   "kind": "text",
+   "line": "Far off, on"
+  },
+  {
+   "kind": "line",
+   "line": "CINNABAR ISLAND,"
+  },
+  {
+   "kind": "cont",
+   "line": "there stands a"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON LAB."
+  },
+  {
+   "kind": "para",
+   "line": "They raise the"
+  },
+  {
+   "kind": "line",
+   "line": "dead there-"
+  },
+  {
+   "kind": "cont",
+   "line": "fossils reborn."
+  }
+ ],
+ "MtMoonB2FSuperNerdThenThisIsMineText": [
+  {
+   "kind": "text",
+   "line": "Very well. This"
+  },
+  {
+   "kind": "line",
+   "line": "one is mine!@"
+  }
+ ],
+ "MtMoonB2FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET will"
+  },
+  {
+   "kind": "line",
+   "line": "claim these bones,"
+  },
+  {
+   "kind": "cont",
+   "line": "wake the dead,"
+  },
+  {
+   "kind": "cont",
+   "line": "and sell them."
+  }
+ ],
+ "MtMoonB2FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Urgh! Now I'm"
+  },
+  {
+   "kind": "line",
+   "line": "furious!"
+  }
+ ],
+ "MtMoonB2FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You've angered"
+  },
+  {
+   "kind": "line",
+   "line": "me. ROCKET marks"
+  },
+  {
+   "kind": "cont",
+   "line": "you now."
+  }
+ ],
+ "MtMoonB2FRocket2BattleText": [
+  {
+   "kind": "text",
+   "line": "We, TEAM ROCKET,"
+  },
+  {
+   "kind": "line",
+   "line": "prey on #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "and men alike."
+  }
+ ],
+ "MtMoonB2FRocket2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I've"
+  },
+  {
+   "kind": "line",
+   "line": "failed."
+  }
+ ],
+ "MtMoonB2FRocket2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Curse you! My"
+  },
+  {
+   "kind": "line",
+   "line": "brothers won't"
+  },
+  {
+   "kind": "cont",
+   "line": "let this stand."
+  }
+ ],
+ "MtMoonB2FRocket3BattleText": [
+  {
+   "kind": "text",
+   "line": "We work grim"
+  },
+  {
+   "kind": "line",
+   "line": "business here."
+  },
+  {
+   "kind": "cont",
+   "line": "Get lost, child."
+  }
+ ],
+ "MtMoonB2FRocket3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "So. You're"
+  },
+  {
+   "kind": "line",
+   "line": "capable."
+  }
+ ],
+ "MtMoonB2FRocket3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Find a fossil?"
+  },
+  {
+   "kind": "line",
+   "line": "Hand it over,"
+  },
+  {
+   "kind": "cont",
+   "line": "and vanish."
+  }
+ ],
+ "MtMoonB2FRocket4BattleText": [
+  {
+   "kind": "text",
+   "line": "Children ought"
+  },
+  {
+   "kind": "line",
+   "line": "to leave grim"
+  },
+  {
+   "kind": "cont",
+   "line": "affairs alone!"
+  }
+ ],
+ "MtMoonB2FRocket4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "seethe."
+  }
+ ],
+ "MtMoonB2FRocket4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "#MON dwelt here"
+  },
+  {
+   "kind": "line",
+   "line": "long before we"
+  },
+  {
+   "kind": "cont",
+   "line": "ever came, or died."
+  }
+ ]
+}

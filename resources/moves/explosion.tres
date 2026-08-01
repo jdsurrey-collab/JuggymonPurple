@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_440sr"]
+
+[resource]
+script = ExtResource("1_440sr")
+move_name = "EXPLOSION"
+move_id = 153
+display_name = "EXPLOSION"
+move_type = "NORMAL"
+power = 170
+accuracy = 100
+pp = 5
+effect = "EXPLODE_EFFECT"

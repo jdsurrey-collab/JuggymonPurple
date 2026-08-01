@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_uvnqi"]
+
+[resource]
+script = ExtResource("1_uvnqi")
+move_name = "FURY_ATTACK"
+move_id = 31
+display_name = "FURY ATTACK"
+move_type = "NORMAL"
+power = 15
+accuracy = 85
+pp = 20
+effect = "TWO_TO_FIVE_ATTACKS_EFFECT"

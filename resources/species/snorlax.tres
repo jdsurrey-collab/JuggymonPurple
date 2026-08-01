@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=50 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/snorlax.png" id="1_71cah"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_r83i5"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/snorlax.png" id="3_xggxr"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_7rgvv"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="5_bwhko"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="6_yi5qx"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="7_c2k1p"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="8_v03vn"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_bjkoo"]
+[ext_resource type="Resource" path="res://resources/moves/headbutt.tres" id="10_tlelc"]
+[ext_resource type="Resource" path="res://resources/moves/amnesia.tres" id="11_84m3y"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="12_h38qv"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_nau55"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="14_afg0x"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="15_l4ia5"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_ht4oq"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_b7jvu"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="18_1g2b5"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="19_8t38n"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="20_51ql0"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="21_ljh5m"]
+[ext_resource type="Resource" path="res://resources/moves/pay_day.tres" id="22_4a3ro"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="23_tsh3u"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="24_ibqxt"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="25_c1rfh"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="26_oi57m"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="27_lqsie"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="28_exkyr"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="29_wv16j"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="30_6cp2x"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="31_nr62g"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="32_tfjam"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="33_l0w7j"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="34_5kfr7"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="35_a22ax"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="36_qowno"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="37_iogi5"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="38_iuo0y"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="39_5j50d"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="40_b24o3"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="41_q0oju"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="42_j560a"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="43_pkjw8"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="44_ottua"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="45_3nh57"]
+
+[sub_resource type="Resource" id="Resource_fknk3"]
+script = ExtResource("4_7rgvv")
+level = 35
+move = ExtResource("5_bwhko")
+
+[sub_resource type="Resource" id="Resource_dgoqm"]
+script = ExtResource("4_7rgvv")
+level = 41
+move = ExtResource("6_yi5qx")
+
+[sub_resource type="Resource" id="Resource_2dgw5"]
+script = ExtResource("4_7rgvv")
+level = 48
+move = ExtResource("7_c2k1p")
+
+[sub_resource type="Resource" id="Resource_hhq4o"]
+script = ExtResource("4_7rgvv")
+level = 56
+move = ExtResource("8_v03vn")
+
+[resource]
+script = ExtResource("13_nau55")
+species_name = "SNORLAX"
+dex = 143
+index = 132
+slug = "snorlax"
+label = "Snorlax"
+category = "SLEEPING"
+height_ft = 6
+height_in = 11
+weight_tenths_lb = 10140
+hp = 160
+attack = 110
+defense = 65
+speed = 30
+special = 65
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 25
+base_exp = 154
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("9_bjkoo")]([ExtResource("10_tlelc"), ExtResource("11_84m3y"), ExtResource("12_h38qv")])
+learnset = Array[ExtResource("4_7rgvv")]([SubResource("Resource_fknk3"), SubResource("Resource_dgoqm"), SubResource("Resource_2dgw5"), SubResource("Resource_hhq4o")])
+tmhm = Array[ExtResource("9_bjkoo")]([ExtResource("14_afg0x"), ExtResource("15_l4ia5"), ExtResource("16_ht4oq"), ExtResource("5_bwhko"), ExtResource("17_b7jvu"), ExtResource("7_c2k1p"), ExtResource("18_1g2b5"), ExtResource("19_8t38n"), ExtResource("20_51ql0"), ExtResource("21_ljh5m"), ExtResource("8_v03vn"), ExtResource("22_4a3ro"), ExtResource("23_tsh3u"), ExtResource("24_ibqxt"), ExtResource("25_c1rfh"), ExtResource("26_oi57m"), ExtResource("27_lqsie"), ExtResource("28_exkyr"), ExtResource("29_wv16j"), ExtResource("30_6cp2x"), ExtResource("31_nr62g"), ExtResource("32_tfjam"), ExtResource("33_l0w7j"), ExtResource("34_5kfr7"), ExtResource("35_a22ax"), ExtResource("36_qowno"), ExtResource("37_iogi5"), ExtResource("38_iuo0y"), ExtResource("39_5j50d"), ExtResource("40_b24o3"), ExtResource("12_h38qv"), ExtResource("41_q0oju"), ExtResource("42_j560a"), ExtResource("43_pkjw8"), ExtResource("44_ottua"), ExtResource("45_3nh57")])
+evolutions = Array[ExtResource("2_r83i5")]([])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Very lazy. Just", "eats and sleeps.", "As its rotund", "bulk builds, it", "becomes steadily", "more slothful"])
+front_sprite = ExtResource("3_xggxr")
+back_sprite = ExtResource("1_71cah")

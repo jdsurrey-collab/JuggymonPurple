@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_a8oyv"]
+
+[resource]
+script = ExtResource("1_a8oyv")
+move_name = "TAKE_DOWN"
+move_id = 36
+display_name = "TAKE DOWN"
+move_type = "NORMAL"
+power = 90
+accuracy = 85
+pp = 20
+effect = "RECOIL_EFFECT"

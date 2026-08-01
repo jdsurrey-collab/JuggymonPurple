@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=28 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/phanpy.png" id="1_fkch8"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_xc58y"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/phanpy.png" id="3_rhacv"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_dhvvf"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="5_ch44j"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="6_dwi5f"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="7_avv76"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_2olqw"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="9_iyexs"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="10_nkr3g"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_0lcbs"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_wv3w1"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_lerfa"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="14_pncgj"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="15_ufg8h"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="16_05gcb"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="17_pm8hd"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="18_bevkm"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="19_8a24j"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="20_qgbww"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="21_t4svq"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="22_k7sew"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="23_hji3j"]
+
+[sub_resource type="Resource" id="Resource_8r1wl"]
+script = ExtResource("2_xc58y")
+method = "LEVEL"
+target = "DONPHAN"
+level = 25
+item = ""
+
+[sub_resource type="Resource" id="Resource_efbjn"]
+script = ExtResource("4_dhvvf")
+level = 9
+move = ExtResource("5_ch44j")
+
+[sub_resource type="Resource" id="Resource_0umxp"]
+script = ExtResource("4_dhvvf")
+level = 25
+move = ExtResource("6_dwi5f")
+
+[sub_resource type="Resource" id="Resource_yieah"]
+script = ExtResource("4_dhvvf")
+level = 49
+move = ExtResource("7_avv76")
+
+[resource]
+script = ExtResource("11_0lcbs")
+species_name = "PHANPY"
+dex = 221
+index = 224
+slug = "phanpy"
+label = "Phanpy"
+category = "LONG NOSE"
+height_ft = 1
+height_in = 8
+weight_tenths_lb = 740
+hp = 90
+attack = 60
+defense = 60
+speed = 40
+special = 40
+type1 = "GROUND"
+type2 = "GROUND"
+catch_rate = 120
+base_exp = 124
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("8_2olqw")]([ExtResource("9_iyexs"), ExtResource("10_nkr3g")])
+learnset = Array[ExtResource("4_dhvvf")]([SubResource("Resource_efbjn"), SubResource("Resource_0umxp"), SubResource("Resource_yieah")])
+tmhm = Array[ExtResource("8_2olqw")]([ExtResource("12_wv3w1"), ExtResource("13_lerfa"), ExtResource("14_pncgj"), ExtResource("15_ufg8h"), ExtResource("16_05gcb"), ExtResource("17_pm8hd"), ExtResource("18_bevkm"), ExtResource("19_8a24j"), ExtResource("20_qgbww"), ExtResource("21_t4svq"), ExtResource("22_k7sew"), ExtResource("23_hji3j")])
+evolutions = Array[ExtResource("2_xc58y")]([SubResource("Resource_8r1wl")])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It sprays water", "over those it", "favours. Its", "strength is more", "than it knows."])
+front_sprite = ExtResource("3_rhacv")
+back_sprite = ExtResource("1_fkch8")

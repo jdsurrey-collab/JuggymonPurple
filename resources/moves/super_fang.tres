@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_4cn5k"]
+
+[resource]
+script = ExtResource("1_4cn5k")
+move_name = "SUPER_FANG"
+move_id = 162
+display_name = "SUPER FANG"
+move_type = "NORMAL"
+power = 1
+accuracy = 90
+pp = 10
+effect = "SUPER_FANG_EFFECT"

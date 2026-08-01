@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=41 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/nidorina.png" id="1_xcvk4"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_rwckl"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/nidorina.png" id="3_7df4c"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_q142n"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="5_jp1jw"]
+[ext_resource type="Resource" path="res://resources/moves/poison_sting.tres" id="6_mdwps"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="7_p1c0f"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="8_6vb5h"]
+[ext_resource type="Resource" path="res://resources/moves/fury_swipes.tres" id="9_7k5ew"]
+[ext_resource type="Resource" path="res://resources/moves/double_kick.tres" id="10_2t5dj"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_ysvcj"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="12_dkk6y"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="13_ylfxc"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_rkmug"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_0s6w1"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="16_60k4j"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="17_l7tjn"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_dyeu1"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_efnfn"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="20_speia"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="21_uxeyl"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="22_fpe0f"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="23_30jbo"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="24_mb25o"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="25_3bom5"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="26_tpyfy"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="27_6lqmk"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="28_gpg4n"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="29_dy3bi"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="30_dkm0f"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="31_00dwj"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="32_ads1k"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="33_ofejq"]
+
+[sub_resource type="Resource" id="Resource_aks3a"]
+script = ExtResource("2_rwckl")
+method = "ITEM"
+target = "NIDOQUEEN"
+level = 0
+item = "MOON_STONE"
+
+[sub_resource type="Resource" id="Resource_hkcsm"]
+script = ExtResource("4_q142n")
+level = 8
+move = ExtResource("5_jp1jw")
+
+[sub_resource type="Resource" id="Resource_p4uoi"]
+script = ExtResource("4_q142n")
+level = 14
+move = ExtResource("6_mdwps")
+
+[sub_resource type="Resource" id="Resource_nga02"]
+script = ExtResource("4_q142n")
+level = 23
+move = ExtResource("7_p1c0f")
+
+[sub_resource type="Resource" id="Resource_j5jtc"]
+script = ExtResource("4_q142n")
+level = 32
+move = ExtResource("8_6vb5h")
+
+[sub_resource type="Resource" id="Resource_qyqyj"]
+script = ExtResource("4_q142n")
+level = 41
+move = ExtResource("9_7k5ew")
+
+[sub_resource type="Resource" id="Resource_3aaw8"]
+script = ExtResource("4_q142n")
+level = 50
+move = ExtResource("10_2t5dj")
+
+[resource]
+script = ExtResource("14_rkmug")
+species_name = "NIDORINA"
+dex = 30
+index = 168
+slug = "nidorina"
+label = "Nidorina"
+category = "POISON PIN"
+height_ft = 2
+height_in = 7
+weight_tenths_lb = 440
+hp = 70
+attack = 62
+defense = 67
+speed = 56
+special = 55
+type1 = "POISON"
+type2 = "POISON"
+catch_rate = 120
+base_exp = 117
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_ysvcj")]([ExtResource("12_dkk6y"), ExtResource("13_ylfxc"), ExtResource("5_jp1jw")])
+learnset = Array[ExtResource("4_q142n")]([SubResource("Resource_hkcsm"), SubResource("Resource_p4uoi"), SubResource("Resource_nga02"), SubResource("Resource_j5jtc"), SubResource("Resource_qyqyj"), SubResource("Resource_3aaw8")])
+tmhm = Array[ExtResource("11_ysvcj")]([ExtResource("15_0s6w1"), ExtResource("16_60k4j"), ExtResource("17_l7tjn"), ExtResource("18_dyeu1"), ExtResource("19_efnfn"), ExtResource("20_speia"), ExtResource("21_uxeyl"), ExtResource("22_fpe0f"), ExtResource("23_30jbo"), ExtResource("24_mb25o"), ExtResource("25_3bom5"), ExtResource("26_tpyfy"), ExtResource("27_6lqmk"), ExtResource("28_gpg4n"), ExtResource("29_dy3bi"), ExtResource("30_dkm0f"), ExtResource("31_00dwj"), ExtResource("32_ads1k"), ExtResource("33_ofejq")])
+evolutions = Array[ExtResource("2_rwckl")]([SubResource("Resource_aks3a")])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["The female's horn", "develops slowly.", "Prefers physical", "attacks such as", "clawing and", "biting"])
+front_sprite = ExtResource("3_7df4c")
+back_sprite = ExtResource("1_xcvk4")

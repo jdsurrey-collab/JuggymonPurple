@@ -1,0 +1,36 @@
+{
+ "Route18Gate1FGuardYouNeedABicycleText": [
+  {
+   "kind": "text",
+   "line": "A BICYCLE is"
+  },
+  {
+   "kind": "line",
+   "line": "required upon"
+  },
+  {
+   "kind": "cont",
+   "line": "CYCLING ROAD!"
+  }
+ ],
+ "Route18Gate1FGuardCyclingRoadUphillText": [
+  {
+   "kind": "text",
+   "line": "CYCLING ROAD"
+  },
+  {
+   "kind": "line",
+   "line": "climbs upward"
+  },
+  {
+   "kind": "cont",
+   "line": "from here."
+  }
+ ],
+ "Route18Gate1FGuardExcuseMeText": [
+  {
+   "kind": "text",
+   "line": "You there!"
+  }
+ ]
+}

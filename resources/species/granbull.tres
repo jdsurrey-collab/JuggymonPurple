@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=29 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/granbull.png" id="1_y1til"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_1yt2c"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/granbull.png" id="3_k6s87"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_qtn0u"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="5_ixmi3"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="6_xlct4"]
+[ext_resource type="Resource" path="res://resources/moves/lick.tres" id="7_df5fj"]
+[ext_resource type="Resource" path="res://resources/moves/roar.tres" id="8_5yaj6"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="9_dbtee"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="10_cic3j"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_7nxpk"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_cw2ng"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_ds717"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_ppp8t"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_dl5j4"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_kvf2n"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_u5q1h"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_0yn63"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_ewwpk"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_c2uau"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="21_kjg6w"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="22_rjphk"]
+
+[sub_resource type="Resource" id="Resource_ue1tm"]
+script = ExtResource("4_qtn0u")
+level = 4
+move = ExtResource("5_ixmi3")
+
+[sub_resource type="Resource" id="Resource_w0sgh"]
+script = ExtResource("4_qtn0u")
+level = 13
+move = ExtResource("6_xlct4")
+
+[sub_resource type="Resource" id="Resource_n6n33"]
+script = ExtResource("4_qtn0u")
+level = 19
+move = ExtResource("7_df5fj")
+
+[sub_resource type="Resource" id="Resource_8winw"]
+script = ExtResource("4_qtn0u")
+level = 28
+move = ExtResource("8_5yaj6")
+
+[sub_resource type="Resource" id="Resource_8jsbm"]
+script = ExtResource("4_qtn0u")
+level = 38
+move = ExtResource("9_dbtee")
+
+[sub_resource type="Resource" id="Resource_tqm7u"]
+script = ExtResource("4_qtn0u")
+level = 51
+move = ExtResource("10_cic3j")
+
+[resource]
+script = ExtResource("13_ds717")
+species_name = "GRANBULL"
+dex = 205
+index = 208
+slug = "granbull"
+label = "Granbull"
+category = "FAIRY"
+height_ft = 4
+height_in = 7
+weight_tenths_lb = 1070
+hp = 90
+attack = 120
+defense = 75
+speed = 45
+special = 60
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 75
+base_exp = 178
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("11_7nxpk")]([ExtResource("12_cw2ng")])
+learnset = Array[ExtResource("4_qtn0u")]([SubResource("Resource_ue1tm"), SubResource("Resource_w0sgh"), SubResource("Resource_n6n33"), SubResource("Resource_8winw"), SubResource("Resource_8jsbm"), SubResource("Resource_tqm7u")])
+tmhm = Array[ExtResource("11_7nxpk")]([ExtResource("14_ppp8t"), ExtResource("9_dbtee"), ExtResource("15_dl5j4"), ExtResource("16_kvf2n"), ExtResource("17_u5q1h"), ExtResource("18_0yn63"), ExtResource("19_ewwpk"), ExtResource("20_c2uau"), ExtResource("21_kjg6w"), ExtResource("10_cic3j"), ExtResource("22_rjphk")])
+evolutions = Array[ExtResource("2_1yt2c")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It bites without", "warning and will", "not let go, though", "it is timid at", "heart and knows", "no better way."])
+front_sprite = ExtResource("3_k6s87")
+back_sprite = ExtResource("1_y1til")

@@ -1,0 +1,156 @@
+{
+ "CinnabarLabMetronomeRoomScientist1Text": [
+  {
+   "kind": "text",
+   "line": "Tch-tch-tch!"
+  },
+  {
+   "kind": "line",
+   "line": "I made a grim TM!"
+  },
+  {
+   "kind": "para",
+   "line": "It may summon"
+  },
+  {
+   "kind": "line",
+   "line": "strange chaos!"
+  }
+ ],
+ "CinnabarLabMetronomeRoomScientist1ReceivedTM35Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received "
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "CinnabarLabMetronomeRoomScientist1TM35ExplanationText": [
+  {
+   "kind": "text",
+   "line": "Tch-tch-tch!"
+  },
+  {
+   "kind": "line",
+   "line": "That's the sound"
+  },
+  {
+   "kind": "cont",
+   "line": "of a METRONOME!"
+  },
+  {
+   "kind": "para",
+   "line": "It tricks your"
+  },
+  {
+   "kind": "line",
+   "line": "#MON's mind"
+  },
+  {
+   "kind": "cont",
+   "line": "into moves it"
+  },
+  {
+   "kind": "cont",
+   "line": "never learned!"
+  }
+ ],
+ "CinnabarLabMetronomeRoomScientist1TM35NoRoomText": [
+  {
+   "kind": "text",
+   "line": "Your pack is"
+  },
+  {
+   "kind": "line",
+   "line": "crammed full!"
+  }
+ ],
+ "CinnabarLabMetronomeRoomScientist2Text": [
+  {
+   "kind": "text",
+   "line": "EEVEE may become"
+  },
+  {
+   "kind": "line",
+   "line": "1 of 3 kinds of"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON."
+  }
+ ],
+ "CinnabarLabMetronomeRoomPCText": [
+  {
+   "kind": "text",
+   "line": "There's an e-mail"
+  },
+  {
+   "kind": "line",
+   "line": "message!"
+  },
+  {
+   "kind": "para",
+   "line": "..."
+  },
+  {
+   "kind": "para",
+   "line": "The 3 fabled bird"
+  },
+  {
+   "kind": "line",
+   "line": "#MON are"
+  },
+  {
+   "kind": "cont",
+   "line": "ARTICUNO, ZAPDOS,"
+  },
+  {
+   "kind": "cont",
+   "line": "and MOLTRES."
+  },
+  {
+   "kind": "para",
+   "line": "Their whereabouts"
+  },
+  {
+   "kind": "line",
+   "line": "remain unknown."
+  },
+  {
+   "kind": "para",
+   "line": "We plan to search"
+  },
+  {
+   "kind": "line",
+   "line": "the cavern near"
+  },
+  {
+   "kind": "cont",
+   "line": "CERULEAN."
+  },
+  {
+   "kind": "para",
+   "line": "From: #MON"
+  },
+  {
+   "kind": "line",
+   "line": "RESEARCH TEAM"
+  },
+  {
+   "kind": "para",
+   "line": "..."
+  }
+ ],
+ "CinnabarLabMetronomeRoomAmberPipeText": [
+  {
+   "kind": "text",
+   "line": "An amber pipe!"
+  }
+ ]
+}

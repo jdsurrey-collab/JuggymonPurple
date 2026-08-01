@@ -1,0 +1,230 @@
+{
+ "SSAnne1FRoomsWigglytuffText": [
+  {
+   "kind": "text",
+   "line": "WIGGLYTUFF: Puup"
+  },
+  {
+   "kind": "line",
+   "line": "pupuu!@"
+  }
+ ],
+ "SSAnne1FRoomsGentleman1BattleText": [
+  {
+   "kind": "text",
+   "line": "I travel quite"
+  },
+  {
+   "kind": "line",
+   "line": "alone, always."
+  },
+  {
+   "kind": "para",
+   "line": "My #MON, my"
+  },
+  {
+   "kind": "line",
+   "line": "only company."
+  }
+ ],
+ "SSAnne1FRoomsGentleman1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "My, my"
+  },
+  {
+   "kind": "line",
+   "line": "companions..."
+  }
+ ],
+ "SSAnne1FRoomsGentleman1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Be kind to your"
+  },
+  {
+   "kind": "line",
+   "line": "companions."
+  }
+ ],
+ "SSAnne1FRoomsGentleman2BattleText": [
+  {
+   "kind": "text",
+   "line": "You pup. How"
+  },
+  {
+   "kind": "line",
+   "line": "dare you intrude!"
+  }
+ ],
+ "SSAnne1FRoomsGentleman2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Humph!"
+  },
+  {
+   "kind": "line",
+   "line": "Insolent child!"
+  }
+ ],
+ "SSAnne1FRoomsGentleman2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I wish to be"
+  },
+  {
+   "kind": "line",
+   "line": "left alone. Go."
+  }
+ ],
+ "SSAnne1FRoomsYoungsterBattleText": [
+  {
+   "kind": "text",
+   "line": "I love #MON."
+  },
+  {
+   "kind": "line",
+   "line": "And you?"
+  }
+ ],
+ "SSAnne1FRoomsYoungsterEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Wow! "
+  },
+  {
+   "kind": "line",
+   "line": "You're great!"
+  }
+ ],
+ "SSAnne1FRoomsYoungsterAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Be my friend,"
+  },
+  {
+   "kind": "line",
+   "line": "won't you?"
+  },
+  {
+   "kind": "para",
+   "line": "Then we might"
+  },
+  {
+   "kind": "line",
+   "line": "trade #MON."
+  }
+ ],
+ "SSAnne1FRoomsCooltrainerFBattleText": [
+  {
+   "kind": "text",
+   "line": "I gathered these"
+  },
+  {
+   "kind": "line",
+   "line": "#MON from"
+  },
+  {
+   "kind": "cont",
+   "line": "the whole world!"
+  }
+ ],
+ "SSAnne1FRoomsCooltrainerFEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh no! I circled"
+  },
+  {
+   "kind": "line",
+   "line": "the world for"
+  },
+  {
+   "kind": "cont",
+   "line": "these #MON!"
+  }
+ ],
+ "SSAnne1FRoomsCooltrainerFAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You hurt my poor"
+  },
+  {
+   "kind": "line",
+   "line": "worldly #MON!"
+  },
+  {
+   "kind": "para",
+   "line": "See them healed"
+  },
+  {
+   "kind": "line",
+   "line": "at once, at a"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON CENTER!"
+  }
+ ],
+ "SSAnne1FRoomsGirl1Text": [
+  {
+   "kind": "text",
+   "line": "Waiter, I should"
+  },
+  {
+   "kind": "line",
+   "line": "like a cherry"
+  },
+  {
+   "kind": "cont",
+   "line": "pie, if you please."
+  }
+ ],
+ "SSAnne1FRoomsMiddleAgedManText": [
+  {
+   "kind": "text",
+   "line": "A cruise, so"
+  },
+  {
+   "kind": "line",
+   "line": "elegant, so brief."
+  }
+ ],
+ "SSAnne1FRoomsLittleGirlText": [
+  {
+   "kind": "text",
+   "line": "I never travel"
+  },
+  {
+   "kind": "line",
+   "line": "without WIGGLYTUFF!"
+  }
+ ],
+ "SSAnne1FRoomsGirl2Text": [
+  {
+   "kind": "text",
+   "line": "We circle the"
+  },
+  {
+   "kind": "line",
+   "line": "world, aimlessly."
+  }
+ ],
+ "SSAnne1FRoomsGentleman3Text": [
+  {
+   "kind": "text",
+   "line": "Ssh. I serve the"
+  },
+  {
+   "kind": "line",
+   "line": "GLOBAL POLICE."
+  },
+  {
+   "kind": "para",
+   "line": "I hunt TEAM"
+  },
+  {
+   "kind": "line",
+   "line": "ROCKET, quietly."
+  }
+ ]
+}

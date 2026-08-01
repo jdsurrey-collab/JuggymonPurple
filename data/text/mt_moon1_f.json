@@ -1,0 +1,262 @@
+{
+ "MtMoon1FHikerBattleText": [
+  {
+   "kind": "text",
+   "line": "You startled me!"
+  },
+  {
+   "kind": "line",
+   "line": "Oh. Just a"
+  },
+  {
+   "kind": "cont",
+   "line": "child, is all."
+  }
+ ],
+ "MtMoon1FHikerEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Shocked."
+  },
+  {
+   "kind": "line",
+   "line": "Again."
+  }
+ ],
+ "MtMoon1FHikerAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Children like"
+  },
+  {
+   "kind": "line",
+   "line": "you shouldn't be"
+  },
+  {
+   "kind": "cont",
+   "line": "in this dark."
+  }
+ ],
+ "MtMoon1FYoungster1BattleText": [
+  {
+   "kind": "text",
+   "line": "Came to explore,"
+  },
+  {
+   "kind": "line",
+   "line": "too?"
+  }
+ ],
+ "MtMoon1FYoungster1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Losing,"
+  },
+  {
+   "kind": "line",
+   "line": "always bitter."
+  }
+ ],
+ "MtMoon1FYoungster1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I came to seem"
+  },
+  {
+   "kind": "line",
+   "line": "brave, for the"
+  },
+  {
+   "kind": "cont",
+   "line": "girls. Foolish."
+  }
+ ],
+ "MtMoon1FCooltrainerF1BattleText": [
+  {
+   "kind": "text",
+   "line": "It's far vaster"
+  },
+  {
+   "kind": "line",
+   "line": "in here than I"
+  },
+  {
+   "kind": "cont",
+   "line": "ever imagined."
+  }
+ ],
+ "MtMoon1FCooltrainerF1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I've"
+  },
+  {
+   "kind": "line",
+   "line": "lost it."
+  }
+ ],
+ "MtMoon1FCooltrainerF1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "How does one"
+  },
+  {
+   "kind": "line",
+   "line": "leave this place?"
+  }
+ ],
+ "MtMoon1FSuperNerdBattleText": [
+  {
+   "kind": "text",
+   "line": "Don't creep up"
+  },
+  {
+   "kind": "line",
+   "line": "on me!"
+  }
+ ],
+ "MtMoon1FSuperNerdEndBattleText": [
+  {
+   "kind": "text",
+   "line": "My"
+  },
+  {
+   "kind": "line",
+   "line": "#MON won't do!"
+  }
+ ],
+ "MtMoon1FSuperNerdAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I must find"
+  },
+  {
+   "kind": "line",
+   "line": "stronger #MON."
+  }
+ ],
+ "MtMoon1FCooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "I wait here for"
+  },
+  {
+   "kind": "line",
+   "line": "friends who may"
+  },
+  {
+   "kind": "cont",
+   "line": "never come."
+  }
+ ],
+ "MtMoon1FCooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I've lost?"
+  }
+ ],
+ "MtMoon1FCooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "They say rare"
+  },
+  {
+   "kind": "line",
+   "line": "bones lie buried"
+  },
+  {
+   "kind": "cont",
+   "line": "somewhere here."
+  }
+ ],
+ "MtMoon1FYoungster2BattleText": [
+  {
+   "kind": "text",
+   "line": "Grim men lurk"
+  },
+  {
+   "kind": "line",
+   "line": "in this cave."
+  },
+  {
+   "kind": "cont",
+   "line": "And you?"
+  }
+ ],
+ "MtMoon1FYoungster2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You've"
+  },
+  {
+   "kind": "line",
+   "line": "got me."
+  }
+ ],
+ "MtMoon1FYoungster2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I saw them. TEAM"
+  },
+  {
+   "kind": "line",
+   "line": "ROCKET, surely."
+  },
+  {
+   "kind": "cont",
+   "line": "I'm certain of it."
+  }
+ ],
+ "MtMoon1FYoungster3BattleText": [
+  {
+   "kind": "text",
+   "line": "This cave leads"
+  },
+  {
+   "kind": "line",
+   "line": "on, to CERULEAN"
+  },
+  {
+   "kind": "cont",
+   "line": "CITY, eventually."
+  }
+ ],
+ "MtMoon1FYoungster3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "lost."
+  }
+ ],
+ "MtMoon1FYoungster3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "ZUBAT's a pest,"
+  },
+  {
+   "kind": "line",
+   "line": "but useful, if"
+  },
+  {
+   "kind": "cont",
+   "line": "you can stomach"
+  },
+  {
+   "kind": "cont",
+   "line": "catching one."
+  }
+ ],
+ "MtMoon1FBewareZubatSign": [
+  {
+   "kind": "text",
+   "line": "Beware! ZUBAT"
+  },
+  {
+   "kind": "line",
+   "line": "drinks your blood."
+  }
+ ]
+}

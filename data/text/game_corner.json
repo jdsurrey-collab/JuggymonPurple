@@ -1,0 +1,458 @@
+{
+ "GameCornerBeauty1Text": [
+  {
+   "kind": "text",
+   "line": "Welcome, dear."
+  },
+  {
+   "kind": "para",
+   "line": "Trade your coins"
+  },
+  {
+   "kind": "line",
+   "line": "for fine, empty"
+  },
+  {
+   "kind": "cont",
+   "line": "prizes next door."
+  }
+ ],
+ "GameCornerClerk1DoYouNeedSomeGameCoinsText": [
+  {
+   "kind": "text",
+   "line": "Welcome to"
+  },
+  {
+   "kind": "line",
+   "line": "ROCKET GAME"
+  },
+  {
+   "kind": "cont",
+   "line": "CORNER!"
+  },
+  {
+   "kind": "para",
+   "line": "Do you crave"
+  },
+  {
+   "kind": "line",
+   "line": "some coins?"
+  },
+  {
+   "kind": "para",
+   "line": "\u00a51000 buys you"
+  },
+  {
+   "kind": "line",
+   "line": "50 coins. Shall"
+  },
+  {
+   "kind": "cont",
+   "line": "we begin?"
+  }
+ ],
+ "GameCornerClerk1ThanksHereAre50CoinsText": [
+  {
+   "kind": "text",
+   "line": "My thanks! Here"
+  },
+  {
+   "kind": "line",
+   "line": "are your 50"
+  },
+  {
+   "kind": "cont",
+   "line": "coins!"
+  }
+ ],
+ "GameCornerClerk1PleaseComePlaySometimeText": [
+  {
+   "kind": "text",
+   "line": "No? Do return"
+  },
+  {
+   "kind": "line",
+   "line": "and play, some"
+  },
+  {
+   "kind": "cont",
+   "line": "dark hour!"
+  }
+ ],
+ "GameCornerClerk1CantAffordTheCoinsText": [
+  {
+   "kind": "text",
+   "line": "You can't afford"
+  },
+  {
+   "kind": "line",
+   "line": "the coins!"
+  }
+ ],
+ "GameCornerClerk1CoinCaseIsFullText": [
+  {
+   "kind": "text",
+   "line": "Alas! Your COIN"
+  },
+  {
+   "kind": "line",
+   "line": "CASE is full."
+  }
+ ],
+ "GameCornerClerk1DontHaveCoinCaseText": [
+  {
+   "kind": "text",
+   "line": "You've no COIN"
+  },
+  {
+   "kind": "line",
+   "line": "CASE at all!"
+  }
+ ],
+ "GameCornerMiddleAgedMan1Text": [
+  {
+   "kind": "text",
+   "line": "Keep this quiet,"
+  },
+  {
+   "kind": "line",
+   "line": "friend."
+  },
+  {
+   "kind": "para",
+   "line": "It's whispered"
+  },
+  {
+   "kind": "line",
+   "line": "this den is run"
+  },
+  {
+   "kind": "cont",
+   "line": "by TEAM ROCKET."
+  }
+ ],
+ "GameCornerBeauty2Text": [
+  {
+   "kind": "text",
+   "line": "I believe these"
+  },
+  {
+   "kind": "line",
+   "line": "machines all"
+  },
+  {
+   "kind": "cont",
+   "line": "cheat differently."
+  }
+ ],
+ "GameCornerFishingGuruWantToPlayText": [
+  {
+   "kind": "text",
+   "line": "Child, care to"
+  },
+  {
+   "kind": "line",
+   "line": "play?"
+  }
+ ],
+ "GameCornerFishingGuruReceived10CoinsText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "10 coins!@"
+  }
+ ],
+ "GameCornerFishingGuruDontNeedMyCoinsText": [
+  {
+   "kind": "text",
+   "line": "You need not"
+  },
+  {
+   "kind": "line",
+   "line": "my coins!"
+  }
+ ],
+ "GameCornerFishingGuruWinsComeAndGoText": [
+  {
+   "kind": "text",
+   "line": "Fortune comes"
+  },
+  {
+   "kind": "line",
+   "line": "and goes, like"
+  },
+  {
+   "kind": "cont",
+   "line": "breath."
+  }
+ ],
+ "GameCornerMiddleAgedWomanText": [
+  {
+   "kind": "text",
+   "line": "I'm having such"
+  },
+  {
+   "kind": "line",
+   "line": "a wretched time!"
+  }
+ ],
+ "GameCornerGymGuideChampInMakingText": [
+  {
+   "kind": "text",
+   "line": "You there!"
+  },
+  {
+   "kind": "para",
+   "line": "Surely you've"
+  },
+  {
+   "kind": "line",
+   "line": "grimmer things"
+  },
+  {
+   "kind": "cont",
+   "line": "to do, champion"
+  },
+  {
+   "kind": "cont",
+   "line": "in the making!"
+  },
+  {
+   "kind": "para",
+   "line": "CELADON GYM's"
+  },
+  {
+   "kind": "line",
+   "line": "LEADER is ERIKA!"
+  },
+  {
+   "kind": "cont",
+   "line": "She wields grass-"
+  },
+  {
+   "kind": "cont",
+   "line": "type #MON!"
+  },
+  {
+   "kind": "para",
+   "line": "She seems gentle,"
+  },
+  {
+   "kind": "line",
+   "line": "but don't be"
+  },
+  {
+   "kind": "cont",
+   "line": "fooled by it!"
+  }
+ ],
+ "GameCornerGymGuideTheyOfferRarePokemonText": [
+  {
+   "kind": "text",
+   "line": "They offer rare"
+  },
+  {
+   "kind": "line",
+   "line": "#MON, bartered"
+  },
+  {
+   "kind": "cont",
+   "line": "for your coins."
+  },
+  {
+   "kind": "para",
+   "line": "Yet I never seem"
+  },
+  {
+   "kind": "line",
+   "line": "able to win!"
+  }
+ ],
+ "GameCornerGamblerText": [
+  {
+   "kind": "text",
+   "line": "These games are"
+  },
+  {
+   "kind": "line",
+   "line": "dreadful! So"
+  },
+  {
+   "kind": "cont",
+   "line": "easy to be"
+  },
+  {
+   "kind": "cont",
+   "line": "consumed by them!"
+  }
+ ],
+ "GameCornerClerk2WantSomeCoinsText": [
+  {
+   "kind": "text",
+   "line": "What now? Want"
+  },
+  {
+   "kind": "line",
+   "line": "some coins?"
+  }
+ ],
+ "GameCornerClerk2Received20CoinsText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "20 coins!@"
+  }
+ ],
+ "GameCornerClerk2YouHaveLotsOfCoinsText": [
+  {
+   "kind": "text",
+   "line": "You've coin"
+  },
+  {
+   "kind": "line",
+   "line": "enough already!"
+  }
+ ],
+ "GameCornerClerk2INeedMoreCoinsText": [
+  {
+   "kind": "text",
+   "line": "Damn! I need"
+  },
+  {
+   "kind": "line",
+   "line": "more coin for"
+  },
+  {
+   "kind": "cont",
+   "line": "the #MON I"
+  },
+  {
+   "kind": "cont",
+   "line": "crave!"
+  }
+ ],
+ "GameCornerGentlemanThrowingMeOffText": [
+  {
+   "kind": "text",
+   "line": "Hey now! You've"
+  },
+  {
+   "kind": "line",
+   "line": "thrown off my"
+  },
+  {
+   "kind": "cont",
+   "line": "count! Here, take"
+  },
+  {
+   "kind": "cont",
+   "line": "these, be gone!"
+  }
+ ],
+ "GameCornerGentlemanReceived20CoinsText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "20 coins!@"
+  }
+ ],
+ "GameCornerGentlemanYouGotYourOwnCoinsText": [
+  {
+   "kind": "text",
+   "line": "You've coin"
+  },
+  {
+   "kind": "line",
+   "line": "of your own!"
+  }
+ ],
+ "GameCornerGentlemanCloselyWatchTheReelsText": [
+  {
+   "kind": "text",
+   "line": "The trick is to"
+  },
+  {
+   "kind": "line",
+   "line": "watch the reels,"
+  },
+  {
+   "kind": "cont",
+   "line": "closely, always."
+  }
+ ],
+ "GameCornerRocketImGuardingThisPosterText": [
+  {
+   "kind": "text",
+   "line": "I'm guarding"
+  },
+  {
+   "kind": "line",
+   "line": "this poster!"
+  },
+  {
+   "kind": "cont",
+   "line": "Away, or else!"
+  }
+ ],
+ "GameCornerRocketBattleEndText": [
+  {
+   "kind": "text",
+   "line": "Damn!"
+  }
+ ],
+ "GameCornerRocketAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Our hideout may"
+  },
+  {
+   "kind": "line",
+   "line": "be found out! I"
+  },
+  {
+   "kind": "cont",
+   "line": "must tell BOSS!"
+  }
+ ],
+ "GameCornerPosterSwitchBehindPosterText": [
+  {
+   "kind": "text",
+   "line": "Hey!"
+  },
+  {
+   "kind": "para",
+   "line": "A switch, hidden"
+  },
+  {
+   "kind": "line",
+   "line": "behind the"
+  },
+  {
+   "kind": "cont",
+   "line": "poster!? Press"
+  },
+  {
+   "kind": "cont",
+   "line": "it, then!@"
+  }
+ ],
+ "GameCornerOopsForgotCoinCaseText": [
+  {
+   "kind": "text",
+   "line": "Ah! I forgot"
+  },
+  {
+   "kind": "line",
+   "line": "the COIN CASE!"
+  }
+ ]
+}

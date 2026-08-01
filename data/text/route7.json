@@ -1,0 +1,16 @@
+{
+ "Route7UndergroundPathSignText": [
+  {
+   "kind": "text",
+   "line": "UNDERGROUND PATH"
+  },
+  {
+   "kind": "line",
+   "line": "CELADON CITY -"
+  },
+  {
+   "kind": "cont",
+   "line": "LAVENDER TOWN"
+  }
+ ]
+}

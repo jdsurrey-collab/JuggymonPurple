@@ -1,0 +1,114 @@
+{
+ "LoreleisRoomLoreleiBeforeBattleText": [
+  {
+   "kind": "text",
+   "line": "So, you've come"
+  },
+  {
+   "kind": "line",
+   "line": "to challenge us."
+  },
+  {
+   "kind": "para",
+   "line": "I am LORELEI,"
+  },
+  {
+   "kind": "line",
+   "line": "coldest of the"
+  },
+  {
+   "kind": "cont",
+   "line": "ELITE FOUR."
+  },
+  {
+   "kind": "para",
+   "line": "None best me"
+  },
+  {
+   "kind": "line",
+   "line": "where ice and"
+  },
+  {
+   "kind": "cont",
+   "line": "death entwine."
+  },
+  {
+   "kind": "para",
+   "line": "Frost does not"
+  },
+  {
+   "kind": "line",
+   "line": "forgive, child."
+  },
+  {
+   "kind": "para",
+   "line": "Your #MON will"
+  },
+  {
+   "kind": "line",
+   "line": "learn to freeze"
+  },
+  {
+   "kind": "cont",
+   "line": "slowly, from"
+  },
+  {
+   "kind": "cont",
+   "line": "within."
+  },
+  {
+   "kind": "para",
+   "line": "Hah."
+  },
+  {
+   "kind": "line",
+   "line": "Are you ready?"
+  }
+ ],
+ "LoreleisRoomLoreleiEndBattleText": [
+  {
+   "kind": "text",
+   "line": "How"
+  },
+  {
+   "kind": "line",
+   "line": "dare you..."
+  }
+ ],
+ "LoreleisRoomLoreleiAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You're stronger"
+  },
+  {
+   "kind": "line",
+   "line": "than I judged."
+  },
+  {
+   "kind": "cont",
+   "line": "Go on, then."
+  },
+  {
+   "kind": "para",
+   "line": "You've tasted"
+  },
+  {
+   "kind": "line",
+   "line": "but a sliver of"
+  },
+  {
+   "kind": "cont",
+   "line": "the LEAGUE's might."
+  }
+ ],
+ "LoreleisRoomLoreleiDontRunAwayText": [
+  {
+   "kind": "text",
+   "line": "A voice, cold as"
+  },
+  {
+   "kind": "line",
+   "line": "ice: Do not flee."
+  }
+ ]
+}

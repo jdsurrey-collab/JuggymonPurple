@@ -1,0 +1,584 @@
+{
+ "ViridianGymGiovanniPreBattleText": [
+  {
+   "kind": "text",
+   "line": "So. This is"
+  },
+  {
+   "kind": "line",
+   "line": "where you find"
+  },
+  {
+   "kind": "cont",
+   "line": "me."
+  },
+  {
+   "kind": "para",
+   "line": "I meant to"
+  },
+  {
+   "kind": "line",
+   "line": "raise TEAM ROCKET"
+  },
+  {
+   "kind": "cont",
+   "line": "from these ashes."
+  },
+  {
+   "kind": "para",
+   "line": "You've hounded"
+  },
+  {
+   "kind": "line",
+   "line": "me twice now."
+  },
+  {
+   "kind": "cont",
+   "line": "No more mercy,"
+  },
+  {
+   "kind": "cont",
+   "line": "this time."
+  },
+  {
+   "kind": "para",
+   "line": "Face GIOVANNI"
+  },
+  {
+   "kind": "line",
+   "line": "once more. The"
+  },
+  {
+   "kind": "cont",
+   "line": "last true master"
+  },
+  {
+   "kind": "cont",
+   "line": "you shall ever"
+  },
+  {
+   "kind": "cont",
+   "line": "meet."
+  }
+ ],
+ "ViridianGymGiovanniReceivedEarthBadgeText": [
+  {
+   "kind": "text",
+   "line": "Ha."
+  },
+  {
+   "kind": "line",
+   "line": "A fight worth"
+  },
+  {
+   "kind": "cont",
+   "line": "having, at last."
+  },
+  {
+   "kind": "cont",
+   "line": "You've won."
+  },
+  {
+   "kind": "cont",
+   "line": "Take this proof,"
+  },
+  {
+   "kind": "cont",
+   "line": "the EARTHBADGE.@"
+  }
+ ],
+ "ViridianGymGiovanniPostBattleAdviceText": [
+  {
+   "kind": "text",
+   "line": "Having lost, I"
+  },
+  {
+   "kind": "line",
+   "line": "cannot face my"
+  },
+  {
+   "kind": "cont",
+   "line": "men again."
+  },
+  {
+   "kind": "cont",
+   "line": "TEAM ROCKET dies"
+  },
+  {
+   "kind": "cont",
+   "line": "here, with me."
+  },
+  {
+   "kind": "para",
+   "line": "I'll spend what's"
+  },
+  {
+   "kind": "line",
+   "line": "left of my life"
+  },
+  {
+   "kind": "cont",
+   "line": "studying #MON,"
+  },
+  {
+   "kind": "para",
+   "line": "in penance."
+  },
+  {
+   "kind": "line",
+   "line": "We may yet meet"
+  },
+  {
+   "kind": "cont",
+   "line": "again. Farewell.@"
+  }
+ ],
+ "ViridianGymGiovanniEarthBadgeInfoText": [
+  {
+   "kind": "text",
+   "line": "The EARTHBADGE"
+  },
+  {
+   "kind": "line",
+   "line": "binds #MON of"
+  },
+  {
+   "kind": "cont",
+   "line": "any level to you."
+  },
+  {
+   "kind": "para",
+   "line": "It is proof of"
+  },
+  {
+   "kind": "line",
+   "line": "your mastery,"
+  },
+  {
+   "kind": "cont",
+   "line": "such as it is."
+  },
+  {
+   "kind": "para",
+   "line": "With it, you may"
+  },
+  {
+   "kind": "line",
+   "line": "enter the #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "LEAGUE."
+  },
+  {
+   "kind": "para",
+   "line": "A parting gift,"
+  },
+  {
+   "kind": "line",
+   "line": "for what it's"
+  },
+  {
+   "kind": "cont",
+   "line": "worth, from me."
+  }
+ ],
+ "ViridianGymGiovanniReceivedTM27Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "TM27!@"
+  }
+ ],
+ "ViridianGymGiovanniTM27ExplanationText": [
+  {
+   "kind": "para",
+   "line": "TM27 is FISSURE!"
+  },
+  {
+   "kind": "line",
+   "line": "It will take out"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON with just"
+  },
+  {
+   "kind": "cont",
+   "line": "one hit!"
+  },
+  {
+   "kind": "para",
+   "line": "I made it when I"
+  },
+  {
+   "kind": "line",
+   "line": "ran the GYM here,"
+  },
+  {
+   "kind": "cont",
+   "line": "too long ago..."
+  }
+ ],
+ "ViridianGymGiovanniTM27NoRoomText": [
+  {
+   "kind": "text",
+   "line": "You do not have"
+  },
+  {
+   "kind": "line",
+   "line": "space for this!"
+  }
+ ],
+ "ViridianGymCooltrainerM1BattleText": [
+  {
+   "kind": "text",
+   "line": "Heh! You must be"
+  },
+  {
+   "kind": "line",
+   "line": "running out of"
+  },
+  {
+   "kind": "cont",
+   "line": "steam by now!"
+  }
+ ],
+ "ViridianGymCooltrainerM1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "ran out of gas!"
+  }
+ ],
+ "ViridianGymCooltrainerM1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You need power to"
+  },
+  {
+   "kind": "line",
+   "line": "keep up with our"
+  },
+  {
+   "kind": "cont",
+   "line": "GYM LEADER!"
+  }
+ ],
+ "ViridianGymHiker1BattleText": [
+  {
+   "kind": "text",
+   "line": "Rrrroar! I'm"
+  },
+  {
+   "kind": "line",
+   "line": "working myself"
+  },
+  {
+   "kind": "cont",
+   "line": "into a rage!"
+  }
+ ],
+ "ViridianGymHiker1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Wargh!"
+  }
+ ],
+ "ViridianGymHiker1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm still not"
+  },
+  {
+   "kind": "line",
+   "line": "worthy!"
+  }
+ ],
+ "ViridianGymRocker1BattleText": [
+  {
+   "kind": "text",
+   "line": "#MON and I, we"
+  },
+  {
+   "kind": "line",
+   "line": "make wonderful"
+  },
+  {
+   "kind": "cont",
+   "line": "music together!"
+  }
+ ],
+ "ViridianGymRocker1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You are in"
+  },
+  {
+   "kind": "line",
+   "line": "perfect harmony!"
+  }
+ ],
+ "ViridianGymRocker1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Do you know the"
+  },
+  {
+   "kind": "line",
+   "line": "identity of our"
+  },
+  {
+   "kind": "cont",
+   "line": "GYM LEADER?"
+  }
+ ],
+ "ViridianGymHiker2BattleText": [
+  {
+   "kind": "text",
+   "line": "Karate is the"
+  },
+  {
+   "kind": "line",
+   "line": "ultimate form of"
+  },
+  {
+   "kind": "cont",
+   "line": "martial arts!"
+  }
+ ],
+ "ViridianGymHiker2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Atcho!"
+  }
+ ],
+ "ViridianGymHiker2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "If my #MON"
+  },
+  {
+   "kind": "line",
+   "line": "were as good at"
+  },
+  {
+   "kind": "cont",
+   "line": "Karate as I..."
+  }
+ ],
+ "ViridianGymCooltrainerM2BattleText": [
+  {
+   "kind": "text",
+   "line": "The truly talented"
+  },
+  {
+   "kind": "line",
+   "line": "win with style!"
+  }
+ ],
+ "ViridianGymCooltrainerM2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "lost my grip!"
+  }
+ ],
+ "ViridianGymCooltrainerM2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "The LEADER will"
+  },
+  {
+   "kind": "line",
+   "line": "scold me!"
+  }
+ ],
+ "ViridianGymHiker3BattleText": [
+  {
+   "kind": "text",
+   "line": "I'm the KARATE"
+  },
+  {
+   "kind": "line",
+   "line": "KING! Your fate"
+  },
+  {
+   "kind": "cont",
+   "line": "rests with me!"
+  }
+ ],
+ "ViridianGymHiker3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ayah!"
+  }
+ ],
+ "ViridianGymHiker3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "#MON LEAGUE?"
+  },
+  {
+   "kind": "line",
+   "line": "You? Don't get"
+  },
+  {
+   "kind": "cont",
+   "line": "cocky!"
+  }
+ ],
+ "ViridianGymRocker2BattleText": [
+  {
+   "kind": "text",
+   "line": "Your #MON will"
+  },
+  {
+   "kind": "line",
+   "line": "cower at the"
+  },
+  {
+   "kind": "cont",
+   "line": "crack of my whip!"
+  }
+ ],
+ "ViridianGymRocker2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Yowch!"
+  },
+  {
+   "kind": "line",
+   "line": "Whiplash!"
+  }
+ ],
+ "ViridianGymRocker2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Wait! I was just"
+  },
+  {
+   "kind": "line",
+   "line": "careless!"
+  }
+ ],
+ "ViridianGymCooltrainerM3BattleText": [
+  {
+   "kind": "text",
+   "line": "VIRIDIAN GYM was"
+  },
+  {
+   "kind": "line",
+   "line": "closed for a long"
+  },
+  {
+   "kind": "cont",
+   "line": "time, but now our"
+  },
+  {
+   "kind": "cont",
+   "line": "LEADER is back!"
+  }
+ ],
+ "ViridianGymCooltrainerM3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "was beaten?"
+  }
+ ],
+ "ViridianGymCooltrainerM3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You can go onto"
+  },
+  {
+   "kind": "line",
+   "line": "#MON LEAGUE"
+  },
+  {
+   "kind": "cont",
+   "line": "only by defeating"
+  },
+  {
+   "kind": "cont",
+   "line": "our GYM LEADER!"
+  }
+ ],
+ "ViridianGymGuidePreBattleText": [
+  {
+   "kind": "text",
+   "line": "Yo! Champ in"
+  },
+  {
+   "kind": "line",
+   "line": "making!"
+  },
+  {
+   "kind": "para",
+   "line": "Even I don't know"
+  },
+  {
+   "kind": "line",
+   "line": "VIRIDIAN LEADER's"
+  },
+  {
+   "kind": "cont",
+   "line": "identity!"
+  },
+  {
+   "kind": "para",
+   "line": "This will be the"
+  },
+  {
+   "kind": "line",
+   "line": "toughest of all"
+  },
+  {
+   "kind": "cont",
+   "line": "the GYM LEADERs!"
+  },
+  {
+   "kind": "para",
+   "line": "I heard that the"
+  },
+  {
+   "kind": "line",
+   "line": "trainers here"
+  },
+  {
+   "kind": "cont",
+   "line": "like ground-type"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON!"
+  }
+ ],
+ "ViridianGymGuidePostBattleText": [
+  {
+   "kind": "text",
+   "line": "Blow me away!"
+  },
+  {
+   "kind": "line",
+   "line": "GIOVANNI was the"
+  },
+  {
+   "kind": "cont",
+   "line": "GYM LEADER here?"
+  }
+ ]
+}

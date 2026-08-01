@@ -1,0 +1,178 @@
+{
+ "OakSpeechText1": [
+  {
+   "kind": "text",
+   "line": "...Hello, child."
+  },
+  {
+   "kind": "line",
+   "line": "Welcome to a"
+  },
+  {
+   "kind": "cont",
+   "line": "world of grief."
+  },
+  {
+   "kind": "para",
+   "line": "I am OAK. They"
+  },
+  {
+   "kind": "line",
+   "line": "call me the"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON PROF."
+  }
+ ],
+ "OakSpeechText2A": [
+  {
+   "kind": "text",
+   "line": "This world is"
+  },
+  {
+   "kind": "line",
+   "line": "haunted by"
+  },
+  {
+   "kind": "cont",
+   "line": "creatures called"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON.@"
+  }
+ ],
+ "OakSpeechText2B": [
+  {
+   "kind": "para",
+   "line": "For some, #MON"
+  },
+  {
+   "kind": "line",
+   "line": "are companions."
+  },
+  {
+   "kind": "cont",
+   "line": "For most, they"
+  },
+  {
+   "kind": "cont",
+   "line": "are weapons."
+  },
+  {
+   "kind": "para",
+   "line": "For me..."
+  },
+  {
+   "kind": "para",
+   "line": "I study #MON,"
+  },
+  {
+   "kind": "line",
+   "line": "and what we do"
+  },
+  {
+   "kind": "cont",
+   "line": "to them."
+  }
+ ],
+ "IntroducePlayerText": [
+  {
+   "kind": "text",
+   "line": "Tell me, child,"
+  },
+  {
+   "kind": "line",
+   "line": "what is your name?"
+  }
+ ],
+ "IntroduceRivalText": [
+  {
+   "kind": "text",
+   "line": "This is my"
+  },
+  {
+   "kind": "line",
+   "line": "grandson. He has"
+  },
+  {
+   "kind": "cont",
+   "line": "resented you"
+  },
+  {
+   "kind": "cont",
+   "line": "since the cradle."
+  },
+  {
+   "kind": "para",
+   "line": "...His name,"
+  },
+  {
+   "kind": "line",
+   "line": "again? Remind me."
+  }
+ ],
+ "OakSpeechText3": [
+  {
+   "kind": "text",
+   "line": "<PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "Your own #MON"
+  },
+  {
+   "kind": "line",
+   "line": "story begins"
+  },
+  {
+   "kind": "cont",
+   "line": "now. Whether it"
+  },
+  {
+   "kind": "cont",
+   "line": "ends well..."
+  },
+  {
+   "kind": "para",
+   "line": "...is entirely"
+  },
+  {
+   "kind": "line",
+   "line": "up to you."
+  },
+  {
+   "kind": "cont",
+   "line": "Go, then."
+  },
+  {
+   "kind": "cont",
+   "line": "The world waits."
+  }
+ ],
+ "YourNameIsText": [
+  {
+   "kind": "text",
+   "line": "So be it. Your"
+  },
+  {
+   "kind": "line",
+   "line": "name is <PLAYER>."
+  }
+ ],
+ "HisNameIsText": [
+  {
+   "kind": "text",
+   "line": "Yes. It comes"
+  },
+  {
+   "kind": "line",
+   "line": "back to me. His"
+  },
+  {
+   "kind": "cont",
+   "line": "name is <RIVAL>."
+  }
+ ]
+}

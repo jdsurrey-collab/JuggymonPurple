@@ -1,0 +1,250 @@
+{
+ "Museum1FScientist1ComeAgainText": [
+  {
+   "kind": "text",
+   "line": "Come again!"
+  }
+ ],
+ "Museum1FScientist1WouldYouLikeToComeInText": [
+  {
+   "kind": "text",
+   "line": "It's \u00a550 for a"
+  },
+  {
+   "kind": "line",
+   "line": "child's ticket."
+  },
+  {
+   "kind": "para",
+   "line": "Will you enter"
+  },
+  {
+   "kind": "line",
+   "line": "these old halls?"
+  }
+ ],
+ "Museum1FScientist1ThankYouText": [
+  {
+   "kind": "text",
+   "line": "Right, \u00a550!"
+  },
+  {
+   "kind": "line",
+   "line": "My thanks!"
+  }
+ ],
+ "Museum1FScientist1DontHaveEnoughMoneyText": [
+  {
+   "kind": "text",
+   "line": "You lack the"
+  },
+  {
+   "kind": "line",
+   "line": "coin for this."
+  }
+ ],
+ "Museum1FScientist1DoYouKnowWhatAmberIsText": [
+  {
+   "kind": "text",
+   "line": "You can't creep"
+  },
+  {
+   "kind": "line",
+   "line": "in the back way!"
+  },
+  {
+   "kind": "para",
+   "line": "Oh, no matter!"
+  },
+  {
+   "kind": "line",
+   "line": "Do you know what"
+  },
+  {
+   "kind": "cont",
+   "line": "AMBER is?"
+  }
+ ],
+ "Museum1FScientist1TheresALabSomewhereText": [
+  {
+   "kind": "text",
+   "line": "A lab exists,"
+  },
+  {
+   "kind": "line",
+   "line": "somewhere, that"
+  },
+  {
+   "kind": "cont",
+   "line": "seeks to raise"
+  },
+  {
+   "kind": "cont",
+   "line": "the dead #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "trapped in AMBER."
+  }
+ ],
+ "Museum1FScientist1AmberIsFossilizedTreeSapText": [
+  {
+   "kind": "text",
+   "line": "AMBER is fossil-"
+  },
+  {
+   "kind": "line",
+   "line": "ized tree sap."
+  }
+ ],
+ "Museum1FScientist1GoToOtherSideText": [
+  {
+   "kind": "text",
+   "line": "Do go to the"
+  },
+  {
+   "kind": "line",
+   "line": "other side!"
+  }
+ ],
+ "Museum1FScientist1TakePlentyOfTimeText": [
+  {
+   "kind": "text",
+   "line": "Take all the"
+  },
+  {
+   "kind": "line",
+   "line": "time you need!"
+  }
+ ],
+ "Museum1FGamblerText": [
+  {
+   "kind": "text",
+   "line": "That is one"
+  },
+  {
+   "kind": "line",
+   "line": "magnificent, dead"
+  },
+  {
+   "kind": "cont",
+   "line": "fossil!"
+  }
+ ],
+ "Museum1FScientist2TakeThisToAPokemonLabText": [
+  {
+   "kind": "text",
+   "line": "Ssh! I believe"
+  },
+  {
+   "kind": "line",
+   "line": "this AMBER holds"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON DNA!"
+  },
+  {
+   "kind": "para",
+   "line": "How grand it"
+  },
+  {
+   "kind": "line",
+   "line": "would be, to"
+  },
+  {
+   "kind": "cont",
+   "line": "raise #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "from the dead!"
+  },
+  {
+   "kind": "para",
+   "line": "But my colleagues"
+  },
+  {
+   "kind": "line",
+   "line": "scorn me for it!"
+  },
+  {
+   "kind": "para",
+   "line": "So I beg a favor"
+  },
+  {
+   "kind": "line",
+   "line": "of you!"
+  },
+  {
+   "kind": "para",
+   "line": "Carry this to a"
+  },
+  {
+   "kind": "line",
+   "line": "#MON LAB, and"
+  },
+  {
+   "kind": "cont",
+   "line": "have it examined!"
+  }
+ ],
+ "Museum1FScientist2ReceivedOldAmberText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "OLD AMBER!@"
+  }
+ ],
+ "Museum1FScientist2GetTheOldAmberCheckText": [
+  {
+   "kind": "text",
+   "line": "Ssh! Have the OLD"
+  },
+  {
+   "kind": "line",
+   "line": "AMBER examined!"
+  }
+ ],
+ "Museum1FScientist2YouDontHaveSpaceText": [
+  {
+   "kind": "text",
+   "line": "You've no room"
+  },
+  {
+   "kind": "line",
+   "line": "for this!"
+  }
+ ],
+ "Museum1FScientist3Text": [
+  {
+   "kind": "text",
+   "line": "We take pride in"
+  },
+  {
+   "kind": "line",
+   "line": "2 fossils of very"
+  },
+  {
+   "kind": "cont",
+   "line": "rare, ancient"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON!"
+  }
+ ],
+ "Museum1FOldAmberText": [
+  {
+   "kind": "text",
+   "line": "The AMBER is"
+  },
+  {
+   "kind": "line",
+   "line": "clear and gold!"
+  }
+ ]
+}

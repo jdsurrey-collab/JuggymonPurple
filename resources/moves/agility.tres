@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_yvdp0"]
+
+[resource]
+script = ExtResource("1_yvdp0")
+move_name = "AGILITY"
+move_id = 97
+display_name = "AGILITY"
+move_type = "PSYCHIC_TYPE"
+power = 0
+accuracy = 100
+pp = 30
+effect = "SPEED_UP2_EFFECT"

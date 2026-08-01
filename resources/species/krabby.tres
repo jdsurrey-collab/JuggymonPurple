@@ -1,0 +1,96 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=38 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/krabby.png" id="1_gph5o"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_jwqlm"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/krabby.png" id="3_48gbe"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_giwgx"]
+[ext_resource type="Resource" path="res://resources/moves/vicegrip.tres" id="5_i1t7y"]
+[ext_resource type="Resource" path="res://resources/moves/guillotine.tres" id="6_asogo"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="7_85qwe"]
+[ext_resource type="Resource" path="res://resources/moves/crabhammer.tres" id="8_1rvs4"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="9_5qgd8"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_gfn1h"]
+[ext_resource type="Resource" path="res://resources/moves/bubble.tres" id="11_khnq7"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_lbybc"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_0pno4"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="14_srge6"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_6kc6e"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_de2j6"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_vg0dg"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_i4dda"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="19_rs17p"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="20_omdfx"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="21_fpnsq"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="22_waiqv"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="23_j4yto"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="24_y7no6"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="25_g0w8t"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="26_bjeh1"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="27_uqwdv"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="28_2u3xl"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="29_eqt3e"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="30_tkfr3"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="31_g5gb0"]
+
+[sub_resource type="Resource" id="Resource_xris7"]
+script = ExtResource("2_jwqlm")
+method = "LEVEL"
+target = "KINGLER"
+level = 28
+item = ""
+
+[sub_resource type="Resource" id="Resource_7ku76"]
+script = ExtResource("4_giwgx")
+level = 20
+move = ExtResource("5_i1t7y")
+
+[sub_resource type="Resource" id="Resource_bge08"]
+script = ExtResource("4_giwgx")
+level = 25
+move = ExtResource("6_asogo")
+
+[sub_resource type="Resource" id="Resource_kdjkg"]
+script = ExtResource("4_giwgx")
+level = 30
+move = ExtResource("7_85qwe")
+
+[sub_resource type="Resource" id="Resource_1o5cw"]
+script = ExtResource("4_giwgx")
+level = 35
+move = ExtResource("8_1rvs4")
+
+[sub_resource type="Resource" id="Resource_48e4f"]
+script = ExtResource("4_giwgx")
+level = 40
+move = ExtResource("9_5qgd8")
+
+[resource]
+script = ExtResource("13_0pno4")
+species_name = "KRABBY"
+dex = 98
+index = 78
+slug = "krabby"
+label = "Krabby"
+category = "RIVER CRAB"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 140
+hp = 30
+attack = 105
+defense = 90
+speed = 50
+special = 25
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 225
+base_exp = 115
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_gfn1h")]([ExtResource("11_khnq7"), ExtResource("12_lbybc")])
+learnset = Array[ExtResource("4_giwgx")]([SubResource("Resource_7ku76"), SubResource("Resource_bge08"), SubResource("Resource_kdjkg"), SubResource("Resource_1o5cw"), SubResource("Resource_48e4f")])
+tmhm = Array[ExtResource("10_gfn1h")]([ExtResource("14_srge6"), ExtResource("15_6kc6e"), ExtResource("16_de2j6"), ExtResource("17_vg0dg"), ExtResource("18_i4dda"), ExtResource("19_rs17p"), ExtResource("20_omdfx"), ExtResource("21_fpnsq"), ExtResource("22_waiqv"), ExtResource("23_j4yto"), ExtResource("24_y7no6"), ExtResource("25_g0w8t"), ExtResource("26_bjeh1"), ExtResource("27_uqwdv"), ExtResource("28_2u3xl"), ExtResource("29_eqt3e"), ExtResource("30_tkfr3"), ExtResource("31_g5gb0")])
+evolutions = Array[ExtResource("2_jwqlm")]([SubResource("Resource_xris7")])
+palette = "PAL_REDMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["Its pincers are", "not only powerful", "weapons, they are", "used for balance", "when walking", "sideways"])
+front_sprite = ExtResource("3_48gbe")
+back_sprite = ExtResource("1_gph5o")

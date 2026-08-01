@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_64ps7"]
+
+[resource]
+script = ExtResource("1_64ps7")
+move_name = "THRASH"
+move_id = 37
+display_name = "THRASH"
+move_type = "NORMAL"
+power = 90
+accuracy = 100
+pp = 20
+effect = "THRASH_PETAL_DANCE_EFFECT"

@@ -1,0 +1,38 @@
+{
+ "ViridianForestSouthGateGirlText": [
+  {
+   "kind": "text",
+   "line": "Bound for the"
+  },
+  {
+   "kind": "line",
+   "line": "FOREST? Mind"
+  },
+  {
+   "kind": "cont",
+   "line": "yourself- it's"
+  },
+  {
+   "kind": "cont",
+   "line": "a maze that eats."
+  }
+ ],
+ "ViridianForestSouthGateLittleGirlText": [
+  {
+   "kind": "text",
+   "line": "RATTATA's small,"
+  },
+  {
+   "kind": "line",
+   "line": "but its bite"
+  },
+  {
+   "kind": "cont",
+   "line": "festers. Have you"
+  },
+  {
+   "kind": "cont",
+   "line": "caught one yet?"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "Route12Gate1FGuardText": [
+  {
+   "kind": "text",
+   "line": "A lookout waits"
+  },
+  {
+   "kind": "line",
+   "line": "upstairs."
+  }
+ ]
+}

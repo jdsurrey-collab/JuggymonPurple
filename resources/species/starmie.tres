@@ -1,0 +1,67 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/starmie.png" id="1_ew873"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_vbmc1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/starmie.png" id="3_ddheo"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_q16r0"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="5_lxvra"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="6_lr81f"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="7_tp5mp"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="8_kykih"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="9_oyowj"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="10_stu2m"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="11_nkgio"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="12_a5umd"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="13_yc5tn"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="14_m634r"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="15_74aqx"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="16_sfkl0"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="17_urj37"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="18_wmred"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="19_tqj53"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="20_icu2u"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="21_ttqsv"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="22_7udhw"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="23_w5clu"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="24_l1bhe"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="25_ccx6k"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="26_1p81a"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="27_leppb"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="28_k4oav"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="29_l7spq"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="30_vtedp"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="31_fcm7j"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="32_ior0i"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="33_xboxw"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="34_jnqwq"]
+
+[resource]
+script = ExtResource("9_oyowj")
+species_name = "STARMIE"
+dex = 121
+index = 152
+slug = "starmie"
+label = "Starmie"
+category = "MYSTERIOUS"
+height_ft = 3
+height_in = 7
+weight_tenths_lb = 1760
+hp = 60
+attack = 75
+defense = 85
+speed = 115
+special = 100
+type1 = "WATER"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 60
+base_exp = 207
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("5_lxvra")]([ExtResource("6_lr81f"), ExtResource("7_tp5mp"), ExtResource("8_kykih")])
+learnset = Array[ExtResource("4_q16r0")]([])
+tmhm = Array[ExtResource("5_lxvra")]([ExtResource("10_stu2m"), ExtResource("11_nkgio"), ExtResource("12_a5umd"), ExtResource("13_yc5tn"), ExtResource("7_tp5mp"), ExtResource("14_m634r"), ExtResource("15_74aqx"), ExtResource("16_sfkl0"), ExtResource("17_urj37"), ExtResource("18_wmred"), ExtResource("19_tqj53"), ExtResource("20_icu2u"), ExtResource("21_ttqsv"), ExtResource("22_7udhw"), ExtResource("23_w5clu"), ExtResource("24_l1bhe"), ExtResource("25_ccx6k"), ExtResource("26_1p81a"), ExtResource("27_leppb"), ExtResource("28_k4oav"), ExtResource("29_l7spq"), ExtResource("30_vtedp"), ExtResource("31_fcm7j"), ExtResource("32_ior0i"), ExtResource("33_xboxw"), ExtResource("34_jnqwq")])
+evolutions = Array[ExtResource("2_vbmc1")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_HELIX"
+dex_text = Array[String](["Its central core", "glows with the", "seven colors of", "the rainbow. Some", "people value the", "core as a gem"])
+front_sprite = ExtResource("3_ddheo")
+back_sprite = ExtResource("1_ew873")

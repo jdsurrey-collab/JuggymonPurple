@@ -1,0 +1,26 @@
+{
+ "SafariZoneCenterRestHouseSignText": [
+  {
+   "kind": "text",
+   "line": "REST HOUSE"
+  }
+ ],
+ "SafariZoneCenterTrainerTipsSignText": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Press START to"
+  },
+  {
+   "kind": "line",
+   "line": "see how much"
+  },
+  {
+   "kind": "cont",
+   "line": "time remains!"
+  }
+ ]
+}

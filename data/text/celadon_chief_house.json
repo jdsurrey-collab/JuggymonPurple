@@ -1,0 +1,60 @@
+{
+ "CeladonChiefHouseChiefText": [
+  {
+   "kind": "text",
+   "line": "Hehehe! The slots"
+  },
+  {
+   "kind": "line",
+   "line": "reel in coin,"
+  },
+  {
+   "kind": "cont",
+   "line": "hand over fist!"
+  }
+ ],
+ "CeladonChiefHouseRocketText": [
+  {
+   "kind": "text",
+   "line": "CHIEF!"
+  },
+  {
+   "kind": "para",
+   "line": "We've shipped"
+  },
+  {
+   "kind": "line",
+   "line": "2000 #MON as"
+  },
+  {
+   "kind": "cont",
+   "line": "slot machine"
+  },
+  {
+   "kind": "cont",
+   "line": "prizes!"
+  }
+ ],
+ "CeladonChiefHouseSailorText": [
+  {
+   "kind": "text",
+   "line": "Don't touch the"
+  },
+  {
+   "kind": "line",
+   "line": "poster at the"
+  },
+  {
+   "kind": "cont",
+   "line": "GAME CORNER!"
+  },
+  {
+   "kind": "para",
+   "line": "There's no hidden"
+  },
+  {
+   "kind": "line",
+   "line": "switch behind it!"
+  }
+ ]
+}

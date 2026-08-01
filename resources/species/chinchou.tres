@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=37 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/chinchou.png" id="1_ft4uh"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_oq12d"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/chinchou.png" id="3_b41du"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_eqfnu"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="5_nr1ms"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="6_ygla6"]
+[ext_resource type="Resource" path="res://resources/moves/spark.tres" id="7_og64c"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="8_jn4jh"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="9_tppm0"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="10_2jawb"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_rvtk1"]
+[ext_resource type="Resource" path="res://resources/moves/bubble.tres" id="12_btthb"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="13_yc4y6"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_jcyl6"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_ejhr7"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_3rxjh"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_0mhcc"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_4r3ad"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_0lthr"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_p3bfm"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_rk2rb"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_fjegl"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="23_vlbfk"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="24_uss11"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="25_owe56"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="26_qnpju"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="27_n6l47"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="28_r5ulm"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="29_xcyyc"]
+
+[sub_resource type="Resource" id="Resource_p3bhy"]
+script = ExtResource("2_oq12d")
+method = "LEVEL"
+target = "LANTURN"
+level = 27
+item = ""
+
+[sub_resource type="Resource" id="Resource_iixvx"]
+script = ExtResource("4_eqfnu")
+level = 5
+move = ExtResource("5_nr1ms")
+
+[sub_resource type="Resource" id="Resource_f0boj"]
+script = ExtResource("4_eqfnu")
+level = 17
+move = ExtResource("6_ygla6")
+
+[sub_resource type="Resource" id="Resource_mnmyh"]
+script = ExtResource("4_eqfnu")
+level = 25
+move = ExtResource("7_og64c")
+
+[sub_resource type="Resource" id="Resource_15fok"]
+script = ExtResource("4_eqfnu")
+level = 29
+move = ExtResource("8_jn4jh")
+
+[sub_resource type="Resource" id="Resource_wfbkd"]
+script = ExtResource("4_eqfnu")
+level = 37
+move = ExtResource("9_tppm0")
+
+[sub_resource type="Resource" id="Resource_c82qd"]
+script = ExtResource("4_eqfnu")
+level = 41
+move = ExtResource("10_2jawb")
+
+[resource]
+script = ExtResource("14_jcyl6")
+species_name = "CHINCHOU"
+dex = 170
+index = 115
+slug = "chinchou"
+label = "Chinchou"
+category = "ANGLER"
+height_ft = 1
+height_in = 8
+weight_tenths_lb = 260
+hp = 75
+attack = 38
+defense = 38
+speed = 67
+special = 56
+type1 = "WATER"
+type2 = "ELECTRIC"
+catch_rate = 190
+base_exp = 90
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("11_rvtk1")]([ExtResource("12_btthb"), ExtResource("13_yc4y6")])
+learnset = Array[ExtResource("4_eqfnu")]([SubResource("Resource_iixvx"), SubResource("Resource_f0boj"), SubResource("Resource_mnmyh"), SubResource("Resource_15fok"), SubResource("Resource_wfbkd"), SubResource("Resource_c82qd")])
+tmhm = Array[ExtResource("11_rvtk1")]([ExtResource("15_ejhr7"), ExtResource("16_3rxjh"), ExtResource("17_0mhcc"), ExtResource("18_4r3ad"), ExtResource("19_0lthr"), ExtResource("20_p3bfm"), ExtResource("21_rk2rb"), ExtResource("22_fjegl"), ExtResource("23_vlbfk"), ExtResource("6_ygla6"), ExtResource("24_uss11"), ExtResource("25_owe56"), ExtResource("26_qnpju"), ExtResource("27_n6l47"), ExtResource("28_r5ulm"), ExtResource("13_yc4y6"), ExtResource("29_xcyyc")])
+evolutions = Array[ExtResource("2_oq12d")]([SubResource("Resource_p3bhy")])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["Its lamps burn in", "the lightless", "deep, luring what", "is curious near", "enough to take."])
+front_sprite = ExtResource("3_b41du")
+back_sprite = ExtResource("1_ft4uh")

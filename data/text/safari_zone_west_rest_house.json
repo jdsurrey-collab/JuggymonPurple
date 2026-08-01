@@ -1,0 +1,56 @@
+{
+ "SafariZoneWestRestHouseScientistText": [
+  {
+   "kind": "text",
+   "line": "Tossing ROCKs at"
+  },
+  {
+   "kind": "line",
+   "line": "#MON may make"
+  },
+  {
+   "kind": "cont",
+   "line": "them flee, but"
+  },
+  {
+   "kind": "cont",
+   "line": "they'll be easier"
+  },
+  {
+   "kind": "cont",
+   "line": "to trap after."
+  }
+ ],
+ "SafariZoneWestRestHouseCooltrainerMText": [
+  {
+   "kind": "text",
+   "line": "Using BAIT will"
+  },
+  {
+   "kind": "line",
+   "line": "make #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "easier to trap."
+  }
+ ],
+ "SafariZoneWestRestHouseSilphWorkerFText": [
+  {
+   "kind": "text",
+   "line": "I hiked so far,"
+  },
+  {
+   "kind": "line",
+   "line": "yet saw no"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON worth"
+  },
+  {
+   "kind": "cont",
+   "line": "the trouble."
+  }
+ ]
+}

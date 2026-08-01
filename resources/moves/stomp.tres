@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_rnb0t"]
+
+[resource]
+script = ExtResource("1_rnb0t")
+move_name = "STOMP"
+move_id = 23
+display_name = "STOMP"
+move_type = "NORMAL"
+power = 65
+accuracy = 100
+pp = 20
+effect = "FLINCH_SIDE_EFFECT2"

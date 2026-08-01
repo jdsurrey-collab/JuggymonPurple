@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_358pl"]
+
+[resource]
+script = ExtResource("1_358pl")
+move_name = "POUND"
+move_id = 1
+display_name = "POUND"
+move_type = "NORMAL"
+power = 40
+accuracy = 100
+pp = 35
+effect = "NO_ADDITIONAL_EFFECT"

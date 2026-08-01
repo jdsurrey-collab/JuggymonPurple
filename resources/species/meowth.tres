@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/meowth.png" id="1_s8ow5"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_3q2gc"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/meowth.png" id="3_l4sb4"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_qwxkd"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="5_ahn74"]
+[ext_resource type="Resource" path="res://resources/moves/pay_day.tres" id="6_6bj7g"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="7_t632x"]
+[ext_resource type="Resource" path="res://resources/moves/fury_swipes.tres" id="8_ll033"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="9_vuni3"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_rfm4f"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="11_seot0"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="12_l54ao"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_hc2mp"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_jdq3x"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_3vees"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_idkeo"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_mlb14"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="18_4qx2j"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="19_i8je6"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="20_la2iy"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="21_2c3k2"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="22_g2l8x"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="23_dp0yw"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="24_2vfm1"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="25_dj1s1"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="26_qfbp7"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="27_6ulmh"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="28_hrfmi"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="29_oqod1"]
+
+[sub_resource type="Resource" id="Resource_4ykk7"]
+script = ExtResource("2_3q2gc")
+method = "LEVEL"
+target = "PERSIAN"
+level = 28
+item = ""
+
+[sub_resource type="Resource" id="Resource_nc0o2"]
+script = ExtResource("4_qwxkd")
+level = 12
+move = ExtResource("5_ahn74")
+
+[sub_resource type="Resource" id="Resource_xr4qs"]
+script = ExtResource("4_qwxkd")
+level = 17
+move = ExtResource("6_6bj7g")
+
+[sub_resource type="Resource" id="Resource_c64mw"]
+script = ExtResource("4_qwxkd")
+level = 24
+move = ExtResource("7_t632x")
+
+[sub_resource type="Resource" id="Resource_ggh6s"]
+script = ExtResource("4_qwxkd")
+level = 33
+move = ExtResource("8_ll033")
+
+[sub_resource type="Resource" id="Resource_u5kwm"]
+script = ExtResource("4_qwxkd")
+level = 44
+move = ExtResource("9_vuni3")
+
+[resource]
+script = ExtResource("13_hc2mp")
+species_name = "MEOWTH"
+dex = 52
+index = 77
+slug = "meowth"
+label = "Meowth"
+category = "SCRATCHCAT"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 90
+hp = 40
+attack = 45
+defense = 35
+speed = 90
+special = 40
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 255
+base_exp = 69
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_rfm4f")]([ExtResource("11_seot0"), ExtResource("12_l54ao")])
+learnset = Array[ExtResource("4_qwxkd")]([SubResource("Resource_nc0o2"), SubResource("Resource_xr4qs"), SubResource("Resource_c64mw"), SubResource("Resource_ggh6s"), SubResource("Resource_u5kwm")])
+tmhm = Array[ExtResource("10_rfm4f")]([ExtResource("14_jdq3x"), ExtResource("15_3vees"), ExtResource("16_idkeo"), ExtResource("17_mlb14"), ExtResource("18_4qx2j"), ExtResource("19_i8je6"), ExtResource("6_6bj7g"), ExtResource("20_la2iy"), ExtResource("21_2c3k2"), ExtResource("22_g2l8x"), ExtResource("23_dp0yw"), ExtResource("24_2vfm1"), ExtResource("25_dj1s1"), ExtResource("26_qfbp7"), ExtResource("27_6ulmh"), ExtResource("28_hrfmi"), ExtResource("29_oqod1")])
+evolutions = Array[ExtResource("2_3q2gc")]([SubResource("Resource_4ykk7")])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Adores circular", "objects. Wanders", "the streets on a", "nightly basis to", "look for dropped", "loose change"])
+front_sprite = ExtResource("3_l4sb4")
+back_sprite = ExtResource("1_s8ow5")

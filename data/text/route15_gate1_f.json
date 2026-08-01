@@ -1,0 +1,20 @@
+{
+ "Route15Gate1FGuardText": [
+  {
+   "kind": "text",
+   "line": "Do you keep the"
+  },
+  {
+   "kind": "line",
+   "line": "grim #DEX?"
+  },
+  {
+   "kind": "para",
+   "line": "PROF.OAK's AIDE"
+  },
+  {
+   "kind": "line",
+   "line": "passed this way."
+  }
+ ]
+}

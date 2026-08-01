@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=55 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/mewtwo.png" id="1_7hm0p"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_tuchc"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/mewtwo.png" id="3_1m2fn"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_fwhe3"]
+[ext_resource type="Resource" path="res://resources/moves/barrier.tres" id="5_gfkd2"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="6_cf0fc"]
+[ext_resource type="Resource" path="res://resources/moves/recover.tres" id="7_4jayj"]
+[ext_resource type="Resource" path="res://resources/moves/mist.tres" id="8_41kbr"]
+[ext_resource type="Resource" path="res://resources/moves/amnesia.tres" id="9_eqo0v"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_udxyw"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="11_mkhjp"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="12_1e34u"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="13_pqnbb"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_a5gg7"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="15_bukah"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="16_0bfxp"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_dklce"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="18_tbj36"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_amy1y"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_t2em1"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="21_cgd0b"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="22_vgqua"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="23_20gcv"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="24_kol5j"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="25_wgf7j"]
+[ext_resource type="Resource" path="res://resources/moves/pay_day.tres" id="26_srlsb"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="27_rg4dp"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="28_appyd"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="29_3pqnn"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="30_f1v2r"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="31_glqsw"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="32_ccwdq"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="33_hskkm"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="34_eorif"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="35_5gnkb"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="36_uhhe5"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="37_qsl5t"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="38_edp7r"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="39_q3ytm"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="40_so03b"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="41_7t76g"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="42_la0qm"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="43_r8jrl"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="44_eygy4"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="45_mj2ct"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="46_seu2p"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="47_odjni"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="48_24na8"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="49_naghr"]
+
+[sub_resource type="Resource" id="Resource_chu3n"]
+script = ExtResource("4_fwhe3")
+level = 63
+move = ExtResource("5_gfkd2")
+
+[sub_resource type="Resource" id="Resource_b0p6o"]
+script = ExtResource("4_fwhe3")
+level = 66
+move = ExtResource("6_cf0fc")
+
+[sub_resource type="Resource" id="Resource_byf43"]
+script = ExtResource("4_fwhe3")
+level = 70
+move = ExtResource("7_4jayj")
+
+[sub_resource type="Resource" id="Resource_vosbu"]
+script = ExtResource("4_fwhe3")
+level = 75
+move = ExtResource("8_41kbr")
+
+[sub_resource type="Resource" id="Resource_341t4"]
+script = ExtResource("4_fwhe3")
+level = 81
+move = ExtResource("9_eqo0v")
+
+[resource]
+script = ExtResource("14_a5gg7")
+species_name = "MEWTWO"
+dex = 150
+index = 131
+slug = "mewtwo"
+label = "Mewtwo"
+category = "GENETIC"
+height_ft = 6
+height_in = 7
+weight_tenths_lb = 2690
+hp = 106
+attack = 110
+defense = 90
+speed = 130
+special = 154
+type1 = "PSYCHIC_TYPE"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 3
+base_exp = 220
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("10_udxyw")]([ExtResource("11_mkhjp"), ExtResource("12_1e34u"), ExtResource("13_pqnbb"), ExtResource("6_cf0fc")])
+learnset = Array[ExtResource("4_fwhe3")]([SubResource("Resource_chu3n"), SubResource("Resource_b0p6o"), SubResource("Resource_byf43"), SubResource("Resource_vosbu"), SubResource("Resource_341t4")])
+tmhm = Array[ExtResource("10_udxyw")]([ExtResource("15_bukah"), ExtResource("16_0bfxp"), ExtResource("17_dklce"), ExtResource("18_tbj36"), ExtResource("19_amy1y"), ExtResource("20_t2em1"), ExtResource("21_cgd0b"), ExtResource("22_vgqua"), ExtResource("23_20gcv"), ExtResource("24_kol5j"), ExtResource("25_wgf7j"), ExtResource("26_srlsb"), ExtResource("27_rg4dp"), ExtResource("28_appyd"), ExtResource("29_3pqnn"), ExtResource("30_f1v2r"), ExtResource("31_glqsw"), ExtResource("32_ccwdq"), ExtResource("33_hskkm"), ExtResource("6_cf0fc"), ExtResource("34_eorif"), ExtResource("35_5gnkb"), ExtResource("36_uhhe5"), ExtResource("37_qsl5t"), ExtResource("38_edp7r"), ExtResource("39_q3ytm"), ExtResource("40_so03b"), ExtResource("41_7t76g"), ExtResource("42_la0qm"), ExtResource("43_r8jrl"), ExtResource("44_eygy4"), ExtResource("45_mj2ct"), ExtResource("46_seu2p"), ExtResource("47_odjni"), ExtResource("48_24na8"), ExtResource("49_naghr")])
+evolutions = Array[ExtResource("2_tuchc")]([])
+palette = "PAL_MEWMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It was created by", "a scientist after", "years of horrific", "gene splicing and", "DNA engineering", "experiments"])
+front_sprite = ExtResource("3_1m2fn")
+back_sprite = ExtResource("1_7hm0p")

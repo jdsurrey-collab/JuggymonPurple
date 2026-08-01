@@ -1,0 +1,106 @@
+{
+ "SilphCo3FSilphWorkerMWhatShouldIDoText": [
+  {
+   "kind": "text",
+   "line": "I serve SILPH."
+  },
+  {
+   "kind": "line",
+   "line": "What shall I do?"
+  }
+ ],
+ "SilphCo3FSilphWorkerMYouSavedUsText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER>! You and"
+  },
+  {
+   "kind": "line",
+   "line": "your #MON have"
+  },
+  {
+   "kind": "cont",
+   "line": "delivered us!"
+  }
+ ],
+ "SilphCo3FRocketBattleText": [
+  {
+   "kind": "text",
+   "line": "Quit meddling"
+  },
+  {
+   "kind": "line",
+   "line": "with us, child!"
+  }
+ ],
+ "SilphCo3FRocketEndBattleText": [
+  {
+   "kind": "text",
+   "line": "I give"
+  },
+  {
+   "kind": "line",
+   "line": "up!"
+  }
+ ],
+ "SilphCo3FRocketAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "A hint? You may"
+  },
+  {
+   "kind": "line",
+   "line": "open doors with a"
+  },
+  {
+   "kind": "cont",
+   "line": "CARD KEY!"
+  }
+ ],
+ "SilphCo3FScientistBattleText": [
+  {
+   "kind": "text",
+   "line": "I favor TEAM"
+  },
+  {
+   "kind": "line",
+   "line": "ROCKET more than"
+  },
+  {
+   "kind": "cont",
+   "line": "I favor SILPH!"
+  }
+ ],
+ "SilphCo3FScientistEndBattleText": [
+  {
+   "kind": "text",
+   "line": "You"
+  },
+  {
+   "kind": "line",
+   "line": "truly bested me!"
+  }
+ ],
+ "SilphCo3FScientistAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Humph..."
+  },
+  {
+   "kind": "para",
+   "line": "TEAM ROCKET swore"
+  },
+  {
+   "kind": "line",
+   "line": "that if I served"
+  },
+  {
+   "kind": "cont",
+   "line": "them, they'd let"
+  },
+  {
+   "kind": "cont",
+   "line": "me study #MON!"
+  }
+ ]
+}

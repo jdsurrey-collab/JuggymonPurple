@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=37 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/raticate.png" id="1_0lwlx"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_fliob"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/raticate.png" id="3_drrq8"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_5l6dr"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="5_sic25"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_fang.tres" id="6_rp8k7"]
+[ext_resource type="Resource" path="res://resources/moves/focus_energy.tres" id="7_wrnj5"]
+[ext_resource type="Resource" path="res://resources/moves/super_fang.tres" id="8_5jcfd"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_uec0h"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="10_ytdkx"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="11_0qjna"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_8keth"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_0wrqb"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="14_q8qoq"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_y66da"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_ifmrj"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="17_avwja"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="18_y3758"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="19_qhbeg"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="20_whbng"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="21_djr80"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="22_bmnn0"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="23_hpu13"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="24_38u8y"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="25_n0r73"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="26_vkvyr"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="27_osd1r"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="28_egl0d"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="29_v6r78"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="30_2m78g"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="31_hndur"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="32_4vplg"]
+
+[sub_resource type="Resource" id="Resource_5bikr"]
+script = ExtResource("4_5l6dr")
+level = 7
+move = ExtResource("5_sic25")
+
+[sub_resource type="Resource" id="Resource_y3r4a"]
+script = ExtResource("4_5l6dr")
+level = 14
+move = ExtResource("6_rp8k7")
+
+[sub_resource type="Resource" id="Resource_qxf71"]
+script = ExtResource("4_5l6dr")
+level = 27
+move = ExtResource("7_wrnj5")
+
+[sub_resource type="Resource" id="Resource_sqhn4"]
+script = ExtResource("4_5l6dr")
+level = 41
+move = ExtResource("8_5jcfd")
+
+[resource]
+script = ExtResource("12_8keth")
+species_name = "RATICATE"
+dex = 20
+index = 166
+slug = "raticate"
+label = "Raticate"
+category = "RAT"
+height_ft = 2
+height_in = 4
+weight_tenths_lb = 410
+hp = 55
+attack = 81
+defense = 60
+speed = 97
+special = 50
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 90
+base_exp = 116
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("9_uec0h")]([ExtResource("10_ytdkx"), ExtResource("11_0qjna"), ExtResource("5_sic25")])
+learnset = Array[ExtResource("4_5l6dr")]([SubResource("Resource_5bikr"), SubResource("Resource_y3r4a"), SubResource("Resource_qxf71"), SubResource("Resource_sqhn4")])
+tmhm = Array[ExtResource("9_uec0h")]([ExtResource("13_0wrqb"), ExtResource("14_q8qoq"), ExtResource("15_y66da"), ExtResource("16_ifmrj"), ExtResource("17_avwja"), ExtResource("18_y3758"), ExtResource("19_qhbeg"), ExtResource("20_whbng"), ExtResource("21_djr80"), ExtResource("22_bmnn0"), ExtResource("23_hpu13"), ExtResource("24_38u8y"), ExtResource("25_n0r73"), ExtResource("26_vkvyr"), ExtResource("27_osd1r"), ExtResource("28_egl0d"), ExtResource("29_v6r78"), ExtResource("30_2m78g"), ExtResource("31_hndur"), ExtResource("32_4vplg")])
+evolutions = Array[ExtResource("2_fliob")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It uses its whis-", "kers to maintain", "its balance.", "It apparently", "slows down if", "they are cut off"])
+front_sprite = ExtResource("3_drrq8")
+back_sprite = ExtResource("1_0lwlx")

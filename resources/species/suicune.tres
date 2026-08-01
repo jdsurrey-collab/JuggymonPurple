@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/suicune.png" id="1_i7e4q"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_685da"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/suicune.png" id="3_y4vrq"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_04ts7"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="5_c1txu"]
+[ext_resource type="Resource" path="res://resources/moves/roar.tres" id="6_tqqxy"]
+[ext_resource type="Resource" path="res://resources/moves/gust.tres" id="7_1vfiy"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="8_3jm3j"]
+[ext_resource type="Resource" path="res://resources/moves/mist.tres" id="9_7teow"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="10_i4ipm"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_nm80e"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="12_iop38"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="13_jorj5"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_aqp1r"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_hgow0"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_6maqg"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_wpjwv"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_1ghph"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_5s2bn"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_i83qa"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_hpbb5"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_a0p56"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="23_7bhb3"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="24_2fsdh"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="25_anm22"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="26_7mvos"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="27_5imso"]
+
+[sub_resource type="Resource" id="Resource_ij6kk"]
+script = ExtResource("4_04ts7")
+level = 11
+move = ExtResource("5_c1txu")
+
+[sub_resource type="Resource" id="Resource_iov7u"]
+script = ExtResource("4_04ts7")
+level = 21
+move = ExtResource("6_tqqxy")
+
+[sub_resource type="Resource" id="Resource_xwkoo"]
+script = ExtResource("4_04ts7")
+level = 31
+move = ExtResource("7_1vfiy")
+
+[sub_resource type="Resource" id="Resource_sxf33"]
+script = ExtResource("4_04ts7")
+level = 41
+move = ExtResource("8_3jm3j")
+
+[sub_resource type="Resource" id="Resource_5mrpv"]
+script = ExtResource("4_04ts7")
+level = 51
+move = ExtResource("9_7teow")
+
+[sub_resource type="Resource" id="Resource_g8rc7"]
+script = ExtResource("4_04ts7")
+level = 71
+move = ExtResource("10_i4ipm")
+
+[resource]
+script = ExtResource("14_aqp1r")
+species_name = "SUICUNE"
+dex = 235
+index = 238
+slug = "suicune"
+label = "Suicune"
+category = "AURORA"
+height_ft = 6
+height_in = 7
+weight_tenths_lb = 4120
+hp = 100
+attack = 75
+defense = 115
+speed = 85
+special = 102
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 3
+base_exp = 215
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("11_nm80e")]([ExtResource("12_iop38"), ExtResource("13_jorj5")])
+learnset = Array[ExtResource("4_04ts7")]([SubResource("Resource_ij6kk"), SubResource("Resource_iov7u"), SubResource("Resource_xwkoo"), SubResource("Resource_sxf33"), SubResource("Resource_5mrpv"), SubResource("Resource_g8rc7")])
+tmhm = Array[ExtResource("11_nm80e")]([ExtResource("15_hgow0"), ExtResource("16_6maqg"), ExtResource("17_wpjwv"), ExtResource("18_1ghph"), ExtResource("19_5s2bn"), ExtResource("20_i83qa"), ExtResource("21_hpbb5"), ExtResource("22_a0p56"), ExtResource("23_7bhb3"), ExtResource("5_c1txu"), ExtResource("8_3jm3j"), ExtResource("24_2fsdh"), ExtResource("25_anm22"), ExtResource("26_7mvos"), ExtResource("27_5imso")])
+evolutions = Array[ExtResource("2_685da")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["It runs the north", "wind and clears", "what water it", "touches. It will", "not touch ours."])
+front_sprite = ExtResource("3_y4vrq")
+back_sprite = ExtResource("1_i7e4q")

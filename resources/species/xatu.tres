@@ -1,0 +1,80 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/xatu.png" id="1_v4tdh"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_jre51"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/xatu.png" id="3_0u7m2"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_5imni"]
+[ext_resource type="Resource" path="res://resources/moves/night_shade.tres" id="5_btl57"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="6_yx2i4"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="7_h23ad"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="8_ct3h3"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_spsb0"]
+[ext_resource type="Resource" path="res://resources/moves/peck.tres" id="10_sl3bj"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="11_1t6no"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_xp6c7"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_h6qnw"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_wp5aj"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_tnt7x"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_b5oeb"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_p3eps"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_tycmo"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="19_gxjna"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="20_a6qti"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="21_4lamy"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="22_p63yg"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="23_fe7mx"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="24_8dyr3"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="25_yvb8k"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="26_py7tg"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="27_cmj3c"]
+
+[sub_resource type="Resource" id="Resource_5is1t"]
+script = ExtResource("4_5imni")
+level = 10
+move = ExtResource("5_btl57")
+
+[sub_resource type="Resource" id="Resource_1sase"]
+script = ExtResource("4_5imni")
+level = 20
+move = ExtResource("6_yx2i4")
+
+[sub_resource type="Resource" id="Resource_d1v70"]
+script = ExtResource("4_5imni")
+level = 50
+move = ExtResource("7_h23ad")
+
+[sub_resource type="Resource" id="Resource_t13kn"]
+script = ExtResource("4_5imni")
+level = 65
+move = ExtResource("8_ct3h3")
+
+[resource]
+script = ExtResource("12_xp6c7")
+species_name = "XATU"
+dex = 178
+index = 146
+slug = "xatu"
+label = "Xatu"
+category = "MYSTIC"
+height_ft = 4
+height_in = 11
+weight_tenths_lb = 330
+hp = 65
+attack = 75
+defense = 70
+speed = 95
+special = 82
+type1 = "PSYCHIC_TYPE"
+type2 = "FLYING"
+catch_rate = 75
+base_exp = 171
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("9_spsb0")]([ExtResource("10_sl3bj"), ExtResource("11_1t6no"), ExtResource("5_btl57")])
+learnset = Array[ExtResource("4_5imni")]([SubResource("Resource_5is1t"), SubResource("Resource_1sase"), SubResource("Resource_d1v70"), SubResource("Resource_t13kn")])
+tmhm = Array[ExtResource("9_spsb0")]([ExtResource("13_h6qnw"), ExtResource("14_wp5aj"), ExtResource("15_tnt7x"), ExtResource("16_b5oeb"), ExtResource("17_p3eps"), ExtResource("18_tycmo"), ExtResource("19_gxjna"), ExtResource("20_a6qti"), ExtResource("21_4lamy"), ExtResource("22_p63yg"), ExtResource("23_fe7mx"), ExtResource("24_8dyr3"), ExtResource("8_ct3h3"), ExtResource("25_yvb8k"), ExtResource("26_py7tg"), ExtResource("6_yx2i4"), ExtResource("27_cmj3c")])
+evolutions = Array[ExtResource("2_jre51")]([])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It stands all day", "unmoving. Some say", "it sees tomorrow", "and has decided", "not to interfere."])
+front_sprite = ExtResource("3_0u7m2")
+back_sprite = ExtResource("1_v4tdh")

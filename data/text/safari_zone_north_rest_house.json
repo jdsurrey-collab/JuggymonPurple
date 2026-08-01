@@ -1,0 +1,76 @@
+{
+ "SafariZoneNorthRestHouseScientistText": [
+  {
+   "kind": "text",
+   "line": "You may keep any"
+  },
+  {
+   "kind": "line",
+   "line": "item you find on"
+  },
+  {
+   "kind": "cont",
+   "line": "the ground here."
+  },
+  {
+   "kind": "para",
+   "line": "But you'll run"
+  },
+  {
+   "kind": "line",
+   "line": "out of time"
+  },
+  {
+   "kind": "cont",
+   "line": "chasing them all"
+  },
+  {
+   "kind": "cont",
+   "line": "at once!"
+  }
+ ],
+ "SafariZoneNorthRestHouseSafariZoneWorkerText": [
+  {
+   "kind": "text",
+   "line": "Reach the deepest"
+  },
+  {
+   "kind": "line",
+   "line": "part of the"
+  },
+  {
+   "kind": "cont",
+   "line": "SAFARI ZONE, and"
+  },
+  {
+   "kind": "cont",
+   "line": "win a prize!"
+  }
+ ],
+ "SafariZoneNorthRestHouseGentlemanText": [
+  {
+   "kind": "text",
+   "line": "My EEVEE became"
+  },
+  {
+   "kind": "line",
+   "line": "FLAREON!"
+  },
+  {
+   "kind": "para",
+   "line": "But a friend's"
+  },
+  {
+   "kind": "line",
+   "line": "EEVEE turned into"
+  },
+  {
+   "kind": "cont",
+   "line": "VAPOREON!"
+  },
+  {
+   "kind": "cont",
+   "line": "I wonder why?"
+  }
+ ]
+}

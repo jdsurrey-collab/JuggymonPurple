@@ -1,0 +1,34 @@
+{
+ "ViridianSchoolHouseBrunetteGirlText": [
+  {
+   "kind": "text",
+   "line": "I'm trying to"
+  },
+  {
+   "kind": "line",
+   "line": "commit these"
+  },
+  {
+   "kind": "cont",
+   "line": "notes to memory."
+  }
+ ],
+ "ViridianSchoolHouseCooltrainerFText": [
+  {
+   "kind": "text",
+   "line": "Mind you."
+  },
+  {
+   "kind": "para",
+   "line": "Read the board"
+  },
+  {
+   "kind": "line",
+   "line": "closely. It"
+  },
+  {
+   "kind": "cont",
+   "line": "matters, greatly."
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_njvq6"]
+
+[resource]
+script = ExtResource("1_njvq6")
+move_name = "ROAR"
+move_id = 46
+display_name = "ROAR"
+move_type = "NORMAL"
+power = 0
+accuracy = 100
+pp = 20
+effect = "SWITCH_AND_TELEPORT_EFFECT"

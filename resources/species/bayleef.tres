@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/bayleef.png" id="1_twrub"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_ckrqp"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/bayleef.png" id="3_2gcs2"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_4f8pb"]
+[ext_resource type="Resource" path="res://resources/moves/razor_leaf.tres" id="5_ibylu"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="6_yr4jq"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="7_gfn4i"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="8_6lnec"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="9_r2r08"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="10_4i8g1"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_ehukm"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_6k3du"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="13_dtue4"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_cwer8"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_6ev6u"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_hif7g"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_yhxnv"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_j66ok"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_sqrd8"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_gek0f"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_hfpwe"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_pxmxl"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="23_eybrk"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="24_fjdco"]
+
+[sub_resource type="Resource" id="Resource_elc8c"]
+script = ExtResource("2_ckrqp")
+method = "LEVEL"
+target = "MEGANIUM"
+level = 32
+item = ""
+
+[sub_resource type="Resource" id="Resource_hkn4v"]
+script = ExtResource("4_4f8pb")
+level = 8
+move = ExtResource("5_ibylu")
+
+[sub_resource type="Resource" id="Resource_x1cvr"]
+script = ExtResource("4_4f8pb")
+level = 12
+move = ExtResource("6_yr4jq")
+
+[sub_resource type="Resource" id="Resource_nhom5"]
+script = ExtResource("4_4f8pb")
+level = 15
+move = ExtResource("7_gfn4i")
+
+[sub_resource type="Resource" id="Resource_ssob5"]
+script = ExtResource("4_4f8pb")
+level = 31
+move = ExtResource("8_6lnec")
+
+[sub_resource type="Resource" id="Resource_yveh1"]
+script = ExtResource("4_4f8pb")
+level = 39
+move = ExtResource("9_r2r08")
+
+[sub_resource type="Resource" id="Resource_rkldg"]
+script = ExtResource("4_4f8pb")
+level = 55
+move = ExtResource("10_4i8g1")
+
+[resource]
+script = ExtResource("14_cwer8")
+species_name = "BAYLEEF"
+dex = 153
+index = 32
+slug = "bayleef"
+label = "Bayleef"
+category = "LEAF"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 350
+hp = 60
+attack = 62
+defense = 80
+speed = 60
+special = 71
+type1 = "GRASS"
+type2 = "GRASS"
+catch_rate = 45
+base_exp = 141
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_ehukm")]([ExtResource("12_6k3du"), ExtResource("13_dtue4"), ExtResource("5_ibylu"), ExtResource("6_yr4jq")])
+learnset = Array[ExtResource("4_4f8pb")]([SubResource("Resource_hkn4v"), SubResource("Resource_x1cvr"), SubResource("Resource_nhom5"), SubResource("Resource_ssob5"), SubResource("Resource_yveh1"), SubResource("Resource_rkldg")])
+tmhm = Array[ExtResource("11_ehukm")]([ExtResource("15_6ev6u"), ExtResource("16_hif7g"), ExtResource("17_yhxnv"), ExtResource("18_j66ok"), ExtResource("19_sqrd8"), ExtResource("20_gek0f"), ExtResource("21_hfpwe"), ExtResource("22_pxmxl"), ExtResource("10_4i8g1"), ExtResource("23_eybrk"), ExtResource("24_fjdco")])
+evolutions = Array[ExtResource("2_ckrqp")]([SubResource("Resource_elc8c")])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["Its spiced breath", "revives the faint", "and the dying.", "Physicians covet", "what it exhales."])
+front_sprite = ExtResource("3_2gcs2")
+back_sprite = ExtResource("1_twrub")

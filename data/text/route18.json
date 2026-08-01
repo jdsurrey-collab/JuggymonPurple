@@ -1,0 +1,124 @@
+{
+ "Route18CooltrainerM1BattleText": [
+  {
+   "kind": "text",
+   "line": "I comb every"
+  },
+  {
+   "kind": "line",
+   "line": "grassy patch for"
+  },
+  {
+   "kind": "cont",
+   "line": "new #MON."
+  }
+ ],
+ "Route18CooltrainerM1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Tch!"
+  }
+ ],
+ "Route18CooltrainerM1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I wish I owned"
+  },
+  {
+   "kind": "line",
+   "line": "a BIKE!"
+  }
+ ],
+ "Route18CooltrainerM2BattleText": [
+  {
+   "kind": "text",
+   "line": "Kurukkoo! Do you"
+  },
+  {
+   "kind": "line",
+   "line": "care for my bird"
+  },
+  {
+   "kind": "cont",
+   "line": "call?"
+  }
+ ],
+ "Route18CooltrainerM2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "had to trouble you!"
+  }
+ ],
+ "Route18CooltrainerM2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I gather sea"
+  },
+  {
+   "kind": "line",
+   "line": "#MON, come the"
+  },
+  {
+   "kind": "cont",
+   "line": "weekend's end!"
+  }
+ ],
+ "Route18CooltrainerM3BattleText": [
+  {
+   "kind": "text",
+   "line": "This ground is"
+  },
+  {
+   "kind": "line",
+   "line": "mine! Be gone!"
+  }
+ ],
+ "Route18CooltrainerM3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Darn!"
+  }
+ ],
+ "Route18CooltrainerM3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "This is my chosen"
+  },
+  {
+   "kind": "line",
+   "line": "hunting ground!"
+  }
+ ],
+ "Route18SignText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 18"
+  },
+  {
+   "kind": "line",
+   "line": "CELADON CITY -"
+  },
+  {
+   "kind": "cont",
+   "line": "FUCHSIA CITY"
+  }
+ ],
+ "Route18CyclingRoadSignText": [
+  {
+   "kind": "text",
+   "line": "CYCLING ROAD"
+  },
+  {
+   "kind": "line",
+   "line": "No one afoot may"
+  },
+  {
+   "kind": "cont",
+   "line": "pass!"
+  }
+ ]
+}

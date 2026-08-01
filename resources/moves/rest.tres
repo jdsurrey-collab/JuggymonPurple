@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_icj8a"]
+
+[resource]
+script = ExtResource("1_icj8a")
+move_name = "REST"
+move_id = 156
+display_name = "REST"
+move_type = "PSYCHIC_TYPE"
+power = 0
+accuracy = 100
+pp = 10
+effect = "HEAL_EFFECT"

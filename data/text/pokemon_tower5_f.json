@@ -1,0 +1,150 @@
+{
+ "PokemonTower5FChanneler1Text": [
+  {
+   "kind": "text",
+   "line": "Come, child. I've"
+  },
+  {
+   "kind": "line",
+   "line": "warded this place"
+  },
+  {
+   "kind": "cont",
+   "line": "with white magic."
+  },
+  {
+   "kind": "para",
+   "line": "Rest here, safe"
+  },
+  {
+   "kind": "line",
+   "line": "a while."
+  }
+ ],
+ "PokemonTower5FChanneler2BattleText": [
+  {
+   "kind": "text",
+   "line": "Give...me..."
+  },
+  {
+   "kind": "line",
+   "line": "your...soul..."
+  }
+ ],
+ "PokemonTower5FChanneler2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Gasp!"
+  }
+ ],
+ "PokemonTower5FChanneler2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I was under"
+  },
+  {
+   "kind": "line",
+   "line": "possession!"
+  }
+ ],
+ "PokemonTower5FChanneler3BattleText": [
+  {
+   "kind": "text",
+   "line": "You...shall..."
+  },
+  {
+   "kind": "line",
+   "line": "join...us..."
+  }
+ ],
+ "PokemonTower5FChanneler3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "What"
+  },
+  {
+   "kind": "line",
+   "line": "a nightmare!"
+  }
+ ],
+ "PokemonTower5FChanneler3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I was possessed!"
+  }
+ ],
+ "PokemonTower5FChanneler4BattleText": [
+  {
+   "kind": "text",
+   "line": "Zombies!"
+  }
+ ],
+ "PokemonTower5FChanneler4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ha?"
+  }
+ ],
+ "PokemonTower5FChanneler4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I regained my"
+  },
+  {
+   "kind": "line",
+   "line": "senses!"
+  }
+ ],
+ "PokemonTower5FChanneler5BattleText": [
+  {
+   "kind": "text",
+   "line": "Urgah..."
+  },
+  {
+   "kind": "line",
+   "line": "Urff...."
+  }
+ ],
+ "PokemonTower5FChanneler5EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Whoo!"
+  }
+ ],
+ "PokemonTower5FChanneler5AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I fell to evil"
+  },
+  {
+   "kind": "line",
+   "line": "spirits, despite"
+  },
+  {
+   "kind": "cont",
+   "line": "all my training."
+  }
+ ],
+ "PokemonTower5FPurifiedZoneText": [
+  {
+   "kind": "text",
+   "line": "Entered a warded,"
+  },
+  {
+   "kind": "line",
+   "line": "purified space."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>'s #MON"
+  },
+  {
+   "kind": "line",
+   "line": "are briefly"
+  },
+  {
+   "kind": "cont",
+   "line": "healed."
+  }
+ ]
+}

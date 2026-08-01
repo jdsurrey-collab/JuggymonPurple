@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_duahw"]
+
+[resource]
+script = ExtResource("1_duahw")
+move_name = "DEFENSE_CURL"
+move_id = 111
+display_name = "DEFENSE CURL"
+move_type = "NORMAL"
+power = 0
+accuracy = 100
+pp = 40
+effect = "DEFENSE_UP1_EFFECT"

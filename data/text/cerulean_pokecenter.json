@@ -1,0 +1,66 @@
+{
+ "CeruleanPokecenterSuperNerdText": [
+  {
+   "kind": "text",
+   "line": "That BILL."
+  },
+  {
+   "kind": "para",
+   "line": "I hear he'd do"
+  },
+  {
+   "kind": "line",
+   "line": "near anything to"
+  },
+  {
+   "kind": "cont",
+   "line": "own a rare #MON,"
+  },
+  {
+   "kind": "cont",
+   "line": "whatever the cost."
+  }
+ ],
+ "CeruleanPokecenterGentlemanText": [
+  {
+   "kind": "text",
+   "line": "Have you heard"
+  },
+  {
+   "kind": "line",
+   "line": "of BILL?"
+  },
+  {
+   "kind": "para",
+   "line": "They call him"
+  },
+  {
+   "kind": "line",
+   "line": "a #MANIAC."
+  },
+  {
+   "kind": "para",
+   "line": "Envy, if you"
+  },
+  {
+   "kind": "line",
+   "line": "ask me. Nothing"
+  },
+  {
+   "kind": "cont",
+   "line": "more."
+  },
+  {
+   "kind": "para",
+   "line": "Who wouldn't"
+  },
+  {
+   "kind": "line",
+   "line": "want to boast of"
+  },
+  {
+   "kind": "cont",
+   "line": "their own #MON?"
+  }
+ ]
+}

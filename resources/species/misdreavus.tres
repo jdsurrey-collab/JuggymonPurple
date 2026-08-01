@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=26 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/misdreavus.png" id="1_ii32k"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_8t1i7"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/misdreavus.png" id="3_k7qsq"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_opw7m"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="5_6nflu"]
+[ext_resource type="Resource" path="res://resources/moves/night_shade.tres" id="6_djvwh"]
+[ext_resource type="Resource" path="res://resources/moves/psybeam.tres" id="7_gqw1n"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_w1tnw"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="9_a4vgk"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="10_nx5qv"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_cmj47"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_b7fjh"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_37i7s"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="14_fspn2"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="15_qsdm3"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="16_35dp5"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="17_mnkuy"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="18_1rw2r"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="19_a72ri"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="20_n8cdx"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="21_8pf15"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="22_omvg0"]
+
+[sub_resource type="Resource" id="Resource_et1cv"]
+script = ExtResource("4_opw7m")
+level = 12
+move = ExtResource("5_6nflu")
+
+[sub_resource type="Resource" id="Resource_0ok0i"]
+script = ExtResource("4_opw7m")
+level = 15
+move = ExtResource("6_djvwh")
+
+[sub_resource type="Resource" id="Resource_c7evs"]
+script = ExtResource("4_opw7m")
+level = 27
+move = ExtResource("7_gqw1n")
+
+[resource]
+script = ExtResource("11_cmj47")
+species_name = "MISDREAVUS"
+dex = 198
+index = 201
+slug = "misdreavus"
+label = "Misdreavus"
+category = "SCREECH"
+height_ft = 2
+height_in = 4
+weight_tenths_lb = 20
+hp = 60
+attack = 60
+defense = 60
+speed = 85
+special = 85
+type1 = "GHOST"
+type2 = "GHOST"
+catch_rate = 45
+base_exp = 147
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("8_w1tnw")]([ExtResource("9_a4vgk"), ExtResource("10_nx5qv")])
+learnset = Array[ExtResource("4_opw7m")]([SubResource("Resource_et1cv"), SubResource("Resource_0ok0i"), SubResource("Resource_c7evs")])
+tmhm = Array[ExtResource("8_w1tnw")]([ExtResource("12_b7fjh"), ExtResource("13_37i7s"), ExtResource("14_fspn2"), ExtResource("15_qsdm3"), ExtResource("16_35dp5"), ExtResource("17_mnkuy"), ExtResource("18_1rw2r"), ExtResource("19_a72ri"), ExtResource("20_n8cdx"), ExtResource("21_8pf15"), ExtResource("10_nx5qv"), ExtResource("22_omvg0")])
+evolutions = Array[ExtResource("2_8t1i7")]([])
+palette = "PAL_PURPLEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It feeds upon", "fright, and so it", "makes fright where", "none was. It has", "no other trade."])
+front_sprite = ExtResource("3_k7qsq")
+back_sprite = ExtResource("1_ii32k")

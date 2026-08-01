@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_er3io"]
+
+[resource]
+script = ExtResource("1_er3io")
+move_name = "ICY_WIND"
+move_id = 167
+display_name = "ICY WIND"
+move_type = "ICE"
+power = 55
+accuracy = 95
+pp = 15
+effect = "SPEED_DOWN_SIDE_EFFECT"

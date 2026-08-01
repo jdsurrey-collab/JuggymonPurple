@@ -1,0 +1,60 @@
+{
+ "CeladonMansion1FMeowthText": [
+  {
+   "kind": "text",
+   "line": "MEOWTH: Meow!@"
+  }
+ ],
+ "CeladonMansion1FGrannyText": [
+  {
+   "kind": "text",
+   "line": "My dear #MON"
+  },
+  {
+   "kind": "line",
+   "line": "are all the kin"
+  },
+  {
+   "kind": "cont",
+   "line": "I have left."
+  },
+  {
+   "kind": "para",
+   "line": "MEOWTH even"
+  },
+  {
+   "kind": "line",
+   "line": "brings coin home!"
+  }
+ ],
+ "CeladonMansion1FClefairyText": [
+  {
+   "kind": "text",
+   "line": "CLEFAIRY: Pi"
+  },
+  {
+   "kind": "line",
+   "line": "pippippi!@"
+  }
+ ],
+ "CeladonMansion1FNidoranFText": [
+  {
+   "kind": "text",
+   "line": "NIDORAN: Kya"
+  },
+  {
+   "kind": "line",
+   "line": "kyaoo!@"
+  }
+ ],
+ "CeladonMansion1FManagersSuiteSignText": [
+  {
+   "kind": "text",
+   "line": "CELADON MANSION"
+  },
+  {
+   "kind": "line",
+   "line": "Manager's Suite"
+  }
+ ]
+}

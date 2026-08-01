@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_3gfn6"]
+
+[resource]
+script = ExtResource("1_3gfn6")
+move_name = "EGG_BOMB"
+move_id = 121
+display_name = "EGG BOMB"
+move_type = "NORMAL"
+power = 100
+accuracy = 75
+pp = 10
+effect = "NO_ADDITIONAL_EFFECT"

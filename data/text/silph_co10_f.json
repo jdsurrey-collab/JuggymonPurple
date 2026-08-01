@@ -1,0 +1,98 @@
+{
+ "SilphCo10FSilphWorkerFImScaredText": [
+  {
+   "kind": "text",
+   "line": "Waaaaa!"
+  },
+  {
+   "kind": "cont",
+   "line": "I am so afraid!"
+  }
+ ],
+ "SilphCo10FSilphWorkerFQuietAboutMyCryingText": [
+  {
+   "kind": "text",
+   "line": "Please, keep"
+  },
+  {
+   "kind": "line",
+   "line": "quiet of my"
+  },
+  {
+   "kind": "cont",
+   "line": "weeping!"
+  }
+ ],
+ "SilphCo10FRocketBattleText": [
+  {
+   "kind": "text",
+   "line": "Welcome to 10F!"
+  },
+  {
+   "kind": "line",
+   "line": "How good of you"
+  },
+  {
+   "kind": "cont",
+   "line": "to join me here!"
+  }
+ ],
+ "SilphCo10FRocketEndBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm"
+  },
+  {
+   "kind": "line",
+   "line": "stunned!"
+  }
+ ],
+ "SilphCo10FRocketAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Well tried, but"
+  },
+  {
+   "kind": "line",
+   "line": "the boardroom"
+  },
+  {
+   "kind": "cont",
+   "line": "lies one floor up!"
+  }
+ ],
+ "SilphCo10FScientistBattleText": [
+  {
+   "kind": "text",
+   "line": "Enough of your"
+  },
+  {
+   "kind": "line",
+   "line": "childish games!"
+  }
+ ],
+ "SilphCo10FScientistEndBattleText": [
+  {
+   "kind": "text",
+   "line": "No"
+  },
+  {
+   "kind": "line",
+   "line": "continues left!"
+  }
+ ],
+ "SilphCo10FScientistAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Content, now that"
+  },
+  {
+   "kind": "line",
+   "line": "you've beaten me?"
+  },
+  {
+   "kind": "cont",
+   "line": "Then be gone home!"
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/zapdos.png" id="1_0a7qg"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_mrftb"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/zapdos.png" id="3_opq85"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_efks2"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="5_v8wds"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="6_68klm"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="7_r15h8"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_8vrs8"]
+[ext_resource type="Resource" path="res://resources/moves/thundershock.tres" id="9_hvjb1"]
+[ext_resource type="Resource" path="res://resources/moves/drill_peck.tres" id="10_in81d"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_i17su"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="12_4cow0"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="13_jnr8p"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_yk0ug"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_jqm7h"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_napy0"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="17_7cvpn"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_hi4hl"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="19_s4h5b"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="20_dh33b"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="21_rcan4"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="22_c3l0i"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="23_vfbsm"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="24_s5p3q"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="25_vjnlr"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_padde"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="27_6qjd1"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="28_ephqq"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="29_fbnc7"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="30_064wr"]
+
+[sub_resource type="Resource" id="Resource_42y72"]
+script = ExtResource("4_efks2")
+level = 51
+move = ExtResource("5_v8wds")
+
+[sub_resource type="Resource" id="Resource_jrnwm"]
+script = ExtResource("4_efks2")
+level = 55
+move = ExtResource("6_68klm")
+
+[sub_resource type="Resource" id="Resource_k06mq"]
+script = ExtResource("4_efks2")
+level = 60
+move = ExtResource("7_r15h8")
+
+[resource]
+script = ExtResource("11_i17su")
+species_name = "ZAPDOS"
+dex = 145
+index = 75
+slug = "zapdos"
+label = "Zapdos"
+category = "ELECTRIC"
+height_ft = 5
+height_in = 3
+weight_tenths_lb = 1160
+hp = 90
+attack = 90
+defense = 85
+speed = 100
+special = 125
+type1 = "ELECTRIC"
+type2 = "FLYING"
+catch_rate = 3
+base_exp = 216
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("8_8vrs8")]([ExtResource("9_hvjb1"), ExtResource("10_in81d")])
+learnset = Array[ExtResource("4_efks2")]([SubResource("Resource_42y72"), SubResource("Resource_jrnwm"), SubResource("Resource_k06mq")])
+tmhm = Array[ExtResource("8_8vrs8")]([ExtResource("12_4cow0"), ExtResource("13_jnr8p"), ExtResource("14_yk0ug"), ExtResource("15_jqm7h"), ExtResource("16_napy0"), ExtResource("17_7cvpn"), ExtResource("18_hi4hl"), ExtResource("19_s4h5b"), ExtResource("5_v8wds"), ExtResource("20_dh33b"), ExtResource("21_rcan4"), ExtResource("22_c3l0i"), ExtResource("23_vfbsm"), ExtResource("24_s5p3q"), ExtResource("25_vjnlr"), ExtResource("26_padde"), ExtResource("27_6qjd1"), ExtResource("28_ephqq"), ExtResource("29_fbnc7"), ExtResource("30_064wr")])
+evolutions = Array[ExtResource("2_mrftb")]([])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_BIRD"
+dex_text = Array[String](["A legendary bird", "#MON that is", "said to appear", "from clouds while", "dropping enormous", "lightning bolts"])
+front_sprite = ExtResource("3_opq85")
+back_sprite = ExtResource("1_0a7qg")

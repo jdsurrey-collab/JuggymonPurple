@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/lanturn.png" id="1_t2l4e"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_f75ls"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/lanturn.png" id="3_ylsxw"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_8s38n"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="5_vwcrj"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="6_8oce7"]
+[ext_resource type="Resource" path="res://resources/moves/spark.tres" id="7_cccqe"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="8_851be"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="9_60lym"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="10_04433"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_i1wk4"]
+[ext_resource type="Resource" path="res://resources/moves/bubble.tres" id="12_50n1a"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="13_yd58n"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_5c383"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_23bhj"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_ock1u"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_hvplj"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_j7qcj"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_7atl1"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_ksu1b"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_oo822"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_ahwiw"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="23_gdgv0"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="24_ym6f5"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="25_37yww"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="26_mcpsa"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="27_hijcf"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="28_kwhsx"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="29_0xvl7"]
+
+[sub_resource type="Resource" id="Resource_ek1os"]
+script = ExtResource("4_8s38n")
+level = 5
+move = ExtResource("5_vwcrj")
+
+[sub_resource type="Resource" id="Resource_xq545"]
+script = ExtResource("4_8s38n")
+level = 17
+move = ExtResource("6_8oce7")
+
+[sub_resource type="Resource" id="Resource_gesx1"]
+script = ExtResource("4_8s38n")
+level = 25
+move = ExtResource("7_cccqe")
+
+[sub_resource type="Resource" id="Resource_rvq0r"]
+script = ExtResource("4_8s38n")
+level = 33
+move = ExtResource("8_851be")
+
+[sub_resource type="Resource" id="Resource_qq7pd"]
+script = ExtResource("4_8s38n")
+level = 45
+move = ExtResource("9_60lym")
+
+[sub_resource type="Resource" id="Resource_l8d23"]
+script = ExtResource("4_8s38n")
+level = 53
+move = ExtResource("10_04433")
+
+[resource]
+script = ExtResource("14_5c383")
+species_name = "LANTURN"
+dex = 171
+index = 121
+slug = "lanturn"
+label = "Lanturn"
+category = "LIGHT"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 500
+hp = 125
+attack = 58
+defense = 58
+speed = 67
+special = 76
+type1 = "WATER"
+type2 = "ELECTRIC"
+catch_rate = 75
+base_exp = 156
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("11_i1wk4")]([ExtResource("12_50n1a"), ExtResource("13_yd58n"), ExtResource("5_vwcrj")])
+learnset = Array[ExtResource("4_8s38n")]([SubResource("Resource_ek1os"), SubResource("Resource_xq545"), SubResource("Resource_gesx1"), SubResource("Resource_rvq0r"), SubResource("Resource_qq7pd"), SubResource("Resource_l8d23")])
+tmhm = Array[ExtResource("11_i1wk4")]([ExtResource("15_23bhj"), ExtResource("16_ock1u"), ExtResource("17_hvplj"), ExtResource("18_j7qcj"), ExtResource("19_7atl1"), ExtResource("20_ksu1b"), ExtResource("21_oo822"), ExtResource("22_ahwiw"), ExtResource("23_gdgv0"), ExtResource("6_8oce7"), ExtResource("24_ym6f5"), ExtResource("25_37yww"), ExtResource("26_mcpsa"), ExtResource("27_hijcf"), ExtResource("28_kwhsx"), ExtResource("13_yd58n"), ExtResource("29_0xvl7")])
+evolutions = Array[ExtResource("2_f75ls")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["Sailors name it", "the Deep-Lamp and", "steer well clear.", "What its light", "draws up is not", "always its own."])
+front_sprite = ExtResource("3_ylsxw")
+back_sprite = ExtResource("1_t2l4e")

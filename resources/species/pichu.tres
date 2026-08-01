@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=25 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/pichu.png" id="1_f0tc6"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_sh13o"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/pichu.png" id="3_0ovec"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_udh2u"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="5_ifn6y"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="6_mehdk"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="7_jvuyj"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_q7d4t"]
+[ext_resource type="Resource" path="res://resources/moves/thundershock.tres" id="9_12eoo"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="10_ywvmo"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="11_vy5ca"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="12_x3d5b"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="13_tk14b"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="14_u3fbe"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="15_yoqq3"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="16_5dngp"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="17_g5irv"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="18_w6wuh"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="19_7jjgm"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="20_m8lgc"]
+
+[sub_resource type="Resource" id="Resource_vc2g2"]
+script = ExtResource("2_sh13o")
+method = "LEVEL"
+target = "PIKACHU"
+level = 12
+item = ""
+
+[sub_resource type="Resource" id="Resource_0jcqw"]
+script = ExtResource("4_udh2u")
+level = 6
+move = ExtResource("5_ifn6y")
+
+[sub_resource type="Resource" id="Resource_3l5io"]
+script = ExtResource("4_udh2u")
+level = 8
+move = ExtResource("6_mehdk")
+
+[sub_resource type="Resource" id="Resource_iokdm"]
+script = ExtResource("4_udh2u")
+level = 24
+move = ExtResource("7_jvuyj")
+
+[resource]
+script = ExtResource("10_ywvmo")
+species_name = "PICHU"
+dex = 172
+index = 122
+slug = "pichu"
+label = "Pichu"
+category = "TINY MOUSE"
+height_ft = 1
+height_in = 0
+weight_tenths_lb = 40
+hp = 20
+attack = 40
+defense = 15
+speed = 60
+special = 35
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 190
+base_exp = 42
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("8_q7d4t")]([ExtResource("9_12eoo")])
+learnset = Array[ExtResource("4_udh2u")]([SubResource("Resource_0jcqw"), SubResource("Resource_3l5io"), SubResource("Resource_iokdm")])
+tmhm = Array[ExtResource("8_q7d4t")]([ExtResource("11_vy5ca"), ExtResource("12_x3d5b"), ExtResource("13_tk14b"), ExtResource("14_u3fbe"), ExtResource("15_yoqq3"), ExtResource("16_5dngp"), ExtResource("17_g5irv"), ExtResource("18_w6wuh"), ExtResource("7_jvuyj"), ExtResource("19_7jjgm"), ExtResource("6_mehdk"), ExtResource("20_m8lgc")])
+evolutions = Array[ExtResource("2_sh13o")]([SubResource("Resource_vc2g2")])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It cannot hold", "its own current", "and shocks itself", "when startled.", "It startles often."])
+front_sprite = ExtResource("3_0ovec")
+back_sprite = ExtResource("1_f0tc6")

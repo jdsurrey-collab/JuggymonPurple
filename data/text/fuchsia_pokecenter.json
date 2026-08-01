@@ -1,0 +1,58 @@
+{
+ "FuchsiaPokecenterRockerText": [
+  {
+   "kind": "text",
+   "line": "You can't win"
+  },
+  {
+   "kind": "line",
+   "line": "with one lone"
+  },
+  {
+   "kind": "cont",
+   "line": "strong #MON."
+  },
+  {
+   "kind": "para",
+   "line": "It's hard, but"
+  },
+  {
+   "kind": "line",
+   "line": "you must raise"
+  },
+  {
+   "kind": "cont",
+   "line": "them all evenly."
+  }
+ ],
+ "FuchsiaPokecenterCooltrainerFText": [
+  {
+   "kind": "text",
+   "line": "A narrow trail"
+  },
+  {
+   "kind": "line",
+   "line": "lies west of"
+  },
+  {
+   "kind": "cont",
+   "line": "VIRIDIAN CITY."
+  },
+  {
+   "kind": "para",
+   "line": "It leads to the"
+  },
+  {
+   "kind": "line",
+   "line": "#MON LEAGUE"
+  },
+  {
+   "kind": "cont",
+   "line": "HQ, which governs"
+  },
+  {
+   "kind": "cont",
+   "line": "all trainers."
+  }
+ ]
+}

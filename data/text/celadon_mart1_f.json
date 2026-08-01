@@ -1,0 +1,76 @@
+{
+ "CeladonMart1FReceptionistText": [
+  {
+   "kind": "text",
+   "line": "Welcome to"
+  },
+  {
+   "kind": "line",
+   "line": "CELADON DEPT."
+  },
+  {
+   "kind": "cont",
+   "line": "STORE, weary soul."
+  },
+  {
+   "kind": "para",
+   "line": "The board at"
+  },
+  {
+   "kind": "line",
+   "line": "right shows our"
+  },
+  {
+   "kind": "cont",
+   "line": "grim floor plan."
+  }
+ ],
+ "CeladonMart1FDirectorySignText": [
+  {
+   "kind": "text",
+   "line": "1F: SERVICE"
+  },
+  {
+   "kind": "line",
+   "line": "    COUNTER"
+  },
+  {
+   "kind": "para",
+   "line": "2F: TRAINER'S"
+  },
+  {
+   "kind": "line",
+   "line": "    MARKET"
+  },
+  {
+   "kind": "para",
+   "line": "3F: TV GAME SHOP"
+  },
+  {
+   "kind": "para",
+   "line": "4F: WISEMAN GIFTS"
+  },
+  {
+   "kind": "para",
+   "line": "5F: DRUG STORE"
+  },
+  {
+   "kind": "para",
+   "line": "ROOFTOP SQUARE:"
+  },
+  {
+   "kind": "line",
+   "line": "VENDING MACHINES"
+  }
+ ],
+ "CeladonMart1FCurrentFloorSignText": [
+  {
+   "kind": "text",
+   "line": "1F: SERVICE"
+  },
+  {
+   "kind": "line",
+   "line": "    COUNTER"
+  }
+ ]
+}

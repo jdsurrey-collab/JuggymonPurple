@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_1o6qx"]
+
+[resource]
+script = ExtResource("1_1o6qx")
+move_name = "SUBMISSION"
+move_id = 66
+display_name = "SUBMISSION"
+move_type = "FIGHTING"
+power = 80
+accuracy = 80
+pp = 25
+effect = "RECOIL_EFFECT"

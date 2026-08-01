@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_jn1rf"]
+
+[resource]
+script = ExtResource("1_jn1rf")
+move_name = "AURORA_BEAM"
+move_id = 62
+display_name = "AURORA BEAM"
+move_type = "ICE"
+power = 65
+accuracy = 100
+pp = 20
+effect = "ATTACK_DOWN_SIDE_EFFECT"

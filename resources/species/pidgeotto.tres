@@ -1,0 +1,97 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/pidgeotto.png" id="1_3mamn"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_l4gua"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/pidgeotto.png" id="3_r1gim"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_82arb"]
+[ext_resource type="Resource" path="res://resources/moves/sand_attack.tres" id="5_434f8"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="6_e0l0k"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="7_87rw3"]
+[ext_resource type="Resource" path="res://resources/moves/wing_attack.tres" id="8_l2pa4"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="9_aupii"]
+[ext_resource type="Resource" path="res://resources/moves/mirror_move.tres" id="10_w652l"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_e0gyq"]
+[ext_resource type="Resource" path="res://resources/moves/gust.tres" id="12_6uhwj"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_84fq4"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="14_8xqbr"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_rpryj"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_32wyi"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_05ebo"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_qpftr"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="19_i2dnb"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="20_16vki"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="21_s6fbg"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="22_sdxm6"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="23_dtsyc"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="24_3vt4u"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="25_7orvq"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="26_ibtm4"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="27_cnh2e"]
+
+[sub_resource type="Resource" id="Resource_inwb4"]
+script = ExtResource("2_l4gua")
+method = "LEVEL"
+target = "PIDGEOT"
+level = 36
+item = ""
+
+[sub_resource type="Resource" id="Resource_rwt7q"]
+script = ExtResource("4_82arb")
+level = 5
+move = ExtResource("5_434f8")
+
+[sub_resource type="Resource" id="Resource_ls5i6"]
+script = ExtResource("4_82arb")
+level = 12
+move = ExtResource("6_e0l0k")
+
+[sub_resource type="Resource" id="Resource_ubia4"]
+script = ExtResource("4_82arb")
+level = 21
+move = ExtResource("7_87rw3")
+
+[sub_resource type="Resource" id="Resource_h1nj5"]
+script = ExtResource("4_82arb")
+level = 31
+move = ExtResource("8_l2pa4")
+
+[sub_resource type="Resource" id="Resource_dm7r3"]
+script = ExtResource("4_82arb")
+level = 40
+move = ExtResource("9_aupii")
+
+[sub_resource type="Resource" id="Resource_mqyqm"]
+script = ExtResource("4_82arb")
+level = 49
+move = ExtResource("10_w652l")
+
+[resource]
+script = ExtResource("13_84fq4")
+species_name = "PIDGEOTTO"
+dex = 17
+index = 150
+slug = "pidgeotto"
+label = "Pidgeotto"
+category = "BIRD"
+height_ft = 3
+height_in = 7
+weight_tenths_lb = 660
+hp = 63
+attack = 60
+defense = 55
+speed = 71
+special = 50
+type1 = "NORMAL"
+type2 = "FLYING"
+catch_rate = 120
+base_exp = 113
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_e0gyq")]([ExtResource("12_6uhwj"), ExtResource("5_434f8")])
+learnset = Array[ExtResource("4_82arb")]([SubResource("Resource_rwt7q"), SubResource("Resource_ls5i6"), SubResource("Resource_ubia4"), SubResource("Resource_h1nj5"), SubResource("Resource_dm7r3"), SubResource("Resource_mqyqm")])
+tmhm = Array[ExtResource("11_e0gyq")]([ExtResource("14_8xqbr"), ExtResource("7_87rw3"), ExtResource("15_rpryj"), ExtResource("16_32wyi"), ExtResource("17_05ebo"), ExtResource("18_qpftr"), ExtResource("19_i2dnb"), ExtResource("20_16vki"), ExtResource("21_s6fbg"), ExtResource("22_sdxm6"), ExtResource("23_dtsyc"), ExtResource("24_3vt4u"), ExtResource("25_7orvq"), ExtResource("26_ibtm4"), ExtResource("27_cnh2e")])
+evolutions = Array[ExtResource("2_l4gua")]([SubResource("Resource_inwb4")])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_BIRD"
+dex_text = Array[String](["Very protective", "of its sprawling", "territorial area,", "this #MON will", "fiercely peck at", "any intruder"])
+front_sprite = ExtResource("3_r1gim")
+back_sprite = ExtResource("1_3mamn")

@@ -1,0 +1,296 @@
+{
+ "VermilionCityBeautyText": [
+  {
+   "kind": "text",
+   "line": "We mind the"
+  },
+  {
+   "kind": "line",
+   "line": "poison here."
+  },
+  {
+   "kind": "para",
+   "line": "GRIMER breeds"
+  },
+  {
+   "kind": "line",
+   "line": "in the toxic"
+  },
+  {
+   "kind": "cont",
+   "line": "sludge, they say."
+  }
+ ],
+ "VermilionCityGambler1DidYouSeeText": [
+  {
+   "kind": "text",
+   "line": "Did you see the"
+  },
+  {
+   "kind": "line",
+   "line": "S.S.ANNE, moored"
+  },
+  {
+   "kind": "cont",
+   "line": "in the harbor?"
+  }
+ ],
+ "VermilionCityGambler1SSAnneDepartedText": [
+  {
+   "kind": "text",
+   "line": "So, S.S.ANNE has"
+  },
+  {
+   "kind": "line",
+   "line": "sailed on."
+  },
+  {
+   "kind": "para",
+   "line": "She'll return,"
+  },
+  {
+   "kind": "line",
+   "line": "in a year's time."
+  }
+ ],
+ "VermilionCitySailor1WelcomeToSSAnneText": [
+  {
+   "kind": "text",
+   "line": "Welcome aboard"
+  },
+  {
+   "kind": "line",
+   "line": "the S.S.ANNE."
+  }
+ ],
+ "VermilionCitySailor1DoYouHaveATicketText": [
+  {
+   "kind": "text",
+   "line": "Welcome aboard"
+  },
+  {
+   "kind": "line",
+   "line": "the S.S.ANNE."
+  },
+  {
+   "kind": "para",
+   "line": "Pardon- have you"
+  },
+  {
+   "kind": "line",
+   "line": "a ticket, then?"
+  }
+ ],
+ "VermilionCitySailor1FlashedTicketText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> flashed"
+  },
+  {
+   "kind": "line",
+   "line": "the S.S.TICKET!"
+  },
+  {
+   "kind": "para",
+   "line": "Very well. Aboard"
+  },
+  {
+   "kind": "line",
+   "line": "with you, then."
+  }
+ ],
+ "VermilionCitySailor1YouNeedATicketText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> lacks"
+  },
+  {
+   "kind": "line",
+   "line": "the necessary"
+  },
+  {
+   "kind": "cont",
+   "line": "S.S.TICKET."
+  },
+  {
+   "kind": "para",
+   "line": "No exceptions."
+  },
+  {
+   "kind": "para",
+   "line": "No ticket, no"
+  },
+  {
+   "kind": "line",
+   "line": "passage."
+  }
+ ],
+ "VermilionCitySailor1ShipSetSailText": [
+  {
+   "kind": "text",
+   "line": "The ship has"
+  },
+  {
+   "kind": "line",
+   "line": "sailed without you."
+  }
+ ],
+ "VermilionCityGambler2Text": [
+  {
+   "kind": "text",
+   "line": "I'm raising a"
+  },
+  {
+   "kind": "line",
+   "line": "building on this"
+  },
+  {
+   "kind": "cont",
+   "line": "plot of ground."
+  },
+  {
+   "kind": "para",
+   "line": "My #MON tamps"
+  },
+  {
+   "kind": "line",
+   "line": "the earth flat."
+  }
+ ],
+ "VermilionCityMachopText": [
+  {
+   "kind": "text",
+   "line": "MACHOP: Guoh!"
+  },
+  {
+   "kind": "line",
+   "line": "Gogogoh!@"
+  }
+ ],
+ "VermilionCityMachopStompingTheLandFlatText": [
+  {
+   "kind": "para",
+   "line": "A MACHOP"
+  },
+  {
+   "kind": "line",
+   "line": "stomps the earth"
+  },
+  {
+   "kind": "cont",
+   "line": "flat, tirelessly."
+  }
+ ],
+ "VermilionCitySailor2Text": [
+  {
+   "kind": "text",
+   "line": "S.S.ANNE, a"
+  },
+  {
+   "kind": "line",
+   "line": "famed vessel of"
+  },
+  {
+   "kind": "cont",
+   "line": "luxury."
+  },
+  {
+   "kind": "para",
+   "line": "She calls here"
+  },
+  {
+   "kind": "line",
+   "line": "once a year."
+  }
+ ],
+ "VermilionCitySignText": [
+  {
+   "kind": "text",
+   "line": "VERMILION CITY"
+  },
+  {
+   "kind": "line",
+   "line": "Port of Fading"
+  },
+  {
+   "kind": "cont",
+   "line": "Light"
+  }
+ ],
+ "VermilionCityNoticeSignText": [
+  {
+   "kind": "text",
+   "line": "NOTICE:"
+  },
+  {
+   "kind": "para",
+   "line": "ROUTE 12 lies"
+  },
+  {
+   "kind": "line",
+   "line": "blocked by a"
+  },
+  {
+   "kind": "cont",
+   "line": "sleeping #MON."
+  },
+  {
+   "kind": "para",
+   "line": "Detour through"
+  },
+  {
+   "kind": "line",
+   "line": "ROCK TUNNEL, to"
+  },
+  {
+   "kind": "cont",
+   "line": "LAVENDER TOWN."
+  },
+  {
+   "kind": "para",
+   "line": "VERMILION POLICE"
+  }
+ ],
+ "VermilionCityPokemonFanClubSignText": [
+  {
+   "kind": "text",
+   "line": "#MON FAN CLUB"
+  },
+  {
+   "kind": "line",
+   "line": "All #MON fans"
+  },
+  {
+   "kind": "cont",
+   "line": "welcome!"
+  }
+ ],
+ "VermilionCityGymSignText": [
+  {
+   "kind": "text",
+   "line": "VERMILION CITY"
+  },
+  {
+   "kind": "line",
+   "line": "#MON GYM"
+  },
+  {
+   "kind": "cont",
+   "line": "LEADER: LT.SURGE"
+  },
+  {
+   "kind": "para",
+   "line": "The Lightning"
+  },
+  {
+   "kind": "line",
+   "line": "Veteran."
+  }
+ ],
+ "VermilionCityHarborSignText": [
+  {
+   "kind": "text",
+   "line": "VERMILION HARBOR"
+  }
+ ]
+}

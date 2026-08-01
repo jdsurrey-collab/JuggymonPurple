@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/scyther.png" id="1_7mlog"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_coi35"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/scyther.png" id="3_i5gr5"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_uwc14"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="5_qgmee"]
+[ext_resource type="Resource" path="res://resources/moves/focus_energy.tres" id="6_jmfvg"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="7_2lgpm"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="8_trcgi"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="9_2aeex"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="10_hw1vq"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_gksqn"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="12_2oflj"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_e7atq"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_0ij2a"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_uvq3g"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_hgp7s"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="17_f3l3v"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_yc7es"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="19_om58p"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_ydfgi"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_r8uak"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="22_4uc6o"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="23_6eabw"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="24_qxpao"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="25_2c43j"]
+
+[sub_resource type="Resource" id="Resource_1kq2m"]
+script = ExtResource("4_uwc14")
+level = 17
+move = ExtResource("5_qgmee")
+
+[sub_resource type="Resource" id="Resource_qpqjr"]
+script = ExtResource("4_uwc14")
+level = 20
+move = ExtResource("6_jmfvg")
+
+[sub_resource type="Resource" id="Resource_eqe5y"]
+script = ExtResource("4_uwc14")
+level = 24
+move = ExtResource("7_2lgpm")
+
+[sub_resource type="Resource" id="Resource_020om"]
+script = ExtResource("4_uwc14")
+level = 29
+move = ExtResource("8_trcgi")
+
+[sub_resource type="Resource" id="Resource_ocd7m"]
+script = ExtResource("4_uwc14")
+level = 35
+move = ExtResource("9_2aeex")
+
+[sub_resource type="Resource" id="Resource_uaxkg"]
+script = ExtResource("4_uwc14")
+level = 42
+move = ExtResource("10_hw1vq")
+
+[resource]
+script = ExtResource("13_e7atq")
+species_name = "SCYTHER"
+dex = 123
+index = 26
+slug = "scyther"
+label = "Scyther"
+category = "MANTIS"
+height_ft = 4
+height_in = 11
+weight_tenths_lb = 1230
+hp = 70
+attack = 110
+defense = 80
+speed = 105
+special = 55
+type1 = "BUG"
+type2 = "FLYING"
+catch_rate = 45
+base_exp = 187
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_gksqn")]([ExtResource("12_2oflj")])
+learnset = Array[ExtResource("4_uwc14")]([SubResource("Resource_1kq2m"), SubResource("Resource_qpqjr"), SubResource("Resource_eqe5y"), SubResource("Resource_020om"), SubResource("Resource_ocd7m"), SubResource("Resource_uaxkg")])
+tmhm = Array[ExtResource("11_gksqn")]([ExtResource("9_2aeex"), ExtResource("14_0ij2a"), ExtResource("15_uvq3g"), ExtResource("16_hgp7s"), ExtResource("17_f3l3v"), ExtResource("18_yc7es"), ExtResource("19_om58p"), ExtResource("7_2lgpm"), ExtResource("20_ydfgi"), ExtResource("21_r8uak"), ExtResource("22_4uc6o"), ExtResource("23_6eabw"), ExtResource("24_qxpao"), ExtResource("25_2c43j")])
+evolutions = Array[ExtResource("2_coi35")]([])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["With ninja-like", "agility and speed,", "it can create the", "illusion that", "there is more", "than one"])
+front_sprite = ExtResource("3_i5gr5")
+back_sprite = ExtResource("1_7mlog")

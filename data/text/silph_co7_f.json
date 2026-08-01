@@ -1,0 +1,520 @@
+{
+ "SilphCo7FSilphWorkerM1HaveThisPokemonText": [
+  {
+   "kind": "text",
+   "line": "Oh! Hi! You're"
+  },
+  {
+   "kind": "line",
+   "line": "not a ROCKET! You"
+  },
+  {
+   "kind": "cont",
+   "line": "came to save us?"
+  },
+  {
+   "kind": "cont",
+   "line": "Why, thank you!"
+  },
+  {
+   "kind": "para",
+   "line": "I want you to"
+  },
+  {
+   "kind": "line",
+   "line": "have this #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "for saving us."
+  }
+ ],
+ "SilphCo7FSilphWorkerM1LaprasDescriptionText": [
+  {
+   "kind": "text",
+   "line": "It's LAPRAS. It's"
+  },
+  {
+   "kind": "line",
+   "line": "very intelligent."
+  },
+  {
+   "kind": "para",
+   "line": "We kept it in our"
+  },
+  {
+   "kind": "line",
+   "line": "lab, but it will"
+  },
+  {
+   "kind": "cont",
+   "line": "be much better"
+  },
+  {
+   "kind": "cont",
+   "line": "off with you!"
+  },
+  {
+   "kind": "para",
+   "line": "I think you will"
+  },
+  {
+   "kind": "line",
+   "line": "be a good trainer"
+  },
+  {
+   "kind": "cont",
+   "line": "for LAPRAS!"
+  },
+  {
+   "kind": "para",
+   "line": "It's a good"
+  },
+  {
+   "kind": "line",
+   "line": "swimmer. It'll"
+  },
+  {
+   "kind": "cont",
+   "line": "give you a lift!"
+  }
+ ],
+ "SilphCo7FSilphWorkerM1IsOurPresidentOkText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET's"
+  },
+  {
+   "kind": "line",
+   "line": "BOSS went to the"
+  },
+  {
+   "kind": "cont",
+   "line": "boardroom! Is our"
+  },
+  {
+   "kind": "cont",
+   "line": "PRESIDENT OK?"
+  }
+ ],
+ "SilphCo7FSilphWorkerM1SavedText": [
+  {
+   "kind": "text",
+   "line": "Saved at last!"
+  },
+  {
+   "kind": "line",
+   "line": "Thank you!"
+  }
+ ],
+ "SilphCo7FSilphWorkerM2AfterTheMasterBallText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET was"
+  },
+  {
+   "kind": "line",
+   "line": "after the MASTER"
+  },
+  {
+   "kind": "cont",
+   "line": "BALL which will"
+  },
+  {
+   "kind": "cont",
+   "line": "catch any #MON!"
+  }
+ ],
+ "SilphCo7FSilphWorkerM2CancelledMasterBallText": [
+  {
+   "kind": "text",
+   "line": "We canceled the"
+  },
+  {
+   "kind": "line",
+   "line": "MASTER BALL"
+  },
+  {
+   "kind": "cont",
+   "line": "project because"
+  },
+  {
+   "kind": "cont",
+   "line": "of TEAM ROCKET."
+  }
+ ],
+ "SilphCo7FSilphWorkerM3ItWouldBeBadText": [
+  {
+   "kind": "text",
+   "line": "It would be bad"
+  },
+  {
+   "kind": "line",
+   "line": "if TEAM ROCKET"
+  },
+  {
+   "kind": "cont",
+   "line": "took over SILPH"
+  },
+  {
+   "kind": "cont",
+   "line": "or our #MON!"
+  }
+ ],
+ "SilphCo7FSilphWorkerM3YouChasedOffTeamRocketText": [
+  {
+   "kind": "text",
+   "line": "Wow! You chased"
+  },
+  {
+   "kind": "line",
+   "line": "off TEAM ROCKET"
+  },
+  {
+   "kind": "cont",
+   "line": "all by yourself?"
+  }
+ ],
+ "SilphCo7FSilphWorkerM4ItsReallyDangerousHereText": [
+  {
+   "kind": "text",
+   "line": "You! It's really"
+  },
+  {
+   "kind": "line",
+   "line": "dangerous here!"
+  },
+  {
+   "kind": "cont",
+   "line": "You came to save"
+  },
+  {
+   "kind": "cont",
+   "line": "me? You can't!"
+  }
+ ],
+ "SilphCo7FSilphWorkerM4SafeAtLastText": [
+  {
+   "kind": "text",
+   "line": "Safe at last!"
+  },
+  {
+   "kind": "line",
+   "line": "Oh thank you!"
+  }
+ ],
+ "SilphCo7FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "Oh ho! I smell a"
+  },
+  {
+   "kind": "line",
+   "line": "little rat!"
+  }
+ ],
+ "SilphCo7FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Lights"
+  },
+  {
+   "kind": "line",
+   "line": "out!"
+  }
+ ],
+ "SilphCo7FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You won't find my"
+  },
+  {
+   "kind": "line",
+   "line": "BOSS by just"
+  },
+  {
+   "kind": "cont",
+   "line": "scurrying around!"
+  }
+ ],
+ "SilphCo7FScientistBattleText": [
+  {
+   "kind": "text",
+   "line": "Heheh!"
+  },
+  {
+   "kind": "para",
+   "line": "You mistook me for"
+  },
+  {
+   "kind": "line",
+   "line": "a SILPH worker?"
+  }
+ ],
+ "SilphCo7FScientistEndBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm"
+  },
+  {
+   "kind": "line",
+   "line": "done!"
+  }
+ ],
+ "SilphCo7FScientistAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Despite your age,"
+  },
+  {
+   "kind": "line",
+   "line": "you are a skilled"
+  },
+  {
+   "kind": "cont",
+   "line": "trainer!"
+  }
+ ],
+ "SilphCo7FRocket2BattleText": [
+  {
+   "kind": "text",
+   "line": "I am one of the 4"
+  },
+  {
+   "kind": "line",
+   "line": "ROCKET BROTHERS!"
+  }
+ ],
+ "SilphCo7FRocket2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Aack!"
+  },
+  {
+   "kind": "line",
+   "line": "Brothers, I lost!"
+  }
+ ],
+ "SilphCo7FRocket2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Doesn't matter."
+  },
+  {
+   "kind": "line",
+   "line": "My brothers will"
+  },
+  {
+   "kind": "cont",
+   "line": "repay the favor!"
+  }
+ ],
+ "SilphCo7FRocket3BattleText": [
+  {
+   "kind": "text",
+   "line": "A child intruder?"
+  },
+  {
+   "kind": "line",
+   "line": "That must be you!"
+  }
+ ],
+ "SilphCo7FRocket3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Fine!"
+  },
+  {
+   "kind": "line",
+   "line": "I lost!"
+  }
+ ],
+ "SilphCo7FRocket3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Go on home"
+  },
+  {
+   "kind": "line",
+   "line": "before my BOSS"
+  },
+  {
+   "kind": "cont",
+   "line": "gets ticked off!"
+  }
+ ],
+ "SilphCo7FRivalText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: What"
+  },
+  {
+   "kind": "line",
+   "line": "kept you, <PLAYER>?"
+  }
+ ],
+ "SilphCo7FRivalWaitedHereText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Heh."
+  },
+  {
+   "kind": "line",
+   "line": "I knew you'd"
+  },
+  {
+   "kind": "cont",
+   "line": "crawl in here"
+  },
+  {
+   "kind": "cont",
+   "line": "eventually."
+  },
+  {
+   "kind": "para",
+   "line": "TEAM ROCKET"
+  },
+  {
+   "kind": "line",
+   "line": "slowed you, no"
+  },
+  {
+   "kind": "cont",
+   "line": "doubt. Not that"
+  },
+  {
+   "kind": "cont",
+   "line": "I care."
+  },
+  {
+   "kind": "para",
+   "line": "I saw you in"
+  },
+  {
+   "kind": "line",
+   "line": "SAFFRON and"
+  },
+  {
+   "kind": "cont",
+   "line": "wondered if you'd"
+  },
+  {
+   "kind": "cont",
+   "line": "improved at all."
+  }
+ ],
+ "SilphCo7FRivalDefeatedText": [
+  {
+   "kind": "text",
+   "line": "Oh ho."
+  },
+  {
+   "kind": "line",
+   "line": "Ready for the"
+  },
+  {
+   "kind": "cont",
+   "line": "BOSS, are you?"
+  }
+ ],
+ "SilphCo7FRivalVictoryText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: How to"
+  },
+  {
+   "kind": "line",
+   "line": "put this kindly?"
+  },
+  {
+   "kind": "para",
+   "line": "You're simply not"
+  },
+  {
+   "kind": "line",
+   "line": "fit for men's"
+  },
+  {
+   "kind": "cont",
+   "line": "work."
+  }
+ ],
+ "SilphCo7FRivalGoodLuckToYouText": [
+  {
+   "kind": "text",
+   "line": "Well, <PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "I climb higher"
+  },
+  {
+   "kind": "line",
+   "line": "still."
+  },
+  {
+   "kind": "para",
+   "line": "My #DEX shows"
+  },
+  {
+   "kind": "line",
+   "line": "me plainly what"
+  },
+  {
+   "kind": "cont",
+   "line": "is strong, and"
+  },
+  {
+   "kind": "cont",
+   "line": "what merely"
+  },
+  {
+   "kind": "cont",
+   "line": "survives."
+  },
+  {
+   "kind": "para",
+   "line": "I mean to storm"
+  },
+  {
+   "kind": "line",
+   "line": "the #MON LEAGUE"
+  },
+  {
+   "kind": "cont",
+   "line": "and cast down"
+  },
+  {
+   "kind": "cont",
+   "line": "the ELITE FOUR."
+  },
+  {
+   "kind": "para",
+   "line": "I shall become"
+  },
+  {
+   "kind": "line",
+   "line": "the strongest"
+  },
+  {
+   "kind": "cont",
+   "line": "there ever was."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>. Good"
+  },
+  {
+   "kind": "line",
+   "line": "luck to you."
+  },
+  {
+   "kind": "cont",
+   "line": "You'll want it."
+  },
+  {
+   "kind": "cont",
+   "line": "Farewell."
+  }
+ ]
+}

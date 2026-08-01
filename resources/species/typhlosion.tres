@@ -1,0 +1,83 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=31 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/typhlosion.png" id="1_3ifv7"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_b4060"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/typhlosion.png" id="3_spaf5"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_dr4s4"]
+[ext_resource type="Resource" path="res://resources/moves/smokescreen.tres" id="5_7nq0f"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="6_njmvv"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="7_br1ke"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="8_artlc"]
+[ext_resource type="Resource" path="res://resources/moves/flamethrower.tres" id="9_aeg0n"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_2oqo4"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_jp0ru"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_0e5mp"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_atcy6"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_iwqck"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_6hoqy"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_ie8ih"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_57a24"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_n8atu"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_rr68l"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_od47y"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="21_lh5pq"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="22_4yha7"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="23_4glta"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="24_g3mjq"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="25_s3cs6"]
+
+[sub_resource type="Resource" id="Resource_tp5p4"]
+script = ExtResource("4_dr4s4")
+level = 6
+move = ExtResource("5_7nq0f")
+
+[sub_resource type="Resource" id="Resource_mk56g"]
+script = ExtResource("4_dr4s4")
+level = 12
+move = ExtResource("6_njmvv")
+
+[sub_resource type="Resource" id="Resource_umi7e"]
+script = ExtResource("4_dr4s4")
+level = 21
+move = ExtResource("7_br1ke")
+
+[sub_resource type="Resource" id="Resource_igq1l"]
+script = ExtResource("4_dr4s4")
+level = 45
+move = ExtResource("8_artlc")
+
+[sub_resource type="Resource" id="Resource_6wtub"]
+script = ExtResource("4_dr4s4")
+level = 60
+move = ExtResource("9_aeg0n")
+
+[resource]
+script = ExtResource("13_atcy6")
+species_name = "TYPHLOSION"
+dex = 157
+index = 61
+slug = "typhlosion"
+label = "Typhlosion"
+category = "VOLCANO"
+height_ft = 5
+height_in = 7
+weight_tenths_lb = 1750
+hp = 78
+attack = 84
+defense = 78
+speed = 100
+special = 97
+type1 = "FIRE"
+type2 = "FIRE"
+catch_rate = 45
+base_exp = 209
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("10_2oqo4")]([ExtResource("11_jp0ru"), ExtResource("12_0e5mp"), ExtResource("5_7nq0f"), ExtResource("6_njmvv")])
+learnset = Array[ExtResource("4_dr4s4")]([SubResource("Resource_tp5p4"), SubResource("Resource_mk56g"), SubResource("Resource_umi7e"), SubResource("Resource_igq1l"), SubResource("Resource_6wtub")])
+tmhm = Array[ExtResource("10_2oqo4")]([ExtResource("14_iwqck"), ExtResource("15_6hoqy"), ExtResource("16_ie8ih"), ExtResource("17_57a24"), ExtResource("18_n8atu"), ExtResource("19_rr68l"), ExtResource("20_od47y"), ExtResource("8_artlc"), ExtResource("21_lh5pq"), ExtResource("22_4yha7"), ExtResource("23_4glta"), ExtResource("24_g3mjq"), ExtResource("25_s3cs6")])
+evolutions = Array[ExtResource("2_b4060")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It hides behind", "shimmering heat,", "then the field is", "ash, and nothing", "cries out at all."])
+front_sprite = ExtResource("3_spaf5")
+back_sprite = ExtResource("1_3ifv7")

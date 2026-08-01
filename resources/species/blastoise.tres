@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=46 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/blastoise.png" id="1_l2fge"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_4ssjx"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/blastoise.png" id="3_58xh5"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_qpt33"]
+[ext_resource type="Resource" path="res://resources/moves/bubble.tres" id="5_2kmw1"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="6_50p60"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="7_mj4t0"]
+[ext_resource type="Resource" path="res://resources/moves/withdraw.tres" id="8_mct8n"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="9_exxy6"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="10_exue6"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_2m3h1"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_1vr0q"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="13_0ued4"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_jnuyv"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="15_ly7yd"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="16_g7lrc"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_amenq"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="18_8qq2l"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_3omev"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_x4n3o"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="21_docc4"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="22_s6gv7"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="23_t1f6t"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="24_4arqb"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="25_lo1ew"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="26_26wy7"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="27_qjmd5"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="28_ywihn"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="29_hcalj"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="30_byvve"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="31_r7252"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="32_uo87h"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="33_xudl6"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="34_inlc0"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="35_4v6uq"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="36_6hh30"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="37_xe4fp"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="38_8j480"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="39_i2txc"]
+
+[sub_resource type="Resource" id="Resource_grqgr"]
+script = ExtResource("4_qpt33")
+level = 8
+move = ExtResource("5_2kmw1")
+
+[sub_resource type="Resource" id="Resource_ad0j5"]
+script = ExtResource("4_qpt33")
+level = 15
+move = ExtResource("6_50p60")
+
+[sub_resource type="Resource" id="Resource_pvteg"]
+script = ExtResource("4_qpt33")
+level = 24
+move = ExtResource("7_mj4t0")
+
+[sub_resource type="Resource" id="Resource_w2dow"]
+script = ExtResource("4_qpt33")
+level = 31
+move = ExtResource("8_mct8n")
+
+[sub_resource type="Resource" id="Resource_lw28j"]
+script = ExtResource("4_qpt33")
+level = 42
+move = ExtResource("9_exxy6")
+
+[sub_resource type="Resource" id="Resource_o0f2m"]
+script = ExtResource("4_qpt33")
+level = 52
+move = ExtResource("10_exue6")
+
+[resource]
+script = ExtResource("14_jnuyv")
+species_name = "BLASTOISE"
+dex = 9
+index = 28
+slug = "blastoise"
+label = "Blastoise"
+category = "SHELLFISH"
+height_ft = 5
+height_in = 3
+weight_tenths_lb = 1890
+hp = 79
+attack = 83
+defense = 100
+speed = 78
+special = 85
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 45
+base_exp = 210
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_2m3h1")]([ExtResource("12_1vr0q"), ExtResource("13_0ued4"), ExtResource("5_2kmw1"), ExtResource("6_50p60")])
+learnset = Array[ExtResource("4_qpt33")]([SubResource("Resource_grqgr"), SubResource("Resource_ad0j5"), SubResource("Resource_pvteg"), SubResource("Resource_w2dow"), SubResource("Resource_lw28j"), SubResource("Resource_o0f2m")])
+tmhm = Array[ExtResource("11_2m3h1")]([ExtResource("15_ly7yd"), ExtResource("16_g7lrc"), ExtResource("17_amenq"), ExtResource("18_8qq2l"), ExtResource("19_3omev"), ExtResource("20_x4n3o"), ExtResource("21_docc4"), ExtResource("6_50p60"), ExtResource("22_s6gv7"), ExtResource("23_t1f6t"), ExtResource("24_4arqb"), ExtResource("25_lo1ew"), ExtResource("26_26wy7"), ExtResource("27_qjmd5"), ExtResource("28_ywihn"), ExtResource("29_hcalj"), ExtResource("30_byvve"), ExtResource("31_r7252"), ExtResource("32_uo87h"), ExtResource("33_xudl6"), ExtResource("34_inlc0"), ExtResource("35_4v6uq"), ExtResource("9_exxy6"), ExtResource("36_6hh30"), ExtResource("37_xe4fp"), ExtResource("38_8j480"), ExtResource("39_i2txc")])
+evolutions = Array[ExtResource("2_4ssjx")]([])
+palette = "PAL_CYANMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["A brutal #MON", "with pressurized", "water jets on its", "shell. They are", "used for high", "speed tackles"])
+front_sprite = ExtResource("3_58xh5")
+back_sprite = ExtResource("1_l2fge")

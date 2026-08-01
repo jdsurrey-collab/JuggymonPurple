@@ -1,0 +1,54 @@
+{
+ "ViridianForestNorthGateSuperNerdText": [
+  {
+   "kind": "text",
+   "line": "Many #MON"
+  },
+  {
+   "kind": "line",
+   "line": "dwell only in"
+  },
+  {
+   "kind": "cont",
+   "line": "forests, caves."
+  },
+  {
+   "kind": "para",
+   "line": "Search every"
+  },
+  {
+   "kind": "line",
+   "line": "shadow, if you"
+  },
+  {
+   "kind": "cont",
+   "line": "want them all."
+  }
+ ],
+ "ViridianForestNorthGateGrampsText": [
+  {
+   "kind": "text",
+   "line": "Have you seen"
+  },
+  {
+   "kind": "line",
+   "line": "the bushes lining"
+  },
+  {
+   "kind": "cont",
+   "line": "the road?"
+  },
+  {
+   "kind": "para",
+   "line": "A certain move"
+  },
+  {
+   "kind": "line",
+   "line": "can cut them"
+  },
+  {
+   "kind": "cont",
+   "line": "to nothing."
+  }
+ ]
+}

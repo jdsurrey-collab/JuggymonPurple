@@ -1,0 +1,598 @@
+{
+ "SaffronGymSabrinaText": [
+  {
+   "kind": "text",
+   "line": "I foresaw your"
+  },
+  {
+   "kind": "line",
+   "line": "arrival. Every"
+  },
+  {
+   "kind": "cont",
+   "line": "detail."
+  },
+  {
+   "kind": "para",
+   "line": "I've heard others'"
+  },
+  {
+   "kind": "line",
+   "line": "thoughts since"
+  },
+  {
+   "kind": "cont",
+   "line": "childhood. It"
+  },
+  {
+   "kind": "cont",
+   "line": "never stops."
+  },
+  {
+   "kind": "para",
+   "line": "Never quiet."
+  },
+  {
+   "kind": "line",
+   "line": "Not for a moment."
+  },
+  {
+   "kind": "para",
+   "line": "I take no joy"
+  },
+  {
+   "kind": "line",
+   "line": "in battle. But"
+  },
+  {
+   "kind": "cont",
+   "line": "if you insist"
+  },
+  {
+   "kind": "cont",
+   "line": "I'll show you"
+  },
+  {
+   "kind": "cont",
+   "line": "true madness."
+  }
+ ],
+ "SaffronGymSabrinaReceivedMarshBadgeText": [
+  {
+   "kind": "text",
+   "line": "I'm"
+  },
+  {
+   "kind": "line",
+   "line": "unsettled."
+  },
+  {
+   "kind": "cont",
+   "line": "But a loss is"
+  },
+  {
+   "kind": "cont",
+   "line": "a loss."
+  },
+  {
+   "kind": "para",
+   "line": "I admit I did"
+  },
+  {
+   "kind": "line",
+   "line": "not want this"
+  },
+  {
+   "kind": "cont",
+   "line": "enough."
+  },
+  {
+   "kind": "para",
+   "line": "Take the"
+  },
+  {
+   "kind": "line",
+   "line": "MARSHBADGE!@"
+  }
+ ],
+ "SaffronGymSabrinaPostBattleAdviceText": [
+  {
+   "kind": "text",
+   "line": "Everyone hears"
+  },
+  {
+   "kind": "line",
+   "line": "the voices"
+  },
+  {
+   "kind": "cont",
+   "line": "within. Most"
+  },
+  {
+   "kind": "cont",
+   "line": "refuse to listen."
+  }
+ ],
+ "SaffronGymSabrinaMarshBadgeInfoText": [
+  {
+   "kind": "text",
+   "line": "The MARSHBADGE"
+  },
+  {
+   "kind": "line",
+   "line": "binds #MON up"
+  },
+  {
+   "kind": "cont",
+   "line": "to L70 to your"
+  },
+  {
+   "kind": "cont",
+   "line": "will."
+  },
+  {
+   "kind": "para",
+   "line": "Stronger minds"
+  },
+  {
+   "kind": "line",
+   "line": "than that will"
+  },
+  {
+   "kind": "cont",
+   "line": "break free, and"
+  },
+  {
+   "kind": "cont",
+   "line": "turn on you."
+  },
+  {
+   "kind": "para",
+   "line": "Do not raise"
+  },
+  {
+   "kind": "line",
+   "line": "them past your"
+  },
+  {
+   "kind": "cont",
+   "line": "own strength."
+  },
+  {
+   "kind": "para",
+   "line": "Take this,"
+  },
+  {
+   "kind": "line",
+   "line": "before you go."
+  }
+ ],
+ "SaffronGymSabrinaReceivedTM46Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "TM46!@"
+  }
+ ],
+ "TM46ExplanationText": [
+  {
+   "kind": "para",
+   "line": "TM46 is PSYWAVE!"
+  },
+  {
+   "kind": "line",
+   "line": "It uses powerful"
+  },
+  {
+   "kind": "cont",
+   "line": "psychic waves to"
+  },
+  {
+   "kind": "cont",
+   "line": "inflict damage!"
+  }
+ ],
+ "SaffronGymSabrinaTM46NoRoomText": [
+  {
+   "kind": "text",
+   "line": "Your pack is full"
+  },
+  {
+   "kind": "line",
+   "line": "of other items!"
+  }
+ ],
+ "SaffronGymGuideChampInMakingText": [
+  {
+   "kind": "text",
+   "line": "Yo! Champ in"
+  },
+  {
+   "kind": "line",
+   "line": "making!"
+  },
+  {
+   "kind": "para",
+   "line": "SABRINA's #MON"
+  },
+  {
+   "kind": "line",
+   "line": "use psychic power"
+  },
+  {
+   "kind": "cont",
+   "line": "instead of force!"
+  },
+  {
+   "kind": "para",
+   "line": "Fighting #MON"
+  },
+  {
+   "kind": "line",
+   "line": "are weak against"
+  },
+  {
+   "kind": "cont",
+   "line": "psychic #MON!"
+  },
+  {
+   "kind": "para",
+   "line": "They get creamed"
+  },
+  {
+   "kind": "line",
+   "line": "before they can"
+  },
+  {
+   "kind": "cont",
+   "line": "even aim a punch!"
+  }
+ ],
+ "SaffronGymGuideBeatSabrinaText": [
+  {
+   "kind": "text",
+   "line": "Psychic power,"
+  },
+  {
+   "kind": "line",
+   "line": "huh?"
+  },
+  {
+   "kind": "para",
+   "line": "If I had that,"
+  },
+  {
+   "kind": "line",
+   "line": "I'd make a bundle"
+  },
+  {
+   "kind": "cont",
+   "line": "at the slots!"
+  }
+ ],
+ "SaffronGymChanneler1BattleText": [
+  {
+   "kind": "text",
+   "line": "SABRINA is younger"
+  },
+  {
+   "kind": "line",
+   "line": "than I, but I"
+  },
+  {
+   "kind": "cont",
+   "line": "respect her!"
+  }
+ ],
+ "SaffronGymChanneler1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Not"
+  },
+  {
+   "kind": "line",
+   "line": "good enough!"
+  }
+ ],
+ "SaffronGymChanneler1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "In a battle of"
+  },
+  {
+   "kind": "line",
+   "line": "equals, the one"
+  },
+  {
+   "kind": "cont",
+   "line": "with the stronger"
+  },
+  {
+   "kind": "cont",
+   "line": "will wins!"
+  },
+  {
+   "kind": "para",
+   "line": "If you wish"
+  },
+  {
+   "kind": "line",
+   "line": "to beat SABRINA,"
+  },
+  {
+   "kind": "cont",
+   "line": "focus on winning!"
+  }
+ ],
+ "SaffronGymYoungster1BattleText": [
+  {
+   "kind": "text",
+   "line": "Does our unseen"
+  },
+  {
+   "kind": "line",
+   "line": "power scare you?"
+  }
+ ],
+ "SaffronGymYoungster1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I never"
+  },
+  {
+   "kind": "line",
+   "line": "foresaw this!"
+  }
+ ],
+ "SaffronGymYoungster1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Psychic #MON"
+  },
+  {
+   "kind": "line",
+   "line": "fear only ghosts"
+  },
+  {
+   "kind": "cont",
+   "line": "and bugs!"
+  }
+ ],
+ "SaffronGymChanneler2BattleText": [
+  {
+   "kind": "text",
+   "line": "#MON take on"
+  },
+  {
+   "kind": "line",
+   "line": "the appearance of"
+  },
+  {
+   "kind": "cont",
+   "line": "their trainers."
+  },
+  {
+   "kind": "para",
+   "line": "Your #MON must"
+  },
+  {
+   "kind": "line",
+   "line": "be tough, then!"
+  }
+ ],
+ "SaffronGymChanneler2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I knew"
+  },
+  {
+   "kind": "line",
+   "line": "it!"
+  }
+ ],
+ "SaffronGymChanneler2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I must teach"
+  },
+  {
+   "kind": "line",
+   "line": "better techniques"
+  },
+  {
+   "kind": "cont",
+   "line": "to my #MON!"
+  }
+ ],
+ "SaffronGymYoungster2BattleText": [
+  {
+   "kind": "text",
+   "line": "You know that"
+  },
+  {
+   "kind": "line",
+   "line": "power alone isn't"
+  },
+  {
+   "kind": "cont",
+   "line": "enough!"
+  }
+ ],
+ "SaffronGymYoungster2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I don't"
+  },
+  {
+   "kind": "line",
+   "line": "believe this!"
+  }
+ ],
+ "SaffronGymYoungster2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "SABRINA just wiped"
+  },
+  {
+   "kind": "line",
+   "line": "out the KARATE"
+  },
+  {
+   "kind": "cont",
+   "line": "MASTER next door!"
+  }
+ ],
+ "SaffronGymChanneler3BattleText": [
+  {
+   "kind": "text",
+   "line": "You and I, our"
+  },
+  {
+   "kind": "line",
+   "line": "#MON shall"
+  },
+  {
+   "kind": "cont",
+   "line": "fight!"
+  }
+ ],
+ "SaffronGymChanneler3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I lost"
+  },
+  {
+   "kind": "line",
+   "line": "after all!"
+  }
+ ],
+ "SaffronGymChanneler3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I knew that this"
+  },
+  {
+   "kind": "line",
+   "line": "was going to take"
+  },
+  {
+   "kind": "cont",
+   "line": "place."
+  }
+ ],
+ "SaffronGymYoungster3BattleText": [
+  {
+   "kind": "text",
+   "line": "SABRINA is young,"
+  },
+  {
+   "kind": "line",
+   "line": "but she's also"
+  },
+  {
+   "kind": "cont",
+   "line": "our LEADER!"
+  },
+  {
+   "kind": "para",
+   "line": "You won't reach"
+  },
+  {
+   "kind": "line",
+   "line": "her easily!"
+  }
+ ],
+ "SaffronGymYoungster3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I lost"
+  },
+  {
+   "kind": "line",
+   "line": "my concentration!"
+  }
+ ],
+ "SaffronGymYoungster3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "There used to be"
+  },
+  {
+   "kind": "line",
+   "line": "2 #MON GYMs in"
+  },
+  {
+   "kind": "cont",
+   "line": "SAFFRON."
+  },
+  {
+   "kind": "para",
+   "line": "The FIGHTING DOJO"
+  },
+  {
+   "kind": "line",
+   "line": "next door lost"
+  },
+  {
+   "kind": "cont",
+   "line": "its GYM status"
+  },
+  {
+   "kind": "cont",
+   "line": "when we went and"
+  },
+  {
+   "kind": "cont",
+   "line": "creamed them!"
+  }
+ ],
+ "SaffronGymYoungster4BattleText": [
+  {
+   "kind": "text",
+   "line": "SAFFRON #MON"
+  },
+  {
+   "kind": "line",
+   "line": "GYM is famous for"
+  },
+  {
+   "kind": "cont",
+   "line": "its psychics!"
+  },
+  {
+   "kind": "para",
+   "line": "You want to see"
+  },
+  {
+   "kind": "line",
+   "line": "SABRINA!"
+  },
+  {
+   "kind": "cont",
+   "line": "I can tell!"
+  }
+ ],
+ "SaffronGymYoungster4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Arrrgh!"
+  }
+ ],
+ "SaffronGymYoungster4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "That's right! I"
+  },
+  {
+   "kind": "line",
+   "line": "used telepathy to"
+  },
+  {
+   "kind": "cont",
+   "line": "read your mind!"
+  }
+ ]
+}

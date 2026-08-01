@@ -1,0 +1,89 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=31 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/diglett.png" id="1_3qook"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_77nqs"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/diglett.png" id="3_2txx3"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ebqji"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="5_vkds6"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="6_vhmos"]
+[ext_resource type="Resource" path="res://resources/moves/sand_attack.tres" id="7_a4s40"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="8_kcc3k"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="9_4doue"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_glm0g"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="11_luswb"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_4rmoj"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_moifg"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="14_12ol8"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_83805"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_n280l"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="17_jnayy"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="18_5jjqn"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="19_dj8vq"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="20_cchee"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_kskem"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="22_dw1sk"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="23_mchki"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="24_0u1iy"]
+
+[sub_resource type="Resource" id="Resource_d1eet"]
+script = ExtResource("2_77nqs")
+method = "LEVEL"
+target = "DUGTRIO"
+level = 26
+item = ""
+
+[sub_resource type="Resource" id="Resource_qlyyf"]
+script = ExtResource("4_ebqji")
+level = 15
+move = ExtResource("5_vkds6")
+
+[sub_resource type="Resource" id="Resource_6h4qy"]
+script = ExtResource("4_ebqji")
+level = 19
+move = ExtResource("6_vhmos")
+
+[sub_resource type="Resource" id="Resource_g2okv"]
+script = ExtResource("4_ebqji")
+level = 24
+move = ExtResource("7_a4s40")
+
+[sub_resource type="Resource" id="Resource_lle3a"]
+script = ExtResource("4_ebqji")
+level = 31
+move = ExtResource("8_kcc3k")
+
+[sub_resource type="Resource" id="Resource_kn2lh"]
+script = ExtResource("4_ebqji")
+level = 40
+move = ExtResource("9_4doue")
+
+[resource]
+script = ExtResource("12_4rmoj")
+species_name = "DIGLETT"
+dex = 50
+index = 59
+slug = "diglett"
+label = "Diglett"
+category = "MOLE"
+height_ft = 0
+height_in = 8
+weight_tenths_lb = 20
+hp = 10
+attack = 55
+defense = 25
+speed = 95
+special = 45
+type1 = "GROUND"
+type2 = "GROUND"
+catch_rate = 255
+base_exp = 81
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_glm0g")]([ExtResource("11_luswb")])
+learnset = Array[ExtResource("4_ebqji")]([SubResource("Resource_qlyyf"), SubResource("Resource_6h4qy"), SubResource("Resource_g2okv"), SubResource("Resource_lle3a"), SubResource("Resource_kn2lh")])
+tmhm = Array[ExtResource("10_glm0g")]([ExtResource("13_moifg"), ExtResource("14_12ol8"), ExtResource("15_83805"), ExtResource("16_n280l"), ExtResource("17_jnayy"), ExtResource("9_4doue"), ExtResource("18_5jjqn"), ExtResource("6_vhmos"), ExtResource("19_dj8vq"), ExtResource("20_cchee"), ExtResource("21_kskem"), ExtResource("22_dw1sk"), ExtResource("23_mchki"), ExtResource("24_0u1iy")])
+evolutions = Array[ExtResource("2_77nqs")]([SubResource("Resource_d1eet")])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Lives about one", "yard underground", "where it feeds on", "plant roots. It", "sometimes appears", "above ground"])
+front_sprite = ExtResource("3_2txx3")
+back_sprite = ExtResource("1_3qook")

@@ -1,0 +1,170 @@
+{
+ "RocketHideoutB4FGiovanniImpressedYouGotHereText": [
+  {
+   "kind": "text",
+   "line": "So. I confess,"
+  },
+  {
+   "kind": "line",
+   "line": "I'm impressed you"
+  },
+  {
+   "kind": "cont",
+   "line": "came this far."
+  }
+ ],
+ "RocketHideoutB4FGiovanniWhatCannotBeText": [
+  {
+   "kind": "text",
+   "line": "...No."
+  },
+  {
+   "kind": "line",
+   "line": "This cannot be."
+  }
+ ],
+ "RocketHideoutB4FGiovanniHopeWeMeetAgainText": [
+  {
+   "kind": "text",
+   "line": "I see you raise"
+  },
+  {
+   "kind": "line",
+   "line": "your #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "with care."
+  },
+  {
+   "kind": "para",
+   "line": "A child like you"
+  },
+  {
+   "kind": "line",
+   "line": "could never"
+  },
+  {
+   "kind": "cont",
+   "line": "grasp what I"
+  },
+  {
+   "kind": "cont",
+   "line": "mean to build."
+  },
+  {
+   "kind": "para",
+   "line": "I withdraw,"
+  },
+  {
+   "kind": "line",
+   "line": "for now."
+  },
+  {
+   "kind": "para",
+   "line": "We shall meet"
+  },
+  {
+   "kind": "line",
+   "line": "again."
+  }
+ ],
+ "RocketHideoutB4FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "I know you! You"
+  },
+  {
+   "kind": "line",
+   "line": "ruined our plans"
+  },
+  {
+   "kind": "cont",
+   "line": "at MT.MOON!"
+  }
+ ],
+ "RocketHideoutB4FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Burned"
+  },
+  {
+   "kind": "line",
+   "line": "again!"
+  }
+ ],
+ "RocketHideoutB4FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Do you have"
+  },
+  {
+   "kind": "line",
+   "line": "something against"
+  },
+  {
+   "kind": "cont",
+   "line": "TEAM ROCKET?"
+  }
+ ],
+ "RocketHideoutB4FRocket2BattleText": [
+  {
+   "kind": "text",
+   "line": "How can you not"
+  },
+  {
+   "kind": "line",
+   "line": "see the beauty of"
+  },
+  {
+   "kind": "cont",
+   "line": "our evil?"
+  }
+ ],
+ "RocketHideoutB4FRocket2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ayaya!"
+  }
+ ],
+ "RocketHideoutB4FRocket2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "BOSS! I'm sorry I"
+  },
+  {
+   "kind": "line",
+   "line": "failed you!"
+  }
+ ],
+ "RocketHideoutB4FRocket3BattleText": [
+  {
+   "kind": "text",
+   "line": "The elevator"
+  },
+  {
+   "kind": "line",
+   "line": "doesn't work? Who"
+  },
+  {
+   "kind": "cont",
+   "line": "has the LIFT KEY?"
+  }
+ ],
+ "RocketHideoutB4FRocket3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "No!"
+  }
+ ],
+ "RocketHideoutB4FRocket3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh no! I dropped"
+  },
+  {
+   "kind": "line",
+   "line": "the LIFT KEY!"
+  }
+ ]
+}

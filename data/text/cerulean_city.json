@@ -1,0 +1,588 @@
+{
+ "CeruleanCityRivalPreBattleText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Well."
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "Still floundering"
+  },
+  {
+   "kind": "line",
+   "line": "back here, I see?"
+  },
+  {
+   "kind": "para",
+   "line": "I fare wonderfully."
+  },
+  {
+   "kind": "line",
+   "line": "I've caught a host"
+  },
+  {
+   "kind": "cont",
+   "line": "of strong and"
+  },
+  {
+   "kind": "cont",
+   "line": "clever #MON."
+  },
+  {
+   "kind": "para",
+   "line": "Come, let me see"
+  },
+  {
+   "kind": "line",
+   "line": "your poor attempt,"
+  },
+  {
+   "kind": "cont",
+   "line": "<PLAYER>."
+  }
+ ],
+ "CeruleanCityRivalDefeatedText": [
+  {
+   "kind": "text",
+   "line": "Hey! Enough!"
+  },
+  {
+   "kind": "line",
+   "line": "You've bested me,"
+  },
+  {
+   "kind": "cont",
+   "line": "then. So be it."
+  }
+ ],
+ "CeruleanCityRivalVictoryText": [
+  {
+   "kind": "text",
+   "line": "Heh."
+  },
+  {
+   "kind": "line",
+   "line": "You were never"
+  },
+  {
+   "kind": "cont",
+   "line": "truly my equal."
+  }
+ ],
+ "CeruleanCityRivalIWentToBillsText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Oh,"
+  },
+  {
+   "kind": "line",
+   "line": "did you hear?"
+  },
+  {
+   "kind": "para",
+   "line": "I called upon"
+  },
+  {
+   "kind": "line",
+   "line": "BILL, and he"
+  },
+  {
+   "kind": "cont",
+   "line": "showed me his"
+  },
+  {
+   "kind": "cont",
+   "line": "rarest #MON."
+  },
+  {
+   "kind": "para",
+   "line": "It filled my"
+  },
+  {
+   "kind": "line",
+   "line": "#DEX with pages"
+  },
+  {
+   "kind": "cont",
+   "line": "you'll never see."
+  },
+  {
+   "kind": "para",
+   "line": "BILL is renowned,"
+  },
+  {
+   "kind": "line",
+   "line": "after all, as a"
+  },
+  {
+   "kind": "cont",
+   "line": "#MANIAC of some"
+  },
+  {
+   "kind": "cont",
+   "line": "note."
+  },
+  {
+   "kind": "para",
+   "line": "'Twas he who"
+  },
+  {
+   "kind": "line",
+   "line": "devised the PC"
+  },
+  {
+   "kind": "cont",
+   "line": "storage system."
+  },
+  {
+   "kind": "para",
+   "line": "Since you make"
+  },
+  {
+   "kind": "line",
+   "line": "use of it, you"
+  },
+  {
+   "kind": "cont",
+   "line": "might thank him."
+  },
+  {
+   "kind": "para",
+   "line": "Well, I'm off."
+  },
+  {
+   "kind": "line",
+   "line": "Don't follow."
+  },
+  {
+   "kind": "cont",
+   "line": "We'll meet again."
+  }
+ ],
+ "CeruleanCityRocketText": [
+  {
+   "kind": "text",
+   "line": "Hey! Stay out!"
+  },
+  {
+   "kind": "line",
+   "line": "It's not your"
+  },
+  {
+   "kind": "cont",
+   "line": "yard! Huh? Me?"
+  },
+  {
+   "kind": "para",
+   "line": "I'm an innocent"
+  },
+  {
+   "kind": "line",
+   "line": "bystander! Don't"
+  },
+  {
+   "kind": "cont",
+   "line": "you believe me?"
+  }
+ ],
+ "CeruleanCityRocketReceivedTM28Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> recovered"
+  },
+  {
+   "kind": "line",
+   "line": "TM28!@"
+  }
+ ],
+ "CeruleanCityRocketIBetterGetMovingText": [
+  {
+   "kind": "para",
+   "line": "I better get"
+  },
+  {
+   "kind": "line",
+   "line": "moving! Bye!@"
+  }
+ ],
+ "CeruleanCityRocketTM28NoRoomText": [
+  {
+   "kind": "text",
+   "line": "Make room for"
+  },
+  {
+   "kind": "line",
+   "line": "this!"
+  },
+  {
+   "kind": "para",
+   "line": "I can't run until"
+  },
+  {
+   "kind": "line",
+   "line": "I give it to you!"
+  }
+ ],
+ "CeruleanCityRocketIGiveUpText": [
+  {
+   "kind": "text",
+   "line": "Stop!"
+  },
+  {
+   "kind": "line",
+   "line": "I give up! I'll"
+  },
+  {
+   "kind": "cont",
+   "line": "leave quietly!"
+  }
+ ],
+ "CeruleanCityRocketIllReturnTheTMText": [
+  {
+   "kind": "text",
+   "line": "OK! I'll return"
+  },
+  {
+   "kind": "line",
+   "line": "the TM I stole!"
+  }
+ ],
+ "CeruleanCityCooltrainerMText": [
+  {
+   "kind": "text",
+   "line": "You're a trainer"
+  },
+  {
+   "kind": "line",
+   "line": "too? Collecting,"
+  },
+  {
+   "kind": "cont",
+   "line": "fighting, it's a"
+  },
+  {
+   "kind": "cont",
+   "line": "tough life."
+  }
+ ],
+ "CeruleanCitySuperNerd1Text": [
+  {
+   "kind": "text",
+   "line": "That bush in"
+  },
+  {
+   "kind": "line",
+   "line": "front of the shop"
+  },
+  {
+   "kind": "cont",
+   "line": "is in the way."
+  },
+  {
+   "kind": "para",
+   "line": "There might be a"
+  },
+  {
+   "kind": "line",
+   "line": "way around."
+  }
+ ],
+ "CeruleanCitySuperNerd2Text": [
+  {
+   "kind": "text",
+   "line": "You're making an"
+  },
+  {
+   "kind": "line",
+   "line": "encyclopedia on"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON? That"
+  },
+  {
+   "kind": "cont",
+   "line": "sounds amusing."
+  }
+ ],
+ "CeruleanCityGuardText": [
+  {
+   "kind": "text",
+   "line": "The people here"
+  },
+  {
+   "kind": "line",
+   "line": "were robbed."
+  },
+  {
+   "kind": "para",
+   "line": "It's obvious that"
+  },
+  {
+   "kind": "line",
+   "line": "TEAM ROCKET is"
+  },
+  {
+   "kind": "cont",
+   "line": "behind this most"
+  },
+  {
+   "kind": "cont",
+   "line": "heinous crime!"
+  },
+  {
+   "kind": "para",
+   "line": "Even our POLICE"
+  },
+  {
+   "kind": "line",
+   "line": "force has trouble"
+  },
+  {
+   "kind": "cont",
+   "line": "with the ROCKETs!"
+  }
+ ],
+ "CeruleanCityCooltrainerF1SlowbroUseSonicboomText": [
+  {
+   "kind": "text",
+   "line": "OK! SLOWBRO!"
+  },
+  {
+   "kind": "line",
+   "line": "Use SONICBOOM!"
+  },
+  {
+   "kind": "cont",
+   "line": "Come on, SLOWBRO"
+  },
+  {
+   "kind": "cont",
+   "line": "pay attention!"
+  }
+ ],
+ "CeruleanCityCooltrainerF1SlowbroPunchText": [
+  {
+   "kind": "text",
+   "line": "SLOWBRO punch!"
+  },
+  {
+   "kind": "line",
+   "line": "No! You blew it"
+  },
+  {
+   "kind": "cont",
+   "line": "again!"
+  }
+ ],
+ "CeruleanCityCooltrainerF1SlowbroWithdrawText": [
+  {
+   "kind": "text",
+   "line": "SLOWBRO, WITHDRAW!"
+  },
+  {
+   "kind": "line",
+   "line": "No! That's wrong!"
+  },
+  {
+   "kind": "para",
+   "line": "It's so hard to"
+  },
+  {
+   "kind": "line",
+   "line": "control #MON!"
+  },
+  {
+   "kind": "para",
+   "line": "Your #MON's"
+  },
+  {
+   "kind": "line",
+   "line": "obedience depends"
+  },
+  {
+   "kind": "cont",
+   "line": "on your abilities"
+  },
+  {
+   "kind": "cont",
+   "line": "as a trainer!"
+  }
+ ],
+ "CeruleanCitySlowbroTookASnoozeText": [
+  {
+   "kind": "text",
+   "line": "SLOWBRO took a"
+  },
+  {
+   "kind": "line",
+   "line": "snooze..."
+  }
+ ],
+ "CeruleanCitySlowbroIsLoafingAroundText": [
+  {
+   "kind": "text",
+   "line": "SLOWBRO is"
+  },
+  {
+   "kind": "line",
+   "line": "loafing around..."
+  }
+ ],
+ "CeruleanCitySlowbroTurnedAwayText": [
+  {
+   "kind": "text",
+   "line": "SLOWBRO turned"
+  },
+  {
+   "kind": "line",
+   "line": "away..."
+  }
+ ],
+ "CeruleanCitySlowbroIgnoredOrdersText": [
+  {
+   "kind": "text",
+   "line": "SLOWBRO"
+  },
+  {
+   "kind": "line",
+   "line": "ignored orders..."
+  }
+ ],
+ "CeruleanCityCooltrainerF2Text": [
+  {
+   "kind": "text",
+   "line": "I want a bright"
+  },
+  {
+   "kind": "line",
+   "line": "red BICYCLE!"
+  },
+  {
+   "kind": "para",
+   "line": "I'll keep it at"
+  },
+  {
+   "kind": "line",
+   "line": "home, so it won't"
+  },
+  {
+   "kind": "cont",
+   "line": "get dirty!"
+  }
+ ],
+ "CeruleanCitySuperNerd3Text": [
+  {
+   "kind": "text",
+   "line": "This is CERULEAN"
+  },
+  {
+   "kind": "line",
+   "line": "CAVE! Horribly"
+  },
+  {
+   "kind": "cont",
+   "line": "strong #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "live in there!"
+  },
+  {
+   "kind": "para",
+   "line": "The #MON LEAGUE"
+  },
+  {
+   "kind": "line",
+   "line": "champion is the"
+  },
+  {
+   "kind": "cont",
+   "line": "only person who"
+  },
+  {
+   "kind": "cont",
+   "line": "is allowed in!"
+  }
+ ],
+ "CeruleanCitySignText": [
+  {
+   "kind": "text",
+   "line": "CERULEAN CITY"
+  },
+  {
+   "kind": "line",
+   "line": "A Mysterious,"
+  },
+  {
+   "kind": "cont",
+   "line": "Blue Aura"
+  },
+  {
+   "kind": "cont",
+   "line": "Surrounds It"
+  }
+ ],
+ "CeruleanCityTrainerTipsText": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Pressing B Button"
+  },
+  {
+   "kind": "line",
+   "line": "during evolution"
+  },
+  {
+   "kind": "cont",
+   "line": "cancels the whole"
+  },
+  {
+   "kind": "cont",
+   "line": "process."
+  }
+ ],
+ "CeruleanCityBikeShopSign": [
+  {
+   "kind": "text",
+   "line": "Grass and caves"
+  },
+  {
+   "kind": "line",
+   "line": "handled easily!"
+  },
+  {
+   "kind": "cont",
+   "line": "BIKE SHOP"
+  }
+ ],
+ "CeruleanCityGymSign": [
+  {
+   "kind": "text",
+   "line": "CERULEAN CITY"
+  },
+  {
+   "kind": "line",
+   "line": "#MON GYM"
+  },
+  {
+   "kind": "cont",
+   "line": "LEADER: MISTY"
+  },
+  {
+   "kind": "para",
+   "line": "The Tomboyish"
+  },
+  {
+   "kind": "line",
+   "line": "Mermaid!"
+  }
+ ]
+}

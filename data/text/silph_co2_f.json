@@ -1,0 +1,188 @@
+{
+ "SilphCo2FSilphWorkerFReceivedTM36Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> got"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "SilphCo2FSilphWorkerFTM36ExplanationText": [
+  {
+   "kind": "text",
+   "line": "TM36 is"
+  },
+  {
+   "kind": "line",
+   "line": "SELFDESTRUCT!"
+  },
+  {
+   "kind": "para",
+   "line": "Fearsome, but the"
+  },
+  {
+   "kind": "line",
+   "line": "#MON that"
+  },
+  {
+   "kind": "cont",
+   "line": "uses it dies!"
+  },
+  {
+   "kind": "cont",
+   "line": "Take care."
+  }
+ ],
+ "SilphCo2FSilphWorkerFTM36NoRoomText": [
+  {
+   "kind": "text",
+   "line": "You've no room"
+  },
+  {
+   "kind": "line",
+   "line": "left for this."
+  }
+ ],
+ "SilphCo2FScientist1BattleText": [
+  {
+   "kind": "text",
+   "line": "Help! I'm only a"
+  },
+  {
+   "kind": "line",
+   "line": "SILPH worker."
+  }
+ ],
+ "SilphCo2FScientist1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "How"
+  },
+  {
+   "kind": "line",
+   "line": "did you know I"
+  },
+  {
+   "kind": "cont",
+   "line": "served ROCKET?"
+  }
+ ],
+ "SilphCo2FScientist1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I serve SILPH,"
+  },
+  {
+   "kind": "line",
+   "line": "and TEAM ROCKET"
+  },
+  {
+   "kind": "cont",
+   "line": "both!"
+  }
+ ],
+ "SilphCo2FScientist2BattleText": [
+  {
+   "kind": "text",
+   "line": "Forbidden here!"
+  },
+  {
+   "kind": "line",
+   "line": "Go home, child!"
+  }
+ ],
+ "SilphCo2FScientist2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You're"
+  },
+  {
+   "kind": "line",
+   "line": "quite good."
+  }
+ ],
+ "SilphCo2FScientist2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Can you solve"
+  },
+  {
+   "kind": "line",
+   "line": "this dread maze?"
+  }
+ ],
+ "SilphCo2FRocket1BattleText": [
+  {
+   "kind": "text",
+   "line": "No children are"
+  },
+  {
+   "kind": "line",
+   "line": "allowed in here!"
+  }
+ ],
+ "SilphCo2FRocket1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Tough!"
+  }
+ ],
+ "SilphCo2FRocket1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Diamond shaped"
+  },
+  {
+   "kind": "line",
+   "line": "tiles are"
+  },
+  {
+   "kind": "cont",
+   "line": "teleport traps!"
+  },
+  {
+   "kind": "para",
+   "line": "Grim, high-art"
+  },
+  {
+   "kind": "line",
+   "line": "transporters!"
+  }
+ ],
+ "SilphCo2FRocket2BattleText": [
+  {
+   "kind": "text",
+   "line": "Hey kid! What are"
+  },
+  {
+   "kind": "line",
+   "line": "you doing here?"
+  }
+ ],
+ "SilphCo2FRocket2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I erred!"
+  }
+ ],
+ "SilphCo2FRocket2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "SILPH CO. will"
+  },
+  {
+   "kind": "line",
+   "line": "be devoured by"
+  },
+  {
+   "kind": "cont",
+   "line": "TEAM ROCKET!"
+  }
+ ]
+}

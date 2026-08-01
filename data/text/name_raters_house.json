@@ -1,0 +1,140 @@
+{
+ "NameRatersHouseNameRaterWantMeToRateText": [
+  {
+   "kind": "text",
+   "line": "Good day, good"
+  },
+  {
+   "kind": "line",
+   "line": "day! I am the"
+  },
+  {
+   "kind": "cont",
+   "line": "true NAME RATER!"
+  },
+  {
+   "kind": "para",
+   "line": "Shall I judge the"
+  },
+  {
+   "kind": "line",
+   "line": "nicknames of"
+  },
+  {
+   "kind": "cont",
+   "line": "your #MON?"
+  }
+ ],
+ "NameRatersHouseNameRaterWhichPokemonText": [
+  {
+   "kind": "text",
+   "line": "Which #MON"
+  },
+  {
+   "kind": "line",
+   "line": "shall I judge?"
+  }
+ ],
+ "NameRatersHouseNameRaterGiveItANiceNameText": [
+  {
+   "kind": "text",
+   "line": ", is it?"
+  },
+  {
+   "kind": "line",
+   "line": "That is a fair"
+  },
+  {
+   "kind": "cont",
+   "line": "nickname enough!"
+  },
+  {
+   "kind": "para",
+   "line": "But would you"
+  },
+  {
+   "kind": "line",
+   "line": "have me grant"
+  },
+  {
+   "kind": "cont",
+   "line": "it a finer name?"
+  },
+  {
+   "kind": "para",
+   "line": "Well, then?"
+  }
+ ],
+ "NameRatersHouseNameRaterWhatShouldWeNameItText": [
+  {
+   "kind": "text",
+   "line": "So be it! What"
+  },
+  {
+   "kind": "line",
+   "line": "shall we call it?"
+  }
+ ],
+ "NameRatersHouseNameRaterPokemonHasBeenRenamedText": [
+  {
+   "kind": "text",
+   "line": "Done! This #MON"
+  },
+  {
+   "kind": "line",
+   "line": "has been renamed"
+  },
+  {
+   "kind": "cont",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!"
+  },
+  {
+   "kind": "para",
+   "line": "Finer, by far,"
+  },
+  {
+   "kind": "line",
+   "line": "than before!"
+  }
+ ],
+ "NameRatersHouseNameRaterComeAnyTimeYouLikeText": [
+  {
+   "kind": "text",
+   "line": "Very well! Come"
+  },
+  {
+   "kind": "line",
+   "line": "again, any hour!"
+  }
+ ],
+ "NameRatersHouseNameRaterATrulyImpeccableNameText": [
+  {
+   "kind": "text",
+   "line": ", is it?"
+  },
+  {
+   "kind": "line",
+   "line": "That is a truly"
+  },
+  {
+   "kind": "cont",
+   "line": "flawless name!"
+  },
+  {
+   "kind": "para",
+   "line": "Guard it well,"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!"
+  }
+ ]
+}

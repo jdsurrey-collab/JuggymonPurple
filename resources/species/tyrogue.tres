@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=27 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/tyrogue.png" id="1_5cydd"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_1wsj5"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/tyrogue.png" id="3_mhetn"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_tn2m1"]
+[ext_resource type="Resource" path="res://resources/moves/karate_chop.tres" id="5_207g0"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="6_sx46u"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="7_dud2a"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="8_situx"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="9_00oo3"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="10_frr40"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="11_3b4lg"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="12_vdfjk"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="13_pvtso"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="14_7lqy6"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="15_768wl"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="16_qxj63"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="17_u1k4w"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="18_0atbw"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="19_lsxkq"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="20_0ngiu"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="21_jiafm"]
+
+[sub_resource type="Resource" id="Resource_hjcex"]
+script = ExtResource("2_1wsj5")
+method = "LEVEL"
+target = "HITMONCHAN"
+level = 20
+item = ""
+
+[sub_resource type="Resource" id="Resource_vnrq4"]
+script = ExtResource("2_1wsj5")
+method = "LEVEL"
+target = "HITMONLEE"
+level = 20
+item = ""
+
+[sub_resource type="Resource" id="Resource_ewmei"]
+script = ExtResource("2_1wsj5")
+method = "LEVEL"
+target = "HITMONTOP"
+level = 20
+item = ""
+
+[sub_resource type="Resource" id="Resource_abxlu"]
+script = ExtResource("4_tn2m1")
+level = 13
+move = ExtResource("5_207g0")
+
+[sub_resource type="Resource" id="Resource_us85o"]
+script = ExtResource("4_tn2m1")
+level = 26
+move = ExtResource("6_sx46u")
+
+[resource]
+script = ExtResource("9_00oo3")
+species_name = "TYROGUE"
+dex = 226
+index = 229
+slug = "tyrogue"
+label = "Tyrogue"
+category = "SCUFFLE"
+height_ft = 2
+height_in = 4
+weight_tenths_lb = 460
+hp = 35
+attack = 35
+defense = 35
+speed = 35
+special = 35
+type1 = "FIGHTING"
+type2 = "FIGHTING"
+catch_rate = 75
+base_exp = 91
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("7_dud2a")]([ExtResource("8_situx")])
+learnset = Array[ExtResource("4_tn2m1")]([SubResource("Resource_abxlu"), SubResource("Resource_us85o")])
+tmhm = Array[ExtResource("7_dud2a")]([ExtResource("10_frr40"), ExtResource("11_3b4lg"), ExtResource("12_vdfjk"), ExtResource("13_pvtso"), ExtResource("14_7lqy6"), ExtResource("15_768wl"), ExtResource("16_qxj63"), ExtResource("17_u1k4w"), ExtResource("6_sx46u"), ExtResource("18_0atbw"), ExtResource("19_lsxkq"), ExtResource("20_0ngiu"), ExtResource("21_jiafm")])
+evolutions = Array[ExtResource("2_1wsj5")]([SubResource("Resource_hjcex"), SubResource("Resource_vnrq4"), SubResource("Resource_ewmei")])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It fights anything", "larger than", "itself, and loses,", "and rises, and", "fights again."])
+front_sprite = ExtResource("3_mhetn")
+back_sprite = ExtResource("1_5cydd")

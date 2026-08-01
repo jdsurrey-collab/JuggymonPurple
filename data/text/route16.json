@@ -1,0 +1,256 @@
+{
+ "Route16Biker1BattleText": [
+  {
+   "kind": "text",
+   "line": "What do you want?"
+  }
+ ],
+ "Route16Biker1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Don't you"
+  },
+  {
+   "kind": "line",
+   "line": "dare mock me!"
+  }
+ ],
+ "Route16Biker1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "We just linger"
+  },
+  {
+   "kind": "line",
+   "line": "here, what's it"
+  },
+  {
+   "kind": "cont",
+   "line": "to you, wretch?"
+  }
+ ],
+ "Route16Biker2BattleText": [
+  {
+   "kind": "text",
+   "line": "Fine BIKE! Hand"
+  },
+  {
+   "kind": "line",
+   "line": "it to me now!"
+  }
+ ],
+ "Route16Biker2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Knocked"
+  },
+  {
+   "kind": "line",
+   "line": "out cold!"
+  }
+ ],
+ "Route16Biker2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Forget it, who"
+  },
+  {
+   "kind": "line",
+   "line": "needs your BIKE!"
+  }
+ ],
+ "Route16Biker3BattleText": [
+  {
+   "kind": "text",
+   "line": "Come play, my"
+  },
+  {
+   "kind": "line",
+   "line": "little mouse!"
+  }
+ ],
+ "Route16Biker3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You"
+  },
+  {
+   "kind": "line",
+   "line": "wretched rat!"
+  }
+ ],
+ "Route16Biker3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I loathe losing!"
+  },
+  {
+   "kind": "line",
+   "line": "Get from my sight!"
+  }
+ ],
+ "Route16biker4BattleText": [
+  {
+   "kind": "text",
+   "line": "Hey, you just"
+  },
+  {
+   "kind": "line",
+   "line": "struck me!"
+  }
+ ],
+ "Route16Biker4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Kaboom!"
+  }
+ ],
+ "Route16Biker4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You may also reach"
+  },
+  {
+   "kind": "line",
+   "line": "FUCHSIA from"
+  },
+  {
+   "kind": "cont",
+   "line": "VERMILION by the"
+  },
+  {
+   "kind": "cont",
+   "line": "coastal road."
+  }
+ ],
+ "Route16Biker5BattleText": [
+  {
+   "kind": "text",
+   "line": "I'm feeling"
+  },
+  {
+   "kind": "line",
+   "line": "hungry and cruel!"
+  }
+ ],
+ "Route16Biker5EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Foul,"
+  },
+  {
+   "kind": "line",
+   "line": "foul, foul!"
+  }
+ ],
+ "Route16Biker5AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I like my #MON"
+  },
+  {
+   "kind": "line",
+   "line": "vicious! They"
+  },
+  {
+   "kind": "cont",
+   "line": "rend their foes!"
+  }
+ ],
+ "Route16Biker6BattleText": [
+  {
+   "kind": "text",
+   "line": "Fine, I'll go!"
+  }
+ ],
+ "Route16Biker6EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Don't"
+  },
+  {
+   "kind": "line",
+   "line": "provoke me!"
+  }
+ ],
+ "Route16Biker6AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I love tormenting"
+  },
+  {
+   "kind": "line",
+   "line": "folk with my"
+  },
+  {
+   "kind": "cont",
+   "line": "savage #MON!"
+  }
+ ],
+ "Route16Text7": [
+  {
+   "kind": "text",
+   "line": "A slumbering"
+  },
+  {
+   "kind": "line",
+   "line": "#MON bars the"
+  },
+  {
+   "kind": "cont",
+   "line": "way!"
+  }
+ ],
+ "Route16SnorlaxWokeUpText": [
+  {
+   "kind": "text",
+   "line": "SNORLAX awoke!"
+  },
+  {
+   "kind": "para",
+   "line": "It struck out in"
+  },
+  {
+   "kind": "line",
+   "line": "a bitter rage!"
+  }
+ ],
+ "Route16SnorlaxReturnedToMountainsText": [
+  {
+   "kind": "text",
+   "line": "With a weary yawn,"
+  },
+  {
+   "kind": "line",
+   "line": "SNORLAX withdrew"
+  },
+  {
+   "kind": "cont",
+   "line": "to the mountains!"
+  }
+ ],
+ "Route16CyclingRoadSignText": [
+  {
+   "kind": "text",
+   "line": "Mind the slope!"
+  },
+  {
+   "kind": "line",
+   "line": "CYCLING ROAD"
+  }
+ ],
+ "Route16SignText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 16"
+  },
+  {
+   "kind": "line",
+   "line": "CELADON CITY -"
+  },
+  {
+   "kind": "cont",
+   "line": "FUCHSIA CITY"
+  }
+ ]
+}

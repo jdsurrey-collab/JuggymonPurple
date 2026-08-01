@@ -1,0 +1,34 @@
+{
+ "CeladonPokecenterGentlemanText": [
+  {
+   "kind": "text",
+   "line": "# FLUTE stirs"
+  },
+  {
+   "kind": "line",
+   "line": "#MON with a"
+  },
+  {
+   "kind": "cont",
+   "line": "sound only they"
+  },
+  {
+   "kind": "cont",
+   "line": "can hear!"
+  }
+ ],
+ "CeladonPokecenterBeautyText": [
+  {
+   "kind": "text",
+   "line": "I climbed the"
+  },
+  {
+   "kind": "line",
+   "line": "CYCLING ROAD"
+  },
+  {
+   "kind": "cont",
+   "line": "from FUCHSIA!"
+  }
+ ]
+}

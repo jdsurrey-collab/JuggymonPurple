@@ -1,0 +1,38 @@
+{
+ "Route18Gate2FLeftBinocularsText": [
+  {
+   "kind": "text",
+   "line": "Peered through"
+  },
+  {
+   "kind": "line",
+   "line": "the binoculars."
+  },
+  {
+   "kind": "para",
+   "line": "PALLET TOWN lies"
+  },
+  {
+   "kind": "line",
+   "line": "to the west!"
+  }
+ ],
+ "Route18Gate2FRightBinocularsText": [
+  {
+   "kind": "text",
+   "line": "Peered through"
+  },
+  {
+   "kind": "line",
+   "line": "the binoculars."
+  },
+  {
+   "kind": "para",
+   "line": "Some souls swim"
+  },
+  {
+   "kind": "line",
+   "line": "in the waters!"
+  }
+ ]
+}

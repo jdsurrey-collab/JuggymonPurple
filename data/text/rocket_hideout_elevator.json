@@ -1,0 +1,12 @@
+{
+ "RocketHideoutElevatorAppearsToNeedKeyText": [
+  {
+   "kind": "text",
+   "line": "It seems to"
+  },
+  {
+   "kind": "line",
+   "line": "need a key.@"
+  }
+ ]
+}

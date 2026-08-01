@@ -1,0 +1,126 @@
+{
+ "AgathaBeforeBattleText": [
+  {
+   "kind": "text",
+   "line": "I am AGATHA,"
+  },
+  {
+   "kind": "line",
+   "line": "eldest of the"
+  },
+  {
+   "kind": "cont",
+   "line": "ELITE FOUR."
+  },
+  {
+   "kind": "para",
+   "line": "OAK speaks of"
+  },
+  {
+   "kind": "line",
+   "line": "you often now."
+  },
+  {
+   "kind": "cont",
+   "line": "Too often, child."
+  },
+  {
+   "kind": "para",
+   "line": "That withered fool"
+  },
+  {
+   "kind": "line",
+   "line": "was fierce once."
+  },
+  {
+   "kind": "cont",
+   "line": "Long buried, that"
+  },
+  {
+   "kind": "cont",
+   "line": "young man."
+  },
+  {
+   "kind": "para",
+   "line": "Now he plays with"
+  },
+  {
+   "kind": "line",
+   "line": "his little book"
+  },
+  {
+   "kind": "cont",
+   "line": "and calls it"
+  },
+  {
+   "kind": "cont",
+   "line": "wisdom. #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "are made for war."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>. Let a"
+  },
+  {
+   "kind": "line",
+   "line": "ghost teach you"
+  },
+  {
+   "kind": "cont",
+   "line": "what death is."
+  }
+ ],
+ "AgathaEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh ho."
+  },
+  {
+   "kind": "line",
+   "line": "How delightful,"
+  },
+  {
+   "kind": "cont",
+   "line": "child!"
+  }
+ ],
+ "AgathaAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You win. I see"
+  },
+  {
+   "kind": "line",
+   "line": "what that fool"
+  },
+  {
+   "kind": "cont",
+   "line": "sees in you now."
+  },
+  {
+   "kind": "para",
+   "line": "I've nothing more"
+  },
+  {
+   "kind": "line",
+   "line": "to say. Run along,"
+  },
+  {
+   "kind": "cont",
+   "line": "little ghost."
+  }
+ ],
+ "AgathasRoomAgathaDontRunAwayText": [
+  {
+   "kind": "text",
+   "line": "A dead voice:"
+  },
+  {
+   "kind": "line",
+   "line": "Don't run away."
+  }
+ ]
+}

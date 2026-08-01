@@ -1,0 +1,79 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=29 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/swinub.png" id="1_ptam6"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_wly4d"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/swinub.png" id="3_muaqb"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_8l0i6"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="5_unk43"]
+[ext_resource type="Resource" path="res://resources/moves/mist.tres" id="6_hmy4o"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="7_olc6d"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_y3gtn"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="9_y3t0s"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="10_koohy"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="11_pscvc"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="12_rlpnv"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="13_8asbc"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="14_pykhy"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="15_2jq7j"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="16_xgkq7"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="17_nuh6p"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="18_3x3vg"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="19_hlumk"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="20_3071l"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="21_251sp"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="22_iiw5r"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="23_drqci"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="24_0652r"]
+
+[sub_resource type="Resource" id="Resource_8se0p"]
+script = ExtResource("2_wly4d")
+method = "LEVEL"
+target = "PILOSWINE"
+level = 33
+item = ""
+
+[sub_resource type="Resource" id="Resource_kqhe6"]
+script = ExtResource("4_8l0i6")
+level = 28
+move = ExtResource("5_unk43")
+
+[sub_resource type="Resource" id="Resource_d2yrv"]
+script = ExtResource("4_8l0i6")
+level = 37
+move = ExtResource("6_hmy4o")
+
+[sub_resource type="Resource" id="Resource_1bvsq"]
+script = ExtResource("4_8l0i6")
+level = 46
+move = ExtResource("7_olc6d")
+
+[resource]
+script = ExtResource("10_koohy")
+species_name = "SWINUB"
+dex = 213
+index = 216
+slug = "swinub"
+label = "Swinub"
+category = "PIG"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 140
+hp = 50
+attack = 50
+defense = 40
+speed = 50
+special = 30
+type1 = "ICE"
+type2 = "GROUND"
+catch_rate = 225
+base_exp = 78
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("8_y3gtn")]([ExtResource("9_y3t0s")])
+learnset = Array[ExtResource("4_8l0i6")]([SubResource("Resource_kqhe6"), SubResource("Resource_d2yrv"), SubResource("Resource_1bvsq")])
+tmhm = Array[ExtResource("8_y3gtn")]([ExtResource("11_pscvc"), ExtResource("12_rlpnv"), ExtResource("13_8asbc"), ExtResource("14_pykhy"), ExtResource("15_2jq7j"), ExtResource("16_xgkq7"), ExtResource("17_nuh6p"), ExtResource("18_3x3vg"), ExtResource("19_hlumk"), ExtResource("7_olc6d"), ExtResource("20_3071l"), ExtResource("21_251sp"), ExtResource("22_iiw5r"), ExtResource("23_drqci"), ExtResource("24_0652r")])
+evolutions = Array[ExtResource("2_wly4d")]([SubResource("Resource_8se0p")])
+palette = "PAL_CYANMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It roots in snow", "for what lies", "beneath, and finds", "food, and finds", "other things too."])
+front_sprite = ExtResource("3_muaqb")
+back_sprite = ExtResource("1_ptam6")

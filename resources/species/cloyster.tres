@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/cloyster.png" id="1_a4efc"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_mlhgh"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/cloyster.png" id="3_lb1ow"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_mjitq"]
+[ext_resource type="Resource" path="res://resources/moves/spike_cannon.tres" id="5_8p76u"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="6_v28op"]
+[ext_resource type="Resource" path="res://resources/moves/withdraw.tres" id="7_p0bx4"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="8_3fuqr"]
+[ext_resource type="Resource" path="res://resources/moves/clamp.tres" id="9_w6p6s"]
+[ext_resource type="Resource" path="res://resources/moves/aurora_beam.tres" id="10_bexhc"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_dj1pk"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_h375w"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="13_2uybq"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="14_vgrw5"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="15_dtvdw"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="16_5o1dg"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="17_mhiu3"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="18_2orgm"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="19_l8v64"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="20_qoonp"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="21_m8ali"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="22_14but"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="23_8o1l7"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="24_5hp7i"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="25_csq1r"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="26_aobml"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="27_ltevd"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="28_5vcrf"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="29_kfhrg"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="30_5dfwy"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="31_s7i25"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="32_r1gon"]
+
+[sub_resource type="Resource" id="Resource_xrknw"]
+script = ExtResource("4_mjitq")
+level = 50
+move = ExtResource("5_8p76u")
+
+[resource]
+script = ExtResource("11_dj1pk")
+species_name = "CLOYSTER"
+dex = 91
+index = 139
+slug = "cloyster"
+label = "Cloyster"
+category = "BIVALVE"
+height_ft = 4
+height_in = 11
+weight_tenths_lb = 2920
+hp = 50
+attack = 95
+defense = 180
+speed = 70
+special = 85
+type1 = "WATER"
+type2 = "ICE"
+catch_rate = 60
+base_exp = 203
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("6_v28op")]([ExtResource("7_p0bx4"), ExtResource("8_3fuqr"), ExtResource("9_w6p6s"), ExtResource("10_bexhc")])
+learnset = Array[ExtResource("4_mjitq")]([SubResource("Resource_xrknw")])
+tmhm = Array[ExtResource("6_v28op")]([ExtResource("12_h375w"), ExtResource("13_2uybq"), ExtResource("14_vgrw5"), ExtResource("15_dtvdw"), ExtResource("16_5o1dg"), ExtResource("17_mhiu3"), ExtResource("18_2orgm"), ExtResource("19_l8v64"), ExtResource("20_qoonp"), ExtResource("21_m8ali"), ExtResource("22_14but"), ExtResource("23_8o1l7"), ExtResource("24_5hp7i"), ExtResource("25_csq1r"), ExtResource("26_aobml"), ExtResource("27_ltevd"), ExtResource("28_5vcrf"), ExtResource("29_kfhrg"), ExtResource("30_5dfwy"), ExtResource("31_s7i25"), ExtResource("32_r1gon")])
+evolutions = Array[ExtResource("2_mlhgh")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_HELIX"
+dex_text = Array[String](["When attacked, it", "launches its", "horns in quick", "volleys. Its", "innards have", "never been seen"])
+front_sprite = ExtResource("3_lb1ow")
+back_sprite = ExtResource("1_a4efc")

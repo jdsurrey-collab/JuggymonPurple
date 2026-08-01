@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/onix.png" id="1_ckjkv"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_3so7e"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/onix.png" id="3_mf3dn"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_fhxpi"]
+[ext_resource type="Resource" path="res://resources/moves/bind.tres" id="5_r44dt"]
+[ext_resource type="Resource" path="res://resources/moves/rock_throw.tres" id="6_dmubv"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="7_anmau"]
+[ext_resource type="Resource" path="res://resources/moves/slam.tres" id="8_mjo22"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="9_f34qe"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_7u6uu"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_ikwse"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="12_08k2q"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_b1x0c"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_s1a3j"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_ma33d"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_4pgdo"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_cu17k"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="18_5brh6"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="19_s0xkx"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="20_6kwn4"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="21_jii0u"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="22_f368j"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="23_vxv7h"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="24_8ttyq"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="25_lv80g"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_kbm16"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="27_xalh6"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="28_bhmon"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="29_gksyr"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="30_h7oj7"]
+
+[sub_resource type="Resource" id="Resource_8ed6y"]
+script = ExtResource("4_fhxpi")
+level = 15
+move = ExtResource("5_r44dt")
+
+[sub_resource type="Resource" id="Resource_rfygf"]
+script = ExtResource("4_fhxpi")
+level = 19
+move = ExtResource("6_dmubv")
+
+[sub_resource type="Resource" id="Resource_wm657"]
+script = ExtResource("4_fhxpi")
+level = 25
+move = ExtResource("7_anmau")
+
+[sub_resource type="Resource" id="Resource_6fhxs"]
+script = ExtResource("4_fhxpi")
+level = 33
+move = ExtResource("8_mjo22")
+
+[sub_resource type="Resource" id="Resource_0mnu5"]
+script = ExtResource("4_fhxpi")
+level = 43
+move = ExtResource("9_f34qe")
+
+[resource]
+script = ExtResource("13_b1x0c")
+species_name = "ONIX"
+dex = 95
+index = 34
+slug = "onix"
+label = "Onix"
+category = "ROCK SNAKE"
+height_ft = 28
+height_in = 10
+weight_tenths_lb = 4630
+hp = 35
+attack = 45
+defense = 160
+speed = 70
+special = 30
+type1 = "ROCK"
+type2 = "GROUND"
+catch_rate = 45
+base_exp = 108
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_7u6uu")]([ExtResource("11_ikwse"), ExtResource("12_08k2q")])
+learnset = Array[ExtResource("4_fhxpi")]([SubResource("Resource_8ed6y"), SubResource("Resource_rfygf"), SubResource("Resource_wm657"), SubResource("Resource_6fhxs"), SubResource("Resource_0mnu5")])
+tmhm = Array[ExtResource("10_7u6uu")]([ExtResource("14_s1a3j"), ExtResource("15_ma33d"), ExtResource("16_4pgdo"), ExtResource("17_cu17k"), ExtResource("7_anmau"), ExtResource("18_5brh6"), ExtResource("19_s0xkx"), ExtResource("20_6kwn4"), ExtResource("21_jii0u"), ExtResource("22_f368j"), ExtResource("23_vxv7h"), ExtResource("24_8ttyq"), ExtResource("25_lv80g"), ExtResource("26_kbm16"), ExtResource("27_xalh6"), ExtResource("28_bhmon"), ExtResource("29_gksyr"), ExtResource("30_h7oj7")])
+evolutions = Array[ExtResource("2_3so7e")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_SNAKE"
+dex_text = Array[String](["As it grows, the", "stone portions of", "its body harden", "to become similar", "to a diamond, but", "colored black"])
+front_sprite = ExtResource("3_mf3dn")
+back_sprite = ExtResource("1_ckjkv")

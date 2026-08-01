@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=38 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/kingler.png" id="1_y10i3"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_i1mql"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/kingler.png" id="3_51yyq"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_rpw13"]
+[ext_resource type="Resource" path="res://resources/moves/vicegrip.tres" id="5_nxt7q"]
+[ext_resource type="Resource" path="res://resources/moves/guillotine.tres" id="6_kikpl"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="7_cft7q"]
+[ext_resource type="Resource" path="res://resources/moves/crabhammer.tres" id="8_xr3oe"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="9_q6g51"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_nkj55"]
+[ext_resource type="Resource" path="res://resources/moves/bubble.tres" id="11_86ogs"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_7gjc0"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_m4rby"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="14_iu5x6"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_m486d"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_dslyo"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_yid10"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_iyjui"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="19_cpjic"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="20_xxnil"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="21_gl7kp"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="22_u63sx"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="23_4w3v6"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="24_4ppsk"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="25_csw66"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="26_ccvum"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="27_4lp7m"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="28_f3qh1"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="29_6dcn1"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="30_6m4al"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="31_1xvtk"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="32_vwllh"]
+
+[sub_resource type="Resource" id="Resource_n1i3c"]
+script = ExtResource("4_rpw13")
+level = 20
+move = ExtResource("5_nxt7q")
+
+[sub_resource type="Resource" id="Resource_c3mpm"]
+script = ExtResource("4_rpw13")
+level = 25
+move = ExtResource("6_kikpl")
+
+[sub_resource type="Resource" id="Resource_s3quj"]
+script = ExtResource("4_rpw13")
+level = 34
+move = ExtResource("7_cft7q")
+
+[sub_resource type="Resource" id="Resource_hcb4x"]
+script = ExtResource("4_rpw13")
+level = 42
+move = ExtResource("8_xr3oe")
+
+[sub_resource type="Resource" id="Resource_rdyk7"]
+script = ExtResource("4_rpw13")
+level = 49
+move = ExtResource("9_q6g51")
+
+[resource]
+script = ExtResource("13_m4rby")
+species_name = "KINGLER"
+dex = 99
+index = 138
+slug = "kingler"
+label = "Kingler"
+category = "PINCER"
+height_ft = 4
+height_in = 3
+weight_tenths_lb = 1320
+hp = 55
+attack = 130
+defense = 115
+speed = 75
+special = 50
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 60
+base_exp = 206
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_nkj55")]([ExtResource("11_86ogs"), ExtResource("12_7gjc0"), ExtResource("5_nxt7q")])
+learnset = Array[ExtResource("4_rpw13")]([SubResource("Resource_n1i3c"), SubResource("Resource_c3mpm"), SubResource("Resource_s3quj"), SubResource("Resource_hcb4x"), SubResource("Resource_rdyk7")])
+tmhm = Array[ExtResource("10_nkj55")]([ExtResource("14_iu5x6"), ExtResource("15_m486d"), ExtResource("16_dslyo"), ExtResource("17_yid10"), ExtResource("18_iyjui"), ExtResource("19_cpjic"), ExtResource("20_xxnil"), ExtResource("21_gl7kp"), ExtResource("22_u63sx"), ExtResource("23_4w3v6"), ExtResource("24_4ppsk"), ExtResource("25_csw66"), ExtResource("26_ccvum"), ExtResource("27_4lp7m"), ExtResource("28_f3qh1"), ExtResource("29_6dcn1"), ExtResource("30_6m4al"), ExtResource("31_1xvtk"), ExtResource("32_vwllh")])
+evolutions = Array[ExtResource("2_i1mql")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["The large pincer", "has 10000 hp of", "crushing power.", "However, its huge", "size makes it", "unwieldy to use"])
+front_sprite = ExtResource("3_51yyq")
+back_sprite = ExtResource("1_y10i3")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_c36cu"]
+
+[resource]
+script = ExtResource("1_c36cu")
+move_name = "CONSTRICT"
+move_id = 132
+display_name = "CONSTRICT"
+move_type = "NORMAL"
+power = 10
+accuracy = 100
+pp = 35
+effect = "SPEED_DOWN_SIDE_EFFECT"

@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/octillery.png" id="1_3lafu"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_yl7so"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/octillery.png" id="3_js7fk"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_sjkw8"]
+[ext_resource type="Resource" path="res://resources/moves/constrict.tres" id="5_5xloi"]
+[ext_resource type="Resource" path="res://resources/moves/aurora_beam.tres" id="6_m0875"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="7_iqe3p"]
+[ext_resource type="Resource" path="res://resources/moves/psybeam.tres" id="8_tc6af"]
+[ext_resource type="Resource" path="res://resources/moves/focus_energy.tres" id="9_0vere"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="10_3nfjr"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="11_13fyu"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="12_8v4i6"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="13_hr4cl"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_brn3l"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_fxinx"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_52xwg"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_rpgoe"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_fl0dg"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_jax12"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_id743"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_4ef3p"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_nn2am"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="23_7d4wl"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="24_ioehu"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="25_qxfmo"]
+
+[sub_resource type="Resource" id="Resource_enxq1"]
+script = ExtResource("4_sjkw8")
+level = 11
+move = ExtResource("5_5xloi")
+
+[sub_resource type="Resource" id="Resource_tlucf"]
+script = ExtResource("4_sjkw8")
+level = 22
+move = ExtResource("6_m0875")
+
+[sub_resource type="Resource" id="Resource_b7d3d"]
+script = ExtResource("4_sjkw8")
+level = 22
+move = ExtResource("7_iqe3p")
+
+[sub_resource type="Resource" id="Resource_m3td5"]
+script = ExtResource("4_sjkw8")
+level = 22
+move = ExtResource("8_tc6af")
+
+[sub_resource type="Resource" id="Resource_w7amb"]
+script = ExtResource("4_sjkw8")
+level = 38
+move = ExtResource("9_0vere")
+
+[sub_resource type="Resource" id="Resource_cms3j"]
+script = ExtResource("4_sjkw8")
+level = 54
+move = ExtResource("10_3nfjr")
+
+[sub_resource type="Resource" id="Resource_nstda"]
+script = ExtResource("4_sjkw8")
+level = 70
+move = ExtResource("11_13fyu")
+
+[resource]
+script = ExtResource("14_brn3l")
+species_name = "OCTILLERY"
+dex = 217
+index = 220
+slug = "octillery"
+label = "Octillery"
+category = "JET"
+height_ft = 2
+height_in = 11
+weight_tenths_lb = 630
+hp = 75
+attack = 105
+defense = 75
+speed = 45
+special = 90
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 75
+base_exp = 164
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("12_8v4i6")]([ExtResource("13_hr4cl")])
+learnset = Array[ExtResource("4_sjkw8")]([SubResource("Resource_enxq1"), SubResource("Resource_tlucf"), SubResource("Resource_b7d3d"), SubResource("Resource_m3td5"), SubResource("Resource_w7amb"), SubResource("Resource_cms3j"), SubResource("Resource_nstda")])
+tmhm = Array[ExtResource("12_8v4i6")]([ExtResource("15_fxinx"), ExtResource("16_52xwg"), ExtResource("17_rpgoe"), ExtResource("18_fl0dg"), ExtResource("19_jax12"), ExtResource("20_id743"), ExtResource("21_4ef3p"), ExtResource("22_nn2am"), ExtResource("23_7d4wl"), ExtResource("13_hr4cl"), ExtResource("7_iqe3p"), ExtResource("10_3nfjr"), ExtResource("24_ioehu"), ExtResource("11_13fyu"), ExtResource("25_qxfmo")])
+evolutions = Array[ExtResource("2_yl7so")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["It takes a den", "and holds it,", "and what held it", "before is not", "seen again."])
+front_sprite = ExtResource("3_js7fk")
+back_sprite = ExtResource("1_3lafu")

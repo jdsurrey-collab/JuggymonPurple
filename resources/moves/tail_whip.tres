@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_ln0rn"]
+
+[resource]
+script = ExtResource("1_ln0rn")
+move_name = "TAIL_WHIP"
+move_id = 39
+display_name = "TAIL WHIP"
+move_type = "NORMAL"
+power = 0
+accuracy = 100
+pp = 30
+effect = "DEFENSE_DOWN1_EFFECT"

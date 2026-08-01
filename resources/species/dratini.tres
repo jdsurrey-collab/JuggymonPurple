@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=41 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/dratini.png" id="1_g5ao0"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_tgsih"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/dratini.png" id="3_stlvs"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ba0bj"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="5_ubc5o"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="6_puigo"]
+[ext_resource type="Resource" path="res://resources/moves/slam.tres" id="7_52j1d"]
+[ext_resource type="Resource" path="res://resources/moves/dragon_rage.tres" id="8_fkjon"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="9_1ubvw"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_s1rm0"]
+[ext_resource type="Resource" path="res://resources/moves/wrap.tres" id="11_3wgjj"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_gj04w"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_eben5"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_tbbml"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_wvx3d"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_fjlcp"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_8x5mx"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="18_gt0gg"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="19_vi2op"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="20_c0nvh"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="21_etoxq"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="22_jctvh"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="23_7yteb"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="24_ff7ki"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="25_kyo1c"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="26_86rfi"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="27_056lp"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="28_hlicb"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="29_ot4e2"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="30_ls7g4"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="31_bk76h"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="32_2o1sr"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="33_cedmm"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="34_kpyks"]
+
+[sub_resource type="Resource" id="Resource_5nnbl"]
+script = ExtResource("2_tgsih")
+method = "LEVEL"
+target = "DRAGONAIR"
+level = 30
+item = ""
+
+[sub_resource type="Resource" id="Resource_n8sbn"]
+script = ExtResource("4_ba0bj")
+level = 10
+move = ExtResource("5_ubc5o")
+
+[sub_resource type="Resource" id="Resource_r4u0y"]
+script = ExtResource("4_ba0bj")
+level = 20
+move = ExtResource("6_puigo")
+
+[sub_resource type="Resource" id="Resource_1n6e2"]
+script = ExtResource("4_ba0bj")
+level = 30
+move = ExtResource("7_52j1d")
+
+[sub_resource type="Resource" id="Resource_0sc6d"]
+script = ExtResource("4_ba0bj")
+level = 40
+move = ExtResource("8_fkjon")
+
+[sub_resource type="Resource" id="Resource_3tkcp"]
+script = ExtResource("4_ba0bj")
+level = 50
+move = ExtResource("9_1ubvw")
+
+[resource]
+script = ExtResource("13_eben5")
+species_name = "DRATINI"
+dex = 147
+index = 88
+slug = "dratini"
+label = "Dratini"
+category = "DRAGON"
+height_ft = 5
+height_in = 11
+weight_tenths_lb = 70
+hp = 41
+attack = 64
+defense = 45
+speed = 50
+special = 50
+type1 = "DRAGON"
+type2 = "DRAGON"
+catch_rate = 45
+base_exp = 67
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("10_s1rm0")]([ExtResource("11_3wgjj"), ExtResource("12_gj04w")])
+learnset = Array[ExtResource("4_ba0bj")]([SubResource("Resource_n8sbn"), SubResource("Resource_r4u0y"), SubResource("Resource_1n6e2"), SubResource("Resource_0sc6d"), SubResource("Resource_3tkcp")])
+tmhm = Array[ExtResource("10_s1rm0")]([ExtResource("14_tbbml"), ExtResource("15_wvx3d"), ExtResource("16_fjlcp"), ExtResource("17_8x5mx"), ExtResource("18_gt0gg"), ExtResource("19_vi2op"), ExtResource("20_c0nvh"), ExtResource("21_etoxq"), ExtResource("22_jctvh"), ExtResource("8_fkjon"), ExtResource("23_7yteb"), ExtResource("24_ff7ki"), ExtResource("25_kyo1c"), ExtResource("26_86rfi"), ExtResource("27_056lp"), ExtResource("28_hlicb"), ExtResource("29_ot4e2"), ExtResource("30_ls7g4"), ExtResource("31_bk76h"), ExtResource("32_2o1sr"), ExtResource("5_ubc5o"), ExtResource("33_cedmm"), ExtResource("34_kpyks")])
+evolutions = Array[ExtResource("2_tgsih")]([SubResource("Resource_5nnbl")])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_SNAKE"
+dex_text = Array[String](["Long considered a", "mythical #MON", "until recently", "when a small", "colony was found", "living underwater"])
+front_sprite = ExtResource("3_stlvs")
+back_sprite = ExtResource("1_g5ao0")

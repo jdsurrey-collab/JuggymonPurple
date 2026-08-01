@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/articuno.png" id="1_ipjl0"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_fq55b"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/articuno.png" id="3_b2mua"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_1454f"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="5_wktqf"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="6_kgomr"]
+[ext_resource type="Resource" path="res://resources/moves/mist.tres" id="7_4xxkw"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_lovxi"]
+[ext_resource type="Resource" path="res://resources/moves/peck.tres" id="9_3diyt"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="10_wet5u"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_agi63"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="12_tol42"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="13_3ibjw"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_keeiw"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_6n5om"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_bnx1u"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="17_pgkk4"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="18_dntb7"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="19_0ka52"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="20_45x4x"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="21_cycih"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="22_lcriq"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="23_fupds"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="24_fmixl"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="25_vj76a"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="26_qecix"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="27_ilm1s"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="28_hwgii"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="29_1uotp"]
+
+[sub_resource type="Resource" id="Resource_cph4l"]
+script = ExtResource("4_1454f")
+level = 51
+move = ExtResource("5_wktqf")
+
+[sub_resource type="Resource" id="Resource_e6auq"]
+script = ExtResource("4_1454f")
+level = 55
+move = ExtResource("6_kgomr")
+
+[sub_resource type="Resource" id="Resource_dt8nr"]
+script = ExtResource("4_1454f")
+level = 60
+move = ExtResource("7_4xxkw")
+
+[resource]
+script = ExtResource("11_agi63")
+species_name = "ARTICUNO"
+dex = 144
+index = 74
+slug = "articuno"
+label = "Articuno"
+category = "FREEZE"
+height_ft = 5
+height_in = 7
+weight_tenths_lb = 1220
+hp = 90
+attack = 85
+defense = 100
+speed = 85
+special = 125
+type1 = "ICE"
+type2 = "FLYING"
+catch_rate = 3
+base_exp = 215
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("8_lovxi")]([ExtResource("9_3diyt"), ExtResource("10_wet5u")])
+learnset = Array[ExtResource("4_1454f")]([SubResource("Resource_cph4l"), SubResource("Resource_e6auq"), SubResource("Resource_dt8nr")])
+tmhm = Array[ExtResource("8_lovxi")]([ExtResource("12_tol42"), ExtResource("13_3ibjw"), ExtResource("14_keeiw"), ExtResource("15_6n5om"), ExtResource("16_bnx1u"), ExtResource("17_pgkk4"), ExtResource("18_dntb7"), ExtResource("10_wet5u"), ExtResource("5_wktqf"), ExtResource("19_0ka52"), ExtResource("20_45x4x"), ExtResource("21_cycih"), ExtResource("22_lcriq"), ExtResource("23_fupds"), ExtResource("24_fmixl"), ExtResource("25_vj76a"), ExtResource("26_qecix"), ExtResource("27_ilm1s"), ExtResource("28_hwgii"), ExtResource("29_1uotp")])
+evolutions = Array[ExtResource("2_fq55b")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_BIRD"
+dex_text = Array[String](["A legendary bird", "#MON that is", "said to appear to", "doomed people who", "are lost in icy", "mountains"])
+front_sprite = ExtResource("3_b2mua")
+back_sprite = ExtResource("1_ipjl0")

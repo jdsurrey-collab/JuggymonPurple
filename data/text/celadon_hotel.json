@@ -1,0 +1,60 @@
+{
+ "CeladonHotelGrannyText": [
+  {
+   "kind": "text",
+   "line": "#MON? No, this"
+  },
+  {
+   "kind": "line",
+   "line": "inn is for weary"
+  },
+  {
+   "kind": "cont",
+   "line": "souls alone."
+  },
+  {
+   "kind": "para",
+   "line": "We're full, I'm"
+  },
+  {
+   "kind": "line",
+   "line": "afraid."
+  }
+ ],
+ "CeladonHotelBeautyText": [
+  {
+   "kind": "text",
+   "line": "I holiday here"
+  },
+  {
+   "kind": "line",
+   "line": "with my brother"
+  },
+  {
+   "kind": "cont",
+   "line": "and my beau."
+  },
+  {
+   "kind": "para",
+   "line": "CELADON is such"
+  },
+  {
+   "kind": "line",
+   "line": "a lovely, sad"
+  },
+  {
+   "kind": "cont",
+   "line": "city!"
+  }
+ ],
+ "CeladonHotelSuperNerdText": [
+  {
+   "kind": "text",
+   "line": "Why bring her"
+  },
+  {
+   "kind": "line",
+   "line": "brother along?"
+  }
+ ]
+}

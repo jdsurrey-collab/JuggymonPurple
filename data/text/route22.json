@@ -1,0 +1,272 @@
+{
+ "Route22RivalBeforeBattleText1": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Ha!"
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>!"
+  },
+  {
+   "kind": "para",
+   "line": "Bound for the"
+  },
+  {
+   "kind": "line",
+   "line": "#MON LEAGUE?"
+  },
+  {
+   "kind": "para",
+   "line": "Don't trouble"
+  },
+  {
+   "kind": "line",
+   "line": "yourself. You've"
+  },
+  {
+   "kind": "cont",
+   "line": "not a single BADGE."
+  },
+  {
+   "kind": "para",
+   "line": "The guard shall"
+  },
+  {
+   "kind": "line",
+   "line": "turn you back!"
+  },
+  {
+   "kind": "para",
+   "line": "Tell me, though-"
+  },
+  {
+   "kind": "line",
+   "line": "has your #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "grown any stronger?"
+  }
+ ],
+ "Route22RivalAfterBattleText1": [
+  {
+   "kind": "text",
+   "line": "They say the"
+  },
+  {
+   "kind": "line",
+   "line": "#MON LEAGUE"
+  },
+  {
+   "kind": "cont",
+   "line": "breaks the weak."
+  },
+  {
+   "kind": "para",
+   "line": "I must learn how"
+  },
+  {
+   "kind": "line",
+   "line": "to slip past"
+  },
+  {
+   "kind": "cont",
+   "line": "them unscathed."
+  },
+  {
+   "kind": "para",
+   "line": "You'd best stop"
+  },
+  {
+   "kind": "line",
+   "line": "dawdling and"
+  },
+  {
+   "kind": "cont",
+   "line": "make haste."
+  }
+ ],
+ "Route22Rival1DefeatedText": [
+  {
+   "kind": "text",
+   "line": "Tch."
+  },
+  {
+   "kind": "line",
+   "line": "Sheer luck,"
+  },
+  {
+   "kind": "cont",
+   "line": "nothing more!"
+  }
+ ],
+ "Route22Rival1VictoryText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: What?"
+  },
+  {
+   "kind": "line",
+   "line": "Why do I keep 2"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON?"
+  },
+  {
+   "kind": "para",
+   "line": "You'd do well to"
+  },
+  {
+   "kind": "cont",
+   "line": "catch more too."
+  }
+ ],
+ "Route22RivalBeforeBattleText2": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: What?"
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>! What an"
+  },
+  {
+   "kind": "cont",
+   "line": "unwelcome"
+  },
+  {
+   "kind": "cont",
+   "line": "surprise."
+  },
+  {
+   "kind": "para",
+   "line": "Bound for the"
+  },
+  {
+   "kind": "line",
+   "line": "#MON LEAGUE"
+  },
+  {
+   "kind": "para",
+   "line": "as well? All"
+  },
+  {
+   "kind": "line",
+   "line": "eight BADGEs?"
+  },
+  {
+   "kind": "cont",
+   "line": "How tiresome."
+  },
+  {
+   "kind": "para",
+   "line": "Then let me use"
+  },
+  {
+   "kind": "line",
+   "line": "you, <PLAYER>, as"
+  },
+  {
+   "kind": "cont",
+   "line": "a warm-up for"
+  },
+  {
+   "kind": "cont",
+   "line": "the LEAGUE."
+  },
+  {
+   "kind": "para",
+   "line": "Come, then."
+  }
+ ],
+ "Route22RivalAfterBattleText2": [
+  {
+   "kind": "text",
+   "line": "That eased my"
+  },
+  {
+   "kind": "line",
+   "line": "nerves. I'm ready"
+  },
+  {
+   "kind": "cont",
+   "line": "for the LEAGUE."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>, you want"
+  },
+  {
+   "kind": "line",
+   "line": "far more practice."
+  },
+  {
+   "kind": "para",
+   "line": "But you know"
+  },
+  {
+   "kind": "line",
+   "line": "that already."
+  },
+  {
+   "kind": "cont",
+   "line": "I'm gone. Farewell."
+  }
+ ],
+ "Route22Rival2DefeatedText": [
+  {
+   "kind": "text",
+   "line": "What!?"
+  },
+  {
+   "kind": "para",
+   "line": "A mere lapse,"
+  },
+  {
+   "kind": "line",
+   "line": "nothing more!"
+  }
+ ],
+ "Route22Rival2VictoryText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: Hah!"
+  },
+  {
+   "kind": "line",
+   "line": "<PLAYER>. Is that"
+  },
+  {
+   "kind": "cont",
+   "line": "truly your best?"
+  },
+  {
+   "kind": "cont",
+   "line": "You'll never"
+  },
+  {
+   "kind": "cont",
+   "line": "equal me."
+  },
+  {
+   "kind": "para",
+   "line": "Go train more,"
+  },
+  {
+   "kind": "line",
+   "line": "you pitiful thing."
+  }
+ ],
+ "Route22PokemonLeagueSignText": [
+  {
+   "kind": "text",
+   "line": "#MON LEAGUE"
+  },
+  {
+   "kind": "line",
+   "line": "Front Gate"
+  }
+ ]
+}

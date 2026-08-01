@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/cyndaquil.png" id="1_mdgau"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_hw7h4"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/cyndaquil.png" id="3_xoiar"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_s84m5"]
+[ext_resource type="Resource" path="res://resources/moves/smokescreen.tres" id="5_6w1ag"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="6_41vd0"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="7_gx36d"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="8_gumtr"]
+[ext_resource type="Resource" path="res://resources/moves/flamethrower.tres" id="9_h35e5"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_ve3gb"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_j2g0e"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_k0t6e"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_stt2u"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_wneg0"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_tjutn"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_j7ry5"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_ulghh"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_70pbf"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_bxlv7"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_bpbo8"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="21_4qa35"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="22_y0o83"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="23_ig84r"]
+
+[sub_resource type="Resource" id="Resource_fkhih"]
+script = ExtResource("2_hw7h4")
+method = "LEVEL"
+target = "QUILAVA"
+level = 14
+item = ""
+
+[sub_resource type="Resource" id="Resource_jklbs"]
+script = ExtResource("4_s84m5")
+level = 6
+move = ExtResource("5_6w1ag")
+
+[sub_resource type="Resource" id="Resource_n5qfx"]
+script = ExtResource("4_s84m5")
+level = 12
+move = ExtResource("6_41vd0")
+
+[sub_resource type="Resource" id="Resource_ut5yq"]
+script = ExtResource("4_s84m5")
+level = 19
+move = ExtResource("7_gx36d")
+
+[sub_resource type="Resource" id="Resource_26rng"]
+script = ExtResource("4_s84m5")
+level = 36
+move = ExtResource("8_gumtr")
+
+[sub_resource type="Resource" id="Resource_2ovgl"]
+script = ExtResource("4_s84m5")
+level = 46
+move = ExtResource("9_h35e5")
+
+[resource]
+script = ExtResource("13_stt2u")
+species_name = "CYNDAQUIL"
+dex = 155
+index = 52
+slug = "cyndaquil"
+label = "Cyndaquil"
+category = "FIRE MOUSE"
+height_ft = 1
+height_in = 8
+weight_tenths_lb = 170
+hp = 39
+attack = 52
+defense = 43
+speed = 65
+special = 55
+type1 = "FIRE"
+type2 = "FIRE"
+catch_rate = 45
+base_exp = 65
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("10_ve3gb")]([ExtResource("11_j2g0e"), ExtResource("12_k0t6e")])
+learnset = Array[ExtResource("4_s84m5")]([SubResource("Resource_jklbs"), SubResource("Resource_n5qfx"), SubResource("Resource_ut5yq"), SubResource("Resource_26rng"), SubResource("Resource_2ovgl")])
+tmhm = Array[ExtResource("10_ve3gb")]([ExtResource("14_wneg0"), ExtResource("15_tjutn"), ExtResource("16_j7ry5"), ExtResource("17_ulghh"), ExtResource("18_70pbf"), ExtResource("19_bxlv7"), ExtResource("20_bpbo8"), ExtResource("8_gumtr"), ExtResource("21_4qa35"), ExtResource("22_y0o83"), ExtResource("23_ig84r")])
+evolutions = Array[ExtResource("2_hw7h4")]([SubResource("Resource_fkhih")])
+palette = "PAL_REDMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Timid. Its back", "smoulders only", "when frightened.", "Cornered, it has", "burned down barns."])
+front_sprite = ExtResource("3_xoiar")
+back_sprite = ExtResource("1_mdgau")

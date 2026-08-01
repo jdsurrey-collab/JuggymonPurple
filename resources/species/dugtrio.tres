@@ -1,0 +1,83 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=31 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/dugtrio.png" id="1_hr7ys"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_uje24"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/dugtrio.png" id="3_wf0om"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_fhpo8"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="5_tegjj"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="6_b3eun"]
+[ext_resource type="Resource" path="res://resources/moves/sand_attack.tres" id="7_4uos8"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="8_oinj1"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="9_5d1pd"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_3f2ww"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="11_ln3uc"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_rfbeo"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_b15r4"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="14_in1c8"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_4e0ko"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_1md4x"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="17_ptshq"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_0bowr"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="19_7ivfu"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="20_2xpxr"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="21_v0mcq"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="22_og2sb"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="23_818h2"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="24_8n41s"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="25_f2cuh"]
+
+[sub_resource type="Resource" id="Resource_viu7b"]
+script = ExtResource("4_fhpo8")
+level = 15
+move = ExtResource("5_tegjj")
+
+[sub_resource type="Resource" id="Resource_4th3w"]
+script = ExtResource("4_fhpo8")
+level = 19
+move = ExtResource("6_b3eun")
+
+[sub_resource type="Resource" id="Resource_kn4lk"]
+script = ExtResource("4_fhpo8")
+level = 24
+move = ExtResource("7_4uos8")
+
+[sub_resource type="Resource" id="Resource_2xl6a"]
+script = ExtResource("4_fhpo8")
+level = 35
+move = ExtResource("8_oinj1")
+
+[sub_resource type="Resource" id="Resource_6xpgj"]
+script = ExtResource("4_fhpo8")
+level = 47
+move = ExtResource("9_5d1pd")
+
+[resource]
+script = ExtResource("12_rfbeo")
+species_name = "DUGTRIO"
+dex = 51
+index = 118
+slug = "dugtrio"
+label = "Dugtrio"
+category = "MOLE"
+height_ft = 2
+height_in = 4
+weight_tenths_lb = 730
+hp = 35
+attack = 80
+defense = 50
+speed = 120
+special = 70
+type1 = "GROUND"
+type2 = "GROUND"
+catch_rate = 50
+base_exp = 153
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_3f2ww")]([ExtResource("11_ln3uc"), ExtResource("5_tegjj"), ExtResource("6_b3eun")])
+learnset = Array[ExtResource("4_fhpo8")]([SubResource("Resource_viu7b"), SubResource("Resource_4th3w"), SubResource("Resource_kn4lk"), SubResource("Resource_2xl6a"), SubResource("Resource_6xpgj")])
+tmhm = Array[ExtResource("10_3f2ww")]([ExtResource("13_b15r4"), ExtResource("14_in1c8"), ExtResource("15_4e0ko"), ExtResource("16_1md4x"), ExtResource("17_ptshq"), ExtResource("18_0bowr"), ExtResource("9_5d1pd"), ExtResource("19_7ivfu"), ExtResource("6_b3eun"), ExtResource("20_2xpxr"), ExtResource("21_v0mcq"), ExtResource("22_og2sb"), ExtResource("23_818h2"), ExtResource("24_8n41s"), ExtResource("25_f2cuh")])
+evolutions = Array[ExtResource("2_uje24")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["A team of DIGLETT", "triplets.", "It triggers huge", "earthquakes by", "burrowing 60 miles", "underground"])
+front_sprite = ExtResource("3_wf0om")
+back_sprite = ExtResource("1_hr7ys")

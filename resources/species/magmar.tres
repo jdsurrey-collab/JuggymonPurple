@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=43 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/magmar.png" id="1_j00sh"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_2weiw"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/magmar.png" id="3_1oykn"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_dhe1u"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="5_ivkcf"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="6_2vw0n"]
+[ext_resource type="Resource" path="res://resources/moves/fire_punch.tres" id="7_mg8m5"]
+[ext_resource type="Resource" path="res://resources/moves/smokescreen.tres" id="8_xwda3"]
+[ext_resource type="Resource" path="res://resources/moves/smog.tres" id="9_hmssl"]
+[ext_resource type="Resource" path="res://resources/moves/flamethrower.tres" id="10_ai2gp"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_25608"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="12_37elt"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_57ckx"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="14_84sr5"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="15_yyqa5"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_xyy2k"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="17_1qio6"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_6dp7i"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_p36pu"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="20_fd37m"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="21_uf373"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="22_0ewdd"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="23_kqk07"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="24_ftk8p"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="25_lnal4"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="26_vrxpa"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="27_1c6fp"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="28_m1s5n"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="29_o1hsf"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="30_6ctom"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="31_tdtbk"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="32_sq130"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="33_b1062"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="34_7faxp"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="35_ivd3q"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="36_awsnq"]
+
+[sub_resource type="Resource" id="Resource_fvcsv"]
+script = ExtResource("4_dhe1u")
+level = 36
+move = ExtResource("5_ivkcf")
+
+[sub_resource type="Resource" id="Resource_2rrjt"]
+script = ExtResource("4_dhe1u")
+level = 39
+move = ExtResource("6_2vw0n")
+
+[sub_resource type="Resource" id="Resource_4kll0"]
+script = ExtResource("4_dhe1u")
+level = 43
+move = ExtResource("7_mg8m5")
+
+[sub_resource type="Resource" id="Resource_7hpam"]
+script = ExtResource("4_dhe1u")
+level = 48
+move = ExtResource("8_xwda3")
+
+[sub_resource type="Resource" id="Resource_ojhj0"]
+script = ExtResource("4_dhe1u")
+level = 52
+move = ExtResource("9_hmssl")
+
+[sub_resource type="Resource" id="Resource_d4w8c"]
+script = ExtResource("4_dhe1u")
+level = 55
+move = ExtResource("10_ai2gp")
+
+[resource]
+script = ExtResource("13_57ckx")
+species_name = "MAGMAR"
+dex = 126
+index = 51
+slug = "magmar"
+label = "Magmar"
+category = "SPITFIRE"
+height_ft = 4
+height_in = 3
+weight_tenths_lb = 980
+hp = 65
+attack = 95
+defense = 57
+speed = 93
+special = 85
+type1 = "FIRE"
+type2 = "FIRE"
+catch_rate = 45
+base_exp = 167
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_25608")]([ExtResource("12_37elt")])
+learnset = Array[ExtResource("4_dhe1u")]([SubResource("Resource_fvcsv"), SubResource("Resource_2rrjt"), SubResource("Resource_4kll0"), SubResource("Resource_7hpam"), SubResource("Resource_ojhj0"), SubResource("Resource_d4w8c")])
+tmhm = Array[ExtResource("11_25608")]([ExtResource("14_84sr5"), ExtResource("15_yyqa5"), ExtResource("16_xyy2k"), ExtResource("17_1qio6"), ExtResource("18_6dp7i"), ExtResource("19_p36pu"), ExtResource("20_fd37m"), ExtResource("21_uf373"), ExtResource("22_0ewdd"), ExtResource("23_kqk07"), ExtResource("24_ftk8p"), ExtResource("25_lnal4"), ExtResource("26_vrxpa"), ExtResource("27_1c6fp"), ExtResource("28_m1s5n"), ExtResource("29_o1hsf"), ExtResource("30_6ctom"), ExtResource("31_tdtbk"), ExtResource("32_sq130"), ExtResource("33_b1062"), ExtResource("34_7faxp"), ExtResource("35_ivd3q"), ExtResource("36_awsnq")])
+evolutions = Array[ExtResource("2_2weiw")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Its body always", "burns with an", "orange glow that", "enables it to", "hide perfectly", "among flames"])
+front_sprite = ExtResource("3_1oykn")
+back_sprite = ExtResource("1_j00sh")

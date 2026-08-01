@@ -1,0 +1,20 @@
+{
+ "SilphCo1FLinkReceptionistText": [
+  {
+   "kind": "text",
+   "line": "Welcome."
+  },
+  {
+   "kind": "para",
+   "line": "The PRESIDENT is"
+  },
+  {
+   "kind": "line",
+   "line": "held in the"
+  },
+  {
+   "kind": "cont",
+   "line": "boardroom, 11F!"
+  }
+ ]
+}

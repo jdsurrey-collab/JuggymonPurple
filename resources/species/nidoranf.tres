@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=24 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/nidoranf.png" id="1_wdvhd"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_1tsqs"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/nidoranf.png" id="3_08oth"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_rnsdc"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="5_2xipq"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="6_fvhwg"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="7_gcjlc"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="8_y7tlv"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="9_8b63n"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="10_ue6ua"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="11_clwh6"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="12_gvgdc"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="13_8wsiq"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_04b8g"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="15_co211"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="16_583va"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_hptwv"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_2wwal"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="19_tki7r"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_p25jt"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="21_okb6r"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="22_fr66h"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="23_304bo"]
+
+[resource]
+script = ExtResource("8_y7tlv")
+species_name = "NIDORAN_F"
+dex = 29
+index = 15
+slug = "nidoranf"
+label = "Nidoranf"
+category = ""
+height_ft = 0
+height_in = 0
+weight_tenths_lb = 0
+hp = 55
+attack = 47
+defense = 52
+speed = 41
+special = 40
+type1 = "POISON"
+type2 = "POISON"
+catch_rate = 235
+base_exp = 59
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("5_2xipq")]([ExtResource("6_fvhwg"), ExtResource("7_gcjlc")])
+learnset = Array[ExtResource("4_rnsdc")]([])
+tmhm = Array[ExtResource("5_2xipq")]([ExtResource("9_8b63n"), ExtResource("10_ue6ua"), ExtResource("11_clwh6"), ExtResource("12_gvgdc"), ExtResource("13_8wsiq"), ExtResource("14_04b8g"), ExtResource("15_co211"), ExtResource("16_583va"), ExtResource("17_hptwv"), ExtResource("18_2wwal"), ExtResource("19_tki7r"), ExtResource("20_p25jt"), ExtResource("21_okb6r"), ExtResource("22_fr66h"), ExtResource("23_304bo")])
+evolutions = Array[ExtResource("2_1tsqs")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String]([])
+front_sprite = ExtResource("3_08oth")
+back_sprite = ExtResource("1_wdvhd")

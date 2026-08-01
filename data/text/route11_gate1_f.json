@@ -1,0 +1,44 @@
+{
+ "Route11Gate1FGuardText": [
+  {
+   "kind": "text",
+   "line": "Catch enough"
+  },
+  {
+   "kind": "line",
+   "line": "#MON, and"
+  },
+  {
+   "kind": "cont",
+   "line": "naming grows"
+  },
+  {
+   "kind": "cont",
+   "line": "wearisome, no?"
+  },
+  {
+   "kind": "para",
+   "line": "In LAVENDER"
+  },
+  {
+   "kind": "line",
+   "line": "TOWN, a man"
+  },
+  {
+   "kind": "cont",
+   "line": "judges #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "nicknames."
+  },
+  {
+   "kind": "para",
+   "line": "He'll rename"
+  },
+  {
+   "kind": "line",
+   "line": "them, too."
+  }
+ ]
+}

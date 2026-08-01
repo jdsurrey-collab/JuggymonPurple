@@ -1,0 +1,292 @@
+{
+ "Route21Fisher1BattleText": [
+  {
+   "kind": "text",
+   "line": "You wish to know"
+  },
+  {
+   "kind": "line",
+   "line": "if the fish still"
+  },
+  {
+   "kind": "cont",
+   "line": "bite, out here?"
+  }
+ ],
+ "Route21Fisher1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Dang!"
+  }
+ ],
+ "Route21Fisher1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I can't catch"
+  },
+  {
+   "kind": "line",
+   "line": "anything worth"
+  },
+  {
+   "kind": "cont",
+   "line": "the trouble!"
+  }
+ ],
+ "Route21Fisher2BattleText": [
+  {
+   "kind": "text",
+   "line": "I've a fine haul!"
+  },
+  {
+   "kind": "line",
+   "line": "Care to try me?"
+  }
+ ],
+ "Route21Fisher2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Darn"
+  },
+  {
+   "kind": "line",
+   "line": "MAGIKARP!"
+  }
+ ],
+ "Route21Fisher2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I only ever catch"
+  },
+  {
+   "kind": "line",
+   "line": "MAGIKARP, alas!"
+  }
+ ],
+ "Route21Swimmer1BattleText": [
+  {
+   "kind": "text",
+   "line": "The sea cleanses"
+  },
+  {
+   "kind": "line",
+   "line": "body and soul!"
+  }
+ ],
+ "Route21Swimmer1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ayah!"
+  }
+ ],
+ "Route21Swimmer1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I favor the"
+  },
+  {
+   "kind": "line",
+   "line": "mountains too!"
+  }
+ ],
+ "Route21Swimmer2BattleText": [
+  {
+   "kind": "text",
+   "line": "What's wrong with"
+  },
+  {
+   "kind": "line",
+   "line": "my swimming here?"
+  }
+ ],
+ "Route21Swimmer2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Cheap"
+  },
+  {
+   "kind": "line",
+   "line": "shot!"
+  }
+ ],
+ "Route21Swimmer2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I look like what?"
+  },
+  {
+   "kind": "line",
+   "line": "A bloated inner"
+  },
+  {
+   "kind": "cont",
+   "line": "tube? Be gone!"
+  }
+ ],
+ "Route21Swimmer3BattleText": [
+  {
+   "kind": "text",
+   "line": "I caught all my"
+  },
+  {
+   "kind": "line",
+   "line": "#MON at sea!"
+  }
+ ],
+ "Route21Swimmer3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Diver!!"
+  },
+  {
+   "kind": "line",
+   "line": "Down!!"
+  }
+ ],
+ "Route21Swimmer3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Where'd you catch"
+  },
+  {
+   "kind": "line",
+   "line": "your own #MON?"
+  }
+ ],
+ "Route21Swimmer4BattleText": [
+  {
+   "kind": "text",
+   "line": "I'm mid-race in"
+  },
+  {
+   "kind": "line",
+   "line": "a grim triathlon!"
+  }
+ ],
+ "Route21Swimmer4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Pant..."
+  },
+  {
+   "kind": "line",
+   "line": "pant...pant..."
+  }
+ ],
+ "Route21Swimmer4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm spent!"
+  },
+  {
+   "kind": "line",
+   "line": "But the bike race"
+  },
+  {
+   "kind": "cont",
+   "line": "and the marathon"
+  },
+  {
+   "kind": "cont",
+   "line": "remain still!"
+  }
+ ],
+ "Route21Swimmer5BattleText": [
+  {
+   "kind": "text",
+   "line": "Ahh! Feel the sun"
+  },
+  {
+   "kind": "line",
+   "line": "and the cruel"
+  },
+  {
+   "kind": "cont",
+   "line": "wind!"
+  }
+ ],
+ "Route21Swimmer5EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Yow!"
+  },
+  {
+   "kind": "line",
+   "line": "I have lost!"
+  }
+ ],
+ "Route21Swimmer5AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm burnt to a"
+  },
+  {
+   "kind": "line",
+   "line": "crisp, at last!"
+  }
+ ],
+ "Route21Fisher3BattleText": [
+  {
+   "kind": "text",
+   "line": "Hey, don't scare"
+  },
+  {
+   "kind": "line",
+   "line": "off the fish!"
+  }
+ ],
+ "Route21Fisher3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Sorry!"
+  },
+  {
+   "kind": "line",
+   "line": "I meant no harm!"
+  }
+ ],
+ "Route21Fisher3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I was only bitter"
+  },
+  {
+   "kind": "line",
+   "line": "that I couldn't"
+  },
+  {
+   "kind": "cont",
+   "line": "catch a thing."
+  }
+ ],
+ "Route21Fisher4BattleText": [
+  {
+   "kind": "text",
+   "line": "Keep me company"
+  },
+  {
+   "kind": "line",
+   "line": "'til I get a bite!"
+  }
+ ],
+ "Route21Fisher4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "That"
+  },
+  {
+   "kind": "line",
+   "line": "killed some time."
+  }
+ ],
+ "Route21Fisher4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh wait! A bite"
+  },
+  {
+   "kind": "line",
+   "line": "at last! Yes!"
+  }
+ ]
+}

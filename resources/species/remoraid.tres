@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=31 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/remoraid.png" id="1_6illx"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_2q02f"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/remoraid.png" id="3_5up2v"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_f34jg"]
+[ext_resource type="Resource" path="res://resources/moves/aurora_beam.tres" id="5_4lv8n"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="6_5slag"]
+[ext_resource type="Resource" path="res://resources/moves/psybeam.tres" id="7_w0hmc"]
+[ext_resource type="Resource" path="res://resources/moves/focus_energy.tres" id="8_hded0"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="9_x5jjx"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="10_nm7vp"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_r7vsb"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="12_ifc65"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_urftl"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_mhnre"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_une6v"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_vgv64"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_4i5h1"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_m7q30"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_y5tlb"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_jsk7q"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_w4s5o"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="22_w3hge"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="23_yheyc"]
+
+[sub_resource type="Resource" id="Resource_n2452"]
+script = ExtResource("2_2q02f")
+method = "LEVEL"
+target = "OCTILLERY"
+level = 25
+item = ""
+
+[sub_resource type="Resource" id="Resource_r6bl1"]
+script = ExtResource("4_f34jg")
+level = 22
+move = ExtResource("5_4lv8n")
+
+[sub_resource type="Resource" id="Resource_hnk3p"]
+script = ExtResource("4_f34jg")
+level = 22
+move = ExtResource("6_5slag")
+
+[sub_resource type="Resource" id="Resource_y5ah4"]
+script = ExtResource("4_f34jg")
+level = 22
+move = ExtResource("7_w0hmc")
+
+[sub_resource type="Resource" id="Resource_kgsay"]
+script = ExtResource("4_f34jg")
+level = 33
+move = ExtResource("8_hded0")
+
+[sub_resource type="Resource" id="Resource_30353"]
+script = ExtResource("4_f34jg")
+level = 44
+move = ExtResource("9_x5jjx")
+
+[sub_resource type="Resource" id="Resource_seo1l"]
+script = ExtResource("4_f34jg")
+level = 55
+move = ExtResource("10_nm7vp")
+
+[resource]
+script = ExtResource("13_urftl")
+species_name = "REMORAID"
+dex = 216
+index = 219
+slug = "remoraid"
+label = "Remoraid"
+category = "JET"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 260
+hp = 35
+attack = 65
+defense = 35
+speed = 65
+special = 50
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 190
+base_exp = 78
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_r7vsb")]([ExtResource("12_ifc65")])
+learnset = Array[ExtResource("4_f34jg")]([SubResource("Resource_r6bl1"), SubResource("Resource_hnk3p"), SubResource("Resource_y5ah4"), SubResource("Resource_kgsay"), SubResource("Resource_30353"), SubResource("Resource_seo1l")])
+tmhm = Array[ExtResource("11_r7vsb")]([ExtResource("14_mhnre"), ExtResource("15_une6v"), ExtResource("16_vgv64"), ExtResource("17_4i5h1"), ExtResource("18_m7q30"), ExtResource("19_y5tlb"), ExtResource("20_jsk7q"), ExtResource("21_w4s5o"), ExtResource("22_w3hge"), ExtResource("12_ifc65"), ExtResource("6_5slag"), ExtResource("9_x5jjx"), ExtResource("23_yheyc")])
+evolutions = Array[ExtResource("2_2q02f")]([SubResource("Resource_n2452")])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["It spits water", "hard enough to", "fell a bird in", "flight. It does", "not always eat", "what it fells."])
+front_sprite = ExtResource("3_5up2v")
+back_sprite = ExtResource("1_6illx")

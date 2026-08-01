@@ -1,0 +1,95 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=39 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/venomoth.png" id="1_73xn1"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_aldv0"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/venomoth.png" id="3_mbeg5"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ddplq"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="5_ocfdb"]
+[ext_resource type="Resource" path="res://resources/moves/leech_life.tres" id="6_tmwpi"]
+[ext_resource type="Resource" path="res://resources/moves/stun_spore.tres" id="7_ubonr"]
+[ext_resource type="Resource" path="res://resources/moves/psybeam.tres" id="8_oc6nc"]
+[ext_resource type="Resource" path="res://resources/moves/sleep_powder.tres" id="9_2em7m"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="10_n8row"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_idrg2"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_i8jg6"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="13_sb842"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_fjp78"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="15_qbn8b"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="16_pvdnb"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_65gl6"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_m8uuf"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_hd8d2"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="20_dsi7e"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="21_ntiuc"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="22_q1gok"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="23_cqa7v"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="24_rswns"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="25_c1aok"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="26_sdvur"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="27_qibw1"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="28_0nhsh"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="29_yffrg"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="30_hs0yx"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="31_fx22a"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="32_nwstf"]
+
+[sub_resource type="Resource" id="Resource_76dvn"]
+script = ExtResource("4_ddplq")
+level = 24
+move = ExtResource("5_ocfdb")
+
+[sub_resource type="Resource" id="Resource_bhoq2"]
+script = ExtResource("4_ddplq")
+level = 27
+move = ExtResource("6_tmwpi")
+
+[sub_resource type="Resource" id="Resource_jnp04"]
+script = ExtResource("4_ddplq")
+level = 30
+move = ExtResource("7_ubonr")
+
+[sub_resource type="Resource" id="Resource_2u3ve"]
+script = ExtResource("4_ddplq")
+level = 38
+move = ExtResource("8_oc6nc")
+
+[sub_resource type="Resource" id="Resource_pehrf"]
+script = ExtResource("4_ddplq")
+level = 43
+move = ExtResource("9_2em7m")
+
+[sub_resource type="Resource" id="Resource_4mncd"]
+script = ExtResource("4_ddplq")
+level = 50
+move = ExtResource("10_n8row")
+
+[resource]
+script = ExtResource("14_fjp78")
+species_name = "VENOMOTH"
+dex = 49
+index = 119
+slug = "venomoth"
+label = "Venomoth"
+category = "POISONMOTH"
+height_ft = 4
+height_in = 11
+weight_tenths_lb = 280
+hp = 70
+attack = 65
+defense = 60
+speed = 90
+special = 90
+type1 = "BUG"
+type2 = "POISON"
+catch_rate = 75
+base_exp = 138
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_idrg2")]([ExtResource("12_i8jg6"), ExtResource("13_sb842"), ExtResource("5_ocfdb"), ExtResource("6_tmwpi")])
+learnset = Array[ExtResource("4_ddplq")]([SubResource("Resource_76dvn"), SubResource("Resource_bhoq2"), SubResource("Resource_jnp04"), SubResource("Resource_2u3ve"), SubResource("Resource_pehrf"), SubResource("Resource_4mncd")])
+tmhm = Array[ExtResource("11_idrg2")]([ExtResource("15_qbn8b"), ExtResource("16_pvdnb"), ExtResource("17_65gl6"), ExtResource("18_m8uuf"), ExtResource("19_hd8d2"), ExtResource("20_dsi7e"), ExtResource("21_ntiuc"), ExtResource("22_q1gok"), ExtResource("23_cqa7v"), ExtResource("10_n8row"), ExtResource("24_rswns"), ExtResource("25_c1aok"), ExtResource("26_sdvur"), ExtResource("27_qibw1"), ExtResource("28_0nhsh"), ExtResource("29_yffrg"), ExtResource("30_hs0yx"), ExtResource("31_fx22a"), ExtResource("32_nwstf")])
+evolutions = Array[ExtResource("2_aldv0")]([])
+palette = "PAL_PURPLEMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["The dust-like", "scales covering", "its wings are", "color coded to", "indicate the kinds", "of poison it has"])
+front_sprite = ExtResource("3_mbeg5")
+back_sprite = ExtResource("1_73xn1")

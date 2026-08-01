@@ -1,0 +1,126 @@
+{
+ "Route1Youngster1MartSampleText": [
+  {
+   "kind": "text",
+   "line": "I clerk at the"
+  },
+  {
+   "kind": "line",
+   "line": "#MON MART."
+  },
+  {
+   "kind": "para",
+   "line": "A convenient"
+  },
+  {
+   "kind": "line",
+   "line": "shop, if you"
+  },
+  {
+   "kind": "cont",
+   "line": "can call it that,"
+  },
+  {
+   "kind": "cont",
+   "line": "in VIRIDIAN CITY."
+  },
+  {
+   "kind": "para",
+   "line": "Go on, then-"
+  },
+  {
+   "kind": "line",
+   "line": "take a sample."
+  },
+  {
+   "kind": "cont",
+   "line": "It won't save you."
+  }
+ ],
+ "Route1Youngster1GotPotionText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> got"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "Route1Youngster1AlsoGotPokeballsText": [
+  {
+   "kind": "text",
+   "line": "We also stock #"
+  },
+  {
+   "kind": "line",
+   "line": "BALLs, for those"
+  },
+  {
+   "kind": "cont",
+   "line": "who still hunt."
+  }
+ ],
+ "Route1Youngster1NoRoomText": [
+  {
+   "kind": "text",
+   "line": "You're already"
+  },
+  {
+   "kind": "line",
+   "line": "burdened enough."
+  }
+ ],
+ "Route1Youngster2Text": [
+  {
+   "kind": "text",
+   "line": "See those ledges"
+  },
+  {
+   "kind": "line",
+   "line": "along the road?"
+  },
+  {
+   "kind": "para",
+   "line": "Leap if you dare-"
+  },
+  {
+   "kind": "line",
+   "line": "the fall won't"
+  },
+  {
+   "kind": "cont",
+   "line": "kill you. Probably."
+  },
+  {
+   "kind": "para",
+   "line": "Quicker back to"
+  },
+  {
+   "kind": "line",
+   "line": "PALLET TOWN,"
+  },
+  {
+   "kind": "cont",
+   "line": "that way."
+  }
+ ],
+ "Route1SignText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 1"
+  },
+  {
+   "kind": "line",
+   "line": "PALLET TOWN -"
+  },
+  {
+   "kind": "cont",
+   "line": "VIRIDIAN CITY"
+  }
+ ]
+}

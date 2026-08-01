@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_irnte"]
+
+[resource]
+script = ExtResource("1_irnte")
+move_name = "PETAL_DANCE"
+move_id = 80
+display_name = "PETAL DANCE"
+move_type = "GRASS"
+power = 70
+accuracy = 100
+pp = 20
+effect = "THRASH_PETAL_DANCE_EFFECT"

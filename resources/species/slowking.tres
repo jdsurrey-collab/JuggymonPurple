@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=37 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/slowking.png" id="1_xjgnq"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_jwq2y"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/slowking.png" id="3_r3wsv"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_fgr4r"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="5_sb1qk"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="6_o4dee"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="7_t86bv"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="8_8s8nw"]
+[ext_resource type="Resource" path="res://resources/moves/headbutt.tres" id="9_luc06"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="10_kbjpb"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_2j7t5"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_27pqc"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_iolog"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_5allq"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_txatd"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_ngmj3"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_n6ykc"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_gqao2"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_fgvsh"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_5amxa"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_110jr"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="22_sxnmb"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="23_guydq"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="24_fa8ba"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="25_35e2c"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="26_hdkbc"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="27_5gmov"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="28_h5nbf"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="29_qh22y"]
+[ext_resource type="Resource" path="res://resources/moves/softboiled.tres" id="30_pqbv4"]
+
+[sub_resource type="Resource" id="Resource_r0hoo"]
+script = ExtResource("4_fgr4r")
+level = 6
+move = ExtResource("5_sb1qk")
+
+[sub_resource type="Resource" id="Resource_j5ttc"]
+script = ExtResource("4_fgr4r")
+level = 15
+move = ExtResource("6_o4dee")
+
+[sub_resource type="Resource" id="Resource_8h0qn"]
+script = ExtResource("4_fgr4r")
+level = 20
+move = ExtResource("7_t86bv")
+
+[sub_resource type="Resource" id="Resource_82ihx"]
+script = ExtResource("4_fgr4r")
+level = 29
+move = ExtResource("8_8s8nw")
+
+[sub_resource type="Resource" id="Resource_d48mq"]
+script = ExtResource("4_fgr4r")
+level = 34
+move = ExtResource("9_luc06")
+
+[sub_resource type="Resource" id="Resource_qcqd0"]
+script = ExtResource("4_fgr4r")
+level = 48
+move = ExtResource("10_kbjpb")
+
+[resource]
+script = ExtResource("13_iolog")
+species_name = "SLOWKING"
+dex = 197
+index = 200
+slug = "slowking"
+label = "Slowking"
+category = "ROYAL"
+height_ft = 6
+height_in = 7
+weight_tenths_lb = 1750
+hp = 95
+attack = 75
+defense = 80
+speed = 30
+special = 105
+type1 = "WATER"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 70
+base_exp = 164
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_2j7t5")]([ExtResource("12_27pqc")])
+learnset = Array[ExtResource("4_fgr4r")]([SubResource("Resource_r0hoo"), SubResource("Resource_j5ttc"), SubResource("Resource_8h0qn"), SubResource("Resource_82ihx"), SubResource("Resource_d48mq"), SubResource("Resource_qcqd0")])
+tmhm = Array[ExtResource("11_2j7t5")]([ExtResource("14_5allq"), ExtResource("15_txatd"), ExtResource("16_ngmj3"), ExtResource("17_n6ykc"), ExtResource("18_gqao2"), ExtResource("19_fgvsh"), ExtResource("20_5amxa"), ExtResource("21_110jr"), ExtResource("22_sxnmb"), ExtResource("6_o4dee"), ExtResource("23_guydq"), ExtResource("24_fa8ba"), ExtResource("25_35e2c"), ExtResource("10_kbjpb"), ExtResource("26_hdkbc"), ExtResource("27_5gmov"), ExtResource("28_h5nbf"), ExtResource("29_qh22y"), ExtResource("30_pqbv4")])
+evolutions = Array[ExtResource("2_jwq2y")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["The crown upon it", "whispers, and it", "speaks what it", "is told. None ask", "who is the king."])
+front_sprite = ExtResource("3_r3wsv")
+back_sprite = ExtResource("1_xjgnq")

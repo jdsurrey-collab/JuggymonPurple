@@ -1,0 +1,70 @@
+{
+ "SaffronPidgeyHouseBrunetteGirlText": [
+  {
+   "kind": "text",
+   "line": "My thanks for"
+  },
+  {
+   "kind": "line",
+   "line": "writing. I do"
+  },
+  {
+   "kind": "cont",
+   "line": "hope to see you"
+  },
+  {
+   "kind": "cont",
+   "line": "soon!"
+  },
+  {
+   "kind": "para",
+   "line": "Hey! Don't peer"
+  },
+  {
+   "kind": "line",
+   "line": "at my letter!"
+  }
+ ],
+ "SaffronPidgeyHousePidgeyText": [
+  {
+   "kind": "text",
+   "line": "PIDGEY: Kurukkoo!@"
+  }
+ ],
+ "SaffronPidgeyHouseYoungsterText": [
+  {
+   "kind": "text",
+   "line": "The COPYCAT is"
+  },
+  {
+   "kind": "line",
+   "line": "dear! I'll get"
+  },
+  {
+   "kind": "cont",
+   "line": "her a # DOLL!"
+  }
+ ],
+ "SaffronPidgeyHousePaperText": [
+  {
+   "kind": "text",
+   "line": "I was given a PP"
+  },
+  {
+   "kind": "line",
+   "line": "UP as a gift."
+  },
+  {
+   "kind": "para",
+   "line": "It swells the PP"
+  },
+  {
+   "kind": "line",
+   "line": "of your"
+  },
+  {
+   "kind": "cont",
+   "line": "techniques!"
+  }
+ ]
+}

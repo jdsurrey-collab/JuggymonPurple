@@ -1,0 +1,96 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/ledian.png" id="1_voc87"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_cd3ic"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/ledian.png" id="3_bbo2p"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_2hkh2"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="5_3qmc7"]
+[ext_resource type="Resource" path="res://resources/moves/comet_punch.tres" id="6_fwrt2"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="7_j3pqo"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="8_6ennd"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="9_mf1fb"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="10_bb88v"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="11_k1weg"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="12_m3ih1"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="13_1b3ve"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_gcs3p"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_frorw"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_ja2m8"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_bppb3"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_ojdpx"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_diju1"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_t4wcr"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_ms7qa"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="22_rtj35"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="23_mnkid"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="24_g2y8d"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="25_g88qu"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="26_jou38"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="27_ftyxb"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="28_qyu5f"]
+
+[sub_resource type="Resource" id="Resource_5ieqk"]
+script = ExtResource("4_2hkh2")
+level = 8
+move = ExtResource("5_3qmc7")
+
+[sub_resource type="Resource" id="Resource_ucuqw"]
+script = ExtResource("4_2hkh2")
+level = 15
+move = ExtResource("6_fwrt2")
+
+[sub_resource type="Resource" id="Resource_36uuq"]
+script = ExtResource("4_2hkh2")
+level = 24
+move = ExtResource("7_j3pqo")
+
+[sub_resource type="Resource" id="Resource_hkf1c"]
+script = ExtResource("4_2hkh2")
+level = 24
+move = ExtResource("8_6ennd")
+
+[sub_resource type="Resource" id="Resource_vvwm2"]
+script = ExtResource("4_2hkh2")
+level = 42
+move = ExtResource("9_mf1fb")
+
+[sub_resource type="Resource" id="Resource_5d8pv"]
+script = ExtResource("4_2hkh2")
+level = 51
+move = ExtResource("10_bb88v")
+
+[sub_resource type="Resource" id="Resource_7cobj"]
+script = ExtResource("4_2hkh2")
+level = 60
+move = ExtResource("11_k1weg")
+
+[resource]
+script = ExtResource("14_gcs3p")
+species_name = "LEDIAN"
+dex = 166
+index = 86
+slug = "ledian"
+label = "Ledian"
+category = "FIVE STAR"
+height_ft = 4
+height_in = 7
+weight_tenths_lb = 780
+hp = 55
+attack = 35
+defense = 50
+speed = 85
+special = 82
+type1 = "BUG"
+type2 = "FLYING"
+catch_rate = 90
+base_exp = 134
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("12_m3ih1")]([ExtResource("13_1b3ve"), ExtResource("5_3qmc7")])
+learnset = Array[ExtResource("4_2hkh2")]([SubResource("Resource_5ieqk"), SubResource("Resource_ucuqw"), SubResource("Resource_36uuq"), SubResource("Resource_hkf1c"), SubResource("Resource_vvwm2"), SubResource("Resource_5d8pv"), SubResource("Resource_7cobj")])
+tmhm = Array[ExtResource("12_m3ih1")]([ExtResource("15_frorw"), ExtResource("16_ja2m8"), ExtResource("17_bppb3"), ExtResource("18_ojdpx"), ExtResource("19_diju1"), ExtResource("20_t4wcr"), ExtResource("21_ms7qa"), ExtResource("9_mf1fb"), ExtResource("22_rtj35"), ExtResource("23_mnkid"), ExtResource("24_g2y8d"), ExtResource("25_g88qu"), ExtResource("26_jou38"), ExtResource("27_ftyxb"), ExtResource("28_qyu5f")])
+evolutions = Array[ExtResource("2_cd3ic")]([])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["It is said the", "spots upon its", "back mirror stars", "that died long", "before we looked."])
+front_sprite = ExtResource("3_bbo2p")
+back_sprite = ExtResource("1_voc87")

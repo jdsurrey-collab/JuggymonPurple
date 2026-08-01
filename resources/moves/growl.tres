@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_s3i5t"]
+
+[resource]
+script = ExtResource("1_s3i5t")
+move_name = "GROWL"
+move_id = 45
+display_name = "GROWL"
+move_type = "NORMAL"
+power = 0
+accuracy = 100
+pp = 40
+effect = "ATTACK_DOWN1_EFFECT"

@@ -1,0 +1,82 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/weezing.png" id="1_kv157"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_4lyj3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/weezing.png" id="3_mko5w"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_mlfqb"]
+[ext_resource type="Resource" path="res://resources/moves/sludge.tres" id="5_f4ktf"]
+[ext_resource type="Resource" path="res://resources/moves/smokescreen.tres" id="6_q4kqc"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="7_oxw5n"]
+[ext_resource type="Resource" path="res://resources/moves/haze.tres" id="8_r7pyg"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="9_f4fda"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_vxygl"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_opvbc"]
+[ext_resource type="Resource" path="res://resources/moves/smog.tres" id="12_shpl7"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_663je"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_h58gg"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="15_1e4et"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_4nlja"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="17_ewr6n"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="18_kg1u6"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="19_t1jgi"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="20_x8ysd"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_763i3"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="22_p7hfk"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="23_uxaja"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="24_hhwk1"]
+
+[sub_resource type="Resource" id="Resource_5vi25"]
+script = ExtResource("4_mlfqb")
+level = 32
+move = ExtResource("5_f4ktf")
+
+[sub_resource type="Resource" id="Resource_8bi0g"]
+script = ExtResource("4_mlfqb")
+level = 39
+move = ExtResource("6_q4kqc")
+
+[sub_resource type="Resource" id="Resource_bejfp"]
+script = ExtResource("4_mlfqb")
+level = 43
+move = ExtResource("7_oxw5n")
+
+[sub_resource type="Resource" id="Resource_ho5sx"]
+script = ExtResource("4_mlfqb")
+level = 49
+move = ExtResource("8_r7pyg")
+
+[sub_resource type="Resource" id="Resource_ff00v"]
+script = ExtResource("4_mlfqb")
+level = 53
+move = ExtResource("9_f4fda")
+
+[resource]
+script = ExtResource("13_663je")
+species_name = "WEEZING"
+dex = 110
+index = 143
+slug = "weezing"
+label = "Weezing"
+category = "POISON GAS"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 210
+hp = 65
+attack = 90
+defense = 120
+speed = 60
+special = 85
+type1 = "POISON"
+type2 = "POISON"
+catch_rate = 60
+base_exp = 173
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_vxygl")]([ExtResource("11_opvbc"), ExtResource("12_shpl7"), ExtResource("5_f4ktf")])
+learnset = Array[ExtResource("4_mlfqb")]([SubResource("Resource_5vi25"), SubResource("Resource_8bi0g"), SubResource("Resource_bejfp"), SubResource("Resource_ho5sx"), SubResource("Resource_ff00v")])
+tmhm = Array[ExtResource("10_vxygl")]([ExtResource("14_h58gg"), ExtResource("15_1e4et"), ExtResource("16_4nlja"), ExtResource("17_ewr6n"), ExtResource("18_kg1u6"), ExtResource("19_t1jgi"), ExtResource("20_x8ysd"), ExtResource("21_763i3"), ExtResource("7_oxw5n"), ExtResource("22_p7hfk"), ExtResource("23_uxaja"), ExtResource("9_f4fda"), ExtResource("24_hhwk1")])
+evolutions = Array[ExtResource("2_4lyj3")]([])
+palette = "PAL_PURPLEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Where two kinds", "of poison gases", "meet, 2 KOFFINGs", "can fuse into a", "WEEZING over many", "years"])
+front_sprite = ExtResource("3_mko5w")
+back_sprite = ExtResource("1_kv157")

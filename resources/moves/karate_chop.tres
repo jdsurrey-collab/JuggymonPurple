@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_smha0"]
+
+[resource]
+script = ExtResource("1_smha0")
+move_name = "KARATE_CHOP"
+move_id = 2
+display_name = "KARATE CHOP"
+move_type = "NORMAL"
+power = 50
+accuracy = 100
+pp = 25
+effect = "NO_ADDITIONAL_EFFECT"

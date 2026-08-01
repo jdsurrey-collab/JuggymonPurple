@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_jat1x"]
+
+[resource]
+script = ExtResource("1_jat1x")
+move_name = "POISON_STING"
+move_id = 40
+display_name = "POISON STING"
+move_type = "POISON"
+power = 15
+accuracy = 100
+pp = 35
+effect = "POISON_SIDE_EFFECT1"

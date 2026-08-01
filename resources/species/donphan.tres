@@ -1,0 +1,72 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=28 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/donphan.png" id="1_jx2xi"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_0pdfg"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/donphan.png" id="3_bjc5d"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_2y5b5"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="5_mqrpf"]
+[ext_resource type="Resource" path="res://resources/moves/fury_attack.tres" id="6_23oo1"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="7_vuu4u"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_wv2jr"]
+[ext_resource type="Resource" path="res://resources/moves/horn_attack.tres" id="9_ixf73"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="10_tdxq7"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_fvlws"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_g1qny"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_pwlsk"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="14_t2qhn"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="15_rydx4"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="16_nvwex"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="17_uy4cd"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="18_xog72"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="19_dhmlb"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="20_8rknk"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="21_dcmt8"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="22_h543a"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="23_jv4qe"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="24_b4qbx"]
+
+[sub_resource type="Resource" id="Resource_kwapr"]
+script = ExtResource("4_2y5b5")
+level = 9
+move = ExtResource("5_mqrpf")
+
+[sub_resource type="Resource" id="Resource_gmb54"]
+script = ExtResource("4_2y5b5")
+level = 25
+move = ExtResource("6_23oo1")
+
+[sub_resource type="Resource" id="Resource_8rxxj"]
+script = ExtResource("4_2y5b5")
+level = 49
+move = ExtResource("7_vuu4u")
+
+[resource]
+script = ExtResource("11_fvlws")
+species_name = "DONPHAN"
+dex = 222
+index = 225
+slug = "donphan"
+label = "Donphan"
+category = "ARMOR"
+height_ft = 3
+height_in = 7
+weight_tenths_lb = 2650
+hp = 90
+attack = 120
+defense = 120
+speed = 50
+special = 60
+type1 = "GROUND"
+type2 = "GROUND"
+catch_rate = 60
+base_exp = 189
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("8_wv2jr")]([ExtResource("9_ixf73"), ExtResource("10_tdxq7")])
+learnset = Array[ExtResource("4_2y5b5")]([SubResource("Resource_kwapr"), SubResource("Resource_gmb54"), SubResource("Resource_8rxxj")])
+tmhm = Array[ExtResource("8_wv2jr")]([ExtResource("12_g1qny"), ExtResource("13_pwlsk"), ExtResource("14_t2qhn"), ExtResource("15_rydx4"), ExtResource("16_nvwex"), ExtResource("17_uy4cd"), ExtResource("18_xog72"), ExtResource("19_dhmlb"), ExtResource("7_vuu4u"), ExtResource("20_8rknk"), ExtResource("21_dcmt8"), ExtResource("22_h543a"), ExtResource("23_jv4qe"), ExtResource("24_b4qbx")])
+evolutions = Array[ExtResource("2_0pdfg")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It rolls, and", "what stands in", "its way does not", "stand after.", "Houses have gone", "down before it."])
+front_sprite = ExtResource("3_bjc5d")
+back_sprite = ExtResource("1_jx2xi")

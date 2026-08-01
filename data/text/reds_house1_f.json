@@ -1,0 +1,96 @@
+{
+ "RedsHouse1FMomWakeUpText": [
+  {
+   "kind": "text",
+   "line": "MOM: Yes. All"
+  },
+  {
+   "kind": "line",
+   "line": "children leave"
+  },
+  {
+   "kind": "cont",
+   "line": "in the end."
+  },
+  {
+   "kind": "cont",
+   "line": "Even TV says so."
+  },
+  {
+   "kind": "para",
+   "line": "OAK, next door,"
+  },
+  {
+   "kind": "line",
+   "line": "is calling for"
+  },
+  {
+   "kind": "cont",
+   "line": "you. Go now."
+  }
+ ],
+ "RedsHouse1FMomYouShouldRestText": [
+  {
+   "kind": "text",
+   "line": "MOM: <PLAYER>."
+  },
+  {
+   "kind": "line",
+   "line": "Rest, while you"
+  },
+  {
+   "kind": "cont",
+   "line": "still can."
+  }
+ ],
+ "RedsHouse1FMomLookingGreatText": [
+  {
+   "kind": "text",
+   "line": "MOM: Oh."
+  },
+  {
+   "kind": "line",
+   "line": "You're still"
+  },
+  {
+   "kind": "cont",
+   "line": "alive. And your"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON too."
+  },
+  {
+   "kind": "cont",
+   "line": "Do take care."
+  }
+ ],
+ "RedsHouse1FTVStandByMeMovieText": [
+  {
+   "kind": "text",
+   "line": "A film plays on"
+  },
+  {
+   "kind": "line",
+   "line": "TV. Four boys"
+  },
+  {
+   "kind": "cont",
+   "line": "walk the tracks,"
+  },
+  {
+   "kind": "cont",
+   "line": "seeking a body."
+  },
+  {
+   "kind": "para",
+   "line": "I should go too."
+  }
+ ],
+ "RedsHouse1FTVWrongSideText": [
+  {
+   "kind": "text",
+   "line": "Wrong side. Pity."
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_5gtr4"]
+
+[resource]
+script = ExtResource("1_5gtr4")
+move_name = "PSYCHIC_M"
+move_id = 94
+display_name = "PSYCHIC"
+move_type = "PSYCHIC_TYPE"
+power = 90
+accuracy = 100
+pp = 10
+effect = "SPECIAL_DOWN_SIDE_EFFECT"

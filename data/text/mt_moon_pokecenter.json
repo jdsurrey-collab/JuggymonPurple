@@ -1,0 +1,110 @@
+{
+ "MtMoonPokecenterYoungsterText": [
+  {
+   "kind": "text",
+   "line": "I keep six #"
+  },
+  {
+   "kind": "line",
+   "line": "BALLs at my belt."
+  },
+  {
+   "kind": "para",
+   "line": "Six #MON is"
+  },
+  {
+   "kind": "line",
+   "line": "all one may bear."
+  }
+ ],
+ "MtMoonPokecenterGentlemanText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET"
+  },
+  {
+   "kind": "line",
+   "line": "preys on CERULEAN"
+  },
+  {
+   "kind": "cont",
+   "line": "folk, again..."
+  },
+  {
+   "kind": "para",
+   "line": "Always in the"
+  },
+  {
+   "kind": "line",
+   "line": "news, that lot."
+  },
+  {
+   "kind": "cont",
+   "line": "Never any good."
+  }
+ ],
+ "MtMoonPokecenterMagikarpSalesmanIGotADealText": [
+  {
+   "kind": "text",
+   "line": "MAN: Ah, friend!"
+  },
+  {
+   "kind": "line",
+   "line": "Have I a deal"
+  },
+  {
+   "kind": "cont",
+   "line": "for you, indeed."
+  },
+  {
+   "kind": "para",
+   "line": "A fine MAGIKARP,"
+  },
+  {
+   "kind": "line",
+   "line": "yours for just"
+  },
+  {
+   "kind": "cont",
+   "line": "\u00a5500! What do"
+  },
+  {
+   "kind": "cont",
+   "line": "you say?"
+  }
+ ],
+ "MtMoonPokecenterMagikarpSalesmanNoText": [
+  {
+   "kind": "text",
+   "line": "No? A pity. I"
+  },
+  {
+   "kind": "line",
+   "line": "offer this out"
+  },
+  {
+   "kind": "cont",
+   "line": "of kindness alone."
+  }
+ ],
+ "MtMoonPokecenterMagikarpSalesmanNoMoneyText": [
+  {
+   "kind": "text",
+   "line": "You'll need"
+  },
+  {
+   "kind": "line",
+   "line": "more than that!"
+  }
+ ],
+ "MtMoonPokecenterMagikarpSalesmanNoRefundsText": [
+  {
+   "kind": "text",
+   "line": "MAN: I give no"
+  },
+  {
+   "kind": "line",
+   "line": "refunds. None."
+  }
+ ]
+}

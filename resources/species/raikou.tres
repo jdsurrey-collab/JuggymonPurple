@@ -1,0 +1,89 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/raikou.png" id="1_3ubrv"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_tb4nu"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/raikou.png" id="3_d03wv"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_5wy05"]
+[ext_resource type="Resource" path="res://resources/moves/thundershock.tres" id="5_jtuhx"]
+[ext_resource type="Resource" path="res://resources/moves/roar.tres" id="6_mgwc7"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="7_knnst"]
+[ext_resource type="Resource" path="res://resources/moves/spark.tres" id="8_8ety0"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="9_evel2"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="10_evjv2"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_itykl"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="12_381st"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="13_iarum"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_xkn11"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_s23rr"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_6k4fl"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_f8tl1"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_wrvjk"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_1jn2h"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_0kgh7"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_3t50j"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_wenaw"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="23_3qn7w"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="24_ggrk3"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="25_fg4dm"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="26_1pjyk"]
+
+[sub_resource type="Resource" id="Resource_u8gk2"]
+script = ExtResource("4_5wy05")
+level = 11
+move = ExtResource("5_jtuhx")
+
+[sub_resource type="Resource" id="Resource_1v4vq"]
+script = ExtResource("4_5wy05")
+level = 21
+move = ExtResource("6_mgwc7")
+
+[sub_resource type="Resource" id="Resource_rsucg"]
+script = ExtResource("4_5wy05")
+level = 31
+move = ExtResource("7_knnst")
+
+[sub_resource type="Resource" id="Resource_nnk6b"]
+script = ExtResource("4_5wy05")
+level = 41
+move = ExtResource("8_8ety0")
+
+[sub_resource type="Resource" id="Resource_xxluq"]
+script = ExtResource("4_5wy05")
+level = 51
+move = ExtResource("9_evel2")
+
+[sub_resource type="Resource" id="Resource_ytj1e"]
+script = ExtResource("4_5wy05")
+level = 71
+move = ExtResource("10_evjv2")
+
+[resource]
+script = ExtResource("14_xkn11")
+species_name = "RAIKOU"
+dex = 233
+index = 236
+slug = "raikou"
+label = "Raikou"
+category = "THUNDER"
+height_ft = 6
+height_in = 3
+weight_tenths_lb = 3920
+hp = 90
+attack = 85
+defense = 75
+speed = 115
+special = 107
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 3
+base_exp = 216
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("11_itykl")]([ExtResource("12_381st"), ExtResource("13_iarum")])
+learnset = Array[ExtResource("4_5wy05")]([SubResource("Resource_u8gk2"), SubResource("Resource_1v4vq"), SubResource("Resource_rsucg"), SubResource("Resource_nnk6b"), SubResource("Resource_xxluq"), SubResource("Resource_ytj1e")])
+tmhm = Array[ExtResource("11_itykl")]([ExtResource("15_s23rr"), ExtResource("16_6k4fl"), ExtResource("17_f8tl1"), ExtResource("18_wrvjk"), ExtResource("19_1jn2h"), ExtResource("20_0kgh7"), ExtResource("21_3t50j"), ExtResource("22_wenaw"), ExtResource("23_3qn7w"), ExtResource("10_evjv2"), ExtResource("24_ggrk3"), ExtResource("25_fg4dm"), ExtResource("26_1pjyk"), ExtResource("9_evel2")])
+evolutions = Array[ExtResource("2_tb4nu")]([])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It runs before", "the storm and", "the storm obeys.", "It was not always", "a beast, they say."])
+front_sprite = ExtResource("3_d03wv")
+back_sprite = ExtResource("1_3ubrv")

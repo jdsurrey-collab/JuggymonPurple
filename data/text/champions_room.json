@@ -1,0 +1,410 @@
+{
+ "ChampionsRoomRivalIntroText": [
+  {
+   "kind": "text",
+   "line": "<RIVAL>: So."
+  },
+  {
+   "kind": "para",
+   "line": "I hoped it would"
+  },
+  {
+   "kind": "line",
+   "line": "be you, <PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "A rival ought to"
+  },
+  {
+   "kind": "line",
+   "line": "be worthy, or"
+  },
+  {
+   "kind": "cont",
+   "line": "what's the point?"
+  },
+  {
+   "kind": "para",
+   "line": "In cataloguing"
+  },
+  {
+   "kind": "line",
+   "line": "the world, I"
+  },
+  {
+   "kind": "cont",
+   "line": "sought out every"
+  },
+  {
+   "kind": "cont",
+   "line": "manner of #MON."
+  },
+  {
+   "kind": "para",
+   "line": "I built teams to"
+  },
+  {
+   "kind": "line",
+   "line": "answer any"
+  },
+  {
+   "kind": "cont",
+   "line": "type, any"
+  },
+  {
+   "kind": "cont",
+   "line": "weakness."
+  },
+  {
+   "kind": "para",
+   "line": "And now."
+  },
+  {
+   "kind": "para",
+   "line": "I am #MON"
+  },
+  {
+   "kind": "line",
+   "line": "LEAGUE champion."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>. Do you"
+  },
+  {
+   "kind": "line",
+   "line": "grasp what that"
+  },
+  {
+   "kind": "cont",
+   "line": "means?"
+  },
+  {
+   "kind": "para",
+   "line": "I'll spare you"
+  },
+  {
+   "kind": "line",
+   "line": "the wondering."
+  },
+  {
+   "kind": "para",
+   "line": "I am the strongest"
+  },
+  {
+   "kind": "line",
+   "line": "soul alive."
+  },
+  {
+   "kind": "cont",
+   "line": "There is no one"
+  },
+  {
+   "kind": "cont",
+   "line": "left above me."
+  }
+ ],
+ "RivalDefeatedText": [
+  {
+   "kind": "text",
+   "line": "No."
+  },
+  {
+   "kind": "line",
+   "line": "It isn't possible."
+  },
+  {
+   "kind": "cont",
+   "line": "You've beaten me."
+  },
+  {
+   "kind": "para",
+   "line": "After all that"
+  },
+  {
+   "kind": "line",
+   "line": "work, to fall"
+  },
+  {
+   "kind": "cont",
+   "line": "so quickly?"
+  },
+  {
+   "kind": "para",
+   "line": "My reign, ended"
+  },
+  {
+   "kind": "line",
+   "line": "already?"
+  },
+  {
+   "kind": "cont",
+   "line": "There's no justice."
+  }
+ ],
+ "RivalVictoryText": [
+  {
+   "kind": "text",
+   "line": "Heh."
+  },
+  {
+   "kind": "line",
+   "line": "Of course."
+  },
+  {
+   "kind": "para",
+   "line": "You were never"
+  },
+  {
+   "kind": "line",
+   "line": "equal to me,"
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>. Take"
+  },
+  {
+   "kind": "line",
+   "line": "pride you came"
+  },
+  {
+   "kind": "cont",
+   "line": "this far, before"
+  },
+  {
+   "kind": "cont",
+   "line": "me, the finest"
+  },
+  {
+   "kind": "para",
+   "line": "there ever was."
+  },
+  {
+   "kind": "line",
+   "line": "Now go."
+  }
+ ],
+ "ChampionsRoomRivalAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Why?"
+  },
+  {
+   "kind": "line",
+   "line": "Why did I fall?"
+  },
+  {
+   "kind": "para",
+   "line": "I made no error"
+  },
+  {
+   "kind": "line",
+   "line": "raising my"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON..."
+  },
+  {
+   "kind": "para",
+   "line": "So be it. You"
+  },
+  {
+   "kind": "line",
+   "line": "are #MON LEAGUE"
+  },
+  {
+   "kind": "cont",
+   "line": "champion now."
+  },
+  {
+   "kind": "para",
+   "line": "Though it grieves"
+  },
+  {
+   "kind": "line",
+   "line": "me to say it."
+  }
+ ],
+ "ChampionsRoomOakText": [
+  {
+   "kind": "text",
+   "line": "OAK: <PLAYER>."
+  }
+ ],
+ "ChampionsRoomOakCongratulatesPlayerText": [
+  {
+   "kind": "text",
+   "line": "OAK: So. You've"
+  },
+  {
+   "kind": "line",
+   "line": "won. Well done,"
+  },
+  {
+   "kind": "cont",
+   "line": "truly. You are"
+  },
+  {
+   "kind": "cont",
+   "line": "the #MON LEAGUE"
+  },
+  {
+   "kind": "cont",
+   "line": "champion now."
+  },
+  {
+   "kind": "para",
+   "line": "How you've"
+  },
+  {
+   "kind": "line",
+   "line": "changed, since"
+  },
+  {
+   "kind": "cont",
+   "line": "you first left"
+  },
+  {
+   "kind": "cont",
+   "line": "with @"
+  },
+  {
+   "kind": "text",
+   "line": "."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>. You've"
+  },
+  {
+   "kind": "line",
+   "line": "come of age, at"
+  },
+  {
+   "kind": "cont",
+   "line": "such a cost."
+  }
+ ],
+ "ChampionsRoomOakDisappointedWithRivalText": [
+  {
+   "kind": "text",
+   "line": "OAK: <RIVAL>."
+  },
+  {
+   "kind": "line",
+   "line": "I am ashamed."
+  },
+  {
+   "kind": "para",
+   "line": "I came, having"
+  },
+  {
+   "kind": "line",
+   "line": "heard you'd bested"
+  },
+  {
+   "kind": "cont",
+   "line": "the ELITE FOUR."
+  },
+  {
+   "kind": "para",
+   "line": "Yet I find you"
+  },
+  {
+   "kind": "line",
+   "line": "already fallen."
+  },
+  {
+   "kind": "para",
+   "line": "<RIVAL>. Do you"
+  },
+  {
+   "kind": "line",
+   "line": "understand why"
+  },
+  {
+   "kind": "cont",
+   "line": "you lost?"
+  },
+  {
+   "kind": "para",
+   "line": "You forgot to"
+  },
+  {
+   "kind": "line",
+   "line": "love your #MON,"
+  },
+  {
+   "kind": "cont",
+   "line": "only used them."
+  },
+  {
+   "kind": "para",
+   "line": "Without love, you"
+  },
+  {
+   "kind": "line",
+   "line": "will never stand"
+  },
+  {
+   "kind": "cont",
+   "line": "at the top again."
+  }
+ ],
+ "ChampionsRoomOakComeWithMeText": [
+  {
+   "kind": "text",
+   "line": "OAK: <PLAYER>."
+  },
+  {
+   "kind": "para",
+   "line": "You understand,"
+  },
+  {
+   "kind": "line",
+   "line": "I think, that this"
+  },
+  {
+   "kind": "cont",
+   "line": "victory was never"
+  },
+  {
+   "kind": "cont",
+   "line": "yours alone."
+  },
+  {
+   "kind": "para",
+   "line": "The bond you share"
+  },
+  {
+   "kind": "line",
+   "line": "with your #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "is all that"
+  },
+  {
+   "kind": "cont",
+   "line": "remains worth"
+  },
+  {
+   "kind": "para",
+   "line": "anything, in the"
+  },
+  {
+   "kind": "line",
+   "line": "end."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER>."
+  },
+  {
+   "kind": "line",
+   "line": "Come with me."
+  }
+ ]
+}

@@ -1,0 +1,298 @@
+{
+ "Route12SnorlaxText": [
+  {
+   "kind": "text",
+   "line": "A sleeping #MON"
+  },
+  {
+   "kind": "line",
+   "line": "bars the way."
+  }
+ ],
+ "Route12SnorlaxWokeUpText": [
+  {
+   "kind": "text",
+   "line": "SNORLAX woke!"
+  },
+  {
+   "kind": "para",
+   "line": "It struck in a"
+  },
+  {
+   "kind": "line",
+   "line": "half-waking rage."
+  }
+ ],
+ "Route12SnorlaxCalmedDownText": [
+  {
+   "kind": "text",
+   "line": "SNORLAX calmed,"
+  },
+  {
+   "kind": "line",
+   "line": "yawned once, and"
+  },
+  {
+   "kind": "cont",
+   "line": "shuffled back"
+  },
+  {
+   "kind": "cont",
+   "line": "to the mountains."
+  }
+ ],
+ "Route12Fisher1BattleText": [
+  {
+   "kind": "text",
+   "line": "Yeah! Something"
+  },
+  {
+   "kind": "line",
+   "line": "bites!"
+  }
+ ],
+ "Route12Fisher1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Tch! Just a"
+  },
+  {
+   "kind": "line",
+   "line": "small fry!"
+  }
+ ],
+ "Route12Fisher1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Hold on. My line"
+  },
+  {
+   "kind": "line",
+   "line": "has snagged."
+  }
+ ],
+ "Route12Fisher2BattleText": [
+  {
+   "kind": "text",
+   "line": "Patience. Fishing"
+  },
+  {
+   "kind": "line",
+   "line": "is a game of"
+  },
+  {
+   "kind": "cont",
+   "line": "waiting, and loss."
+  }
+ ],
+ "Route12Fisher2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "That"
+  },
+  {
+   "kind": "line",
+   "line": "one got away!"
+  }
+ ],
+ "Route12Fisher2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "A finer ROD"
+  },
+  {
+   "kind": "line",
+   "line": "would land me"
+  },
+  {
+   "kind": "cont",
+   "line": "finer #MON."
+  }
+ ],
+ "Route12CooltrainerMBattleText": [
+  {
+   "kind": "text",
+   "line": "Have you found"
+  },
+  {
+   "kind": "line",
+   "line": "a MOON STONE?"
+  }
+ ],
+ "Route12CooltrainerMEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oww!"
+  }
+ ],
+ "Route12CooltrainerMAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "A MOON STONE"
+  },
+  {
+   "kind": "line",
+   "line": "would have"
+  },
+  {
+   "kind": "cont",
+   "line": "changed my #MON."
+  }
+ ],
+ "Route12SuperNerdBattleText": [
+  {
+   "kind": "text",
+   "line": "Electricity, my"
+  },
+  {
+   "kind": "line",
+   "line": "specialty!"
+  }
+ ],
+ "Route12SuperNerdEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Unplugged!"
+  }
+ ],
+ "Route12SuperNerdAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Water conducts"
+  },
+  {
+   "kind": "line",
+   "line": "electricity."
+  },
+  {
+   "kind": "cont",
+   "line": "Zap the sea"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON, if you dare."
+  }
+ ],
+ "Route12Fisher3BattleText": [
+  {
+   "kind": "text",
+   "line": "The FISHING"
+  },
+  {
+   "kind": "line",
+   "line": "FOOL, versus you!"
+  }
+ ],
+ "Route12Fisher3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Too"
+  },
+  {
+   "kind": "line",
+   "line": "much!"
+  }
+ ],
+ "Route12Fisher3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You best me at"
+  },
+  {
+   "kind": "line",
+   "line": "#MON, but I'm"
+  },
+  {
+   "kind": "cont",
+   "line": "the finer angler."
+  }
+ ],
+ "Route12Fisher4BattleText": [
+  {
+   "kind": "text",
+   "line": "I'd rather be"
+  },
+  {
+   "kind": "line",
+   "line": "at work."
+  }
+ ],
+ "Route12Fisher4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "It's"
+  },
+  {
+   "kind": "line",
+   "line": "not easy..."
+  }
+ ],
+ "Route12Fisher4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "No matter. Losing"
+  },
+  {
+   "kind": "line",
+   "line": "no longer stings,"
+  },
+  {
+   "kind": "cont",
+   "line": "much."
+  }
+ ],
+ "Route12Fisher5BattleText": [
+  {
+   "kind": "text",
+   "line": "You never know"
+  },
+  {
+   "kind": "line",
+   "line": "what the water"
+  },
+  {
+   "kind": "cont",
+   "line": "gives up."
+  }
+ ],
+ "Route12Fisher5EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Lost"
+  },
+  {
+   "kind": "line",
+   "line": "it!"
+  }
+ ],
+ "Route12Fisher5AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "MAGIKARP, always"
+  },
+  {
+   "kind": "line",
+   "line": "MAGIKARP. So"
+  },
+  {
+   "kind": "cont",
+   "line": "weak, so many."
+  }
+ ],
+ "Route12SignText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 12 "
+  },
+  {
+   "kind": "line",
+   "line": "North to LAVENDER"
+  }
+ ],
+ "Route12SportFishingSignText": [
+  {
+   "kind": "text",
+   "line": "SPORT FISHING AREA"
+  }
+ ]
+}

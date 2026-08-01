@@ -1,0 +1,72 @@
+{
+ "SafariZoneNorthRestHouseSignText": [
+  {
+   "kind": "text",
+   "line": "REST HOUSE"
+  }
+ ],
+ "SafariZoneNorthTrainerTips1Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "The SECRET HOUSE"
+  },
+  {
+   "kind": "line",
+   "line": "still lies ahead!"
+  }
+ ],
+ "SafariZoneNorthSignText": [
+  {
+   "kind": "text",
+   "line": "AREA 2"
+  }
+ ],
+ "SafariZoneNorthTrainerTips2Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "#MON hide in"
+  },
+  {
+   "kind": "line",
+   "line": "tall grass!"
+  },
+  {
+   "kind": "para",
+   "line": "Zigzag through"
+  },
+  {
+   "kind": "line",
+   "line": "grassy ground to"
+  },
+  {
+   "kind": "cont",
+   "line": "flush them out."
+  }
+ ],
+ "SafariZoneNorthTrainerTips3Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Win a free HM for"
+  },
+  {
+   "kind": "line",
+   "line": "finding the"
+  },
+  {
+   "kind": "cont",
+   "line": "SECRET HOUSE!"
+  }
+ ]
+}

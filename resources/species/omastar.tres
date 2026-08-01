@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=37 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/omastar.png" id="1_xjnl8"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_3jjnd"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/omastar.png" id="3_l0rr2"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_kngif"]
+[ext_resource type="Resource" path="res://resources/moves/horn_attack.tres" id="5_pb74q"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="6_ai0xs"]
+[ext_resource type="Resource" path="res://resources/moves/spike_cannon.tres" id="7_h78u8"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="8_tah2q"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_u1uby"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="10_e63gb"]
+[ext_resource type="Resource" path="res://resources/moves/withdraw.tres" id="11_f1e32"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_b574o"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_461n6"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="14_c4fa0"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_vjr6y"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_opf47"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_nwrkk"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="18_q0ybh"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="19_wu0kh"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="20_gqvqh"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="21_5eim7"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="22_5fhk0"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="23_g0yry"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="24_62gio"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="25_idbvy"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="26_x4100"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="27_ufba8"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="28_lcc3d"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="29_ox8xb"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="30_1jr2e"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="31_quth3"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="32_k57lv"]
+
+[sub_resource type="Resource" id="Resource_v60q4"]
+script = ExtResource("4_kngif")
+level = 34
+move = ExtResource("5_pb74q")
+
+[sub_resource type="Resource" id="Resource_hhr33"]
+script = ExtResource("4_kngif")
+level = 39
+move = ExtResource("6_ai0xs")
+
+[sub_resource type="Resource" id="Resource_mgy87"]
+script = ExtResource("4_kngif")
+level = 44
+move = ExtResource("7_h78u8")
+
+[sub_resource type="Resource" id="Resource_yta5g"]
+script = ExtResource("4_kngif")
+level = 49
+move = ExtResource("8_tah2q")
+
+[resource]
+script = ExtResource("12_b574o")
+species_name = "OMASTAR"
+dex = 139
+index = 99
+slug = "omastar"
+label = "Omastar"
+category = "SPIRAL"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 770
+hp = 70
+attack = 60
+defense = 125
+speed = 55
+special = 115
+type1 = "ROCK"
+type2 = "WATER"
+catch_rate = 45
+base_exp = 199
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("9_u1uby")]([ExtResource("10_e63gb"), ExtResource("11_f1e32"), ExtResource("5_pb74q")])
+learnset = Array[ExtResource("4_kngif")]([SubResource("Resource_v60q4"), SubResource("Resource_hhr33"), SubResource("Resource_mgy87"), SubResource("Resource_yta5g")])
+tmhm = Array[ExtResource("9_u1uby")]([ExtResource("13_461n6"), ExtResource("14_c4fa0"), ExtResource("15_vjr6y"), ExtResource("16_opf47"), ExtResource("17_nwrkk"), ExtResource("18_q0ybh"), ExtResource("10_e63gb"), ExtResource("19_wu0kh"), ExtResource("20_gqvqh"), ExtResource("21_5eim7"), ExtResource("22_5fhk0"), ExtResource("23_g0yry"), ExtResource("24_62gio"), ExtResource("25_idbvy"), ExtResource("26_x4100"), ExtResource("27_ufba8"), ExtResource("28_lcc3d"), ExtResource("29_ox8xb"), ExtResource("30_1jr2e"), ExtResource("31_quth3"), ExtResource("32_k57lv")])
+evolutions = Array[ExtResource("2_3jjnd")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_HELIX"
+dex_text = Array[String](["A prehistoric", "#MON that died", "out when its", "heavy shell made", "it impossible to", "catch prey"])
+front_sprite = ExtResource("3_l0rr2")
+back_sprite = ExtResource("1_xjnl8")

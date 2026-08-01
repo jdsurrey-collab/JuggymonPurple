@@ -1,0 +1,97 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=35 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/magnemite.png" id="1_qwmq7"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_1a4sh"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/magnemite.png" id="3_yqgo7"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_w23cd"]
+[ext_resource type="Resource" path="res://resources/moves/sonicboom.tres" id="5_4yctj"]
+[ext_resource type="Resource" path="res://resources/moves/thundershock.tres" id="6_263ig"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="7_gia3x"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="8_ve8jg"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="9_f3o5j"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="10_2cg5e"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_q76s4"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_7udni"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_g3f1i"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_ljf8v"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_b1mq8"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_nixh1"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="17_td67q"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="18_vxsh4"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="19_n24c4"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="20_hufjd"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="21_5ufyq"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="22_cphpb"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="23_18diq"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="24_sekip"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="25_car3y"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="26_4eksg"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="27_ymbx6"]
+
+[sub_resource type="Resource" id="Resource_pcin3"]
+script = ExtResource("2_1a4sh")
+method = "LEVEL"
+target = "MAGNETON"
+level = 30
+item = ""
+
+[sub_resource type="Resource" id="Resource_aptmb"]
+script = ExtResource("4_w23cd")
+level = 21
+move = ExtResource("5_4yctj")
+
+[sub_resource type="Resource" id="Resource_vibk5"]
+script = ExtResource("4_w23cd")
+level = 25
+move = ExtResource("6_263ig")
+
+[sub_resource type="Resource" id="Resource_bovh1"]
+script = ExtResource("4_w23cd")
+level = 29
+move = ExtResource("7_gia3x")
+
+[sub_resource type="Resource" id="Resource_qlnk2"]
+script = ExtResource("4_w23cd")
+level = 35
+move = ExtResource("8_ve8jg")
+
+[sub_resource type="Resource" id="Resource_166mk"]
+script = ExtResource("4_w23cd")
+level = 41
+move = ExtResource("9_f3o5j")
+
+[sub_resource type="Resource" id="Resource_d0a54"]
+script = ExtResource("4_w23cd")
+level = 47
+move = ExtResource("10_2cg5e")
+
+[resource]
+script = ExtResource("13_g3f1i")
+species_name = "MAGNEMITE"
+dex = 81
+index = 173
+slug = "magnemite"
+label = "Magnemite"
+category = "MAGNET"
+height_ft = 1
+height_in = 0
+weight_tenths_lb = 130
+hp = 25
+attack = 35
+defense = 70
+speed = 45
+special = 95
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 190
+base_exp = 89
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_q76s4")]([ExtResource("12_7udni")])
+learnset = Array[ExtResource("4_w23cd")]([SubResource("Resource_aptmb"), SubResource("Resource_vibk5"), SubResource("Resource_bovh1"), SubResource("Resource_qlnk2"), SubResource("Resource_166mk"), SubResource("Resource_d0a54")])
+tmhm = Array[ExtResource("11_q76s4")]([ExtResource("14_ljf8v"), ExtResource("15_b1mq8"), ExtResource("16_nixh1"), ExtResource("17_td67q"), ExtResource("18_vxsh4"), ExtResource("19_n24c4"), ExtResource("20_hufjd"), ExtResource("21_5ufyq"), ExtResource("22_cphpb"), ExtResource("23_18diq"), ExtResource("24_sekip"), ExtResource("9_f3o5j"), ExtResource("25_car3y"), ExtResource("8_ve8jg"), ExtResource("26_4eksg"), ExtResource("27_ymbx6")])
+evolutions = Array[ExtResource("2_1a4sh")]([SubResource("Resource_pcin3")])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_BALL"
+dex_text = Array[String](["Uses anti-gravity", "to stay suspended.", "Appears without", "warning and uses", "THUNDER WAVE and", "similar moves"])
+front_sprite = ExtResource("3_yqgo7")
+back_sprite = ExtResource("1_qwmq7")

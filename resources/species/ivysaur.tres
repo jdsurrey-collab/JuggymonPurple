@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=38 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/ivysaur.png" id="1_7j4ao"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_t2iso"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/ivysaur.png" id="3_fkpup"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_odl4q"]
+[ext_resource type="Resource" path="res://resources/moves/leech_seed.tres" id="5_uhidk"]
+[ext_resource type="Resource" path="res://resources/moves/vine_whip.tres" id="6_bxa5p"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="7_h033p"]
+[ext_resource type="Resource" path="res://resources/moves/razor_leaf.tres" id="8_rimnb"]
+[ext_resource type="Resource" path="res://resources/moves/growth.tres" id="9_6w65h"]
+[ext_resource type="Resource" path="res://resources/moves/sleep_powder.tres" id="10_4f0sy"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="11_ee6he"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="12_wk7fl"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="13_xcidr"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="14_clapb"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="15_se1b6"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="16_aw7xm"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_tso76"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="18_faujg"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_rgckd"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_n08tc"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="21_i6bvq"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="22_uhcbo"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="23_begx2"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="24_c4wmf"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="25_cj1be"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="26_u0jj6"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="27_lslhh"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="28_pdus7"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="29_5xxjx"]
+
+[sub_resource type="Resource" id="Resource_m7w05"]
+script = ExtResource("2_t2iso")
+method = "LEVEL"
+target = "VENUSAUR"
+level = 32
+item = ""
+
+[sub_resource type="Resource" id="Resource_nrtpq"]
+script = ExtResource("4_odl4q")
+level = 7
+move = ExtResource("5_uhidk")
+
+[sub_resource type="Resource" id="Resource_rr0dn"]
+script = ExtResource("4_odl4q")
+level = 13
+move = ExtResource("6_bxa5p")
+
+[sub_resource type="Resource" id="Resource_y3a23"]
+script = ExtResource("4_odl4q")
+level = 22
+move = ExtResource("7_h033p")
+
+[sub_resource type="Resource" id="Resource_s882p"]
+script = ExtResource("4_odl4q")
+level = 30
+move = ExtResource("8_rimnb")
+
+[sub_resource type="Resource" id="Resource_6njga"]
+script = ExtResource("4_odl4q")
+level = 38
+move = ExtResource("9_6w65h")
+
+[sub_resource type="Resource" id="Resource_nsu01"]
+script = ExtResource("4_odl4q")
+level = 46
+move = ExtResource("10_4f0sy")
+
+[sub_resource type="Resource" id="Resource_ejtkr"]
+script = ExtResource("4_odl4q")
+level = 54
+move = ExtResource("11_ee6he")
+
+[resource]
+script = ExtResource("15_se1b6")
+species_name = "IVYSAUR"
+dex = 2
+index = 9
+slug = "ivysaur"
+label = "Ivysaur"
+category = "SEED"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 290
+hp = 60
+attack = 62
+defense = 63
+speed = 60
+special = 80
+type1 = "GRASS"
+type2 = "POISON"
+catch_rate = 45
+base_exp = 141
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("12_wk7fl")]([ExtResource("13_xcidr"), ExtResource("14_clapb"), ExtResource("5_uhidk")])
+learnset = Array[ExtResource("4_odl4q")]([SubResource("Resource_nrtpq"), SubResource("Resource_rr0dn"), SubResource("Resource_y3a23"), SubResource("Resource_s882p"), SubResource("Resource_6njga"), SubResource("Resource_nsu01"), SubResource("Resource_ejtkr")])
+tmhm = Array[ExtResource("12_wk7fl")]([ExtResource("16_aw7xm"), ExtResource("17_tso76"), ExtResource("18_faujg"), ExtResource("19_rgckd"), ExtResource("20_n08tc"), ExtResource("21_i6bvq"), ExtResource("22_uhcbo"), ExtResource("11_ee6he"), ExtResource("23_begx2"), ExtResource("24_c4wmf"), ExtResource("25_cj1be"), ExtResource("26_u0jj6"), ExtResource("27_lslhh"), ExtResource("28_pdus7"), ExtResource("29_5xxjx")])
+evolutions = Array[ExtResource("2_t2iso")]([SubResource("Resource_m7w05")])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["When the bulb on", "its back grows", "large, it appears", "to lose the", "ability to stand", "on its hind legs"])
+front_sprite = ExtResource("3_fkpup")
+back_sprite = ExtResource("1_7j4ao")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_0uqii"]
+
+[resource]
+script = ExtResource("1_0uqii")
+move_name = "FIRE_BLAST"
+move_id = 126
+display_name = "FIRE BLAST"
+move_type = "FIRE"
+power = 120
+accuracy = 85
+pp = 5
+effect = "BURN_SIDE_EFFECT2"

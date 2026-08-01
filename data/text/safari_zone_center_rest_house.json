@@ -1,0 +1,30 @@
+{
+ "SafariZoneCenterRestHouseGirlText": [
+  {
+   "kind": "text",
+   "line": "SARA: Where has"
+  },
+  {
+   "kind": "line",
+   "line": "my beau, ERIK,"
+  },
+  {
+   "kind": "cont",
+   "line": "wandered off to?"
+  }
+ ],
+ "SafariZoneCenterRestHouseScientistText": [
+  {
+   "kind": "text",
+   "line": "I hunt #MON"
+  },
+  {
+   "kind": "line",
+   "line": "to bring home"
+  },
+  {
+   "kind": "cont",
+   "line": "as trophies!"
+  }
+ ]
+}

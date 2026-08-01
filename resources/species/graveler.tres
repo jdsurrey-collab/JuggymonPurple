@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=41 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/graveler.png" id="1_elj67"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_csgnq"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/graveler.png" id="3_o627i"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_2sj8e"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="5_oqx0l"]
+[ext_resource type="Resource" path="res://resources/moves/rock_throw.tres" id="6_s4j4f"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="7_udfy7"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="8_3d8ex"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="9_wr6xp"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="10_ydbbg"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_8y7cj"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_gmg0c"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_wcbsx"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="14_jjbf1"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_1owng"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_2o4x6"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_78w6l"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_1o7mm"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="19_iwcom"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="20_ea0xo"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="21_rr8e8"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="22_lryoo"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="23_agvyk"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="24_uoald"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="25_p4s4v"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="26_b55oq"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="27_syqmp"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="28_d2k7a"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="29_gok8t"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="30_6mq87"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="31_rlpqj"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="32_1mlcr"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="33_xlmmp"]
+
+[sub_resource type="Resource" id="Resource_5gtyu"]
+script = ExtResource("2_csgnq")
+method = "TRADE"
+target = "GOLEM"
+level = 0
+item = ""
+
+[sub_resource type="Resource" id="Resource_5o0ys"]
+script = ExtResource("4_2sj8e")
+level = 11
+move = ExtResource("5_oqx0l")
+
+[sub_resource type="Resource" id="Resource_k1ct3"]
+script = ExtResource("4_2sj8e")
+level = 16
+move = ExtResource("6_s4j4f")
+
+[sub_resource type="Resource" id="Resource_2kh2x"]
+script = ExtResource("4_2sj8e")
+level = 21
+move = ExtResource("7_udfy7")
+
+[sub_resource type="Resource" id="Resource_uqikg"]
+script = ExtResource("4_2sj8e")
+level = 29
+move = ExtResource("8_3d8ex")
+
+[sub_resource type="Resource" id="Resource_hkm0g"]
+script = ExtResource("4_2sj8e")
+level = 36
+move = ExtResource("9_wr6xp")
+
+[sub_resource type="Resource" id="Resource_66viu"]
+script = ExtResource("4_2sj8e")
+level = 43
+move = ExtResource("10_ydbbg")
+
+[resource]
+script = ExtResource("13_wcbsx")
+species_name = "GRAVELER"
+dex = 75
+index = 39
+slug = "graveler"
+label = "Graveler"
+category = "ROCK"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 2320
+hp = 55
+attack = 95
+defense = 115
+speed = 35
+special = 45
+type1 = "ROCK"
+type2 = "GROUND"
+catch_rate = 120
+base_exp = 134
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_8y7cj")]([ExtResource("12_gmg0c"), ExtResource("5_oqx0l")])
+learnset = Array[ExtResource("4_2sj8e")]([SubResource("Resource_5o0ys"), SubResource("Resource_k1ct3"), SubResource("Resource_2kh2x"), SubResource("Resource_uqikg"), SubResource("Resource_hkm0g"), SubResource("Resource_66viu")])
+tmhm = Array[ExtResource("11_8y7cj")]([ExtResource("14_jjbf1"), ExtResource("15_1owng"), ExtResource("16_2o4x6"), ExtResource("17_78w6l"), ExtResource("18_1o7mm"), ExtResource("19_iwcom"), ExtResource("20_ea0xo"), ExtResource("21_rr8e8"), ExtResource("22_lryoo"), ExtResource("9_wr6xp"), ExtResource("23_agvyk"), ExtResource("24_uoald"), ExtResource("25_p4s4v"), ExtResource("26_b55oq"), ExtResource("27_syqmp"), ExtResource("28_d2k7a"), ExtResource("7_udfy7"), ExtResource("29_gok8t"), ExtResource("30_6mq87"), ExtResource("10_ydbbg"), ExtResource("31_rlpqj"), ExtResource("32_1mlcr"), ExtResource("33_xlmmp")])
+evolutions = Array[ExtResource("2_csgnq")]([SubResource("Resource_5gtyu")])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Rolls down slopes", "to move. It rolls", "over any obstacle", "without slowing", "or changing its", "direction"])
+front_sprite = ExtResource("3_o627i")
+back_sprite = ExtResource("1_elj67")

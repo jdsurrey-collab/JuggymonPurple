@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=45 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/jynx.png" id="1_h2dpf"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_exsxy"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/jynx.png" id="3_q3gsq"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_5tqpc"]
+[ext_resource type="Resource" path="res://resources/moves/lick.tres" id="5_pvpo6"]
+[ext_resource type="Resource" path="res://resources/moves/doubleslap.tres" id="6_xihle"]
+[ext_resource type="Resource" path="res://resources/moves/ice_punch.tres" id="7_phgad"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="8_3rspn"]
+[ext_resource type="Resource" path="res://resources/moves/thrash.tres" id="9_jgpr7"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="10_r3mwo"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_1g1mk"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="12_5843c"]
+[ext_resource type="Resource" path="res://resources/moves/lovely_kiss.tres" id="13_kkouq"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_gxf1j"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="15_obefh"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="16_nw5xi"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_scgux"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_r6be6"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_l834x"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="20_68ait"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="21_a5588"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="22_73f36"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="23_3eipv"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="24_l657v"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="25_cfh02"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="26_8dnq4"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="27_t5thm"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="28_phuod"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="29_3lfqp"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="30_f7380"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="31_d1d1a"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="32_ri1g4"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="33_cyrml"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="34_eycmq"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="35_apkss"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="36_v8n5g"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="37_nvkvr"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="38_k4b5v"]
+
+[sub_resource type="Resource" id="Resource_a47kp"]
+script = ExtResource("4_5tqpc")
+level = 18
+move = ExtResource("5_pvpo6")
+
+[sub_resource type="Resource" id="Resource_pk0ai"]
+script = ExtResource("4_5tqpc")
+level = 23
+move = ExtResource("6_xihle")
+
+[sub_resource type="Resource" id="Resource_we85c"]
+script = ExtResource("4_5tqpc")
+level = 31
+move = ExtResource("7_phgad")
+
+[sub_resource type="Resource" id="Resource_cre05"]
+script = ExtResource("4_5tqpc")
+level = 39
+move = ExtResource("8_3rspn")
+
+[sub_resource type="Resource" id="Resource_alm24"]
+script = ExtResource("4_5tqpc")
+level = 47
+move = ExtResource("9_jgpr7")
+
+[sub_resource type="Resource" id="Resource_r0n0b"]
+script = ExtResource("4_5tqpc")
+level = 58
+move = ExtResource("10_r3mwo")
+
+[resource]
+script = ExtResource("14_gxf1j")
+species_name = "JYNX"
+dex = 124
+index = 72
+slug = "jynx"
+label = "Jynx"
+category = "HUMANSHAPE"
+height_ft = 4
+height_in = 7
+weight_tenths_lb = 900
+hp = 65
+attack = 50
+defense = 35
+speed = 95
+special = 95
+type1 = "ICE"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 45
+base_exp = 137
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_1g1mk")]([ExtResource("12_5843c"), ExtResource("13_kkouq")])
+learnset = Array[ExtResource("4_5tqpc")]([SubResource("Resource_a47kp"), SubResource("Resource_pk0ai"), SubResource("Resource_we85c"), SubResource("Resource_cre05"), SubResource("Resource_alm24"), SubResource("Resource_r0n0b")])
+tmhm = Array[ExtResource("11_1g1mk")]([ExtResource("15_obefh"), ExtResource("16_nw5xi"), ExtResource("17_scgux"), ExtResource("8_3rspn"), ExtResource("18_r6be6"), ExtResource("19_l834x"), ExtResource("20_68ait"), ExtResource("21_a5588"), ExtResource("22_73f36"), ExtResource("10_r3mwo"), ExtResource("23_3eipv"), ExtResource("24_l657v"), ExtResource("25_cfh02"), ExtResource("26_8dnq4"), ExtResource("27_t5thm"), ExtResource("28_phuod"), ExtResource("29_3lfqp"), ExtResource("30_f7380"), ExtResource("31_d1d1a"), ExtResource("32_ri1g4"), ExtResource("33_cyrml"), ExtResource("34_eycmq"), ExtResource("35_apkss"), ExtResource("36_v8n5g"), ExtResource("37_nvkvr"), ExtResource("38_k4b5v")])
+evolutions = Array[ExtResource("2_exsxy")]([])
+palette = "PAL_MEWMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It seductively", "wiggles its hips", "as it walks. It", "can cause people", "to dance in", "unison with it"])
+front_sprite = ExtResource("3_q3gsq")
+back_sprite = ExtResource("1_h2dpf")

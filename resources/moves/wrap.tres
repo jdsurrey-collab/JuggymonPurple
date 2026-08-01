@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_bwvgy"]
+
+[resource]
+script = ExtResource("1_bwvgy")
+move_name = "WRAP"
+move_id = 35
+display_name = "WRAP"
+move_type = "NORMAL"
+power = 15
+accuracy = 85
+pp = 20
+effect = "TRAPPING_EFFECT"

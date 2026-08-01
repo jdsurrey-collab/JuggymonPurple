@@ -1,0 +1,110 @@
+{
+ "PokemonMansion2FSuperNerdBattleText": [
+  {
+   "kind": "text",
+   "line": "I can't get free!"
+  },
+  {
+   "kind": "line",
+   "line": "This ruin is one"
+  },
+  {
+   "kind": "cont",
+   "line": "vast, cruel maze!"
+  }
+ ],
+ "PokemonMansion2FSuperNerdEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh no!"
+  },
+  {
+   "kind": "line",
+   "line": "My sack of loot!"
+  }
+ ],
+ "PokemonMansion2FSuperNerdAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Switches open and"
+  },
+  {
+   "kind": "line",
+   "line": "shut alternating"
+  },
+  {
+   "kind": "cont",
+   "line": "sets of doors!"
+  }
+ ],
+ "PokemonMansion2FDiary1Text": [
+  {
+   "kind": "text",
+   "line": "Diary: July 5"
+  },
+  {
+   "kind": "line",
+   "line": "Guyana,"
+  },
+  {
+   "kind": "cont",
+   "line": "South America"
+  },
+  {
+   "kind": "para",
+   "line": "A new #MON was"
+  },
+  {
+   "kind": "line",
+   "line": "found, deep"
+  },
+  {
+   "kind": "cont",
+   "line": "within the"
+  },
+  {
+   "kind": "cont",
+   "line": "jungle's rot."
+  }
+ ],
+ "PokemonMansion2FDiary2Text": [
+  {
+   "kind": "text",
+   "line": "Diary: July 10"
+  },
+  {
+   "kind": "line",
+   "line": "We christened the"
+  },
+  {
+   "kind": "cont",
+   "line": "newfound #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "MEW, in wonder."
+  }
+ ],
+ "PokemonMansion2FSwitchText": [
+  {
+   "kind": "text",
+   "line": "A hidden switch!"
+  },
+  {
+   "kind": "para",
+   "line": "Press it?"
+  }
+ ],
+ "PokemonMansion2FSwitchPressedText": [
+  {
+   "kind": "text",
+   "line": "Who wouldn't?"
+  }
+ ],
+ "PokemonMansion2FSwitchNotPressedText": [
+  {
+   "kind": "text",
+   "line": "Not quite yet!"
+  }
+ ]
+}

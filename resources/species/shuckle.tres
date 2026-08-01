@@ -1,0 +1,73 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=29 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/shuckle.png" id="1_ngbaa"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_fhwx1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/shuckle.png" id="3_ierc8"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_b1kjo"]
+[ext_resource type="Resource" path="res://resources/moves/wrap.tres" id="5_kmo81"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="6_lynsr"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="7_dbtp7"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="8_le6vs"]
+[ext_resource type="Resource" path="res://resources/moves/constrict.tres" id="9_v5ie2"]
+[ext_resource type="Resource" path="res://resources/moves/withdraw.tres" id="10_a7h30"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_07qh3"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_kpdju"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_ea3s2"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="14_olj6q"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="15_kf6pj"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="16_e6yin"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="17_d370u"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="18_c1ipt"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="19_jgc21"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="20_pywet"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="21_sby1u"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="22_xfvju"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="23_ystni"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="24_4eb6o"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="25_f4cl3"]
+
+[sub_resource type="Resource" id="Resource_moady"]
+script = ExtResource("4_b1kjo")
+level = 9
+move = ExtResource("5_kmo81")
+
+[sub_resource type="Resource" id="Resource_fg4i7"]
+script = ExtResource("4_b1kjo")
+level = 28
+move = ExtResource("6_lynsr")
+
+[sub_resource type="Resource" id="Resource_ban2x"]
+script = ExtResource("4_b1kjo")
+level = 37
+move = ExtResource("7_dbtp7")
+
+[resource]
+script = ExtResource("11_07qh3")
+species_name = "SHUCKLE"
+dex = 207
+index = 210
+slug = "shuckle"
+label = "Shuckle"
+category = "MOLD"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 450
+hp = 20
+attack = 10
+defense = 230
+speed = 5
+special = 120
+type1 = "BUG"
+type2 = "ROCK"
+catch_rate = 190
+base_exp = 80
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("8_le6vs")]([ExtResource("9_v5ie2"), ExtResource("10_a7h30")])
+learnset = Array[ExtResource("4_b1kjo")]([SubResource("Resource_moady"), SubResource("Resource_fg4i7"), SubResource("Resource_ban2x")])
+tmhm = Array[ExtResource("8_le6vs")]([ExtResource("12_kpdju"), ExtResource("13_ea3s2"), ExtResource("14_olj6q"), ExtResource("15_kf6pj"), ExtResource("7_dbtp7"), ExtResource("16_e6yin"), ExtResource("6_lynsr"), ExtResource("17_d370u"), ExtResource("18_c1ipt"), ExtResource("19_jgc21"), ExtResource("20_pywet"), ExtResource("21_sby1u"), ExtResource("22_xfvju"), ExtResource("23_ystni"), ExtResource("24_4eb6o"), ExtResource("25_f4cl3")])
+evolutions = Array[ExtResource("2_fhwx1")]([])
+palette = "PAL_GREENMON"
+menu_icon = "ICON_BUG"
+dex_text = Array[String](["It hides in stone", "and lets the", "fruit it stores", "turn to liquor.", "The keeping is", "all it knows."])
+front_sprite = ExtResource("3_ierc8")
+back_sprite = ExtResource("1_ngbaa")

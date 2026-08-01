@@ -1,0 +1,97 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=39 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/pikachu.png" id="1_lqlhs"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_7a83u"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/pikachu.png" id="3_pes1k"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_goq0v"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="5_gf7vt"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="6_1buyc"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="7_gn8hk"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="8_cntcq"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="9_aklqe"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_yr0bp"]
+[ext_resource type="Resource" path="res://resources/moves/thundershock.tres" id="11_fphuo"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="12_bmsme"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_qnatk"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="14_8f8hc"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="15_rbyp0"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_xcqrp"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="17_apu4t"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_hdsvu"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_80l78"]
+[ext_resource type="Resource" path="res://resources/moves/pay_day.tres" id="20_shbej"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="21_lfh4r"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="22_ags7o"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="23_073a2"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="24_8k84t"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="25_k5lew"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="26_jxav4"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="27_rbtyb"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="28_sy65u"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="29_uqbmj"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="30_2ku7b"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="31_ud3ga"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="32_5gvvy"]
+
+[sub_resource type="Resource" id="Resource_a23gx"]
+script = ExtResource("2_7a83u")
+method = "ITEM"
+target = "RAICHU"
+level = 0
+item = "THUNDER_STONE"
+
+[sub_resource type="Resource" id="Resource_jya5e"]
+script = ExtResource("4_goq0v")
+level = 9
+move = ExtResource("5_gf7vt")
+
+[sub_resource type="Resource" id="Resource_8mhlv"]
+script = ExtResource("4_goq0v")
+level = 16
+move = ExtResource("6_1buyc")
+
+[sub_resource type="Resource" id="Resource_601rq"]
+script = ExtResource("4_goq0v")
+level = 26
+move = ExtResource("7_gn8hk")
+
+[sub_resource type="Resource" id="Resource_hf033"]
+script = ExtResource("4_goq0v")
+level = 33
+move = ExtResource("8_cntcq")
+
+[sub_resource type="Resource" id="Resource_tfd4b"]
+script = ExtResource("4_goq0v")
+level = 43
+move = ExtResource("9_aklqe")
+
+[resource]
+script = ExtResource("13_qnatk")
+species_name = "PIKACHU"
+dex = 25
+index = 84
+slug = "pikachu"
+label = "Pikachu"
+category = "MOUSE"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 130
+hp = 35
+attack = 55
+defense = 30
+speed = 90
+special = 50
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 190
+base_exp = 82
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_yr0bp")]([ExtResource("11_fphuo"), ExtResource("12_bmsme")])
+learnset = Array[ExtResource("4_goq0v")]([SubResource("Resource_jya5e"), SubResource("Resource_8mhlv"), SubResource("Resource_601rq"), SubResource("Resource_hf033"), SubResource("Resource_tfd4b")])
+tmhm = Array[ExtResource("10_yr0bp")]([ExtResource("14_8f8hc"), ExtResource("15_rbyp0"), ExtResource("16_xcqrp"), ExtResource("17_apu4t"), ExtResource("18_hdsvu"), ExtResource("19_80l78"), ExtResource("20_shbej"), ExtResource("21_lfh4r"), ExtResource("22_ags7o"), ExtResource("23_073a2"), ExtResource("24_8k84t"), ExtResource("9_aklqe"), ExtResource("25_k5lew"), ExtResource("26_jxav4"), ExtResource("27_rbtyb"), ExtResource("28_sy65u"), ExtResource("7_gn8hk"), ExtResource("29_uqbmj"), ExtResource("30_2ku7b"), ExtResource("5_gf7vt"), ExtResource("31_ud3ga"), ExtResource("32_5gvvy")])
+evolutions = Array[ExtResource("2_7a83u")]([SubResource("Resource_a23gx")])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_FAIRY"
+dex_text = Array[String](["When several of", "these #MON", "gather, their", "electricity could", "build and cause", "lightning storms"])
+front_sprite = ExtResource("3_pes1k")
+back_sprite = ExtResource("1_lqlhs")

@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=29 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/hitmontop.png" id="1_edcpo"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_e1iuc"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/hitmontop.png" id="3_6xmnl"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_c6kud"]
+[ext_resource type="Resource" path="res://resources/moves/focus_energy.tres" id="5_dxjkq"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="6_oxcyo"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="7_tuaho"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="8_0mnmh"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_7yfic"]
+[ext_resource type="Resource" path="res://resources/moves/rolling_kick.tres" id="10_cxnbd"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_2iuyk"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_4wlcn"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_qc8h2"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="14_3hpqt"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="15_b8x1t"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="16_27xet"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="17_djabp"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="18_qqctp"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="19_rw5wv"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="20_45wid"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="21_okg3e"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="22_rdses"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="23_sdjc1"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="24_bsn4u"]
+
+[sub_resource type="Resource" id="Resource_fav7o"]
+script = ExtResource("4_c6kud")
+level = 7
+move = ExtResource("5_dxjkq")
+
+[sub_resource type="Resource" id="Resource_jkpf6"]
+script = ExtResource("4_c6kud")
+level = 19
+move = ExtResource("6_oxcyo")
+
+[sub_resource type="Resource" id="Resource_433y6"]
+script = ExtResource("4_c6kud")
+level = 31
+move = ExtResource("7_tuaho")
+
+[sub_resource type="Resource" id="Resource_7bqc3"]
+script = ExtResource("4_c6kud")
+level = 37
+move = ExtResource("8_0mnmh")
+
+[resource]
+script = ExtResource("11_2iuyk")
+species_name = "HITMONTOP"
+dex = 227
+index = 230
+slug = "hitmontop"
+label = "Hitmontop"
+category = "HANDSTAND"
+height_ft = 4
+height_in = 7
+weight_tenths_lb = 1060
+hp = 50
+attack = 95
+defense = 95
+speed = 70
+special = 72
+type1 = "FIGHTING"
+type2 = "FIGHTING"
+catch_rate = 45
+base_exp = 138
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("9_7yfic")]([ExtResource("10_cxnbd")])
+learnset = Array[ExtResource("4_c6kud")]([SubResource("Resource_fav7o"), SubResource("Resource_jkpf6"), SubResource("Resource_433y6"), SubResource("Resource_7bqc3")])
+tmhm = Array[ExtResource("9_7yfic")]([ExtResource("12_4wlcn"), ExtResource("13_qc8h2"), ExtResource("14_3hpqt"), ExtResource("15_b8x1t"), ExtResource("16_27xet"), ExtResource("17_djabp"), ExtResource("18_qqctp"), ExtResource("19_rw5wv"), ExtResource("20_45wid"), ExtResource("21_okg3e"), ExtResource("7_tuaho"), ExtResource("22_rdses"), ExtResource("23_sdjc1"), ExtResource("24_bsn4u")])
+evolutions = Array[ExtResource("2_e1iuc")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It spins upon its", "head and strikes", "from every side", "at once. To watch", "it is to lose", "your footing."])
+front_sprite = ExtResource("3_6xmnl")
+back_sprite = ExtResource("1_edcpo")

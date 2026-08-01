@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=47 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/charizard.png" id="1_it1qy"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_7uuc0"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/charizard.png" id="3_22g8w"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_puoql"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="5_liwc3"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="6_7iil0"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="7_ueoqb"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="8_ej8fy"]
+[ext_resource type="Resource" path="res://resources/moves/flamethrower.tres" id="9_njwod"]
+[ext_resource type="Resource" path="res://resources/moves/fire_spin.tres" id="10_7woux"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_kswv0"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="12_ok4p6"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="13_whg15"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_1rm4w"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="15_5f0o6"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="16_cglcg"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="17_nm3e6"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="18_g1kpg"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="19_jfuqx"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="20_ewx3d"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="21_vm13q"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="22_dcu7q"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="23_yku2o"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="24_ylvu1"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="25_ejg18"]
+[ext_resource type="Resource" path="res://resources/moves/dragon_rage.tres" id="26_uivk5"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="27_eiixh"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="28_rvemy"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="29_ttoxe"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="30_rc4re"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="31_jwhx7"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="32_o8pfo"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="33_7v28t"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="34_36cpx"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="35_n67ku"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="36_646nq"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="37_37oqp"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="38_s70lu"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="39_5pg7e"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="40_d017a"]
+
+[sub_resource type="Resource" id="Resource_4njrv"]
+script = ExtResource("4_puoql")
+level = 9
+move = ExtResource("5_liwc3")
+
+[sub_resource type="Resource" id="Resource_62dmj"]
+script = ExtResource("4_puoql")
+level = 15
+move = ExtResource("6_7iil0")
+
+[sub_resource type="Resource" id="Resource_xvv4t"]
+script = ExtResource("4_puoql")
+level = 24
+move = ExtResource("7_ueoqb")
+
+[sub_resource type="Resource" id="Resource_lmo6m"]
+script = ExtResource("4_puoql")
+level = 36
+move = ExtResource("8_ej8fy")
+
+[sub_resource type="Resource" id="Resource_peyda"]
+script = ExtResource("4_puoql")
+level = 46
+move = ExtResource("9_njwod")
+
+[sub_resource type="Resource" id="Resource_2nube"]
+script = ExtResource("4_puoql")
+level = 55
+move = ExtResource("10_7woux")
+
+[resource]
+script = ExtResource("14_1rm4w")
+species_name = "CHARIZARD"
+dex = 6
+index = 180
+slug = "charizard"
+label = "Charizard"
+category = "FLAME"
+height_ft = 5
+height_in = 7
+weight_tenths_lb = 2000
+hp = 78
+attack = 84
+defense = 78
+speed = 100
+special = 85
+type1 = "FIRE"
+type2 = "FLYING"
+catch_rate = 45
+base_exp = 209
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_kswv0")]([ExtResource("12_ok4p6"), ExtResource("13_whg15"), ExtResource("5_liwc3"), ExtResource("6_7iil0")])
+learnset = Array[ExtResource("4_puoql")]([SubResource("Resource_4njrv"), SubResource("Resource_62dmj"), SubResource("Resource_xvv4t"), SubResource("Resource_lmo6m"), SubResource("Resource_peyda"), SubResource("Resource_2nube")])
+tmhm = Array[ExtResource("11_kswv0")]([ExtResource("15_5f0o6"), ExtResource("16_cglcg"), ExtResource("17_nm3e6"), ExtResource("18_g1kpg"), ExtResource("19_jfuqx"), ExtResource("20_ewx3d"), ExtResource("21_vm13q"), ExtResource("22_dcu7q"), ExtResource("23_yku2o"), ExtResource("24_ylvu1"), ExtResource("25_ejg18"), ExtResource("7_ueoqb"), ExtResource("26_uivk5"), ExtResource("27_eiixh"), ExtResource("28_rvemy"), ExtResource("29_ttoxe"), ExtResource("30_rc4re"), ExtResource("31_jwhx7"), ExtResource("32_o8pfo"), ExtResource("33_7v28t"), ExtResource("34_36cpx"), ExtResource("35_n67ku"), ExtResource("36_646nq"), ExtResource("37_37oqp"), ExtResource("38_s70lu"), ExtResource("39_5pg7e"), ExtResource("40_d017a")])
+evolutions = Array[ExtResource("2_7uuc0")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Spits fire that", "is hot enough to", "melt boulders.", "Known to cause", "forest fires", "unintentionally"])
+front_sprite = ExtResource("3_22g8w")
+back_sprite = ExtResource("1_it1qy")

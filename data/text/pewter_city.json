@@ -1,0 +1,290 @@
+{
+ "PewterCityCooltrainerFText": [
+  {
+   "kind": "text",
+   "line": "They say CLEFAIRY"
+  },
+  {
+   "kind": "line",
+   "line": "fell from the"
+  },
+  {
+   "kind": "cont",
+   "line": "moon itself."
+  },
+  {
+   "kind": "para",
+   "line": "They came when"
+  },
+  {
+   "kind": "line",
+   "line": "a MOON STONE"
+  },
+  {
+   "kind": "cont",
+   "line": "struck MT.MOON."
+  }
+ ],
+ "PewterCityCooltrainerMText": [
+  {
+   "kind": "text",
+   "line": "Few serious"
+  },
+  {
+   "kind": "line",
+   "line": "#MON trainers"
+  },
+  {
+   "kind": "cont",
+   "line": "linger here."
+  },
+  {
+   "kind": "para",
+   "line": "Mostly BUG"
+  },
+  {
+   "kind": "line",
+   "line": "CATCHERs. Only"
+  },
+  {
+   "kind": "cont",
+   "line": "BROCK, of the"
+  },
+  {
+   "kind": "cont",
+   "line": "GYM, still cares."
+  }
+ ],
+ "PewterCitySuperNerd1DidYouCheckOutMuseumText": [
+  {
+   "kind": "text",
+   "line": "Have you seen"
+  },
+  {
+   "kind": "line",
+   "line": "the MUSEUM yet?"
+  }
+ ],
+ "PewterCitySuperNerd1WerentThoseFossilsAmazingText": [
+  {
+   "kind": "text",
+   "line": "Weren't those"
+  },
+  {
+   "kind": "line",
+   "line": "bones from MT."
+  },
+  {
+   "kind": "cont",
+   "line": "MOON wondrous?"
+  }
+ ],
+ "PewterCitySuperNerd1YouHaveToGoText": [
+  {
+   "kind": "text",
+   "line": "Truly?"
+  },
+  {
+   "kind": "line",
+   "line": "You must go,"
+  },
+  {
+   "kind": "cont",
+   "line": "without fail."
+  }
+ ],
+ "PewterCitySuperNerd1ItsRightHereText": [
+  {
+   "kind": "text",
+   "line": "It's just there."
+  },
+  {
+   "kind": "line",
+   "line": "Pay your due to"
+  },
+  {
+   "kind": "cont",
+   "line": "enter, but it's"
+  },
+  {
+   "kind": "cont",
+   "line": "worth the toll."
+  },
+  {
+   "kind": "cont",
+   "line": "Until we meet."
+  }
+ ],
+ "PewterCitySuperNerd2DoYouKnowWhatImDoingText": [
+  {
+   "kind": "text",
+   "line": "Psst."
+  },
+  {
+   "kind": "line",
+   "line": "Do you know"
+  },
+  {
+   "kind": "cont",
+   "line": "my purpose here?"
+  }
+ ],
+ "PewterCitySuperNerd2ThatsRightText": [
+  {
+   "kind": "text",
+   "line": "Just so. A"
+  },
+  {
+   "kind": "line",
+   "line": "wretched task."
+  }
+ ],
+ "PewterCitySuperNerd2ImSprayingRepelText": [
+  {
+   "kind": "text",
+   "line": "I spray REPEL"
+  },
+  {
+   "kind": "line",
+   "line": "to keep #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "from my garden."
+  }
+ ],
+ "PewterCityYoungsterYoureATrainerFollowMeText": [
+  {
+   "kind": "text",
+   "line": "A trainer, are"
+  },
+  {
+   "kind": "line",
+   "line": "you? BROCK"
+  },
+  {
+   "kind": "cont",
+   "line": "hungers for new"
+  },
+  {
+   "kind": "cont",
+   "line": "challengers."
+  },
+  {
+   "kind": "cont",
+   "line": "Follow, then."
+  }
+ ],
+ "PewterCityYoungsterGoTakeOnBrockText": [
+  {
+   "kind": "text",
+   "line": "If you've the"
+  },
+  {
+   "kind": "line",
+   "line": "will, go face"
+  },
+  {
+   "kind": "cont",
+   "line": "BROCK."
+  }
+ ],
+ "PewterCityTrainerTipsText": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Any #MON that"
+  },
+  {
+   "kind": "line",
+   "line": "joins a battle,"
+  },
+  {
+   "kind": "cont",
+   "line": "however briefly,"
+  },
+  {
+   "kind": "cont",
+   "line": "earns its due."
+  }
+ ],
+ "PewterCityPoliceNoticeSignText": [
+  {
+   "kind": "text",
+   "line": "NOTICE:"
+  },
+  {
+   "kind": "para",
+   "line": "Grave robbers"
+  },
+  {
+   "kind": "line",
+   "line": "prey on MT.MOON,"
+  },
+  {
+   "kind": "cont",
+   "line": "stealing bones"
+  },
+  {
+   "kind": "cont",
+   "line": "of the dead."
+  },
+  {
+   "kind": "cont",
+   "line": "Report to the"
+  },
+  {
+   "kind": "cont",
+   "line": "PEWTER POLICE."
+  }
+ ],
+ "PewterCityMuseumSignText": [
+  {
+   "kind": "text",
+   "line": "PEWTER MUSEUM"
+  },
+  {
+   "kind": "line",
+   "line": "OF SCIENCE"
+  }
+ ],
+ "PewterCityGymSignText": [
+  {
+   "kind": "text",
+   "line": "PEWTER CITY"
+  },
+  {
+   "kind": "line",
+   "line": "#MON GYM"
+  },
+  {
+   "kind": "cont",
+   "line": "LEADER: BROCK"
+  },
+  {
+   "kind": "para",
+   "line": "The Stone-Hearted"
+  },
+  {
+   "kind": "line",
+   "line": "Trainer."
+  }
+ ],
+ "PewterCitySignText": [
+  {
+   "kind": "text",
+   "line": "PEWTER CITY"
+  },
+  {
+   "kind": "line",
+   "line": "A Gray, Grieving"
+  },
+  {
+   "kind": "cont",
+   "line": "City"
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=33 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/aerodactyl.png" id="1_xfnrm"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_1052d"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/aerodactyl.png" id="3_itddb"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_cw8l1"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="5_v71n1"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="6_apc6a"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="7_kurkf"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="8_tqmls"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="9_xqfde"]
+[ext_resource type="Resource" path="res://resources/moves/wing_attack.tres" id="10_ypa81"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="11_0b7tw"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_ol66n"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="13_wwebs"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="14_e5fd2"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_qgbki"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_0m02e"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="17_n4xnj"]
+[ext_resource type="Resource" path="res://resources/moves/dragon_rage.tres" id="18_hf55j"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="19_fktpq"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="20_ba4k2"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="21_lxkxv"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="22_srrwy"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="23_xd05k"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="24_oelfo"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="25_buvqo"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="26_k8teg"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="27_a8uk8"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="28_marpu"]
+
+[sub_resource type="Resource" id="Resource_nirlt"]
+script = ExtResource("4_cw8l1")
+level = 33
+move = ExtResource("5_v71n1")
+
+[sub_resource type="Resource" id="Resource_etwxu"]
+script = ExtResource("4_cw8l1")
+level = 38
+move = ExtResource("6_apc6a")
+
+[sub_resource type="Resource" id="Resource_k11bf"]
+script = ExtResource("4_cw8l1")
+level = 45
+move = ExtResource("7_kurkf")
+
+[sub_resource type="Resource" id="Resource_84leh"]
+script = ExtResource("4_cw8l1")
+level = 54
+move = ExtResource("8_tqmls")
+
+[resource]
+script = ExtResource("12_ol66n")
+species_name = "AERODACTYL"
+dex = 142
+index = 171
+slug = "aerodactyl"
+label = "Aerodactyl"
+category = "FOSSIL"
+height_ft = 5
+height_in = 11
+weight_tenths_lb = 1300
+hp = 80
+attack = 105
+defense = 65
+speed = 130
+special = 60
+type1 = "ROCK"
+type2 = "FLYING"
+catch_rate = 45
+base_exp = 202
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("9_xqfde")]([ExtResource("10_ypa81"), ExtResource("11_0b7tw")])
+learnset = Array[ExtResource("4_cw8l1")]([SubResource("Resource_nirlt"), SubResource("Resource_etwxu"), SubResource("Resource_k11bf"), SubResource("Resource_84leh")])
+tmhm = Array[ExtResource("9_xqfde")]([ExtResource("13_wwebs"), ExtResource("14_e5fd2"), ExtResource("15_qgbki"), ExtResource("7_kurkf"), ExtResource("16_0m02e"), ExtResource("8_tqmls"), ExtResource("17_n4xnj"), ExtResource("18_hf55j"), ExtResource("19_fktpq"), ExtResource("20_ba4k2"), ExtResource("21_lxkxv"), ExtResource("22_srrwy"), ExtResource("23_xd05k"), ExtResource("24_oelfo"), ExtResource("25_buvqo"), ExtResource("26_k8teg"), ExtResource("27_a8uk8"), ExtResource("28_marpu")])
+evolutions = Array[ExtResource("2_1052d")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_BIRD"
+dex_text = Array[String](["A ferocious, pre-", "historic #MON", "that goes for the", "enemy's throat", "with its serrated", "saw-like fangs"])
+front_sprite = ExtResource("3_itddb")
+back_sprite = ExtResource("1_xfnrm")

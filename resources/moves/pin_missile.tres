@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_23uif"]
+
+[resource]
+script = ExtResource("1_23uif")
+move_name = "PIN_MISSILE"
+move_id = 42
+display_name = "PIN MISSILE"
+move_type = "BUG"
+power = 14
+accuracy = 85
+pp = 20
+effect = "TWO_TO_FIVE_ATTACKS_EFFECT"

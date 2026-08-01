@@ -1,0 +1,360 @@
+{
+ "SaffronCityRocket1Text": [
+  {
+   "kind": "text",
+   "line": "What do you"
+  },
+  {
+   "kind": "line",
+   "line": "want? Be gone!"
+  }
+ ],
+ "SaffronCityRocket2Text": [
+  {
+   "kind": "text",
+   "line": "The BOSS swore"
+  },
+  {
+   "kind": "line",
+   "line": "he'd claim this"
+  },
+  {
+   "kind": "cont",
+   "line": "town!"
+  }
+ ],
+ "SaffronCityRocket3Text": [
+  {
+   "kind": "text",
+   "line": "Out of my path!"
+  }
+ ],
+ "SaffronCityRocket4Text": [
+  {
+   "kind": "text",
+   "line": "SAFFRON belongs"
+  },
+  {
+   "kind": "line",
+   "line": "to TEAM ROCKET"
+  },
+  {
+   "kind": "cont",
+   "line": "now!"
+  }
+ ],
+ "SaffronCityRocket5Text": [
+  {
+   "kind": "text",
+   "line": "Wickedness makes"
+  },
+  {
+   "kind": "line",
+   "line": "me feel so alive!"
+  }
+ ],
+ "SaffronCityRocket6Text": [
+  {
+   "kind": "text",
+   "line": "Ow! Mind where"
+  },
+  {
+   "kind": "line",
+   "line": "you tread!"
+  }
+ ],
+ "SaffronCityRocket7Text": [
+  {
+   "kind": "text",
+   "line": "With SILPH ours,"
+  },
+  {
+   "kind": "line",
+   "line": "we may plunder"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON across"
+  },
+  {
+   "kind": "cont",
+   "line": "the whole world!"
+  }
+ ],
+ "SaffronCityScientistText": [
+  {
+   "kind": "text",
+   "line": "You felled TEAM"
+  },
+  {
+   "kind": "line",
+   "line": "ROCKET, all"
+  },
+  {
+   "kind": "cont",
+   "line": "alone? Astounding!"
+  }
+ ],
+ "SaffronCitySilphWorkerMText": [
+  {
+   "kind": "text",
+   "line": "At last! TEAM"
+  },
+  {
+   "kind": "line",
+   "line": "ROCKET has fled!"
+  },
+  {
+   "kind": "cont",
+   "line": "It's safe to walk"
+  },
+  {
+   "kind": "cont",
+   "line": "these streets"
+  },
+  {
+   "kind": "cont",
+   "line": "again!"
+  }
+ ],
+ "SaffronCitySilphWorkerFText": [
+  {
+   "kind": "text",
+   "line": "Folk ought to"
+  },
+  {
+   "kind": "line",
+   "line": "return to"
+  },
+  {
+   "kind": "cont",
+   "line": "SAFFRON, now."
+  }
+ ],
+ "SaffronCityGentlemanText": [
+  {
+   "kind": "text",
+   "line": "I flew here on my"
+  },
+  {
+   "kind": "line",
+   "line": "PIDGEOT, having"
+  },
+  {
+   "kind": "cont",
+   "line": "read of SILPH."
+  },
+  {
+   "kind": "para",
+   "line": "Already over?"
+  },
+  {
+   "kind": "line",
+   "line": "I missed all the"
+  },
+  {
+   "kind": "cont",
+   "line": "commotion."
+  }
+ ],
+ "SaffronCityPidgeotText": [
+  {
+   "kind": "text",
+   "line": "PIDGEOT: Bi bibii!@"
+  }
+ ],
+ "SaffronCityRockerText": [
+  {
+   "kind": "text",
+   "line": "I saw the ROCKET"
+  },
+  {
+   "kind": "line",
+   "line": "BOSS fleeing"
+  },
+  {
+   "kind": "cont",
+   "line": "SILPH's tower."
+  }
+ ],
+ "SaffronCityRocket8Text": [
+  {
+   "kind": "text",
+   "line": "I stand as a"
+  },
+  {
+   "kind": "line",
+   "line": "guard."
+  },
+  {
+   "kind": "para",
+   "line": "Suspicious sorts"
+  },
+  {
+   "kind": "line",
+   "line": "I turn away!"
+  }
+ ],
+ "SaffronCityRocket9Text": [
+  {
+   "kind": "text",
+   "line": "..."
+  },
+  {
+   "kind": "line",
+   "line": "Snore..."
+  },
+  {
+   "kind": "para",
+   "line": "Ha! He's dozing"
+  },
+  {
+   "kind": "line",
+   "line": "at his post!"
+  }
+ ],
+ "SaffronCitySignText": [
+  {
+   "kind": "text",
+   "line": "SAFFRON CITY"
+  },
+  {
+   "kind": "line",
+   "line": "Gilded, Hollow"
+  },
+  {
+   "kind": "cont",
+   "line": "Land of Commerce"
+  }
+ ],
+ "SaffronCityFightingDojoSignText": [
+  {
+   "kind": "text",
+   "line": "FIGHTING DOJO"
+  }
+ ],
+ "SaffronCityGymSignText": [
+  {
+   "kind": "text",
+   "line": "SAFFRON CITY"
+  },
+  {
+   "kind": "line",
+   "line": "#MON GYM"
+  },
+  {
+   "kind": "cont",
+   "line": "LEADER: SABRINA"
+  },
+  {
+   "kind": "para",
+   "line": "The Mistress of"
+  },
+  {
+   "kind": "line",
+   "line": "Broken Minds!"
+  }
+ ],
+ "SaffronCityTrainerTips1Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "FULL HEAL mends"
+  },
+  {
+   "kind": "line",
+   "line": "every ailment,"
+  },
+  {
+   "kind": "cont",
+   "line": "sleep and burns"
+  },
+  {
+   "kind": "cont",
+   "line": "alike."
+  },
+  {
+   "kind": "para",
+   "line": "It costs a bit"
+  },
+  {
+   "kind": "line",
+   "line": "more, but eases"
+  },
+  {
+   "kind": "cont",
+   "line": "the burden."
+  }
+ ],
+ "SaffronCityTrainerTips2Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "New GREAT BALL"
+  },
+  {
+   "kind": "line",
+   "line": "offers improved"
+  },
+  {
+   "kind": "cont",
+   "line": "capture rates."
+  },
+  {
+   "kind": "para",
+   "line": "Try it upon those"
+  },
+  {
+   "kind": "line",
+   "line": "hard-won"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON."
+  }
+ ],
+ "SaffronCitySilphCoSignText": [
+  {
+   "kind": "text",
+   "line": "SILPH CO."
+  },
+  {
+   "kind": "line",
+   "line": "OFFICE BUILDING"
+  }
+ ],
+ "SaffronCityMrPsychicsHouseSignText": [
+  {
+   "kind": "text",
+   "line": "MR.PSYCHIC's"
+  },
+  {
+   "kind": "line",
+   "line": "HOUSE"
+  }
+ ],
+ "SaffronCitySilphCoLatestProductSignText": [
+  {
+   "kind": "text",
+   "line": "SILPH's newest"
+  },
+  {
+   "kind": "line",
+   "line": "creation!"
+  },
+  {
+   "kind": "para",
+   "line": "Its release, yet"
+  },
+  {
+   "kind": "line",
+   "line": "undetermined..."
+  }
+ ]
+}

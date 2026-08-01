@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/horsea.png" id="1_8ndxq"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_tewuu"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/horsea.png" id="3_sqieb"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_jduky"]
+[ext_resource type="Resource" path="res://resources/moves/smokescreen.tres" id="5_ac87y"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="6_vak2o"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="7_6wpy1"]
+[ext_resource type="Resource" path="res://resources/moves/agility.tres" id="8_y776n"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="9_282at"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_kq605"]
+[ext_resource type="Resource" path="res://resources/moves/bubble.tres" id="11_bmqs2"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_k4i2e"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_f4pue"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="14_q68b7"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="15_qr8uq"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="16_xafyu"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="17_6ccw7"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="18_ttesm"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="19_sbk8i"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="20_oqwg8"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="21_aj3ji"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="22_fibut"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="23_svgic"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="24_e0s42"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="25_cj0t2"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="26_kjrsr"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="27_gwqv1"]
+
+[sub_resource type="Resource" id="Resource_nag0p"]
+script = ExtResource("2_tewuu")
+method = "LEVEL"
+target = "SEADRA"
+level = 32
+item = ""
+
+[sub_resource type="Resource" id="Resource_mfd7y"]
+script = ExtResource("4_jduky")
+level = 19
+move = ExtResource("5_ac87y")
+
+[sub_resource type="Resource" id="Resource_lghcx"]
+script = ExtResource("4_jduky")
+level = 24
+move = ExtResource("6_vak2o")
+
+[sub_resource type="Resource" id="Resource_jv7yk"]
+script = ExtResource("4_jduky")
+level = 30
+move = ExtResource("7_6wpy1")
+
+[sub_resource type="Resource" id="Resource_8hceu"]
+script = ExtResource("4_jduky")
+level = 37
+move = ExtResource("8_y776n")
+
+[sub_resource type="Resource" id="Resource_8je7j"]
+script = ExtResource("4_jduky")
+level = 45
+move = ExtResource("9_282at")
+
+[resource]
+script = ExtResource("12_k4i2e")
+species_name = "HORSEA"
+dex = 116
+index = 92
+slug = "horsea"
+label = "Horsea"
+category = "DRAGON"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 180
+hp = 30
+attack = 40
+defense = 70
+speed = 60
+special = 70
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 225
+base_exp = 83
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_kq605")]([ExtResource("11_bmqs2")])
+learnset = Array[ExtResource("4_jduky")]([SubResource("Resource_mfd7y"), SubResource("Resource_lghcx"), SubResource("Resource_jv7yk"), SubResource("Resource_8hceu"), SubResource("Resource_8je7j")])
+tmhm = Array[ExtResource("10_kq605")]([ExtResource("13_f4pue"), ExtResource("14_q68b7"), ExtResource("15_qr8uq"), ExtResource("16_xafyu"), ExtResource("7_6wpy1"), ExtResource("17_6ccw7"), ExtResource("18_ttesm"), ExtResource("19_sbk8i"), ExtResource("20_oqwg8"), ExtResource("21_aj3ji"), ExtResource("22_fibut"), ExtResource("23_svgic"), ExtResource("24_e0s42"), ExtResource("25_cj0t2"), ExtResource("26_kjrsr"), ExtResource("27_gwqv1")])
+evolutions = Array[ExtResource("2_tewuu")]([SubResource("Resource_nag0p")])
+palette = "PAL_CYANMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["Known to shoot", "down flying bugs", "with precision", "blasts of ink", "from the surface", "of the water"])
+front_sprite = ExtResource("3_sqieb")
+back_sprite = ExtResource("1_8ndxq")

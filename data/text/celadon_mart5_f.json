@@ -1,0 +1,72 @@
+{
+ "CeladonMart5FGentlemanText": [
+  {
+   "kind": "text",
+   "line": "#MON vigor"
+  },
+  {
+   "kind": "line",
+   "line": "elixirs are sold"
+  },
+  {
+   "kind": "cont",
+   "line": "only here."
+  },
+  {
+   "kind": "para",
+   "line": "CALCIUM to"
+  },
+  {
+   "kind": "line",
+   "line": "quicken SPECIAL"
+  },
+  {
+   "kind": "cont",
+   "line": "powers."
+  },
+  {
+   "kind": "para",
+   "line": "CARBOS to"
+  },
+  {
+   "kind": "line",
+   "line": "quicken SPEED."
+  }
+ ],
+ "CeladonMart5FSailorText": [
+  {
+   "kind": "text",
+   "line": "I've come for"
+  },
+  {
+   "kind": "line",
+   "line": "#MON vigor"
+  },
+  {
+   "kind": "cont",
+   "line": "elixirs."
+  },
+  {
+   "kind": "para",
+   "line": "PROTEIN swells"
+  },
+  {
+   "kind": "line",
+   "line": "ATTACK's might."
+  },
+  {
+   "kind": "para",
+   "line": "IRON hardens"
+  },
+  {
+   "kind": "line",
+   "line": "DEFENSE!"
+  }
+ ],
+ "CeladonMart5FCurrentFloorSignText": [
+  {
+   "kind": "text",
+   "line": "5F: DRUG STORE"
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "PewterSpeechHouseGamblerText": [
+  {
+   "kind": "text",
+   "line": "#MON learn"
+  },
+  {
+   "kind": "line",
+   "line": "new tricks as"
+  },
+  {
+   "kind": "cont",
+   "line": "they age."
+  },
+  {
+   "kind": "para",
+   "line": "But some moves"
+  },
+  {
+   "kind": "line",
+   "line": "must be forced"
+  },
+  {
+   "kind": "cont",
+   "line": "upon them."
+  }
+ ],
+ "PewterSpeechHouseYoungsterText": [
+  {
+   "kind": "text",
+   "line": "#MON are easier"
+  },
+  {
+   "kind": "line",
+   "line": "to trap when"
+  },
+  {
+   "kind": "cont",
+   "line": "hurt, or lost in"
+  },
+  {
+   "kind": "cont",
+   "line": "sleep."
+  },
+  {
+   "kind": "para",
+   "line": "Even then, luck"
+  },
+  {
+   "kind": "line",
+   "line": "may fail you."
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=31 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/pupitar.png" id="1_0mvdr"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_e50wf"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/pupitar.png" id="3_8xqi6"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_c5ntc"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="5_ghqlu"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="6_x4bsc"]
+[ext_resource type="Resource" path="res://resources/moves/thrash.tres" id="7_lidp3"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="8_p0yi1"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="9_tur3f"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_abejk"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="11_vohq3"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="12_gmsqu"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_yivh0"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_c7d16"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="15_yb3v8"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="16_vunfi"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="17_lk86i"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="18_myjas"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="19_af2ha"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_o7p1a"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="21_rsewg"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="22_1enxn"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="23_6o64v"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="24_hj2nv"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="25_i86c7"]
+
+[sub_resource type="Resource" id="Resource_vhrrh"]
+script = ExtResource("4_c5ntc")
+level = 15
+move = ExtResource("5_ghqlu")
+
+[sub_resource type="Resource" id="Resource_pivqk"]
+script = ExtResource("4_c5ntc")
+level = 22
+move = ExtResource("6_x4bsc")
+
+[sub_resource type="Resource" id="Resource_i4cgu"]
+script = ExtResource("4_c5ntc")
+level = 29
+move = ExtResource("7_lidp3")
+
+[sub_resource type="Resource" id="Resource_ccbvw"]
+script = ExtResource("4_c5ntc")
+level = 56
+move = ExtResource("8_p0yi1")
+
+[sub_resource type="Resource" id="Resource_703v5"]
+script = ExtResource("4_c5ntc")
+level = 65
+move = ExtResource("9_tur3f")
+
+[resource]
+script = ExtResource("13_yivh0")
+species_name = "PUPITAR"
+dex = 237
+index = 240
+slug = "pupitar"
+label = "Pupitar"
+category = "HARD SHELL"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 3350
+hp = 70
+attack = 84
+defense = 70
+speed = 51
+special = 67
+type1 = "ROCK"
+type2 = "GROUND"
+catch_rate = 45
+base_exp = 144
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("10_abejk")]([ExtResource("11_vohq3"), ExtResource("12_gmsqu"), ExtResource("5_ghqlu")])
+learnset = Array[ExtResource("4_c5ntc")]([SubResource("Resource_vhrrh"), SubResource("Resource_pivqk"), SubResource("Resource_i4cgu"), SubResource("Resource_ccbvw"), SubResource("Resource_703v5")])
+tmhm = Array[ExtResource("10_abejk")]([ExtResource("14_c7d16"), ExtResource("15_yb3v8"), ExtResource("16_vunfi"), ExtResource("17_lk86i"), ExtResource("18_myjas"), ExtResource("19_af2ha"), ExtResource("20_o7p1a"), ExtResource("21_rsewg"), ExtResource("8_p0yi1"), ExtResource("22_1enxn"), ExtResource("23_6o64v"), ExtResource("24_hj2nv"), ExtResource("6_x4bsc"), ExtResource("25_i86c7")])
+evolutions = Array[ExtResource("2_e50wf")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Sealed in shell,", "it hurls itself", "about and cracks", "the stone it", "strikes. It is", "only impatient."])
+front_sprite = ExtResource("3_8xqi6")
+back_sprite = ExtResource("1_0mvdr")

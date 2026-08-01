@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_cwnu5"]
+
+[resource]
+script = ExtResource("1_cwnu5")
+move_name = "STUN_SPORE"
+move_id = 78
+display_name = "STUN SPORE"
+move_type = "GRASS"
+power = 0
+accuracy = 75
+pp = 30
+effect = "PARALYZE_EFFECT"

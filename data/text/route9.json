@@ -1,0 +1,346 @@
+{
+ "Route9CooltrainerF1BattleText": [
+  {
+   "kind": "text",
+   "line": "You carry #MON!"
+  },
+  {
+   "kind": "line",
+   "line": "Then you're"
+  },
+  {
+   "kind": "cont",
+   "line": "mine to take."
+  }
+ ],
+ "Route9CooltrainerF1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You"
+  },
+  {
+   "kind": "line",
+   "line": "deceived me!"
+  }
+ ],
+ "Route9CooltrainerF1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You'll need light"
+  },
+  {
+   "kind": "line",
+   "line": "for the dark"
+  },
+  {
+   "kind": "cont",
+   "line": "tunnel ahead."
+  }
+ ],
+ "Route9CooltrainerM1BattleText": [
+  {
+   "kind": "text",
+   "line": "Who walks with"
+  },
+  {
+   "kind": "line",
+   "line": "such fine looking"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON?"
+  }
+ ],
+ "Route9CooltrainerM1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Out"
+  },
+  {
+   "kind": "line",
+   "line": "like a candle!"
+  }
+ ],
+ "Route9CooltrainerM1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Keep walking."
+  }
+ ],
+ "Route9CooltrainerM2BattleText": [
+  {
+   "kind": "text",
+   "line": "I'll brave ROCK"
+  },
+  {
+   "kind": "line",
+   "line": "TUNNEL, bound"
+  },
+  {
+   "kind": "cont",
+   "line": "for LAVENDER..."
+  }
+ ],
+ "Route9CooltrainerM2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I don't"
+  },
+  {
+   "kind": "line",
+   "line": "measure up!"
+  }
+ ],
+ "Route9CooltrainerM2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Bound for ROCK"
+  },
+  {
+   "kind": "line",
+   "line": "TUNNEL, also?"
+  }
+ ],
+ "Route9CooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "Don't you dare"
+  },
+  {
+   "kind": "line",
+   "line": "pity me!"
+  }
+ ],
+ "Route9CooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "No!"
+  },
+  {
+   "kind": "line",
+   "line": "Too much!"
+  }
+ ],
+ "Route9CooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You've a real"
+  },
+  {
+   "kind": "line",
+   "line": "gift. Good luck"
+  },
+  {
+   "kind": "cont",
+   "line": "to you, truly."
+  }
+ ],
+ "Route9Hiker1BattleText": [
+  {
+   "kind": "text",
+   "line": "Hah! Good. I was"
+  },
+  {
+   "kind": "line",
+   "line": "dying of boredom,"
+  },
+  {
+   "kind": "cont",
+   "line": "eh!"
+  }
+ ],
+ "Route9Hiker1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Keep it coming,"
+  },
+  {
+   "kind": "line",
+   "line": "eh!"
+  },
+  {
+   "kind": "para",
+   "line": "Oh. I'm out of"
+  },
+  {
+   "kind": "line",
+   "line": "#MON, eh."
+  }
+ ],
+ "Route9Hiker1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "You'd some nerve"
+  },
+  {
+   "kind": "line",
+   "line": "standing up to"
+  },
+  {
+   "kind": "cont",
+   "line": "me, eh?"
+  }
+ ],
+ "Route9Hiker2BattleText": [
+  {
+   "kind": "text",
+   "line": "Hah! Aren't you"
+  },
+  {
+   "kind": "line",
+   "line": "a tough little"
+  },
+  {
+   "kind": "cont",
+   "line": "thing!"
+  }
+ ],
+ "Route9Hiker2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "What's"
+  },
+  {
+   "kind": "line",
+   "line": "that?"
+  }
+ ],
+ "Route9Hiker2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Hah! Children"
+  },
+  {
+   "kind": "line",
+   "line": "ought to be tough!"
+  }
+ ],
+ "Route9Youngster1BattleText": [
+  {
+   "kind": "text",
+   "line": "I woke at dawn,"
+  },
+  {
+   "kind": "line",
+   "line": "daily, to raise"
+  },
+  {
+   "kind": "cont",
+   "line": "my #MON from"
+  },
+  {
+   "kind": "cont",
+   "line": "their cocoons!"
+  }
+ ],
+ "Route9Youngster1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "WHAT?"
+  },
+  {
+   "kind": "para",
+   "line": "What a waste of"
+  },
+  {
+   "kind": "line",
+   "line": "my time, that was!"
+  }
+ ],
+ "Route9Youngster1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I need more than"
+  },
+  {
+   "kind": "line",
+   "line": "bugs, to grow"
+  },
+  {
+   "kind": "cont",
+   "line": "any stronger..."
+  }
+ ],
+ "Route9Hiker3BattleText": [
+  {
+   "kind": "text",
+   "line": "Hah! Come now,"
+  },
+  {
+   "kind": "line",
+   "line": "friend!"
+  }
+ ],
+ "Route9Hiker3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Hah! You beat"
+  },
+  {
+   "kind": "line",
+   "line": "me, fair and true!"
+  }
+ ],
+ "Route9Hiker3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Hah! We hearty"
+  },
+  {
+   "kind": "line",
+   "line": "sorts, we laugh"
+  },
+  {
+   "kind": "cont",
+   "line": "through anything!"
+  }
+ ],
+ "Route9Youngster2BattleText": [
+  {
+   "kind": "text",
+   "line": "Go, my prized"
+  },
+  {
+   "kind": "line",
+   "line": "bug #MON!"
+  }
+ ],
+ "Route9Youngster2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "My"
+  },
+  {
+   "kind": "line",
+   "line": "bugs..."
+  }
+ ],
+ "Route9Youngster2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Scorn bug #MON,"
+  },
+  {
+   "kind": "line",
+   "line": "and you'll answer"
+  },
+  {
+   "kind": "cont",
+   "line": "to me."
+  }
+ ],
+ "Route9SignText": [
+  {
+   "kind": "text",
+   "line": "ROUTE 9"
+  },
+  {
+   "kind": "line",
+   "line": "CERULEAN CITY-"
+  },
+  {
+   "kind": "cont",
+   "line": "ROCK TUNNEL"
+  }
+ ]
+}

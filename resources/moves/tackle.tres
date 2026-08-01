@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_riq3k"]
+
+[resource]
+script = ExtResource("1_riq3k")
+move_name = "TACKLE"
+move_id = 33
+display_name = "TACKLE"
+move_type = "NORMAL"
+power = 35
+accuracy = 95
+pp = 35
+effect = "NO_ADDITIONAL_EFFECT"

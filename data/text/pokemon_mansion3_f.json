@@ -1,0 +1,88 @@
+{
+ "PokemonMansion3FSuperNerdBattleText": [
+  {
+   "kind": "text",
+   "line": "This ruin is"
+  },
+  {
+   "kind": "line",
+   "line": "simply vast!"
+  }
+ ],
+ "PokemonMansion3FSuperNerdEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ayah!"
+  }
+ ],
+ "PokemonMansion3FSuperNerdAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I wonder where my"
+  },
+  {
+   "kind": "line",
+   "line": "companion went."
+  }
+ ],
+ "PokemonMansion3FScientistBattleText": [
+  {
+   "kind": "text",
+   "line": "My mentor once"
+  },
+  {
+   "kind": "line",
+   "line": "dwelt in this"
+  },
+  {
+   "kind": "cont",
+   "line": "very ruin."
+  }
+ ],
+ "PokemonMansion3FScientistEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Whew!"
+  },
+  {
+   "kind": "line",
+   "line": "Overwhelming!"
+  }
+ ],
+ "PokemonMansion3FScientistAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "So, you're stuck?"
+  },
+  {
+   "kind": "line",
+   "line": "Try leaping down"
+  },
+  {
+   "kind": "cont",
+   "line": "over there!"
+  }
+ ],
+ "PokemonMansion3FDiaryText": [
+  {
+   "kind": "text",
+   "line": "Diary: Feb. 6"
+  },
+  {
+   "kind": "line",
+   "line": "MEW gave birth."
+  },
+  {
+   "kind": "para",
+   "line": "We named the"
+  },
+  {
+   "kind": "line",
+   "line": "newborn, cursed"
+  },
+  {
+   "kind": "cont",
+   "line": "child, MEWTWO."
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_15me0"]
+
+[resource]
+script = ExtResource("1_15me0")
+move_name = "ROCK_SLIDE"
+move_id = 157
+display_name = "ROCK SLIDE"
+move_type = "ROCK"
+power = 75
+accuracy = 90
+pp = 10
+effect = "NO_ADDITIONAL_EFFECT"

@@ -1,0 +1,444 @@
+{
+ "ViridianCityYoungster1Text": [
+  {
+   "kind": "text",
+   "line": "Those # BALLs"
+  },
+  {
+   "kind": "line",
+   "line": "at your belt-"
+  },
+  {
+   "kind": "cont",
+   "line": "you carry #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "in your pocket."
+  },
+  {
+   "kind": "para",
+   "line": "How strange, to"
+  },
+  {
+   "kind": "line",
+   "line": "hold a soul in"
+  },
+  {
+   "kind": "cont",
+   "line": "your palm, use it"
+  },
+  {
+   "kind": "cont",
+   "line": "anywhere, anytime."
+  }
+ ],
+ "ViridianCityGambler1GymAlwaysClosedText": [
+  {
+   "kind": "text",
+   "line": "This GYM stands"
+  },
+  {
+   "kind": "line",
+   "line": "shuttered, always."
+  },
+  {
+   "kind": "para",
+   "line": "Who leads it, I"
+  },
+  {
+   "kind": "line",
+   "line": "wonder still."
+  }
+ ],
+ "ViridianCityGambler1GymLeaderReturnedText": [
+  {
+   "kind": "text",
+   "line": "VIRIDIAN GYM's"
+  },
+  {
+   "kind": "line",
+   "line": "LEADER's returned."
+  }
+ ],
+ "ViridianCityYoungster2YouWantToKnowAboutText": [
+  {
+   "kind": "text",
+   "line": "Care to hear of"
+  },
+  {
+   "kind": "line",
+   "line": "the two wretched"
+  },
+  {
+   "kind": "cont",
+   "line": "crawling #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "underfoot?"
+  },
+  {
+   "kind": "text",
+   "line": "As you wish."
+  },
+  {
+   "kind": "text",
+   "line": "CATERPIE carries"
+  },
+  {
+   "kind": "line",
+   "line": "no venom, but"
+  },
+  {
+   "kind": "cont",
+   "line": "WEEDLE does."
+  },
+  {
+   "kind": "para",
+   "line": "Mind its STING-"
+  },
+  {
+   "kind": "line",
+   "line": "it festers."
+  }
+ ],
+ "ViridianCityGirlHasntHadHisCoffeeYetText": [
+  {
+   "kind": "text",
+   "line": "Grandfather, hush!"
+  },
+  {
+   "kind": "line",
+   "line": "He's not had his"
+  },
+  {
+   "kind": "cont",
+   "line": "coffee. Forgive"
+  },
+  {
+   "kind": "cont",
+   "line": "him his temper."
+  }
+ ],
+ "ViridianCityGirlWhenIGoShopText": [
+  {
+   "kind": "text",
+   "line": "To shop in"
+  },
+  {
+   "kind": "line",
+   "line": "PEWTER, I must"
+  },
+  {
+   "kind": "cont",
+   "line": "brave the winding"
+  },
+  {
+   "kind": "cont",
+   "line": "dark of VIRIDIAN"
+  },
+  {
+   "kind": "cont",
+   "line": "FOREST."
+  }
+ ],
+ "ViridianCityOldManSleepyPrivatePropertyText": [
+  {
+   "kind": "text",
+   "line": "You shall not"
+  },
+  {
+   "kind": "line",
+   "line": "pass this way."
+  },
+  {
+   "kind": "para",
+   "line": "'Tis private"
+  },
+  {
+   "kind": "line",
+   "line": "ground. Mine alone."
+  },
+  {
+   "kind": "text",
+   "line": "Yawn."
+  },
+  {
+   "kind": "line",
+   "line": "I dozed off"
+  },
+  {
+   "kind": "cont",
+   "line": "in the sun."
+  },
+  {
+   "kind": "para",
+   "line": "I dreamt a"
+  },
+  {
+   "kind": "line",
+   "line": "DROWZEE fed on"
+  },
+  {
+   "kind": "cont",
+   "line": "my dream itself."
+  },
+  {
+   "kind": "cont",
+   "line": "What's this now?"
+  },
+  {
+   "kind": "cont",
+   "line": "Where did this TM"
+  },
+  {
+   "kind": "cont",
+   "line": "come from?"
+  },
+  {
+   "kind": "para",
+   "line": "How unsettling."
+  },
+  {
+   "kind": "line",
+   "line": "Here, take it,"
+  },
+  {
+   "kind": "cont",
+   "line": "before it returns."
+  }
+ ],
+ "ViridianCityFisherReceivedTM42Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "TM42!@"
+  }
+ ],
+ "ViridianCityFisherTM42ExplanationText": [
+  {
+   "kind": "text",
+   "line": "TM42 contains"
+  },
+  {
+   "kind": "line",
+   "line": "DREAM EATER..."
+  },
+  {
+   "kind": "cont",
+   "line": "...Snore, forever?"
+  }
+ ],
+ "ViridianCityFisherTM42NoRoomText": [
+  {
+   "kind": "text",
+   "line": "You carry too"
+  },
+  {
+   "kind": "line",
+   "line": "much already."
+  }
+ ],
+ "ViridianCityOldManHadMyCoffeeNowText": [
+  {
+   "kind": "text",
+   "line": "Ah. My coffee,"
+  },
+  {
+   "kind": "line",
+   "line": "at last. I can"
+  },
+  {
+   "kind": "cont",
+   "line": "face the day now."
+  },
+  {
+   "kind": "para",
+   "line": "Go on, then,"
+  },
+  {
+   "kind": "line",
+   "line": "through."
+  },
+  {
+   "kind": "para",
+   "line": "In such a hurry?"
+  },
+  {
+   "kind": "line",
+   "line": "To where, I wonder."
+  }
+ ],
+ "ViridianCityOldManKnowHowToCatchPokemonText": [
+  {
+   "kind": "text",
+   "line": "I see you carry"
+  },
+  {
+   "kind": "line",
+   "line": "a #DEX."
+  },
+  {
+   "kind": "para",
+   "line": "Catch a #MON,"
+  },
+  {
+   "kind": "line",
+   "line": "and #DEX"
+  },
+  {
+   "kind": "cont",
+   "line": "records it,"
+  },
+  {
+   "kind": "cont",
+   "line": "living or not."
+  },
+  {
+   "kind": "para",
+   "line": "What? You don't"
+  },
+  {
+   "kind": "line",
+   "line": "know how to"
+  },
+  {
+   "kind": "cont",
+   "line": "catch one?"
+  },
+  {
+   "kind": "para",
+   "line": "Let me show you,"
+  },
+  {
+   "kind": "line",
+   "line": "then."
+  }
+ ],
+ "ViridianCityOldManTimeIsMoneyText": [
+  {
+   "kind": "text",
+   "line": "Time is all we"
+  },
+  {
+   "kind": "line",
+   "line": "spend. Go on."
+  }
+ ],
+ "ViridianCityOldManYouNeedToWeakenTheTargetText": [
+  {
+   "kind": "text",
+   "line": "First, you must"
+  },
+  {
+   "kind": "line",
+   "line": "break it down-"
+  },
+  {
+   "kind": "cont",
+   "line": "the target #MON."
+  }
+ ],
+ "ViridianCitySignText": [
+  {
+   "kind": "text",
+   "line": "VIRIDIAN CITY"
+  },
+  {
+   "kind": "line",
+   "line": "A Green, Quiet"
+  },
+  {
+   "kind": "cont",
+   "line": "Kind of Grave"
+  }
+ ],
+ "ViridianCityTrainerTips1Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Catch #MON,"
+  },
+  {
+   "kind": "line",
+   "line": "swell your ranks"
+  },
+  {
+   "kind": "cont",
+   "line": "of the bound."
+  },
+  {
+   "kind": "para",
+   "line": "More you keep,"
+  },
+  {
+   "kind": "line",
+   "line": "easier to win-"
+  },
+  {
+   "kind": "cont",
+   "line": "such is the way."
+  }
+ ],
+ "ViridianCityTrainerTips2Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "A #MON's moves"
+  },
+  {
+   "kind": "line",
+   "line": "are bound by"
+  },
+  {
+   "kind": "cont",
+   "line": "POWER POINTs, PP."
+  },
+  {
+   "kind": "para",
+   "line": "Rest the weary"
+  },
+  {
+   "kind": "line",
+   "line": "at a #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "CENTER, to mend"
+  },
+  {
+   "kind": "cont",
+   "line": "what's spent."
+  }
+ ],
+ "ViridianCityGymSignText": [
+  {
+   "kind": "text",
+   "line": "VIRIDIAN CITY"
+  },
+  {
+   "kind": "line",
+   "line": "#MON GYM"
+  }
+ ],
+ "ViridianCityGymLockedText": [
+  {
+   "kind": "text",
+   "line": "The GYM's doors"
+  },
+  {
+   "kind": "line",
+   "line": "stay sealed shut."
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=36 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/persian.png" id="1_c8yyy"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_yr4pf"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/persian.png" id="3_do7eg"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_bx6to"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="5_ri6q4"]
+[ext_resource type="Resource" path="res://resources/moves/pay_day.tres" id="6_qgqdv"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="7_ydro3"]
+[ext_resource type="Resource" path="res://resources/moves/fury_swipes.tres" id="8_rq4oi"]
+[ext_resource type="Resource" path="res://resources/moves/slash.tres" id="9_4ei5j"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_1wd4o"]
+[ext_resource type="Resource" path="res://resources/moves/scratch.tres" id="11_nkefr"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="12_ki06t"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_b8niy"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_lbrhx"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_x2388"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_ax8sl"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_nnrfp"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="18_6qjpp"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="19_q0a4e"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="20_6vjfy"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="21_p1tei"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="22_rjaq3"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="23_aybpg"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="24_kwn3x"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="25_055bn"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="26_wj5bq"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="27_t7mk0"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="28_v1grc"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="29_3pemp"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="30_xj3cl"]
+
+[sub_resource type="Resource" id="Resource_tyscl"]
+script = ExtResource("4_bx6to")
+level = 12
+move = ExtResource("5_ri6q4")
+
+[sub_resource type="Resource" id="Resource_7km6n"]
+script = ExtResource("4_bx6to")
+level = 17
+move = ExtResource("6_qgqdv")
+
+[sub_resource type="Resource" id="Resource_4w44m"]
+script = ExtResource("4_bx6to")
+level = 24
+move = ExtResource("7_ydro3")
+
+[sub_resource type="Resource" id="Resource_x23k6"]
+script = ExtResource("4_bx6to")
+level = 37
+move = ExtResource("8_rq4oi")
+
+[sub_resource type="Resource" id="Resource_nxhql"]
+script = ExtResource("4_bx6to")
+level = 51
+move = ExtResource("9_4ei5j")
+
+[resource]
+script = ExtResource("13_b8niy")
+species_name = "PERSIAN"
+dex = 53
+index = 144
+slug = "persian"
+label = "Persian"
+category = "CLASSY CAT"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 710
+hp = 65
+attack = 70
+defense = 60
+speed = 115
+special = 65
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 90
+base_exp = 148
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_1wd4o")]([ExtResource("11_nkefr"), ExtResource("12_ki06t"), ExtResource("5_ri6q4"), ExtResource("7_ydro3")])
+learnset = Array[ExtResource("4_bx6to")]([SubResource("Resource_tyscl"), SubResource("Resource_7km6n"), SubResource("Resource_4w44m"), SubResource("Resource_x23k6"), SubResource("Resource_nxhql")])
+tmhm = Array[ExtResource("10_1wd4o")]([ExtResource("14_lbrhx"), ExtResource("15_x2388"), ExtResource("16_ax8sl"), ExtResource("17_nnrfp"), ExtResource("18_6qjpp"), ExtResource("19_q0a4e"), ExtResource("20_6vjfy"), ExtResource("6_qgqdv"), ExtResource("21_p1tei"), ExtResource("22_rjaq3"), ExtResource("23_aybpg"), ExtResource("24_kwn3x"), ExtResource("25_055bn"), ExtResource("26_wj5bq"), ExtResource("27_t7mk0"), ExtResource("28_v1grc"), ExtResource("29_3pemp"), ExtResource("30_xj3cl")])
+evolutions = Array[ExtResource("2_yr4pf")]([])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Although its fur", "has many admirers,", "it is tough to", "raise as a pet", "because of its", "fickle meanness"])
+front_sprite = ExtResource("3_do7eg")
+back_sprite = ExtResource("1_c8yyy")

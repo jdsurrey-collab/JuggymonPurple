@@ -1,0 +1,89 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=37 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/tauros.png" id="1_8otmy"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_p04dc"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/tauros.png" id="3_kspvo"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_vjroa"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="5_d6db3"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="6_jc443"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="7_rprlw"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="8_0rw4e"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="9_ocdco"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_hth8p"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_qdp5d"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_4ykfn"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_rs6m6"]
+[ext_resource type="Resource" path="res://resources/moves/horn_drill.tres" id="14_sc16a"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="15_emcmv"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="16_uuqkd"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="17_14y6e"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="18_10g0w"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="19_b2gj3"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="20_jp1d4"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="21_s0ruf"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="22_nebi1"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="23_af484"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="24_tfxgk"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="25_2se2f"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="26_nvss4"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="27_q7ydv"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="28_vja15"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="29_sm6fp"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="30_ps2h6"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="31_h8ike"]
+
+[sub_resource type="Resource" id="Resource_xn7ip"]
+script = ExtResource("4_vjroa")
+level = 21
+move = ExtResource("5_d6db3")
+
+[sub_resource type="Resource" id="Resource_x3uqm"]
+script = ExtResource("4_vjroa")
+level = 28
+move = ExtResource("6_jc443")
+
+[sub_resource type="Resource" id="Resource_6f5hi"]
+script = ExtResource("4_vjroa")
+level = 35
+move = ExtResource("7_rprlw")
+
+[sub_resource type="Resource" id="Resource_80wdl"]
+script = ExtResource("4_vjroa")
+level = 44
+move = ExtResource("8_0rw4e")
+
+[sub_resource type="Resource" id="Resource_o6x1y"]
+script = ExtResource("4_vjroa")
+level = 51
+move = ExtResource("9_ocdco")
+
+[resource]
+script = ExtResource("12_4ykfn")
+species_name = "TAUROS"
+dex = 128
+index = 60
+slug = "tauros"
+label = "Tauros"
+category = "WILD BULL"
+height_ft = 4
+height_in = 7
+weight_tenths_lb = 1950
+hp = 75
+attack = 100
+defense = 95
+speed = 110
+special = 70
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 45
+base_exp = 211
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("10_hth8p")]([ExtResource("11_qdp5d")])
+learnset = Array[ExtResource("4_vjroa")]([SubResource("Resource_xn7ip"), SubResource("Resource_x3uqm"), SubResource("Resource_6f5hi"), SubResource("Resource_80wdl"), SubResource("Resource_o6x1y")])
+tmhm = Array[ExtResource("10_hth8p")]([ExtResource("13_rs6m6"), ExtResource("14_sc16a"), ExtResource("15_emcmv"), ExtResource("9_ocdco"), ExtResource("16_uuqkd"), ExtResource("17_14y6e"), ExtResource("18_10g0w"), ExtResource("19_b2gj3"), ExtResource("8_0rw4e"), ExtResource("20_jp1d4"), ExtResource("21_s0ruf"), ExtResource("22_nebi1"), ExtResource("23_af484"), ExtResource("24_tfxgk"), ExtResource("25_2se2f"), ExtResource("26_nvss4"), ExtResource("27_q7ydv"), ExtResource("28_vja15"), ExtResource("29_sm6fp"), ExtResource("30_ps2h6"), ExtResource("31_h8ike")])
+evolutions = Array[ExtResource("2_p04dc")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["When it targets", "an enemy, it", "charges furiously", "while whipping its", "body with its", "long tails"])
+front_sprite = ExtResource("3_kspvo")
+back_sprite = ExtResource("1_8otmy")

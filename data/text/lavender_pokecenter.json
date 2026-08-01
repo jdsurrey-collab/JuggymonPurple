@@ -1,0 +1,34 @@
+{
+ "LavenderPokecenterGentlemanText": [
+  {
+   "kind": "text",
+   "line": "TEAM ROCKET will"
+  },
+  {
+   "kind": "line",
+   "line": "do anything, for"
+  },
+  {
+   "kind": "cont",
+   "line": "the sake of gold."
+  }
+ ],
+ "LavenderPokecenterLittleGirlText": [
+  {
+   "kind": "text",
+   "line": "I saw CUBONE's"
+  },
+  {
+   "kind": "line",
+   "line": "mother die,"
+  },
+  {
+   "kind": "cont",
+   "line": "trying to flee"
+  },
+  {
+   "kind": "cont",
+   "line": "TEAM ROCKET."
+  }
+ ]
+}

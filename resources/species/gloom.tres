@@ -1,0 +1,96 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/gloom.png" id="1_xv736"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_fitgc"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/gloom.png" id="3_4sea0"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_bhrlm"]
+[ext_resource type="Resource" path="res://resources/moves/poisonpowder.tres" id="5_yybb6"]
+[ext_resource type="Resource" path="res://resources/moves/stun_spore.tres" id="6_bcm5k"]
+[ext_resource type="Resource" path="res://resources/moves/sleep_powder.tres" id="7_xwsgy"]
+[ext_resource type="Resource" path="res://resources/moves/acid.tres" id="8_6dj5m"]
+[ext_resource type="Resource" path="res://resources/moves/petal_dance.tres" id="9_a16sx"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="10_0mynb"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_tmmly"]
+[ext_resource type="Resource" path="res://resources/moves/absorb.tres" id="12_f532r"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_85n3g"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="14_16ag1"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_kjyde"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="16_cvlax"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="17_l31oa"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="18_0yxh0"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="19_odcy5"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="20_mpp6h"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="21_u1s25"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="22_pyd4q"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="23_np8i6"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="24_xc88g"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="25_1ysuk"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="26_snwwx"]
+
+[sub_resource type="Resource" id="Resource_eksxl"]
+script = ExtResource("2_fitgc")
+method = "ITEM"
+target = "VILEPLUME"
+level = 0
+item = "LEAF_STONE"
+
+[sub_resource type="Resource" id="Resource_7gklj"]
+script = ExtResource("4_bhrlm")
+level = 15
+move = ExtResource("5_yybb6")
+
+[sub_resource type="Resource" id="Resource_5kttk"]
+script = ExtResource("4_bhrlm")
+level = 17
+move = ExtResource("6_bcm5k")
+
+[sub_resource type="Resource" id="Resource_korlp"]
+script = ExtResource("4_bhrlm")
+level = 19
+move = ExtResource("7_xwsgy")
+
+[sub_resource type="Resource" id="Resource_ealew"]
+script = ExtResource("4_bhrlm")
+level = 28
+move = ExtResource("8_6dj5m")
+
+[sub_resource type="Resource" id="Resource_n1yt6"]
+script = ExtResource("4_bhrlm")
+level = 38
+move = ExtResource("9_a16sx")
+
+[sub_resource type="Resource" id="Resource_aax8x"]
+script = ExtResource("4_bhrlm")
+level = 52
+move = ExtResource("10_0mynb")
+
+[resource]
+script = ExtResource("13_85n3g")
+species_name = "GLOOM"
+dex = 44
+index = 186
+slug = "gloom"
+label = "Gloom"
+category = "WEED"
+height_ft = 2
+height_in = 7
+weight_tenths_lb = 190
+hp = 60
+attack = 65
+defense = 70
+speed = 40
+special = 85
+type1 = "GRASS"
+type2 = "POISON"
+catch_rate = 120
+base_exp = 132
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_tmmly")]([ExtResource("12_f532r"), ExtResource("5_yybb6"), ExtResource("6_bcm5k")])
+learnset = Array[ExtResource("4_bhrlm")]([SubResource("Resource_7gklj"), SubResource("Resource_5kttk"), SubResource("Resource_korlp"), SubResource("Resource_ealew"), SubResource("Resource_n1yt6"), SubResource("Resource_aax8x")])
+tmhm = Array[ExtResource("11_tmmly")]([ExtResource("14_16ag1"), ExtResource("15_kjyde"), ExtResource("16_cvlax"), ExtResource("17_l31oa"), ExtResource("18_0yxh0"), ExtResource("19_odcy5"), ExtResource("10_0mynb"), ExtResource("20_mpp6h"), ExtResource("21_u1s25"), ExtResource("22_pyd4q"), ExtResource("23_np8i6"), ExtResource("24_xc88g"), ExtResource("25_1ysuk"), ExtResource("26_snwwx")])
+evolutions = Array[ExtResource("2_fitgc")]([SubResource("Resource_eksxl")])
+palette = "PAL_REDMON"
+menu_icon = "ICON_GRASS"
+dex_text = Array[String](["The fluid that", "oozes from its", "mouth isn't drool.", "It is a nectar", "that is used to", "attract prey"])
+front_sprite = ExtResource("3_4sea0")
+back_sprite = ExtResource("1_xv736")

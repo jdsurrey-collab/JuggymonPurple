@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_8jq4v"]
+
+[resource]
+script = ExtResource("1_8jq4v")
+move_name = "THUNDER_WAVE"
+move_id = 86
+display_name = "THUNDER WAVE"
+move_type = "ELECTRIC"
+power = 0
+accuracy = 100
+pp = 20
+effect = "PARALYZE_EFFECT"

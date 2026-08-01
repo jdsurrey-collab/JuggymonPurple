@@ -1,0 +1,316 @@
+{
+ "Route20Swimmer1BattleText": [
+  {
+   "kind": "text",
+   "line": "The water runs"
+  },
+  {
+   "kind": "line",
+   "line": "shallow here."
+  }
+ ],
+ "Route20Swimmer1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Splash!"
+  }
+ ],
+ "Route20Swimmer1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I wish I could"
+  },
+  {
+   "kind": "line",
+   "line": "ride my #MON."
+  }
+ ],
+ "Route20Swimmer2BattleText": [
+  {
+   "kind": "text",
+   "line": "SEAFOAM is such"
+  },
+  {
+   "kind": "line",
+   "line": "a quiet grave!"
+  }
+ ],
+ "Route20Swimmer2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Quit it!"
+  }
+ ],
+ "Route20Swimmer2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "A vast cavern"
+  },
+  {
+   "kind": "line",
+   "line": "lies beneath"
+  },
+  {
+   "kind": "cont",
+   "line": "this island."
+  }
+ ],
+ "Route20Swimmer3BattleText": [
+  {
+   "kind": "text",
+   "line": "I love floating"
+  },
+  {
+   "kind": "line",
+   "line": "with the drowned!"
+  }
+ ],
+ "Route20Swimmer3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Yowch!"
+  }
+ ],
+ "Route20Swimmer3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Care to float"
+  },
+  {
+   "kind": "line",
+   "line": "with me, forever?"
+  }
+ ],
+ "Route20Swimmer4BattleText": [
+  {
+   "kind": "text",
+   "line": "Are you also"
+  },
+  {
+   "kind": "line",
+   "line": "fleeing something?"
+  }
+ ],
+ "Route20Swimmer4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "No"
+  },
+  {
+   "kind": "line",
+   "line": "mercy at all!"
+  }
+ ],
+ "Route20Swimmer4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "SEAFOAM was once"
+  },
+  {
+   "kind": "line",
+   "line": "a single island!"
+  }
+ ],
+ "Route20Swimmer5BattleText": [
+  {
+   "kind": "text",
+   "line": "Behold my grim"
+  },
+  {
+   "kind": "line",
+   "line": "physique!"
+  }
+ ],
+ "Route20Swimmer5EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Wimpy!"
+  }
+ ],
+ "Route20Swimmer5AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I should've"
+  },
+  {
+   "kind": "line",
+   "line": "hardened my"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON, not me!"
+  }
+ ],
+ "Route20Swimmer6BattleText": [
+  {
+   "kind": "text",
+   "line": "Why do you ride"
+  },
+  {
+   "kind": "line",
+   "line": "a #MON? Can't"
+  },
+  {
+   "kind": "cont",
+   "line": "you swim at all?"
+  }
+ ],
+ "Route20Swimmer6EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ouch!"
+  },
+  {
+   "kind": "line",
+   "line": "Torpedoed!"
+  }
+ ],
+ "Route20Swimmer6AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Riding a #MON"
+  },
+  {
+   "kind": "line",
+   "line": "does look grand!"
+  }
+ ],
+ "Route20CooltrainerMBattleText": [
+  {
+   "kind": "text",
+   "line": "I rode my carrion"
+  },
+  {
+   "kind": "line",
+   "line": "bird out here!"
+  }
+ ],
+ "Route20CooltrainerMEndBattleText": [
+  {
+   "kind": "text",
+   "line": "Oh"
+  },
+  {
+   "kind": "line",
+   "line": "no!"
+  }
+ ],
+ "Route20CooltrainerMAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "My birds can't"
+  },
+  {
+   "kind": "line",
+   "line": "carry me back!"
+  }
+ ],
+ "Route20Swimmer7BattleText": [
+  {
+   "kind": "text",
+   "line": "My beau gifted me"
+  },
+  {
+   "kind": "line",
+   "line": "these grim pearls!"
+  }
+ ],
+ "Route20Swimmer7EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Don't"
+  },
+  {
+   "kind": "line",
+   "line": "touch my pearls!"
+  }
+ ],
+ "Route20Swimmer7AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Will my pearls"
+  },
+  {
+   "kind": "line",
+   "line": "swell bigger"
+  },
+  {
+   "kind": "cont",
+   "line": "within CLOYSTER?"
+  }
+ ],
+ "Route20Swimmer8BattleText": [
+  {
+   "kind": "text",
+   "line": "I swam here from"
+  },
+  {
+   "kind": "line",
+   "line": "CINNABAR ISLAND!"
+  }
+ ],
+ "Route20Swimmer8EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I'm"
+  },
+  {
+   "kind": "line",
+   "line": "so disheartened!"
+  }
+ ],
+ "Route20Swimmer8AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "#MON have"
+  },
+  {
+   "kind": "line",
+   "line": "claimed a ruined"
+  },
+  {
+   "kind": "cont",
+   "line": "mansion, aban-"
+  },
+  {
+   "kind": "cont",
+   "line": "doned on CINNABAR!"
+  }
+ ],
+ "Route20Swimmer9BattleText": [
+  {
+   "kind": "text",
+   "line": "CINNABAR, to the"
+  },
+  {
+   "kind": "line",
+   "line": "west, holds a LAB"
+  },
+  {
+   "kind": "cont",
+   "line": "for #MON."
+  }
+ ],
+ "Route20Swimmer9EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Wait!"
+  }
+ ],
+ "Route20Swimmer9AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "CINNABAR is an"
+  },
+  {
+   "kind": "line",
+   "line": "ashen, dead isle!"
+  }
+ ],
+ "Route20SeafoamIslandsSignText": [
+  {
+   "kind": "text",
+   "line": "SEAFOAM ISLANDS"
+  }
+ ]
+}

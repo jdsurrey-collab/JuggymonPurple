@@ -1,0 +1,168 @@
+{
+ "CeladonMansion3FProgrammerText": [
+  {
+   "kind": "text",
+   "line": "Me? I am the"
+  },
+  {
+   "kind": "line",
+   "line": "engine's artificer!"
+  }
+ ],
+ "CeladonMansion3FGraphicArtistText": [
+  {
+   "kind": "text",
+   "line": "I am the artist"
+  },
+  {
+   "kind": "line",
+   "line": "of shades!"
+  },
+  {
+   "kind": "cont",
+   "line": "I drew your form!"
+  }
+ ],
+ "CeladonMansion3FWriterText": [
+  {
+   "kind": "text",
+   "line": "I penned this"
+  },
+  {
+   "kind": "line",
+   "line": "tale! Isn't ERIKA"
+  },
+  {
+   "kind": "cont",
+   "line": "lovely?"
+  },
+  {
+   "kind": "para",
+   "line": "I fancy MISTY"
+  },
+  {
+   "kind": "line",
+   "line": "as well!"
+  },
+  {
+   "kind": "para",
+   "line": "Oh, and SABRINA,"
+  },
+  {
+   "kind": "line",
+   "line": "I favor her too!"
+  }
+ ],
+ "CeladonMansion3FGameDesignerText": [
+  {
+   "kind": "text",
+   "line": "Is that so?"
+  },
+  {
+   "kind": "para",
+   "line": "I design this"
+  },
+  {
+   "kind": "line",
+   "line": "grim world!"
+  },
+  {
+   "kind": "para",
+   "line": "Filling your"
+  },
+  {
+   "kind": "line",
+   "line": "#DEX is hard,"
+  },
+  {
+   "kind": "cont",
+   "line": "but don't yield!"
+  },
+  {
+   "kind": "para",
+   "line": "When you're done,"
+  },
+  {
+   "kind": "line",
+   "line": "come tell me so!"
+  }
+ ],
+ "CeladonMansion3FGameDesignerCompletedDexText": [
+  {
+   "kind": "text",
+   "line": "By heaven! You've"
+  },
+  {
+   "kind": "line",
+   "line": "completed your"
+  },
+  {
+   "kind": "cont",
+   "line": "#DEX! My most"
+  },
+  {
+   "kind": "cont",
+   "line": "sincere regard!"
+  },
+  {
+   "kind": "cont",
+   "line": "...@"
+  }
+ ],
+ "CeladonMansion3FGameProgramPCText": [
+  {
+   "kind": "text",
+   "line": "It's the engine"
+  },
+  {
+   "kind": "line",
+   "line": "itself! Meddle"
+  },
+  {
+   "kind": "cont",
+   "line": "and you'll curse"
+  },
+  {
+   "kind": "cont",
+   "line": "this whole world!"
+  }
+ ],
+ "CeladonMansion3FPlayingGamePCText": [
+  {
+   "kind": "text",
+   "line": "Someone plays at"
+  },
+  {
+   "kind": "line",
+   "line": "leisure instead"
+  },
+  {
+   "kind": "cont",
+   "line": "of labor!"
+  }
+ ],
+ "CeladonMansion3FGameScriptPCText": [
+  {
+   "kind": "text",
+   "line": "It's the script!"
+  },
+  {
+   "kind": "line",
+   "line": "Best not glimpse"
+  },
+  {
+   "kind": "cont",
+   "line": "the final page!"
+  }
+ ],
+ "CeladonMansion3FDevRoomSignText": [
+  {
+   "kind": "text",
+   "line": "GAME FREAK"
+  },
+  {
+   "kind": "line",
+   "line": "Chamber of Making"
+  }
+ ]
+}

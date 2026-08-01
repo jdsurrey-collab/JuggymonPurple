@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=43 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/vaporeon.png" id="1_qv4fd"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_k6fn0"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/vaporeon.png" id="3_xpmef"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_mbpk6"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="5_eswrb"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="6_iqhec"]
+[ext_resource type="Resource" path="res://resources/moves/tail_whip.tres" id="7_5wyu2"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="8_6ppph"]
+[ext_resource type="Resource" path="res://resources/moves/acid_armor.tres" id="9_6ph4k"]
+[ext_resource type="Resource" path="res://resources/moves/haze.tres" id="10_3hxyn"]
+[ext_resource type="Resource" path="res://resources/moves/mist.tres" id="11_ehagy"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="12_ie7x3"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="13_0m4sl"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="14_s6lts"]
+[ext_resource type="Resource" path="res://resources/moves/sand_attack.tres" id="15_q786b"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="16_30k5c"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_dr3eh"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="18_noxqf"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_0atxh"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_pffib"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="21_onov0"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="22_cew0j"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="23_qd6ph"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="24_wugnj"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="25_r72qu"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="26_5mefn"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="27_lp41b"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="28_bk38p"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="29_xrk7y"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="30_gsvns"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="31_yr2kg"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="32_r6dhq"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="33_b58uj"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="34_xinoj"]
+
+[sub_resource type="Resource" id="Resource_j6w7q"]
+script = ExtResource("4_mbpk6")
+level = 27
+move = ExtResource("5_eswrb")
+
+[sub_resource type="Resource" id="Resource_bnc4x"]
+script = ExtResource("4_mbpk6")
+level = 31
+move = ExtResource("6_iqhec")
+
+[sub_resource type="Resource" id="Resource_dixlf"]
+script = ExtResource("4_mbpk6")
+level = 37
+move = ExtResource("7_5wyu2")
+
+[sub_resource type="Resource" id="Resource_6ly5n"]
+script = ExtResource("4_mbpk6")
+level = 40
+move = ExtResource("8_6ppph")
+
+[sub_resource type="Resource" id="Resource_fuw1y"]
+script = ExtResource("4_mbpk6")
+level = 42
+move = ExtResource("9_6ph4k")
+
+[sub_resource type="Resource" id="Resource_upodc"]
+script = ExtResource("4_mbpk6")
+level = 44
+move = ExtResource("10_3hxyn")
+
+[sub_resource type="Resource" id="Resource_5dh65"]
+script = ExtResource("4_mbpk6")
+level = 48
+move = ExtResource("11_ehagy")
+
+[sub_resource type="Resource" id="Resource_lhoud"]
+script = ExtResource("4_mbpk6")
+level = 54
+move = ExtResource("12_ie7x3")
+
+[resource]
+script = ExtResource("16_30k5c")
+species_name = "VAPOREON"
+dex = 134
+index = 105
+slug = "vaporeon"
+label = "Vaporeon"
+category = "BUBBLE JET"
+height_ft = 3
+height_in = 3
+weight_tenths_lb = 640
+hp = 130
+attack = 65
+defense = 60
+speed = 65
+special = 110
+type1 = "WATER"
+type2 = "WATER"
+catch_rate = 45
+base_exp = 196
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("13_0m4sl")]([ExtResource("14_s6lts"), ExtResource("15_q786b"), ExtResource("5_eswrb"), ExtResource("6_iqhec")])
+learnset = Array[ExtResource("4_mbpk6")]([SubResource("Resource_j6w7q"), SubResource("Resource_bnc4x"), SubResource("Resource_dixlf"), SubResource("Resource_6ly5n"), SubResource("Resource_fuw1y"), SubResource("Resource_upodc"), SubResource("Resource_5dh65"), SubResource("Resource_lhoud")])
+tmhm = Array[ExtResource("13_0m4sl")]([ExtResource("17_dr3eh"), ExtResource("18_noxqf"), ExtResource("19_0atxh"), ExtResource("20_pffib"), ExtResource("21_onov0"), ExtResource("6_iqhec"), ExtResource("22_cew0j"), ExtResource("23_qd6ph"), ExtResource("24_wugnj"), ExtResource("25_r72qu"), ExtResource("26_5mefn"), ExtResource("27_lp41b"), ExtResource("28_bk38p"), ExtResource("29_xrk7y"), ExtResource("30_gsvns"), ExtResource("31_yr2kg"), ExtResource("32_r6dhq"), ExtResource("33_b58uj"), ExtResource("34_xinoj")])
+evolutions = Array[ExtResource("2_k6fn0")]([])
+palette = "PAL_CYANMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Lives close to", "water. Its long", "tail is ridged", "with a fin which", "is often mistaken", "for a mermaid's"])
+front_sprite = ExtResource("3_xpmef")
+back_sprite = ExtResource("1_qv4fd")

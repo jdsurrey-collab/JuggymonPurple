@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=34 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/voltorb.png" id="1_d3w4w"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_pib1v"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/voltorb.png" id="3_lbksl"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_2sm3j"]
+[ext_resource type="Resource" path="res://resources/moves/sonicboom.tres" id="5_d7pdx"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="6_4brxq"]
+[ext_resource type="Resource" path="res://resources/moves/light_screen.tres" id="7_nvlh2"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="8_61knh"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="9_suce6"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_1gku6"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_g4di6"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="12_s76kv"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_hapas"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="14_rwmre"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="15_oe7jw"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_7mjwp"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="17_qleah"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="18_dknfw"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="19_17bgx"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="20_hpkqd"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="21_hjrdl"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="22_unyua"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="23_og1dy"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="24_ix84u"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="25_g0f84"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="26_03c6r"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="27_ybvm8"]
+
+[sub_resource type="Resource" id="Resource_p6tds"]
+script = ExtResource("2_pib1v")
+method = "LEVEL"
+target = "ELECTRODE"
+level = 30
+item = ""
+
+[sub_resource type="Resource" id="Resource_3a0ox"]
+script = ExtResource("4_2sm3j")
+level = 17
+move = ExtResource("5_d7pdx")
+
+[sub_resource type="Resource" id="Resource_ocxeg"]
+script = ExtResource("4_2sm3j")
+level = 22
+move = ExtResource("6_4brxq")
+
+[sub_resource type="Resource" id="Resource_ygjrg"]
+script = ExtResource("4_2sm3j")
+level = 29
+move = ExtResource("7_nvlh2")
+
+[sub_resource type="Resource" id="Resource_sqfew"]
+script = ExtResource("4_2sm3j")
+level = 36
+move = ExtResource("8_61knh")
+
+[sub_resource type="Resource" id="Resource_eneeb"]
+script = ExtResource("4_2sm3j")
+level = 43
+move = ExtResource("9_suce6")
+
+[resource]
+script = ExtResource("13_hapas")
+species_name = "VOLTORB"
+dex = 100
+index = 6
+slug = "voltorb"
+label = "Voltorb"
+category = "BALL"
+height_ft = 1
+height_in = 8
+weight_tenths_lb = 230
+hp = 40
+attack = 30
+defense = 50
+speed = 100
+special = 55
+type1 = "ELECTRIC"
+type2 = "ELECTRIC"
+catch_rate = 190
+base_exp = 103
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("10_1gku6")]([ExtResource("11_g4di6"), ExtResource("12_s76kv")])
+learnset = Array[ExtResource("4_2sm3j")]([SubResource("Resource_3a0ox"), SubResource("Resource_ocxeg"), SubResource("Resource_ygjrg"), SubResource("Resource_sqfew"), SubResource("Resource_eneeb")])
+tmhm = Array[ExtResource("10_1gku6")]([ExtResource("14_rwmre"), ExtResource("15_oe7jw"), ExtResource("16_7mjwp"), ExtResource("17_qleah"), ExtResource("18_dknfw"), ExtResource("19_17bgx"), ExtResource("20_hpkqd"), ExtResource("21_hjrdl"), ExtResource("22_unyua"), ExtResource("23_og1dy"), ExtResource("6_4brxq"), ExtResource("8_61knh"), ExtResource("24_ix84u"), ExtResource("25_g0f84"), ExtResource("9_suce6"), ExtResource("26_03c6r"), ExtResource("27_ybvm8")])
+evolutions = Array[ExtResource("2_pib1v")]([SubResource("Resource_p6tds")])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_BALL"
+dex_text = Array[String](["Usually found in", "power plants.", "Easily mistaken", "for a # BALL,", "they have zapped", "many people"])
+front_sprite = ExtResource("3_lbksl")
+back_sprite = ExtResource("1_d3w4w")

@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=43 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/tentacool.png" id="1_vuml1"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_67kur"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/tentacool.png" id="3_yja4y"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_g3m7l"]
+[ext_resource type="Resource" path="res://resources/moves/supersonic.tres" id="5_c7fdd"]
+[ext_resource type="Resource" path="res://resources/moves/wrap.tres" id="6_ya7wd"]
+[ext_resource type="Resource" path="res://resources/moves/poison_sting.tres" id="7_18jf1"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="8_ck0wt"]
+[ext_resource type="Resource" path="res://resources/moves/constrict.tres" id="9_x7s23"]
+[ext_resource type="Resource" path="res://resources/moves/barrier.tres" id="10_erd2s"]
+[ext_resource type="Resource" path="res://resources/moves/screech.tres" id="11_xxktk"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="12_vxvoc"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="13_ta4k5"]
+[ext_resource type="Resource" path="res://resources/moves/acid.tres" id="14_vcq1f"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="15_0pcxt"]
+[ext_resource type="Resource" path="res://resources/moves/swords_dance.tres" id="16_xrn25"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_506bn"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_ix3vw"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_0qwpo"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="20_ar3sq"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="21_gk2od"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="22_3e5ea"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="23_gmo7k"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="24_37rs5"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="25_8hbqb"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="26_s2wa3"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="27_2wk6o"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="28_ol0d7"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="29_q5ou1"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="30_xqisd"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="31_51d2k"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="32_of7v4"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="33_lnu88"]
+
+[sub_resource type="Resource" id="Resource_f2f1r"]
+script = ExtResource("2_67kur")
+method = "LEVEL"
+target = "TENTACRUEL"
+level = 30
+item = ""
+
+[sub_resource type="Resource" id="Resource_v2oae"]
+script = ExtResource("4_g3m7l")
+level = 7
+move = ExtResource("5_c7fdd")
+
+[sub_resource type="Resource" id="Resource_7ui70"]
+script = ExtResource("4_g3m7l")
+level = 13
+move = ExtResource("6_ya7wd")
+
+[sub_resource type="Resource" id="Resource_22mco"]
+script = ExtResource("4_g3m7l")
+level = 18
+move = ExtResource("7_18jf1")
+
+[sub_resource type="Resource" id="Resource_8yaku"]
+script = ExtResource("4_g3m7l")
+level = 22
+move = ExtResource("8_ck0wt")
+
+[sub_resource type="Resource" id="Resource_cth03"]
+script = ExtResource("4_g3m7l")
+level = 27
+move = ExtResource("9_x7s23")
+
+[sub_resource type="Resource" id="Resource_qqc5i"]
+script = ExtResource("4_g3m7l")
+level = 33
+move = ExtResource("10_erd2s")
+
+[sub_resource type="Resource" id="Resource_86b3h"]
+script = ExtResource("4_g3m7l")
+level = 40
+move = ExtResource("11_xxktk")
+
+[sub_resource type="Resource" id="Resource_5uf6r"]
+script = ExtResource("4_g3m7l")
+level = 48
+move = ExtResource("12_vxvoc")
+
+[resource]
+script = ExtResource("15_0pcxt")
+species_name = "TENTACOOL"
+dex = 72
+index = 24
+slug = "tentacool"
+label = "Tentacool"
+category = "JELLYFISH"
+height_ft = 2
+height_in = 11
+weight_tenths_lb = 1000
+hp = 40
+attack = 40
+defense = 35
+speed = 70
+special = 100
+type1 = "WATER"
+type2 = "POISON"
+catch_rate = 190
+base_exp = 105
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("13_ta4k5")]([ExtResource("14_vcq1f")])
+learnset = Array[ExtResource("4_g3m7l")]([SubResource("Resource_v2oae"), SubResource("Resource_7ui70"), SubResource("Resource_22mco"), SubResource("Resource_8yaku"), SubResource("Resource_cth03"), SubResource("Resource_qqc5i"), SubResource("Resource_86b3h"), SubResource("Resource_5uf6r")])
+tmhm = Array[ExtResource("13_ta4k5")]([ExtResource("16_xrn25"), ExtResource("17_506bn"), ExtResource("18_ix3vw"), ExtResource("19_0qwpo"), ExtResource("20_ar3sq"), ExtResource("8_ck0wt"), ExtResource("21_gk2od"), ExtResource("22_3e5ea"), ExtResource("23_gmo7k"), ExtResource("24_37rs5"), ExtResource("25_8hbqb"), ExtResource("26_s2wa3"), ExtResource("27_2wk6o"), ExtResource("28_ol0d7"), ExtResource("29_q5ou1"), ExtResource("30_xqisd"), ExtResource("31_51d2k"), ExtResource("32_of7v4"), ExtResource("33_lnu88")])
+evolutions = Array[ExtResource("2_67kur")]([SubResource("Resource_f2f1r")])
+palette = "PAL_CYANMON"
+menu_icon = "ICON_WATER"
+dex_text = Array[String](["Drifts in shallow", "seas. Anglers who", "hook them by", "accident are", "often punished by", "its stinging acid"])
+front_sprite = ExtResource("3_yja4y")
+back_sprite = ExtResource("1_vuml1")

@@ -1,0 +1,42 @@
+{
+ "ViridianPokecenterGentlemanText": [
+  {
+   "kind": "text",
+   "line": "You may use that"
+  },
+  {
+   "kind": "line",
+   "line": "PC in the corner."
+  },
+  {
+   "kind": "para",
+   "line": "The nurse told me,"
+  },
+  {
+   "kind": "line",
+   "line": "still kind, somehow"
+  }
+ ],
+ "ViridianPokecenterCooltrainerMText": [
+  {
+   "kind": "text",
+   "line": "A #MON CENTER"
+  },
+  {
+   "kind": "line",
+   "line": "waits in every"
+  },
+  {
+   "kind": "cont",
+   "line": "town ahead."
+  },
+  {
+   "kind": "para",
+   "line": "Mercy, at least,"
+  },
+  {
+   "kind": "line",
+   "line": "costs nothing."
+  }
+ ]
+}

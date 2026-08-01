@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=38 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/gyarados.png" id="1_0nfy6"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_x4pp3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/gyarados.png" id="3_725an"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_hc4kw"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="5_xf3vc"]
+[ext_resource type="Resource" path="res://resources/moves/dragon_rage.tres" id="6_s25d8"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="7_btxbh"]
+[ext_resource type="Resource" path="res://resources/moves/hydro_pump.tres" id="8_a47xy"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="9_7bpem"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_qj1mb"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_4h758"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_8qdss"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="13_jheyp"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="14_jda2b"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="15_kmx78"]
+[ext_resource type="Resource" path="res://resources/moves/bubblebeam.tres" id="16_c6p5l"]
+[ext_resource type="Resource" path="res://resources/moves/water_gun.tres" id="17_60try"]
+[ext_resource type="Resource" path="res://resources/moves/ice_beam.tres" id="18_jsjxv"]
+[ext_resource type="Resource" path="res://resources/moves/blizzard.tres" id="19_uewk1"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="20_q876e"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="21_84661"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="22_wv5s4"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="23_ld4f1"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="24_h5e8m"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="25_bs5i0"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="26_v2qsj"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="27_y6miu"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="28_f4h4w"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="29_uophj"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="30_1evif"]
+[ext_resource type="Resource" path="res://resources/moves/surf.tres" id="31_igvcc"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="32_q2uoj"]
+
+[sub_resource type="Resource" id="Resource_mvndv"]
+script = ExtResource("4_hc4kw")
+level = 20
+move = ExtResource("5_xf3vc")
+
+[sub_resource type="Resource" id="Resource_sysyy"]
+script = ExtResource("4_hc4kw")
+level = 25
+move = ExtResource("6_s25d8")
+
+[sub_resource type="Resource" id="Resource_revsj"]
+script = ExtResource("4_hc4kw")
+level = 32
+move = ExtResource("7_btxbh")
+
+[sub_resource type="Resource" id="Resource_5jlkq"]
+script = ExtResource("4_hc4kw")
+level = 41
+move = ExtResource("8_a47xy")
+
+[sub_resource type="Resource" id="Resource_d7nc8"]
+script = ExtResource("4_hc4kw")
+level = 52
+move = ExtResource("9_7bpem")
+
+[resource]
+script = ExtResource("11_4h758")
+species_name = "GYARADOS"
+dex = 130
+index = 22
+slug = "gyarados"
+label = "Gyarados"
+category = "ATROCIOUS"
+height_ft = 21
+height_in = 4
+weight_tenths_lb = 5180
+hp = 95
+attack = 125
+defense = 79
+speed = 81
+special = 100
+type1 = "WATER"
+type2 = "FLYING"
+catch_rate = 45
+base_exp = 214
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("10_qj1mb")]([ExtResource("5_xf3vc"), ExtResource("6_s25d8"), ExtResource("7_btxbh"), ExtResource("8_a47xy")])
+learnset = Array[ExtResource("4_hc4kw")]([SubResource("Resource_mvndv"), SubResource("Resource_sysyy"), SubResource("Resource_revsj"), SubResource("Resource_5jlkq"), SubResource("Resource_d7nc8")])
+tmhm = Array[ExtResource("10_qj1mb")]([ExtResource("12_8qdss"), ExtResource("13_jheyp"), ExtResource("14_jda2b"), ExtResource("15_kmx78"), ExtResource("16_c6p5l"), ExtResource("17_60try"), ExtResource("18_jsjxv"), ExtResource("19_uewk1"), ExtResource("9_7bpem"), ExtResource("20_q876e"), ExtResource("6_s25d8"), ExtResource("21_84661"), ExtResource("22_wv5s4"), ExtResource("23_ld4f1"), ExtResource("24_h5e8m"), ExtResource("25_bs5i0"), ExtResource("26_v2qsj"), ExtResource("27_y6miu"), ExtResource("28_f4h4w"), ExtResource("29_uophj"), ExtResource("30_1evif"), ExtResource("31_igvcc"), ExtResource("32_q2uoj")])
+evolutions = Array[ExtResource("2_x4pp3")]([])
+palette = "PAL_BLUEMON"
+menu_icon = "ICON_SNAKE"
+dex_text = Array[String](["Rarely seen in", "the wild. Huge", "and vicious, it", "is capable of", "destroying entire", "cities in a rage"])
+front_sprite = ExtResource("3_725an")
+back_sprite = ExtResource("1_0nfy6")

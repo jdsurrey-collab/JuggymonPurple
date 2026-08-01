@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_m5nix"]
+
+[resource]
+script = ExtResource("1_m5nix")
+move_name = "POISONPOWDER"
+move_id = 77
+display_name = "POISONPOWDER"
+move_type = "POISON"
+power = 0
+accuracy = 75
+pp = 35
+effect = "POISON_EFFECT"

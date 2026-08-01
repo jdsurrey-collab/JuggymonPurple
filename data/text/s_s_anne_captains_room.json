@@ -1,0 +1,164 @@
+{
+ "SSAnneCaptainsRoomRubCaptainsBackText": [
+  {
+   "kind": "text",
+   "line": "CAPTAIN: Ooargh..."
+  },
+  {
+   "kind": "line",
+   "line": "I feel wretched..."
+  },
+  {
+   "kind": "cont",
+   "line": "Urrp! So ill..."
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER> rubbed"
+  },
+  {
+   "kind": "line",
+   "line": "the CAPTAIN's"
+  },
+  {
+   "kind": "cont",
+   "line": "back."
+  },
+  {
+   "kind": "para",
+   "line": "Rub-rub..."
+  },
+  {
+   "kind": "line",
+   "line": "Rub-rub...@"
+  }
+ ],
+ "SSAnneCaptainsRoomCaptainIFeelMuchBetterText": [
+  {
+   "kind": "text",
+   "line": "CAPTAIN: Whew."
+  },
+  {
+   "kind": "line",
+   "line": "My thanks. I"
+  },
+  {
+   "kind": "cont",
+   "line": "feel restored."
+  },
+  {
+   "kind": "para",
+   "line": "Care to see my"
+  },
+  {
+   "kind": "line",
+   "line": "CUT technique?"
+  },
+  {
+   "kind": "para",
+   "line": "I'd show you,"
+  },
+  {
+   "kind": "line",
+   "line": "if not for this"
+  },
+  {
+   "kind": "cont",
+   "line": "illness..."
+  },
+  {
+   "kind": "para",
+   "line": "Here, then. Take"
+  },
+  {
+   "kind": "line",
+   "line": "this instead."
+  },
+  {
+   "kind": "para",
+   "line": "Teach it to your"
+  },
+  {
+   "kind": "line",
+   "line": "#MON, and CUT"
+  },
+  {
+   "kind": "cont",
+   "line": "whenever you"
+  },
+  {
+   "kind": "cont",
+   "line": "please."
+  }
+ ],
+ "SSAnneCaptainsRoomCaptainReceivedHM01Text": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> got"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "SSAnneCaptainsRoomCaptainNotSickAnymoreText": [
+  {
+   "kind": "text",
+   "line": "CAPTAIN: Whew!"
+  },
+  {
+   "kind": "para",
+   "line": "Now that I'm"
+  },
+  {
+   "kind": "line",
+   "line": "well, I suppose"
+  },
+  {
+   "kind": "cont",
+   "line": "it's time."
+  }
+ ],
+ "SSAnneCaptainsRoomCaptainHM01NoRoomText": [
+  {
+   "kind": "text",
+   "line": "Oh no. No room"
+  },
+  {
+   "kind": "line",
+   "line": "left for this!"
+  }
+ ],
+ "SSAnneCaptainsRoomTrashText": [
+  {
+   "kind": "text",
+   "line": "Yuck. I shouldn't"
+  },
+  {
+   "kind": "line",
+   "line": "have looked."
+  }
+ ],
+ "SSAnneCaptainsRoomSeasickBookText": [
+  {
+   "kind": "text",
+   "line": "How to Conquer"
+  },
+  {
+   "kind": "line",
+   "line": "Seasickness..."
+  },
+  {
+   "kind": "cont",
+   "line": "The CAPTAIN reads"
+  },
+  {
+   "kind": "cont",
+   "line": "this, endlessly."
+  }
+ ]
+}

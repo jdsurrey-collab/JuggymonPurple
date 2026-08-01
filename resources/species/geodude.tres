@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=41 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/geodude.png" id="1_bx5b0"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_whexf"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/geodude.png" id="3_il7le"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_up73v"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="5_m8r8e"]
+[ext_resource type="Resource" path="res://resources/moves/rock_throw.tres" id="6_tox12"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="7_3h2se"]
+[ext_resource type="Resource" path="res://resources/moves/harden.tres" id="8_ng8vb"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="9_hjh4j"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="10_4gn05"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_qyqas"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="12_7qy25"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_wbbt5"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="14_7u8vw"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_7eg5g"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="16_bmk7y"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="17_xmh4q"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="18_veo2y"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="19_747w1"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="20_0bikv"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="21_wl642"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="22_80w0d"]
+[ext_resource type="Resource" path="res://resources/moves/fissure.tres" id="23_o348l"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="24_f6k5u"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="25_fkguw"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="26_wqmvc"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="27_e7v6v"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="28_qcvp2"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="29_vcyja"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="30_e7r2v"]
+[ext_resource type="Resource" path="res://resources/moves/rock_slide.tres" id="31_5kcvk"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="32_ws46g"]
+[ext_resource type="Resource" path="res://resources/moves/strength.tres" id="33_sd5iy"]
+
+[sub_resource type="Resource" id="Resource_j5gkj"]
+script = ExtResource("2_whexf")
+method = "LEVEL"
+target = "GRAVELER"
+level = 25
+item = ""
+
+[sub_resource type="Resource" id="Resource_6bgn6"]
+script = ExtResource("4_up73v")
+level = 11
+move = ExtResource("5_m8r8e")
+
+[sub_resource type="Resource" id="Resource_cfyld"]
+script = ExtResource("4_up73v")
+level = 16
+move = ExtResource("6_tox12")
+
+[sub_resource type="Resource" id="Resource_xa0hb"]
+script = ExtResource("4_up73v")
+level = 21
+move = ExtResource("7_3h2se")
+
+[sub_resource type="Resource" id="Resource_gx2ww"]
+script = ExtResource("4_up73v")
+level = 26
+move = ExtResource("8_ng8vb")
+
+[sub_resource type="Resource" id="Resource_7cxb1"]
+script = ExtResource("4_up73v")
+level = 31
+move = ExtResource("9_hjh4j")
+
+[sub_resource type="Resource" id="Resource_cvo2k"]
+script = ExtResource("4_up73v")
+level = 36
+move = ExtResource("10_4gn05")
+
+[resource]
+script = ExtResource("13_wbbt5")
+species_name = "GEODUDE"
+dex = 74
+index = 169
+slug = "geodude"
+label = "Geodude"
+category = "ROCK"
+height_ft = 1
+height_in = 4
+weight_tenths_lb = 440
+hp = 40
+attack = 80
+defense = 100
+speed = 20
+special = 30
+type1 = "ROCK"
+type2 = "GROUND"
+catch_rate = 255
+base_exp = 86
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_qyqas")]([ExtResource("12_7qy25")])
+learnset = Array[ExtResource("4_up73v")]([SubResource("Resource_6bgn6"), SubResource("Resource_cfyld"), SubResource("Resource_xa0hb"), SubResource("Resource_gx2ww"), SubResource("Resource_7cxb1"), SubResource("Resource_cvo2k")])
+tmhm = Array[ExtResource("11_qyqas")]([ExtResource("14_7u8vw"), ExtResource("15_7eg5g"), ExtResource("16_bmk7y"), ExtResource("17_xmh4q"), ExtResource("18_veo2y"), ExtResource("19_747w1"), ExtResource("20_0bikv"), ExtResource("21_wl642"), ExtResource("22_80w0d"), ExtResource("9_hjh4j"), ExtResource("23_o348l"), ExtResource("24_f6k5u"), ExtResource("25_fkguw"), ExtResource("26_wqmvc"), ExtResource("27_e7v6v"), ExtResource("28_qcvp2"), ExtResource("7_3h2se"), ExtResource("29_vcyja"), ExtResource("30_e7r2v"), ExtResource("10_4gn05"), ExtResource("31_5kcvk"), ExtResource("32_ws46g"), ExtResource("33_sd5iy")])
+evolutions = Array[ExtResource("2_whexf")]([SubResource("Resource_j5gkj")])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Found in fields", "and mountains.", "Mistaking them", "for boulders,", "people often step", "or trip on them"])
+front_sprite = ExtResource("3_il7le")
+back_sprite = ExtResource("1_bx5b0")

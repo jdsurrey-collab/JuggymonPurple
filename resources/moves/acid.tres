@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_4i3g6"]
+
+[resource]
+script = ExtResource("1_4i3g6")
+move_name = "ACID"
+move_id = 51
+display_name = "ACID"
+move_type = "POISON"
+power = 40
+accuracy = 100
+pp = 30
+effect = "DEFENSE_DOWN_SIDE_EFFECT"

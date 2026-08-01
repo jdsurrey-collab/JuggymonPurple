@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_ixwyl"]
+
+[resource]
+script = ExtResource("1_ixwyl")
+move_name = "AMNESIA"
+move_id = 133
+display_name = "AMNESIA"
+move_type = "PSYCHIC_TYPE"
+power = 0
+accuracy = 100
+pp = 20
+effect = "SPECIAL_UP2_EFFECT"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_ml6p7"]
+
+[resource]
+script = ExtResource("1_ml6p7")
+move_name = "PSYBEAM"
+move_id = 60
+display_name = "PSYBEAM"
+move_type = "PSYCHIC_TYPE"
+power = 65
+accuracy = 100
+pp = 20
+effect = "CONFUSION_SIDE_EFFECT"

@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=32 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/entei.png" id="1_0euwh"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_cxhaw"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/entei.png" id="3_i6m4h"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_5x87u"]
+[ext_resource type="Resource" path="res://resources/moves/ember.tres" id="5_xbd5h"]
+[ext_resource type="Resource" path="res://resources/moves/roar.tres" id="6_i1us4"]
+[ext_resource type="Resource" path="res://resources/moves/fire_spin.tres" id="7_882nb"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="8_jixt5"]
+[ext_resource type="Resource" path="res://resources/moves/flamethrower.tres" id="9_bxhst"]
+[ext_resource type="Resource" path="res://resources/moves/fire_blast.tres" id="10_yequd"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_4x1n6"]
+[ext_resource type="Resource" path="res://resources/moves/bite.tres" id="12_umuj5"]
+[ext_resource type="Resource" path="res://resources/moves/leer.tres" id="13_u67pt"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_k1htg"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="15_pkgng"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="16_xadkj"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="17_wjy6l"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="18_oagel"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="19_hxc35"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="20_x2sse"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="21_el6dl"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="22_ia8bd"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="23_1vxny"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="24_gh7x4"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="25_jxemo"]
+
+[sub_resource type="Resource" id="Resource_nkjns"]
+script = ExtResource("4_5x87u")
+level = 11
+move = ExtResource("5_xbd5h")
+
+[sub_resource type="Resource" id="Resource_1nmnt"]
+script = ExtResource("4_5x87u")
+level = 21
+move = ExtResource("6_i1us4")
+
+[sub_resource type="Resource" id="Resource_ntgqp"]
+script = ExtResource("4_5x87u")
+level = 31
+move = ExtResource("7_882nb")
+
+[sub_resource type="Resource" id="Resource_7bw14"]
+script = ExtResource("4_5x87u")
+level = 41
+move = ExtResource("8_jixt5")
+
+[sub_resource type="Resource" id="Resource_hq6us"]
+script = ExtResource("4_5x87u")
+level = 51
+move = ExtResource("9_bxhst")
+
+[sub_resource type="Resource" id="Resource_3q44s"]
+script = ExtResource("4_5x87u")
+level = 71
+move = ExtResource("10_yequd")
+
+[resource]
+script = ExtResource("14_k1htg")
+species_name = "ENTEI"
+dex = 234
+index = 237
+slug = "entei"
+label = "Entei"
+category = "VOLCANO"
+height_ft = 6
+height_in = 11
+weight_tenths_lb = 4370
+hp = 115
+attack = 115
+defense = 85
+speed = 100
+special = 82
+type1 = "FIRE"
+type2 = "FIRE"
+catch_rate = 3
+base_exp = 217
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("11_4x1n6")]([ExtResource("12_umuj5"), ExtResource("13_u67pt")])
+learnset = Array[ExtResource("4_5x87u")]([SubResource("Resource_nkjns"), SubResource("Resource_1nmnt"), SubResource("Resource_ntgqp"), SubResource("Resource_7bw14"), SubResource("Resource_hq6us"), SubResource("Resource_3q44s")])
+tmhm = Array[ExtResource("11_4x1n6")]([ExtResource("15_pkgng"), ExtResource("16_xadkj"), ExtResource("17_wjy6l"), ExtResource("18_oagel"), ExtResource("19_hxc35"), ExtResource("20_x2sse"), ExtResource("21_el6dl"), ExtResource("22_ia8bd"), ExtResource("10_yequd"), ExtResource("23_1vxny"), ExtResource("24_gh7x4"), ExtResource("25_jxemo")])
+evolutions = Array[ExtResource("2_cxhaw")]([])
+palette = "PAL_REDMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It is said a", "mountain burst", "the day it came.", "Its every roar", "wakes the fire", "underneath."])
+front_sprite = ExtResource("3_i6m4h")
+back_sprite = ExtResource("1_0euwh")

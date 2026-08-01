@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=29 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/gastly.png" id="1_q0nar"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_b118h"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/gastly.png" id="3_uuswd"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_f38ql"]
+[ext_resource type="Resource" path="res://resources/moves/hypnosis.tres" id="5_a6rto"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="6_6k1xu"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="7_2jf3j"]
+[ext_resource type="Resource" path="res://resources/moves/lick.tres" id="8_bdxnj"]
+[ext_resource type="Resource" path="res://resources/moves/confuse_ray.tres" id="9_rqwws"]
+[ext_resource type="Resource" path="res://resources/moves/night_shade.tres" id="10_gtcqp"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_dbpm8"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_f6isy"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_aijx4"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="14_knv1s"]
+[ext_resource type="Resource" path="res://resources/moves/thunderbolt.tres" id="15_fu0ki"]
+[ext_resource type="Resource" path="res://resources/moves/thunder.tres" id="16_8xjmu"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="17_ddns3"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="18_qaqur"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="19_2gyr0"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="20_tt7m6"]
+[ext_resource type="Resource" path="res://resources/moves/selfdestruct.tres" id="21_jpeib"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="22_6av2e"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="23_iuuc3"]
+[ext_resource type="Resource" path="res://resources/moves/explosion.tres" id="24_xd4so"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="25_j7sln"]
+
+[sub_resource type="Resource" id="Resource_nsbh1"]
+script = ExtResource("2_b118h")
+method = "LEVEL"
+target = "HAUNTER"
+level = 25
+item = ""
+
+[sub_resource type="Resource" id="Resource_0chj2"]
+script = ExtResource("4_f38ql")
+level = 27
+move = ExtResource("5_a6rto")
+
+[sub_resource type="Resource" id="Resource_hpusg"]
+script = ExtResource("4_f38ql")
+level = 35
+move = ExtResource("6_6k1xu")
+
+[resource]
+script = ExtResource("11_dbpm8")
+species_name = "GASTLY"
+dex = 92
+index = 25
+slug = "gastly"
+label = "Gastly"
+category = "GAS"
+height_ft = 4
+height_in = 3
+weight_tenths_lb = 2
+hp = 30
+attack = 35
+defense = 30
+speed = 80
+special = 100
+type1 = "GHOST"
+type2 = "POISON"
+catch_rate = 190
+base_exp = 95
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("7_2jf3j")]([ExtResource("8_bdxnj"), ExtResource("9_rqwws"), ExtResource("10_gtcqp")])
+learnset = Array[ExtResource("4_f38ql")]([SubResource("Resource_0chj2"), SubResource("Resource_hpusg")])
+tmhm = Array[ExtResource("7_2jf3j")]([ExtResource("12_f6isy"), ExtResource("13_aijx4"), ExtResource("14_knv1s"), ExtResource("15_fu0ki"), ExtResource("16_8xjmu"), ExtResource("17_ddns3"), ExtResource("18_qaqur"), ExtResource("19_2gyr0"), ExtResource("20_tt7m6"), ExtResource("21_jpeib"), ExtResource("6_6k1xu"), ExtResource("22_6av2e"), ExtResource("23_iuuc3"), ExtResource("24_xd4so"), ExtResource("25_j7sln")])
+evolutions = Array[ExtResource("2_b118h")]([SubResource("Resource_nsbh1")])
+palette = "PAL_PURPLEMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Almost invisible,", "this gaseous", "#MON cloaks", "the target and", "puts it to sleep", "without notice"])
+front_sprite = ExtResource("3_uuswd")
+back_sprite = ExtResource("1_q0nar")

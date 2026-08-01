@@ -1,0 +1,64 @@
+{
+ "VermilionGymLTSurgePreBattleText": [
+  {
+   "kind": "text",
+   "line": "Boy. What do"
+  },
+  {
+   "kind": "line",
+   "line": "you think you're"
+  },
+  {
+   "kind": "cont",
+   "line": "doing here?"
+  },
+  {
+   "kind": "para",
+   "line": "You'll not survive"
+  },
+  {
+   "kind": "line",
+   "line": "long in real"
+  },
+  {
+   "kind": "cont",
+   "line": "combat. Mark me."
+  },
+  {
+   "kind": "para",
+   "line": "Electric #MON"
+  },
+  {
+   "kind": "line",
+   "line": "carried me through"
+  },
+  {
+   "kind": "cont",
+   "line": "the war, when"
+  },
+  {
+   "kind": "cont",
+   "line": "so many didn't."
+  },
+  {
+   "kind": "para",
+   "line": "I watched men"
+  },
+  {
+   "kind": "line",
+   "line": "seize and fall,"
+  },
+  {
+   "kind": "cont",
+   "line": "paralyzed to death."
+  },
+  {
+   "kind": "para",
+   "line": "That is what"
+  },
+  {
+   "kind": "line",
+   "line": "I'll do to you."
+  }
+ ]
+}

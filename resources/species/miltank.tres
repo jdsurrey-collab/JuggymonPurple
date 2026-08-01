@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=29 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/miltank.png" id="1_typ0j"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_4rbxn"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/miltank.png" id="3_x2vqb"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_pqneq"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="5_vkmx0"]
+[ext_resource type="Resource" path="res://resources/moves/defense_curl.tres" id="6_t7jjl"]
+[ext_resource type="Resource" path="res://resources/moves/stomp.tres" id="7_0qm0t"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="8_wkpql"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="9_awnvo"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_6uvm3"]
+[ext_resource type="Resource" path="res://resources/moves/tackle.tres" id="11_wwhvq"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="12_5bx4r"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="13_el7h4"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="14_wo47j"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="15_n62sl"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="16_b1hb3"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="17_t87b0"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="18_h3k7q"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="19_sypyq"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="20_udl5w"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="21_w0mgo"]
+[ext_resource type="Resource" path="res://resources/moves/softboiled.tres" id="22_jjba2"]
+[ext_resource type="Resource" path="res://resources/moves/earthquake.tres" id="23_28v8g"]
+
+[sub_resource type="Resource" id="Resource_235fo"]
+script = ExtResource("4_pqneq")
+level = 4
+move = ExtResource("5_vkmx0")
+
+[sub_resource type="Resource" id="Resource_w1mhk"]
+script = ExtResource("4_pqneq")
+level = 8
+move = ExtResource("6_t7jjl")
+
+[sub_resource type="Resource" id="Resource_mqxaj"]
+script = ExtResource("4_pqneq")
+level = 13
+move = ExtResource("7_0qm0t")
+
+[sub_resource type="Resource" id="Resource_xllmw"]
+script = ExtResource("4_pqneq")
+level = 26
+move = ExtResource("8_wkpql")
+
+[sub_resource type="Resource" id="Resource_1kmhk"]
+script = ExtResource("4_pqneq")
+level = 43
+move = ExtResource("9_awnvo")
+
+[resource]
+script = ExtResource("12_5bx4r")
+species_name = "MILTANK"
+dex = 231
+index = 234
+slug = "miltank"
+label = "Miltank"
+category = "MILK COW"
+height_ft = 3
+height_in = 11
+weight_tenths_lb = 1660
+hp = 95
+attack = 80
+defense = 105
+speed = 100
+special = 55
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 45
+base_exp = 200
+growth_rate = "GROWTH_SLOW"
+level1_moves = Array[ExtResource("10_6uvm3")]([ExtResource("11_wwhvq")])
+learnset = Array[ExtResource("4_pqneq")]([SubResource("Resource_235fo"), SubResource("Resource_w1mhk"), SubResource("Resource_mqxaj"), SubResource("Resource_xllmw"), SubResource("Resource_1kmhk")])
+tmhm = Array[ExtResource("10_6uvm3")]([ExtResource("13_el7h4"), ExtResource("14_wo47j"), ExtResource("15_n62sl"), ExtResource("16_b1hb3"), ExtResource("17_t87b0"), ExtResource("18_h3k7q"), ExtResource("8_wkpql"), ExtResource("19_sypyq"), ExtResource("9_awnvo"), ExtResource("20_udl5w"), ExtResource("21_w0mgo"), ExtResource("22_jjba2"), ExtResource("23_28v8g")])
+evolutions = Array[ExtResource("2_4rbxn")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["Its milk mends", "the sick and the", "sorrowing alike.", "The herd is kept", "close, and armed."])
+front_sprite = ExtResource("3_x2vqb")
+back_sprite = ExtResource("1_typ0j")

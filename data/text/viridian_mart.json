@@ -1,0 +1,72 @@
+{
+ "ViridianMartClerkSayHiToOakText": [
+  {
+   "kind": "text",
+   "line": "Very well. Give"
+  },
+  {
+   "kind": "line",
+   "line": "OAK my regards."
+  }
+ ],
+ "ViridianMartClerkYouCameFromPalletTownText": [
+  {
+   "kind": "text",
+   "line": "You hail from"
+  },
+  {
+   "kind": "line",
+   "line": "PALLET TOWN, then?"
+  }
+ ],
+ "ViridianMartClerkParcelQuestText": [
+  {
+   "kind": "text",
+   "line": "You know PROF."
+  },
+  {
+   "kind": "line",
+   "line": "OAK, don't you?"
+  },
+  {
+   "kind": "para",
+   "line": "His order has"
+  },
+  {
+   "kind": "line",
+   "line": "come. Would you"
+  },
+  {
+   "kind": "cont",
+   "line": "carry it to him?"
+  },
+  {
+   "kind": "para",
+   "line": "<PLAYER> got"
+  },
+  {
+   "kind": "line",
+   "line": "OAK's PARCEL!@"
+  }
+ ],
+ "ViridianMartYoungsterText": [
+  {
+   "kind": "text",
+   "line": "This shop sells"
+  },
+  {
+   "kind": "line",
+   "line": "mostly ANTIDOTEs."
+  }
+ ],
+ "ViridianMartCooltrainerMText": [
+  {
+   "kind": "text",
+   "line": "No. POTIONs, all"
+  },
+  {
+   "kind": "line",
+   "line": "gone."
+  }
+ ]
+}

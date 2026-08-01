@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_dxo2k"]
+
+[resource]
+script = ExtResource("1_dxo2k")
+move_name = "CRABHAMMER"
+move_id = 152
+display_name = "CRABHAMMER"
+move_type = "WATER"
+power = 90
+accuracy = 85
+pp = 10
+effect = "NO_ADDITIONAL_EFFECT"

@@ -1,0 +1,34 @@
+{
+ "RockTunnelPokecenterGentlemanText": [
+  {
+   "kind": "text",
+   "line": "Every #MON's"
+  },
+  {
+   "kind": "line",
+   "line": "type makes it"
+  },
+  {
+   "kind": "cont",
+   "line": "strong against"
+  },
+  {
+   "kind": "cont",
+   "line": "some, and weak"
+  },
+  {
+   "kind": "cont",
+   "line": "against others."
+  }
+ ],
+ "RockTunnelPokecenterFisherText": [
+  {
+   "kind": "text",
+   "line": "I sold a worthless"
+  },
+  {
+   "kind": "line",
+   "line": "NUGGET for \u00a55000."
+  }
+ ]
+}

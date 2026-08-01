@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_vyfsr"]
+
+[resource]
+script = ExtResource("1_vyfsr")
+move_name = "RAZOR_LEAF"
+move_id = 75
+display_name = "RAZOR LEAF"
+move_type = "GRASS"
+power = 55
+accuracy = 95
+pp = 25
+effect = "NO_ADDITIONAL_EFFECT"

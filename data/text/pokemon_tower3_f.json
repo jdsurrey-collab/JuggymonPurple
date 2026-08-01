@@ -1,0 +1,96 @@
+{
+ "PokemonTower3FChanneler1BattleText": [
+  {
+   "kind": "text",
+   "line": "Urrg...Awaa..."
+  },
+  {
+   "kind": "line",
+   "line": "Huhu...graa.."
+  }
+ ],
+ "PokemonTower3FChanneler1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Hwa!"
+  },
+  {
+   "kind": "line",
+   "line": "I'm saved!"
+  }
+ ],
+ "PokemonTower3FChanneler1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "The GHOSTs show"
+  },
+  {
+   "kind": "line",
+   "line": "themselves, to"
+  },
+  {
+   "kind": "cont",
+   "line": "the SILPH SCOPE."
+  }
+ ],
+ "PokemonTower3FChanneler2BattleText": [
+  {
+   "kind": "text",
+   "line": "Kekeke...."
+  },
+  {
+   "kind": "line",
+   "line": "Kwaaah!"
+  }
+ ],
+ "PokemonTower3FChanneler2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Hmm?"
+  },
+  {
+   "kind": "line",
+   "line": "What am I doing?"
+  }
+ ],
+ "PokemonTower3FChanneler2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Sorry! I was"
+  },
+  {
+   "kind": "line",
+   "line": "possessed!"
+  }
+ ],
+ "PokemonTower3FChanneler3BattleText": [
+  {
+   "kind": "text",
+   "line": "Be gone!"
+  },
+  {
+   "kind": "line",
+   "line": "Evil spirit!"
+  }
+ ],
+ "PokemonTower3FChanneler3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Whew. The spirit"
+  },
+  {
+   "kind": "line",
+   "line": "has fled."
+  }
+ ],
+ "PokemonTower3FChanneler3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "My friends were"
+  },
+  {
+   "kind": "line",
+   "line": "possessed too!"
+  }
+ ]
+}

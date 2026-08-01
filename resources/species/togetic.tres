@@ -1,0 +1,82 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/togetic.png" id="1_uy34w"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_da4n7"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/togetic.png" id="3_26kve"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_5dopt"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="5_gfgk4"]
+[ext_resource type="Resource" path="res://resources/moves/growl.tres" id="6_u5w45"]
+[ext_resource type="Resource" path="res://resources/moves/quick_attack.tres" id="7_8qkp7"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="8_qdc0v"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="9_b0wav"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="10_l1h42"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_0mj8a"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_x4i4q"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_f5nxs"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="14_ws6ir"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="15_lu563"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="16_wty2b"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="17_l04eq"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="18_hujej"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="19_6b86b"]
+[ext_resource type="Resource" path="res://resources/moves/fly.tres" id="20_w74v7"]
+[ext_resource type="Resource" path="res://resources/moves/sky_attack.tres" id="21_3xwf0"]
+[ext_resource type="Resource" path="res://resources/moves/whirlwind.tres" id="22_pr5iy"]
+[ext_resource type="Resource" path="res://resources/moves/razor_wind.tres" id="23_cpof1"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="24_7p860"]
+
+[sub_resource type="Resource" id="Resource_0k7yg"]
+script = ExtResource("4_5dopt")
+level = 7
+move = ExtResource("5_gfgk4")
+
+[sub_resource type="Resource" id="Resource_f53ue"]
+script = ExtResource("4_5dopt")
+level = 8
+move = ExtResource("6_u5w45")
+
+[sub_resource type="Resource" id="Resource_waejk"]
+script = ExtResource("4_5dopt")
+level = 15
+move = ExtResource("7_8qkp7")
+
+[sub_resource type="Resource" id="Resource_4ewpu"]
+script = ExtResource("4_5dopt")
+level = 24
+move = ExtResource("8_qdc0v")
+
+[sub_resource type="Resource" id="Resource_u5kkp"]
+script = ExtResource("4_5dopt")
+level = 38
+move = ExtResource("9_b0wav")
+
+[resource]
+script = ExtResource("11_0mj8a")
+species_name = "TOGETIC"
+dex = 176
+index = 137
+slug = "togetic"
+label = "Togetic"
+category = "HAPPINESS"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 70
+hp = 55
+attack = 40
+defense = 85
+speed = 40
+special = 92
+type1 = "NORMAL"
+type2 = "FLYING"
+catch_rate = 75
+base_exp = 114
+growth_rate = "GROWTH_FAST"
+level1_moves = Array[ExtResource("10_l1h42")]([ExtResource("6_u5w45")])
+learnset = Array[ExtResource("4_5dopt")]([SubResource("Resource_0k7yg"), SubResource("Resource_f53ue"), SubResource("Resource_waejk"), SubResource("Resource_4ewpu"), SubResource("Resource_u5kkp")])
+tmhm = Array[ExtResource("10_l1h42")]([ExtResource("12_x4i4q"), ExtResource("13_f5nxs"), ExtResource("14_ws6ir"), ExtResource("15_lu563"), ExtResource("16_wty2b"), ExtResource("17_l04eq"), ExtResource("18_hujej"), ExtResource("19_6b86b"), ExtResource("20_w74v7"), ExtResource("21_3xwf0"), ExtResource("22_pr5iy"), ExtResource("23_cpof1"), ExtResource("8_qdc0v"), ExtResource("24_7p860"), ExtResource("9_b0wav")])
+evolutions = Array[ExtResource("2_da4n7")]([])
+palette = "PAL_BROWNMON"
+menu_icon = "ICON_QUADRUPED"
+dex_text = Array[String](["It seeks out the", "kind and shares", "their joy. It has", "not been seen here", "for many years."])
+front_sprite = ExtResource("3_26kve")
+back_sprite = ExtResource("1_uy34w")

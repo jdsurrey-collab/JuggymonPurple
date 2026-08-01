@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/celebi.png" id="1_0amgd"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_km24i"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/celebi.png" id="3_6jg8w"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_j7rnf"]
+[ext_resource type="Resource" path="res://resources/moves/psybeam.tres" id="5_fuecf"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="6_8wfc7"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="7_khtq2"]
+[ext_resource type="Resource" path="res://resources/moves/leech_seed.tres" id="8_027ws"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="9_dul01"]
+[ext_resource type="Resource" path="res://resources/moves/recover.tres" id="10_n7unf"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="11_3gt5n"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="12_172aa"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="13_w1tee"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="14_3nuyi"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="15_hlvqt"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="16_na63r"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="17_hsb3u"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="18_h86jo"]
+[ext_resource type="Resource" path="res://resources/moves/swift.tres" id="19_a6vt4"]
+[ext_resource type="Resource" path="res://resources/moves/solarbeam.tres" id="20_xhm8g"]
+[ext_resource type="Resource" path="res://resources/moves/mega_drain.tres" id="21_px53s"]
+[ext_resource type="Resource" path="res://resources/moves/cut.tres" id="22_6yg81"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="23_n5pcp"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="24_u1gqr"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="25_eupl0"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="26_7muer"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="27_ohdrb"]
+
+[sub_resource type="Resource" id="Resource_1b8mq"]
+script = ExtResource("4_j7rnf")
+level = 15
+move = ExtResource("5_fuecf")
+
+[sub_resource type="Resource" id="Resource_uxvq2"]
+script = ExtResource("4_j7rnf")
+level = 30
+move = ExtResource("6_8wfc7")
+
+[resource]
+script = ExtResource("11_3gt5n")
+species_name = "CELEBI"
+dex = 240
+index = 243
+slug = "celebi"
+label = "Celebi"
+category = "TIMETRAVEL"
+height_ft = 2
+height_in = 0
+weight_tenths_lb = 110
+hp = 100
+attack = 100
+defense = 100
+speed = 100
+special = 100
+type1 = "PSYCHIC_TYPE"
+type2 = "GRASS"
+catch_rate = 45
+base_exp = 64
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("7_khtq2")]([ExtResource("8_027ws"), ExtResource("9_dul01"), ExtResource("10_n7unf")])
+learnset = Array[ExtResource("4_j7rnf")]([SubResource("Resource_1b8mq"), SubResource("Resource_uxvq2")])
+tmhm = Array[ExtResource("7_khtq2")]([ExtResource("12_172aa"), ExtResource("13_w1tee"), ExtResource("14_3nuyi"), ExtResource("15_hlvqt"), ExtResource("16_na63r"), ExtResource("17_hsb3u"), ExtResource("18_h86jo"), ExtResource("19_a6vt4"), ExtResource("20_xhm8g"), ExtResource("21_px53s"), ExtResource("22_6yg81"), ExtResource("6_8wfc7"), ExtResource("23_n5pcp"), ExtResource("24_u1gqr"), ExtResource("25_eupl0"), ExtResource("26_7muer"), ExtResource("27_ohdrb")])
+evolutions = Array[ExtResource("2_km24i")]([])
+palette = "PAL_PINKMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["It steps out of", "time into the", "wood, and the", "wood grows young.", "It has been seen", "in every age."])
+front_sprite = ExtResource("3_6jg8w")
+back_sprite = ExtResource("1_0amgd")

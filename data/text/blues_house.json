@@ -1,0 +1,100 @@
+{
+ "BluesHouseDaisyRivalAtLabText": [
+  {
+   "kind": "text",
+   "line": "Oh, <PLAYER>."
+  },
+  {
+   "kind": "line",
+   "line": "<RIVAL>'s gone to"
+  },
+  {
+   "kind": "cont",
+   "line": "Grandfather's lab."
+  }
+ ],
+ "BluesHouseDaisyOfferMapText": [
+  {
+   "kind": "text",
+   "line": "Grandfather sends"
+  },
+  {
+   "kind": "line",
+   "line": "you on an errand?"
+  },
+  {
+   "kind": "cont",
+   "line": "Take this, then-"
+  },
+  {
+   "kind": "cont",
+   "line": "it may help."
+  }
+ ],
+ "GotMapText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> got a"
+  },
+  {
+   "kind": "line",
+   "line": "@"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "BluesHouseDaisyBagFullText": [
+  {
+   "kind": "text",
+   "line": "You carry too much"
+  },
+  {
+   "kind": "line",
+   "line": "already, I think."
+  }
+ ],
+ "BluesHouseDaisyUseMapText": [
+  {
+   "kind": "text",
+   "line": "The TOWN MAP shows"
+  },
+  {
+   "kind": "line",
+   "line": "where you have"
+  },
+  {
+   "kind": "cont",
+   "line": "wandered to."
+  }
+ ],
+ "BluesHouseDaisyWalkingText": [
+  {
+   "kind": "text",
+   "line": "#MON are living"
+  },
+  {
+   "kind": "line",
+   "line": "things, not tools."
+  },
+  {
+   "kind": "cont",
+   "line": "Let them rest,"
+  },
+  {
+   "kind": "cont",
+   "line": "or lose them."
+  }
+ ],
+ "BluesHouseTownMapText": [
+  {
+   "kind": "text",
+   "line": "A fine map. It"
+  },
+  {
+   "kind": "line",
+   "line": "may save your life."
+  }
+ ]
+}

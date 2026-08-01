@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/ditto.png" id="1_v8pjt"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_1t8t6"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/ditto.png" id="3_nhvy5"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_sx7wk"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="5_n185w"]
+[ext_resource type="Resource" path="res://resources/moves/transform.tres" id="6_bo7pm"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="7_rv4ps"]
+
+[resource]
+script = ExtResource("7_rv4ps")
+species_name = "DITTO"
+dex = 132
+index = 76
+slug = "ditto"
+label = "Ditto"
+category = "TRANSFORM"
+height_ft = 1
+height_in = 0
+weight_tenths_lb = 90
+hp = 48
+attack = 48
+defense = 48
+speed = 48
+special = 48
+type1 = "NORMAL"
+type2 = "NORMAL"
+catch_rate = 35
+base_exp = 61
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("5_n185w")]([ExtResource("6_bo7pm")])
+learnset = Array[ExtResource("4_sx7wk")]([])
+tmhm = Array[ExtResource("5_n185w")]([])
+evolutions = Array[ExtResource("2_1t8t6")]([])
+palette = "PAL_GRAYMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Capable of copying", "an enemy's genetic", "code to instantly", "transform itself", "into a duplicate", "of the enemy"])
+front_sprite = ExtResource("3_nhvy5")
+back_sprite = ExtResource("1_v8pjt")

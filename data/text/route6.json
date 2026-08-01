@@ -1,0 +1,214 @@
+{
+ "Route6CooltrainerM1BattleText": [
+  {
+   "kind": "text",
+   "line": "Who goes there?"
+  },
+  {
+   "kind": "line",
+   "line": "Stop listening"
+  },
+  {
+   "kind": "cont",
+   "line": "in on us!"
+  }
+ ],
+ "Route6CooltrainerM1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "never win!"
+  }
+ ],
+ "Route6CooltrainerAfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Whisper..."
+  },
+  {
+   "kind": "line",
+   "line": "whisper..."
+  }
+ ],
+ "Route6CooltrainerF1BattleText": [
+  {
+   "kind": "text",
+   "line": "Pardon me. This"
+  },
+  {
+   "kind": "line",
+   "line": "is a private"
+  },
+  {
+   "kind": "cont",
+   "line": "conversation!"
+  }
+ ],
+ "Route6CooltrainerF1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "Ugh. I loathe"
+  },
+  {
+   "kind": "line",
+   "line": "losing!"
+  }
+ ],
+ "Route6Youngster1BattleText": [
+  {
+   "kind": "text",
+   "line": "Few bugs linger"
+  },
+  {
+   "kind": "line",
+   "line": "out here."
+  }
+ ],
+ "Route6Youngster1EndBattleText": [
+  {
+   "kind": "text",
+   "line": "No."
+  },
+  {
+   "kind": "line",
+   "line": "You jest!"
+  }
+ ],
+ "Route6Youngster1AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I love bugs. I'll"
+  },
+  {
+   "kind": "line",
+   "line": "return to"
+  },
+  {
+   "kind": "cont",
+   "line": "VIRIDIAN FOREST."
+  }
+ ],
+ "Route6CooltrainerM2BattleText": [
+  {
+   "kind": "text",
+   "line": "You wish to"
+  },
+  {
+   "kind": "line",
+   "line": "speak with me?"
+  }
+ ],
+ "Route6CooltrainerM2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "didn't start it!"
+  }
+ ],
+ "Route6CooltrainerM2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I should carry"
+  },
+  {
+   "kind": "line",
+   "line": "more #MON, for"
+  },
+  {
+   "kind": "cont",
+   "line": "my own safety."
+  }
+ ],
+ "Route6CooltrainerF2BattleText": [
+  {
+   "kind": "text",
+   "line": "Me? Very well."
+  },
+  {
+   "kind": "line",
+   "line": "I'll play!"
+  }
+ ],
+ "Route6CooltrainerF2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "It simply"
+  },
+  {
+   "kind": "line",
+   "line": "failed!"
+  }
+ ],
+ "Route6CooltrainerF2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "I want to grow"
+  },
+  {
+   "kind": "line",
+   "line": "stronger. What's"
+  },
+  {
+   "kind": "cont",
+   "line": "your secret?"
+  }
+ ],
+ "Route6Youngster2BattleText": [
+  {
+   "kind": "text",
+   "line": "I've not seen"
+  },
+  {
+   "kind": "line",
+   "line": "you before. Are"
+  },
+  {
+   "kind": "cont",
+   "line": "you any good?"
+  }
+ ],
+ "Route6Youngster2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "You"
+  },
+  {
+   "kind": "line",
+   "line": "are too good!"
+  }
+ ],
+ "Route6Youngster2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Are my #MON"
+  },
+  {
+   "kind": "line",
+   "line": "weak, or am I"
+  },
+  {
+   "kind": "cont",
+   "line": "simply lacking?"
+  }
+ ],
+ "Route6UndergroundPathSignText": [
+  {
+   "kind": "text",
+   "line": "UNDERGROUND PATH"
+  },
+  {
+   "kind": "line",
+   "line": "CERULEAN CITY -"
+  },
+  {
+   "kind": "cont",
+   "line": "VERMILION CITY"
+  }
+ ]
+}

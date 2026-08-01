@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=46 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/hypno.png" id="1_7citc"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_2banc"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/hypno.png" id="3_gg6em"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_0fxnj"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="5_u8fym"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="6_w3uon"]
+[ext_resource type="Resource" path="res://resources/moves/headbutt.tres" id="7_42e1j"]
+[ext_resource type="Resource" path="res://resources/moves/poison_gas.tres" id="8_v34yb"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="9_3qjxq"]
+[ext_resource type="Resource" path="res://resources/moves/meditate.tres" id="10_7rcyb"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_4u6xb"]
+[ext_resource type="Resource" path="res://resources/moves/pound.tres" id="12_5qycr"]
+[ext_resource type="Resource" path="res://resources/moves/hypnosis.tres" id="13_vrnx5"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="14_e86y0"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="15_bbt7u"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="16_ff814"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="17_tvpcp"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="18_67hb5"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="19_u50m4"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="20_r8e3v"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="21_ks5co"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="22_2o4ta"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="23_4tb1p"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="24_bwnsv"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="25_lgavp"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="26_gof7n"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="27_08oqv"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="28_lwfsg"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="29_88u3w"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="30_nk2o3"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="31_ygto8"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="32_g854f"]
+[ext_resource type="Resource" path="res://resources/moves/dream_eater.tres" id="33_34x46"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="34_81nlk"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="35_tjpaq"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="36_sltvu"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="37_sio3t"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="38_x78q8"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="39_1sv63"]
+
+[sub_resource type="Resource" id="Resource_83n38"]
+script = ExtResource("4_0fxnj")
+level = 12
+move = ExtResource("5_u8fym")
+
+[sub_resource type="Resource" id="Resource_emanf"]
+script = ExtResource("4_0fxnj")
+level = 17
+move = ExtResource("6_w3uon")
+
+[sub_resource type="Resource" id="Resource_bc5mu"]
+script = ExtResource("4_0fxnj")
+level = 24
+move = ExtResource("7_42e1j")
+
+[sub_resource type="Resource" id="Resource_dq32s"]
+script = ExtResource("4_0fxnj")
+level = 33
+move = ExtResource("8_v34yb")
+
+[sub_resource type="Resource" id="Resource_daoml"]
+script = ExtResource("4_0fxnj")
+level = 37
+move = ExtResource("9_3qjxq")
+
+[sub_resource type="Resource" id="Resource_bgi1c"]
+script = ExtResource("4_0fxnj")
+level = 43
+move = ExtResource("10_7rcyb")
+
+[resource]
+script = ExtResource("14_e86y0")
+species_name = "HYPNO"
+dex = 97
+index = 129
+slug = "hypno"
+label = "Hypno"
+category = "HYPNOSIS"
+height_ft = 5
+height_in = 3
+weight_tenths_lb = 1670
+hp = 85
+attack = 73
+defense = 70
+speed = 67
+special = 115
+type1 = "PSYCHIC_TYPE"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 75
+base_exp = 165
+growth_rate = "GROWTH_MEDIUM_FAST"
+level1_moves = Array[ExtResource("11_4u6xb")]([ExtResource("12_5qycr"), ExtResource("13_vrnx5"), ExtResource("5_u8fym"), ExtResource("6_w3uon")])
+learnset = Array[ExtResource("4_0fxnj")]([SubResource("Resource_83n38"), SubResource("Resource_emanf"), SubResource("Resource_bc5mu"), SubResource("Resource_dq32s"), SubResource("Resource_daoml"), SubResource("Resource_bgi1c")])
+tmhm = Array[ExtResource("11_4u6xb")]([ExtResource("15_bbt7u"), ExtResource("16_ff814"), ExtResource("17_tvpcp"), ExtResource("18_67hb5"), ExtResource("19_u50m4"), ExtResource("20_r8e3v"), ExtResource("21_ks5co"), ExtResource("22_2o4ta"), ExtResource("23_4tb1p"), ExtResource("24_bwnsv"), ExtResource("25_lgavp"), ExtResource("9_3qjxq"), ExtResource("26_gof7n"), ExtResource("27_08oqv"), ExtResource("28_lwfsg"), ExtResource("29_88u3w"), ExtResource("30_nk2o3"), ExtResource("31_ygto8"), ExtResource("32_g854f"), ExtResource("33_34x46"), ExtResource("34_81nlk"), ExtResource("35_tjpaq"), ExtResource("36_sltvu"), ExtResource("37_sio3t"), ExtResource("38_x78q8"), ExtResource("39_1sv63")])
+evolutions = Array[ExtResource("2_2banc")]([])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["When it locks eyes", "with an enemy, it", "will use a mix of", "PSI moves such as", "HYPNOSIS and", "CONFUSION"])
+front_sprite = ExtResource("3_gg6em")
+back_sprite = ExtResource("1_7citc")

@@ -1,0 +1,70 @@
+{
+ "Route15Gate2FOaksAideExpAllText": [
+  {
+   "kind": "text",
+   "line": "EXP.ALL grants"
+  },
+  {
+   "kind": "line",
+   "line": "its blessing to"
+  },
+  {
+   "kind": "cont",
+   "line": "all #MON with"
+  },
+  {
+   "kind": "cont",
+   "line": "you, even those"
+  },
+  {
+   "kind": "cont",
+   "line": "who never bled."
+  },
+  {
+   "kind": "para",
+   "line": "Yet it thins the"
+  },
+  {
+   "kind": "line",
+   "line": "portion each"
+  },
+  {
+   "kind": "cont",
+   "line": "poor #MON"
+  },
+  {
+   "kind": "cont",
+   "line": "receives."
+  },
+  {
+   "kind": "para",
+   "line": "If you've no need"
+  },
+  {
+   "kind": "line",
+   "line": "of it, entomb it"
+  },
+  {
+   "kind": "cont",
+   "line": "within the PC."
+  }
+ ],
+ "Route15Gate2FBinocularsText": [
+  {
+   "kind": "text",
+   "line": "Peered through"
+  },
+  {
+   "kind": "line",
+   "line": "the binoculars."
+  },
+  {
+   "kind": "para",
+   "line": "It looks a lonely"
+  },
+  {
+   "kind": "line",
+   "line": "isle indeed!"
+  }
+ ]
+}

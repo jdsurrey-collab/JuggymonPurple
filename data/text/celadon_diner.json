@@ -1,0 +1,146 @@
+{
+ "CeladonDinerCookText": [
+  {
+   "kind": "text",
+   "line": "Evening."
+  },
+  {
+   "kind": "para",
+   "line": "We're taking"
+  },
+  {
+   "kind": "line",
+   "line": "our rest now."
+  }
+ ],
+ "CeladonDinerMiddleAgedWomanText": [
+  {
+   "kind": "text",
+   "line": "My #MON are"
+  },
+  {
+   "kind": "line",
+   "line": "frail, so I must"
+  },
+  {
+   "kind": "cont",
+   "line": "haunt the DRUG"
+  },
+  {
+   "kind": "cont",
+   "line": "STORE often."
+  }
+ ],
+ "CeladonDinerMiddleAgedManText": [
+  {
+   "kind": "text",
+   "line": "Psst! A cellar"
+  },
+  {
+   "kind": "line",
+   "line": "lies beneath"
+  },
+  {
+   "kind": "cont",
+   "line": "the GAME CORNER."
+  }
+ ],
+ "CeladonDinerFisherText": [
+  {
+   "kind": "text",
+   "line": "Munch..."
+  },
+  {
+   "kind": "para",
+   "line": "That man at the"
+  },
+  {
+   "kind": "line",
+   "line": "table lost it all"
+  },
+  {
+   "kind": "cont",
+   "line": "to the slots."
+  }
+ ],
+ "CeladonDinerGymGuideImFlatOutBustedText": [
+  {
+   "kind": "text",
+   "line": "Go on! Laugh at"
+  },
+  {
+   "kind": "line",
+   "line": "me!"
+  },
+  {
+   "kind": "para",
+   "line": "I'm ruined,"
+  },
+  {
+   "kind": "line",
+   "line": "utterly!"
+  },
+  {
+   "kind": "para",
+   "line": "No more slots"
+  },
+  {
+   "kind": "line",
+   "line": "for me! I walk a"
+  },
+  {
+   "kind": "cont",
+   "line": "straighter path."
+  },
+  {
+   "kind": "para",
+   "line": "Here! I've no"
+  },
+  {
+   "kind": "line",
+   "line": "further need of"
+  },
+  {
+   "kind": "cont",
+   "line": "this!"
+  }
+ ],
+ "CeladonDinerGymGuideReceivedCoinCaseText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> received"
+  },
+  {
+   "kind": "line",
+   "line": "a @"
+  },
+  {
+   "kind": "text",
+   "line": "!@"
+  }
+ ],
+ "CeladonDinerGymGuideCoinCaseNoRoomText": [
+  {
+   "kind": "text",
+   "line": "Make room for"
+  },
+  {
+   "kind": "line",
+   "line": "this!"
+  }
+ ],
+ "CeladonDinerGymGuideWinItBackText": [
+  {
+   "kind": "text",
+   "line": "I always believed"
+  },
+  {
+   "kind": "line",
+   "line": "I'd win it all"
+  },
+  {
+   "kind": "cont",
+   "line": "back someday..."
+  }
+ ]
+}

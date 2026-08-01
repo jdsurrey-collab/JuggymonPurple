@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" load_steps=43 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/back/alakazam.png" id="1_dbs2h"]
+[ext_resource type="Script" path="res://scripts/resources/evolution_entry.gd" id="2_lckij"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pokemon/front/alakazam.png" id="3_c2poo"]
+[ext_resource type="Script" path="res://scripts/resources/learnset_entry.gd" id="4_ncmva"]
+[ext_resource type="Resource" path="res://resources/moves/confusion.tres" id="5_6oaxh"]
+[ext_resource type="Resource" path="res://resources/moves/disable.tres" id="6_lvshy"]
+[ext_resource type="Resource" path="res://resources/moves/psybeam.tres" id="7_o2v67"]
+[ext_resource type="Resource" path="res://resources/moves/recover.tres" id="8_7pjcv"]
+[ext_resource type="Resource" path="res://resources/moves/psychic_m.tres" id="9_pwpmn"]
+[ext_resource type="Resource" path="res://resources/moves/reflect.tres" id="10_02hv7"]
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="11_d37i0"]
+[ext_resource type="Resource" path="res://resources/moves/teleport.tres" id="12_ydyn3"]
+[ext_resource type="Script" path="res://scripts/resources/pokemon_species.gd" id="13_6s2i0"]
+[ext_resource type="Resource" path="res://resources/moves/mega_punch.tres" id="14_mt6xr"]
+[ext_resource type="Resource" path="res://resources/moves/mega_kick.tres" id="15_nqi4i"]
+[ext_resource type="Resource" path="res://resources/moves/toxic.tres" id="16_3h6wu"]
+[ext_resource type="Resource" path="res://resources/moves/body_slam.tres" id="17_0gkj4"]
+[ext_resource type="Resource" path="res://resources/moves/take_down.tres" id="18_bsojf"]
+[ext_resource type="Resource" path="res://resources/moves/double_edge.tres" id="19_y3khi"]
+[ext_resource type="Resource" path="res://resources/moves/hyper_beam.tres" id="20_lsu1a"]
+[ext_resource type="Resource" path="res://resources/moves/submission.tres" id="21_lt72g"]
+[ext_resource type="Resource" path="res://resources/moves/counter.tres" id="22_f418r"]
+[ext_resource type="Resource" path="res://resources/moves/seismic_toss.tres" id="23_288fr"]
+[ext_resource type="Resource" path="res://resources/moves/rage.tres" id="24_h5n7s"]
+[ext_resource type="Resource" path="res://resources/moves/dig.tres" id="25_6gjty"]
+[ext_resource type="Resource" path="res://resources/moves/mimic.tres" id="26_xe8cu"]
+[ext_resource type="Resource" path="res://resources/moves/double_team.tres" id="27_xvgkg"]
+[ext_resource type="Resource" path="res://resources/moves/bide.tres" id="28_nmann"]
+[ext_resource type="Resource" path="res://resources/moves/metronome.tres" id="29_6kflu"]
+[ext_resource type="Resource" path="res://resources/moves/skull_bash.tres" id="30_2fsqf"]
+[ext_resource type="Resource" path="res://resources/moves/rest.tres" id="31_2u283"]
+[ext_resource type="Resource" path="res://resources/moves/thunder_wave.tres" id="32_8tgcy"]
+[ext_resource type="Resource" path="res://resources/moves/psywave.tres" id="33_5ffmg"]
+[ext_resource type="Resource" path="res://resources/moves/tri_attack.tres" id="34_e24j0"]
+[ext_resource type="Resource" path="res://resources/moves/substitute.tres" id="35_0nufh"]
+[ext_resource type="Resource" path="res://resources/moves/flash.tres" id="36_uvm0q"]
+
+[sub_resource type="Resource" id="Resource_umx1f"]
+script = ExtResource("4_ncmva")
+level = 16
+move = ExtResource("5_6oaxh")
+
+[sub_resource type="Resource" id="Resource_6d41o"]
+script = ExtResource("4_ncmva")
+level = 20
+move = ExtResource("6_lvshy")
+
+[sub_resource type="Resource" id="Resource_3q12d"]
+script = ExtResource("4_ncmva")
+level = 27
+move = ExtResource("7_o2v67")
+
+[sub_resource type="Resource" id="Resource_b5htp"]
+script = ExtResource("4_ncmva")
+level = 31
+move = ExtResource("8_7pjcv")
+
+[sub_resource type="Resource" id="Resource_jnnyx"]
+script = ExtResource("4_ncmva")
+level = 38
+move = ExtResource("9_pwpmn")
+
+[sub_resource type="Resource" id="Resource_87m58"]
+script = ExtResource("4_ncmva")
+level = 42
+move = ExtResource("10_02hv7")
+
+[resource]
+script = ExtResource("13_6s2i0")
+species_name = "ALAKAZAM"
+dex = 65
+index = 149
+slug = "alakazam"
+label = "Alakazam"
+category = "PSI"
+height_ft = 4
+height_in = 11
+weight_tenths_lb = 1060
+hp = 55
+attack = 50
+defense = 45
+speed = 120
+special = 135
+type1 = "PSYCHIC_TYPE"
+type2 = "PSYCHIC_TYPE"
+catch_rate = 50
+base_exp = 186
+growth_rate = "GROWTH_MEDIUM_SLOW"
+level1_moves = Array[ExtResource("11_d37i0")]([ExtResource("12_ydyn3"), ExtResource("5_6oaxh"), ExtResource("6_lvshy")])
+learnset = Array[ExtResource("4_ncmva")]([SubResource("Resource_umx1f"), SubResource("Resource_6d41o"), SubResource("Resource_3q12d"), SubResource("Resource_b5htp"), SubResource("Resource_jnnyx"), SubResource("Resource_87m58")])
+tmhm = Array[ExtResource("11_d37i0")]([ExtResource("14_mt6xr"), ExtResource("15_nqi4i"), ExtResource("16_3h6wu"), ExtResource("17_0gkj4"), ExtResource("18_bsojf"), ExtResource("19_y3khi"), ExtResource("20_lsu1a"), ExtResource("21_lt72g"), ExtResource("22_f418r"), ExtResource("23_288fr"), ExtResource("24_h5n7s"), ExtResource("25_6gjty"), ExtResource("9_pwpmn"), ExtResource("12_ydyn3"), ExtResource("26_xe8cu"), ExtResource("27_xvgkg"), ExtResource("10_02hv7"), ExtResource("28_nmann"), ExtResource("29_6kflu"), ExtResource("30_2fsqf"), ExtResource("31_2u283"), ExtResource("32_8tgcy"), ExtResource("33_5ffmg"), ExtResource("34_e24j0"), ExtResource("35_0nufh"), ExtResource("36_uvm0q")])
+evolutions = Array[ExtResource("2_lckij")]([])
+palette = "PAL_YELLOWMON"
+menu_icon = "ICON_MON"
+dex_text = Array[String](["Its brain can out-", "perform a super-", "computer.", "Its intelligence", "quotient is said", "to be 5,000"])
+front_sprite = ExtResource("3_c2poo")
+back_sprite = ExtResource("1_dbs2h")

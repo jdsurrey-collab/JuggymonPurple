@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/move_data.gd" id="1_5j43s"]
+
+[resource]
+script = ExtResource("1_5j43s")
+move_name = "THUNDERPUNCH"
+move_id = 9
+display_name = "THUNDERPUNCH"
+move_type = "ELECTRIC"
+power = 75
+accuracy = 100
+pp = 15
+effect = "PARALYZE_SIDE_EFFECT1"

@@ -1,0 +1,164 @@
+{
+ "BikeShopClerkWelcomeText": [
+  {
+   "kind": "text",
+   "line": "Ho! Welcome to"
+  },
+  {
+   "kind": "line",
+   "line": "our BIKE SHOP."
+  },
+  {
+   "kind": "para",
+   "line": "We've just the"
+  },
+  {
+   "kind": "line",
+   "line": "BIKE for you!"
+  }
+ ],
+ "BikeShopClerkDoYouLikeItText": [
+  {
+   "kind": "text",
+   "line": "A fine BIKE, eh!"
+  },
+  {
+   "kind": "line",
+   "line": "Do you want it?"
+  }
+ ],
+ "BikeShopCantAffordText": [
+  {
+   "kind": "text",
+   "line": "Alas! You cannot"
+  },
+  {
+   "kind": "line",
+   "line": "afford it!"
+  }
+ ],
+ "BikeShopClerkOhThatsAVoucherText": [
+  {
+   "kind": "text",
+   "line": "Oh, that's..."
+  },
+  {
+   "kind": "para",
+   "line": "A BIKE VOUCHER!"
+  },
+  {
+   "kind": "para",
+   "line": "Very well! Here"
+  },
+  {
+   "kind": "line",
+   "line": "you are!"
+  }
+ ],
+ "BikeShopExchangedVoucherText": [
+  {
+   "kind": "text",
+   "line": "<PLAYER> exchanged"
+  },
+  {
+   "kind": "line",
+   "line": "the BIKE VOUCHER"
+  },
+  {
+   "kind": "cont",
+   "line": "for a BICYCLE.@"
+  }
+ ],
+ "BikeShopComeAgainText": [
+  {
+   "kind": "text",
+   "line": "Do come back"
+  },
+  {
+   "kind": "line",
+   "line": "again, sometime!"
+  }
+ ],
+ "BikeShopClerkHowDoYouLikeYourBicycleText": [
+  {
+   "kind": "text",
+   "line": "How do you like"
+  },
+  {
+   "kind": "line",
+   "line": "your new BICYCLE?"
+  },
+  {
+   "kind": "para",
+   "line": "You may ride it"
+  },
+  {
+   "kind": "line",
+   "line": "on CYCLING ROAD"
+  },
+  {
+   "kind": "cont",
+   "line": "and in caves!"
+  }
+ ],
+ "BikeShopBagFullText": [
+  {
+   "kind": "text",
+   "line": "Best make room"
+  },
+  {
+   "kind": "line",
+   "line": "for this!"
+  }
+ ],
+ "BikeShopMiddleAgedWomanText": [
+  {
+   "kind": "text",
+   "line": "A plain city BIKE"
+  },
+  {
+   "kind": "line",
+   "line": "suits me well"
+  },
+  {
+   "kind": "cont",
+   "line": "enough!"
+  },
+  {
+   "kind": "para",
+   "line": "You can't fit a"
+  },
+  {
+   "kind": "line",
+   "line": "shopping basket"
+  },
+  {
+   "kind": "cont",
+   "line": "on an MTB!"
+  }
+ ],
+ "BikeShopYoungsterTheseBikesAreExpensiveText": [
+  {
+   "kind": "text",
+   "line": "These BIKEs look"
+  },
+  {
+   "kind": "line",
+   "line": "grand, but cost a"
+  },
+  {
+   "kind": "cont",
+   "line": "small fortune!"
+  }
+ ],
+ "BikeShopYoungsterCoolBikeText": [
+  {
+   "kind": "text",
+   "line": "Wow. Your BIKE is"
+  },
+  {
+   "kind": "line",
+   "line": "truly splendid!"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "Route2TradeHouseScientistText": [
+  {
+   "kind": "text",
+   "line": "A dead #MON"
+  },
+  {
+   "kind": "line",
+   "line": "cannot fight."
+  },
+  {
+   "kind": "cont",
+   "line": "But it may still"
+  },
+  {
+   "kind": "cont",
+   "line": "serve, with CUT."
+  }
+ ]
+}

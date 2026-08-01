@@ -1,0 +1,296 @@
+{
+ "ViridianForestYoungster1Text": [
+  {
+   "kind": "text",
+   "line": "I came with"
+  },
+  {
+   "kind": "line",
+   "line": "friends, once."
+  },
+  {
+   "kind": "para",
+   "line": "They hunt for"
+  },
+  {
+   "kind": "line",
+   "line": "fights now."
+  }
+ ],
+ "ViridianForestYoungster2BattleText": [
+  {
+   "kind": "text",
+   "line": "You've #MON,"
+  },
+  {
+   "kind": "line",
+   "line": "then. Come,"
+  },
+  {
+   "kind": "cont",
+   "line": "let's have at it!"
+  }
+ ],
+ "ViridianForestYoungster2EndBattleText": [
+  {
+   "kind": "text",
+   "line": "No!"
+  },
+  {
+   "kind": "line",
+   "line": "CATERPIE could"
+  },
+  {
+   "kind": "cont",
+   "line": "not endure!"
+  }
+ ],
+ "ViridianForestYoungster2AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Hush. You'll"
+  },
+  {
+   "kind": "line",
+   "line": "frighten them away."
+  }
+ ],
+ "ViridianForestYoungster3BattleText": [
+  {
+   "kind": "text",
+   "line": "One can't shirk"
+  },
+  {
+   "kind": "line",
+   "line": "duty, being a"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON trainer!"
+  }
+ ],
+ "ViridianForestYoungster3EndBattleText": [
+  {
+   "kind": "text",
+   "line": "What?"
+  },
+  {
+   "kind": "line",
+   "line": "I've nothing"
+  },
+  {
+   "kind": "cont",
+   "line": "left to send!"
+  }
+ ],
+ "ViridianForestYoungster3AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Blast. I'll go"
+  },
+  {
+   "kind": "line",
+   "line": "catch something"
+  },
+  {
+   "kind": "cont",
+   "line": "stronger."
+  }
+ ],
+ "ViridianForestYoungster4BattleText": [
+  {
+   "kind": "text",
+   "line": "Wait. What's"
+  },
+  {
+   "kind": "line",
+   "line": "your hurry?"
+  }
+ ],
+ "ViridianForestYoungster4EndBattleText": [
+  {
+   "kind": "text",
+   "line": "I"
+  },
+  {
+   "kind": "line",
+   "line": "yield. You've"
+  },
+  {
+   "kind": "cont",
+   "line": "some skill, then."
+  }
+ ],
+ "ViridianForestYoungster4AfterBattleText": [
+  {
+   "kind": "text",
+   "line": "Sometimes, you"
+  },
+  {
+   "kind": "line",
+   "line": "find things left"
+  },
+  {
+   "kind": "cont",
+   "line": "on the ground."
+  },
+  {
+   "kind": "para",
+   "line": "I'm searching"
+  },
+  {
+   "kind": "line",
+   "line": "for what I"
+  },
+  {
+   "kind": "cont",
+   "line": "lost, myself."
+  }
+ ],
+ "ViridianForestYoungster5Text": [
+  {
+   "kind": "text",
+   "line": "I've no # BALLs"
+  },
+  {
+   "kind": "line",
+   "line": "left to snare"
+  },
+  {
+   "kind": "cont",
+   "line": "#MON with."
+  },
+  {
+   "kind": "para",
+   "line": "Carry extras,"
+  },
+  {
+   "kind": "line",
+   "line": "or go home empty."
+  }
+ ],
+ "ViridianForestTrainerTips1Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "To dodge a fight,"
+  },
+  {
+   "kind": "line",
+   "line": "keep from the"
+  },
+  {
+   "kind": "cont",
+   "line": "grass. It hides"
+  },
+  {
+   "kind": "cont",
+   "line": "more than #MON."
+  }
+ ],
+ "ViridianForestUseAntidoteSignText": [
+  {
+   "kind": "text",
+   "line": "For poison, an"
+  },
+  {
+   "kind": "line",
+   "line": "ANTIDOTE. Find"
+  },
+  {
+   "kind": "cont",
+   "line": "one, if you can."
+  }
+ ],
+ "ViridianForestTrainerTips2Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Reach PROF.OAK"
+  },
+  {
+   "kind": "line",
+   "line": "by PC, to have"
+  },
+  {
+   "kind": "cont",
+   "line": "your #DEX"
+  },
+  {
+   "kind": "cont",
+   "line": "judged."
+  }
+ ],
+ "ViridianForestTrainerTips3Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Steal no #MON"
+  },
+  {
+   "kind": "line",
+   "line": "from other"
+  },
+  {
+   "kind": "cont",
+   "line": "trainers. Only"
+  },
+  {
+   "kind": "cont",
+   "line": "the wild ones"
+  },
+  {
+   "kind": "cont",
+   "line": "are fair prey."
+  }
+ ],
+ "ViridianForestTrainerTips4Text": [
+  {
+   "kind": "text",
+   "line": "TRAINER TIPS"
+  },
+  {
+   "kind": "para",
+   "line": "Break them down"
+  },
+  {
+   "kind": "line",
+   "line": "before the"
+  },
+  {
+   "kind": "cont",
+   "line": "catch."
+  },
+  {
+   "kind": "para",
+   "line": "Healthy #MON"
+  },
+  {
+   "kind": "line",
+   "line": "will flee you."
+  }
+ ],
+ "ViridianForestLeavingSignText": [
+  {
+   "kind": "text",
+   "line": "LEAVING"
+  },
+  {
+   "kind": "line",
+   "line": "VIRIDIAN FOREST"
+  },
+  {
+   "kind": "cont",
+   "line": "PEWTER CITY AHEAD"
+  }
+ ]
+}
