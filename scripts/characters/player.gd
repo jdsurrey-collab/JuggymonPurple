@@ -13,11 +13,18 @@ var facing: String = "down"
 var _map: Node = null
 var _moving: bool = false
 
-# Sprite sheet rows, matching the ROM's overworld sprite layout:
-# frames 0-1 down, 2-3 up, 4-5 right (left is the right frames mirrored).
-const FRAME_DOWN := 0
-const FRAME_UP := 2
-const FRAME_SIDE := 4
+# Sprite sheet rows -- NOT contiguous idle/walk pairs per direction. Confirmed
+# by screenshotting each row directly (see dev_shots_facing): the sheet
+# interleaves idle and walk poses as down_idle, up_idle, side_walk, down_walk,
+# up_walk, side_idle, in that order. Assuming (down: 0-1, up: 2-3, side: 4-5)
+# here was the actual cause of walking looking "chaotic" -- e.g. stepping
+# down showed frame 1, which is really the up-idle (back-of-head) pose.
+const FRAME_DOWN_IDLE := 0
+const FRAME_UP_IDLE := 1
+const FRAME_SIDE_WALK := 2
+const FRAME_DOWN_WALK := 3
+const FRAME_UP_WALK := 4
+const FRAME_SIDE_IDLE := 5
 
 @onready var _sprite: Sprite2D = $Sprite2D
 
@@ -38,7 +45,17 @@ func _process(_delta: float) -> void:
 	# to stay out of the way and not also act on movement/interact input.
 	# Same idea for the Start menu (party list/status screen): it owns its own
 	# input while open, GameState.menu_active just tells the player to freeze.
-	if Dialogue.is_active or GameState.menu_active or GameState.script_active:
+	#
+	# closed_this_frame() is load-bearing, not redundant with is_active: on
+	# the exact frame the player's press closes the final page of dialogue,
+	# Dialogue (an autoload, processed before this node each frame) has
+	# already flipped is_active to false by the time this check runs later
+	# that same frame -- so without this, the SAME still-"just pressed"
+	# interact press falls through to _try_interact() below and immediately
+	# reopens the same NPC's dialogue with no real second press from the
+	# player. See Dialogue.closed_this_frame()'s own comment for the full
+	# same-frame-autoload-cascade explanation.
+	if Dialogue.is_active or Dialogue.closed_this_frame() or GameState.menu_active or GameState.script_active:
 		return
 
 	if Input.is_action_just_pressed("start"):
@@ -96,10 +113,28 @@ func _step_to(target: Vector2i) -> void:
 		_update_frame(false)
 		# Order matters: on_player_moved() may extend the stitched world (a
 		# seamless border crossing) or otherwise change what is loaded, so it
-		# runs before a warp check that might reset the world entirely.
+		# runs before a warp check that might reset the world entirely. A
+		# triggered wild encounter also skips the warp check for this step --
+		# real map design never overlaps a warp tile with a grass/water/cave
+		# encounter zone, but if it ever did, only one should fire per step.
 		_map.on_player_moved(cell)
-		_check_warp()
+		if not _check_encounter():
+			_check_warp()
 	)
+
+
+## Rolls a wild encounter for the cell just stepped onto, if it's inside an
+## EncounterZone (see EncounterRegistry). Returns true if a battle was
+## triggered, so the caller can skip this step's warp check.
+func _check_encounter() -> bool:
+	var zone: EncounterZoneData = _map.encounter_zone_at(cell)
+	if zone == null or not zone.should_trigger():
+		return false
+	var picked: Dictionary = zone.roll_encounter()
+	if picked.is_empty():
+		return false
+	BattleLauncher.start_wild_encounter(_map, str(picked.species), int(picked.level))
+	return true
 
 
 func _check_warp() -> void:
@@ -140,13 +175,14 @@ func _facing_vector() -> Vector2i:
 
 
 func _update_frame(walking: bool) -> void:
-	var base := FRAME_DOWN
 	match facing:
-		"up": base = FRAME_UP
-		"down": base = FRAME_DOWN
-		_: base = FRAME_SIDE
-	_sprite.frame = base + (1 if walking else 0)
-	# The sheet's side pose (frames 4-5) is drawn facing LEFT, not right --
+		"up":
+			_sprite.frame = FRAME_UP_WALK if walking else FRAME_UP_IDLE
+		"down":
+			_sprite.frame = FRAME_DOWN_WALK if walking else FRAME_DOWN_IDLE
+		_:
+			_sprite.frame = FRAME_SIDE_WALK if walking else FRAME_SIDE_IDLE
+	# The sheet's side pose is drawn facing LEFT, not right --
 	# confirmed by walking the player right vs. left and comparing the actual
 	# rendered frames: the two were exact mirrors of each other (flip_h itself
 	# works correctly), but the unflipped "right" pose showed the character's

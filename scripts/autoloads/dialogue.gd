@@ -165,13 +165,33 @@ func advance() -> void:
 		_render()
 
 
+var _closed_at_frame: int = -1
+
+
 func close() -> void:
 	is_active = false
 	_pages = []
 	_page = 0
+	_closed_at_frame = Engine.get_process_frames()
 	if _box:
 		_box.hide_box()
 	finished.emit()
+
+
+## True for the exact frame Dialogue closed on. Lets a listener that gates on
+## `is_active` (player.gd's movement/interact gate) avoid reacting to the
+## SAME press that just closed it: Dialogue is an autoload and processes
+## before scene-tree nodes each frame, so by the time player.gd checks
+## `Dialogue.is_active` later in that same frame, a closing press has
+## already flipped it to false -- without this, the leftover
+## "just pressed interact" from that identical press re-triggers
+## _try_interact() immediately, reopening the same NPC's dialogue with no
+## real second press from the player (the reported "chat loops" bug). Same
+## underlying class of same-frame-autoload-cascade issue as
+## choice_menu.gd's ask() fix, mirrored: that one deferred an OPEN by a
+## frame, this one deferred a CLOSE's effect on other listeners by a frame.
+func closed_this_frame() -> bool:
+	return _closed_at_frame == Engine.get_process_frames()
 
 
 func _render() -> void:

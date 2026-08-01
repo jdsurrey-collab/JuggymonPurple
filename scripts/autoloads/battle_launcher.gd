@@ -91,6 +91,22 @@ func run_npc_battle(map: Node, player_mon: PartyMon, battle_data: NPCBattleData,
 	GameState.script_active = false
 
 
+## Wild encounter flow: builds the enemy mon (wild-tier-rolled per CLAUDE.md
+## item 5) and runs the fight. Fire-and-forget from player.gd (not awaited),
+## for the same use-after-free reason as run_npc_battle above -- this must
+## survive the scene swap fight() performs, so it can't be a suspended
+## method on a node from the scene being torn down.
+func start_wild_encounter(map: Node, species: String, level: int) -> void:
+	var player_mon: PartyMon = GameState.first_alive_mon()
+	if player_mon == null:
+		return
+	var tier: int = EncounterZoneData.roll_wild_tier()
+	var enemy_mon := PartyMon.create(species, level, tier)
+	GameState.script_active = true
+	await fight(map, player_mon, enemy_mon, false)
+	GameState.script_active = false
+
+
 func _build_enemy_mon(battle_data: NPCBattleData) -> PartyMon:
 	var first: Dictionary = battle_data.party[0]
 	var species: String = str(first.get("species", ""))

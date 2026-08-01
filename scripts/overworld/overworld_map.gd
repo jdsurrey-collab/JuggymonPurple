@@ -455,6 +455,22 @@ func warp_at(cell: Vector2i) -> Dictionary:
 	return {}
 
 
+## Wild-encounter zone at `cell` (world-space), if any -- grass/water/cave
+## placement per EncounterRegistry, gated on the cell actually being
+## walkable (a zone entry never overrides real map collision).
+func encounter_zone_at(cell: Vector2i) -> EncounterZoneData:
+	for slug in _loaded.keys():
+		if not _in_map(slug, cell):
+			continue
+		var e: Dictionary = _entry(slug)
+		var local: Vector2i = cell - e.origin
+		if not is_walkable(cell):
+			continue
+		if EncounterRegistry.is_zone_cell(slug, local):
+			return EncounterRegistry.zone_data_for(slug)
+	return null
+
+
 func sign_at(cell: Vector2i) -> Dictionary:
 	for slug in _loaded.keys():
 		var e: Dictionary = _entry(slug)

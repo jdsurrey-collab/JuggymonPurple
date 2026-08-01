@@ -28,6 +28,7 @@ MapScripts="*res://scripts/autoloads/map_scripts.gd"
 Battle="*res://scripts/battle/battle.gd"
 NPCRegistry="*res://scripts/autoloads/npc_registry.gd"
 BattleLauncher="*res://scripts/autoloads/battle_launcher.gd"
+EncounterRegistry="*res://scripts/autoloads/encounter_registry.gd"
 
 [display]
 
