@@ -228,12 +228,19 @@ func _paint_tiles(slug: String) -> void:
 
 func _spawn_npcs(slug: String) -> void:
 	var e: Dictionary = _entry(slug)
-	for n in e.data.get("npcs", []):
+	var list: Array = e.data.get("npcs", [])
+	for i in list.size():
+		var n: Dictionary = list[i]
 		var npc := NPC_SCENE.instantiate()
 		_entities.add_child(npc)
 		var world_n: Dictionary = n.duplicate()
 		world_n["x"] = int(n["x"]) + e.origin.x
 		world_n["y"] = int(n["y"]) + e.origin.y
+		# Stable id for NPCRegistry overrides (cookie-cutter dialog/battle/
+		# movement/reward data, see npc.gd) -- map slug + this NPC's own
+		# index in that map's exported npcs list, so it's the same id every
+		# time this map is loaded.
+		world_n["npc_id"] = "%s#%d" % [slug, i]
 		npc.setup(self, world_n)
 		npc.set_meta("home_map", slug)
 

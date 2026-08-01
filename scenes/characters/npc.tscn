@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bppnpc0001"]
 
-[ext_resource type="Script" path="res://scripts/characters/npc.gd" id="1_npc"]
+[ext_resource type="Script" uid="uid://3b0n21b007xs" path="res://scripts/characters/npc.gd" id="1_npc"]
 
 [node name="NPC" type="Node2D"]
 z_index = 5
@@ -9,5 +9,4 @@ script = ExtResource("1_npc")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 centered = false
 offset = Vector2(0, -1)
-hframes = 1
 vframes = 6

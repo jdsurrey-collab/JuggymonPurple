@@ -28,6 +28,8 @@ func save_game() -> bool:
 		"last_outdoor_map_slug": GameState.last_outdoor_map_slug,
 		"last_outdoor_cell": [GameState.last_outdoor_cell.x, GameState.last_outdoor_cell.y],
 		"last_outdoor_facing": GameState.last_outdoor_facing,
+		"money": GameState.money,
+		"items": GameState.items,
 		"party": [],
 	}
 
@@ -74,6 +76,8 @@ func load_game() -> Dictionary:
 	var loc: Array = data.get("last_outdoor_cell", [0, 0])
 	GameState.last_outdoor_cell = Vector2i(int(loc[0]), int(loc[1]))
 	GameState.last_outdoor_facing = str(data.get("last_outdoor_facing", "down"))
+	GameState.money = int(data.get("money", 0))
+	GameState.items = data.get("items", {})
 
 	var party: Array[PartyMon] = []
 	for m in data.get("party", []):

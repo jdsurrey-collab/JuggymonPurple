@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://de6ykgffgklf6" path="res://scripts/ui/dialogue_box.gd" id="1_dlg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_box"]
-bg_color = Color(0.95, 0.95, 0.95, 1)
+bg_color = Color(0.95, 0.95, 0.95, 0.9)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -20,27 +20,27 @@ script = ExtResource("1_dlg")
 
 [node name="Panel" type="Panel" parent="."]
 offset_left = 4.0
-offset_top = 96.0
+offset_top = 105.0
 offset_right = 156.0
 offset_bottom = 140.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_box")
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 4.0
-offset_right = 147.0
-offset_bottom = 40.0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 146.0
+offset_bottom = 29.0
 theme_override_colors/font_color = Color(0.06, 0.06, 0.06, 1)
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 9
 autowrap_mode = 2
 
 [node name="More" type="Label" parent="Panel"]
 layout_mode = 0
 offset_left = 140.0
-offset_top = 30.0
+offset_top = 21.0
 offset_right = 150.0
-offset_bottom = 42.0
+offset_bottom = 33.0
 theme_override_colors/font_color = Color(0.06, 0.06, 0.06, 1)
 theme_override_font_sizes/font_size = 8
 text = "▼"

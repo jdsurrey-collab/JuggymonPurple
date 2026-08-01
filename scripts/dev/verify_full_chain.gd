@@ -101,6 +101,14 @@ func _assert(cond: bool, label: String) -> void:
 	print(("ok: " if cond else "FAIL: ") + label)
 
 
+func _debug_state(label: String) -> void:
+	var map: Node = get_tree().current_scene
+	var slug: String = str(map.map_slug) if map and "map_slug" in map else "?"
+	var player: Node = map.get_meta("player", null) if map and map.has_meta("player") else null
+	var cell: Variant = player.cell if player else "?"
+	print("DEBUG [", label, "] scene=", _scene_name(), " map_slug=", slug, " player.cell=", cell)
+
+
 func _run() -> void:
 	await get_tree().create_timer(0.5).timeout  # let boot.tscn's own SceneFlow.start() settle first
 
@@ -141,28 +149,33 @@ func _run() -> void:
 	_shot("02_after_dream")
 
 	# --- walk downstairs, out the front door (exercises the LAST_MAP bootstrap fix) ---
-	await _walk("move_up", 1)  # to the 2F stairs warp
+	await _walk("move_up", 1)  # to the 2F stairs warp -- lands at 1F's (7,1),
+	# the OTHER end of the same stairwell tile, not the front door (hand-
+	# verified against the exported walkable grid, see verify_full_chain's
+	# own debugging history -- 2F's warp targets 1F's warp #3, not #1).
 	await get_tree().create_timer(0.3).timeout
 	_assert(_scene_name() == "Overworld", "landed on 1F after the stairs warp")
 	_shot("03_reds_house1f")
 
-	await _walk("move_right", 1)  # onto the front-door warp tile
+	await _walk("move_down", 1)   # (7,1) -> (7,2)
+	await _walk("move_left", 5)  # (7,2) -> (2,2)
+	await _walk("move_down", 5)  # (2,2) -> (2,7), the front-door warp tile
 	await get_tree().create_timer(0.3).timeout
-	var reached_pallet := GameState.last_outdoor_map_slug == "pallet_town" or _scene_name() == "Overworld"
 	_shot("04_exited_to_pallet_town")
 	var map0: Node = get_tree().current_scene
 	var player0: Node = map0.get_meta("player", null) if map0.has_meta("player") else null
-	_assert(player0 != null, "front door LAST_MAP warp resolved -- player is back on the overworld (the bootstrap bug this session found and fixed)")
+	_assert(player0 != null and map0.map_slug == "pallet_town",
+		"front door LAST_MAP warp resolved -- player is in Pallet Town (the bootstrap bug this session found and fixed)")
 	if player0:
 		print("player cell after exiting house: ", player0.cell)
 
 	# --- walk across Pallet Town to Oak's Lab (route hand-verified against
 	# the exported walkability grid: building walls block a straight
 	# diagonal, so this dog-legs around Oak's Lab's south wall) ---
-	await _walk("move_right", 4)
-	await _walk("move_down", 6)
-	await _walk("move_right", 3)
-	await _walk("move_up", 1)  # onto the Oak's Lab door warp
+	await _walk("move_right", 4)  # (5,6) -> (9,6)
+	await _walk("move_down", 6)   # (9,6) -> (9,12)
+	await _walk("move_right", 3)  # (9,12) -> (12,12)
+	await _walk("move_up", 1)     # (12,12) -> (12,11), the Oak's Lab door warp
 	await get_tree().create_timer(0.3).timeout
 	_shot("05_entered_oaks_lab")
 

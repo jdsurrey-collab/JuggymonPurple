@@ -115,10 +115,12 @@ func _try_interact() -> void:
 	var npc: Node = _map.npc_at(ahead)
 	if npc != null:
 		npc.face_towards(cell)
-		var entries: Array = _map.entries_for_text_id(npc.text_id)
-		if entries.is_empty():
-			entries = [{"kind": "text", "line": "..."}]
-		Dialogue.show_entries(entries)
+		# The NPC decides dialogue vs. battle itself (cookie-cutter Dialog/
+		# Battle/Movement/Reward data, see npc.gd) -- not awaited: a battle
+		# may tear down and rebuild this whole scene, which player.gd's own
+		# _process() should not be blocked on (GameState.script_active
+		# already gates movement input for exactly this stretch).
+		npc.interact()
 		return
 
 	var sign_data: Dictionary = _map.sign_at(ahead)

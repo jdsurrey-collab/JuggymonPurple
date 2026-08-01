@@ -48,6 +48,11 @@ var menu_active: bool = false
 ## the player move right now."
 var script_active: bool = false
 
+## The reward system's deposit target (NPCRewardData, see npc.gd) -- no bag/
+## shop UI reads `items` yet, this is just the data layer built ahead of it.
+var money: int = 0
+var items: Dictionary = {}  ## item CONST -> quantity
+
 signal map_changed(map_name: String)
 signal flag_set(flag: String)
 
@@ -76,6 +81,16 @@ func reset_for_new_game() -> void:
 	last_outdoor_cell = Vector2i(5, 6)
 	last_outdoor_facing = "down"
 	party = []
+	money = 0
+	items = {}
+
+
+func add_money(amount: int) -> void:
+	money = maxi(money + amount, 0)
+
+
+func add_item(item_name: String, quantity: int = 1) -> void:
+	items[item_name] = int(items.get(item_name, 0)) + quantity
 
 
 ## First party member that isn't permadead, or null if the whole party is

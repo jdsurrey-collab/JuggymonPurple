@@ -24,9 +24,6 @@ extends RefCounted
 const BALL_CHOICES := ["CHARMANDER'S BALL", "SQUIRTLE'S BALL", "BULBASAUR'S BALL"]
 const YES_NO := ["YES", "NO"]
 
-const BATTLE_SCENE := "res://scenes/battle/battle_scene.tscn"
-const OVERWORLD_SCENE := "res://scenes/overworld/overworld.tscn"
-
 const FLAG_BATTLED_RIVAL := "BATTLED_RIVAL_IN_OAKS_LAB"
 
 
@@ -92,11 +89,11 @@ static func _run_starter_sequence(map: Node) -> void:
 	GameState.script_active = false
 
 
-## Launches the real battle scene with the player's actual starter against a
-## freshly-created rival Eevee, waits for it to fully resolve (including the
-## player dismissing every end-of-battle message), then returns to the
-## overworld at the exact tile the player left from. Returns
-## {"result": "win"/"loss"/"run", "map": <fresh Overworld root>}.
+## Builds the rival's Eevee and runs the fight via the shared BattleLauncher
+## (extracted from this function's original inline form once npc.gd's
+## cookie-cutter trainer battles needed the exact same scene-swap dance --
+## see battle_launcher.gd). Returns {"result": "win"/"loss"/"run",
+## "map": <fresh Overworld root>}.
 static func _run_rival_battle(map: Node, player_mon: PartyMon) -> Dictionary:
 	var rival_mon := PartyMon.create("EEVEE", 5, 5)
 	# Lab-only special case (CLAUDE.md item 6 / ReadTrainer's .FinishUp gate,
@@ -109,39 +106,7 @@ static func _run_rival_battle(map: Node, player_mon: PartyMon) -> Dictionary:
 		if str(rival_mon.moves[i].get("move_name", "")) == "SAND_ATTACK":
 			rival_mon.moves.remove_at(i)
 
-	var player_node: Node = map.get_meta("player", null)
-	# Oak's Lab is a single indoor map, always loaded at world-cell origin
-	# ZERO (see overworld_map.gd's load_map/warp_to) -- so the player's world
-	# cell IS this map's local cell already, no origin subtraction needed.
-	var origin_cell: Vector2i = player_node.cell if player_node else Vector2i.ZERO
-	var origin_facing: String = player_node.facing if player_node else "down"
-
-	var tree: SceneTree = map.get_tree()
-	tree.change_scene_to_file(BATTLE_SCENE)
-	await tree.process_frame
-	await tree.process_frame
-	var scene: Node = tree.current_scene
-	scene.setup(player_mon, rival_mon, true)
-
-	var result: String = await Battle.battle_ended
-	# Battle.battle_ended fires the instant the LOGIC ends, but the scene
-	# still has queued end-of-battle messages ("X fainted!"/etc.) the player
-	# clicks through -- battle_scene.gd's own _advance_message_queue sets the
-	# bottom label to "..." only once that queue is fully drained AND the
-	# battle is no longer active, which is the real "player is done reading
-	# this" signal (no fixed-delay guess).
-	while scene._bottom_label.text != "...":
-		await tree.process_frame
-
-	GameState.pending_spawn = origin_cell
-	GameState.pending_facing = origin_facing
-	tree.change_scene_to_file(OVERWORLD_SCENE)
-	await tree.process_frame
-	await tree.process_frame
-	var fresh_map: Node = tree.current_scene
-	fresh_map.load_map("oaks_lab")
-
-	return {"result": result, "map": fresh_map}
+	return await BattleLauncher.fight(map, player_mon, rival_mon, true)
 
 
 ## HealParty-equivalent: restores HP/status for anyone who merely fainted.

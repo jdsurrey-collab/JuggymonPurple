@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bppplayer001"]
 
-[ext_resource type="Script" path="res://scripts/characters/player.gd" id="1_player"]
-[ext_resource type="Texture2D" path="res://assets/sprites/characters/red.png" id="2_redtex"]
+[ext_resource type="Script" uid="uid://bjjhmqw2frxqh" path="res://scripts/characters/player.gd" id="1_player"]
+[ext_resource type="Texture2D" uid="uid://bume1444bqon2" path="res://assets/sprites/characters/red.png" id="2_redtex"]
 
 [node name="Player" type="Node2D"]
 z_index = 10
@@ -11,7 +11,6 @@ script = ExtResource("1_player")
 texture = ExtResource("2_redtex")
 centered = false
 offset = Vector2(0, -1)
-hframes = 1
 vframes = 6
 
 [node name="Camera2D" type="Camera2D" parent="."]

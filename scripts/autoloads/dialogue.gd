@@ -1,20 +1,35 @@
 extends Node
-## Dialogue playback, ported from the ROM's text macro system.
+## Dialogue playback, ported from the ROM's text macro system -- reworked for
+## Godot's dialogue box, which has no GBC hardware cap (the ROM's box was a
+## fixed 2-line, ~18-character-per-line tile grid; this one is a real
+## proportional-font Control that can hold far more).
 ##
-## The source text uses text/line/cont/para/next macros. Their meaning:
+## The source text uses text/line/cont/para/next macros. Their meaning, as
+## authored for the ROM's tiny box:
 ##   text  - first line of a page
 ##   line  - the second line of the same page
 ##   cont  - continues, scrolling within the same box
 ##   next  - another line in the same page
 ##   para  - START A NEW PAGE (this is the only real page break)
 ##
-## So pages are split on `para`, and within a page the lines are shown two at a
-## time, which is what the original 2-line text box does.
+## Those old fixed line breaks aren't meaningful pixel-for-pixel in the new
+## box, so entries within one `para` group are joined into a single
+## continuous string and left to the Label's own word-autowrap to re-flow at
+## the new width. `para` is still always a hard page break -- it preserves
+## the original authors' intentional pacing/dramatic beats -- but a
+## paragraph LONGER than the new box's capacity is further split by a
+## character budget, at the nearest earlier whitespace so words never get
+## cut mid-word.
 
 signal started
 signal finished
 
-const LINES_PER_PAGE := 2
+## Tuned from the default dynamic font's real measured metrics
+## (scripts/dev/measure_font.gd) against dialogue_box.tscn's actual label
+## width/height (26px tall content area @ font_size 9 / ~12.5px line height
+## = ~2 lines, ~32-34 chars/line -- halved from an earlier ~4-5 line design
+## per user feedback that the taller box covered too much of the screen).
+const MAX_CHARS_PER_PAGE := 62
 
 var is_active: bool = false
 
@@ -27,17 +42,26 @@ func register_box(box: Node) -> void:
 	_box = box
 
 
-## Advancing on "interact" lives HERE, not in per-scene glue code. It used to
-## only be wired up in player.gd, which only exists in the overworld scene --
-## so any dialogue shown from a scene with no player node (Oak's speech, the
-## naming flow) could show its first page and then never advance again,
-## because nothing was ever calling advance(). Owning it centrally means every
-## scene that shows dialogue gets working "press to continue" for free.
+## Advancing on "interact" lives HERE, not in per-scene glue code -- see the
+## original rationale below. Extended for the typewriter effect: the FIRST
+## press while a page is still typing out just fast-forwards it to fully
+## revealed (a second, separate press then advances) -- the box owns the
+## typing animation, so it's asked rather than duplicating that state here.
+##
+## This used to only be wired up in player.gd, which only exists in the
+## overworld scene -- so any dialogue shown from a scene with no player node
+## (Oak's speech, the naming flow) could show its first page and then never
+## advance again, because nothing was ever calling advance(). Owning it
+## centrally means every scene that shows dialogue gets working "press to
+## continue" for free.
 func _process(_delta: float) -> void:
 	if not is_active:
 		return
 	if Input.is_action_just_pressed("interact") or Input.is_action_just_pressed("cancel"):
-		advance()
+		if _box and _box.is_typing():
+			_box.skip_typing()
+		else:
+			advance()
 
 
 func load_text_file(map_slug: String) -> Dictionary:
@@ -50,27 +74,49 @@ func load_text_file(map_slug: String) -> Dictionary:
 	return parsed if parsed is Dictionary else {}
 
 
-## Turn the macro entries into pages of at most LINES_PER_PAGE lines.
+## Groups entries into paragraphs on `para` boundaries (a hard break, always
+## honored), joins each paragraph's lines into one continuous string, then
+## splits any paragraph longer than MAX_CHARS_PER_PAGE into further pages at
+## the nearest earlier whitespace. Returns an Array of page STRINGS (not
+## arrays of pre-broken lines, like the old ROM-box-shaped version) --
+## dialogue_box.tscn's autowrap does the actual line-wrapping.
 func build_pages(entries: Array) -> Array:
-	var pages: Array = []
+	var paragraphs: Array = []
 	var current: Array = []
 	for e in entries:
 		var kind: String = e.get("kind", "text")
 		var line: String = e.get("line", "")
-		if line.is_empty():
-			continue
-		line = expand(line)
-		# `para` is a hard page break; everything else just accumulates.
 		if kind == "para" and not current.is_empty():
-			pages.append(current)
+			paragraphs.append(current)
 			current = []
-		current.append(line)
-		if current.size() >= LINES_PER_PAGE:
-			pages.append(current)
-			current = []
+		if not line.is_empty():
+			current.append(expand(line))
 	if not current.is_empty():
-		pages.append(current)
+		paragraphs.append(current)
+
+	var pages: Array = []
+	for para_lines in paragraphs:
+		var text: String = " ".join(para_lines)
+		pages.append_array(_split_to_budget(text))
 	return pages
+
+
+## Splits `text` into chunks no longer than MAX_CHARS_PER_PAGE, breaking at
+## the last whitespace at or before the budget so words are never cut
+## mid-word. Falls back to a hard cut only if a single word alone exceeds the
+## whole budget (pathological case, but must still terminate).
+func _split_to_budget(text: String) -> Array:
+	var out: Array = []
+	var remaining := text
+	while remaining.length() > MAX_CHARS_PER_PAGE:
+		var cut: int = remaining.rfind(" ", MAX_CHARS_PER_PAGE)
+		if cut <= 0:
+			cut = MAX_CHARS_PER_PAGE
+		out.append(remaining.substr(0, cut))
+		remaining = remaining.substr(cut).strip_edges()
+	if not remaining.is_empty():
+		out.append(remaining)
+	return out
 
 
 ## The ROM's charmap encodes some words as single control characters to save
@@ -130,4 +176,4 @@ func close() -> void:
 
 func _render() -> void:
 	if _box:
-		_box.show_lines(_pages[_page], _page < _pages.size() - 1)
+		_box.show_page(_pages[_page], _page < _pages.size() - 1)
