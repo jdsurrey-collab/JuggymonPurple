@@ -1,11 +1,13 @@
 extends Node
 ## DEV ONLY: structural pass over every generated encounter-zone scene --
-## loads each map, confirms its zone container instanced, its rectangle
-## matches the map's real dimensions, and every slot resolves a real
-## PokemonSpecies with a sane level. Doesn't walk around triggering a live
-## encounter on all 57 (too slow) -- Route 1 and Viridian Forest already
-## proved the live trigger path works; this is the fast structural check for
-## everything else.
+## loads each map, confirms its zone container instanced, every one of its
+## CollisionShape2D rectangles is sane and within the map's bounds (a zone is
+## expected to be split into several rectangles as it's hand-tuned to match
+## real grass/water shape, not one rectangle spanning the whole map -- see
+## encounter_zone.gd), and every slot resolves a real PokemonSpecies with a
+## sane level. Doesn't walk around triggering a live encounter on all 57 (too
+## slow) -- Route 1 and Viridian Forest already proved the live trigger path
+## works; this is the fast structural check for everything else.
 
 const SLUGS := [
 	"route1", "route2", "viridian_forest", "route22", "route3",
@@ -65,9 +67,24 @@ func _run() -> void:
 			bad.append("%s: expected 1 zone, got %d" % [slug, zones.size()])
 			continue
 
-		var rect: Rect2i = zones[0].get_cell_rect()
-		if rect.size.x != expected_w or rect.size.y != expected_h:
-			bad.append("%s: zone rect %s doesn't match map dims %dx%d" % [slug, rect, expected_w, expected_h])
+		# A zone is composed of however many CollisionShape2D rectangles it
+		# takes to cover its map's real grass/water shape -- Route 1 is the
+		# first to be hand-split into several (see encounter_zone.gd's own
+		# header on why contains_cell() checks every one of them, not just the
+		# first), and every other map is expected to end up the same way as
+		# it gets tuned. So there's no single "matches the full map" shape to
+		# assert anymore -- just that every shape is sane (positive size) and
+		# actually sits within the map's own bounds, not off in space.
+		var rects: Array = zones[0].get_cell_rects()
+		if rects.is_empty():
+			bad.append("%s: zone has no CollisionShape2D rectangles at all" % slug)
+		for r in rects:
+			var rect: Rect2i = r
+			if rect.size.x <= 0 or rect.size.y <= 0:
+				bad.append("%s: degenerate zone rect %s" % [slug, rect])
+			var map_rect := Rect2i(0, 0, expected_w, expected_h)
+			if not map_rect.encloses(rect):
+				bad.append("%s: zone rect %s falls outside map bounds %dx%d" % [slug, rect, expected_w, expected_h])
 
 		var data: EncounterZoneData = zones[0].data
 		if data == null or data.slots.size() != 10:

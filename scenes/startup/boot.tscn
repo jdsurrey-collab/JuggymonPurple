@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://bppboot00001"]
+[gd_scene load_steps=2 format=3 uid="uid://e1ahpdp2y7tw"]
 
 [ext_resource type="Script" path="res://scripts/startup/boot.gd" id="1_boot"]
 

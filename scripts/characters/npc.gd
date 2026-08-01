@@ -1,3 +1,4 @@
+@tool
 extends Node2D
 ## An overworld NPC. Two ways to end up configured:
 ##
