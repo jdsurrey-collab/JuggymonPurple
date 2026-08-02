@@ -55,13 +55,7 @@ func _advance_until(check: Callable, max_taps: int = 60) -> bool:
 	return check.call()
 
 
-var _hold_until_seq := 0
-
-
 func _hold_until(action: String, check: Callable, timeout_s: float = 8.0) -> bool:
-	_hold_until_seq += 1
-	var my_id := _hold_until_seq
-	print("DEBUG _hold_until #", my_id, " START action=", action, " timeout=", timeout_s, " frame=", Engine.get_process_frames())
 	var t := 0.0
 	while not check.call() and t < timeout_s:
 		Input.action_press(action)
@@ -70,9 +64,7 @@ func _hold_until(action: String, check: Callable, timeout_s: float = 8.0) -> boo
 		await get_tree().process_frame
 		await get_tree().process_frame
 		t += 3.0 * get_process_delta_time()
-	var result: bool = check.call()
-	print("DEBUG _hold_until #", my_id, " END result=", result, " t=", t, " frame=", Engine.get_process_frames())
-	return result
+	return check.call()
 
 
 ## Walks the player `steps` cells in `dir` (a move_* input action), one real
@@ -80,7 +72,6 @@ func _hold_until(action: String, check: Callable, timeout_s: float = 8.0) -> boo
 ## not a teleport. Stops early (with a printed warning) if a step doesn't
 ## complete in time, e.g. an unexpected obstacle.
 func _walk(dir: String, steps: int, timeout_per_step: float = 2.0) -> void:
-	print("DEBUG _walk START dir=", dir, " steps=", steps, " frame=", Engine.get_process_frames())
 	for _i in steps:
 		var map: Node = get_tree().current_scene
 		var player: Node = map.get_meta("player", null) if map and map.has_meta("player") else null

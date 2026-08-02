@@ -338,6 +338,12 @@ func interact() -> void:
 		# real bug the first time it was tried as a method on this node.
 		BattleLauncher.run_npc_battle(_map, player_mon, battle_data, reward_data, _defeated_flag())
 		return
+	if GameData.is_mart_clerk(text_id):
+		# Not awaited, matching run_npc_battle just above -- Mart owns
+		# GameState.script_active itself for the whole visit, which is what
+		# actually gates the player, so nothing here needs to block on it.
+		Mart.open(text_id)
+		return
 	_speak_dialogue()
 
 

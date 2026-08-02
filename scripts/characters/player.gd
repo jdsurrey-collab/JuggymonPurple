@@ -146,7 +146,6 @@ func _check_warp() -> void:
 
 
 func _try_interact() -> void:
-	print("DEBUG _try_interact() called, frame=", Engine.get_process_frames(), " cell=", cell, " facing=", facing)
 	var ahead: Vector2i = cell + _facing_vector()
 
 	var npc: Node = _map.npc_at(ahead)

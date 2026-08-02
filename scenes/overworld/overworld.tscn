@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bppoverworld1"]
+[gd_scene load_steps=6 format=3 uid="uid://bppoverworld1"]
 
 [ext_resource type="Script" uid="uid://c0co2g308akuy" path="res://scripts/overworld/overworld_map.gd" id="1_map"]
 [ext_resource type="PackedScene" uid="uid://bppdlg0001" path="res://scenes/ui/dialogue_box.tscn" id="2_dlg"]
 [ext_resource type="PackedScene" path="res://scenes/ui/party_menu_box.tscn" id="3_party"]
 [ext_resource type="PackedScene" path="res://scenes/ui/choice_menu_box.tscn" id="4_choice"]
+[ext_resource type="PackedScene" path="res://scenes/ui/mart_box.tscn" id="5_mart"]
 
 [node name="Overworld" type="Node2D"]
 script = ExtResource("1_map")
@@ -19,3 +20,5 @@ script = ExtResource("1_map")
 [node name="PartyMenuBox" parent="." instance=ExtResource("3_party")]
 
 [node name="ChoiceMenuBox" parent="." instance=ExtResource("4_choice")]
+
+[node name="MartBox" parent="." instance=ExtResource("5_mart")]

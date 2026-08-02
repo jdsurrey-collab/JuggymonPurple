@@ -33,12 +33,10 @@ static func check_step(_map: Node, _world_cell: Vector2i) -> void:
 
 
 static func _play_dream() -> void:
-	print("DEBUG cultist dream: _play_dream() starting, setting script_active=true")
 	GameState.script_active = true
 
 	var data: Dictionary = GameData.cultist_dream
 	await _say(data.get("intro", []))
-	print("DEBUG cultist dream: intro done")
 
 	var votes: Array = [0, 0, 0]
 	var last_answer := 0
@@ -47,13 +45,11 @@ static func _play_dream() -> void:
 		var choices: Array = q.get("choices", [])
 		last_answer = await ChoiceMenu.ask(choices)
 		votes[last_answer] += 1
-		print("DEBUG cultist dream: question answered, votes=", votes)
 
 	var stone_index := _determine_stone(votes, last_answer)
 	GameState.cultist_stone = STONES[stone_index]
 
 	await _say(data.get("outro", []))
-	print("DEBUG cultist dream: outro done, setting script_active=false")
 
 	GameState.script_active = false
 

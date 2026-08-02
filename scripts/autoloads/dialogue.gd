@@ -148,7 +148,6 @@ func expand(line: String) -> String:
 func show_entries(entries: Array) -> void:
 	if entries.is_empty():
 		return
-	print("DEBUG Dialogue.show_entries: ", entries.size(), " entries, frame=", Engine.get_process_frames(), " content=", entries)
 	_pages = build_pages(entries)
 	_page = 0
 	is_active = true
@@ -160,7 +159,6 @@ func advance() -> void:
 	if not is_active:
 		return
 	_page += 1
-	print("DEBUG Dialogue.advance: now on page ", _page, "/", _pages.size(), " frame=", Engine.get_process_frames())
 	if _page >= _pages.size():
 		close()
 	else:
@@ -171,7 +169,6 @@ var _closed_at_frame: int = -1
 
 
 func close() -> void:
-	print("DEBUG Dialogue.close() frame=", Engine.get_process_frames())
 	is_active = false
 	_pages = []
 	_page = 0

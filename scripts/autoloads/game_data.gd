@@ -31,6 +31,7 @@ const ITEMS_DIR := "res://resources/items/"
 
 var map_index: Dictionary = {}   ## MAP_CONST -> exported map json slug
 var cultist_dream: Dictionary = {}
+var marts: Dictionary = {}       ## TEXT_ clerk id -> Array[String] item names, real ROM inventories
 
 ## Every tileset that counts as OUTDOOR for LAST_MAP purposes (see
 ## GameState.last_outdoor_*). Every other tileset is a building interior.
@@ -61,9 +62,10 @@ func _ready() -> void:
 
 	map_index = _load("res://data/map_index.json")
 	cultist_dream = _load("res://data/cultist_dream.json")
+	marts = _load("res://data/marts.json")
 
-	print("GameData: %d species, %d moves, %d items, %d trainer classes, %d matchups, %d maps"
-		% [species.size(), moves.size(), items.size(), trainers.size(), _chart.size(), map_index.size()])
+	print("GameData: %d species, %d moves, %d items, %d marts, %d trainer classes, %d matchups, %d maps"
+		% [species.size(), moves.size(), items.size(), marts.size(), trainers.size(), _chart.size(), map_index.size()])
 
 
 func map_slug_for(map_const: String) -> String:
@@ -128,6 +130,14 @@ func get_move(name: String) -> MoveData:
 
 func get_item(name: String) -> ItemData:
 	return items.get(name)
+
+
+func is_mart_clerk(text_id: String) -> bool:
+	return marts.has(text_id)
+
+
+func mart_items(text_id: String) -> Array:
+	return marts.get(text_id, [])
 
 
 ## Gen 1 stacks BOTH of the defender's types multiplicatively. Passing the same
