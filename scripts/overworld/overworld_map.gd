@@ -160,6 +160,17 @@ func _stitch(slug: String, origin: Vector2i) -> bool:
 		_maps.add_child(scene)
 		scene.position = Vector2(origin) * CELL_PX
 		_loaded[slug]["scene"] = scene
+		# Scene dimensions supersede the JSON's, same principle as tiles/
+		# collision/warps/signs/connections -- a hand-resized or brand-new
+		# hand-authored map (Viridian Forest's 2x-bigger reimagined layout is
+		# the first real case of this) needs its OWN size here. Without this,
+		# _in_map()'s bounds check keeps using the JSON's original (smaller)
+		# cells_w/h, and every cell past that stale boundary silently reads as
+		# "not part of any loaded map" -- is_walkable() returns false there
+		# even though the scene's own Collision layer is correct, which is
+		# exactly the bug a live BFS-reachability test caught: it stalled
+		# partway through the map instead of reaching the far side.
+		_loaded[slug]["size"] = Vector2i(scene.cells_w, scene.cells_h)
 	else:
 		_ensure_tileset(data["tileset"])
 		_paint_tiles(slug)

@@ -1,16 +1,24 @@
-[gd_scene load_steps=10 format=3 uid="uid://c4rxk8ff0tp78"]
+[gd_scene load_steps=28 format=3 uid="uid://c4rxk8ff0tp78"]
 
 [ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
 [ext_resource type="Texture2D" uid="uid://b0d2fv5hexv3x" path="res://assets/map_previews/pallet_town.png" id="2_backdrop"]
 [ext_resource type="PackedScene" uid="uid://bppnpc0001" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
 [ext_resource type="Script" uid="uid://6dw5ea50mk5u" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+[ext_resource type="Script" uid="uid://dxx06x3o83if0" path="res://scripts/resources/npc_battle_data.gd" id="5_104mn"]
 [ext_resource type="Script" uid="uid://bpql6rr43d6it" path="res://scripts/resources/npc_movement_data.gd" id="5_wg6ed"]
+[ext_resource type="Script" uid="uid://dcw1hpvuqh8o1" path="res://scripts/resources/npc_reward_data.gd" id="7_i5jgr"]
 
 [sub_resource type="Resource" id="Dialog_0"]
 script = ExtResource("4_dialog_script")
-lines = Array[String](["OAK: Stop! Don't- -don't go out!@"])
+lines = Array[String](["OAK: Just one second bobby"])
 one_time = false
 repeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_eqsua"]
+script = ExtResource("5_104mn")
+party = Array[Dictionary]([])
+challenge_lines = Array[String]([])
+defeat_lines = Array[String]([])
 
 [sub_resource type="Resource" id="Resource_2g7de"]
 script = ExtResource("5_wg6ed")
@@ -20,17 +28,112 @@ step_interval_sec = 1.0
 dialogue_trigger_step = -1
 metadata/_custom_type_script = "uid://bpql6rr43d6it"
 
+[sub_resource type="Resource" id="Resource_pbbt6"]
+script = ExtResource("7_i5jgr")
+money = 0
+items = Array[Dictionary]([])
+flag_on_complete = ""
+
 [sub_resource type="Resource" id="Dialog_1"]
 script = ExtResource("4_dialog_script")
-lines = Array[String](["I felt the ground shake last night. I am worried papa wont come back home..."])
+lines = Array[String](["Lilly: I felt the ground shake last night. I am worried papa wont come back home..."])
 one_time = false
 repeat_lines = Array[String]([])
 
-[sub_resource type="Resource" id="Dialog_2"]
+[sub_resource type="Resource" id="Resource_1mjb8"]
+script = ExtResource("5_104mn")
+party = Array[Dictionary]([])
+challenge_lines = Array[String]([])
+defeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_wg6ed"]
+script = ExtResource("5_wg6ed")
+patrol_steps = Array[String](["right", "right", "up", "down", "left", "left"])
+loop = true
+step_interval_sec = 5.0
+dialogue_trigger_step = 4
+metadata/_custom_type_script = "uid://bpql6rr43d6it"
+
+[sub_resource type="Resource" id="Resource_vytjy"]
+script = ExtResource("7_i5jgr")
+money = 0
+items = Array[Dictionary]([])
+flag_on_complete = ""
+
+[sub_resource type="Resource" id="Resource_rdwil"]
 script = ExtResource("4_dialog_script")
-lines = Array[String](["The PC's a crypt, in its own way.", "Box after box of #MON that never came home again."])
+lines = Array[String](["Margot: It sure was cold last night - the fire went out after the rumble."])
 one_time = false
 repeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_wx670"]
+script = ExtResource("5_104mn")
+party = Array[Dictionary]([])
+challenge_lines = Array[String]([])
+defeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_va3cs"]
+script = ExtResource("5_wg6ed")
+patrol_steps = Array[String]([])
+loop = true
+step_interval_sec = 1.0
+dialogue_trigger_step = -1
+
+[sub_resource type="Resource" id="Resource_u8m38"]
+script = ExtResource("7_i5jgr")
+money = 0
+items = Array[Dictionary]([])
+flag_on_complete = ""
+
+[sub_resource type="Resource" id="Resource_104mn"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["I hope one day we can find peace. Im so, so tired <player>"])
+one_time = false
+repeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_i5jgr"]
+script = ExtResource("5_104mn")
+party = Array[Dictionary]([])
+challenge_lines = Array[String]([])
+defeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_g0e0k"]
+script = ExtResource("5_wg6ed")
+patrol_steps = Array[String]([])
+loop = true
+step_interval_sec = 1.0
+dialogue_trigger_step = -1
+
+[sub_resource type="Resource" id="Resource_o33ov"]
+script = ExtResource("7_i5jgr")
+money = 0
+items = Array[Dictionary]([])
+flag_on_complete = ""
+
+[sub_resource type="Resource" id="Dialog_2"]
+script = ExtResource("4_dialog_script")
+lines = Array[String](["Erik: Throw all of these beasts into the vaul.", "I hope to never see them again."])
+one_time = false
+repeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_0johi"]
+script = ExtResource("5_104mn")
+party = Array[Dictionary]([])
+challenge_lines = Array[String]([])
+defeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_jqsoa"]
+script = ExtResource("5_wg6ed")
+patrol_steps = Array[String]([])
+loop = true
+step_interval_sec = 1.0
+dialogue_trigger_step = -1
+
+[sub_resource type="Resource" id="Resource_uqob8"]
+script = ExtResource("7_i5jgr")
+money = 0
+items = Array[Dictionary]([])
+flag_on_complete = ""
 
 [node name="Pallet_townNpcZone" type="Node2D"]
 script = ExtResource("1_container")
@@ -40,23 +143,51 @@ position = Vector2(160, 144)
 texture = ExtResource("2_backdrop")
 
 [node name="Oak_0" parent="." instance=ExtResource("3_npc_scene")]
-position = Vector2(132, 106)
+position = Vector2(127, 258)
+reset_to_blank_npc = null
 sprite_name = "oak"
 text_id = "TEXT_PALLETTOWN_OAK"
 npc_id = "pallet_town#0"
 dialog_data = SubResource("Dialog_0")
+battle_data = SubResource("Resource_eqsua")
 movement_data = SubResource("Resource_2g7de")
+reward_data = SubResource("Resource_pbbt6")
 
 [node name="Girl_1" parent="." instance=ExtResource("3_npc_scene")]
-position = Vector2(64, 122)
+position = Vector2(43, 121)
+reset_to_blank_npc = null
 sprite_name = "girl"
 text_id = "TEXT_PALLETTOWN_GIRL"
 npc_id = "pallet_town#1"
 dialog_data = SubResource("Dialog_1")
+battle_data = SubResource("Resource_1mjb8")
+movement_data = SubResource("Resource_wg6ed")
+reward_data = SubResource("Resource_vytjy")
+
+[node name="Girl_2" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(161, 112)
+sprite_name = "girl"
+dialog_data = SubResource("Resource_rdwil")
+battle_data = SubResource("Resource_wx670")
+movement_data = SubResource("Resource_va3cs")
+reward_data = SubResource("Resource_u8m38")
+
+[node name="Grandpa" parent="." instance=ExtResource("3_npc_scene")]
+position = Vector2(88, 208)
+reset_to_blank_npc = false
+sprite_name = "gramps"
+dialog_data = SubResource("Resource_104mn")
+battle_data = SubResource("Resource_i5jgr")
+movement_data = SubResource("Resource_g0e0k")
+reward_data = SubResource("Resource_o33ov")
 
 [node name="Fisher_2" parent="." instance=ExtResource("3_npc_scene")]
 position = Vector2(176, 224)
+reset_to_blank_npc = null
 sprite_name = "fisher"
 text_id = "TEXT_PALLETTOWN_FISHER"
 npc_id = "pallet_town#2"
 dialog_data = SubResource("Dialog_2")
+battle_data = SubResource("Resource_0johi")
+movement_data = SubResource("Resource_jqsoa")
+reward_data = SubResource("Resource_uqob8")

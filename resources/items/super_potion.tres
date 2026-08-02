@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_ajvmb"]
+
+[resource]
+script = ExtResource("1_ajvmb")
+item_name = "SUPER_POTION"
+label = "SUPER POTION"
+price = 700
+is_key_item = false
+effect = "HEAL"
+heal_amount = 50
+cure_status = ""
+usable_field = true

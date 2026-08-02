@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_7bvm3"]
+
+[resource]
+script = ExtResource("1_7bvm3")
+item_name = "AWAKENING"
+label = "AWAKENING"
+price = 200
+is_key_item = false
+effect = "CURE_STATUS"
+heal_amount = 0
+cure_status = "SLP"
+usable_field = true

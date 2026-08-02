@@ -76,6 +76,42 @@ func show_status_page(mon: PartyMon) -> void:
 	_main_label.text = "\n".join(lines)
 
 
+func show_bag_page(item_names: Array, selected: int) -> void:
+	_start_panel.hide()
+	_main_panel.show()
+	var lines: Array = []
+	lines.append("MONEY: $%d" % GameState.money)
+	if item_names.is_empty():
+		lines.append("No items!")
+	for i in item_names.size():
+		var item: ItemData = GameData.get_item(str(item_names[i]))
+		var cursor: String = "▶ " if i == selected else "  "
+		var qty: int = int(GameState.items.get(item_names[i], 0))
+		var label: String = item.label if item else str(item_names[i])
+		lines.append("%s%s  x%d" % [cursor, label, qty])
+	_main_label.text = "\n".join(lines)
+
+
+func show_item_target_page(party: Array, selected: int, item_label: String) -> void:
+	_start_panel.hide()
+	_main_panel.show()
+	var lines: Array = []
+	lines.append("Use %s on who?" % item_label)
+	if party.is_empty():
+		lines.append("No POKéMON!")
+		_main_label.text = "\n".join(lines)
+		return
+	for i in party.size():
+		var mon: PartyMon = party[i]
+		var cursor: String = "▶ " if i == selected else "  "
+		lines.append("%s%s  Lv%d" % [cursor, mon.display_name(), mon.level])
+		if mon.is_dead:
+			lines.append("   %s  RIP" % _bar(0.0))
+		else:
+			lines.append("   %s  %d/%d" % [_bar(mon.hp_fraction()), mon.current_hp, mon.max_hp()])
+	_main_label.text = "\n".join(lines)
+
+
 func _bar(fraction: float) -> String:
 	var filled: int = int(round(clampf(fraction, 0.0, 1.0) * BAR_WIDTH))
 	return "█".repeat(filled) + "·".repeat(BAR_WIDTH - filled)

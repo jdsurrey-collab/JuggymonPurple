@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_y7k3x"]
+
+[resource]
+script = ExtResource("1_y7k3x")
+item_name = "POKE_FLUTE"
+label = "POKé FLUTE"
+price = 0
+is_key_item = true
+effect = ""
+heal_amount = 0
+cure_status = ""
+usable_field = false

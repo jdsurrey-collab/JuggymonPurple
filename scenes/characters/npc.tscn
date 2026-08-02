@@ -1,10 +1,44 @@
-[gd_scene load_steps=2 format=3 uid="uid://bppnpc0001"]
+[gd_scene load_steps=10 format=3 uid="uid://bppnpc0001"]
 
 [ext_resource type="Script" uid="uid://3b0n21b007xs" path="res://scripts/characters/npc.gd" id="1_npc"]
+[ext_resource type="Script" uid="uid://6dw5ea50mk5u" path="res://scripts/resources/npc_dialog_data.gd" id="2_urpkq"]
+[ext_resource type="Script" uid="uid://dxx06x3o83if0" path="res://scripts/resources/npc_battle_data.gd" id="3_urmqq"]
+[ext_resource type="Script" uid="uid://bpql6rr43d6it" path="res://scripts/resources/npc_movement_data.gd" id="4_m3kmy"]
+[ext_resource type="Script" uid="uid://dcw1hpvuqh8o1" path="res://scripts/resources/npc_reward_data.gd" id="5_l1bgn"]
+
+[sub_resource type="Resource" id="Resource_thqvo"]
+script = ExtResource("2_urpkq")
+lines = Array[String]([])
+one_time = false
+repeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_brs55"]
+script = ExtResource("3_urmqq")
+party = Array[Dictionary]([])
+challenge_lines = Array[String]([])
+defeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_cr2nu"]
+script = ExtResource("4_m3kmy")
+patrol_steps = Array[String]([])
+loop = true
+step_interval_sec = 1.0
+dialogue_trigger_step = -1
+
+[sub_resource type="Resource" id="Resource_8t0fs"]
+script = ExtResource("5_l1bgn")
+money = 0
+items = Array[Dictionary]([])
+flag_on_complete = ""
 
 [node name="NPC" type="Node2D"]
 z_index = 5
 script = ExtResource("1_npc")
+reset_to_blank_npc = null
+dialog_data = SubResource("Resource_thqvo")
+battle_data = SubResource("Resource_brs55")
+movement_data = SubResource("Resource_cr2nu")
+reward_data = SubResource("Resource_8t0fs")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 centered = false

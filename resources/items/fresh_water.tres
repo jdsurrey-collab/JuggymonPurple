@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_51pvq"]
+
+[resource]
+script = ExtResource("1_51pvq")
+item_name = "FRESH_WATER"
+label = "FRESH WATER"
+price = 200
+is_key_item = false
+effect = "HEAL"
+heal_amount = 50
+cure_status = ""
+usable_field = true

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_k1dq0"]
+
+[resource]
+script = ExtResource("1_k1dq0")
+item_name = "GOLD_TEETH"
+label = "GOLD TEETH"
+price = 0
+is_key_item = true
+effect = ""
+heal_amount = 0
+cure_status = ""
+usable_field = false

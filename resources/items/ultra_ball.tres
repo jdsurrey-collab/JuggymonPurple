@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_qw8i1"]
+
+[resource]
+script = ExtResource("1_qw8i1")
+item_name = "ULTRA_BALL"
+label = "ULTRA BALL"
+price = 1200
+is_key_item = false
+effect = ""
+heal_amount = 0
+cure_status = ""
+usable_field = false

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_u352e"]
+
+[resource]
+script = ExtResource("1_u352e")
+item_name = "SODA_POP"
+label = "SODA POP"
+price = 300
+is_key_item = false
+effect = "HEAL"
+heal_amount = 60
+cure_status = ""
+usable_field = true

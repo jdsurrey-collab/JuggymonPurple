@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_0x04b"]
+
+[resource]
+script = ExtResource("1_0x04b")
+item_name = "LEMONADE"
+label = "LEMONADE"
+price = 350
+is_key_item = false
+effect = "HEAL"
+heal_amount = 80
+cure_status = ""
+usable_field = true

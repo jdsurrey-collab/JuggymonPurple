@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_4v6gu"]
+
+[resource]
+script = ExtResource("1_4v6gu")
+item_name = "GREAT_BALL"
+label = "GREAT BALL"
+price = 600
+is_key_item = false
+effect = ""
+heal_amount = 0
+cure_status = ""
+usable_field = false

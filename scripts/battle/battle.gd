@@ -391,10 +391,45 @@ func _check_faint(who: int) -> bool:
 	mon_changed.emit("player" if who == PLAYER else "enemy", false)
 
 	if who == ENEMY:
+		_grant_exp()
 		_end_battle("win")
 	else:
 		_end_battle("loss")
 	return true
+
+
+## Called once, right as the enemy faints -- before _end_battle("win") closes
+## the battle out, so these messages queue in the right order (fainted! ->
+## gained EXP -> grew to level! -> learned MOVE!) ahead of whatever
+## BattleLauncher does next. See BattleMath.calc_exp_gain for the formula and
+## PartyMon.gain_exp for the level-up/move-learn sequencing.
+func _grant_exp() -> void:
+	var player_mon: PartyMon = _side(PLAYER).mon
+	if player_mon.is_dead:
+		return  # shouldn't happen on the win path, but exp for a dead mon is never correct
+	var enemy_mon: PartyMon = _side(ENEMY).mon
+	var enemy_sp: PokemonSpecies = enemy_mon.species()
+	var base_exp: int = enemy_sp.base_exp if enemy_sp else 0
+	var amount: int = BattleMath.calc_exp_gain(base_exp, enemy_mon.level, is_trainer)
+	if amount <= 0:
+		return
+
+	message.emit("%s gained %d EXP. Points!" % [player_mon.display_name(), amount])
+	var result: Dictionary = player_mon.gain_exp(amount)
+	mon_changed.emit("player", false)
+	if result.leveled_up:
+		message.emit("%s grew to level %d!" % [player_mon.display_name(), result.new_level])
+		for learn_event in result.learn_events:
+			var learned: String = learn_event.move
+			var mv: MoveData = GameData.get_move(learned)
+			var learned_label: String = mv.display_name if mv else learned
+			var forgot: String = learn_event.forgot
+			if forgot != "":
+				var forgot_mv: MoveData = GameData.get_move(forgot)
+				message.emit("%s forgot %s and learned %s!" %
+					[player_mon.display_name(), forgot_mv.display_name if forgot_mv else forgot, learned_label])
+			else:
+				message.emit("%s learned %s!" % [player_mon.display_name(), learned_label])
 
 
 func _end_battle(result: String) -> void:

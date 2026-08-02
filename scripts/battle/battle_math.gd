@@ -123,6 +123,23 @@ static func apply_random_variance(damage: int) -> int:
 	return (damage * roll) / 255
 
 
+## engine/battle/experience.asm's GainExperience formula: floor(baseExp *
+## enemyLevel / 7), boosted 1.5x (also truncating) for a trainer battle.
+## Two things this deliberately DOESN'T do, both real ROM behavior this port
+## doesn't need yet: the ROM's own 1.5x "traded Pokémon" boost (no trading
+## system exists here) and DivideExpDataByNumMonsGainingExp's split-by-
+## participant-count (this port's battle engine only ever has one active mon
+## per side, so there's never more than one participant to split across).
+## If multi-mon battles are added later, that division has to happen to
+## enemy_base_exp BEFORE this formula runs, not after -- it changes the
+## floor() result, not just a final scaling step.
+static func calc_exp_gain(enemy_base_exp: int, enemy_level: int, is_trainer_battle: bool) -> int:
+	var raw: int = (enemy_base_exp * enemy_level) / 7
+	if is_trainer_battle:
+		raw = (raw * 3) / 2
+	return raw
+
+
 ## A move's accuracy is stored (and rolled against) on a 0-255 scale, not
 ## 0-100 -- `percent` in data/moves/moves.asm is literally `* 255 / 100` at
 ## compile time, so 100% accuracy is byte 255, not 256; see roll_accuracy's

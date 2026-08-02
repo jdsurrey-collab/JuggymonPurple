@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_twjn5"]
+
+[resource]
+script = ExtResource("1_twjn5")
+item_name = "OLD_ROD"
+label = "OLD ROD"
+price = 0
+is_key_item = true
+effect = ""
+heal_amount = 0
+cure_status = ""
+usable_field = false

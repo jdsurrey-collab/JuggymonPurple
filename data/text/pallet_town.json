@@ -73,6 +73,32 @@
    "line": "in the end."
   }
  ],
+ "PalletTownGirlTextTwo": [
+  {
+   "kind": "text",
+   "line": "I keep #MON so"
+  },
+  {
+   "kind": "line",
+   "line": "I'm not alone"
+  },
+  {
+   "kind": "para",
+   "line": "when mourning"
+  },
+  {
+   "kind": "line",
+   "line": "comes calling."
+  },
+  {
+   "kind": "cont",
+   "line": "Everyone leaves"
+  },
+  {
+   "kind": "cont",
+   "line": "in the end."
+  }
+ ],
  "PalletTownFisherText": [
   {
    "kind": "text",

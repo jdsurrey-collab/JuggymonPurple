@@ -1,13 +1,10 @@
-[gd_scene load_steps=15 format=3]
+[gd_scene load_steps=30 format=3 uid="uid://dyi1uutfhu3at"]
 
-[ext_resource type="Script" path="res://scripts/world/encounter_zone_container.gd" id="1_container"]
-[ext_resource type="Texture2D" path="res://assets/map_previews/route11.png" id="2_backdrop"]
-[ext_resource type="Script" path="res://scripts/world/encounter_zone.gd" id="3_zone_script"]
-[ext_resource type="Script" path="res://scripts/resources/encounter_zone_data.gd" id="4_zone_data_script"]
-[ext_resource type="Script" path="res://scripts/resources/encounter_slot_data.gd" id="5_slot_script"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_route11"]
-size = Vector2(960, 288)
+[ext_resource type="Script" uid="uid://d3d14di2b1ppk" path="res://scripts/world/encounter_zone_container.gd" id="1_container"]
+[ext_resource type="Texture2D" uid="uid://bjcckrspwt2jq" path="res://assets/map_previews/route11.png" id="2_backdrop"]
+[ext_resource type="Script" uid="uid://cai68ix0wuqc1" path="res://scripts/world/encounter_zone.gd" id="3_zone_script"]
+[ext_resource type="Script" uid="uid://c4gvlfmn5uihi" path="res://scripts/resources/encounter_zone_data.gd" id="4_zone_data_script"]
+[ext_resource type="Script" uid="uid://dgioh32w5kgnf" path="res://scripts/resources/encounter_slot_data.gd" id="5_slot_script"]
 
 [sub_resource type="Resource" id="Slot_0"]
 script = ExtResource("5_slot_script")
@@ -74,11 +71,50 @@ script = ExtResource("4_zone_data_script")
 encounter_rate = 15
 slots = Array[ExtResource("5_slot_script")]([SubResource("Slot_0"), SubResource("Slot_1"), SubResource("Slot_2"), SubResource("Slot_3"), SubResource("Slot_4"), SubResource("Slot_5"), SubResource("Slot_6"), SubResource("Slot_7"), SubResource("Slot_8"), SubResource("Slot_9")])
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_route11"]
+size = Vector2(69, 132)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i15a4"]
+size = Vector2(94, 68)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tli3d"]
+size = Vector2(96, 159)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3npa"]
+size = Vector2(131, 68)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uohlt"]
+size = Vector2(65, 125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43tkn"]
+size = Vector2(58, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_necri"]
+size = Vector2(25, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_12qan"]
+size = Vector2(95, 124)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nj3vn"]
+size = Vector2(66, 98)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kegh7"]
+size = Vector2(66, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4m0yb"]
+size = Vector2(289, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2yclj"]
+size = Vector2(65, 61)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6qo42"]
+size = Vector2(26, 28)
+
 [node name="Route11EncounterZones" type="Node2D"]
 script = ExtResource("1_container")
 
 [node name="Backdrop" type="Sprite2D" parent="."]
-position = Vector2(480.0, 144.0)
+position = Vector2(480, 144)
 texture = ExtResource("2_backdrop")
 
 [node name="GrassZone" type="Area2D" parent="."]
@@ -86,5 +122,53 @@ script = ExtResource("3_zone_script")
 data = SubResource("ZoneData_route11")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GrassZone"]
-position = Vector2(480.0, 144.0)
+position = Vector2(224.5, 96)
 shape = SubResource("RectangleShape2D_route11")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(307, 64)
+shape = SubResource("RectangleShape2D_i15a4")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(433, 81.5)
+shape = SubResource("RectangleShape2D_tli3d")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(576.5, 65)
+shape = SubResource("RectangleShape2D_y3npa")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(701.5, 65.5)
+shape = SubResource("RectangleShape2D_uohlt")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(637, 113.5)
+shape = SubResource("RectangleShape2D_43tkn")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(655.5, 83.5)
+shape = SubResource("RectangleShape2D_necri")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(656.5, 192)
+shape = SubResource("RectangleShape2D_12qan")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(544, 177)
+shape = SubResource("RectangleShape2D_nj3vn")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(544, 272)
+shape = SubResource("RectangleShape2D_kegh7")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(335.5, 223.5)
+shape = SubResource("RectangleShape2D_4m0yb")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(319.5, 157.5)
+shape = SubResource("RectangleShape2D_2yclj")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="GrassZone"]
+position = Vector2(176, 207)
+shape = SubResource("RectangleShape2D_6qo42")

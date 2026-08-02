@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_h3xj8"]
+
+[resource]
+script = ExtResource("1_h3xj8")
+item_name = "POTION"
+label = "POTION"
+price = 300
+is_key_item = false
+effect = "HEAL"
+heal_amount = 20
+cure_status = ""
+usable_field = true

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_xaxtw"]
+
+[resource]
+script = ExtResource("1_xaxtw")
+item_name = "FULL_RESTORE"
+label = "FULL RESTORE"
+price = 3000
+is_key_item = false
+effect = "HEAL_FULL_STATUS"
+heal_amount = 0
+cure_status = ""
+usable_field = true

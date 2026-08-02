@@ -22,6 +22,34 @@ extends Node2D
 ##    instantiates NPCs straight from that map's exported JSON "npcs" array
 ##    and pulls behavior overrides from NPCRegistry, exactly as before this
 ##    system existed. Nothing regresses on an as-yet-ungenerated map.
+##
+## @tool, so two things preview live in the editor, neither of which needs the
+## game actually running:
+##   - The real sprite (sprite_name -> texture, correct idle frame for
+##     `facing`) instead of an empty Sprite2D -- see _refresh_sprite_preview().
+##   - The patrol route (movement_data.patrol_steps) drawn as arrows over the
+##     map -- see _draw(). Both refresh immediately as you edit the relevant
+##     Inspector fields, no reload needed.
+##
+## TO CREATE A BRAND NEW NPC: this scene (res://scenes/characters/npc.tscn) is
+## the stock template -- drag it from the FileSystem dock into any
+## scenes/world/npc_zones/<slug>.tscn container, position it, and fill in
+## sprite_name/dialog_data/battle_data/movement_data/reward_data from a
+## completely blank slate. npc_id is left empty on purpose: overworld_map.gd's
+## place() auto-generates a real one from the map slug + cell the first time
+## the map actually loads, so a fresh drag-in never needs one typed by hand.
+##
+## Duplicating an EXISTING configured NPC (Ctrl+D) instead is fine for keeping
+## its position, but does NOT give you an independent copy by default --
+## Godot's node duplication does not deep-copy exported Resource properties,
+## so the duplicate silently shares the exact same dialog_data/battle_data/
+## movement_data/reward_data OBJECTS as the original. Editing the copy's
+## dialogue in the Inspector then quietly edits the original's too, which is
+## what "I can't give the new NPC a different identity" looks like from the
+## Inspector -- the fields visibly show your edits, but so does the NPC you
+## copied from. Tick `reset_to_blank_npc` right after duplicating to break
+## that link and clear the copy's identity back to blank (position and node
+## name are left alone).
 
 const CELL_PX := 16
 const STEP_TIME := 0.16
@@ -33,14 +61,61 @@ const FRAME_DOWN_IDLE := 0
 const FRAME_UP_IDLE := 1
 const FRAME_SIDE_IDLE := 5
 
-@export var sprite_name: String = ""
-@export var facing: String = "down"
+## A momentary button, not a persisted setting -- ticking it immediately
+## resets this NPC to a completely blank identity and un-ticks itself right
+## after. See the class doc above for why this exists: Ctrl+D/Duplicate
+## doesn't deep-copy dialog_data/battle_data/movement_data/reward_data, so a
+## duplicated NPC starts out silently linked to the one it was copied from.
+## Position and node name are deliberately left untouched -- only identity
+## resets.
+@export var reset_to_blank_npc: bool = false:
+	set(value):
+		reset_to_blank_npc = false
+		if not value:
+			return
+		npc_id = ""
+		sprite_name = ""
+		text_id = ""
+		dialog_data = NPCDialogData.new()
+		battle_data = NPCBattleData.new()
+		movement_data = NPCMovementData.new()
+		reward_data = NPCRewardData.new()
+
+## Setters refresh the editor-only sprite preview immediately -- guarded on
+## _sprite being resolved already, since exported properties are applied by
+## the scene loader BEFORE _ready() (and therefore before the @onready
+## _sprite is assigned), so the very first assignment during scene
+## deserialization must no-op safely; _ready() calls it again once _sprite is
+## valid.
+@export var sprite_name: String = "":
+	set(value):
+		sprite_name = value
+		_refresh_sprite_preview()
+
+@export var facing: String = "down":
+	set(value):
+		facing = value
+		_refresh_sprite_preview()
+
 @export var text_id: String = ""
 @export var npc_id: String = ""
 
 @export var dialog_data: NPCDialogData = NPCDialogData.new()
 @export var battle_data: NPCBattleData = NPCBattleData.new()
-@export var movement_data: NPCMovementData = NPCMovementData.new()
+
+## Setter connects to the resource's own `changed` signal (every Resource has
+## one, emitted whenever an Inspector edit touches one of ITS properties) so
+## editing patrol_steps/loop/dialogue_trigger_step redraws the patrol-path
+## preview immediately, without needing to reselect the node.
+@export var movement_data: NPCMovementData = NPCMovementData.new():
+	set(value):
+		if movement_data and movement_data.changed.is_connected(_on_movement_data_changed):
+			movement_data.changed.disconnect(_on_movement_data_changed)
+		movement_data = value
+		if movement_data:
+			movement_data.changed.connect(_on_movement_data_changed)
+		queue_redraw()
+
 @export var reward_data: NPCRewardData = NPCRewardData.new()
 
 var cell: Vector2i = Vector2i.ZERO
@@ -53,35 +128,26 @@ var _patrol_timer: float = 0.0
 @onready var _sprite: Sprite2D = $Sprite2D
 
 
-func setup(map: Node, info: Dictionary) -> void:
-	cell = Vector2i(int(info["x"]), int(info["y"]))
-	text_id = str(info.get("text", ""))
-	sprite_name = str(info.get("sprite_file", ""))
-	npc_id = str(info.get("npc_id", ""))
-	dialog_data = NPCRegistry.dialog_for(npc_id)
-	battle_data = NPCRegistry.battle_for(npc_id)
-	movement_data = NPCRegistry.movement_for(npc_id)
-	reward_data = NPCRegistry.reward_for(npc_id)
-	position = Vector2(cell) * CELL_PX
-	_finish_setup(map)
+func _ready() -> void:
+	_refresh_sprite_preview()
+	queue_redraw()
 
 
-## `origin` is the home map's own stitched-world cell origin (same value
-## overworld_map.gd's other per-map spawners use) -- this node's `position`,
-## as authored/dragged in the editor, is in that map's LOCAL pixel space
-## (matching its Backdrop preview image 1:1), so it's converted to a world
-## cell here exactly once, the same way EncounterZone converts its rectangle.
-func place(map: Node, origin: Vector2i) -> void:
-	var local_cell := Vector2i(roundi(position.x / CELL_PX), roundi(position.y / CELL_PX))
-	cell = local_cell + origin
-	if npc_id == "":
-		npc_id = "%s#%d,%d" % [str(map.get("map_slug")), local_cell.x, local_cell.y]
-	position = Vector2(cell) * CELL_PX
-	_finish_setup(map)
+func _on_movement_data_changed() -> void:
+	queue_redraw()
 
 
-func _finish_setup(map: Node) -> void:
-	_map = map
+## Loads sprite_name's texture and applies the correct idle frame for the
+## current `facing` -- runs both at real gameplay (via setup()/place(), and
+## indirectly through their sprite_name/facing assignments) AND in the editor
+## (via @tool's _ready() and the property setters above), so placing or
+## renaming an NPC shows its real sprite immediately instead of an empty
+## Sprite2D. Safe to call before the node is ready -- see the setters' own
+## comment on why _sprite can still be null the first time this fires.
+func _refresh_sprite_preview() -> void:
+	if _sprite == null:
+		return
+	_sprite.texture = null
 	if sprite_name != "":
 		var path := "res://assets/sprites/characters/%s.png" % sprite_name
 		if ResourceLoader.exists(path):
@@ -96,7 +162,86 @@ func _finish_setup(map: Node) -> void:
 	_apply_frame()
 
 
+func setup(map: Node, info: Dictionary) -> void:
+	cell = Vector2i(int(info["x"]), int(info["y"]))
+	text_id = str(info.get("text", ""))
+	sprite_name = str(info.get("sprite_file", ""))  # setter refreshes the preview
+	npc_id = str(info.get("npc_id", ""))
+	dialog_data = NPCRegistry.dialog_for(npc_id)
+	battle_data = NPCRegistry.battle_for(npc_id)
+	movement_data = NPCRegistry.movement_for(npc_id)  # setter reconnects `changed`
+	reward_data = NPCRegistry.reward_for(npc_id)
+	position = Vector2(cell) * CELL_PX
+	_map = map
+
+
+## `origin` is the home map's own stitched-world cell origin (same value
+## overworld_map.gd's other per-map spawners use) -- this node's `position`,
+## as authored/dragged in the editor, is in that map's LOCAL pixel space
+## (matching its Backdrop preview image 1:1), so it's converted to a world
+## cell here exactly once, the same way EncounterZone converts its rectangle.
+## sprite_name/dialog_data/etc. are already set from the .tscn's own instance
+## overrides by this point (applied before _ready(), which already refreshed
+## the sprite preview) -- this only needs to finish the position/cell/id math.
+func place(map: Node, origin: Vector2i) -> void:
+	var local_cell := Vector2i(roundi(position.x / CELL_PX), roundi(position.y / CELL_PX))
+	cell = local_cell + origin
+	if npc_id == "":
+		npc_id = "%s#%d,%d" % [str(map.get("map_slug")), local_cell.x, local_cell.y]
+	position = Vector2(cell) * CELL_PX
+	_map = map
+
+
+## EDITOR-ONLY: draws one full pass through movement_data.patrol_steps as
+## arrows, starting at this node's own position -- a visual aid for authoring
+## a patrol, never shown at real gameplay (guarded below, matching the same
+## "visible while editing, invisible while playing" convention as the
+## Collision/Backdrop/warp-icon overlays elsewhere in this project). Redrawn
+## automatically on any relevant edit -- see the movement_data setter and
+## _on_movement_data_changed() above.
+##
+## Worth knowing while reading the drawn path: patrol_steps are RELATIVE
+## directions walked in order, not absolute waypoints -- if they don't sum
+## back to the start (a closed shape), `loop = true` does NOT walk back and
+## forth over the same drawn path; it just repeats the same relative pattern
+## again from wherever this pass ended, so an open path shown here means the
+## NPC walks further away each loop, not back and forth.
+func _draw() -> void:
+	if not Engine.is_editor_hint():
+		return
+	if movement_data == null or movement_data.patrol_steps.is_empty():
+		return
+	var font := ThemeDB.fallback_font
+	var line_color := Color(1.0, 0.65, 0.1, 0.9)
+	var trigger_color := Color(1.0, 0.2, 0.85, 0.95)
+	var pos := Vector2.ZERO
+	for i in movement_data.patrol_steps.size():
+		var dir: Vector2i = _vector_for(movement_data.patrol_steps[i])
+		var next: Vector2 = pos + Vector2(dir) * CELL_PX
+		draw_line(pos, next, line_color, 2.0)
+		_draw_arrowhead(pos, next, line_color)
+		draw_string(font, next + Vector2(2, -4), str(i + 1), HORIZONTAL_ALIGNMENT_LEFT, -1, 8, Color.WHITE)
+		if movement_data.dialogue_trigger_step == i:
+			draw_circle(next, 4.0, trigger_color)
+		pos = next
+	draw_circle(Vector2.ZERO, 3.0, Color(0.2, 1.0, 0.4, 0.95))  # start
+	if not movement_data.loop:
+		draw_circle(pos, 3.0, Color(1.0, 0.25, 0.25, 0.95))  # stops here, no loop
+
+
+func _draw_arrowhead(from: Vector2, to: Vector2, color: Color) -> void:
+	var dir := (to - from).normalized()
+	if dir == Vector2.ZERO:
+		return
+	var perp := Vector2(-dir.y, dir.x)
+	var left := to - dir * 6.0 + perp * 3.0
+	var right := to - dir * 6.0 - perp * 3.0
+	draw_polygon(PackedVector2Array([to, left, right]), PackedColorArray([color]))
+
+
 func _process(delta: float) -> void:
+	if Engine.is_editor_hint():
+		return
 	if _moving or _map == null or movement_data.patrol_steps.is_empty():
 		return
 	# A patrolling NPC shouldn't wander off mid-dialogue/cutscene/menu --

@@ -79,8 +79,11 @@ func _run() -> void:
 	await _press_until("cancel", func(): return PartyMenu.page == PartyMenu.Page.PARTY)
 	await _press_until("cancel", func(): return PartyMenu.page == PartyMenu.Page.START)
 	_assert(PartyMenu.page == PartyMenu.Page.START, "cancel from party page returns to start page")
-	await _press_until("move_down", func(): return PartyMenu.start_selected == 1)
-	_assert(PartyMenu.start_selected == 1, "cursor on SAVE")
+	# START_OPTIONS grew from [POKéMON, SAVE, EXIT] to [POKéMON, BAG, SAVE,
+	# EXIT] when the Bag page was added -- SAVE moved from index 1 to 2.
+	var save_index: int = PartyMenu.START_OPTIONS.find("SAVE")
+	await _press_until("move_down", func(): return PartyMenu.start_selected == save_index)
+	_assert(PartyMenu.start_selected == save_index, "cursor on SAVE (index %d)" % save_index)
 	ok = await _press_until("interact", func(): return SaveSystem.has_save())
 	_assert(ok, "save file exists after choosing SAVE")
 	_shot("05_after_save")

@@ -16,6 +16,7 @@ extends Node
 
 var species: Dictionary = {}     ## CONST -> PokemonSpecies
 var moves: Dictionary = {}       ## CONST -> MoveData
+var items: Dictionary = {}       ## CONST -> ItemData
 var trainers: Dictionary = {}    ## class name -> {parties: [...]}
 var trainer_names: Array = []
 var types: Dictionary = {}       ## TYPE -> id
@@ -26,6 +27,7 @@ var _by_index: Dictionary = {}   ## internal index -> CONST
 
 const SPECIES_DIR := "res://resources/species/"
 const MOVES_DIR := "res://resources/moves/"
+const ITEMS_DIR := "res://resources/items/"
 
 var map_index: Dictionary = {}   ## MAP_CONST -> exported map json slug
 var cultist_dream: Dictionary = {}
@@ -42,6 +44,7 @@ const OUTDOOR_TILESETS := ["overworld"]
 func _ready() -> void:
 	moves = _scan_resources(MOVES_DIR, func(r: MoveData) -> String: return r.move_name)
 	species = _scan_resources(SPECIES_DIR, func(r: PokemonSpecies) -> String: return r.species_name)
+	items = _scan_resources(ITEMS_DIR, func(r: ItemData) -> String: return r.item_name)
 
 	var tr := _load("res://data/trainers.json")
 	trainers = tr.get("classes", {})
@@ -59,8 +62,8 @@ func _ready() -> void:
 	map_index = _load("res://data/map_index.json")
 	cultist_dream = _load("res://data/cultist_dream.json")
 
-	print("GameData: %d species, %d moves, %d trainer classes, %d matchups, %d maps"
-		% [species.size(), moves.size(), trainers.size(), _chart.size(), map_index.size()])
+	print("GameData: %d species, %d moves, %d items, %d trainer classes, %d matchups, %d maps"
+		% [species.size(), moves.size(), items.size(), trainers.size(), _chart.size(), map_index.size()])
 
 
 func map_slug_for(map_const: String) -> String:
@@ -121,6 +124,10 @@ func species_by_index(index: int) -> PokemonSpecies:
 
 func get_move(name: String) -> MoveData:
 	return moves.get(name)
+
+
+func get_item(name: String) -> ItemData:
+	return items.get(name)
 
 
 ## Gen 1 stacks BOTH of the defender's types multiplicatively. Passing the same

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_ptpgp"]
+
+[resource]
+script = ExtResource("1_ptpgp")
+item_name = "PARLYZ_HEAL"
+label = "PARLYZ HEAL"
+price = 200
+is_key_item = false
+effect = "CURE_STATUS"
+heal_amount = 0
+cure_status = "PAR"
+usable_field = true

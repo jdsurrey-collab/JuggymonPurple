@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_data.gd" id="1_f4l0y"]
+
+[resource]
+script = ExtResource("1_f4l0y")
+item_name = "X_ATTACK"
+label = "X ATTACK"
+price = 500
+is_key_item = false
+effect = ""
+heal_amount = 0
+cure_status = ""
+usable_field = false

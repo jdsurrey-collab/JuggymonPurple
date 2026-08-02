@@ -1,0 +1,834 @@
+{
+ "items": {
+  "MASTER_BALL": {
+   "item_name": "MASTER_BALL",
+   "label": "MASTER BALL",
+   "price": 0,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "ULTRA_BALL": {
+   "item_name": "ULTRA_BALL",
+   "label": "ULTRA BALL",
+   "price": 1200,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "GREAT_BALL": {
+   "item_name": "GREAT_BALL",
+   "label": "GREAT BALL",
+   "price": 600,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "POKE_BALL": {
+   "item_name": "POKE_BALL",
+   "label": "POK\u00e9 BALL",
+   "price": 200,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "TOWN_MAP": {
+   "item_name": "TOWN_MAP",
+   "label": "TOWN MAP",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "BICYCLE": {
+   "item_name": "BICYCLE",
+   "label": "BICYCLE",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "SURFBOARD": {
+   "item_name": "SURFBOARD",
+   "label": "?????",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "SAFARI_BALL": {
+   "item_name": "SAFARI_BALL",
+   "label": "SAFARI BALL",
+   "price": 1000,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "POKEDEX": {
+   "item_name": "POKEDEX",
+   "label": "POK\u00e9DEX",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "MOON_STONE": {
+   "item_name": "MOON_STONE",
+   "label": "MOON STONE",
+   "price": 0,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "ANTIDOTE": {
+   "item_name": "ANTIDOTE",
+   "label": "ANTIDOTE",
+   "price": 100,
+   "is_key_item": false,
+   "effect": "CURE_STATUS",
+   "heal_amount": 0,
+   "cure_status": "PSN",
+   "usable_field": true
+  },
+  "BURN_HEAL": {
+   "item_name": "BURN_HEAL",
+   "label": "BURN HEAL",
+   "price": 250,
+   "is_key_item": false,
+   "effect": "CURE_STATUS",
+   "heal_amount": 0,
+   "cure_status": "BRN",
+   "usable_field": true
+  },
+  "ICE_HEAL": {
+   "item_name": "ICE_HEAL",
+   "label": "ICE HEAL",
+   "price": 250,
+   "is_key_item": false,
+   "effect": "CURE_STATUS",
+   "heal_amount": 0,
+   "cure_status": "FRZ",
+   "usable_field": true
+  },
+  "AWAKENING": {
+   "item_name": "AWAKENING",
+   "label": "AWAKENING",
+   "price": 200,
+   "is_key_item": false,
+   "effect": "CURE_STATUS",
+   "heal_amount": 0,
+   "cure_status": "SLP",
+   "usable_field": true
+  },
+  "PARLYZ_HEAL": {
+   "item_name": "PARLYZ_HEAL",
+   "label": "PARLYZ HEAL",
+   "price": 200,
+   "is_key_item": false,
+   "effect": "CURE_STATUS",
+   "heal_amount": 0,
+   "cure_status": "PAR",
+   "usable_field": true
+  },
+  "FULL_RESTORE": {
+   "item_name": "FULL_RESTORE",
+   "label": "FULL RESTORE",
+   "price": 3000,
+   "is_key_item": false,
+   "effect": "HEAL_FULL_STATUS",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": true
+  },
+  "MAX_POTION": {
+   "item_name": "MAX_POTION",
+   "label": "MAX POTION",
+   "price": 2500,
+   "is_key_item": false,
+   "effect": "HEAL_FULL",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": true
+  },
+  "HYPER_POTION": {
+   "item_name": "HYPER_POTION",
+   "label": "HYPER POTION",
+   "price": 1500,
+   "is_key_item": false,
+   "effect": "HEAL",
+   "heal_amount": 200,
+   "cure_status": "",
+   "usable_field": true
+  },
+  "SUPER_POTION": {
+   "item_name": "SUPER_POTION",
+   "label": "SUPER POTION",
+   "price": 700,
+   "is_key_item": false,
+   "effect": "HEAL",
+   "heal_amount": 50,
+   "cure_status": "",
+   "usable_field": true
+  },
+  "POTION": {
+   "item_name": "POTION",
+   "label": "POTION",
+   "price": 300,
+   "is_key_item": false,
+   "effect": "HEAL",
+   "heal_amount": 20,
+   "cure_status": "",
+   "usable_field": true
+  },
+  "BOULDERBADGE": {
+   "item_name": "BOULDERBADGE",
+   "label": "BOULDERBADGE",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "CASCADEBADGE": {
+   "item_name": "CASCADEBADGE",
+   "label": "CASCADEBADGE",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "THUNDERBADGE": {
+   "item_name": "THUNDERBADGE",
+   "label": "THUNDERBADGE",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "RAINBOWBADGE": {
+   "item_name": "RAINBOWBADGE",
+   "label": "RAINBOWBADGE",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "SOULBADGE": {
+   "item_name": "SOULBADGE",
+   "label": "SOULBADGE",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "MARSHBADGE": {
+   "item_name": "MARSHBADGE",
+   "label": "MARSHBADGE",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "VOLCANOBADGE": {
+   "item_name": "VOLCANOBADGE",
+   "label": "VOLCANOBADGE",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "EARTHBADGE": {
+   "item_name": "EARTHBADGE",
+   "label": "EARTHBADGE",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "ESCAPE_ROPE": {
+   "item_name": "ESCAPE_ROPE",
+   "label": "ESCAPE ROPE",
+   "price": 550,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "REPEL": {
+   "item_name": "REPEL",
+   "label": "REPEL",
+   "price": 350,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "OLD_AMBER": {
+   "item_name": "OLD_AMBER",
+   "label": "OLD AMBER",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "FIRE_STONE": {
+   "item_name": "FIRE_STONE",
+   "label": "FIRE STONE",
+   "price": 2100,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "THUNDER_STONE": {
+   "item_name": "THUNDER_STONE",
+   "label": "THUNDERSTONE",
+   "price": 2100,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "WATER_STONE": {
+   "item_name": "WATER_STONE",
+   "label": "WATER STONE",
+   "price": 2100,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "HP_UP": {
+   "item_name": "HP_UP",
+   "label": "HP UP",
+   "price": 9800,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "PROTEIN": {
+   "item_name": "PROTEIN",
+   "label": "PROTEIN",
+   "price": 9800,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "IRON": {
+   "item_name": "IRON",
+   "label": "IRON",
+   "price": 9800,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "CARBOS": {
+   "item_name": "CARBOS",
+   "label": "CARBOS",
+   "price": 9800,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "CALCIUM": {
+   "item_name": "CALCIUM",
+   "label": "CALCIUM",
+   "price": 9800,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "RARE_CANDY": {
+   "item_name": "RARE_CANDY",
+   "label": "RARE CANDY",
+   "price": 4800,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "DOME_FOSSIL": {
+   "item_name": "DOME_FOSSIL",
+   "label": "DOME FOSSIL",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "HELIX_FOSSIL": {
+   "item_name": "HELIX_FOSSIL",
+   "label": "HELIX FOSSIL",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "SECRET_KEY": {
+   "item_name": "SECRET_KEY",
+   "label": "SECRET KEY",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "ITEM_2C": {
+   "item_name": "ITEM_2C",
+   "label": "?????",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "BIKE_VOUCHER": {
+   "item_name": "BIKE_VOUCHER",
+   "label": "BIKE VOUCHER",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "X_ACCURACY": {
+   "item_name": "X_ACCURACY",
+   "label": "X ACCURACY",
+   "price": 950,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "LEAF_STONE": {
+   "item_name": "LEAF_STONE",
+   "label": "LEAF STONE",
+   "price": 2100,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "CARD_KEY": {
+   "item_name": "CARD_KEY",
+   "label": "CARD KEY",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "NUGGET": {
+   "item_name": "NUGGET",
+   "label": "NUGGET",
+   "price": 10000,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "ITEM_32": {
+   "item_name": "ITEM_32",
+   "label": "PP UP",
+   "price": 9800,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "POKE_DOLL": {
+   "item_name": "POKE_DOLL",
+   "label": "POK\u00e9 DOLL",
+   "price": 1000,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "FULL_HEAL": {
+   "item_name": "FULL_HEAL",
+   "label": "FULL HEAL",
+   "price": 600,
+   "is_key_item": false,
+   "effect": "CURE_ALL_STATUS",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": true
+  },
+  "REVIVE": {
+   "item_name": "REVIVE",
+   "label": "REVIVE",
+   "price": 1500,
+   "is_key_item": false,
+   "effect": "REVIVE_HALF",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": true
+  },
+  "MAX_REVIVE": {
+   "item_name": "MAX_REVIVE",
+   "label": "MAX REVIVE",
+   "price": 4000,
+   "is_key_item": false,
+   "effect": "REVIVE_FULL",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": true
+  },
+  "GUARD_SPEC": {
+   "item_name": "GUARD_SPEC",
+   "label": "GUARD SPEC.",
+   "price": 700,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "SUPER_REPEL": {
+   "item_name": "SUPER_REPEL",
+   "label": "SUPER REPEL",
+   "price": 500,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "MAX_REPEL": {
+   "item_name": "MAX_REPEL",
+   "label": "MAX REPEL",
+   "price": 700,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "DIRE_HIT": {
+   "item_name": "DIRE_HIT",
+   "label": "DIRE HIT",
+   "price": 650,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "COIN": {
+   "item_name": "COIN",
+   "label": "COIN",
+   "price": 10,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "FRESH_WATER": {
+   "item_name": "FRESH_WATER",
+   "label": "FRESH WATER",
+   "price": 200,
+   "is_key_item": false,
+   "effect": "HEAL",
+   "heal_amount": 50,
+   "cure_status": "",
+   "usable_field": true
+  },
+  "SODA_POP": {
+   "item_name": "SODA_POP",
+   "label": "SODA POP",
+   "price": 300,
+   "is_key_item": false,
+   "effect": "HEAL",
+   "heal_amount": 60,
+   "cure_status": "",
+   "usable_field": true
+  },
+  "LEMONADE": {
+   "item_name": "LEMONADE",
+   "label": "LEMONADE",
+   "price": 350,
+   "is_key_item": false,
+   "effect": "HEAL",
+   "heal_amount": 80,
+   "cure_status": "",
+   "usable_field": true
+  },
+  "S_S_TICKET": {
+   "item_name": "S_S_TICKET",
+   "label": "S.S.TICKET",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "GOLD_TEETH": {
+   "item_name": "GOLD_TEETH",
+   "label": "GOLD TEETH",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "X_ATTACK": {
+   "item_name": "X_ATTACK",
+   "label": "X ATTACK",
+   "price": 500,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "X_DEFEND": {
+   "item_name": "X_DEFEND",
+   "label": "X DEFEND",
+   "price": 550,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "X_SPEED": {
+   "item_name": "X_SPEED",
+   "label": "X SPEED",
+   "price": 350,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "X_SPECIAL": {
+   "item_name": "X_SPECIAL",
+   "label": "X SPECIAL",
+   "price": 350,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "COIN_CASE": {
+   "item_name": "COIN_CASE",
+   "label": "COIN CASE",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "OAKS_PARCEL": {
+   "item_name": "OAKS_PARCEL",
+   "label": "OAK's PARCEL",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "ITEMFINDER": {
+   "item_name": "ITEMFINDER",
+   "label": "ITEMFINDER",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "SILPH_SCOPE": {
+   "item_name": "SILPH_SCOPE",
+   "label": "SILPH SCOPE",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "POKE_FLUTE": {
+   "item_name": "POKE_FLUTE",
+   "label": "POK\u00e9 FLUTE",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "LIFT_KEY": {
+   "item_name": "LIFT_KEY",
+   "label": "LIFT KEY",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "EXP_ALL": {
+   "item_name": "EXP_ALL",
+   "label": "EXP.ALL",
+   "price": 0,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "OLD_ROD": {
+   "item_name": "OLD_ROD",
+   "label": "OLD ROD",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "GOOD_ROD": {
+   "item_name": "GOOD_ROD",
+   "label": "GOOD ROD",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "SUPER_ROD": {
+   "item_name": "SUPER_ROD",
+   "label": "SUPER ROD",
+   "price": 0,
+   "is_key_item": true,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "PP_UP": {
+   "item_name": "PP_UP",
+   "label": "PP UP",
+   "price": 0,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "ETHER": {
+   "item_name": "ETHER",
+   "label": "ETHER",
+   "price": 0,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "MAX_ETHER": {
+   "item_name": "MAX_ETHER",
+   "label": "MAX ETHER",
+   "price": 0,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "ELIXER": {
+   "item_name": "ELIXER",
+   "label": "ELIXER",
+   "price": 0,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  },
+  "MAX_ELIXER": {
+   "item_name": "MAX_ELIXER",
+   "label": "MAX ELIXER",
+   "price": 0,
+   "is_key_item": false,
+   "effect": "",
+   "heal_amount": 0,
+   "cure_status": "",
+   "usable_field": false
+  }
+ }
+}

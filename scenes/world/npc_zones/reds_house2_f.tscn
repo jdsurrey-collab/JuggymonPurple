@@ -1,25 +1,53 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=12 format=3 uid="uid://cw4c473pm27u3"]
 
 [ext_resource type="Script" path="res://scripts/world/npc_zone_container.gd" id="1_container"]
-[ext_resource type="Texture2D" path="res://assets/map_previews/reds_house2_f.png" id="2_backdrop"]
-[ext_resource type="PackedScene" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
-
-[ext_resource type="Script" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+[ext_resource type="Texture2D" uid="uid://ccv7684j0vcw3" path="res://assets/map_previews/reds_house2_f.png" id="2_backdrop"]
+[ext_resource type="PackedScene" uid="uid://bppnpc0001" path="res://scenes/characters/npc.tscn" id="3_npc_scene"]
+[ext_resource type="Script" uid="uid://6dw5ea50mk5u" path="res://scripts/resources/npc_dialog_data.gd" id="4_dialog_script"]
+[ext_resource type="Script" uid="uid://bpql6rr43d6it" path="res://scripts/resources/npc_movement_data.gd" id="5_biwgq"]
+[ext_resource type="Script" uid="uid://dxx06x3o83if0" path="res://scripts/resources/npc_battle_data.gd" id="5_h87jf"]
+[ext_resource type="Script" uid="uid://dcw1hpvuqh8o1" path="res://scripts/resources/npc_reward_data.gd" id="7_j5uw4"]
 
 [sub_resource type="Resource" id="Dialog_0"]
 script = ExtResource("4_dialog_script")
 lines = Array[String](["...it was but a dream, surely."])
+one_time = false
+repeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_3a5fw"]
+script = ExtResource("5_h87jf")
+party = Array[Dictionary]([])
+challenge_lines = Array[String]([])
+defeat_lines = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_gf4gw"]
+script = ExtResource("5_biwgq")
+patrol_steps = Array[String](["right", "righ", "left", "left"])
+loop = true
+step_interval_sec = 1.0
+dialogue_trigger_step = 2
+metadata/_custom_type_script = "uid://bpql6rr43d6it"
+
+[sub_resource type="Resource" id="Resource_n4b8l"]
+script = ExtResource("7_j5uw4")
+money = 0
+items = Array[Dictionary]([])
+flag_on_complete = ""
 
 [node name="Reds_house2_fNpcZone" type="Node2D"]
 script = ExtResource("1_container")
 
 [node name="Backdrop" type="Sprite2D" parent="."]
-position = Vector2(64.0, 64.0)
+position = Vector2(64, 64)
 texture = ExtResource("2_backdrop")
 
 [node name="Channeler_0" parent="." instance=ExtResource("3_npc_scene")]
-position = Vector2(32, 96)
+position = Vector2(23, 116)
+reset_to_blank_npc = null
 sprite_name = "channeler"
 text_id = "TEXT_REDSHOUSE2F_CULTIST"
 npc_id = "reds_house2_f#0"
 dialog_data = SubResource("Dialog_0")
+battle_data = SubResource("Resource_3a5fw")
+movement_data = SubResource("Resource_gf4gw")
+reward_data = SubResource("Resource_n4b8l")
